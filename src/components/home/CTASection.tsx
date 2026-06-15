@@ -2,8 +2,9 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, MessageCircle, ShieldCheck, Clock, Star } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Clock, Star } from 'lucide-react';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { ORDER_FORM_PATH } from '@/constants/orderNavigation';
 import { WHATSAPP_URL } from '@/constants/whatsapp';
 
@@ -51,9 +52,10 @@ const CTASection = ({
           </Link>
           <WhatsAppLink
             href={WHATSAPP_URL}
-            className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#25D366] text-white font-bold rounded-xl text-base shadow-xl shadow-[#25D366]/30 hover:brightness-110 hover:scale-[1.03] active:scale-[0.97] transition-all w-full sm:w-auto min-w-[220px]"
+            aria-label="Chat on WhatsApp"
+            className="inline-flex hover:scale-105 active:scale-95 transition-transform"
           >
-            <MessageCircle className="w-5 h-5" /> WhatsApp Us
+            <WhatsAppIcon size={48} className="w-12 h-12" />
           </WhatsAppLink>
         </div>
 

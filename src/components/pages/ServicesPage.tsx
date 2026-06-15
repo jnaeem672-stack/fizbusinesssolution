@@ -2,8 +2,6 @@
 
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { usePathname, useRouter } from 'next/navigation';
 import {
   BookOpen, Scroll, FileText, Stethoscope, Scale, Settings,
   ChevronRight, CheckCircle2, Search,
@@ -11,8 +9,10 @@ import {
 } from 'lucide-react';
 import PageHero from '@/components/ui/PageHero';
 import SectionHeader from '@/components/ui/SectionHeader';
+import OrderSection from '@/components/home/OrderSection';
 import CTASection from '@/components/home/CTASection';
-import { ORDER_FORM_PATH, scrollToOrderForm } from '@/constants/orderNavigation';
+import { ORDER_FORM_HASH, scrollToOrderForm } from '@/constants/orderNavigation';
+import { useOrderFormScroll } from '@/hooks/useOrderFormScroll';
 import { ALL_SERVICES, SERVICE_CATEGORIES, type ServiceCategory } from '@/constants/servicesCatalog';
 
 const featuredServices: { name: string; icon: LucideIcon; badge: string; desc: string; points: string[] }[] = [
@@ -42,18 +42,13 @@ function filterCategories(searchTerm: string): ServiceCategory[] {
 
 export default function ServicesPage() {
   const [searchTerm, setSearchTerm] = useState('');
-  const router = useRouter();
-  const pathname = usePathname();
+  useOrderFormScroll();
 
   const filteredCategories = useMemo(() => filterCategories(searchTerm), [searchTerm]);
   const totalResults = filteredCategories.reduce((sum, c) => sum + c.services.length, 0);
 
   const handleOrder = () => {
-    if (pathname === '/contact') {
-      scrollToOrderForm();
-    } else {
-      router.push(ORDER_FORM_PATH);
-    }
+    scrollToOrderForm();
   };
 
   return (
@@ -66,8 +61,10 @@ export default function ServicesPage() {
         backgroundImage="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600&q=80"
         highlights={['UK Writing Services', 'Subject Specialists', 'Diploma & Degree Help']}
         ctaLabel="Place Your Order"
-        ctaHref={ORDER_FORM_PATH}
+        ctaHref={ORDER_FORM_HASH}
       />
+
+      <OrderSection />
 
       <main className="flex-grow">
         <section className="py-16 md:py-24 bg-navy relative">
@@ -94,9 +91,13 @@ export default function ServicesPage() {
                       </li>
                     ))}
                   </ul>
-                  <Link href={ORDER_FORM_PATH} className="w-full py-4 bg-primary text-white font-black uppercase tracking-widest rounded-lg flex items-center justify-center gap-2 text-xs shadow-xl shadow-primary/20 hover:brightness-110 transition-all">
+                  <button
+                    type="button"
+                    onClick={handleOrder}
+                    className="w-full py-4 bg-primary text-white font-black uppercase tracking-widest rounded-lg flex items-center justify-center gap-2 text-xs shadow-xl shadow-primary/20 hover:brightness-110 transition-all"
+                  >
                     Order Now <ChevronRight className="w-4 h-4" />
-                  </Link>
+                  </button>
                 </motion.div>
               ))}
             </div>

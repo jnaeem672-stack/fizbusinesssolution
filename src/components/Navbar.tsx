@@ -30,7 +30,7 @@ const Navbar = () => {
 
   const handleOrderNow = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    if (pathname === '/contact') {
+    if (document.getElementById('order-form')) {
       scrollToOrderForm();
     } else {
       router.push(ORDER_FORM_PATH);

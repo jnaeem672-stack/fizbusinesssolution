@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import type { ContactCardProps } from '@/types';
 
 const ContactCard = ({
@@ -31,9 +32,13 @@ const ContactCard = ({
         <motion.div
           whileHover={{ rotate: [0, -8, 8, 0] }}
           transition={{ duration: 0.4 }}
-          className={`p-3 rounded-xl ${color} text-white shrink-0 shadow-lg`}
+          className={`shrink-0 shadow-lg ${isWhatsApp ? 'p-0' : `p-3 rounded-xl ${color} text-white`}`}
         >
-          <Icon className="w-6 h-6" />
+          {isWhatsApp ? (
+            <WhatsAppIcon size={40} className="w-10 h-10" />
+          ) : (
+            <Icon className="w-6 h-6" />
+          )}
         </motion.div>
         <div className="min-w-0 flex-1">
           <p className="text-[10px] font-black text-primary uppercase tracking-widest mb-1">{label}</p>
@@ -64,9 +69,10 @@ const ContactCard = ({
         isWhatsApp ? (
           <WhatsAppLink
             href={link}
-            className="mt-5 inline-flex items-center justify-center gap-2 w-full py-3 bg-[#25D366] text-white text-[10px] font-black uppercase tracking-widest rounded-lg hover:brightness-110 transition-all"
+            aria-label={actionLabel}
+            className="mt-5 inline-flex items-center justify-center hover:scale-105 active:scale-95 transition-transform"
           >
-            {actionLabel} <ArrowRight className="w-4 h-4" />
+            <WhatsAppIcon size={40} className="w-10 h-10" />
           </WhatsAppLink>
         ) : (
           <a
