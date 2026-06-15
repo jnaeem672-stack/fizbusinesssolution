@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { MessageCircle } from 'lucide-react';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL } from '@/constants/whatsapp';
 
 export default function FloatingWhatsApp() {
@@ -32,9 +32,10 @@ export default function FloatingWhatsApp() {
         <span className="hidden sm:flex items-center bg-navy text-white text-[10px] font-black uppercase tracking-widest px-4 py-2.5 rounded-xl shadow-xl opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap border border-white/10">
           Chat with us!
         </span>
-        <span className="relative flex items-center justify-center w-14 h-14 sm:w-16 sm:h-16 bg-[#25D366] text-white rounded-full shadow-2xl shadow-[#25D366]/40 pulse-button hover:scale-105 active:scale-95 transition-transform">
-          <MessageCircle className="w-7 h-7 sm:w-8 sm:h-8 relative z-10" strokeWidth={2.5} />
-        </span>
+        <WhatsAppIcon
+          size={56}
+          className="w-14 h-14 sm:w-16 sm:h-16 pulse-button hover:scale-105 active:scale-95 transition-transform"
+        />
       </WhatsAppLink>
     </motion.div>
   );

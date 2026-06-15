@@ -1,5 +1,7 @@
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import ServicesPage from '@/components/pages/ServicesPage';
+import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
   title: 'Academic Writing Services | Dissertation, Essay, Assignment Help',
@@ -8,5 +10,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <ServicesPage />;
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <ServicesPage />
+    </Suspense>
+  );
 }

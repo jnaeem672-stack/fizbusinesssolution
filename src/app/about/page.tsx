@@ -1,5 +1,7 @@
+import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import AboutPage from '@/components/pages/AboutPage';
+import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
   title: 'About Us | Expert Academic Writing Team',
@@ -8,5 +10,9 @@ export const metadata: Metadata = {
 };
 
 export default function Page() {
-  return <AboutPage />;
+  return (
+    <Suspense fallback={<LoadingSpinner />}>
+      <AboutPage />
+    </Suspense>
+  );
 }

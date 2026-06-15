@@ -5,7 +5,10 @@ import { motion, useInView } from 'framer-motion';
 import Link from 'next/link';
 import { ShieldCheck, Award, Users, ThumbsUp, type LucideIcon } from 'lucide-react';
 import PageHero from '@/components/ui/PageHero';
+import OrderSection from '@/components/home/OrderSection';
 import CTASection from '@/components/home/CTASection';
+import { useOrderFormScroll } from '@/hooks/useOrderFormScroll';
+import { ORDER_FORM_HASH } from '@/constants/orderNavigation';
 
 interface StatCounterProps {
   value: string;
@@ -45,6 +48,8 @@ const StatCounter = ({ value, label }: StatCounterProps) => {
 };
 
 export default function AboutPage() {
+  useOrderFormScroll();
+
   const experts = [
     { name: 'Dr. James Wilson', title: 'Senior Dissertation Expert', specialty: 'Social Sciences & Humanities', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
     { name: 'Prof. Sarah Miller', title: 'Academic Research Lead', specialty: 'Nursing & Healthcare', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80' },
@@ -67,10 +72,12 @@ export default function AboutPage() {
         badge="Trusted Academic Partner"
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80"
         highlights={['8+ Years Experience', '500+ Subject Experts', '10,000+ Students Helped']}
-        ctaLabel="Explore Services"
-        ctaHref="/services"
+        ctaLabel="Place Your Order"
+        ctaHref={ORDER_FORM_HASH}
         waveColor="#ffffff"
       />
+
+      <OrderSection />
 
       <section className="py-20 max-w-site mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16 items-center">

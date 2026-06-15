@@ -1,10 +1,11 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { MessageCircle, Mail, ArrowRight, Paperclip, CheckCircle2 } from 'lucide-react';
+import { Mail, ArrowRight, Paperclip, CheckCircle2 } from 'lucide-react';
 import OrderForm from '@/components/OrderForm';
 import SectionHeader from '@/components/ui/SectionHeader';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
 import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
 
@@ -34,9 +35,7 @@ export default function ContactFormLayout() {
               className="bg-white rounded-2xl border border-gray-100 shadow-lg p-6 md:p-8 flex flex-col"
             >
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-14 h-14 rounded-xl bg-[#25D366] flex items-center justify-center text-white shadow-lg shadow-[#25D366]/30">
-                  <MessageCircle className="w-7 h-7" />
-                </div>
+                <WhatsAppIcon size={56} className="w-14 h-14" />
                 <div>
                   <p className="text-[10px] font-black text-primary uppercase tracking-widest">Fastest Response</p>
                   <h3 className="text-xl font-black text-navy">Chat on WhatsApp</h3>
@@ -48,9 +47,9 @@ export default function ContactFormLayout() {
               <p className="text-navy font-bold text-sm mb-5">{WHATSAPP_NUMBER}</p>
               <WhatsAppLink
                 href={WHATSAPP_URL}
-                className="inline-flex items-center justify-center gap-2 w-full py-4 bg-[#25D366] text-white font-black text-xs uppercase tracking-widest rounded-xl shadow-lg shadow-[#25D366]/25 hover:brightness-110 transition-all"
+                aria-label="Open WhatsApp Chat"
+                className="inline-flex items-center justify-center gap-2 w-full py-3 border border-gray-200 text-navy font-black text-xs uppercase tracking-widest rounded-xl hover:border-[#25D366] hover:text-[#25D366] transition-all"
               >
-                <MessageCircle className="w-5 h-5" />
                 Open WhatsApp Chat
                 <ArrowRight className="w-4 h-4" />
               </WhatsAppLink>

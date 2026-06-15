@@ -1,27 +1,15 @@
 'use client';
 
-import { useEffect } from 'react';
-import { useRouter, useSearchParams } from 'next/navigation';
 import PageHero from '@/components/ui/PageHero';
 import ContactFormLayout from '@/components/contact/ContactFormLayout';
 import ContactForm from '@/components/contact/ContactForm';
 import AnimateIn from '@/components/ui/AnimateIn';
 import SectionHeader from '@/components/ui/SectionHeader';
-import { scrollToOrderForm, shouldScrollToOrderForm, ORDER_FORM_PATH } from '@/constants/orderNavigation';
+import { ORDER_FORM_HASH } from '@/constants/orderNavigation';
+import { useOrderFormScroll } from '@/hooks/useOrderFormScroll';
 
 export default function ContactPage() {
-  const searchParams = useSearchParams();
-  const router = useRouter();
-
-  useEffect(() => {
-    if (searchParams.get('scrollTo') === 'form') {
-      router.replace(ORDER_FORM_PATH);
-      return;
-    }
-    if (shouldScrollToOrderForm(searchParams)) {
-      setTimeout(() => scrollToOrderForm(), 150);
-    }
-  }, [searchParams, router]);
+  useOrderFormScroll();
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col overflow-x-hidden">
@@ -33,7 +21,7 @@ export default function ContactPage() {
         backgroundImage="https://images.unsplash.com/photo-1423666639043-f560172c73c7?w=1600&q=80"
         highlights={['WhatsApp Chat', 'Email Support', 'Free Quote in Minutes']}
         ctaLabel="Place Your Order"
-        ctaHref="#order-form"
+        ctaHref={ORDER_FORM_HASH}
         waveColor="#f9fafb"
       />
 

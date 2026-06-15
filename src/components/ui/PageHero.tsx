@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ChevronRight, ArrowRight } from 'lucide-react';
 import type { PageHeroProps } from '@/types';
-import { ORDER_FORM_PATH } from '@/constants/orderNavigation';
+import { ORDER_FORM_HASH } from '@/constants/orderNavigation';
 
 const PageHero = ({
   title,
@@ -14,7 +14,7 @@ const PageHero = ({
   backgroundImage = 'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1600&q=80',
   highlights = [],
   ctaLabel = 'Order Now',
-  ctaHref = ORDER_FORM_PATH,
+  ctaHref = ORDER_FORM_HASH,
   waveColor = '#f9fafb',
 }: PageHeroProps) => (
   <section className="relative min-h-[420px] md:min-h-[480px] flex items-center overflow-hidden bg-navy">

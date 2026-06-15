@@ -7,6 +7,7 @@ import { Autoplay, EffectFade } from 'swiper/modules';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL } from '@/constants/whatsapp';
 import { scrollToOrderForm } from '@/constants/orderNavigation';
 
@@ -133,12 +134,10 @@ const HeroSection = ({
             </motion.button>
             <WhatsAppLink
               href={WHATSAPP_URL}
-              className="px-8 py-4 bg-[#25D366] text-white font-bold rounded-xl text-lg flex items-center justify-center gap-2 shadow-xl shadow-[#25D366]/30 w-full sm:w-auto hover:scale-105 active:scale-95 transition-transform"
+              aria-label="Chat on WhatsApp"
+              className="inline-flex hover:scale-105 active:scale-95 transition-transform"
             >
-              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden>
-                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.025 3.125l-.694 2.54 2.6-.682c.847.459 1.763.702 2.837.702 3.18 0 5.767-2.586 5.768-5.766 0-3.18-2.587-5.766-5.768-5.766zm3.435 8.16c-.145.412-.724.756-1.196.804-.428.044-.984.062-1.58-.13-.393-.127-.887-.311-1.536-.612-1.071-.497-2.115-1.542-2.612-2.613-.23-.497-.417-1.127-.417-1.78s.22-1.25.612-1.63c.2-.2.434-.247.578-.247.144 0 .288.002.414.009.13.007.31.026.475.4.165.375.568 1.346.618 1.447.05.101.1.22.025.37-.075.148-.112.247-.225.37-.113.123-.238.274-.338.371-.113.108-.23.226-.1.448.13.22.58.956 1.246 1.547.854.76 1.57.994 1.795 1.108.225.112.358.093.493-.06.134-.154.577-.668.73-.895.153-.227.306-.192.518-.112.213.08 1.343.633 1.573.748.23.115.383.172.438.267.055.096.055.556-.09.968zM12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.523 0-10-4.477-10-10s4.477-10 10-10 10 4.477 10 10-4.477 10-10 10z" />
-              </svg>
-              Chat Now
+              <WhatsAppIcon size={40} className="w-10 h-10" />
             </WhatsAppLink>
           </div>
 

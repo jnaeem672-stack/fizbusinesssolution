@@ -4,11 +4,11 @@ import {
   Twitter,
   Instagram,
   Facebook,
-  Phone,
   Mail,
 } from 'lucide-react';
 import Logo from './Logo';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
+import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
 import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
 
@@ -26,7 +26,7 @@ const Footer = () => (
         href={WHATSAPP_URL}
         className="flex items-center gap-2 text-white/70 font-bold hover:text-[#25D366] transition-colors text-center"
       >
-        <Phone className="w-4 h-4 text-[#25D366] shrink-0" />
+        <WhatsAppIcon size={16} className="w-4 h-4" />
         WhatsApp: {WHATSAPP_NUMBER}
       </WhatsAppLink>
       <a
@@ -43,6 +43,7 @@ const Footer = () => (
       <Link href="/services" className="hover:text-white transition-colors">Services</Link>
       <Link href="/about" className="hover:text-white transition-colors">About</Link>
       <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
+      <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
     </div>
 
     <div className="flex gap-6 text-white/30">
