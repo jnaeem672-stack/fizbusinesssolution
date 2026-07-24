@@ -8,11 +8,11 @@ import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
 import CTASection from '@/components/home/CTASection';
 import StickyHelpBanner from '@/components/home/StickyHelpBanner';
-import { useOrderFormScroll } from '@/hooks/useOrderFormScroll';
+import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 
 export default function HomePage() {
   const [showHelper, setShowHelper] = useState(false);
-  useOrderFormScroll();
+  useSupportFormScroll();
 
   useEffect(() => {
     const handleScroll = () => {

@@ -4,15 +4,15 @@ import HomePage from '@/components/pages/HomePage';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
-  title: 'Assignment Help UK | Expert Academic Writing',
+  title: 'Ethical Academic Coaching & Research Support',
   description:
-    'Get AI-free, expert assignment help in UK, USA, Canada & Australia. Dissertations, essays, coursework — 100% original, on-time delivery. 10,000+ students trust us.',
-  alternates: { canonical: 'https://fizbussinesssolution.com/' },
+    'Build stronger academic and research skills through ethical coaching, draft feedback, proofreading, referencing support, and data-analysis tutoring.',
+  alternates: { canonical: 'https://fizbusinesssolutions.com/' },
   openGraph: {
-    title: 'Assignment Help UK | Expert Academic Writing | FizBussinessSolution',
+    title: 'Ethical Academic Coaching & Research Support | FIZ Business Solutions',
     description:
-      'Get AI-free, expert assignment help in UK, USA, Canada & Australia. Dissertations, essays, coursework — 100% original, on-time delivery.',
-    url: 'https://fizbussinesssolution.com',
+      'Learning-focused coaching, research guidance, draft feedback, proofreading, and data-analysis tutoring that preserve student authorship.',
+    url: 'https://fizbusinesssolutions.com',
     images: ['https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80'],
   },
 };

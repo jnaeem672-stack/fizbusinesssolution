@@ -1,66 +1,51 @@
 'use client';
 
-import { Star } from 'lucide-react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
+import { ShieldCheck, Ban, UserRoundCheck, DatabaseZap } from 'lucide-react';
+import Link from 'next/link';
 import SectionHeader from './ui/SectionHeader';
-import TestimonialCard from './testimonials/TestimonialCard';
 
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-const testimonials = [
+const promises = [
   {
-    name: 'Sarah M.',
-    country: '🇬🇧',
-    text: 'FizBussinessSolution saved my final semester. My dissertation was handled with such professionalism. 100% AI-free and beautifully written!',
-    rating: 5,
+    title: 'No Ghostwriting',
+    desc: 'We do not produce assignments, dissertations, or other assessed work for a learner to submit as their own.',
+    icon: Ban,
   },
   {
-    name: 'Priya K.',
-    country: '🇮🇳',
-    text: "The best assignment help service I've ever used. The writers are subject matter experts and follow all university guidelines to the letter.",
-    rating: 5,
+    title: 'No Fabricated Research',
+    desc: 'We do not invent participants, interviews, survey results, references, ethical approval, or statistical findings.',
+    icon: DatabaseZap,
   },
   {
-    name: 'James T.',
-    country: '🇨🇦',
-    text: 'Incredible support and timely delivery. They managed my engineering coursework 2 days before the deadline. Highly recommended!',
-    rating: 5,
+    title: 'No Impersonation',
+    desc: 'We do not access student portals, take tests, attend assessments, or communicate with institutions as the student.',
+    icon: UserRoundCheck,
   },
 ];
 
 const Testimonials = () => (
   <section className="py-20 md:py-28 bg-white">
     <div className="max-w-site mx-auto px-4">
-      <SectionHeader title="What Our Students Say" />
+      <SectionHeader
+        title="Our Academic Integrity Promise"
+        subtitle="Ethical support must preserve genuine learning, transparent authorship, and institutional rules."
+      />
 
-      <div className="flex items-center justify-center gap-1 text-yellow-400 mb-10 -mt-8">
-        <Star className="w-5 h-5 fill-current" />
-        <span className="font-bold text-navy text-sm md:text-base">4.8 / 5.0 Based on 10,000+ Reviews</span>
-      </div>
-
-      <div className="lg:hidden">
-        <Swiper
-          modules={[Autoplay, Pagination]}
-          spaceBetween={24}
-          slidesPerView={1}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
-          className="pb-12 !overflow-visible"
-        >
-          {testimonials.map((t, i) => (
-            <SwiperSlide key={t.name}>
-              <TestimonialCard {...t} index={i} animated={false} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      <div className="hidden lg:grid grid-cols-3 gap-8">
-        {testimonials.map((t, i) => (
-          <TestimonialCard key={t.name} {...t} index={i} />
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {promises.map(({ title, desc, icon: Icon }) => (
+          <article key={title} className="p-7 md:p-8 bg-gray-50 rounded-3xl border border-gray-100 hover:border-primary/30 transition-colors h-full">
+            <div className="w-12 h-12 rounded-xl bg-primary/10 text-primary flex items-center justify-center mb-5">
+              <Icon className="w-6 h-6" />
+            </div>
+            <h3 className="text-xl font-black text-navy mb-3">{title}</h3>
+            <p className="text-gray-600 leading-relaxed text-sm">{desc}</p>
+          </article>
         ))}
+      </div>
+
+      <div className="mt-10 text-center">
+        <Link href="/academic-integrity" className="inline-flex items-center gap-2 text-primary font-black uppercase tracking-widest text-xs hover:underline">
+          <ShieldCheck className="w-4 h-4" /> Read the full Academic Integrity Policy
+        </Link>
       </div>
     </div>
   </section>

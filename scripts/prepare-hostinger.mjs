@@ -42,7 +42,7 @@ copyDir(path.join(root, '.next', 'static'), path.join(deployDir, '.next', 'stati
 fs.writeFileSync(
   path.join(deployDir, 'HOSTINGER.txt'),
   [
-    'FizBussinessSolution — Hostinger deploy package',
+    'FIZ Business Solutions — Hostinger deploy package',
     '',
     '1. Upload ALL files in this folder to your Hostinger Node.js app directory.',
     '2. In hPanel → Websites → Node.js → set:',

@@ -37,9 +37,9 @@ const ContactForm = () => {
       className="bg-white p-6 md:p-10 lg:p-12 rounded-3xl shadow-xl shadow-gray-200/60 border border-gray-100 relative overflow-hidden"
     >
       <div className="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-      <h2 className="text-2xl md:text-3xl font-black text-navy mb-2 relative">General Help &amp; Inquiries</h2>
+      <h2 className="text-2xl md:text-3xl font-black text-navy mb-2 relative">General Questions &amp; Inquiries</h2>
       <p className="text-gray-500 text-sm mb-8 relative">
-        Not placing an order? Ask us anything — support, billing, revisions, or general questions. We&apos;ll reply within 24 hours.
+        Ask about our policies, services, privacy, billing, or website. For learning support, use the dedicated support-request form above.
       </p>
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <FormField<ContactFormData>
@@ -84,7 +84,7 @@ const ContactForm = () => {
           label="Message *"
           name="message"
           type="textarea"
-          placeholder="Describe your requirements in detail..."
+          placeholder="Write your message here..."
           register={register}
           errors={errors}
           colSpan="md:col-span-2"

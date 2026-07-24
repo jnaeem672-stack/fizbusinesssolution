@@ -9,13 +9,13 @@ import CookieConsent from '@/components/CookieConsent';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://fizbussinesssolution.com'),
+  metadataBase: new URL('https://fizbusinesssolutions.com'),
   title: {
-    default: 'Assignment Help UK | Expert Academic Writing | FizBussinessSolution',
-    template: '%s | FizBussinessSolution',
+    default: 'Ethical Academic Coaching & Research Support | FIZ Business Solutions',
+    template: '%s | FIZ Business Solutions',
   },
   description:
-    'Get AI-free, expert assignment help in UK, USA, Canada & Australia. Dissertations, essays, coursework — 100% original, on-time delivery.',
+    'Ethical academic coaching, research-methods tutoring, draft feedback, proofreading, referencing support, data-analysis tutoring, and professional communication support.',
   icons: {
     icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
     apple: [{ url: '/apple-icon', sizes: '180x180', type: 'image/png' }],
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_GB',
-    siteName: 'FizBussinessSolution',
+    siteName: 'FIZ Business Solutions',
   },
 };
 
@@ -36,14 +36,23 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'Organization',
-              name: 'FizBussinessSolution',
-              url: 'https://fizbussinesssolution.com',
-              logo: 'https://fizbussinesssolution.com/apple-icon',
+              '@type': 'ProfessionalService',
+              name: 'FIZ Business Solutions',
+              url: 'https://fizbusinesssolutions.com',
+              logo: 'https://fizbusinesssolutions.com/apple-icon',
+              description: 'Ethical academic coaching, research guidance, proofreading, developmental feedback, and professional communication support.',
+              serviceType: [
+                'Academic coaching',
+                'Research methods tutoring',
+                'Draft feedback',
+                'Proofreading',
+                'Referencing support',
+                'Data analysis tutoring',
+              ],
               contactPoint: {
                 '@type': 'ContactPoint',
                 telephone: '+971543800388',
-                contactType: 'customer service',
+                contactType: 'customer support',
                 availableLanguage: 'English',
               },
             }),

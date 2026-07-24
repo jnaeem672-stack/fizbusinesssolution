@@ -1,20 +1,31 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# FIZ Business Solutions Website
 
-# Run and deploy your AI Studio app
+Next.js website for ethical academic coaching, research guidance, developmental feedback, proofreading, data-analysis tutoring, and professional communication support.
 
-This contains everything you need to run your app locally.
+## Local development
 
-View your app in AI Studio: https://ai.studio/apps/652bbd93-eb51-4400-b041-7cd8c2ea500e
+1. Install Node.js 22 or a compatible version.
+2. Run `npm install`.
+3. Copy `.env.example` to `.env.local` and provide the SMTP settings.
+4. Run `npm run dev`.
+5. Open `http://localhost:3000`.
 
-## Run Locally
+## Required environment variables
 
-**Prerequisites:**  Node.js
+- `SMTP_HOST`
+- `SMTP_PORT`
+- `SMTP_SECURE`
+- `SMTP_USER`
+- `SMTP_PASS`
+- `MAIL_TO`
 
+Never commit real passwords, application-specific passwords, or API keys to GitHub.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## Checks
+
+- `npm run lint`
+- `npm run build`
+
+## Deployment
+
+The production website is deployed from the GitHub `main` branch through Hostinger auto-deployment. Configure the environment variables in Hostinger before redeploying.

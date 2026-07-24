@@ -24,6 +24,6 @@ export function formatDateTime(value?: string): string {
   }
 }
 
-export function generateOrderRef(): string {
+export function generateRequestRef(): string {
   return `FIZ-${Date.now().toString(36).toUpperCase()}`;
 }

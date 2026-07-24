@@ -4,7 +4,7 @@ import type { UploadedFile, UploadingFilesMap } from '@/types';
 
 const CLOUD_NAME = 'dn4pxyo3b';
 const UPLOAD_PRESET = 'fizbs_uploads';
-const ALLOWED_EXT = ['pdf', 'doc', 'docx', 'jpg', 'jpeg', 'png', 'zip'] as const;
+const ALLOWED_EXT = ['pdf', 'doc', 'docx', 'jpg', 'jpeg', 'png'] as const;
 const MAX_SIZE = 10 * 1024 * 1024;
 const MAX_FILES = 5;
 
@@ -24,7 +24,7 @@ export function useFileUpload() {
       return;
     }
     if (!ALLOWED_EXT.includes(fileExt as (typeof ALLOWED_EXT)[number])) {
-      toast.error('Only PDF, DOC, DOCX, JPG, PNG, ZIP allowed');
+      toast.error('Only PDF, DOC, DOCX, JPG, JPEG, and PNG files are allowed');
       return;
     }
 

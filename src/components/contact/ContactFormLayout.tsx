@@ -2,31 +2,30 @@
 
 import { motion } from 'framer-motion';
 import { Mail, ArrowRight, Paperclip, CheckCircle2 } from 'lucide-react';
-import OrderForm from '@/components/OrderForm';
+import SupportRequestForm from '@/components/SupportRequestForm';
 import SectionHeader from '@/components/ui/SectionHeader';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
 import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
 
-const perks = [
-  'Share assignment files via WhatsApp or email',
-  'Get a free quote within minutes',
-  '100% confidential — your data is never shared',
+const principles = [
+  'Tell us what you have completed and what you want to learn',
+  'Every request is checked for academic-integrity risks',
+  'Your learning materials and personal information are handled carefully',
 ];
 
 export default function ContactFormLayout() {
   return (
-    <section id="order-form" className="scroll-mt-[110px] py-12 md:py-16 bg-gray-50">
+    <section id="support-form" className="scroll-mt-[110px] py-12 md:py-16 bg-gray-50">
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
-          title="Place Your Order"
-          subtitle="Fill in the order form or reach us directly on WhatsApp and email — attach your files for a faster quote."
+          title="Request Learning Support"
+          subtitle="Use the form, WhatsApp, or email to explain your learning need. We will recommend a permitted form of coaching, tutoring, feedback, or proofreading."
           className="mb-10 md:mb-12"
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 items-start">
-          {/* WhatsApp + Email */}
           <div className="space-y-4 md:space-y-6 order-2 lg:order-1">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
@@ -37,17 +36,17 @@ export default function ContactFormLayout() {
               <div className="flex items-center gap-4 mb-4">
                 <WhatsAppIcon size={56} className="w-14 h-14" />
                 <div>
-                  <p className="text-[10px] font-black text-primary uppercase tracking-widest">Fastest Response</p>
+                  <p className="text-[10px] font-black text-primary uppercase tracking-widest">Quick Discussion</p>
                   <h3 className="text-xl font-black text-navy">Chat on WhatsApp</h3>
                 </div>
               </div>
               <p className="text-gray-500 text-sm mb-2 leading-relaxed">
-                Message us directly for instant support. Share your assignment details and get a quote within minutes.
+                Explain the skill, concept, research method, or draft issue you need help with. Do not send passwords or confidential participant information.
               </p>
               <p className="text-navy font-bold text-sm mb-5">{WHATSAPP_NUMBER}</p>
               <WhatsAppLink
                 href={WHATSAPP_URL}
-                aria-label="Open WhatsApp Chat"
+                aria-label="Open WhatsApp chat"
                 className="inline-flex items-center justify-center gap-2 w-full py-3 border border-gray-200 text-navy font-black text-xs uppercase tracking-widest rounded-xl hover:border-[#25D366] hover:text-[#25D366] transition-all"
               >
                 Open WhatsApp Chat
@@ -72,12 +71,11 @@ export default function ContactFormLayout() {
                 </div>
               </div>
               <p className="text-gray-500 text-sm mb-2 leading-relaxed">
-                Prefer email? Send us your requirements and{' '}
-                <span className="font-semibold text-navy">attach your files</span> — we reply within 24 hours, usually much sooner.
+                Email is suitable for detailed questions and permitted drafts. State what you have completed and the specific feedback or tutoring you need.
               </p>
               <div className="flex items-center gap-2 text-gray-500 text-xs mb-2">
                 <Paperclip className="w-4 h-4 text-primary shrink-0" />
-                PDF, Word, images &amp; other formats accepted
+                You may attach your own draft or relevant guidance
               </div>
               <p className="text-navy font-bold text-sm mb-5 break-all">{CONTACT_EMAIL}</p>
               <a
@@ -85,7 +83,7 @@ export default function ContactFormLayout() {
                 className="inline-flex items-center justify-center gap-2 w-full py-4 bg-primary text-white font-black text-xs uppercase tracking-widest rounded-xl shadow-lg shadow-primary/25 hover:brightness-110 transition-all"
               >
                 <Mail className="w-5 h-5" />
-                Send Email with Attachments
+                Send Email
                 <ArrowRight className="w-4 h-4" />
               </a>
             </motion.div>
@@ -99,9 +97,9 @@ export default function ContactFormLayout() {
             >
               <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:20px_20px]" />
               <div className="relative z-10">
-                <h4 className="font-black text-lg mb-4">Why contact us directly?</h4>
+                <h4 className="font-black text-lg mb-4">Before you contact us</h4>
                 <ul className="space-y-3">
-                  {perks.map((item) => (
+                  {principles.map((item) => (
                     <li key={item} className="flex items-start gap-2 text-sm text-white/80">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                       {item}
@@ -112,15 +110,14 @@ export default function ContactFormLayout() {
             </motion.div>
           </div>
 
-          {/* Order form */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
-            className="order-1 lg:order-2 bg-white rounded-2xl shadow-xl shadow-navy/5 border border-gray-100 p-6 sm:p-8 md:p-10 lg:sticky lg:top-[120px]"
+            className="order-1 lg:order-2 lg:sticky lg:top-[120px]"
           >
-            <OrderForm />
+            <SupportRequestForm />
           </motion.div>
         </div>
       </div>

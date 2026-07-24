@@ -6,7 +6,7 @@ import { usePathname, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import Logo from './Logo';
-import { ORDER_FORM_PATH, scrollToOrderForm } from '@/constants/orderNavigation';
+import { SUPPORT_FORM_PATH, scrollToSupportForm } from '@/constants/supportNavigation';
 import { MEGA_MENU_CATEGORIES } from '@/constants/servicesCatalog';
 
 interface NavLink {
@@ -28,12 +28,12 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleOrderNow = (e: MouseEvent<HTMLButtonElement>) => {
+  const handleSupportRequest = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    if (document.getElementById('order-form')) {
-      scrollToOrderForm();
+    if (document.getElementById('support-form')) {
+      scrollToSupportForm();
     } else {
-      router.push(ORDER_FORM_PATH);
+      router.push(SUPPORT_FORM_PATH);
     }
     setIsOpen(false);
   };
@@ -42,6 +42,7 @@ const Navbar = () => {
     { title: 'Home', path: '/' },
     { title: 'Services', path: '/services', mega: true },
     { title: 'About', path: '/about' },
+    { title: 'Integrity', path: '/academic-integrity' },
     { title: 'Contact', path: '/contact' },
   ];
 
@@ -109,10 +110,10 @@ const Navbar = () => {
 
         <div className="hidden lg:flex items-center gap-4">
           <button
-            onClick={handleOrderNow}
+            onClick={handleSupportRequest}
             className="px-8 py-3 bg-primary text-white font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:brightness-110 transition-all shadow-lg shadow-primary/30 flex items-center gap-2"
           >
-            Order Now <ArrowRight className="w-4 h-4" />
+            Request Support <ArrowRight className="w-4 h-4" />
           </button>
         </div>
 
@@ -160,10 +161,10 @@ const Navbar = () => {
 
               <div className="flex flex-col gap-4 mt-auto">
                 <button
-                  onClick={handleOrderNow}
+                  onClick={handleSupportRequest}
                   className="w-full py-4 text-center bg-primary text-white font-black uppercase tracking-widest rounded-xl shadow-lg shadow-primary/30"
                 >
-                  Order Now
+                  Request Support
                 </button>
               </div>
             </motion.div>

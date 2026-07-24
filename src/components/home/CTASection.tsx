@@ -2,10 +2,10 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, ShieldCheck, Clock, Star } from 'lucide-react';
+import { ArrowRight, ShieldCheck, BookOpenCheck, MessageSquareText } from 'lucide-react';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
-import { ORDER_FORM_PATH } from '@/constants/orderNavigation';
+import { SUPPORT_FORM_PATH } from '@/constants/supportNavigation';
 import { WHATSAPP_URL } from '@/constants/whatsapp';
 
 export interface CTASectionProps {
@@ -15,9 +15,9 @@ export interface CTASectionProps {
 }
 
 const CTASection = ({
-  badge = 'Ready to Excel?',
-  title = 'Get Your Assignment Done by Experts Today',
-  subtitle = 'Join 10,000+ students who trust us for AI-free, plagiarism-free academic writing with guaranteed on-time delivery.',
+  badge = 'Build Your Skills',
+  title = 'Need Help Understanding or Improving Your Work?',
+  subtitle = 'Tell us what you have completed and where you are stuck. We will recommend an ethical form of coaching, tutoring, feedback, or proofreading.',
 }: CTASectionProps) => (
   <section className="relative py-20 md:py-28 overflow-hidden bg-navy">
     <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy" />
@@ -36,38 +36,30 @@ const CTASection = ({
         <span className="inline-block px-4 py-1.5 bg-white/10 backdrop-blur-md text-primary text-xs font-black uppercase tracking-widest rounded-full mb-6 border border-white/10">
           {badge}
         </span>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 tracking-tight leading-tight">
-          {title}
-        </h2>
-        <p className="text-gray-300 text-base md:text-lg mb-10 leading-relaxed">
-          {subtitle}
-        </p>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white mb-5 tracking-tight leading-tight">{title}</h2>
+        <p className="text-gray-300 text-base md:text-lg mb-10 leading-relaxed">{subtitle}</p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
           <Link
-            href={ORDER_FORM_PATH}
+            href={SUPPORT_FORM_PATH}
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl text-base shadow-xl shadow-primary/40 hover:brightness-110 hover:scale-[1.03] active:scale-[0.97] transition-all w-full sm:w-auto min-w-[220px]"
           >
-            Order My Assignment <ArrowRight className="w-5 h-5" />
+            Request Learning Support <ArrowRight className="w-5 h-5" />
           </Link>
-          <WhatsAppLink
-            href={WHATSAPP_URL}
-            aria-label="Chat on WhatsApp"
-            className="inline-flex hover:scale-105 active:scale-95 transition-transform"
-          >
+          <WhatsAppLink href={WHATSAPP_URL} aria-label="Discuss learning support on WhatsApp" className="inline-flex hover:scale-105 active:scale-95 transition-transform">
             <WhatsAppIcon size={48} className="w-12 h-12" />
           </WhatsAppLink>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-white/50">
           <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider">
-            <Star className="w-4 h-4 text-primary" /> 4.8/5 Rated
+            <ShieldCheck className="w-4 h-4 text-primary" /> Integrity First
           </span>
           <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider">
-            <ShieldCheck className="w-4 h-4 text-primary" /> AI-Free Guarantee
+            <BookOpenCheck className="w-4 h-4 text-primary" /> Student Authored
           </span>
           <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider">
-            <Clock className="w-4 h-4 text-primary" /> 24/7 Support
+            <MessageSquareText className="w-4 h-4 text-primary" /> Developmental Feedback
           </span>
         </div>
       </motion.div>

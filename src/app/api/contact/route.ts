@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { sendMail } from '@/lib/mailer';
+import { getMailRecipient, sendMail } from '@/lib/mailer';
 import { adminContactEmail, userContactConfirmation } from '@/lib/email-templates';
-import { mailCredentials } from '@/constants/mailCredentials';
 import type { ContactFormData } from '@/types';
 
 export async function POST(request: NextRequest) {
@@ -18,7 +17,7 @@ export async function POST(request: NextRequest) {
     }
 
     await sendMail({
-      to: mailCredentials.to,
+      to: getMailRecipient(),
       subject: `[Contact] ${subject}`,
       html: adminContactEmail({ name, email, subject, message }),
       replyTo: email,
@@ -26,7 +25,7 @@ export async function POST(request: NextRequest) {
 
     await sendMail({
       to: email,
-      subject: 'We Received Your Message — FizBussinessSolution',
+      subject: 'We Received Your Message — FIZ Business Solutions',
       html: userContactConfirmation({ name }),
     });
 

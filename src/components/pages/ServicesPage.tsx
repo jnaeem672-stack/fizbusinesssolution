@@ -3,100 +3,103 @@
 import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import {
-  BookOpen, Scroll, FileText, Stethoscope, Scale, Settings,
-  ChevronRight, CheckCircle2, Search,
+  GraduationCap,
+  BookOpenCheck,
+  MessageSquareText,
+  SpellCheck2,
+  BarChart3,
+  Presentation,
+  ChevronRight,
+  CheckCircle2,
+  Search,
   type LucideIcon,
 } from 'lucide-react';
 import PageHero from '@/components/ui/PageHero';
 import SectionHeader from '@/components/ui/SectionHeader';
-import OrderSection from '@/components/home/OrderSection';
+import SupportRequestSection from '@/components/home/SupportRequestSection';
 import CTASection from '@/components/home/CTASection';
-import { ORDER_FORM_HASH, scrollToOrderForm } from '@/constants/orderNavigation';
-import { useOrderFormScroll } from '@/hooks/useOrderFormScroll';
+import { SUPPORT_FORM_HASH, scrollToSupportForm } from '@/constants/supportNavigation';
+import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 import { ALL_SERVICES, SERVICE_CATEGORIES, type ServiceCategory } from '@/constants/servicesCatalog';
 
 const featuredServices: { name: string; icon: LucideIcon; badge: string; desc: string; points: string[] }[] = [
-  { name: 'Assignment Help', icon: BookOpen, badge: 'Most Popular', desc: 'Get top grades with our human-written assignments tailored to your specific requirements.', points: ['AI-Free Content', 'On-Time Delivery', 'Plagiarism Report'] },
-  { name: 'Dissertation Writing', icon: Scroll, badge: 'Top Rated', desc: 'Comprehensive dissertation support from expert writers with years of research experience.', points: ['Specialist Writers', '24/7 Support', 'Unlimited Revisions'] },
-  { name: 'Nursing Assignment', icon: Stethoscope, badge: 'Specialized', desc: 'Expert help for clinical case studies and healthcare papers according to UK standards.', points: ['Verified Experts', 'Zero AI Usage', 'On-Time Results'] },
-  { name: 'CIPD Help', icon: FileText, badge: 'Professional', desc: 'Specialized support for CIPD Level 3, 5, and 7 assignments across all HR modules.', points: ['Subject Experts', 'Money-Back Guarantee', 'Confidential'] },
-  { name: 'Law Assignment', icon: Scale, badge: 'New', desc: 'In-depth legal analysis and case studies handled by qualified legal professionals.', points: ['Legal Formatting', 'Proper Citations', 'Human Touch'] },
-  { name: 'Engineering Assignment', icon: Settings, badge: 'Technical', desc: 'Solving complex engineering problems and technical reports with accuracy and precision.', points: ['Precision Work', 'Research Based', 'Verified PhDs'] },
+  { name: 'Academic Coaching', icon: GraduationCap, badge: 'Core Service', desc: 'One-to-one guidance that helps learners understand tasks, organise ideas, and strengthen academic skills.', points: ['Student-led work', 'Clear explanations', 'Practical next steps'] },
+  { name: 'Dissertation Coaching', icon: BookOpenCheck, badge: 'Research', desc: 'Structured support with research focus, literature, methodology, chapter planning, and supervision preparation.', points: ['Research questions', 'Method choices', 'Chapter planning'] },
+  { name: 'Draft Feedback', icon: MessageSquareText, badge: 'Developmental', desc: 'Constructive review of student-written drafts covering argument, structure, evidence, analysis, and clarity.', points: ['No ghostwriting', 'Revision priorities', 'Actionable comments'] },
+  { name: 'Proofreading', icon: SpellCheck2, badge: 'Language', desc: 'Language-focused editing of student-authored work within institutional rules and declared support boundaries.', points: ['Grammar and clarity', 'Consistency', 'Authorship preserved'] },
+  { name: 'Data Analysis Tutoring', icon: BarChart3, badge: 'Technical', desc: 'Guided practice in SPSS, Excel, NVivo, Python, and the interpretation and presentation of results.', points: ['Step-by-step learning', 'Interpretation skills', 'No fabricated data'] },
+  { name: 'Presentation Coaching', icon: Presentation, badge: 'Communication', desc: 'Improve slide structure, visual communication, speaker notes, timing, and confident delivery.', points: ['Slide clarity', 'Delivery practice', 'Audience focus'] },
 ];
 
 function filterCategories(searchTerm: string): ServiceCategory[] {
-  const q = searchTerm.trim().toLowerCase();
-  if (!q) return SERVICE_CATEGORIES;
+  const query = searchTerm.trim().toLowerCase();
+  if (!query) return SERVICE_CATEGORIES;
 
   return SERVICE_CATEGORIES.map((category) => ({
     ...category,
     services: category.services.filter(
       (service) =>
-        service.name.toLowerCase().includes(q) ||
-        service.desc.toLowerCase().includes(q) ||
-        service.areas.toLowerCase().includes(q) ||
-        category.title.toLowerCase().includes(q)
+        service.name.toLowerCase().includes(query) ||
+        service.desc.toLowerCase().includes(query) ||
+        service.areas.toLowerCase().includes(query) ||
+        category.title.toLowerCase().includes(query)
     ),
   })).filter((category) => category.services.length > 0);
 }
 
 export default function ServicesPage() {
   const [searchTerm, setSearchTerm] = useState('');
-  useOrderFormScroll();
+  useSupportFormScroll();
 
   const filteredCategories = useMemo(() => filterCategories(searchTerm), [searchTerm]);
-  const totalResults = filteredCategories.reduce((sum, c) => sum + c.services.length, 0);
-
-  const handleOrder = () => {
-    scrollToOrderForm();
-  };
+  const totalResults = filteredCategories.reduce((sum, category) => sum + category.services.length, 0);
 
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <PageHero
-        title="Our Academic Writing Services"
-        subtitle="Expert-written, AI-free academic help across all subjects and levels. Join 10,000+ students who trust us for top grades."
+        title="Ethical Academic Coaching & Research Support"
+        subtitle="Tutoring, feedback, proofreading, and research guidance that strengthen your own skills without replacing your authorship."
         breadcrumb="Services"
-        badge="26+ Premium Services"
+        badge="Learning-Focused Support"
         backgroundImage="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600&q=80"
-        highlights={['UK Writing Services', 'Subject Specialists', 'Diploma & Degree Help']}
-        ctaLabel="Place Your Order"
-        ctaHref={ORDER_FORM_HASH}
+        highlights={['Academic Coaching', 'Research Guidance', 'Draft Feedback']}
+        ctaLabel="Request Learning Support"
+        ctaHref={SUPPORT_FORM_HASH}
       />
 
-      <OrderSection />
+      <SupportRequestSection />
 
       <main className="flex-grow">
         <section className="py-16 md:py-24 bg-navy relative">
           <div className="max-w-site mx-auto px-4">
             <SectionHeader
-              title="Highlight Services"
-              subtitle="Our most popular academic writing services — trusted by thousands of students worldwide."
+              title="Featured Support Services"
+              subtitle="Common forms of ethical support designed to improve understanding, confidence, and independent performance."
               light
               className="mb-12 md:mb-16"
             />
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {featuredServices.map((s, i) => (
-                <motion.div key={s.name} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.1 }} whileHover={{ y: -10 }} className="bg-white p-8 rounded-2xl shadow-2xl relative border-l-4 border-primary group">
-                  <div className="absolute top-6 right-8 px-3 py-1 bg-primary text-white text-[9px] font-black uppercase tracking-widest rounded-full shadow-lg">{s.badge}</div>
+              {featuredServices.map((service, index) => (
+                <motion.div key={service.name} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.1 }} whileHover={{ y: -10 }} className="bg-white p-8 rounded-2xl shadow-2xl relative border-l-4 border-primary group">
+                  <div className="absolute top-6 right-8 px-3 py-1 bg-primary text-white text-[9px] font-black uppercase tracking-widest rounded-full shadow-lg">{service.badge}</div>
                   <div className="w-14 h-14 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all">
-                    <s.icon className="w-8 h-8" />
+                    <service.icon className="w-8 h-8" />
                   </div>
-                  <h3 className="text-2xl font-black text-navy mb-4">{s.name}</h3>
-                  <p className="text-gray-500 text-sm mb-6 leading-relaxed">{s.desc}</p>
+                  <h3 className="text-2xl font-black text-navy mb-4">{service.name}</h3>
+                  <p className="text-gray-500 text-sm mb-6 leading-relaxed">{service.desc}</p>
                   <ul className="space-y-3 mb-8">
-                    {s.points.map((p) => (
-                      <li key={p} className="flex items-center gap-2 text-xs font-bold text-navy">
-                        <CheckCircle2 className="w-4 h-4 text-primary" /> {p}
+                    {service.points.map((point) => (
+                      <li key={point} className="flex items-center gap-2 text-xs font-bold text-navy">
+                        <CheckCircle2 className="w-4 h-4 text-primary" /> {point}
                       </li>
                     ))}
                   </ul>
                   <button
                     type="button"
-                    onClick={handleOrder}
+                    onClick={scrollToSupportForm}
                     className="w-full py-4 bg-primary text-white font-black uppercase tracking-widest rounded-lg flex items-center justify-center gap-2 text-xs shadow-xl shadow-primary/20 hover:brightness-110 transition-all"
                   >
-                    Order Now <ChevronRight className="w-4 h-4" />
+                    Discuss This Service <ChevronRight className="w-4 h-4" />
                   </button>
                 </motion.div>
               ))}
@@ -106,8 +109,8 @@ export default function ServicesPage() {
 
         <section className="py-16 md:py-20 max-w-site mx-auto px-4">
           <SectionHeader
-            title="Browse by Category"
-            subtitle={`${ALL_SERVICES.length} services across UK writing, subject-specific help, and diploma programmes.`}
+            title="Browse All Support Areas"
+            subtitle={`${ALL_SERVICES.length} learning-support services across academic skills, research methods, data analysis, and professional communication.`}
             className="mb-10"
           />
 
@@ -115,59 +118,32 @@ export default function ServicesPage() {
             <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400" />
             <input
               type="text"
-              placeholder="Search services (e.g. Nursing, CIPD, Essay)..."
+              placeholder="Search services (e.g. SPSS, proofreading, literature review)..."
               value={searchTerm}
-              onChange={(e) => setSearchTerm(e.target.value)}
+              onChange={(event) => setSearchTerm(event.target.value)}
               className="w-full pl-12 pr-4 py-4 rounded-xl border border-gray-200 focus:border-primary focus:ring-0 outline-none transition-all shadow-sm bg-white"
             />
           </div>
 
           {totalResults > 0 ? (
             <div className="space-y-16">
-              {filteredCategories.map((category, catIndex) => (
-                <motion.div
-                  key={category.title}
-                  initial={{ opacity: 0, y: 24 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: catIndex * 0.05 }}
-                >
+              {filteredCategories.map((category, categoryIndex) => (
+                <motion.div key={category.title} initial={{ opacity: 0, y: 24 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: categoryIndex * 0.05 }}>
                   <div className="mb-8">
-                    <h3 className="text-primary font-black text-sm uppercase tracking-[0.2em] mb-3">
-                      {category.title}
-                    </h3>
-                    <div className="h-0.5 w-full max-w-xs bg-primary/20">
-                      <div className="h-full w-16 bg-primary" />
-                    </div>
+                    <h3 className="text-primary font-black text-sm uppercase tracking-[0.2em] mb-3">{category.title}</h3>
+                    <div className="h-0.5 w-full max-w-xs bg-primary/20"><div className="h-full w-16 bg-primary" /></div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-                    {category.services.map((service, i) => (
-                      <motion.article
-                        key={service.id}
-                        initial={{ opacity: 0, y: 16 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: i * 0.03 }}
-                        className="group bg-white rounded-2xl border border-gray-100 p-5 md:p-6 shadow-sm hover:shadow-lg hover:border-primary/20 transition-all flex flex-col h-full"
-                      >
+                    {category.services.map((service, index) => (
+                      <motion.article key={service.id} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.03 }} className="group bg-white rounded-2xl border border-gray-100 p-5 md:p-6 shadow-sm hover:shadow-lg hover:border-primary/20 transition-all flex flex-col h-full">
                         <div className="flex items-start justify-between gap-3 mb-3">
-                          <h4 className="font-black text-navy text-base leading-snug group-hover:text-primary transition-colors">
-                            {service.name}
-                          </h4>
-                          <span className="shrink-0 px-2 py-0.5 bg-primary/10 text-primary text-[9px] font-black uppercase tracking-wider rounded-full">
-                            {service.areas}
-                          </span>
+                          <h4 className="font-black text-navy text-base leading-snug group-hover:text-primary transition-colors">{service.name}</h4>
+                          <span className="shrink-0 px-2 py-0.5 bg-primary/10 text-primary text-[9px] font-black uppercase tracking-wider rounded-full">{service.areas}</span>
                         </div>
-                        <p className="text-gray-500 text-sm leading-relaxed mb-5 flex-grow">
-                          {service.desc}
-                        </p>
-                        <button
-                          type="button"
-                          onClick={handleOrder}
-                          className="inline-flex items-center gap-1.5 text-primary font-black text-[10px] uppercase tracking-widest hover:gap-2.5 transition-all mt-auto"
-                        >
-                          Order Now <ChevronRight className="w-4 h-4" />
+                        <p className="text-gray-500 text-sm leading-relaxed mb-5 flex-grow">{service.desc}</p>
+                        <button type="button" onClick={scrollToSupportForm} className="inline-flex items-center gap-1.5 text-primary font-black text-[10px] uppercase tracking-widest hover:gap-2.5 transition-all mt-auto">
+                          Request Support <ChevronRight className="w-4 h-4" />
                         </button>
                       </motion.article>
                     ))}
@@ -177,17 +153,15 @@ export default function ServicesPage() {
             </div>
           ) : (
             <div className="text-center py-20 bg-white rounded-3xl border border-gray-100">
-              <p className="text-gray-400 font-bold uppercase tracking-widest text-sm">
-                No services found matching &quot;{searchTerm}&quot;
-              </p>
+              <p className="text-gray-400 font-bold uppercase tracking-widest text-sm">No services found matching &quot;{searchTerm}&quot;</p>
             </div>
           )}
         </section>
 
         <CTASection
-          badge="Start Today"
-          title="Ready to Get Expert Help?"
-          subtitle="Join 10,000+ students who trust FizBussinessSolution for original, AI-free academic success."
+          badge="Develop Your Skills"
+          title="Choose Support That Keeps You in Control"
+          subtitle="We will help you identify the right next step while protecting your authorship and following academic-integrity boundaries."
         />
       </main>
     </div>

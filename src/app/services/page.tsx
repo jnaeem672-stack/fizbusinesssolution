@@ -4,9 +4,9 @@ import ServicesPage from '@/components/pages/ServicesPage';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
-  title: 'Academic Writing Services | Dissertation, Essay, Assignment Help',
-  description: '35+ academic writing services including dissertation, essay, nursing, CIPD, law assignment help. AI-free guaranteed.',
-  alternates: { canonical: 'https://fizbussinesssolution.com/services' },
+  title: 'Academic Coaching, Research Guidance & Draft Feedback',
+  description: 'Explore ethical academic coaching, dissertation guidance, proofreading, referencing support, research-methods tutoring, and data-analysis tutoring.',
+  alternates: { canonical: 'https://fizbusinesssolutions.com/services' },
 };
 
 export default function Page() {

@@ -12,51 +12,52 @@ export interface ServiceCategory {
 
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
-    title: 'UK Writing Services',
+    title: 'Academic Skills & Feedback',
     services: [
-      { id: 1, name: 'Academic Writing', desc: 'Professional academic writing across all subjects and levels.', areas: 'All Subjects' },
-      { id: 2, name: 'Dissertation Writing', desc: 'Full dissertation support from proposal to final submission.', areas: 'Masters / PhD' },
-      { id: 3, name: 'Essay Writing', desc: 'Well-researched essays in APA, MLA, Harvard and other styles.', areas: 'Arts / Humanities' },
-      { id: 4, name: 'Homework Help', desc: 'Quick, accurate help for daily homework and short assignments.', areas: 'K12 / College' },
-      { id: 5, name: 'Thesis Writing', desc: 'Comprehensive thesis preparation with research and formatting.', areas: 'Academic Research' },
-      { id: 6, name: 'Research Paper', desc: 'In-depth research papers with proper citations and references.', areas: 'Scientific / Academic' },
-      { id: 7, name: 'Case Study', desc: 'Analytical case study reports for business, law and healthcare.', areas: 'Business / Law' },
-      { id: 8, name: 'Coursework Writing', desc: 'Structured coursework tailored to your module requirements.', areas: 'University Level' },
-      { id: 9, name: 'Proofreading & Editing', desc: 'Grammar, clarity, structure and style improvements on any document.', areas: 'All Documents' },
-      { id: 10, name: 'Online Exam Help', desc: 'Expert assistance for online exams, quizzes and timed assessments.', areas: 'Real-time Support' },
+      { id: 1, name: 'Academic Writing Coaching', desc: 'Learn how to build clear arguments, paragraphs, introductions, discussions, and conclusions.', areas: 'Writing Skills' },
+      { id: 2, name: 'Assessment Brief Guidance', desc: 'Understand command words, marking criteria, learning outcomes, and assessment expectations.', areas: 'Planning' },
+      { id: 3, name: 'Draft Review & Developmental Feedback', desc: 'Receive comments on structure, logic, evidence, critical analysis, and revision priorities in your own draft.', areas: 'Draft Feedback' },
+      { id: 4, name: 'Proofreading & Language Editing', desc: 'Improve grammar, punctuation, spelling, readability, and consistency without replacing authorship.', areas: 'Language' },
+      { id: 5, name: 'Referencing Support', desc: 'Learn citation principles and improve consistency in Harvard, APA, IEEE, OSCOLA, and other styles.', areas: 'Referencing' },
+      { id: 6, name: 'Critical Reading & Source Evaluation', desc: 'Develop skills for judging credibility, relevance, methodology, limitations, and evidence quality.', areas: 'Critical Skills' },
+      { id: 7, name: 'Study Skills & Time Management', desc: 'Build practical routines for reading, note-taking, planning, revision, and managing deadlines.', areas: 'Study Skills' },
+      { id: 8, name: 'Presentation Coaching', desc: 'Improve slide structure, visual clarity, speaker notes, timing, and delivery practice.', areas: 'Presentations' },
     ],
   },
   {
-    title: 'Subjective Services',
+    title: 'Research & Data Skills',
     services: [
-      { id: 11, name: 'Management Assignment', desc: 'MBA and business management assignments by industry experts.', areas: 'Business / MBA' },
-      { id: 12, name: 'Finance Assignment', desc: 'Financial analysis, modelling and report writing support.', areas: 'Finance / Accounting' },
-      { id: 13, name: 'Economics Assignment', desc: 'Micro, macro and econometrics assignments with data analysis.', areas: 'Economics' },
-      { id: 14, name: 'Accounting Help', desc: 'Accounting problems, ledgers, reports and case-based tasks.', areas: 'Accounting' },
-      { id: 15, name: 'Business Assignment', desc: 'Business plans, strategy papers and corporate case studies.', areas: 'Business Studies' },
-      { id: 16, name: 'Engineering Assignment', desc: 'Technical reports, calculations and engineering problem sets.', areas: 'Engineering' },
-      { id: 17, name: 'Marketing Assignment', desc: 'Marketing plans, campaigns and consumer behaviour analysis.', areas: 'Marketing' },
-      { id: 18, name: 'HRM Assignment', desc: 'HR policies, organisational behaviour and people management tasks.', areas: 'Human Resources' },
-      { id: 19, name: 'Nursing Assignment', desc: 'Clinical case studies and healthcare papers to UK nursing standards.', areas: 'Nursing / Medicine' },
-      { id: 20, name: 'Strategic Marketing', desc: 'Strategic marketing analysis, SWOT and competitive positioning.', areas: 'Marketing Strategy' },
+      { id: 9, name: 'Dissertation Coaching', desc: 'Guidance on research focus, questions, literature, methodology, chapter planning, and supervision preparation.', areas: 'Dissertation' },
+      { id: 10, name: 'Research Proposal Coaching', desc: 'Develop a feasible topic, rationale, objectives, research questions, method, ethics, and timeline.', areas: 'Research Design' },
+      { id: 11, name: 'Literature Review Guidance', desc: 'Learn search strategies, screening, literature matrices, synthesis, thematic organisation, and gap identification.', areas: 'Literature Review' },
+      { id: 12, name: 'Qualitative Research Tutoring', desc: 'Understand interviews, focus groups, sampling, ethics, coding, reflexivity, and qualitative quality criteria.', areas: 'Qualitative' },
+      { id: 13, name: 'Quantitative Research Tutoring', desc: 'Learn variables, hypotheses, sampling, measurement, statistical tests, assumptions, and interpretation.', areas: 'Quantitative' },
+      { id: 14, name: 'Mixed-Methods Guidance', desc: 'Evaluate when and how qualitative and quantitative approaches can be integrated coherently.', areas: 'Mixed Methods' },
+      { id: 15, name: 'Thematic Analysis Tutoring', desc: 'Develop coding, theme construction, review, naming, interpretation, and transparent reporting skills.', areas: 'Analysis' },
+      { id: 16, name: 'SPSS Tutoring', desc: 'Guided practice in data preparation, descriptive statistics, tests, outputs, and interpretation.', areas: 'SPSS' },
+      { id: 17, name: 'Excel Data Analysis Tutoring', desc: 'Learn data cleaning, formulas, pivot tables, charts, descriptive analysis, and reporting.', areas: 'Excel' },
+      { id: 18, name: 'NVivo Tutoring', desc: 'Learn project setup, coding, memos, queries, theme development, and evidence organisation.', areas: 'NVivo' },
+      { id: 19, name: 'Python Data Analysis Tutoring', desc: 'Guided learning in data preparation, analysis, visualisation, and interpretation using Python.', areas: 'Python' },
     ],
   },
   {
-    title: 'Diploma & Degrees',
+    title: 'Subject & Professional Learning',
     services: [
-      { id: 21, name: 'CIPD Assignment', desc: 'CIPD Level 3, 5 and 7 HR and L&D assignment support.', areas: 'CIPD / HR' },
-      { id: 22, name: 'HND Assignment Help', desc: 'Higher National Diploma coursework across all HND modules.', areas: 'HND' },
-      { id: 23, name: 'HNC Assignment Help', desc: 'Higher National Certificate assignments with vocational focus.', areas: 'HNC' },
-      { id: 24, name: 'ATHE Assignment', desc: 'ATHE diploma and extended diploma assignment assistance.', areas: 'ATHE' },
-      { id: 25, name: 'BTEC Assignment', desc: 'BTEC Level 3–5 assignments with criteria-mapped answers.', areas: 'BTEC' },
-      { id: 26, name: 'British University Help', desc: 'Dedicated support for UK university standards and rubrics.', areas: 'UK Universities' },
+      { id: 20, name: 'Business & Management Tutoring', desc: 'Support with business concepts, strategy models, organisational analysis, and evidence-based application.', areas: 'Business' },
+      { id: 21, name: 'Marketing & Strategy Tutoring', desc: 'Understand consumer behaviour, market analysis, segmentation, positioning, strategy, and evaluation.', areas: 'Marketing' },
+      { id: 22, name: 'Finance & Accounting Concepts', desc: 'Guidance on financial statements, ratios, valuation, budgeting, investment appraisal, and interpretation.', areas: 'Finance' },
+      { id: 23, name: 'Public Health & Healthcare Study Support', desc: 'Develop understanding of evidence appraisal, health frameworks, policy analysis, and research methods.', areas: 'Health' },
+      { id: 24, name: 'Law Study Skills & OSCOLA', desc: 'Learn case reading, issue identification, legal reasoning, authority use, and OSCOLA referencing.', areas: 'Law' },
+      { id: 25, name: 'Computing & Technology Tutoring', desc: 'Support with concepts, project planning, documentation, data, systems analysis, and technical communication.', areas: 'Computing' },
+      { id: 26, name: 'Engineering Problem-Solving Guidance', desc: 'Develop structured approaches to technical problems, calculations, assumptions, and report presentation.', areas: 'Engineering' },
+      { id: 27, name: 'Professional Business Writing', desc: 'Legitimate support for reports, proposals, website copy, presentations, and non-assessed professional documents.', areas: 'Professional' },
     ],
   },
 ];
 
-export const ALL_SERVICES: ServiceItem[] = SERVICE_CATEGORIES.flatMap((c) => c.services);
+export const ALL_SERVICES: ServiceItem[] = SERVICE_CATEGORIES.flatMap((category) => category.services);
 
 export const MEGA_MENU_CATEGORIES = SERVICE_CATEGORIES.map((category) => ({
   title: category.title,
-  links: category.services.map((s) => s.name),
+  links: category.services.map((service) => service.name),
 }));

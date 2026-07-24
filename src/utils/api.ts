@@ -1,6 +1,9 @@
-import type { ApiResponse, ContactFormData, OrderFormData } from '@/types';
+import type { ApiResponse, ContactFormData, SupportRequestFormData } from '@/types';
 
-async function request<T extends ApiResponse>(endpoint: string, data: ContactFormData | OrderFormData): Promise<T> {
+async function request<T extends ApiResponse>(
+  endpoint: string,
+  data: ContactFormData | SupportRequestFormData
+): Promise<T> {
   const response = await fetch(endpoint, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -19,5 +22,5 @@ async function request<T extends ApiResponse>(endpoint: string, data: ContactFor
 export const sendContactEmail = (data: ContactFormData) =>
   request<Extract<ApiResponse, { success: true }>>('/api/contact', data);
 
-export const sendOrderEmail = (data: OrderFormData) =>
-  request<Extract<ApiResponse, { success: true }>>('/api/order', data);
+export const sendSupportRequestEmail = (data: SupportRequestFormData) =>
+  request<Extract<ApiResponse, { success: true }>>('/api/support-request', data);

@@ -36,7 +36,7 @@ export default function AppleIcon() {
                 marginTop: -4,
               }}
             >
-              Premium Academic Help
+              Learning & Research Support
             </span>
           </div>
         </div>

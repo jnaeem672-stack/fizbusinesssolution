@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
-import { ORDER_FORM_PATH } from '@/constants/orderNavigation';
+import { SUPPORT_FORM_PATH } from '@/constants/supportNavigation';
 import type { ServiceCardProps } from '@/types';
 
 const ServiceCard = ({ name, desc, icon: Icon, index }: ServiceCardProps) => (
@@ -21,10 +21,10 @@ const ServiceCard = ({ name, desc, icon: Icon, index }: ServiceCardProps) => (
     <h3 className="text-navy font-bold text-lg mb-3">{name}</h3>
     <p className="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">{desc}</p>
     <Link
-      href={ORDER_FORM_PATH}
+      href={SUPPORT_FORM_PATH}
       className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wider hover:gap-3 transition-all mt-auto"
     >
-      Order Now <ChevronRight className="w-4 h-4" />
+      Discuss This Service <ChevronRight className="w-4 h-4" />
     </Link>
   </motion.div>
 );

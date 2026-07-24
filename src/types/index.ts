@@ -1,6 +1,7 @@
 import type { FieldErrors, FieldValues, Path, RegisterOptions, UseFormRegister } from 'react-hook-form';
 import type { LucideIcon } from 'lucide-react';
 import type { ReactNode } from 'react';
+import type { Attachment } from 'nodemailer/lib/mailer';
 
 export interface ContactFormData {
   name: string;
@@ -15,21 +16,23 @@ export interface UploadedFile {
   size: string;
 }
 
-export interface OrderFormData {
+export interface SupportRequestFormData {
   fullName: string;
   email: string;
   countryCode?: string;
   phone: string;
   studyCountry?: string;
-  assignmentTopic: string;
+  supportTopic: string;
   department?: string;
   subject?: string;
-  deadline: string;
+  preferredDate?: string;
   educationLevel?: string;
-  paperType?: string;
-  pagesWords?: string;
+  supportType?: string;
+  documentLength?: string;
   references?: string;
-  requirements?: string;
+  currentProgress?: string;
+  learningGoals?: string;
+  academicIntegrityConfirmed: boolean;
   uploadedFiles?: UploadedFile[];
 }
 
@@ -60,8 +63,6 @@ export interface UploadingFile {
 
 export type UploadingFilesMap = Record<string, UploadingFile>;
 
-import type { Attachment } from 'nodemailer/lib/mailer';
-
 export interface SendMailOptions {
   to: string;
   subject: string;
@@ -83,10 +84,10 @@ export interface UserContactConfirmationData {
   name: string;
 }
 
-export interface UserOrderConfirmationData {
+export interface UserSupportRequestConfirmationData {
   fullName: string;
-  assignmentTopic: string;
-  deadline?: string;
+  supportTopic: string;
+  preferredDate?: string;
 }
 
 export interface LogoProps {
@@ -153,15 +154,6 @@ export interface ServiceCardProps {
   index: number;
 }
 
-export interface TestimonialCardProps {
-  name: string;
-  country: string;
-  text: string;
-  rating: number;
-  index: number;
-  animated?: boolean;
-}
-
 export interface FeatureCardProps {
   title: string;
   desc: string;
@@ -191,17 +183,6 @@ export interface FileUploadZoneProps {
   onFileChange: (files: FileList | File[]) => void;
   onRemove: (index: number) => void;
   maxFiles?: number;
-}
-
-export interface ContactCardProps {
-  icon: LucideIcon;
-  label: string;
-  value: string;
-  link?: string;
-  color: string;
-  desc: string;
-  actionLabel?: string;
-  index?: number;
 }
 
 export interface AnimatedCounterProps {

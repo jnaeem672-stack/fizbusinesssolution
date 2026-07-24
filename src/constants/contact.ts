@@ -1,8 +1,8 @@
 export const CONTACT_EMAIL = 'jnaeem672@gmail.com';
 
-const defaultSubject = 'Inquiry from FizBussinessSolution Website';
+const defaultSubject = 'Learning support inquiry from FIZ Business Solutions website';
 const defaultBody =
-  'Hello,\n\nI would like to inquire about your academic writing services.\n\n';
+  'Hello,\n\nI would like to discuss ethical academic coaching or research support. I have completed the following work so far:\n\n';
 
 export const MAILTO_URL = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(defaultSubject)}&body=${encodeURIComponent(defaultBody)}`;
 

@@ -5,12 +5,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowDown, GraduationCap, ShieldCheck, Clock, Star } from 'lucide-react';
-import OrderForm from '@/components/OrderForm';
+import { ArrowDown, BookOpenCheck, ShieldCheck, MessageSquareText, GraduationCap } from 'lucide-react';
+import SupportRequestForm from '@/components/SupportRequestForm';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL } from '@/constants/whatsapp';
-import { ORDER_FORM_HASH } from '@/constants/orderNavigation';
+import { SUPPORT_FORM_HASH } from '@/constants/supportNavigation';
 
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -23,17 +23,17 @@ const images = [
 ];
 
 const typingTexts = [
-  'Expert Assignment Help',
-  'AI-Free Guaranteed Work',
-  'On-Time Every Time',
-  'Trusted by 10,000+ Students',
+  'One-to-One Academic Coaching',
+  'Research Methods Tutoring',
+  'Feedback on Your Own Draft',
+  'Referencing and Study Skills',
 ];
 
-const stats = [
-  { icon: GraduationCap, value: '10K+', label: 'Happy Students' },
-  { icon: Star, value: '4.8/5', label: 'Average Rating' },
-  { icon: ShieldCheck, value: '100%', label: 'Plagiarism Free' },
-  { icon: Clock, value: '24/7', label: 'Live Support' },
+const commitments = [
+  { icon: ShieldCheck, value: 'Integrity', label: 'Ethical Boundaries' },
+  { icon: GraduationCap, value: 'Your Work', label: 'Student Authorship' },
+  { icon: MessageSquareText, value: 'Clear', label: 'Actionable Feedback' },
+  { icon: BookOpenCheck, value: 'Skills', label: 'Learning Focused' },
 ];
 
 export default function HomeHero() {
@@ -48,7 +48,6 @@ export default function HomeHero() {
 
   return (
     <section id="home-hero" className="relative lg:min-h-[92vh] flex items-center overflow-hidden bg-navy pb-16 lg:pb-0">
-      {/* Background carousel */}
       <div className="absolute inset-0 z-0">
         <Swiper
           modules={[Autoplay, EffectFade]}
@@ -59,24 +58,17 @@ export default function HomeHero() {
         >
           {images.map((img, i) => (
             <SwiperSlide key={i}>
-              <div
-                className="w-full h-full bg-cover bg-center scale-105"
-                style={{ backgroundImage: `url(${img})` }}
-              />
+              <div className="w-full h-full bg-cover bg-center scale-105" style={{ backgroundImage: `url(${img})` }} />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
-      {/* Overlays */}
       <div className="absolute inset-0 z-[1] bg-gradient-to-br from-navy/95 via-navy/85 to-navy-light/90" />
       <div className="absolute inset-0 z-[1] opacity-20 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
-
-      {/* Glow orbs */}
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px] z-[1] animate-float" />
       <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-primary/15 rounded-full blur-[100px] z-[1] animate-float" style={{ animationDelay: '2s' }} />
 
-      {/* Content */}
       <div className="relative z-10 w-full max-w-site mx-auto px-4 py-20 md:py-24 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start lg:items-center">
           <div className="max-w-3xl">
@@ -86,8 +78,8 @@ export default function HomeHero() {
               transition={{ duration: 0.5 }}
               className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-[11px] font-bold mb-8 border border-white/20 text-white uppercase tracking-wider"
             >
-              <Star className="w-3.5 h-3.5 text-primary fill-primary" />
-              Rated #1 Assignment Help Service
+              <ShieldCheck className="w-3.5 h-3.5 text-primary" />
+              Ethical Learning &amp; Research Support
             </motion.span>
 
             <motion.h1
@@ -96,8 +88,8 @@ export default function HomeHero() {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-6 tracking-tight leading-[1.08]"
             >
-              Get Professional{' '}
-              <span className="gradient-text">Academic Help</span>
+              Learn Better. Research Confidently.{' '}
+              <span className="gradient-text">Write Independently.</span>
             </motion.h1>
 
             <div className="h-12 sm:h-14 mb-8 flex items-center">
@@ -121,8 +113,7 @@ export default function HomeHero() {
               transition={{ duration: 0.6, delay: 0.25 }}
               className="text-gray-300 text-lg md:text-xl max-w-xl mb-10 leading-relaxed"
             >
-              100% original, AI-free academic writing by subject matter experts.
-              Delivered on time, every time.
+              Develop your own academic work with coaching, research guidance, draft feedback, proofreading, and practical study support. We teach and review; we do not complete assessed work for submission.
             </motion.p>
 
             <motion.div
@@ -132,14 +123,14 @@ export default function HomeHero() {
               className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10 lg:mb-12"
             >
               <Link
-                href={ORDER_FORM_HASH}
+                href={SUPPORT_FORM_HASH}
                 className="px-10 py-4 bg-primary text-white font-bold rounded-xl text-lg shadow-xl shadow-primary/40 hover:brightness-110 hover:scale-[1.03] active:scale-[0.97] transition-all text-center"
               >
-                Order My Essay
+                Request Learning Support
               </Link>
               <WhatsAppLink
                 href={WHATSAPP_URL}
-                aria-label="Chat on WhatsApp"
+                aria-label="Discuss learning support on WhatsApp"
                 className="inline-flex hover:scale-105 active:scale-95 transition-transform"
               >
                 <WhatsAppIcon size={40} className="w-10 h-10" />
@@ -152,44 +143,37 @@ export default function HomeHero() {
               transition={{ duration: 0.6, delay: 0.45 }}
               className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6"
             >
-              {stats.map(({ icon: Icon, value, label }) => (
-                <div
-                  key={label}
-                  className="flex flex-col items-start sm:items-center p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10"
-                >
+              {commitments.map(({ icon: Icon, value, label }) => (
+                <div key={label} className="flex flex-col items-start sm:items-center p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
                   <Icon className="w-5 h-5 text-primary mb-2" />
-                  <span className="text-xl md:text-2xl font-bold text-white">{value}</span>
-                  <span className="text-[11px] text-white/50 uppercase tracking-wider font-semibold mt-0.5">
-                    {label}
-                  </span>
+                  <span className="text-lg md:text-xl font-bold text-white">{value}</span>
+                  <span className="text-[10px] text-white/50 uppercase tracking-wider font-semibold mt-0.5">{label}</span>
                 </div>
               ))}
             </motion.div>
           </div>
 
           <motion.div
-            id="order-form"
+            id="support-form"
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             className="w-full scroll-mt-[110px] lg:sticky lg:top-[100px]"
           >
-            <OrderForm />
+            <SupportRequestForm />
           </motion.div>
         </div>
       </div>
 
-      {/* Scroll cue — mobile only (form is below on small screens) */}
       <Link
-        href={ORDER_FORM_HASH}
-        aria-label="Go to order form"
+        href={SUPPORT_FORM_HASH}
+        aria-label="Go to support request form"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex lg:hidden flex-col items-center gap-2 text-white/40 hover:text-white/70 transition-colors"
       >
-        <span className="text-[10px] uppercase tracking-widest font-bold">Place Order</span>
+        <span className="text-[10px] uppercase tracking-widest font-bold">Request Support</span>
         <ArrowDown className="w-5 h-5 animate-bounce" />
       </Link>
 
-      {/* Wave transition */}
       <div className="absolute bottom-0 left-0 right-0 z-10 leading-none">
         <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto" preserveAspectRatio="none">
           <path d="M0 40C240 80 480 0 720 40C960 80 1200 0 1440 40V80H0V40Z" fill="#f9fafb" />

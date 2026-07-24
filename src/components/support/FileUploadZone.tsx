@@ -15,7 +15,7 @@ const FileUploadZone = ({
     {uploadedFiles.length < maxFiles && (
       <div
         className="relative border-2 border-dashed border-[#f8bbd9] rounded-xl p-6 md:p-8 bg-[#fce4ec] flex flex-col items-center justify-center transition-all hover:border-primary group cursor-pointer"
-        onClick={() => document.getElementById('order-file-upload')?.click()}
+        onClick={() => document.getElementById('support-file-upload')?.click()}
         onDragOver={(e) => e.preventDefault()}
         onDrop={(e) => {
           e.preventDefault();
@@ -23,11 +23,11 @@ const FileUploadZone = ({
         }}
         role="button"
         tabIndex={0}
-        onKeyDown={(e) => e.key === 'Enter' && document.getElementById('order-file-upload')?.click()}
+        onKeyDown={(e) => e.key === 'Enter' && document.getElementById('support-file-upload')?.click()}
       >
         <input
           type="file"
-          id="order-file-upload"
+          id="support-file-upload"
           className="hidden"
           multiple
           accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip"
@@ -87,7 +87,7 @@ const FileUploadZone = ({
     {uploadedFiles.length > 0 && uploadedFiles.length < maxFiles && (
       <button
         type="button"
-        onClick={() => document.getElementById('order-file-upload')?.click()}
+        onClick={() => document.getElementById('support-file-upload')?.click()}
         className="flex items-center gap-2 text-primary text-xs font-bold hover:underline transition-all"
       >
         <Plus className="w-4 h-4" /> Add More Files

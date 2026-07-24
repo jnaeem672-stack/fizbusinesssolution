@@ -9,25 +9,25 @@ export function userContactConfirmation({ name }: UserContactConfirmationData): 
   const body = `
     ${sectionTitle(`Thank You, ${safeName}!`, 'Your message has been delivered to our support team.')}
     <p style="margin:0 0 20px;color:${BRAND.muted};font-size:15px;line-height:1.8;">
-      We have received your inquiry and will get back to you within
-      <strong style="color:${BRAND.navy};">24 hours</strong>. For urgent assignment help, use the order form or WhatsApp for a faster response.
+      We have received your inquiry and aim to reply within
+      <strong style="color:${BRAND.navy};">24 hours</strong>.
     </p>
-    ${infoBox('Need urgent help? Message us on WhatsApp — we are available 24/7 for assignment orders and quick questions.', 'success')}
+    ${infoBox('For learning support, tell us what you have completed so far and which skill or challenge you want help with.', 'success')}
     ${sectionTitle('What to Expect')}
     ${stepsList([
-      'Our team reads your message and assigns it to the right specialist.',
-      'You receive a detailed reply within 24 hours (often much sooner).',
-      'For assignment orders, include your deadline and requirements for a faster quote.',
+      'Our team reviews your message and identifies the appropriate support area.',
+      'We check that the request is compatible with academic-integrity requirements.',
+      'You receive a clear reply explaining the next step.',
     ])}
     <p style="margin:28px 0 0;color:${BRAND.muted};font-size:14px;line-height:1.7;">
       Best regards,<br/>
-      <strong style="color:${BRAND.navy};">The FizBussinessSolution Team</strong>
+      <strong style="color:${BRAND.navy};">The FIZ Business Solutions Team</strong>
     </p>
   `;
 
   return wrapEmail({
     title: 'We Received Your Message',
-    preheader: 'Thank you for contacting FizBussinessSolution — we will reply soon',
+    preheader: 'Thank you for contacting FIZ Business Solutions — we will reply soon',
     bodyContent: body,
   });
 }

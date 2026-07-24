@@ -26,27 +26,48 @@ export const countries: Country[] = [
   { name: "UK", code: "+44" }, { name: "USA", code: "+1" }, { name: "Vietnam", code: "+84" },
 ];
 
-export const paperTypes = [
-  "Assignment", "Bibliography", "Case Study", "Course Work", "Dissertation",
-  "Dissertation Proposal", "Essay", "Home Work", "Report", "Research Paper",
-  "Thesis", "Thesis Proposal", "Other",
+export const supportTypes = [
+  "Academic Writing Coaching",
+  "Assessment Brief Guidance",
+  "Dissertation or Research Coaching",
+  "Literature Review Guidance",
+  "Research Methods Tutoring",
+  "Draft Review and Developmental Feedback",
+  "Proofreading and Language Editing",
+  "Referencing Support",
+  "Data Analysis Tutoring",
+  "Presentation Coaching",
+  "Study Skills Support",
+  "Professional Business Writing",
+  "Other Ethical Learning Support",
 ] as const;
 
-export type PaperType = (typeof paperTypes)[number];
+export type SupportType = (typeof supportTypes)[number];
 
-export const educationLevels = ["UnderGraduate", "College", "University", "Masters", "PHD"] as const;
+export const educationLevels = [
+  "College",
+  "Undergraduate",
+  "Postgraduate",
+  "Doctoral",
+  "Professional",
+  "Other",
+] as const;
 
 export type EducationLevel = (typeof educationLevels)[number];
 
-export const pageOptions: string[] = Array.from({ length: 200 }, (_, i) => {
-  const p = i + 1;
-  return `${p} Page${p > 1 ? 's' : ''} / ${p * 250} Words`;
-});
+export const documentLengthOptions = [
+  "Not applicable",
+  "Under 1,000 words",
+  "1,000–2,500 words",
+  "2,501–5,000 words",
+  "5,001–10,000 words",
+  "More than 10,000 words",
+] as const;
 
 export const referenceOptions = [
   "Harvard", "APA", "MLA", "Chicago", "Vancouver", "Oxford", "OSCOLA", "AGLC",
   "Footnotes", "Footnotes and Bibliography", "BMJ", "MHRA", "Turabian", "ACS",
-  "AMA", "IEEE", "Open", "No References",
+  "AMA", "IEEE", "Institution-specific", "Not applicable",
 ] as const;
 
 export type ReferenceStyle = (typeof referenceOptions)[number];

@@ -1,11 +1,11 @@
-export { adminOrderEmail } from './order/adminOrderEmail';
-export type { AdminOrderEmailOptions } from './order/adminOrderEmail';
+export { adminSupportRequestEmail } from './support/adminSupportRequestEmail';
+export type { AdminSupportRequestEmailOptions } from './support/adminSupportRequestEmail';
 
-export { userOrderConfirmation } from './order/userOrderConfirmation';
-export type { UserOrderConfirmationOptions } from './order/userOrderConfirmation';
+export { userSupportRequestConfirmation } from './support/userSupportRequestConfirmation';
+export type { UserSupportRequestConfirmationOptions } from './support/userSupportRequestConfirmation';
 
 export { adminContactEmail } from './contact/adminContactEmail';
 export { userContactConfirmation } from './contact/userContactConfirmation';
 
 export { buildEmailAttachments } from './shared/attachments';
-export { generateOrderRef } from './shared/escape';
+export { generateRequestRef } from './shared/escape';

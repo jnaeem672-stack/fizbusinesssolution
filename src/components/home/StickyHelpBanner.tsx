@@ -18,15 +18,11 @@ const StickyHelpBanner = ({ show }: StickyHelpBannerProps) => (
         <div className="flex items-center gap-3">
           <WhatsAppIcon size={40} className="w-10 h-10" />
           <div>
-            <p className="text-[10px] font-black uppercase tracking-widest text-primary">Need Help Fast?</p>
-            <p className="text-sm font-bold">Chat with our experts</p>
+            <p className="text-[10px] font-black uppercase tracking-widest text-primary">Need Learning Support?</p>
+            <p className="text-sm font-bold">Discuss your learning goals</p>
           </div>
         </div>
-        <WhatsAppLink
-          href={WHATSAPP_URL}
-          aria-label="Chat on WhatsApp"
-          className="inline-flex hover:scale-105 active:scale-95 transition-transform shrink-0"
-        >
+        <WhatsAppLink href={WHATSAPP_URL} aria-label="Chat about learning support on WhatsApp" className="inline-flex hover:scale-105 active:scale-95 transition-transform shrink-0">
           <WhatsAppIcon size={40} className="w-10 h-10" />
         </WhatsAppLink>
       </motion.div>

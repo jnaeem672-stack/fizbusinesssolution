@@ -1,6 +1,7 @@
 import type { InfoBoxType } from '@/types';
 import type { UploadedFile } from '@/types';
 import { escapeHtml } from './escape';
+import { isAllowedUploadUrl } from '@/lib/uploadSecurity';
 
 export const BRAND = {
   primary: '#C41E3A',
@@ -76,7 +77,12 @@ export function attachmentList(files: UploadedFile[] = [], attachedToEmail = fal
     return `<p style="margin:0;color:${BRAND.muted};font-size:14px;font-style:italic;">No files uploaded</p>`;
   }
 
-  const items = files
+  const safeFiles = files.filter((file) => isAllowedUploadUrl(file.url));
+  if (!safeFiles.length) {
+    return `<p style="margin:0;color:${BRAND.muted};font-size:14px;font-style:italic;">No valid files uploaded</p>`;
+  }
+
+  const items = safeFiles
     .map(
       (file) => `
       <tr>
@@ -91,7 +97,7 @@ export function attachmentList(files: UploadedFile[] = [], attachedToEmail = fal
                 <p style="margin:4px 0 0;color:${BRAND.muted};font-size:12px;">${escapeHtml(file.size)}${attachedToEmail ? ' · Attached to this email' : ''}</p>
               </td>
               <td align="right" style="vertical-align:middle;">
-                <a href="${file.url}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:${BRAND.primary};color:#ffffff;text-decoration:none;padding:8px 14px;border-radius:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">View</a>
+                <a href="${escapeHtml(file.url)}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:${BRAND.primary};color:#ffffff;text-decoration:none;padding:8px 14px;border-radius:8px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;">View</a>
               </td>
             </tr>
           </table>
