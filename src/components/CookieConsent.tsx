@@ -5,19 +5,43 @@ import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { ShieldCheck, X } from 'lucide-react';
 
+type ConsentChoice = 'accepted' | 'declined';
+
+const updateGoogleConsent = (choice: ConsentChoice) => {
+  const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+  if (typeof gtag !== 'function') return;
+  const value = choice === 'accepted' ? 'granted' : 'denied';
+  gtag('consent', 'update', {
+    ad_storage: value,
+    ad_user_data: value,
+    ad_personalization: value,
+    analytics_storage: value,
+  });
+};
+
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('cookie-consent');
+    let consent: string | null = null;
+    try {
+      consent = localStorage.getItem('cookie-consent');
+    } catch {
+      consent = null;
+    }
     if (!consent) {
       const timer = setTimeout(() => setIsVisible(true), 2000);
       return () => clearTimeout(timer);
     }
   }, []);
 
-  const handleConsent = (type: 'accepted' | 'declined') => {
-    localStorage.setItem('cookie-consent', type);
+  const handleConsent = (type: ConsentChoice) => {
+    try {
+      localStorage.setItem('cookie-consent', type);
+    } catch {
+      // storage unavailable; the choice still applies for this visit
+    }
+    updateGoogleConsent(type);
     setIsVisible(false);
   };
 
@@ -45,10 +69,10 @@ const CookieConsent = () => {
             </div>
             <div className="min-w-0 flex-1">
               <h3 className="text-xs sm:text-sm font-black uppercase tracking-wider sm:tracking-widest mb-1">
-                Cookie Excellence
+                Your Cookie Choices
               </h3>
               <p className="text-[11px] sm:text-xs text-white/70 leading-relaxed mb-4">
-                We use cookies to improve your experience. By using our site, you agree to our{' '}
+                We use essential cookies to run this site and, with your permission, advertising cookies from Google to measure our ads. Choose Accept All to allow them or Decline to use essential cookies only. See our{' '}
                 <Link href="/privacy-policy" className="text-primary hover:underline font-bold">
                   Privacy Policy
                 </Link>
