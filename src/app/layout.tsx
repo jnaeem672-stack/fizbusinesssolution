@@ -1,3 +1,4 @@
+import Script from "next/script";
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import './globals.css';
@@ -60,6 +61,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
       </head>
       <body className="antialiased">
+        <Script
+  src="https://www.googletagmanager.com/gtag/js?id=AW-18496017210"
+  strategy="afterInteractive"
+/>
+<Script id="google-ads-tag" strategy="afterInteractive">
+  {`
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18496017210');
+  `}
+</Script>
         <Providers>
           <SiteHeader />
           {children}
