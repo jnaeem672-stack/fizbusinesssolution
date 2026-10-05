@@ -28,10 +28,25 @@ const SupportRequestForm = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const { uploadedFiles, uploadingFiles, handleFileChange, removeFile, clearFiles, maxFiles } = useFileUpload();
 
-  const onSubmit = async (data: SupportRequestFormData) => {
+   const onSubmit = async (data: SupportRequestFormData) => {
     setIsSubmitting(true);
     try {
       await sendSupportRequestEmail({ ...data, uploadedFiles });
+
+      // Google Ads conversion: Support request submitted
+      const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;
+      if (typeof gtag === 'function') {
+        gtag('set', 'user_data', {
+          email: data.email,
+          phone_number: `${data.countryCode ?? ''}${data.phone}`.replace(/[^\d+]/g, ''),
+        });
+        gtag('event', 'conversion', {
+          send_to: 'AW-18496017210/YWTRCIiLnJIdELqmy_NE',
+          value: 1.0,
+          currency: 'PKR',
+        });
+      }
+
       toast.success('Support request submitted. Check your email for confirmation.');
       reset();
       clearFiles();
