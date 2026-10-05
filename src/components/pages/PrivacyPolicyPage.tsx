@@ -61,7 +61,6 @@ const sections = [
     ),
   },
   {
-    {
     title: '6. Cookies, Advertising and Conversion Tracking',
     content: (
       <>
