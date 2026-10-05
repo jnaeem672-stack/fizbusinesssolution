@@ -61,10 +61,23 @@ const sections = [
     ),
   },
   {
-    title: '6. Cookies and Similar Technologies',
+    {
+    title: '6. Cookies, Advertising and Conversion Tracking',
     content: (
       <>
-        The website may use essential cookies and, with consent where required, optional cookies that support preferences, performance, or analytics. You may use the cookie banner and browser settings to manage non-essential cookies. Disabling some cookies may affect website functionality.
+        The website may use essential cookies and, with consent where required, optional cookies that support preferences, performance, analytics, or advertising. You may use the cookie banner and browser settings to manage non-essential cookies. Disabling some cookies may affect website functionality.
+        <p className="mt-4">
+          We use the Google Ads tag, provided by Google LLC, to measure the effectiveness of our advertising, for example when a visitor who clicked one of our ads submits a support request or clicks our WhatsApp button. The tag may also be used for remarketing, which means Google may show our ads to people who have previously visited this website.
+        </p>
+        <p className="mt-4">
+          When you submit a support request, your email address and phone number may be shared with Google through its enhanced conversions feature. This information is hashed (converted into an encrypted code) before it is sent and is used only to help us measure advertising results more accurately.
+        </p>
+        <p className="mt-4">
+          You can manage personalised advertising from Google at{' '}
+          <a href="https://myadcenter.google.com" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">My Ad Center</a>
+          {' '}and learn how Google uses information from websites that use its services at{' '}
+          <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener noreferrer" className="text-primary font-semibold hover:underline">policies.google.com</a>.
+        </p>
       </>
     ),
   },
@@ -138,7 +151,7 @@ export default function PrivacyPolicyPage() {
       <section className="py-12 md:py-20 max-w-site mx-auto px-4 w-full">
         <AnimateIn>
           <div className="max-w-3xl mx-auto">
-            <p className="text-sm text-gray-500 mb-10"><strong className="text-navy">Effective date:</strong> 24 July 2026</p>
+            <p className="text-sm text-gray-500 mb-10"><strong className="text-navy">Effective date:</strong> 6 October 2026</p>
             <div className="bg-white rounded-2xl border border-gray-100 shadow-sm p-6 md:p-10 space-y-10">
               {sections.map((section) => (
                 <article key={section.title}>
