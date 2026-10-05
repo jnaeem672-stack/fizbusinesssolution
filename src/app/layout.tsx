@@ -69,6 +69,36 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
+    window.gtag = gtag;
+
+    // Consent Mode: UK, EEA and Switzerland start as denied
+    gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'denied',
+      region: ['GB','CH','IS','LI','NO','AT','BE','BG','HR','CY','CZ','DK','EE','FI','FR','DE','GR','HU','IE','IT','LV','LT','LU','MT','NL','PL','PT','RO','SK','SI','ES','SE'],
+      wait_for_update: 500
+    });
+    // Everywhere else starts as granted
+    gtag('consent', 'default', {
+      ad_storage: 'granted',
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+      analytics_storage: 'granted'
+    });
+
+    // Apply the visitor's saved choice
+    try {
+      var choice = localStorage.getItem('cookie-consent');
+      if (choice === 'accepted' || choice === 'declined') {
+        var v = choice === 'accepted' ? 'granted' : 'denied';
+        gtag('consent', 'update', {
+          ad_storage: v, ad_user_data: v, ad_personalization: v, analytics_storage: v
+        });
+      }
+    } catch (e) {}
+
     gtag('js', new Date());
     gtag('config', 'AW-18496017210');
   `}
