@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import HomeHero from '@/components/home/HomeHero';
 import ServicesGrid from '@/components/ServicesGrid';
-import QuoteCalculator from '@/components/QuoteCalculator';
+import QuoteCalculator from '@/QuoteCalculator';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
