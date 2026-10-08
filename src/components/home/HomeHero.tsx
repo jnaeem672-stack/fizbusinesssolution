@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowDown, BookOpenCheck, ShieldCheck, Globe2, GraduationCap, Award } from 'lucide-react';
+import { ArrowDown, BookOpenCheck, ShieldCheck, Globe2, GraduationCap, Award, CheckCircle2 } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
@@ -23,10 +23,20 @@ const images = [
 ];
 
 const typingTexts = [
-  'One-to-One Academic Coaching',
-  'Research Methods Tutoring',
-  'Feedback on Your Own Draft',
-  'Referencing and Study Skills',
+  'Assignment & Essay Guidance',
+  'Dissertation & Thesis Support',
+  'Research Proposal Help',
+  'Proofreading & Referencing',
+  'PhD Admission & Scholarship Guidance',
+];
+
+const features = [
+  'UK Academic Standards',
+  'Qualified Subject Experts',
+  'Harvard, APA & OSCOLA Referencing',
+  '100% Confidential',
+  'On-Time Delivery',
+  '24/7 WhatsApp Support',
 ];
 
 const commitments = [
@@ -69,30 +79,38 @@ export default function HomeHero() {
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px] z-[1] animate-float" />
       <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-primary/15 rounded-full blur-[100px] z-[1] animate-float" style={{ animationDelay: '2s' }} />
 
-      <div className="relative z-10 w-full max-w-site mx-auto px-4 py-20 md:py-24 lg:py-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-start lg:items-center">
-          <div className="max-w-3xl">
-            <motion.span
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 py-20 md:py-24 lg:py-16">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16 items-start lg:items-center">
+          <div className="lg:col-span-7">
+            <motion.div
               initial={{ opacity: 0, y: 16 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-[11px] font-bold mb-8 border border-white/20 text-white uppercase tracking-wider"
+              className="flex flex-wrap items-center gap-3 mb-7"
             >
-              <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-              Ethical Learning &amp; Research Support
-            </motion.span>
+              <Link
+                href="#quote"
+                className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary rounded-full text-[11px] font-black text-white uppercase tracking-wider shadow-lg shadow-primary/30 hover:brightness-110 transition-all"
+              >
+                🎁 First Order? Up To 10% OFF
+              </Link>
+              <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-[11px] font-bold border border-white/20 text-white uppercase tracking-wider">
+                <ShieldCheck className="w-3.5 h-3.5 text-primary" />
+                Trusted Since 2015
+              </span>
+            </motion.div>
 
             <motion.h1
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl font-extrabold text-white mb-6 tracking-tight leading-[1.08]"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white mb-6 tracking-tight leading-[1.08]"
             >
-              Learn Better. Research Confidently.{' '}
-              <span className="gradient-text">Write Independently.</span>
+              Assignment &amp; Dissertation Help{' '}
+              <span className="gradient-text">UK &amp; Saudi Arabia</span>
             </motion.h1>
 
-            <div className="h-12 sm:h-14 mb-8 flex items-center">
+            <div className="h-12 sm:h-14 mb-6 flex items-center">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={currentIndex}
@@ -111,29 +129,47 @@ export default function HomeHero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.25 }}
-              className="text-gray-300 text-lg md:text-xl max-w-xl mb-10 leading-relaxed"
+              className="text-gray-300 text-lg md:text-xl max-w-2xl mb-7 leading-relaxed"
             >
-              Develop your own academic work with coaching, research guidance, draft feedback, proofreading, and practical study support. We teach and review; we do not complete assessed work for submission.
+              Expert one-to-one academic guidance from qualified subject specialists for Undergraduate, Master&apos;s, MBA and PhD students. Clear feedback, proper referencing and support you can count on.
             </motion.p>
+
+            <motion.ul
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.3 }}
+              className="flex flex-wrap gap-2.5 mb-9 max-w-3xl"
+            >
+              {features.map((item) => (
+                <li
+                  key={item}
+                  className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg bg-white/[0.07] border border-white/10 text-white text-[13px] font-semibold"
+                >
+                  <CheckCircle2 className="w-4 h-4 text-primary shrink-0" />
+                  {item}
+                </li>
+              ))}
+            </motion.ul>
 
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.35 }}
-              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10 lg:mb-12"
+              className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10"
             >
               <Link
-                href={SUPPORT_FORM_HASH}
-                className="px-10 py-4 bg-primary text-white font-bold rounded-xl text-lg shadow-xl shadow-primary/40 hover:brightness-110 hover:scale-[1.03] active:scale-[0.97] transition-all text-center"
+                href="#quote"
+                className="px-9 py-4 bg-primary text-white font-bold rounded-xl text-lg shadow-xl shadow-primary/40 hover:brightness-110 hover:scale-[1.03] active:scale-[0.97] transition-all text-center"
               >
-                Request Learning Support
+                Get Instant Price
               </Link>
               <WhatsAppLink
                 href={WHATSAPP_URL}
-                aria-label="Discuss learning support on WhatsApp"
-                className="inline-flex hover:scale-105 active:scale-95 transition-transform"
+                aria-label="Chat with us on WhatsApp"
+                className="inline-flex items-center justify-center gap-3 px-7 py-3.5 bg-white text-navy font-bold rounded-xl text-lg shadow-xl hover:scale-[1.03] active:scale-[0.97] transition-all"
               >
-                <WhatsAppIcon size={40} className="w-10 h-10" />
+                <WhatsAppIcon size={28} className="w-7 h-7" />
+                Chat on WhatsApp
               </WhatsAppLink>
             </motion.div>
 
@@ -141,7 +177,7 @@ export default function HomeHero() {
               initial={{ opacity: 0, y: 24 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.45 }}
-              className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-6"
+              className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-5 max-w-3xl"
             >
               {commitments.map(({ icon: Icon, value, label }) => (
                 <div key={label} className="flex flex-col items-start sm:items-center p-4 rounded-xl bg-white/5 backdrop-blur-sm border border-white/10">
@@ -158,7 +194,7 @@ export default function HomeHero() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="w-full scroll-mt-[110px] lg:sticky lg:top-[100px]"
+            className="w-full lg:col-span-5 scroll-mt-[110px] lg:sticky lg:top-[100px]"
           >
             <SupportRequestForm />
           </motion.div>
