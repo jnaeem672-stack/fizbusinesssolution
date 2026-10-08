@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, EffectFade } from 'swiper/modules';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import { ArrowDown, BookOpenCheck, ShieldCheck, MessageSquareText, GraduationCap } from 'lucide-react';
+import { ArrowDown, BookOpenCheck, ShieldCheck, Globe2, GraduationCap, Award } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
@@ -30,10 +30,10 @@ const typingTexts = [
 ];
 
 const commitments = [
-  { icon: ShieldCheck, value: 'Integrity', label: 'Ethical Boundaries' },
-  { icon: GraduationCap, value: 'Your Work', label: 'Student Authorship' },
-  { icon: MessageSquareText, value: 'Clear', label: 'Actionable Feedback' },
-  { icon: BookOpenCheck, value: 'Skills', label: 'Learning Focused' },
+  { icon: Award, value: '10+ Years', label: 'Since 2015' },
+  { icon: GraduationCap, value: '10,000+', label: 'Students Supported' },
+  { icon: BookOpenCheck, value: '350+', label: 'Research Projects' },
+  { icon: Globe2, value: 'UK & Gulf', label: 'Online Worldwide' },
 ];
 
 export default function HomeHero() {
