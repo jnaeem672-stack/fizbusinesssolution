@@ -8,6 +8,7 @@ import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import Logo from './Logo';
 import { SUPPORT_FORM_PATH, scrollToSupportForm } from '@/constants/supportNavigation';
 import { MEGA_MENU_CATEGORIES } from '@/constants/servicesCatalog';
+import { alternateLanguagePath } from '@/content/landing/languageMap';
 
 const MENU_LINKS: Record<string, string> = {
   'Assignment Help': '/assignment-help-uk',
@@ -61,7 +62,7 @@ const Navbar = () => {
       if (el) {
         e.preventDefault();
         el.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        window.history.replaceState(null, '', '/#quote');
+        window.history.replaceState(null, '', `${window.location.pathname}#quote`);
       }
     }
     setIsOpen(false);
@@ -76,6 +77,8 @@ const Navbar = () => {
   ];
 
   const isActive = (path: string) => pathname === path;
+  const lang = alternateLanguagePath(pathname || '/');
+  const langLabel = lang.toArabic ? 'العربية' : 'English';
 
   return (
     <nav className={`w-full h-[70px] bg-white transition-all duration-300 ${scrolled ? 'shadow-xl' : 'border-b border-gray-100'}`}>
@@ -139,6 +142,13 @@ const Navbar = () => {
         </div>
 
         <div className="hidden lg:flex items-center gap-4">
+          <Link
+            href={lang.href}
+            hrefLang={lang.toArabic ? 'ar' : 'en'}
+            className="px-4 py-2.5 rounded-xl border-2 border-navy/10 text-navy font-black text-sm hover:border-primary hover:text-primary transition-colors"
+          >
+            {langLabel}
+          </Link>
           <button
             onClick={handleSupportRequest}
             className="px-8 py-3 bg-primary text-white font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:brightness-110 transition-all shadow-lg shadow-primary/30 flex items-center gap-2"
@@ -147,9 +157,18 @@ const Navbar = () => {
           </button>
         </div>
 
-        <button className="lg:hidden p-2 bg-gray-50 rounded-lg text-navy" onClick={() => setIsOpen(true)}>
-          <Menu className="w-6 h-6" />
-        </button>
+        <div className="lg:hidden flex items-center gap-2">
+          <Link
+            href={lang.href}
+            hrefLang={lang.toArabic ? 'ar' : 'en'}
+            className="px-3 py-2 rounded-lg border-2 border-navy/10 text-navy font-black text-xs"
+          >
+            {langLabel}
+          </Link>
+          <button className="p-2 bg-gray-50 rounded-lg text-navy" onClick={() => setIsOpen(true)} aria-label="Open menu">
+            <Menu className="w-6 h-6" />
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>

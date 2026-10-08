@@ -13,6 +13,10 @@ import { assignmentHelpBirmingham } from './assignment-help-birmingham';
 import { assignmentHelpRiyadh } from './assignment-help-riyadh';
 import { assignmentHelpJeddah } from './assignment-help-jeddah';
 import { assignmentHelpDammam } from './assignment-help-dammam';
+import { arAssignmentHelpRiyadh } from './ar-assignment-help-riyadh';
+import { arAssignmentHelpJeddah } from './ar-assignment-help-jeddah';
+import { arAssignmentHelpDammam } from './ar-assignment-help-dammam';
+import { arDissertationHelpSaudiArabia } from './ar-dissertation-help-saudi-arabia';
 
 export type { LandingContent } from './types';
 
@@ -36,7 +40,13 @@ export const EN_LANDING_PAGES: LandingContent[] = [
 ];
 
 /** Arabic landing pages, served at /ar/{slug} */
-export const AR_LANDING_PAGES: LandingContent[] = [arAssignmentHelpSaudiArabia];
+export const AR_LANDING_PAGES: LandingContent[] = [
+  arAssignmentHelpSaudiArabia,
+  arDissertationHelpSaudiArabia,
+  arAssignmentHelpRiyadh,
+  arAssignmentHelpJeddah,
+  arAssignmentHelpDammam,
+];
 
 export function getLandingPage(slug: string, locale: 'en' | 'ar' = 'en'): LandingContent | undefined {
   const list = locale === 'ar' ? AR_LANDING_PAGES : EN_LANDING_PAGES;

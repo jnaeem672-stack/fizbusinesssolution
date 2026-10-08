@@ -55,7 +55,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const url = `${SITE_URL}${landingPath(page)}`;
   const whatsappUrl = buildWhatsAppUrl(page.whatsappMessage);
   const related = page.related
-    .map((slug) => getLandingPage(slug, 'en'))
+    .map((slug) => getLandingPage(slug, page.locale) ?? getLandingPage(slug, 'en'))
     .filter((p): p is LandingContent => Boolean(p));
 
   const schema = [
@@ -154,8 +154,8 @@ export default function LandingPage({ page }: { page: LandingContent }) {
               </div>
             </div>
 
-            <div id="support-form" className="w-full lg:col-span-5 scroll-mt-[110px]" dir="ltr">
-              <SupportRequestForm />
+            <div id="support-form" className="w-full lg:col-span-5 scroll-mt-[110px]">
+              <SupportRequestForm locale={page.locale} />
             </div>
           </div>
         </div>
@@ -221,7 +221,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
               {related.length > 0 && (
                 <div className="bg-gray-50 rounded-3xl p-7 border border-gray-100">
                   <h2 className="text-lg font-extrabold text-navy mb-4">{t.related}</h2>
-                  <ul className="space-y-2.5" dir="ltr">
+                  <ul className="space-y-2.5">
                     {related.map((p) => (
                       <li key={p.slug}>
                         <Link href={landingPath(p)} className="flex items-center gap-2 text-sm font-bold text-gray-600 hover:text-primary transition-colors">
@@ -238,9 +238,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
         </div>
       </section>
 
-      <div dir="ltr">
-        <QuoteCalculator />
-      </div>
+      <QuoteCalculator locale={page.locale} />
 
       <FaqSection faqs={page.faqs} title={t.faqTitle} rtl={isAr} className="bg-white" />
 

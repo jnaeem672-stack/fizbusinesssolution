@@ -75,20 +75,25 @@ function Row({ items, flag, reverse }: { items: Uni[]; flag: string; reverse?: b
   );
 }
 
-export default function UniversityStrip() {
+export default function UniversityStrip({
+  title = 'Supporting Students from Leading Universities',
+  subtitle = 'UK 🇬🇧 & Saudi Arabia 🇸🇦 · 10,000+ students since 2015',
+  note = 'University names shown for reference only. FIZBS is independent and not affiliated with these institutions.',
+  rtl = false,
+}: { title?: string; subtitle?: string; note?: string; rtl?: boolean } = {}) {
   return (
     <section className="bg-gray-50 border-y border-gray-100 py-10">
       <div className="max-w-site mx-auto px-4">
         <div className="text-center mb-6">
-          <p className="text-lg md:text-xl font-black text-navy">Supporting Students from Leading Universities</p>
-          <p className="text-sm text-gray-500 mt-1">UK 🇬🇧 &amp; Saudi Arabia 🇸🇦 · 10,000+ students since 2015</p>
+          <p className="text-lg md:text-xl font-black text-navy" dir={rtl ? 'rtl' : undefined}>{title}</p>
+          <p className="text-sm text-gray-500 mt-1" dir={rtl ? 'rtl' : undefined}>{subtitle}</p>
         </div>
         <div className="space-y-4">
           <Row items={UK} flag="🇬🇧" />
           <Row items={SAUDI} flag="🇸🇦" reverse />
         </div>
         <p className="text-center text-[10px] text-gray-400 mt-5">
-          University names shown for reference only. FIZBS is independent and not affiliated with these institutions.
+          {note}
         </p>
       </div>
     </section>
