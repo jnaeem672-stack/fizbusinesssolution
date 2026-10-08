@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fizbusinessolutions.com/sitemap.xml
