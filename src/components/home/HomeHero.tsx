@@ -1,8 +1,6 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade } from 'swiper/modules';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowDown, BookOpenCheck, ShieldCheck, Globe2, GraduationCap, Award, CheckCircle2 } from 'lucide-react';
@@ -12,15 +10,8 @@ import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL } from '@/constants/whatsapp';
 import { SUPPORT_FORM_HASH } from '@/constants/supportNavigation';
 
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-
-const images = [
-  'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1600&q=80',
-  'https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=1600&q=80',
-  'https://images.unsplash.com/photo-1491841550275-ad7854e35ca6?w=1600&q=80',
-  'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=1600&q=80',
-];
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=60';
+const heroSrcSet = [640, 1024, 1600, 2000].map((w) => `${HERO_IMAGE}&w=${w} ${w}w`).join(', ');
 
 const typingTexts = [
   'Assignment & Essay Guidance',
@@ -59,19 +50,16 @@ export default function HomeHero() {
   return (
     <section id="home-hero" className="relative lg:min-h-[92vh] flex items-center overflow-hidden bg-navy pb-16 lg:pb-0">
       <div className="absolute inset-0 z-0">
-        <Swiper
-          modules={[Autoplay, EffectFade]}
-          effect="fade"
-          autoplay={{ delay: 5000, disableOnInteraction: false }}
-          loop
-          className="h-full w-full"
-        >
-          {images.map((img, i) => (
-            <SwiperSlide key={i}>
-              <div className="w-full h-full bg-cover bg-center scale-105" style={{ backgroundImage: `url(${img})` }} />
-            </SwiperSlide>
-          ))}
-        </Swiper>
+        <img
+          src={`${HERO_IMAGE}&w=1600`}
+          srcSet={heroSrcSet}
+          sizes="100vw"
+          alt=""
+          aria-hidden="true"
+          fetchPriority="high"
+          decoding="async"
+          className="w-full h-full object-cover scale-105"
+        />
       </div>
 
       <div className="absolute inset-0 z-[1] bg-gradient-to-br from-navy/95 via-navy/85 to-navy-light/90" />

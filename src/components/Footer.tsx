@@ -5,6 +5,7 @@ import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
 import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
+import { SERVICE_LINKS, CITY_LINKS } from '@/content/landing';
 
 const Footer = () => (
   <footer className="bg-navy py-10 md:py-12 px-4 md:px-8 flex flex-col items-center text-white/50 text-[11px] shrink-0 border-t border-white/5 space-y-6">
@@ -16,6 +17,29 @@ const Footer = () => (
       <p className="text-center max-w-md leading-relaxed">
         © {new Date().getFullYear()} FIZ Business Solutions. All rights reserved.
       </p>
+    </div>
+
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 sm:gap-16 w-full max-w-3xl pt-2 text-[12px]">
+      <div>
+        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Popular Services</h2>
+        <ul className="space-y-2">
+          {SERVICE_LINKS.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="text-white/60 hover:text-white transition-colors">{link.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Assignment Help by City</h2>
+        <ul className="space-y-2">
+          {CITY_LINKS.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="text-white/60 hover:text-white transition-colors">{link.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
 
     <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-8 w-full max-w-lg">

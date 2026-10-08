@@ -9,6 +9,23 @@ import Logo from './Logo';
 import { SUPPORT_FORM_PATH, scrollToSupportForm } from '@/constants/supportNavigation';
 import { MEGA_MENU_CATEGORIES } from '@/constants/servicesCatalog';
 
+const MENU_LINKS: Record<string, string> = {
+  'Assignment Help': '/assignment-help-uk',
+  'Essay Help': '/assignment-help-uk',
+  'Dissertation Help': '/dissertation-help-uk',
+  'Thesis Help': '/dissertation-help-uk',
+  'Research Proposal Help': '/research-proposal-help',
+  'Literature Review Help': '/dissertation-help-uk',
+  'Research Methodology Help': '/research-proposal-help',
+  'Data Analysis Help': '/spss-help',
+  'SPSS Help': '/spss-help',
+  'Excel Data Analysis Help': '/spss-help',
+  'NVivo & Thematic Analysis Help': '/spss-help',
+  'PhD Admission & Scholarship Help': '/phd-admission-scholarship-help',
+  'Business & Management Assignment Help': '/mba-assignment-help',
+  'MBA Assignment Help': '/mba-assignment-help',
+};
+
 interface NavLink {
   title: string;
   path: string;
@@ -105,7 +122,7 @@ const Navbar = () => {
                           <ul className="space-y-1">
                             {col.links.map((item) => (
                               <li key={item}>
-                                <Link href="/services" className="text-xs font-bold text-gray-500 hover:text-primary hover:translate-x-1 transition-all block">
+                                <Link href={MENU_LINKS[item] ?? '/services'} className="text-xs font-bold text-gray-500 hover:text-primary hover:translate-x-1 transition-all block">
                                   {item}
                                 </Link>
                               </li>

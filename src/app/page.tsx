@@ -13,7 +13,6 @@ export const metadata: Metadata = {
     description:
       'Expert assignment and dissertation help from qualified subject specialists. Instant price, 10% off your first order and 24/7 WhatsApp support.',
     url: 'https://fizbusinessolutions.com',
-    images: ['https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80'],
   },
 };
 
