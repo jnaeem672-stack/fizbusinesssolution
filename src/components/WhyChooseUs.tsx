@@ -1,30 +1,30 @@
 'use client';
 
-import { ShieldCheck, MessageSquareText, UserRoundCheck, BookOpenCheck, type LucideIcon } from 'lucide-react';
+import { ShieldCheck, Clock, UserRoundCheck, BadgePoundSterling, type LucideIcon } from 'lucide-react';
 import SectionHeader from './ui/SectionHeader';
 import StatsBar from './why-choose-us/StatsBar';
 import FeatureCard from './why-choose-us/FeatureCard';
 
 const features: { title: string; desc: string; icon: LucideIcon }[] = [
   {
-    title: 'Student Authorship',
-    desc: 'You remain responsible for the ideas, analysis, decisions, and final submission.',
+    title: 'Qualified Subject Experts',
+    desc: "Master's and PhD-qualified specialists who know UK and Saudi university marking criteria.",
     icon: UserRoundCheck,
   },
   {
-    title: 'Clear Ethical Boundaries',
-    desc: 'Requests are checked against our Academic Integrity Policy before support is accepted.',
+    title: 'On-Time, Every Time',
+    desc: 'Deadlines from 48 hours to several weeks, with regular progress updates on WhatsApp.',
+    icon: Clock,
+  },
+  {
+    title: 'Affordable UK Pricing',
+    desc: 'Transparent prices in GBP from £20 per 1,000 words, plus 10% off your first order.',
+    icon: BadgePoundSterling,
+  },
+  {
+    title: '100% Confidential',
+    desc: 'Your details and files stay private and are never shared with anyone.',
     icon: ShieldCheck,
-  },
-  {
-    title: 'Actionable Feedback',
-    desc: 'Comments explain what needs improvement, why it matters, and how you can revise it.',
-    icon: MessageSquareText,
-  },
-  {
-    title: 'Lasting Skills',
-    desc: 'Support focuses on transferable research, writing, analysis, and study skills.',
-    icon: BookOpenCheck,
   },
 ];
 
@@ -35,8 +35,8 @@ const WhyChooseUs = () => (
     <section className="py-20 md:py-28 relative z-10">
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
-          title="Support Built Around Learning"
-          subtitle="The goal is not to replace your work. It is to help you understand the task and improve your own response."
+          title="Why Students Choose FIZBS"
+          subtitle="10+ years of trusted assignment and dissertation help for students in the UK and Saudi Arabia."
           light
           className="mb-12 md:mb-16"
         />

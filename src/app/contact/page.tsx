@@ -5,7 +5,7 @@ import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
   title: 'Contact FIZ Business Solutions',
-  description: 'Contact FIZ Business Solutions to discuss ethical academic coaching, research guidance, draft feedback, proofreading, or data-analysis tutoring.',
+  description: 'Contact FIZ Business Solutions to discuss expert academic help, research guidance, draft feedback, proofreading, or data-analysis tutoring.',
   alternates: { canonical: 'https://fizbusinesssolutions.com/contact' },
 };
 

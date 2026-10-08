@@ -14,21 +14,21 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     title: 'Academic Skills & Feedback',
     services: [
-      { id: 1, name: 'Academic Writing Coaching', desc: 'Learn how to build clear arguments, paragraphs, introductions, discussions, and conclusions.', areas: 'Writing Skills' },
+      { id: 1, name: 'Academic Writing Help', desc: 'Learn how to build clear arguments, paragraphs, introductions, discussions, and conclusions.', areas: 'Writing Skills' },
       { id: 2, name: 'Assessment Brief Guidance', desc: 'Understand command words, marking criteria, learning outcomes, and assessment expectations.', areas: 'Planning' },
       { id: 3, name: 'Draft Review & Developmental Feedback', desc: 'Receive comments on structure, logic, evidence, critical analysis, and revision priorities in your own draft.', areas: 'Draft Feedback' },
       { id: 4, name: 'Proofreading & Language Editing', desc: 'Improve grammar, punctuation, spelling, readability, and consistency without replacing authorship.', areas: 'Language' },
       { id: 5, name: 'Referencing Support', desc: 'Learn citation principles and improve consistency in Harvard, APA, IEEE, OSCOLA, and other styles.', areas: 'Referencing' },
       { id: 6, name: 'Critical Reading & Source Evaluation', desc: 'Develop skills for judging credibility, relevance, methodology, limitations, and evidence quality.', areas: 'Critical Skills' },
       { id: 7, name: 'Study Skills & Time Management', desc: 'Build practical routines for reading, note-taking, planning, revision, and managing deadlines.', areas: 'Study Skills' },
-      { id: 8, name: 'Presentation Coaching', desc: 'Improve slide structure, visual clarity, speaker notes, timing, and delivery practice.', areas: 'Presentations' },
+      { id: 8, name: 'Presentation Help', desc: 'Improve slide structure, visual clarity, speaker notes, timing, and delivery practice.', areas: 'Presentations' },
     ],
   },
   {
     title: 'Research & Data Skills',
     services: [
-      { id: 9, name: 'Dissertation Coaching', desc: 'Guidance on research focus, questions, literature, methodology, chapter planning, and supervision preparation.', areas: 'Dissertation' },
-      { id: 10, name: 'Research Proposal Coaching', desc: 'Develop a feasible topic, rationale, objectives, research questions, method, ethics, and timeline.', areas: 'Research Design' },
+      { id: 9, name: 'Dissertation Help', desc: 'Guidance on research focus, questions, literature, methodology, chapter planning, and supervision preparation.', areas: 'Dissertation' },
+      { id: 10, name: 'Research Proposal Help', desc: 'Develop a feasible topic, rationale, objectives, research questions, method, ethics, and timeline.', areas: 'Research Design' },
       { id: 11, name: 'Literature Review Guidance', desc: 'Learn search strategies, screening, literature matrices, synthesis, thematic organisation, and gap identification.', areas: 'Literature Review' },
       { id: 12, name: 'Qualitative Research Tutoring', desc: 'Understand interviews, focus groups, sampling, ethics, coding, reflexivity, and qualitative quality criteria.', areas: 'Qualitative' },
       { id: 13, name: 'Quantitative Research Tutoring', desc: 'Learn variables, hypotheses, sampling, measurement, statistical tests, assumptions, and interpretation.', areas: 'Quantitative' },

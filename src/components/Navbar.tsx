@@ -42,7 +42,7 @@ const Navbar = () => {
     { title: 'Home', path: '/' },
     { title: 'Services', path: '/services', mega: true },
     { title: 'About', path: '/about' },
-    { title: 'Integrity', path: '/academic-integrity' },
+    { title: 'Get Price', path: '/#quote' },
     { title: 'Contact', path: '/contact' },
   ];
 
@@ -113,7 +113,7 @@ const Navbar = () => {
             onClick={handleSupportRequest}
             className="px-8 py-3 bg-primary text-white font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:brightness-110 transition-all shadow-lg shadow-primary/30 flex items-center gap-2"
           >
-            Request Support <ArrowRight className="w-4 h-4" />
+            Get Free Quote <ArrowRight className="w-4 h-4" />
           </button>
         </div>
 
@@ -164,7 +164,7 @@ const Navbar = () => {
                   onClick={handleSupportRequest}
                   className="w-full py-4 text-center bg-primary text-white font-black uppercase tracking-widest rounded-xl shadow-lg shadow-primary/30"
                 >
-                  Request Support
+                  Get Free Quote
                 </button>
               </div>
             </motion.div>

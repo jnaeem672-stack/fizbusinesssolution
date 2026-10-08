@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { motion } from 'framer-motion';
-import { ArrowRight, ShieldCheck, BookOpenCheck, MessageSquareText } from 'lucide-react';
+import { ArrowRight, ShieldCheck, Clock, Award } from 'lucide-react';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { SUPPORT_FORM_PATH } from '@/constants/supportNavigation';
@@ -15,9 +15,9 @@ export interface CTASectionProps {
 }
 
 const CTASection = ({
-  badge = 'Build Your Skills',
-  title = 'Need Help Understanding or Improving Your Work?',
-  subtitle = 'Tell us what you have completed and where you are stuck. We will recommend an ethical form of coaching, tutoring, feedback, or proofreading.',
+  badge = '🎁 First Order 10% OFF',
+  title = 'Need Assignment or Dissertation Help?',
+  subtitle = 'Tell us your subject, word count and deadline. A qualified expert is ready to help, and we reply quickly on WhatsApp.',
 }: CTASectionProps) => (
   <section className="relative py-20 md:py-28 overflow-hidden bg-navy">
     <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy" />
@@ -44,22 +44,22 @@ const CTASection = ({
             href={SUPPORT_FORM_PATH}
             className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-white font-bold rounded-xl text-base shadow-xl shadow-primary/40 hover:brightness-110 hover:scale-[1.03] active:scale-[0.97] transition-all w-full sm:w-auto min-w-[220px]"
           >
-            Request Learning Support <ArrowRight className="w-5 h-5" />
+            Get Free Quote <ArrowRight className="w-5 h-5" />
           </Link>
-          <WhatsAppLink href={WHATSAPP_URL} aria-label="Discuss learning support on WhatsApp" className="inline-flex hover:scale-105 active:scale-95 transition-transform">
+          <WhatsAppLink href={WHATSAPP_URL} aria-label="Chat with us on WhatsApp" className="inline-flex hover:scale-105 active:scale-95 transition-transform">
             <WhatsAppIcon size={48} className="w-12 h-12" />
           </WhatsAppLink>
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-white/50">
           <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider">
-            <ShieldCheck className="w-4 h-4 text-primary" /> Integrity First
+            <Award className="w-4 h-4 text-primary" /> Since 2015
           </span>
           <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider">
-            <BookOpenCheck className="w-4 h-4 text-primary" /> Student Authored
+            <Clock className="w-4 h-4 text-primary" /> On-Time Delivery
           </span>
           <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider">
-            <MessageSquareText className="w-4 h-4 text-primary" /> Developmental Feedback
+            <ShieldCheck className="w-4 h-4 text-primary" /> 100% Confidential
           </span>
         </div>
       </motion.div>

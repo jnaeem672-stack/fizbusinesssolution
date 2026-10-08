@@ -27,19 +27,19 @@ export const countries: Country[] = [
 ];
 
 export const supportTypes = [
-  "Academic Writing Coaching",
+  "Academic Writing Help",
   "Assessment Brief Guidance",
-  "Dissertation or Research Coaching",
+  "Dissertation or Research Help",
   "Literature Review Guidance",
   "Research Methods Tutoring",
   "Draft Review and Developmental Feedback",
   "Proofreading and Language Editing",
   "Referencing Support",
   "Data Analysis Tutoring",
-  "Presentation Coaching",
+  "Presentation Help",
   "Study Skills Support",
   "Professional Business Writing",
-  "Other Ethical Learning Support",
+  "Other",
 ] as const;
 
 export type SupportType = (typeof supportTypes)[number];

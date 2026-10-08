@@ -6,7 +6,7 @@ import SupportRequestForm from '@/components/SupportRequestForm';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 const principles = [
-  { icon: BookOpenCheck, text: 'Coaching and feedback that preserve student authorship' },
+  { icon: BookOpenCheck, text: 'Expert help and feedback that preserve student authorship' },
   { icon: CheckCircle2, text: 'Every request is reviewed for academic-integrity risks' },
   { icon: Lock, text: 'Your information and learning materials are handled carefully' },
 ];
@@ -20,7 +20,7 @@ export default function SupportRequestSection() {
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
           title="Request Ethical Learning Support"
-          subtitle="Tell us what you want to understand, practise, or improve. We will recommend a suitable form of coaching, feedback, or tutoring."
+          subtitle="Tell us what you want to understand, practise, or improve. We will recommend a suitable form of academic help, feedback, or tutoring."
           className="mb-10 md:mb-14"
         />
 

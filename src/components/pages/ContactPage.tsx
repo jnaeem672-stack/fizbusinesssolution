@@ -15,7 +15,7 @@ export default function ContactPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col overflow-x-hidden">
       <PageHero
         title="Contact FIZ Business Solutions"
-        subtitle="Discuss academic coaching, research guidance, draft feedback, proofreading, or professional communication support."
+        subtitle="Discuss academic help, research guidance, draft feedback, proofreading, or professional communication support."
         breadcrumb="Contact"
         badge="Ethical Learning Support"
         backgroundImage="https://images.unsplash.com/photo-1423666639043-f560172c73c7?w=1600&q=80"

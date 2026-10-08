@@ -7,20 +7,20 @@ import ProcessStep from './how-it-works/ProcessStep';
 const steps: { id: string; title: string; desc: string; icon: LucideIcon }[] = [
   {
     id: '01',
-    title: 'Explain Your Learning Need',
-    desc: 'Tell us what you have completed so far and which concept, skill, or difficulty you want help with.',
+    title: 'Share Your Requirements',
+    desc: 'Send your brief, word count and deadline through the form or WhatsApp in under a minute.',
     icon: ClipboardList,
   },
   {
     id: '02',
-    title: 'Receive the Right Support',
-    desc: 'We review the request for academic integrity and recommend coaching, tutoring, feedback, or proofreading.',
+    title: 'Get Your Price',
+    desc: 'Receive a clear quote in GBP, with 10% off your first order, and confirm to get started.',
     icon: UserCheck,
   },
   {
     id: '03',
-    title: 'Apply the Guidance',
-    desc: 'You revise, practise, and complete the work yourself using the explanations and feedback provided.',
+    title: 'Get Expert Help',
+    desc: 'A qualified subject expert works on your request and keeps you updated until your deadline.',
     icon: PencilLine,
   },
 ];
@@ -29,8 +29,8 @@ const HowItWorks = () => (
   <section className="py-20 md:py-28 bg-gray-50">
     <div className="max-w-site mx-auto px-4">
       <SectionHeader
-        title="How Ethical Support Works"
-        subtitle="A clear process that protects your authorship and builds independent skills"
+        title="How It Works"
+        subtitle="Get expert assignment help in three simple steps"
       />
 
       <div className="relative">

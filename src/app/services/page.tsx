@@ -4,8 +4,8 @@ import ServicesPage from '@/components/pages/ServicesPage';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
-  title: 'Academic Coaching, Research Guidance & Draft Feedback',
-  description: 'Explore ethical academic coaching, dissertation guidance, proofreading, referencing support, research-methods tutoring, and data-analysis tutoring.',
+  title: 'Assignment Help, Dissertation Help & Proofreading',
+  description: 'Explore expert academic help, dissertation guidance, proofreading, referencing support, research-methods tutoring, and data-analysis tutoring.',
   alternates: { canonical: 'https://fizbusinesssolutions.com/services' },
 };
 

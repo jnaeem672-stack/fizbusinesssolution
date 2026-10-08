@@ -23,12 +23,12 @@ import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 import { ALL_SERVICES, SERVICE_CATEGORIES, type ServiceCategory } from '@/constants/servicesCatalog';
 
 const featuredServices: { name: string; icon: LucideIcon; badge: string; desc: string; points: string[] }[] = [
-  { name: 'Academic Coaching', icon: GraduationCap, badge: 'Core Service', desc: 'One-to-one guidance that helps learners understand tasks, organise ideas, and strengthen academic skills.', points: ['Student-led work', 'Clear explanations', 'Practical next steps'] },
-  { name: 'Dissertation Coaching', icon: BookOpenCheck, badge: 'Research', desc: 'Structured support with research focus, literature, methodology, chapter planning, and supervision preparation.', points: ['Research questions', 'Method choices', 'Chapter planning'] },
+  { name: 'Assignment Help', icon: GraduationCap, badge: 'Core Service', desc: 'One-to-one guidance that helps learners understand tasks, organise ideas, and strengthen academic skills.', points: ['Student-led work', 'Clear explanations', 'Practical next steps'] },
+  { name: 'Dissertation Help', icon: BookOpenCheck, badge: 'Research', desc: 'Structured support with research focus, literature, methodology, chapter planning, and supervision preparation.', points: ['Research questions', 'Method choices', 'Chapter planning'] },
   { name: 'Draft Feedback', icon: MessageSquareText, badge: 'Developmental', desc: 'Constructive review of student-written drafts covering argument, structure, evidence, analysis, and clarity.', points: ['No ghostwriting', 'Revision priorities', 'Actionable comments'] },
   { name: 'Proofreading', icon: SpellCheck2, badge: 'Language', desc: 'Language-focused editing of student-authored work within institutional rules and declared support boundaries.', points: ['Grammar and clarity', 'Consistency', 'Authorship preserved'] },
   { name: 'Data Analysis Tutoring', icon: BarChart3, badge: 'Technical', desc: 'Guided practice in SPSS, Excel, NVivo, Python, and the interpretation and presentation of results.', points: ['Step-by-step learning', 'Interpretation skills', 'No fabricated data'] },
-  { name: 'Presentation Coaching', icon: Presentation, badge: 'Communication', desc: 'Improve slide structure, visual communication, speaker notes, timing, and confident delivery.', points: ['Slide clarity', 'Delivery practice', 'Audience focus'] },
+  { name: 'Presentation Help', icon: Presentation, badge: 'Communication', desc: 'Improve slide structure, visual communication, speaker notes, timing, and confident delivery.', points: ['Slide clarity', 'Delivery practice', 'Audience focus'] },
 ];
 
 function filterCategories(searchTerm: string): ServiceCategory[] {
@@ -57,12 +57,12 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <PageHero
-        title="Ethical Academic Coaching & Research Support"
+        title="Assignment & Dissertation Help UK & Saudi Arabia"
         subtitle="Tutoring, feedback, proofreading, and research guidance that strengthen your own skills without replacing your authorship."
         breadcrumb="Services"
         badge="Learning-Focused Support"
         backgroundImage="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600&q=80"
-        highlights={['Academic Coaching', 'Research Guidance', 'Draft Feedback']}
+        highlights={['Assignment Help', 'Research Guidance', 'Draft Feedback']}
         ctaLabel="Request Learning Support"
         ctaHref={SUPPORT_FORM_HASH}
       />

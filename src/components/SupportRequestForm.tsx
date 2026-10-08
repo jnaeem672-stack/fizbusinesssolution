@@ -139,7 +139,7 @@ const SupportRequestForm = () => {
             type="checkbox"
             className="mt-0.5 h-4 w-4 accent-primary shrink-0"
           />
-          <span>I agree to the terms and academic integrity policy.</span>
+          <span>I agree to the terms and privacy policy.</span>
         </label>
         {errors.academicIntegrityConfirmed && (
           <p className="text-xs text-primary font-semibold">Please tick the box to continue.</p>

@@ -21,7 +21,7 @@ export default function ContactFormLayout() {
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
           title="Request Learning Support"
-          subtitle="Use the form, WhatsApp, or email to explain your learning need. We will recommend a permitted form of coaching, tutoring, feedback, or proofreading."
+          subtitle="Use the form, WhatsApp, or email to explain your learning need. We will recommend a permitted form of academic help, tutoring, feedback, or proofreading."
           className="mb-10 md:mb-12"
         />
 

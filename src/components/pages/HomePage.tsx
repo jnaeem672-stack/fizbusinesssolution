@@ -5,6 +5,7 @@ import HomeHero from '@/components/home/HomeHero';
 import ServicesGrid from '@/components/ServicesGrid';
 import QuoteCalculator from '@/QuoteCalculator';
 import UniversityStrip from '@/components/UniversityStrip';
+import SubjectsSection from '@/components/SubjectsSection';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
@@ -34,6 +35,7 @@ export default function HomePage() {
         <HomeHero />
         <UniversityStrip />
         <QuoteCalculator />
+        <SubjectsSection />
         <ServicesGrid />
         <WhyChooseUs />
         <HowItWorks />

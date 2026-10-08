@@ -12,11 +12,11 @@ import ScrollToTopButton from '@/components/ScrollToTopButton';
 export const metadata: Metadata = {
   metadataBase: new URL('https://fizbusinesssolutions.com'),
   title: {
-    default: 'Ethical Academic Coaching & Research Support | FIZ Business Solutions',
+    default: 'Assignment & Dissertation Help UK & Saudi Arabia | FIZ Business Solutions',
     template: '%s | FIZ Business Solutions',
   },
   description:
-    'Ethical academic coaching, research-methods tutoring, draft feedback, proofreading, referencing support, data-analysis tutoring, and professional communication support.',
+    'Expert academic help, research-methods tutoring, draft feedback, proofreading, referencing support, data-analysis tutoring, and professional communication support.',
   icons: {
     icon: [{ url: '/icon.svg', type: 'image/svg+xml' }],
     apple: [{ url: '/apple-icon', sizes: '180x180', type: 'image/png' }],
@@ -41,9 +41,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               name: 'FIZ Business Solutions',
               url: 'https://fizbusinesssolutions.com',
               logo: 'https://fizbusinesssolutions.com/apple-icon',
-              description: 'Ethical academic coaching, research guidance, proofreading, developmental feedback, and professional communication support.',
+              description: 'Expert academic help, research guidance, proofreading, developmental feedback, and professional communication support.',
               serviceType: [
-                'Academic coaching',
+                'Assignment help',
                 'Research methods tutoring',
                 'Draft feedback',
                 'Proofreading',

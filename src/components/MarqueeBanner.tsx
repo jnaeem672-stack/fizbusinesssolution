@@ -1,7 +1,7 @@
 'use client';
 
 const MarqueeBanner = () => {
-  const text = '🎁 First Order? Get Up To 10% OFF | Academic Coaching | Research Methods Tutoring | Feedback on Student-Written Drafts | Proofreading | Referencing Support | Academic Integrity First | ';
+  const text = '🎁 First Order? Get Up To 10% OFF | Assignment Help | Dissertation Help | Research Proposal Help | Proofreading & Editing | Harvard, APA & OSCOLA Referencing | 24/7 WhatsApp Support | ';
 
   return (
     <div className="bg-primary h-[40px] flex items-center overflow-hidden border-b border-white/10 shrink-0">

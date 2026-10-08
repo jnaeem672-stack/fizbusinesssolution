@@ -32,7 +32,7 @@ const approach = [
   },
   {
     title: 'Choose a Permitted Support Method',
-    desc: 'The request is reviewed and shaped into coaching, tutoring, developmental feedback, proofreading, or another legitimate service.',
+    desc: 'The request is reviewed and shaped into academic help, tutoring, developmental feedback, proofreading, or another legitimate service.',
     icon: Scale,
   },
   {
@@ -49,7 +49,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white">
       <PageHero
         title="About FIZ Business Solutions"
-        subtitle="Ethical academic coaching, research guidance, and professional communication support centred on genuine learning and independent work."
+        subtitle="Expert academic help, research guidance, and professional communication support centred on genuine learning and independent work."
         breadcrumb="About Us"
         badge="Learning & Research Support"
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80"

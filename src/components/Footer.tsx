@@ -11,7 +11,7 @@ const Footer = () => (
     <div className="flex flex-col items-center gap-4">
       <Logo dark />
       <p className="text-center max-w-2xl leading-relaxed text-white/60">
-        Ethical academic coaching, research guidance, proofreading, and developmental feedback. We do not write assessed work for submission, take examinations, fabricate research, or guarantee grades.
+        Assignment, dissertation and research help for students in the UK and Saudi Arabia since 2015. Qualified subject experts, transparent pricing and 24/7 WhatsApp support.
       </p>
       <p className="text-center max-w-md leading-relaxed">
         © {new Date().getFullYear()} FIZ Business Solutions. All rights reserved.
