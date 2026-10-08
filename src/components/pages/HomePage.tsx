@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import HomeHero from '@/components/home/HomeHero';
 import ServicesGrid from '@/components/ServicesGrid';
 import QuoteCalculator from '@/QuoteCalculator';
+import UniversityStrip from '@/components/UniversityStrip';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
@@ -31,6 +32,7 @@ export default function HomePage() {
     <>
       <main className="bg-gray-50 overflow-x-hidden">
         <HomeHero />
+        <UniversityStrip />
         <QuoteCalculator />
         <ServicesGrid />
         <WhyChooseUs />
