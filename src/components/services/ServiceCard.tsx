@@ -5,6 +5,7 @@ import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
 import { SUPPORT_FORM_PATH } from '@/constants/supportNavigation';
 import type { ServiceCardProps } from '@/types';
+import { SERVICE_PAGE_LINKS } from '@/constants/serviceLinks';
 
 const ServiceCard = ({ name, desc, icon: Icon, index }: ServiceCardProps) => (
   <motion.div
@@ -19,14 +20,26 @@ const ServiceCard = ({ name, desc, icon: Icon, index }: ServiceCardProps) => (
     <div className="w-14 h-14 icon-gradient rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
       <Icon className="w-7 h-7" />
     </div>
-    <h3 className="text-navy font-extrabold text-lg mb-3">{name}</h3>
+    <h3 className="text-navy font-extrabold text-lg mb-3">
+      {SERVICE_PAGE_LINKS[name] ? <Link href={SERVICE_PAGE_LINKS[name]} className="hover:text-primary transition-colors">{name}</Link> : name}
+    </h3>
     <p className="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">{desc}</p>
-    <Link
-      href={SUPPORT_FORM_PATH}
-      className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wider hover:gap-3 transition-all mt-auto"
-    >
-      Get a Quote <ChevronRight className="w-4 h-4" />
-    </Link>
+    <div className="flex flex-wrap items-center gap-x-5 gap-y-2 mt-auto">
+      {SERVICE_PAGE_LINKS[name] && (
+        <Link
+          href={SERVICE_PAGE_LINKS[name]}
+          className="inline-flex items-center gap-1.5 text-navy font-bold text-sm uppercase tracking-wider hover:text-primary transition-all"
+        >
+          Learn More <ChevronRight className="w-4 h-4" />
+        </Link>
+      )}
+      <Link
+        href={SUPPORT_FORM_PATH}
+        className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wider hover:gap-3 transition-all"
+      >
+        Get a Quote <ChevronRight className="w-4 h-4" />
+      </Link>
+    </div>
   </motion.div>
 );
 

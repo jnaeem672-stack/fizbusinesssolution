@@ -9,23 +9,9 @@ import Logo from './Logo';
 import { SUPPORT_FORM_PATH, scrollToSupportForm } from '@/constants/supportNavigation';
 import { MEGA_MENU_CATEGORIES } from '@/constants/servicesCatalog';
 import { alternateLanguagePath } from '@/content/landing/languageMap';
+import { SERVICE_PAGE_LINKS } from '@/constants/serviceLinks';
 
-const MENU_LINKS: Record<string, string> = {
-  'Assignment Help': '/assignment-help-uk',
-  'Essay Help': '/assignment-help-uk',
-  'Dissertation Help': '/dissertation-help-uk',
-  'Thesis Help': '/dissertation-help-uk',
-  'Research Proposal Help': '/research-proposal-help',
-  'Literature Review Help': '/dissertation-help-uk',
-  'Research Methodology Help': '/research-proposal-help',
-  'Data Analysis Help': '/spss-help',
-  'SPSS Help': '/spss-help',
-  'Excel Data Analysis Help': '/spss-help',
-  'NVivo & Thematic Analysis Help': '/spss-help',
-  'PhD Admission & Scholarship Help': '/phd-admission-scholarship-help',
-  'Business & Management Assignment Help': '/mba-assignment-help',
-  'MBA Assignment Help': '/mba-assignment-help',
-};
+const MENU_LINKS = SERVICE_PAGE_LINKS;
 
 interface NavLink {
   title: string;
@@ -133,6 +119,19 @@ const Navbar = () => {
                           </ul>
                         </div>
                       ))}
+                      <div className="col-span-3 -mx-8 -mb-8 mt-2 px-8 py-4 bg-gradient-to-r from-navy to-navy-light rounded-b-2xl flex items-center justify-between gap-4">
+                        <p className="text-white text-sm font-bold">
+                          🎁 First order 10% OFF <span className="text-white/60 font-semibold">· Assignments from £20 per 1,000 words · Dissertations max £350</span>
+                        </p>
+                        <div className="flex items-center gap-2 shrink-0">
+                          <Link href="/services" className="px-4 py-2 rounded-lg border border-white/20 text-white text-xs font-black uppercase tracking-wider hover:bg-white/10">
+                            All Services
+                          </Link>
+                          <a href="/#quote" className="px-4 py-2 rounded-lg bg-primary text-white text-xs font-black uppercase tracking-wider hover:brightness-110">
+                            Get Instant Price
+                          </a>
+                        </div>
+                      </div>
                     </motion.div>
                   )}
                 </AnimatePresence>
@@ -207,6 +206,28 @@ const Navbar = () => {
                   </Link>
                 ))}
               </div>
+
+              <details className="mt-6 border-t pt-5">
+                <summary className="cursor-pointer list-none text-sm font-black uppercase tracking-widest text-primary flex items-center justify-between">
+                  All Services <ChevronDown className="w-4 h-4" />
+                </summary>
+                <div className="mt-4 space-y-5 max-h-[40vh] overflow-y-auto pr-1">
+                  {MEGA_MENU_CATEGORIES.map((col) => (
+                    <div key={col.title}>
+                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2">{col.title}</p>
+                      <ul className="space-y-2">
+                        {col.links.map((item) => (
+                          <li key={item}>
+                            <Link href={MENU_LINKS[item] ?? '/services'} onClick={() => setIsOpen(false)} className="text-sm font-bold text-navy">
+                              {item}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </details>
 
               <div className="flex flex-col gap-4 mt-auto">
                 <button

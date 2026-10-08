@@ -13,6 +13,27 @@ import { assignmentHelpBirmingham } from './assignment-help-birmingham';
 import { assignmentHelpRiyadh } from './assignment-help-riyadh';
 import { assignmentHelpJeddah } from './assignment-help-jeddah';
 import { assignmentHelpDammam } from './assignment-help-dammam';
+import { essayHelp } from './essay-help';
+import { courseworkReportHelp } from './coursework-report-help';
+import { caseStudyHelp } from './case-study-help';
+import { presentationHelp } from './presentation-help';
+import { proofreadingEditingServices } from './proofreading-editing-services';
+import { referencingHelp } from './referencing-help';
+import { draftReviewFeedback } from './draft-review-feedback';
+import { thesisHelp } from './thesis-help';
+import { literatureReviewHelp } from './literature-review-help';
+import { researchMethodologyHelp } from './research-methodology-help';
+import { dataAnalysisHelp } from './data-analysis-help';
+import { excelDataAnalysisHelp } from './excel-data-analysis-help';
+import { nvivoThematicAnalysisHelp } from './nvivo-thematic-analysis-help';
+import { pythonStataHelp } from './python-stata-help';
+import { businessManagementAssignmentHelp } from './business-management-assignment-help';
+import { marketingAssignmentHelp } from './marketing-assignment-help';
+import { financeAccountingAssignmentHelp } from './finance-accounting-assignment-help';
+import { healthcareNursingAssignmentHelp } from './healthcare-nursing-assignment-help';
+import { lawAssignmentHelp } from './law-assignment-help';
+import { computingItAssignmentHelp } from './computing-it-assignment-help';
+import { engineeringAssignmentHelp } from './engineering-assignment-help';
 import { arAssignmentHelpRiyadh } from './ar-assignment-help-riyadh';
 import { arAssignmentHelpJeddah } from './ar-assignment-help-jeddah';
 import { arAssignmentHelpDammam } from './ar-assignment-help-dammam';
@@ -37,6 +58,27 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   assignmentHelpRiyadh,
   assignmentHelpJeddah,
   assignmentHelpDammam,
+  essayHelp,
+  courseworkReportHelp,
+  caseStudyHelp,
+  presentationHelp,
+  proofreadingEditingServices,
+  referencingHelp,
+  draftReviewFeedback,
+  thesisHelp,
+  literatureReviewHelp,
+  researchMethodologyHelp,
+  dataAnalysisHelp,
+  excelDataAnalysisHelp,
+  nvivoThematicAnalysisHelp,
+  pythonStataHelp,
+  businessManagementAssignmentHelp,
+  marketingAssignmentHelp,
+  financeAccountingAssignmentHelp,
+  healthcareNursingAssignmentHelp,
+  lawAssignmentHelp,
+  computingItAssignmentHelp,
+  engineeringAssignmentHelp,
 ];
 
 /** Arabic landing pages, served at /ar/{slug} */

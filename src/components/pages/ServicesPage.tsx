@@ -21,6 +21,8 @@ import CTASection from '@/components/home/CTASection';
 import { SUPPORT_FORM_HASH, scrollToSupportForm } from '@/constants/supportNavigation';
 import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 import { ALL_SERVICES, SERVICE_CATEGORIES, type ServiceCategory } from '@/constants/servicesCatalog';
+import { SERVICE_PAGE_LINKS } from '@/constants/serviceLinks';
+import Link from 'next/link';
 
 const featuredServices: { name: string; icon: LucideIcon; badge: string; desc: string; points: string[] }[] = [
   { name: 'Assignment Help', icon: GraduationCap, badge: 'Most Popular', desc: 'Expert assignment help for essays, reports, case studies and coursework in 100+ subjects at UK and Saudi universities.', points: ['From £20 per 1,000 words', 'Qualified subject experts', 'Harvard, APA & OSCOLA referencing'] },
@@ -140,13 +142,22 @@ export default function ServicesPage() {
                     {category.services.map((service, index) => (
                       <motion.article key={service.id} initial={{ opacity: 0, y: 16 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.03 }} className="group bg-white rounded-2xl border border-gray-100 p-5 md:p-6 shadow-sm hover:shadow-lg hover:border-primary/20 transition-all flex flex-col h-full">
                         <div className="flex items-start justify-between gap-3 mb-3">
-                          <h4 className="font-black text-navy text-base leading-snug group-hover:text-primary transition-colors">{service.name}</h4>
+                          <h4 className="font-black text-navy text-base leading-snug group-hover:text-primary transition-colors">
+                            {SERVICE_PAGE_LINKS[service.name] ? <Link href={SERVICE_PAGE_LINKS[service.name]}>{service.name}</Link> : service.name}
+                          </h4>
                           <span className="shrink-0 px-2 py-0.5 bg-primary/10 text-primary text-[9px] font-black uppercase tracking-wider rounded-full">{service.areas}</span>
                         </div>
                         <p className="text-gray-500 text-sm leading-relaxed mb-5 flex-grow">{service.desc}</p>
-                        <button type="button" onClick={scrollToSupportForm} className="inline-flex items-center gap-1.5 text-primary font-black text-[10px] uppercase tracking-widest hover:gap-2.5 transition-all mt-auto">
-                          Get a Quote <ChevronRight className="w-4 h-4" />
-                        </button>
+                        <div className="flex items-center gap-4 mt-auto">
+                          {SERVICE_PAGE_LINKS[service.name] && (
+                            <Link href={SERVICE_PAGE_LINKS[service.name]} className="inline-flex items-center gap-1.5 text-navy font-black text-[10px] uppercase tracking-widest hover:text-primary transition-all">
+                              Learn More <ChevronRight className="w-4 h-4" />
+                            </Link>
+                          )}
+                          <button type="button" onClick={scrollToSupportForm} className="inline-flex items-center gap-1.5 text-primary font-black text-[10px] uppercase tracking-widest hover:gap-2.5 transition-all">
+                            Get a Quote <ChevronRight className="w-4 h-4" />
+                          </button>
+                        </div>
                       </motion.article>
                     ))}
                   </div>
