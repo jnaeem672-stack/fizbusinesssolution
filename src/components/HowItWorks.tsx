@@ -14,7 +14,7 @@ const steps: { id: string; title: string; desc: string; icon: LucideIcon }[] = [
   {
     id: '02',
     title: 'Get Your Price',
-    desc: 'Receive a clear quote in GBP, with 10% off your first order, and confirm to get started.',
+    desc: 'Receive a clear quote in GBP with 10% off your first order. Pay 50% to start and 50% on completion.',
     icon: UserCheck,
   },
   {

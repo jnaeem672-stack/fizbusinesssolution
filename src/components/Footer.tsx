@@ -1,11 +1,12 @@
 import Link from 'next/link';
-import { Linkedin, Twitter, Instagram, Facebook, Mail } from 'lucide-react';
+import { Linkedin, Twitter, Instagram, Facebook, Mail, Landmark, ShieldCheck } from 'lucide-react';
 import Logo from './Logo';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
 import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
 import { SERVICE_LINKS, CITY_LINKS } from '@/content/landing';
+import { PAYMENT } from '@/constants/payment';
 
 const Footer = () => (
   <footer className="bg-navy py-10 md:py-12 px-4 md:px-8 flex flex-col items-center text-white/50 text-[11px] shrink-0 border-t border-white/5 space-y-6">
@@ -40,6 +41,18 @@ const Footer = () => (
           ))}
         </ul>
       </div>
+    </div>
+
+    <div className="w-full max-w-3xl flex flex-wrap items-center justify-center gap-3 py-4 border-y border-white/10">
+      <span className="text-white font-black text-[11px] uppercase tracking-widest">Payment</span>
+      {PAYMENT.en.methods.map((m) => (
+        <span key={m.code} className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white text-navy text-xs font-black whitespace-nowrap">
+          <Landmark className="w-4 h-4 text-primary" /> {m.title} · {m.currency}
+        </span>
+      ))}
+      <span className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 text-white text-xs font-bold whitespace-nowrap">
+        <ShieldCheck className="w-4 h-4 text-primary" /> {PAYMENT.en.split}
+      </span>
     </div>
 
     <div className="flex flex-col sm:flex-row flex-wrap justify-center items-center gap-4 sm:gap-8 w-full max-w-lg">

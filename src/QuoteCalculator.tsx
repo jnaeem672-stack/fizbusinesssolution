@@ -7,6 +7,7 @@ import SectionHeader from '@/components/ui/SectionHeader';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
+import { PAYMENT } from '@/constants/payment';
 
 type Level = 'ug' | 'pg' | 'phd';
 type ServiceKey = 'assignment' | 'dissertation' | 'proofreading';
@@ -297,7 +298,10 @@ export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar
               <WhatsAppIcon size={24} className="w-6 h-6" />
               {t.cta}
             </WhatsAppLink>
-            <p className="text-[11px] text-white/40 text-center mt-3">
+            <p className="text-xs text-white/80 text-center mt-4 font-bold">
+              💳 {PAYMENT[locale].split}
+            </p>
+            <p className="text-[11px] text-white/40 text-center mt-1.5">
               {t.note}
             </p>
           </div>

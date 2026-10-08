@@ -3,9 +3,11 @@ import { CheckCircle2, Award, GraduationCap, BookOpenCheck, Layers, ChevronRight
 import SupportRequestForm from '@/components/SupportRequestForm';
 import QuoteCalculator from '@/QuoteCalculator';
 import FaqSection from '@/components/FaqSection';
+import PaymentSection from '@/components/PaymentSection';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
+import { PAYMENT } from '@/constants/payment';
 import {
   SITE_URL,
   getLandingPage,
@@ -240,7 +242,9 @@ export default function LandingPage({ page }: { page: LandingContent }) {
 
       <QuoteCalculator locale={page.locale} />
 
-      <FaqSection faqs={page.faqs} title={t.faqTitle} rtl={isAr} className="bg-white" />
+      <PaymentSection locale={page.locale} className="bg-soft-rose" />
+
+      <FaqSection faqs={[...page.faqs, PAYMENT[page.locale].faq]} title={t.faqTitle} rtl={isAr} className="bg-white" />
 
       {/* Final CTA */}
       <section className="relative py-16 md:py-20 overflow-hidden bg-navy" dir={isAr ? 'rtl' : undefined}>

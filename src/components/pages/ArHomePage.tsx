@@ -23,6 +23,7 @@ import SupportRequestForm from '@/components/SupportRequestForm';
 import QuoteCalculator from '@/QuoteCalculator';
 import UniversityStrip from '@/components/UniversityStrip';
 import FaqSection from '@/components/FaqSection';
+import PaymentSection from '@/components/PaymentSection';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
@@ -246,6 +247,8 @@ export default function ArHomePage() {
           </div>
         </div>
       </section>
+
+      <PaymentSection locale="ar" className="bg-gray-50" />
 
       <FaqSection faqs={c.faq.items} title={c.faq.title} subtitle={c.faq.subtitle} badge={c.faq.badge} rtl className="bg-soft-rose" />
 
