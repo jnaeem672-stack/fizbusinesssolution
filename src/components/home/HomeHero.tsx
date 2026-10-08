@@ -88,12 +88,12 @@ export default function HomeHero() {
               transition={{ duration: 0.5 }}
               className="flex flex-wrap items-center gap-3 mb-7"
             >
-              <Link
+              <a
                 href="#quote"
                 className="inline-flex items-center gap-2 px-4 py-1.5 bg-primary rounded-full text-[11px] font-black text-white uppercase tracking-wider shadow-lg shadow-primary/30 hover:brightness-110 transition-all"
               >
                 🎁 First Order? Up To 10% OFF
-              </Link>
+              </a>
               <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-[11px] font-bold border border-white/20 text-white uppercase tracking-wider">
                 <ShieldCheck className="w-3.5 h-3.5 text-primary" />
                 Trusted Since 2015
@@ -157,12 +157,12 @@ export default function HomeHero() {
               transition={{ duration: 0.6, delay: 0.35 }}
               className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10"
             >
-              <Link
+              <a
                 href="#quote"
                 className="px-9 py-4 bg-primary text-white font-bold rounded-xl text-lg shadow-xl shadow-primary/40 hover:brightness-110 hover:scale-[1.03] active:scale-[0.97] transition-all text-center"
               >
                 Get Instant Price
-              </Link>
+              </a>
               <WhatsAppLink
                 href={WHATSAPP_URL}
                 aria-label="Chat with us on WhatsApp"

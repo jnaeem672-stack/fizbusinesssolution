@@ -5,9 +5,9 @@ import Link from 'next/link';
 import {
   ShieldCheck,
   BookOpenCheck,
-  MessageSquareText,
+  Clock,
   UserRoundCheck,
-  Scale,
+  BadgePoundSterling,
   GraduationCap,
   type LucideIcon,
 } from 'lucide-react';
@@ -18,26 +18,26 @@ import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 import { SUPPORT_FORM_HASH } from '@/constants/supportNavigation';
 
 const values: { title: string; icon: LucideIcon; desc: string }[] = [
-  { title: 'Integrity', icon: ShieldCheck, desc: 'We refuse requests involving ghostwriting, impersonation, fabricated evidence, or dishonest authorship.' },
-  { title: 'Learning', icon: BookOpenCheck, desc: 'Support should leave the learner with stronger skills, clearer understanding, and greater independence.' },
-  { title: 'Clarity', icon: MessageSquareText, desc: 'We explain the scope and limits of support before work begins and give feedback that can be acted upon.' },
-  { title: 'Responsibility', icon: UserRoundCheck, desc: 'Learners remain responsible for their final work and for following the policies of their institution.' },
+  { title: 'Qualified Experts', icon: UserRoundCheck, desc: "Master's and PhD-qualified specialists in business, management, finance, health, law, computing and more." },
+  { title: 'On-Time Delivery', icon: Clock, desc: 'We plan around your deadline, from 48 hours to several weeks, and keep you updated on WhatsApp.' },
+  { title: 'Fair UK Pricing', icon: BadgePoundSterling, desc: 'Transparent prices in GBP from £20 per 1,000 words, with 10% off your first order.' },
+  { title: '100% Confidential', icon: ShieldCheck, desc: 'Your name, university and files are kept private and never shared with anyone.' },
 ];
 
 const approach = [
   {
-    title: 'Understand the Challenge',
-    desc: 'We begin with what the learner has already completed, the feedback received, and the specific skill or concept causing difficulty.',
+    title: 'Share Your Requirements',
+    desc: 'Send your assignment brief, subject, word count and deadline through our form or WhatsApp.',
     icon: GraduationCap,
   },
   {
-    title: 'Choose a Permitted Support Method',
-    desc: 'The request is reviewed and shaped into academic help, tutoring, developmental feedback, proofreading, or another legitimate service.',
-    icon: Scale,
+    title: 'Get a Clear Price',
+    desc: 'We reply with a transparent quote in GBP and match you with a qualified expert in your subject.',
+    icon: BadgePoundSterling,
   },
   {
-    title: 'Build Independent Capability',
-    desc: 'The learner applies the guidance, makes revisions, and remains the author and decision-maker throughout the process.',
+    title: 'Get Expert Help',
+    desc: 'Your expert works on your request and keeps you updated until your deadline.',
     icon: BookOpenCheck,
   },
 ];
@@ -49,12 +49,12 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white">
       <PageHero
         title="About FIZ Business Solutions"
-        subtitle="Expert academic help, research guidance, and professional communication support centred on genuine learning and independent work."
+        subtitle="Trusted assignment and dissertation help for students in the UK and Saudi Arabia since 2015. 10,000+ students supported and 350+ research projects completed."
         breadcrumb="About Us"
-        badge="Learning & Research Support"
+        badge="Since 2015"
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80"
-        highlights={['Student Authorship', 'Clear Boundaries', 'Practical Skills']}
-        ctaLabel="Request Learning Support"
+        highlights={['10+ Years', '10,000+ Students', '350+ Research Projects']}
+        ctaLabel="Get a Free Quote"
         ctaHref={SUPPORT_FORM_HASH}
         waveColor="#ffffff"
       />
@@ -66,19 +66,19 @@ export default function AboutPage() {
           <div className="lg:w-1/2">
             <motion.div initial={{ opacity: 0, x: -50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
               <h2 className="text-3xl md:text-5xl font-black text-navy leading-tight mb-8">
-                Support That Strengthens <span className="text-primary">Your Own Work</span>
+                Assignment &amp; Dissertation Help <span className="text-primary">You Can Trust</span>
               </h2>
               <div className="relative rounded-2xl overflow-hidden shadow-2xl">
-                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" alt="Learners collaborating in an educational setting" className="w-full h-[400px] object-cover" loading="lazy" />
+                <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=800&q=80" alt="University students working on assignments together" className="w-full h-[400px] object-cover" loading="lazy" />
                 <div className="absolute inset-0 bg-primary/10" />
               </div>
             </motion.div>
           </div>
           <div className="lg:w-1/2">
             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="space-y-6 text-gray-600 text-lg leading-relaxed">
-              <p>FIZ Business Solutions provides learning-focused support for students, researchers, and professionals who need clearer guidance on academic expectations, research methods, writing, analysis, or communication.</p>
-              <p>Our role is to explain, question, demonstrate, and provide feedback. The learner remains responsible for the thinking, decisions, research, revisions, and final submission.</p>
-              <p>We do not market completed assignments or promise grades. Requests that would involve contract cheating, examination assistance, fabricated data, hidden third-party authorship, or plagiarism concealment are refused.</p>
+              <p>FIZ Business Solutions (FIZBS) has provided assignment help and dissertation help to university students since 2015. Over the last 10 years we have supported more than 10,000 students and completed 350+ research projects.</p>
+              <p>Our team of qualified subject experts helps Bachelor&apos;s, Master&apos;s, MBA and PhD students at universities across the UK and Saudi Arabia, with a special focus on business, management, marketing, finance and accounting.</p>
+              <p>Whether you need help with an essay, a business report, a case study, a research proposal or a full dissertation, we offer clear pricing, on-time delivery and friendly 24/7 support on WhatsApp.</p>
             </motion.div>
           </div>
         </div>
@@ -87,8 +87,8 @@ export default function AboutPage() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-site mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <h2 className="text-3xl md:text-5xl font-black text-navy mb-5">Our Support Approach</h2>
-            <p className="text-gray-600 text-lg leading-relaxed">Each request is shaped around a learning outcome rather than the production of a submission.</p>
+            <h2 className="text-3xl md:text-5xl font-black text-navy mb-5">How We Work</h2>
+            <p className="text-gray-600 text-lg leading-relaxed">Getting assignment help from FIZBS is quick and simple.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {approach.map((item, index) => (
@@ -107,8 +107,8 @@ export default function AboutPage() {
       <section className="py-20 bg-navy">
         <div className="max-w-site mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <h2 className="text-3xl md:text-5xl font-black text-white mb-5">Our Values</h2>
-            <p className="text-white/65 text-lg leading-relaxed">These principles guide what we accept, how we work, and what customers can expect.</p>
+            <h2 className="text-3xl md:text-5xl font-black text-white mb-5">Why Students Choose Us</h2>
+            <p className="text-white/65 text-lg leading-relaxed">What you can expect every time you work with FIZBS.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((item, index) => (
@@ -124,12 +124,12 @@ export default function AboutPage() {
 
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-black text-navy mb-5">Transparent Support Boundaries</h2>
+          <h2 className="text-3xl md:text-4xl font-black text-navy mb-5">See Your Price in Seconds</h2>
           <p className="text-gray-600 text-lg leading-relaxed mb-8">
-            Customers should check their institution&apos;s rules on tutoring, proofreading, artificial intelligence, collaboration, and disclosure of external support. Institutional rules take priority over any request made to us.
+            Use our instant price calculator for assignment and dissertation help, and get 10% off your first order.
           </p>
-          <Link href="/academic-integrity" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 hover:brightness-110 transition-all">
-            Read Our Academic Integrity Policy
+          <Link href="/#quote" className="inline-flex items-center justify-center px-8 py-4 bg-primary text-white font-bold rounded-xl shadow-lg shadow-primary/30 hover:brightness-110 transition-all">
+            Get Instant Price
           </Link>
         </div>
       </section>

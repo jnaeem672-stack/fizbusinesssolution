@@ -4,9 +4,9 @@ import ServicesPage from '@/components/pages/ServicesPage';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
-  title: 'Assignment Help, Dissertation Help & Proofreading',
-  description: 'Explore expert academic help, dissertation guidance, proofreading, referencing support, research-methods tutoring, and data-analysis tutoring.',
-  alternates: { canonical: 'https://fizbusinesssolutions.com/services' },
+  title: 'Assignment Help, Dissertation Help & Proofreading Services',
+  description: 'All FIZBS services: assignment help, essay help, dissertation and thesis help, research proposal help, SPSS and NVivo data analysis, proofreading and referencing for UK and Saudi students.',
+  alternates: { canonical: 'https://fizbusinessolutions.com/services' },
 };
 
 export default function Page() {

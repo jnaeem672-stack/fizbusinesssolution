@@ -23,12 +23,12 @@ import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 import { ALL_SERVICES, SERVICE_CATEGORIES, type ServiceCategory } from '@/constants/servicesCatalog';
 
 const featuredServices: { name: string; icon: LucideIcon; badge: string; desc: string; points: string[] }[] = [
-  { name: 'Assignment Help', icon: GraduationCap, badge: 'Core Service', desc: 'One-to-one guidance that helps learners understand tasks, organise ideas, and strengthen academic skills.', points: ['Student-led work', 'Clear explanations', 'Practical next steps'] },
-  { name: 'Dissertation Help', icon: BookOpenCheck, badge: 'Research', desc: 'Structured support with research focus, literature, methodology, chapter planning, and supervision preparation.', points: ['Research questions', 'Method choices', 'Chapter planning'] },
-  { name: 'Draft Feedback', icon: MessageSquareText, badge: 'Developmental', desc: 'Constructive review of student-written drafts covering argument, structure, evidence, analysis, and clarity.', points: ['No ghostwriting', 'Revision priorities', 'Actionable comments'] },
-  { name: 'Proofreading', icon: SpellCheck2, badge: 'Language', desc: 'Language-focused editing of student-authored work within institutional rules and declared support boundaries.', points: ['Grammar and clarity', 'Consistency', 'Authorship preserved'] },
-  { name: 'Data Analysis Tutoring', icon: BarChart3, badge: 'Technical', desc: 'Guided practice in SPSS, Excel, NVivo, Python, and the interpretation and presentation of results.', points: ['Step-by-step learning', 'Interpretation skills', 'No fabricated data'] },
-  { name: 'Presentation Help', icon: Presentation, badge: 'Communication', desc: 'Improve slide structure, visual communication, speaker notes, timing, and confident delivery.', points: ['Slide clarity', 'Delivery practice', 'Audience focus'] },
+  { name: 'Assignment Help', icon: GraduationCap, badge: 'Most Popular', desc: 'Expert assignment help for essays, reports, case studies and coursework in 100+ subjects at UK and Saudi universities.', points: ['From £20 per 1,000 words', 'Qualified subject experts', 'Harvard, APA & OSCOLA referencing'] },
+  { name: 'Dissertation Help', icon: BookOpenCheck, badge: 'Research', desc: "Dissertation and thesis help for Bachelor's, Master's, MBA and PhD students, from proposal to final chapter.", points: ['Proposal & literature review', 'Methodology & data analysis', 'Maximum £350 per dissertation'] },
+  { name: 'Research Proposal Help', icon: MessageSquareText, badge: 'Proposals', desc: 'Research proposals for dissertations and PhD applications with clear aims, questions and methodology.', points: ['Topic selection', 'Research questions', 'PhD & scholarship applications'] },
+  { name: 'Proofreading & Editing', icon: SpellCheck2, badge: 'Language', desc: 'Professional proofreading and editing to UK academic standards for grammar, flow, clarity and tone.', points: ['Grammar & clarity', 'Academic tone', 'Fast turnaround'] },
+  { name: 'Data Analysis Help', icon: BarChart3, badge: 'Technical', desc: 'SPSS, Excel, NVivo, Stata and Python analysis with clear tables, charts and interpretation of results.', points: ['SPSS & Excel', 'NVivo & thematic analysis', 'Clear interpretation'] },
+  { name: 'Presentation Help', icon: Presentation, badge: 'Presentations', desc: 'Professional PowerPoint slides with clear structure, visuals and speaker notes for any subject.', points: ['Professional slides', 'Speaker notes', 'Any subject'] },
 ];
 
 function filterCategories(searchTerm: string): ServiceCategory[] {
@@ -58,12 +58,12 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <PageHero
         title="Assignment & Dissertation Help UK & Saudi Arabia"
-        subtitle="Tutoring, feedback, proofreading, and research guidance that strengthen your own skills without replacing your authorship."
+        subtitle="Expert assignment help, dissertation help, research proposal help and proofreading for students in the UK and Saudi Arabia since 2015."
         breadcrumb="Services"
-        badge="Learning-Focused Support"
+        badge="Trusted Since 2015"
         backgroundImage="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600&q=80"
-        highlights={['Assignment Help', 'Research Guidance', 'Draft Feedback']}
-        ctaLabel="Request Learning Support"
+        highlights={['Assignment Help', 'Dissertation Help', 'Proofreading']}
+        ctaLabel="Get a Free Quote"
         ctaHref={SUPPORT_FORM_HASH}
       />
 
@@ -73,8 +73,9 @@ export default function ServicesPage() {
         <section className="py-16 md:py-24 bg-navy relative">
           <div className="max-w-site mx-auto px-4">
             <SectionHeader
-              title="Featured Support Services"
-              subtitle="Common forms of ethical support designed to improve understanding, confidence, and independent performance."
+              badge="Most Popular"
+              title="Our Most Popular Services"
+              subtitle="Assignment and dissertation help from qualified subject experts, with transparent UK pricing and 10% off your first order."
               light
               className="mb-12 md:mb-16"
             />
@@ -99,7 +100,7 @@ export default function ServicesPage() {
                     onClick={scrollToSupportForm}
                     className="w-full py-4 bg-primary text-white font-black uppercase tracking-widest rounded-lg flex items-center justify-center gap-2 text-xs shadow-xl shadow-primary/20 hover:brightness-110 transition-all"
                   >
-                    Discuss This Service <ChevronRight className="w-4 h-4" />
+                    Get a Quote <ChevronRight className="w-4 h-4" />
                   </button>
                 </motion.div>
               ))}
@@ -109,8 +110,9 @@ export default function ServicesPage() {
 
         <section className="py-16 md:py-20 max-w-site mx-auto px-4">
           <SectionHeader
-            title="Browse All Support Areas"
-            subtitle={`${ALL_SERVICES.length} learning-support services across academic skills, research methods, data analysis, and professional communication.`}
+            badge="All Services"
+            title="All Assignment & Dissertation Help Services"
+            subtitle={`${ALL_SERVICES.length} services covering assignments, essays, dissertations, research proposals, data analysis and 100+ subjects.`}
             className="mb-10"
           />
 
@@ -143,7 +145,7 @@ export default function ServicesPage() {
                         </div>
                         <p className="text-gray-500 text-sm leading-relaxed mb-5 flex-grow">{service.desc}</p>
                         <button type="button" onClick={scrollToSupportForm} className="inline-flex items-center gap-1.5 text-primary font-black text-[10px] uppercase tracking-widest hover:gap-2.5 transition-all mt-auto">
-                          Request Support <ChevronRight className="w-4 h-4" />
+                          Get a Quote <ChevronRight className="w-4 h-4" />
                         </button>
                       </motion.article>
                     ))}
@@ -159,9 +161,9 @@ export default function ServicesPage() {
         </section>
 
         <CTASection
-          badge="Develop Your Skills"
-          title="Choose Support That Keeps You in Control"
-          subtitle="We will help you identify the right next step while protecting your authorship and following academic-integrity boundaries."
+          badge="🎁 First Order 10% OFF"
+          title="Get Expert Assignment & Dissertation Help Today"
+          subtitle="Share your brief, word count and deadline. We will send you a clear price and match you with a qualified subject expert."
         />
       </main>
     </div>

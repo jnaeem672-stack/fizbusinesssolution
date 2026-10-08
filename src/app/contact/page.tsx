@@ -4,9 +4,9 @@ import ContactPage from '@/components/pages/ContactPage';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
-  title: 'Contact FIZ Business Solutions',
-  description: 'Contact FIZ Business Solutions to discuss expert academic help, research guidance, draft feedback, proofreading, or data-analysis tutoring.',
-  alternates: { canonical: 'https://fizbusinesssolutions.com/contact' },
+  title: 'Contact Us for Assignment & Dissertation Help',
+  description: 'Contact FIZBS for assignment help, dissertation help, research proposal help and proofreading. Get a free quote on WhatsApp 24/7.',
+  alternates: { canonical: 'https://fizbusinessolutions.com/contact' },
 };
 
 export default function Page() {

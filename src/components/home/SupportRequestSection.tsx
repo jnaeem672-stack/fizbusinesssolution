@@ -6,9 +6,9 @@ import SupportRequestForm from '@/components/SupportRequestForm';
 import SectionHeader from '@/components/ui/SectionHeader';
 
 const principles = [
-  { icon: BookOpenCheck, text: 'Expert help and feedback that preserve student authorship' },
-  { icon: CheckCircle2, text: 'Every request is reviewed for academic-integrity risks' },
-  { icon: Lock, text: 'Your information and learning materials are handled carefully' },
+  { icon: BookOpenCheck, text: "Qualified Master's and PhD subject experts" },
+  { icon: CheckCircle2, text: 'On-time delivery with updates on WhatsApp' },
+  { icon: Lock, text: '100% confidential: your details are never shared' },
 ];
 
 export default function SupportRequestSection() {
@@ -19,8 +19,9 @@ export default function SupportRequestSection() {
     >
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
-          title="Request Ethical Learning Support"
-          subtitle="Tell us what you want to understand, practise, or improve. We will recommend a suitable form of academic help, feedback, or tutoring."
+          badge="Free Quote"
+          title="Get Assignment & Dissertation Help"
+          subtitle="Tell us your subject, word count and deadline. We will reply with a clear price and match you with the right expert."
           className="mb-10 md:mb-14"
         />
 
@@ -35,13 +36,13 @@ export default function SupportRequestSection() {
             <div className="bg-navy rounded-2xl p-8 text-white relative overflow-hidden">
               <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:20px_20px]" />
               <div className="relative z-10">
-                <h3 className="text-2xl font-bold mb-4">What We Can Do</h3>
+                <h3 className="text-2xl font-bold mb-4">What You Get</h3>
                 <ul className="space-y-4">
                   {[
-                    'Explain academic concepts and assessment expectations',
-                    'Review student-written drafts and provide developmental feedback',
-                    'Teach research methods, referencing, and data-analysis skills',
-                    'Proofread within the rules of your institution',
+                    'Expert help with assignments, essays, reports and case studies',
+                    'Dissertation, thesis and research proposal help',
+                    'SPSS, Excel, NVivo and Python data analysis help',
+                    'Proofreading, editing and Harvard, APA & OSCOLA referencing',
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3 text-white/80 text-sm leading-relaxed">
                       <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
@@ -51,9 +52,9 @@ export default function SupportRequestSection() {
                 </ul>
 
                 <div className="mt-7 pt-6 border-t border-white/10">
-                  <h4 className="font-bold text-white mb-3">What We Will Not Do</h4>
+                  <h4 className="font-bold text-white mb-3">🎁 First Order Offer</h4>
                   <p className="text-white/65 text-sm leading-relaxed">
-                    We do not write assignments or dissertations for submission, take tests, impersonate students, invent references or data, conceal plagiarism, or guarantee grades.
+                    Get up to 10% off your first order. Assignment help from £20 per 1,000 words, and a maximum of £350 for any dissertation.
                   </p>
                 </div>
               </div>

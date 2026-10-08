@@ -36,7 +36,7 @@ export default function AppleIcon() {
                 marginTop: -4,
               }}
             >
-              Learning & Research Support
+              Assignment & Dissertation Help
             </span>
           </div>
         </div>

@@ -119,6 +119,7 @@ export default function QuoteCalculator() {
     <section id="quote" className="py-12 md:py-24 bg-gray-50 scroll-mt-[110px]">
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
+          badge="Instant Price"
           title="Assignment & Dissertation Help: Instant Price"
           subtitle="Select your type of work, level, word count and deadline to see your price in seconds."
         />

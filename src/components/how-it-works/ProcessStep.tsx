@@ -12,9 +12,9 @@ const ProcessStep = ({ id, title, desc, icon: Icon, index }: ProcessStepProps) =
     className="text-center"
   >
     <div className="relative inline-block mb-8">
-      <div className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] bg-white rounded-full flex items-center justify-center shadow-xl border border-gray-100 relative group mx-auto">
+      <div className="w-[100px] h-[100px] md:w-[120px] md:h-[120px] bg-white rounded-full flex items-center justify-center shadow-xl shadow-primary/10 ring-8 ring-primary/5 border border-primary/10 relative group mx-auto">
         <Icon className="w-10 h-10 md:w-12 md:h-12 text-primary transition-transform group-hover:scale-110" />
-        <div className="absolute -top-2 -right-2 w-9 h-9 md:w-10 md:h-10 bg-primary text-white rounded-full flex items-center justify-center font-bold text-base md:text-lg shadow-lg">
+        <div className="absolute -top-2 -right-2 w-9 h-9 md:w-10 md:h-10 icon-gradient rounded-full flex items-center justify-center font-extrabold text-base md:text-lg">
           {id}
         </div>
       </div>

@@ -27,18 +27,18 @@ export const countries: Country[] = [
 ];
 
 export const supportTypes = [
-  "Academic Writing Help",
-  "Assessment Brief Guidance",
-  "Dissertation or Research Help",
-  "Literature Review Guidance",
-  "Research Methods Tutoring",
-  "Draft Review and Developmental Feedback",
-  "Proofreading and Language Editing",
-  "Referencing Support",
-  "Data Analysis Tutoring",
+  "Assignment Help",
+  "Essay Help",
+  "Dissertation Help",
+  "Thesis Help",
+  "Research Proposal Help",
+  "Literature Review Help",
+  "Case Study / Report Help",
+  "Data Analysis Help (SPSS, Excel, NVivo)",
+  "Proofreading & Editing",
+  "Referencing Help",
   "Presentation Help",
-  "Study Skills Support",
-  "Professional Business Writing",
+  "PhD Admission & Scholarship Help",
   "Other",
 ] as const;
 

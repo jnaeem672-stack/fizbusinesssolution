@@ -101,6 +101,7 @@ export interface ProvidersProps {
 
 export interface SectionHeaderProps {
   title: string;
+  badge?: string;
   subtitle?: string;
   light?: boolean;
   centered?: boolean;

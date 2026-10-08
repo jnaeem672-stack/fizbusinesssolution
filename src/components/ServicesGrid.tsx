@@ -29,6 +29,7 @@ const ServicesGrid = () => (
   <section className="py-20 md:py-28 bg-white" id="services">
     <div className="max-w-site mx-auto px-4">
       <SectionHeader
+        badge="Our Services"
         title="Our Assignment Help Services"
         subtitle="Expert help for Bachelor's, Master's, MBA and PhD students in the UK and Saudi Arabia, matched to a qualified subject specialist."
       />

@@ -38,6 +38,18 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const handleNavClick = (e: MouseEvent<HTMLAnchorElement>, path: string) => {
+    if (path === '/#quote') {
+      const el = document.getElementById('quote');
+      if (el) {
+        e.preventDefault();
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        window.history.replaceState(null, '', '/#quote');
+      }
+    }
+    setIsOpen(false);
+  };
+
   const navLinks: NavLink[] = [
     { title: 'Home', path: '/' },
     { title: 'Services', path: '/services', mega: true },
@@ -63,6 +75,7 @@ const Navbar = () => {
             >
               <Link
                 href={link.path}
+                onClick={(e) => handleNavClick(e, link.path)}
                 className={`group relative inline-flex items-center px-2 pb-1 text-sm font-black uppercase tracking-widest transition-colors ${
                   isActive(link.path) ? 'text-primary' : 'text-navy hover:text-primary'
                 }`}
@@ -152,7 +165,7 @@ const Navbar = () => {
                     key={link.title}
                     href={link.path}
                     className={`text-2xl font-black uppercase tracking-tight transition-all pb-2 border-b-4 ${isActive(link.path) ? 'text-primary border-primary' : 'text-navy border-transparent'}`}
-                    onClick={() => setIsOpen(false)}
+                    onClick={(e) => handleNavClick(e, link.path)}
                   >
                     {link.title}
                   </Link>

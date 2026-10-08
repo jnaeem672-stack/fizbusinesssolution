@@ -35,6 +35,7 @@ const WhyChooseUs = () => (
     <section className="py-20 md:py-28 relative z-10">
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
+          badge="Why FIZBS"
           title="Why Students Choose FIZBS"
           subtitle="10+ years of trusted assignment and dissertation help for students in the UK and Saudi Arabia."
           light

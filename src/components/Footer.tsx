@@ -33,7 +33,6 @@ const Footer = () => (
       <Link href="/" className="hover:text-white transition-colors">Home</Link>
       <Link href="/services" className="hover:text-white transition-colors">Services</Link>
       <Link href="/about" className="hover:text-white transition-colors">About</Link>
-      <Link href="/academic-integrity" className="hover:text-white transition-colors">Academic Integrity</Link>
       <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
       <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
       <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>

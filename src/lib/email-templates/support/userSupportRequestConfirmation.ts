@@ -27,7 +27,7 @@ export function userSupportRequestConfirmation({
   const safeTopic = escapeHtml(supportTopic);
 
   const body = `
-    ${sectionTitle(`Request Received, ${safeName}!`, 'We will review your request for the most appropriate ethical form of support.')}
+    ${sectionTitle(`Request Received, ${safeName}!`, 'Thank you for choosing FIZBS. Our team is reviewing your requirements now.')}
     ${highlightCard('Your Support Topic', safeTopic)}
     ${metaRow([
       { label: 'Request Ref', value: requestRef },
@@ -39,13 +39,13 @@ export function userSupportRequestConfirmation({
       ${detailRow('Preferred Date', formatDateTime(preferredDate))}
       ${detailRow('Reference ID', `<strong style="color:${BRAND.primary};">${requestRef}</strong>`)}
     `)}
-    ${infoBox('Our services are educational and developmental. We do not write assessed work, take examinations, fabricate data, or guarantee grades.', 'success')}
+    ${infoBox('🎁 First order? You get up to 10% off. For the fastest reply, message us on WhatsApp with your reference ID.', 'success')}
     ${sectionTitle('What Happens Next')}
     ${stepsList([
-      'We review your request and any files against our Academic Integrity Policy.',
-      'We recommend a suitable service such as coaching, draft feedback, proofreading, or research-methods tutoring.',
-      'You receive a response with the proposed scope, timing, and fee.',
-      'You remain the author and apply the guidance to your own work.',
+      'Our team reviews your requirements and any files you attached.',
+      'We match you with a qualified expert in your subject.',
+      'You receive a clear price and timeline, usually on WhatsApp.',
+      'Once confirmed, your expert starts work and keeps you updated until your deadline.',
     ])}
     <p style="margin:24px 0 0;color:${BRAND.muted};font-size:14px;line-height:1.7;">
       Questions? Reply to this email or message us on WhatsApp.<br/><br/>

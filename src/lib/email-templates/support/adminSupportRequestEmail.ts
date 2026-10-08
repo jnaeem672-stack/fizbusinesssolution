@@ -56,21 +56,21 @@ export function adminSupportRequestEmail({
         : 'No files were uploaded with this request.';
 
   const body = `
-    ${sectionTitle('📘 New Learning Support Request', `Reference: <strong style="color:${BRAND.primary};">${requestRef}</strong>`)}
+    ${sectionTitle('📘 New Quote Request', `Reference: <strong style="color:${BRAND.primary};">${requestRef}</strong>`)}
     ${highlightCard('Support Topic', safeTopic)}
     ${metaRow([
       { label: 'Support Type', value: escapeHtml(supportType || '—') },
       { label: 'Preferred Date', value: preferredDate ? formatDateTime(preferredDate).split(',')[0] : 'Flexible' },
-      { label: 'Status', value: statusBadge('Integrity Review', '#1e40af', '#dbeafe') },
+      { label: 'Status', value: statusBadge('New Lead', '#1e40af', '#dbeafe') },
     ])}
-    ${infoBox(`<strong>${safeName}</strong> submitted a learning-support request. Confirm that the request is compatible with the Academic Integrity Policy before accepting it.`, 'warning')}
+    ${infoBox(`<strong>${safeName}</strong> submitted a new quote request. Reply on WhatsApp quickly to convert this lead.`, 'warning')}
     ${detailTable(`
       ${tableSectionHeader('👤 Contact Details')}
       ${detailRow('Full Name', safeName)}
       ${detailRow('Email', `<a href="mailto:${escapeHtml(email)}" style="color:${BRAND.primary};text-decoration:none;font-weight:600;">${escapeHtml(email)}</a>`)}
       ${detailRow('WhatsApp', escapeHtml(`${countryCode || ''} ${phone}`.trim()))}
       ${detailRow('Study Country', studyCountry ? escapeHtml(studyCountry) : '—')}
-      ${tableSectionHeader('📚 Learning Support Details')}
+      ${tableSectionHeader('📚 Request Details')}
       ${detailRow('Support Topic', safeTopic)}
       ${detailRow('Support Type', supportType ? escapeHtml(supportType) : '—')}
       ${detailRow('Department', department ? escapeHtml(department) : '—')}

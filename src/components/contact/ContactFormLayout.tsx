@@ -10,9 +10,9 @@ import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
 import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
 
 const principles = [
-  'Tell us what you have completed and what you want to learn',
-  'Every request is checked for academic-integrity risks',
-  'Your learning materials and personal information are handled carefully',
+  'Share your subject, word count and deadline',
+  'Attach your assignment brief or marking criteria if you have it',
+  'Get a clear price and 10% off your first order',
 ];
 
 export default function ContactFormLayout() {
@@ -20,8 +20,9 @@ export default function ContactFormLayout() {
     <section id="support-form" className="scroll-mt-[110px] py-12 md:py-16 bg-gray-50">
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
-          title="Request Learning Support"
-          subtitle="Use the form, WhatsApp, or email to explain your learning need. We will recommend a permitted form of academic help, tutoring, feedback, or proofreading."
+          badge="Free Quote"
+          title="Get a Free Quote"
+          subtitle="Contact us by form, WhatsApp or email for assignment help, dissertation help, proofreading and research proposal help."
           className="mb-10 md:mb-12"
         />
 
@@ -41,7 +42,7 @@ export default function ContactFormLayout() {
                 </div>
               </div>
               <p className="text-gray-500 text-sm mb-2 leading-relaxed">
-                Explain the skill, concept, research method, or draft issue you need help with. Do not send passwords or confidential participant information.
+                The fastest way to get a price. Send your subject, word count and deadline and our team will reply quickly, 24/7.
               </p>
               <p className="text-navy font-bold text-sm mb-5">{WHATSAPP_NUMBER}</p>
               <WhatsAppLink
@@ -71,11 +72,11 @@ export default function ContactFormLayout() {
                 </div>
               </div>
               <p className="text-gray-500 text-sm mb-2 leading-relaxed">
-                Email is suitable for detailed questions and permitted drafts. State what you have completed and the specific feedback or tutoring you need.
+                Best for detailed requirements. Include your brief, word count, deadline and any files or marking criteria.
               </p>
               <div className="flex items-center gap-2 text-gray-500 text-xs mb-2">
                 <Paperclip className="w-4 h-4 text-primary shrink-0" />
-                You may attach your own draft or relevant guidance
+                Attach your assignment brief, guidelines or draft
               </div>
               <p className="text-navy font-bold text-sm mb-5 break-all">{CONTACT_EMAIL}</p>
               <a

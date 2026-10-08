@@ -47,11 +47,11 @@ export function wrapEmail({ title, preheader, bodyContent, accentColor = BRAND.p
               <table role="presentation" width="100%" cellspacing="0" cellpadding="0">
                 <tr>
                   <td style="background:${BRAND.navy};padding:28px 40px;text-align:center;border-top:3px solid ${BRAND.primary};">
-                    <p style="margin:0 0 12px;color:#ffffff;font-size:14px;font-weight:700;">Need learning support?</p>
+                    <p style="margin:0 0 12px;color:#ffffff;font-size:14px;font-weight:700;">Need assignment or dissertation help?</p>
                     <a href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer" style="display:inline-block;background:${BRAND.whatsapp};color:#ffffff;text-decoration:none;padding:12px 28px;border-radius:10px;font-size:12px;font-weight:800;text-transform:uppercase;letter-spacing:1px;box-shadow:0 4px 12px rgba(37,211,102,0.35);">Chat on WhatsApp</a>
                     <p style="margin:20px 0 0;color:rgba(255,255,255,0.45);font-size:11px;line-height:1.6;">
-                      © ${new Date().getFullYear()} FIZ Business Solutions · Ethical Academic Coaching &amp; Research Support<br/>
-                      Student Authorship · Constructive Feedback · Academic Integrity
+                      © ${new Date().getFullYear()} FIZ Business Solutions · Assignment &amp; Dissertation Help<br/>
+                      Qualified Experts · On-Time Delivery · 100% Confidential
                     </p>
                   </td>
                 </tr>

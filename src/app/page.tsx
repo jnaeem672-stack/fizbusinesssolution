@@ -4,15 +4,15 @@ import HomePage from '@/components/pages/HomePage';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
-  title: 'Assignment & Dissertation Help UK & Saudi Arabia',
+  title: { absolute: 'Assignment Help & Dissertation Help UK & Saudi Arabia | FIZBS' },
   description:
-    'Build stronger academic and research skills through expert academic help, draft feedback, proofreading, referencing support, and data-analysis tutoring.',
-  alternates: { canonical: 'https://fizbusinesssolutions.com/' },
+    'Need assignment help or dissertation help? FIZBS supports UK and Saudi Arabian students with essays, reports, MBA assignments, research proposals and SPSS analysis. Instant price from £20 per 1,000 words, 10% off your first order.',
+  alternates: { canonical: 'https://fizbusinessolutions.com/' },
   openGraph: {
-    title: 'Assignment & Dissertation Help UK & Saudi Arabia | FIZ Business Solutions',
+    title: 'Assignment Help & Dissertation Help UK & Saudi Arabia | FIZBS',
     description:
-      'Expert academic help, research guidance, draft feedback, proofreading, and data-analysis tutoring that preserve student authorship.',
-    url: 'https://fizbusinesssolutions.com',
+      'Expert assignment and dissertation help from qualified subject specialists. Instant price, 10% off your first order and 24/7 WhatsApp support.',
+    url: 'https://fizbusinessolutions.com',
     images: ['https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=1200&q=80'],
   },
 };

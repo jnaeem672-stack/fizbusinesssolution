@@ -39,7 +39,7 @@ const ContactForm = () => {
       <div className="absolute top-0 right-0 w-40 h-40 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
       <h2 className="text-2xl md:text-3xl font-black text-navy mb-2 relative">General Questions &amp; Inquiries</h2>
       <p className="text-gray-500 text-sm mb-8 relative">
-        Ask about our policies, services, privacy, billing, or website. For learning support, use the dedicated support-request form above.
+        Ask about payments, pricing, deadlines or anything else. For a price, use the quote form above or message us on WhatsApp.
       </p>
       <form onSubmit={handleSubmit(onSubmit)} className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <FormField<ContactFormData>

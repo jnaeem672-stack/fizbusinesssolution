@@ -4,9 +4,9 @@ import AboutPage from '@/components/pages/AboutPage';
 import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
-  title: 'About Our Ethical Learning Support',
-  description: 'Learn how FIZ Business Solutions provides academic help, research guidance, draft feedback, and proofreading while protecting student authorship.',
-  alternates: { canonical: 'https://fizbusinesssolutions.com/about' },
+  title: 'About FIZBS: Assignment & Dissertation Help Since 2015',
+  description: 'FIZ Business Solutions has provided assignment help and dissertation help since 2015, supporting 10,000+ students and 350+ research projects in the UK and Saudi Arabia.',
+  alternates: { canonical: 'https://fizbusinessolutions.com/about' },
 };
 
 export default function Page() {

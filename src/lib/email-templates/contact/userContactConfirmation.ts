@@ -12,12 +12,12 @@ export function userContactConfirmation({ name }: UserContactConfirmationData): 
       We have received your inquiry and aim to reply within
       <strong style="color:${BRAND.navy};">24 hours</strong>.
     </p>
-    ${infoBox('For learning support, tell us what you have completed so far and which skill or challenge you want help with.', 'success')}
+    ${infoBox('Need assignment or dissertation help? Send us your subject, word count and deadline on WhatsApp for a quick quote.', 'success')}
     ${sectionTitle('What to Expect')}
     ${stepsList([
-      'Our team reviews your message and identifies the appropriate support area.',
-      'We check that the request is compatible with academic-integrity requirements.',
-      'You receive a clear reply explaining the next step.',
+      'Our team reviews your message.',
+      'We match your request with the right subject expert.',
+      'You receive a clear reply with the next steps.',
     ])}
     <p style="margin:28px 0 0;color:${BRAND.muted};font-size:14px;line-height:1.7;">
       Best regards,<br/>

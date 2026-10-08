@@ -127,9 +127,10 @@ function Row({ items, reverse }: { items: typeof ALL; reverse?: boolean }) {
 
 export default function SubjectsSection() {
   return (
-    <section id="subjects" className="py-14 md:py-20 bg-white">
+    <section id="subjects" className="py-14 md:py-20 bg-soft-rose">
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
+          badge="115+ Subjects"
           title={`Assignment Help for ${TOTAL}+ Subjects`}
           subtitle="Business-focused academic help for students at UK and Saudi Arabian universities, from Bachelor's to MBA and PhD. Every request is matched with a subject specialist."
         />
@@ -154,12 +155,12 @@ export default function SubjectsSection() {
         </div>
 
         <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 mt-10">
-          <Link
+          <a
             href="#quote"
             className="px-8 py-3.5 bg-primary text-white font-bold rounded-xl text-center shadow-lg shadow-primary/30 hover:brightness-110 transition-all"
           >
             Get Instant Price
-          </Link>
+          </a>
           <WhatsAppLink
             href={WHATSAPP_URL}
             aria-label="Ask about your subject on WhatsApp"

@@ -1,12 +1,12 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Link from 'next/link';
-import { ChevronRight, Sparkles } from 'lucide-react';
+import { Sparkles } from 'lucide-react';
 import type { SectionHeaderProps } from '@/types';
 
 const SectionHeader = ({
   title,
+  badge = 'FIZBS',
   subtitle,
   light = false,
   centered = true,
@@ -28,10 +28,10 @@ const SectionHeader = ({
         light ? 'bg-white/10 text-primary' : 'bg-primary/10 text-primary'
       }`}
     >
-      <Sparkles className="w-3 h-3" /> Premium Service
+      <Sparkles className="w-3 h-3" /> {badge}
     </motion.span>
     <h2
-      className={`text-3xl md:text-4xl lg:text-5xl font-bold mb-4 tracking-tight ${
+      className={`text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 tracking-tight ${
         light ? 'text-white' : 'text-navy'
       }`}
     >
@@ -51,7 +51,7 @@ const SectionHeader = ({
       whileInView={{ width: 64 }}
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.5 }}
-      className={`h-1 bg-primary mt-6 ${centered ? 'mx-auto' : ''}`}
+      className={`h-1 rounded-full bg-gradient-to-r from-primary to-[#e8455f] mt-6 ${centered ? 'mx-auto' : ''}`}
     />
   </motion.div>
 );

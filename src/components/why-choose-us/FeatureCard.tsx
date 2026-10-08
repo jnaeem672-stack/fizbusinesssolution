@@ -9,9 +9,9 @@ const FeatureCard = ({ title, desc, icon: Icon, index }: FeatureCardProps) => (
     whileInView={{ opacity: 1, scale: 1 }}
     transition={{ delay: index * 0.1 }}
     viewport={{ once: true }}
-    className="bg-white/5 backdrop-blur-sm border border-white/10 p-6 md:p-8 rounded-2xl hover:bg-white/10 transition-all text-left h-full"
+    className="group bg-white/5 backdrop-blur-sm border border-white/10 p-6 md:p-8 rounded-2xl hover:bg-white/10 hover:border-primary/40 hover:-translate-y-1 transition-all text-left h-full"
   >
-    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center text-primary mb-6">
+    <div className="w-12 h-12 icon-gradient rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
       <Icon className="w-6 h-6" />
     </div>
     <h3 className="text-white font-bold text-lg mb-3">{title}</h3>

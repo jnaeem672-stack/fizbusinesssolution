@@ -18,6 +18,14 @@ export default function HomePage() {
   useSupportFormScroll();
 
   useEffect(() => {
+    const hash = window.location.hash.split('#').filter(Boolean)[0];
+    if (hash && hash !== 'support-form') {
+      const timer = setTimeout(() => document.getElementById(hash)?.scrollIntoView({ block: 'start' }), 400);
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
+  useEffect(() => {
     const handleScroll = () => {
       const hero = document.getElementById('home-hero');
       if (hero) {

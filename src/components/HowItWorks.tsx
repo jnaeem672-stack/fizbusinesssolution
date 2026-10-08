@@ -26,9 +26,10 @@ const steps: { id: string; title: string; desc: string; icon: LucideIcon }[] = [
 ];
 
 const HowItWorks = () => (
-  <section className="py-20 md:py-28 bg-gray-50">
+  <section className="py-20 md:py-28 bg-soft-rose">
     <div className="max-w-site mx-auto px-4">
       <SectionHeader
+        badge="Simple Process"
         title="How It Works"
         subtitle="Get expert assignment help in three simple steps"
       />
