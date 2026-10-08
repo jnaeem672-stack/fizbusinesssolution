@@ -1,9 +1,6 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import WhatsAppLink from '@/components/ui/WhatsAppLink';
-import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
-import { WHATSAPP_URL } from '@/constants/whatsapp';
 import type { StickyHelpBannerProps } from '@/types';
 
 const StickyHelpBanner = ({ show }: StickyHelpBannerProps) => (
@@ -13,18 +10,18 @@ const StickyHelpBanner = ({ show }: StickyHelpBannerProps) => (
         initial={{ y: 100, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         exit={{ y: 100, opacity: 0 }}
-        className="fixed bottom-0 left-0 right-0 bg-navy/95 backdrop-blur-md text-white py-3 px-4 sm:py-4 sm:px-6 z-[9990] flex items-center justify-between gap-3 shadow-2xl border-t border-white/10 md:hidden safe-bottom"
+        className="fixed bottom-0 left-0 right-0 bg-navy/95 backdrop-blur-md text-white py-3 pl-4 pr-20 sm:py-4 sm:pl-6 z-[9990] flex items-center justify-between gap-3 shadow-2xl border-t border-white/10 md:hidden safe-bottom"
       >
-        <div className="flex items-center gap-3">
-          <WhatsAppIcon size={40} className="w-10 h-10" />
-          <div>
-            <p className="text-[10px] font-black uppercase tracking-widest text-primary">Need Learning Support?</p>
-            <p className="text-sm font-bold">Discuss your learning goals</p>
-          </div>
+        <div className="min-w-0">
+          <p className="text-[10px] font-black uppercase tracking-widest text-primary">🎁 First order 10% OFF</p>
+          <p className="text-sm font-bold truncate">See your price in seconds</p>
         </div>
-        <WhatsAppLink href={WHATSAPP_URL} aria-label="Chat about learning support on WhatsApp" className="inline-flex hover:scale-105 active:scale-95 transition-transform shrink-0">
-          <WhatsAppIcon size={40} className="w-10 h-10" />
-        </WhatsAppLink>
+        <a
+          href="#quote"
+          className="shrink-0 px-4 py-2.5 bg-primary text-white text-sm font-bold rounded-lg shadow-lg active:scale-95 transition-transform"
+        >
+          Get Price
+        </a>
       </motion.div>
     )}
   </AnimatePresence>
