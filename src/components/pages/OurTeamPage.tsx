@@ -5,6 +5,30 @@ import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { TEAM, SPECIALIST_GROUPS, SPECIALIST_COUNT, type TeamMember } from '@/content/team';
+import { SUPPORT_FORM_PATH } from '@/constants/supportNavigation';
+
+function HireButtons({ name, expertise }: { name: string; expertise: string }) {
+  const url = buildWhatsAppUrl(
+    `Hello FIZBS! I'd like to work with ${name} (${expertise}).\nSubject: \nWord count: \nDeadline: `
+  );
+  return (
+    <div className="grid grid-cols-2 gap-2 mt-auto pt-4">
+      <WhatsAppLink
+        href={url}
+        aria-label={`Hire ${name} on WhatsApp`}
+        className="inline-flex items-center justify-center gap-1.5 px-2 py-2.5 rounded-xl bg-navy text-white text-xs font-black whitespace-nowrap hover:brightness-110 transition-all"
+      >
+        <WhatsAppIcon size={16} className="w-4 h-4" /> Hire Expert
+      </WhatsAppLink>
+      <a
+        href={SUPPORT_FORM_PATH}
+        className="inline-flex items-center justify-center px-2 py-2.5 whitespace-nowrap rounded-xl border-2 border-primary/20 text-primary text-xs font-black hover:bg-primary hover:text-white hover:border-primary transition-all"
+      >
+        Get a Quote
+      </a>
+    </div>
+  );
+}
 
 const STATS = [
   { icon: Award, value: '10+ Years', label: 'Since 2015' },
@@ -39,14 +63,15 @@ function FounderCard({ m }: { m: TeamMember }) {
 
 function MemberCard({ m }: { m: TeamMember }) {
   return (
-    <article className="group bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-1 transition-all p-7 text-center h-full">
+    <article className="group bg-white rounded-3xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-primary/10 hover:-translate-y-1 transition-all p-7 text-center h-full flex flex-col">
       <div className="mb-5">
         <TeamAvatar initials={m.initials} gradient={m.gradient} icon={m.icon} />
       </div>
       <h3 className="text-xl font-extrabold text-navy">{m.name}</h3>
       <p className="text-primary font-bold text-sm mt-1">{m.role}</p>
       <p className="text-navy/70 text-xs font-black uppercase tracking-wider mt-3">{m.qualification}</p>
-      <p className="text-gray-500 text-sm leading-relaxed mt-3">{m.bio}</p>
+      <p className="text-gray-500 text-sm leading-relaxed mt-3 mb-2">{m.bio}</p>
+      <HireButtons name={m.name} expertise={m.role} />
     </article>
   );
 }
@@ -171,7 +196,7 @@ export default function OurTeamPage() {
                   {group.members.map((m) => {
                     const initials = m.name.replace('.', '').split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase();
                     return (
-                      <article key={m.name} className="bg-gray-50 rounded-2xl border border-gray-100 p-5 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all h-full">
+                      <article key={m.name} className="bg-gray-50 rounded-2xl border border-gray-100 p-5 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all h-full flex flex-col">
                         <div className="flex items-center gap-4 mb-4">
                           <TeamAvatar initials={initials} gradient={group.gradient} icon={group.icon} size="sm" />
                           <div>
@@ -185,6 +210,7 @@ export default function OurTeamPage() {
                           <span className="inline-flex items-center gap-1"><Clock className="w-3.5 h-3.5 text-primary" /> {m.experience}</span>
                           <span className="inline-flex items-center gap-1"><Languages className="w-3.5 h-3.5 text-primary" /> {m.languages}</span>
                         </div>
+                        <HireButtons name={m.name} expertise={m.expertise} />
                       </article>
                     );
                   })}
