@@ -13,25 +13,28 @@ type ServiceKey = 'assignment' | 'dissertation' | 'proofreading';
 type Deadline = 'standard' | 'priority' | 'urgent';
 
 const LEVELS: { key: Level; label: string }[] = [
-  { key: 'ug', label: 'Undergraduate' },
+  { key: 'ug', label: "Bachelor's" },
   { key: 'pg', label: "Master's / MBA" },
   { key: 'phd', label: 'PhD' },
 ];
 
 // Price in GBP per 1,000 words
 const SERVICES: { key: ServiceKey; label: string; rates: Record<Level, number> }[] = [
-  { key: 'assignment', label: 'Assignment / Essay / Report', rates: { ug: 20, pg: 20, phd: 20 } },
-  { key: 'dissertation', label: 'Dissertation / Thesis / Proposal', rates: { ug: 30, pg: 30, phd: 30 } },
-  { key: 'proofreading', label: 'Proofreading & Referencing', rates: { ug: 12, pg: 15, phd: 18 } },
+  { key: 'assignment', label: 'Assignment / Essay', rates: { ug: 20, pg: 20, phd: 20 } },
+  { key: 'dissertation', label: 'Dissertation / Thesis', rates: { ug: 30, pg: 30, phd: 30 } },
+  { key: 'proofreading', label: 'Proofreading', rates: { ug: 12, pg: 15, phd: 18 } },
 ];
 
 const DEADLINES: { key: Deadline; label: string; multiplier: number }[] = [
   { key: 'standard', label: '7+ days', multiplier: 1 },
   { key: 'priority', label: '3–6 days', multiplier: 1.25 },
-  { key: 'urgent', label: 'Within 48 hours', multiplier: 1.5 },
+  { key: 'urgent', label: '48 hours', multiplier: 1.5 },
 ];
 
 const FIRST_ORDER_DISCOUNT = 0.1;
+
+// Maximum total price (GBP) per type of work
+const MAX_PRICE: Partial<Record<ServiceKey, number>> = { dissertation: 350 };
 
 const WORD_OPTIONS = [1000, 2000, 3000, 5000, 8000, 10000, 12000, 15000, 20000];
 
@@ -57,14 +60,14 @@ function OptionGroup<T extends string>({
   return (
     <div>
       <p className="text-xs font-black uppercase tracking-widest text-navy mb-3">{label}</p>
-      <div className="flex flex-wrap gap-2">
+      <div className="grid grid-cols-3 gap-2">
         {options.map((option) => (
           <button
             key={option.key}
             type="button"
             onClick={() => onChange(option.key)}
             aria-pressed={value === option.key}
-            className={`px-4 py-2.5 rounded-xl text-sm font-bold border transition-all ${
+            className={`px-2 sm:px-4 py-2.5 rounded-xl text-[12px] sm:text-sm leading-tight text-center font-bold border transition-all ${
               value === option.key
                 ? 'bg-primary text-white border-primary shadow-lg shadow-primary/20'
                 : 'bg-white text-navy border-gray-200 hover:border-primary/40'
@@ -93,8 +96,11 @@ export default function QuoteCalculator() {
     const volumeDiscount = discountFor(words);
     const firstOrderApplies = firstOrder && FIRST_ORDER_DISCOUNT > volumeDiscount;
     const discount = Math.max(volumeDiscount, firstOrder ? FIRST_ORDER_DISCOUNT : 0);
-    const total = base * (1 - discount);
-    return { rate, base, discount, total, serviceInfo, deadlineInfo, firstOrderApplies };
+    const discounted = base * (1 - discount);
+    const cap = MAX_PRICE[service];
+    const capped = cap !== undefined && discounted > cap;
+    const total = capped ? cap : discounted;
+    return { rate, base, discount, total, capped, serviceInfo, deadlineInfo, firstOrderApplies };
   }, [level, service, deadline, words, firstOrder]);
 
   const levelLabel = LEVELS.find((l) => l.key === level)!.label;
@@ -110,7 +116,7 @@ export default function QuoteCalculator() {
   );
 
   return (
-    <section id="quote" className="py-16 md:py-24 bg-gray-50 scroll-mt-[110px]">
+    <section id="quote" className="py-12 md:py-24 bg-gray-50 scroll-mt-[110px]">
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
           title="Assignment & Dissertation Help: Instant Price"
@@ -121,9 +127,9 @@ export default function QuoteCalculator() {
           initial={{ opacity: 0, y: 24 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="grid grid-cols-1 lg:grid-cols-5 gap-6 lg:gap-8"
+          className="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8"
         >
-          <div className="lg:col-span-3 bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/60 p-6 md:p-10 space-y-8">
+          <div className="lg:col-span-3 bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/60 p-4 sm:p-6 md:p-10 space-y-6 md:space-y-8">
             <OptionGroup
               label="1. Type of work"
               options={SERVICES.map(({ key, label }) => ({ key, label }))}
@@ -160,44 +166,50 @@ export default function QuoteCalculator() {
               onChange={setDeadline}
             />
 
-            <label className="flex items-center gap-3 p-4 rounded-2xl border-2 border-dashed border-primary/40 bg-primary/5 cursor-pointer">
+            <label className="flex items-center gap-3 p-3 sm:p-4 rounded-2xl border-2 border-dashed border-primary/40 bg-primary/5 cursor-pointer">
               <input
                 type="checkbox"
                 checked={firstOrder}
                 onChange={(event) => setFirstOrder(event.target.checked)}
                 className="w-5 h-5 accent-[#C41E3A] cursor-pointer"
               />
-              <span className="text-sm font-bold text-navy">
+              <span className="text-[13px] sm:text-sm font-bold text-navy">
                 🎁 This is my first order <span className="text-primary">(get up to 10% off)</span>
               </span>
             </label>
           </div>
 
-          <div className="lg:col-span-2 bg-navy rounded-3xl p-6 md:p-10 text-white flex flex-col shadow-2xl">
-            <div className="flex items-center gap-3 mb-6">
+          <div className="lg:col-span-2 bg-navy rounded-3xl p-5 sm:p-6 md:p-10 text-white flex flex-col shadow-2xl">
+            <div className="flex items-center gap-3 mb-4 md:mb-6">
               <div className="p-2.5 bg-primary/20 rounded-xl">
                 <Calculator className="w-6 h-6 text-primary" />
               </div>
               <p className="text-xs font-black uppercase tracking-widest text-white/70">Your estimate</p>
             </div>
 
-            {quote.discount > 0 && (
+            {quote.total < quote.base && (
               <p className="text-xl font-bold text-white/40 line-through mb-1">{gbp(quote.base)}</p>
             )}
             <p className="text-5xl md:text-6xl font-black mb-2">{gbp(quote.total)}</p>
-            <p className="text-sm text-white/60 mb-8">
+            <p className="text-sm text-white/60 mb-5 md:mb-8">
               {gbp(quote.rate)} per 1,000 words
               {quote.deadlineInfo.multiplier > 1 && ` · +${Math.round((quote.deadlineInfo.multiplier - 1) * 100)}% priority`}
             </p>
 
-            {quote.discount > 0 && (
+            {quote.capped ? (
               <div className="mb-6 px-4 py-3 rounded-xl bg-primary/15 border border-primary/30 text-sm font-bold">
-                🎁 {Math.round(quote.discount * 100)}% discount applied
-                {quote.firstOrderApplies ? ' (first order offer)' : ` for ${words.toLocaleString('en-GB')}+ words`}
+                🎁 Best price: maximum {gbp(quote.total)} for any dissertation. You save {gbp(quote.base - quote.total)}
               </div>
+            ) : (
+              quote.discount > 0 && (
+                <div className="mb-6 px-4 py-3 rounded-xl bg-primary/15 border border-primary/30 text-sm font-bold">
+                  🎁 {Math.round(quote.discount * 100)}% discount applied
+                  {quote.firstOrderApplies ? ' (first order offer)' : ` for ${words.toLocaleString('en-GB')}+ words`}
+                </div>
+              )
             )}
 
-            <ul className="space-y-3 mb-8 text-sm text-white/80">
+            <ul className="hidden sm:block space-y-3 mb-8 text-sm text-white/80">
               {['1-to-1 support from a subject expert', 'Clear, actionable feedback', 'Confidential & secure'].map((item) => (
                 <li key={item} className="flex items-center gap-2">
                   <CheckCircle2 className="w-4 h-4 text-primary shrink-0" /> {item}
