@@ -1,10 +1,10 @@
 import Link from 'next/link';
-import { CheckCircle2, Award, GraduationCap, BookOpenCheck, Users } from 'lucide-react';
+import { CheckCircle2, Award, GraduationCap, BookOpenCheck, Users, Languages, Clock } from 'lucide-react';
 import TeamAvatar from '@/components/team/TeamAvatar';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
-import { TEAM, type TeamMember } from '@/content/team';
+import { TEAM, SPECIALIST_GROUPS, SPECIALIST_COUNT, type TeamMember } from '@/content/team';
 
 const STATS = [
   { icon: Award, value: '10+ Years', label: 'Since 2015' },
@@ -147,6 +147,50 @@ export default function OurTeamPage() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {others.map((m) => <MemberCard key={m.name} m={m} />)}
+          </div>
+        </div>
+      </section>
+
+      {/* Subject specialists */}
+      <section className="py-16 md:py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <span className="inline-flex px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 bg-primary/10 text-primary">{SPECIALIST_COUNT} Subject Specialists</span>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-navy tracking-tight mb-3">Our Subject Specialists</h2>
+            <p className="text-gray-500 text-lg max-w-2xl mx-auto">Master&apos;s and PhD-qualified specialists who support students across business, data, computing, science and social sciences.</p>
+          </div>
+
+          <div className="space-y-14">
+            {SPECIALIST_GROUPS.map((group) => (
+              <div key={group.title}>
+                <h3 className="flex items-center gap-3 text-primary font-black text-sm uppercase tracking-[0.2em] mb-6">
+                  <span className={`w-8 h-1 rounded-full bg-gradient-to-r ${group.gradient}`} />
+                  {group.title}
+                </h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+                  {group.members.map((m) => {
+                    const initials = m.name.replace('.', '').split(' ').map((w) => w[0]).join('').slice(0, 2).toUpperCase();
+                    return (
+                      <article key={m.name} className="bg-gray-50 rounded-2xl border border-gray-100 p-5 hover:bg-white hover:shadow-xl hover:-translate-y-1 transition-all h-full">
+                        <div className="flex items-center gap-4 mb-4">
+                          <TeamAvatar initials={initials} gradient={group.gradient} icon={group.icon} size="sm" />
+                          <div>
+                            <p className="font-extrabold text-navy">{m.name}</p>
+                            <p className="text-xs font-bold text-primary">{m.qualification}</p>
+                          </div>
+                        </div>
+                        <p className="text-sm font-bold text-navy mb-1">{m.expertise}</p>
+                        <p className="text-xs text-gray-500 mb-3">{m.university} ({m.year})</p>
+                        <div className="flex flex-wrap gap-x-4 gap-y-1 text-xs text-gray-500">
+                          <span className="inline-flex items-center gap-1"><Clock className="w-3.5 h-3.5 text-primary" /> {m.experience}</span>
+                          <span className="inline-flex items-center gap-1"><Languages className="w-3.5 h-3.5 text-primary" /> {m.languages}</span>
+                        </div>
+                      </article>
+                    );
+                  })}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>

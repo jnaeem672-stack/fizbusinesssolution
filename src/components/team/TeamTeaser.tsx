@@ -11,7 +11,7 @@ export default function TeamTeaser({ className = 'bg-white' }: { className?: str
         <span className="inline-flex px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 bg-primary/10 text-primary">Our Team</span>
         <h2 className="text-3xl md:text-4xl font-extrabold text-navy tracking-tight mb-3">Meet the People Behind FIZBS</h2>
         <p className="text-gray-500 text-lg max-w-2xl mx-auto mb-10">
-          Led by co-founders with MBA and MPhil qualifications, supported by a Chartered Accountant and MPhil finance specialists.
+          Led by co-founders with MBA and MPhil qualifications, with a Chartered Accountant, MPhil finance specialists and 24 Master's and PhD-qualified subject specialists.
         </p>
         <div className="flex flex-wrap justify-center gap-x-8 gap-y-8 mb-10">
           {TEAM.map((m) => (
