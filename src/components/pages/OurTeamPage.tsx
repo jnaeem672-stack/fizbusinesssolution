@@ -6,20 +6,18 @@ import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { TEAM, SPECIALIST_GROUPS, SPECIALIST_COUNT, type TeamMember } from '@/content/team';
 import { SUPPORT_FORM_PATH } from '@/constants/supportNavigation';
+import { expertSlug } from '@/content/experts';
 
-function HireButtons({ name, expertise }: { name: string; expertise: string }) {
-  const url = buildWhatsAppUrl(
-    `Hello FIZBS! I'd like to work with ${name} (${expertise}).\nSubject: \nWord count: \nDeadline: `
-  );
+function HireButtons({ name }: { name: string; expertise?: string }) {
   return (
     <div className="grid grid-cols-2 gap-2 mt-auto pt-4">
-      <WhatsAppLink
-        href={url}
-        aria-label={`Hire ${name} on WhatsApp`}
+      <Link
+        href={`/experts/${expertSlug(name)}`}
+        aria-label={`Hire ${name}`}
         className="inline-flex items-center justify-center gap-1.5 px-2 py-2.5 rounded-xl bg-navy text-white text-xs font-black whitespace-nowrap hover:brightness-110 transition-all"
       >
         <WhatsAppIcon size={16} className="w-4 h-4" /> Hire Expert
-      </WhatsAppLink>
+      </Link>
       <a
         href={SUPPORT_FORM_PATH}
         className="inline-flex items-center justify-center px-2 py-2.5 whitespace-nowrap rounded-xl border-2 border-primary/20 text-primary text-xs font-black hover:bg-primary hover:text-white hover:border-primary transition-all"
@@ -46,7 +44,7 @@ function FounderCard({ m }: { m: TeamMember }) {
       </div>
       <div className="relative text-center sm:text-left">
         <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-[11px] font-black uppercase tracking-widest mb-3">{m.role}</span>
-        <h3 className="text-2xl md:text-3xl font-extrabold text-navy mb-1">{m.name}</h3>
+        <h3 className="text-2xl md:text-3xl font-extrabold text-navy mb-1"><Link href={`/experts/${expertSlug(m.name)}`} className="hover:text-primary transition-colors">{m.name}</Link></h3>
         <p className="text-primary font-bold mb-4">{m.qualification}</p>
         <p className="text-gray-600 leading-relaxed mb-5">{m.bio}</p>
         <ul className="flex flex-wrap justify-center sm:justify-start gap-2">
@@ -67,7 +65,7 @@ function MemberCard({ m }: { m: TeamMember }) {
       <div className="mb-5">
         <TeamAvatar initials={m.initials} gradient={m.gradient} icon={m.icon} />
       </div>
-      <h3 className="text-xl font-extrabold text-navy">{m.name}</h3>
+      <h3 className="text-xl font-extrabold text-navy"><Link href={`/experts/${expertSlug(m.name)}`} className="hover:text-primary transition-colors">{m.name}</Link></h3>
       <p className="text-primary font-bold text-sm mt-1">{m.role}</p>
       <p className="text-navy/70 text-xs font-black uppercase tracking-wider mt-3">{m.qualification}</p>
       <p className="text-gray-500 text-sm leading-relaxed mt-3 mb-2">{m.bio}</p>
@@ -200,7 +198,7 @@ export default function OurTeamPage() {
                         <div className="flex items-center gap-4 mb-4">
                           <TeamAvatar initials={initials} gradient={group.gradient} icon={group.icon} size="sm" />
                           <div>
-                            <p className="font-extrabold text-navy">{m.name}</p>
+                            <Link href={`/experts/${expertSlug(m.name)}`} className="font-extrabold text-navy hover:text-primary transition-colors">{m.name}</Link>
                             <p className="text-xs font-bold text-primary">{m.qualification}</p>
                           </div>
                         </div>

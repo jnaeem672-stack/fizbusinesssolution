@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { AR_LANDING_PAGES, EN_LANDING_PAGES, SITE_URL } from '@/content/landing';
+import { EXPERTS } from '@/content/experts';
 
 export const dynamic = 'force-static';
 
@@ -29,5 +30,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     })),
   ];
-  return [...core, ...landing];
+  const experts: MetadataRoute.Sitemap = EXPERTS.map((e) => ({
+    url: `${SITE_URL}/experts/${e.slug}`,
+    lastModified,
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
+  return [...core, ...landing, ...experts];
 }

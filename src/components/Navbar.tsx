@@ -58,6 +58,7 @@ const Navbar = () => {
     { title: 'Home', path: '/' },
     { title: 'Services', path: '/services', mega: true },
     { title: 'About', path: '/about' },
+    { title: 'Experts', path: '/our-team' },
     { title: 'Get Price', path: '/#quote' },
     { title: 'Contact', path: '/contact' },
   ];
@@ -71,18 +72,18 @@ const Navbar = () => {
       <div className="max-w-site mx-auto px-4 h-full flex items-center justify-between">
         <Logo />
 
-        <div className="hidden lg:flex items-center gap-8 h-full">
+        <div className="hidden lg:flex items-center gap-3 xl:gap-7 h-full">
           {navLinks.map((link) => (
             <div
               key={link.title}
-              className={`relative ${link.mega ? 'h-full flex items-center' : 'flex items-center'}`}
+              className={`relative ${link.mega ? 'h-full flex items-center' : 'flex items-center'} ${link.path === '/#quote' ? 'hidden xl:flex' : ''}`}
               onMouseEnter={() => link.mega && setShowMegaMenu(true)}
               onMouseLeave={() => link.mega && setShowMegaMenu(false)}
             >
               <Link
                 href={link.path}
                 onClick={(e) => handleNavClick(e, link.path)}
-                className={`group relative inline-flex items-center px-2 pb-1 text-sm font-black uppercase tracking-widest transition-colors ${
+                className={`group relative inline-flex items-center px-1.5 xl:px-2 pb-1 text-[13px] xl:text-sm font-black uppercase tracking-wider xl:tracking-widest whitespace-nowrap transition-colors ${
                   isActive(link.path) ? 'text-primary' : 'text-navy hover:text-primary'
                 }`}
               >
@@ -140,7 +141,7 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-3 xl:gap-4 shrink-0">
           <Link
             href={lang.href}
             hrefLang={lang.toArabic ? 'ar' : 'en'}
@@ -150,7 +151,7 @@ const Navbar = () => {
           </Link>
           <button
             onClick={handleSupportRequest}
-            className="px-8 py-3 bg-primary text-white font-black text-xs uppercase tracking-[0.2em] rounded-xl hover:brightness-110 transition-all shadow-lg shadow-primary/30 flex items-center gap-2"
+            className="px-5 xl:px-8 py-3 bg-primary text-white font-black text-xs uppercase tracking-[0.15em] xl:tracking-[0.2em] whitespace-nowrap rounded-xl hover:brightness-110 transition-all shadow-lg shadow-primary/30 flex items-center gap-2"
           >
             Get Free Quote <ArrowRight className="w-4 h-4" />
           </button>

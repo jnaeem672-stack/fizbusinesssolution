@@ -17,7 +17,7 @@ const Logo = ({ className = '', dark = false }: LogoProps) => (
         <span className={`${dark ? 'text-white' : 'text-navy'} font-black text-2xl uppercase`}>BS</span>
       </div>
       <div className="flex items-center gap-1.5 -mt-1">
-        <span className={`${dark ? 'text-white/40' : 'text-gray-400'} text-[7px] font-bold uppercase tracking-[0.22em]`}>Assignment &amp; Dissertation Help</span>
+        <span className={`${dark ? 'text-white/40' : 'text-gray-400'} text-[7px] font-bold uppercase tracking-[0.22em] whitespace-nowrap`}>Assignment &amp; Dissertation Help</span>
       </div>
     </div>
   </Link>
