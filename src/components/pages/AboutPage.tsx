@@ -14,6 +14,7 @@ import {
 import PageHero from '@/components/ui/PageHero';
 import SupportRequestSection from '@/components/home/SupportRequestSection';
 import CTASection from '@/components/home/CTASection';
+import TeamTeaser from '@/components/team/TeamTeaser';
 import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 import { SUPPORT_FORM_HASH } from '@/constants/supportNavigation';
 
@@ -133,6 +134,8 @@ export default function AboutPage() {
           </Link>
         </div>
       </section>
+
+      <TeamTeaser className="bg-gray-50" />
 
       <CTASection />
     </div>

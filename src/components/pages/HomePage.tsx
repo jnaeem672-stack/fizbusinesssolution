@@ -12,6 +12,7 @@ import Testimonials from '@/components/Testimonials';
 import CTASection from '@/components/home/CTASection';
 import FaqSection from '@/components/FaqSection';
 import PaymentSection from '@/components/PaymentSection';
+import TeamTeaser from '@/components/team/TeamTeaser';
 import { HOME_FAQS } from '@/content/homeFaqs';
 import StickyHelpBanner from '@/components/home/StickyHelpBanner';
 import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
@@ -49,6 +50,7 @@ export default function HomePage() {
         <SubjectsSection />
         <ServicesGrid />
         <WhyChooseUs />
+        <TeamTeaser />
         <HowItWorks />
         <Testimonials />
         <PaymentSection className="bg-white" />

@@ -57,6 +57,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               logo: 'https://fizbusinessolutions.com/apple-icon',
               description: 'Assignment help and dissertation help for students in the UK and Saudi Arabia since 2015.',
               foundingDate: '2015',
+              founder: [
+                { '@type': 'Person', name: 'Sajjad Akbar Ali' },
+                { '@type': 'Person', name: 'Fawad Hussain Khan' },
+              ],
               areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates'],
               priceRange: '£20 - £350',
               serviceType: [
