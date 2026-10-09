@@ -7,6 +7,7 @@ import Providers from '@/components/Providers';
 import SiteHeader from '@/components/SiteHeader';
 import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
+import FloatingDiscount from '@/components/FloatingDiscount';
 import CookieConsent from '@/components/CookieConsent';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 
@@ -140,6 +141,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {children}
           <Footer />
           <ScrollToTopButton />
+          <FloatingDiscount />
           <FloatingWhatsApp />
           <CookieConsent />
         </Providers>
