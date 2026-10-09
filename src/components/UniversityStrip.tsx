@@ -1,3 +1,5 @@
+import TrustBadges from '@/components/TrustBadges';
+
 type Uni = { name: string; short: string };
 
 const UK: Uni[] = [
@@ -84,6 +86,7 @@ export default function UniversityStrip({
   return (
     <section className="bg-gray-50 border-y border-gray-100 py-10">
       <div className="max-w-site mx-auto px-4">
+        <TrustBadges locale={rtl ? 'ar' : 'en'} />
         <div className="text-center mb-6">
           <p className="text-lg md:text-xl font-black text-navy" dir={rtl ? 'rtl' : undefined}>{title}</p>
           <p className="text-sm text-gray-500 mt-1" dir={rtl ? 'rtl' : undefined}>{subtitle}</p>
