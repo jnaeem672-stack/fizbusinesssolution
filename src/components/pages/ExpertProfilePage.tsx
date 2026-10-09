@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CheckCircle2, ChevronRight, GraduationCap, Clock, Languages, Building2 } from 'lucide-react';
+import { CheckCircle2, ChevronRight, GraduationCap, Clock, Languages, Building2, PhoneCall } from 'lucide-react';
 import TeamAvatar from '@/components/team/TeamAvatar';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import FaqSection from '@/components/FaqSection';
@@ -15,6 +15,9 @@ export default function ExpertProfilePage({ expert }: { expert: ExpertProfile })
   const firstName = expert.name.split(' ')[0];
   const whatsappUrl = buildWhatsAppUrl(
     `Hello FIZBS! I'd like to work with ${expert.name} (${expert.title}).\nSubject: \nWord count: \nDeadline: `
+  );
+  const callUrl = buildWhatsAppUrl(
+    `Hello FIZBS! I'd like to book a WhatsApp call with ${expert.name} (${expert.title}) to discuss my assessment.\nSubject: \nPreferred call time: `
   );
   const related = a.related.map((s) => getLandingPage(s, 'en')).filter((p): p is NonNullable<typeof p> => Boolean(p));
   const colleagues = EXPERTS.filter((e) => e.group === expert.group && e.slug !== expert.slug).slice(0, 4);
@@ -105,6 +108,13 @@ export default function ExpertProfilePage({ expert }: { expert: ExpertProfile })
                   Get a Free Quote
                 </a>
               </div>
+              <WhatsAppLink
+                href={callUrl}
+                aria-label={`Book a WhatsApp call with ${expert.name}`}
+                className="inline-flex items-center gap-2 mt-4 text-sm font-bold text-white/80 hover:text-white underline-offset-4 hover:underline"
+              >
+                <PhoneCall className="w-4 h-4 text-[#25D366]" /> Prefer to talk first? Book a WhatsApp call with {firstName} (in English)
+              </WhatsAppLink>
             </div>
 
             <div id="quote-form" className="w-full lg:col-span-5 scroll-mt-[110px]">
@@ -160,6 +170,14 @@ export default function ExpertProfilePage({ expert }: { expert: ExpertProfile })
                 <a href="/#quote" className="block w-full py-3.5 bg-primary text-white font-bold rounded-xl hover:brightness-110 transition-all">
                   See Instant Price
                 </a>
+                <WhatsAppLink
+                  href={callUrl}
+                  aria-label={`Book a WhatsApp call with ${expert.name}`}
+                  className="flex items-center justify-center gap-2 w-full py-3 mt-3 border border-white/30 text-white font-bold rounded-xl hover:bg-white/10 transition-all text-sm"
+                >
+                  <PhoneCall className="w-4 h-4 text-[#25D366]" /> Book a Call With {firstName}
+                </WhatsAppLink>
+                <p className="text-white/50 text-[11px] mt-2">WhatsApp call · in English · at a time that suits you</p>
                 <p className="text-white/60 text-xs mt-4">From £20 per 1,000 words · 50% to start, 50% on completion</p>
               </div>
 

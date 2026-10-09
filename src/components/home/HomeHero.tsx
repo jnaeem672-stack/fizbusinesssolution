@@ -86,6 +86,12 @@ export default function HomeHero() {
                 <ShieldCheck className="w-3.5 h-3.5 text-primary" />
                 Trusted Since 2015
               </span>
+              <a
+                href="#expert-call"
+                className="inline-flex items-center gap-2 px-4 py-1.5 bg-[#25D366]/15 rounded-full text-[11px] font-bold border border-[#25D366]/40 text-white uppercase tracking-wider hover:bg-[#25D366]/25 transition-all"
+              >
+                📞 Talk to an Expert on a WhatsApp Call
+              </a>
             </motion.div>
 
             <motion.h1

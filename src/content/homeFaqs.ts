@@ -1,5 +1,6 @@
 import type { FaqItem } from '@/components/FaqSection';
 import { PAYMENT } from '@/constants/payment';
+import { EXPERT_CALL } from '@/constants/expertCall';
 
 export const HOME_FAQS: FaqItem[] = [
   {
@@ -34,5 +35,6 @@ export const HOME_FAQS: FaqItem[] = [
     q: 'How do I get started?',
     a: 'Fill in the free quote form or message us on WhatsApp with your subject, word count and deadline. You will receive a clear price, and once you confirm, a qualified subject expert starts working on your request.',
   },
+  EXPERT_CALL.en.faq,
   PAYMENT.en.faq,
 ];

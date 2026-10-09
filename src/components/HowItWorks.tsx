@@ -8,7 +8,7 @@ const steps: { id: string; title: string; desc: string; icon: LucideIcon }[] = [
   {
     id: '01',
     title: 'Share Your Requirements',
-    desc: 'Send your brief, word count and deadline through the form or WhatsApp in under a minute.',
+    desc: 'Send your brief, word count and deadline through the form or WhatsApp in under a minute, or book a WhatsApp call with an expert to talk it through.',
     icon: ClipboardList,
   },
   {

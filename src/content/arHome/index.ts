@@ -1,5 +1,6 @@
 import type { ArHomeContent } from './types';
 import { PAYMENT } from '@/constants/payment';
+import { EXPERT_CALL } from '@/constants/expertCall';
 
 export const AR_HOME: ArHomeContent = {
   metaTitle: 'مساعدة في الواجبات الجامعية في السعودية وبريطانيا | FIZBS',
@@ -165,6 +166,7 @@ export const AR_HOME: ArHomeContent = {
     title: 'أسئلة يطرحها الطلاب كثيرًا',
     subtitle: 'إجابات واضحة عن الأسعار والمواعيد وطريقة العمل.',
     items: [
+      EXPERT_CALL.ar.faq,
       PAYMENT.ar.faq,
       {
         q: 'كم تكلفة المساعدة في الواجبات الجامعية؟',

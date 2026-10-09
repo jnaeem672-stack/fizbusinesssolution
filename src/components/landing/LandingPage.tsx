@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CheckCircle2, Award, GraduationCap, BookOpenCheck, Layers, ChevronRight, Calculator } from 'lucide-react';
+import { CheckCircle2, Award, GraduationCap, BookOpenCheck, Layers, ChevronRight, Calculator, PhoneCall } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import QuoteCalculator from '@/QuoteCalculator';
 import FaqSection from '@/components/FaqSection';
@@ -8,6 +8,8 @@ import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { PAYMENT } from '@/constants/payment';
+import { EXPERT_CALL, expertCallUrl } from '@/constants/expertCall';
+import ExpertCallSection from '@/components/ExpertCallSection';
 import {
   SITE_URL,
   getLandingPage,
@@ -218,6 +220,14 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                   <WhatsAppIcon size={22} className="w-5 h-5" />
                   {t.whatsapp}
                 </WhatsAppLink>
+                <WhatsAppLink
+                  href={expertCallUrl(page.locale)}
+                  aria-label={EXPERT_CALL[page.locale].sideCta}
+                  className="flex items-center justify-center gap-2 w-full py-3 mt-3 border border-white/30 text-white font-bold rounded-xl hover:bg-white/10 transition-all text-sm"
+                >
+                  <PhoneCall className="w-4 h-4 text-[#25D366]" />
+                  {EXPERT_CALL[page.locale].sideCta}
+                </WhatsAppLink>
               </div>
 
               {related.length > 0 && (
@@ -240,11 +250,13 @@ export default function LandingPage({ page }: { page: LandingContent }) {
         </div>
       </section>
 
+      <ExpertCallSection locale={page.locale} className="bg-gray-50" />
+
       <QuoteCalculator locale={page.locale} />
 
       <PaymentSection locale={page.locale} className="bg-soft-rose" />
 
-      <FaqSection faqs={[...page.faqs, PAYMENT[page.locale].faq]} title={t.faqTitle} rtl={isAr} className="bg-white" />
+      <FaqSection faqs={[...page.faqs, EXPERT_CALL[page.locale].faq, PAYMENT[page.locale].faq]} title={t.faqTitle} rtl={isAr} className="bg-white" />
 
       {/* Final CTA */}
       <section className="relative py-16 md:py-20 overflow-hidden bg-navy" dir={isAr ? 'rtl' : undefined}>
