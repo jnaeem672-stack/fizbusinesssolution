@@ -1,7 +1,5 @@
-import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import AboutPage from '@/components/pages/AboutPage';
-import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
   title: 'About FIZBS: Assignment & Dissertation Help Since 2015',
@@ -11,8 +9,6 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Suspense fallback={<LoadingSpinner />}>
-      <AboutPage />
-    </Suspense>
+    <AboutPage />
   );
 }

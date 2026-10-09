@@ -56,7 +56,7 @@ export default function HomeHero() {
           sizes="100vw"
           alt=""
           aria-hidden="true"
-          fetchPriority="high"
+          fetchPriority="low"
           decoding="async"
           className="w-full h-full object-cover scale-105"
         />
@@ -70,10 +70,7 @@ export default function HomeHero() {
       <div className="relative z-10 w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 py-20 md:py-24 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16 items-start lg:items-center">
           <div className="lg:col-span-7">
-            <motion.div
-              initial={{ opacity: 0, y: 16 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
+            <div
               className="flex flex-wrap items-center gap-3 mb-7"
             >
               <a
@@ -92,20 +89,17 @@ export default function HomeHero() {
               >
                 📞 Talk to an Expert on a WhatsApp Call
               </a>
-            </motion.div>
+            </div>
 
-            <motion.h1
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
+            <h1
               className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white mb-6 tracking-tight leading-[1.08]"
             >
               Assignment &amp; Dissertation Help{' '}
               <span className="gradient-text">UK &amp; Saudi Arabia</span>
-            </motion.h1>
+            </h1>
 
             <div className="h-12 sm:h-14 mb-6 flex items-center">
-              <AnimatePresence mode="wait">
+              <AnimatePresence mode="wait" initial={false}>
                 <motion.span
                   key={currentIndex}
                   initial={{ opacity: 0, x: -16 }}
@@ -119,19 +113,13 @@ export default function HomeHero() {
               </AnimatePresence>
             </div>
 
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.25 }}
+            <p
               className="text-gray-300 text-lg md:text-xl max-w-2xl mb-7 leading-relaxed"
             >
               Expert one-to-one academic guidance from qualified subject specialists for Undergraduate, Master&apos;s, MBA and PhD students. Clear feedback, proper referencing and support you can count on.
-            </motion.p>
+            </p>
 
-            <motion.ul
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
+            <ul
               className="flex flex-wrap gap-2.5 mb-9 max-w-3xl"
             >
               {features.map((item) => (
@@ -143,12 +131,9 @@ export default function HomeHero() {
                   {item}
                 </li>
               ))}
-            </motion.ul>
+            </ul>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.35 }}
+            <div
               className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10"
             >
               <a
@@ -165,12 +150,9 @@ export default function HomeHero() {
                 <WhatsAppIcon size={28} className="w-7 h-7" />
                 Chat on WhatsApp
               </WhatsAppLink>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 24 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.45 }}
+            <div
               className="grid grid-cols-2 sm:grid-cols-4 gap-4 md:gap-5 max-w-3xl"
             >
               {commitments.map(({ icon: Icon, value, label }) => (
@@ -180,18 +162,15 @@ export default function HomeHero() {
                   <span className="text-[10px] text-white/50 uppercase tracking-wider font-semibold mt-0.5">{label}</span>
                 </div>
               ))}
-            </motion.div>
+            </div>
           </div>
 
-          <motion.div
+          <div
             id="support-form"
-            initial={{ opacity: 0, y: 24 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
             className="w-full lg:col-span-5 scroll-mt-[110px] lg:sticky lg:top-[100px]"
           >
             <SupportRequestForm />
-          </motion.div>
+          </div>
         </div>
       </div>
 

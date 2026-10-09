@@ -1,7 +1,5 @@
-import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import ContactPage from '@/components/pages/ContactPage';
-import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
   title: 'Contact Us for Assignment & Dissertation Help',
@@ -11,8 +9,6 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Suspense fallback={<LoadingSpinner />}>
-      <ContactPage />
-    </Suspense>
+    <ContactPage />
   );
 }

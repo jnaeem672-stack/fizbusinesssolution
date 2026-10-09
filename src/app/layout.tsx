@@ -1,6 +1,7 @@
 import Script from "next/script";
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
+import localFont from 'next/font/local';
 import './globals.css';
 import Providers from '@/components/Providers';
 import SiteHeader from '@/components/SiteHeader';
@@ -8,6 +9,14 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import CookieConsent from '@/components/CookieConsent';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+
+// Self-hosted heading font (was a render-blocking Google Fonts @import)
+const jakarta = localFont({
+  src: '../fonts/plus-jakarta-sans-latin.woff2',
+  weight: '200 800',
+  display: 'swap',
+  variable: '--font-jakarta',
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://fizbusinessolutions.com'),
@@ -44,7 +53,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className={jakarta.variable}>
       <head>
         <script
           type="application/ld+json"

@@ -95,7 +95,7 @@ const GROUPS: Group[] = [
   },
 ];
 
-const ALL = GROUPS.flatMap((g) => g.subjects.map((name) => ({ name, icon: g.icon })));
+const ALL = GROUPS.flatMap((g, gi) => g.subjects.map((name) => ({ name, icon: gi })));
 const TOTAL = ALL.length;
 
 // Split all subjects into 4 rows for the moving strips
@@ -109,15 +109,17 @@ function Row({ items, reverse }: { items: typeof ALL; reverse?: boolean }) {
         className="animate-marquee gap-3 w-max py-1"
         style={{ animationDuration: '90s', animationDirection: reverse ? 'reverse' : 'normal' }}
       >
-        {doubled.map(({ name, icon: Icon }, i) => (
+        {doubled.map(({ name, icon }, i) => (
           <div
             key={`${name}-${i}`}
-            className="flex items-center gap-2.5 pl-2 pr-4 py-2 rounded-xl border border-gray-200 bg-white shadow-sm shrink-0 hover:border-primary/40 transition-colors"
+            aria-hidden={i >= items.length || undefined}
+            className="flex items-center gap-2.5 pl-2 pr-4 py-2 rounded-xl border border-gray-200 bg-white shadow-sm shrink-0 hover:border-primary/40 transition-colors text-sm font-bold text-navy whitespace-nowrap"
           >
-            <span className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary/10">
-              <Icon className="w-5 h-5 text-primary" />
-            </span>
-            <span className="text-sm font-bold text-navy whitespace-nowrap">{name}</span>
+            {/* Icon drawn from a shared sprite to keep the page light (230 chips) */}
+            <svg className="w-9 h-9 p-2 rounded-lg bg-primary/10 text-primary shrink-0" aria-hidden="true">
+              <use href={`#subj-icon-${icon}`} />
+            </svg>
+            {name}
           </div>
         ))}
       </div>
@@ -128,6 +130,14 @@ function Row({ items, reverse }: { items: typeof ALL; reverse?: boolean }) {
 export default function SubjectsSection() {
   return (
     <section id="subjects" className="py-14 md:py-20 bg-soft-rose">
+      {/* Icon sprite for the subject chips */}
+      <svg width="0" height="0" className="absolute" aria-hidden="true">
+        {GROUPS.map(({ title, icon: Icon }, gi) => (
+          <symbol key={title} id={`subj-icon-${gi}`} viewBox="0 0 24 24">
+            <Icon width={24} height={24} />
+          </symbol>
+        ))}
+      </svg>
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
           badge="115+ Subjects"

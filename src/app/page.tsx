@@ -1,7 +1,5 @@
-import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import HomePage from '@/components/pages/HomePage';
-import LoadingSpinner from '@/components/LoadingSpinner';
 
 export const metadata: Metadata = {
   title: { absolute: 'Assignment Help & Dissertation Help UK & Saudi Arabia | FIZBS' },
@@ -21,8 +19,6 @@ export const metadata: Metadata = {
 
 export default function Page() {
   return (
-    <Suspense fallback={<LoadingSpinner />}>
-      <HomePage />
-    </Suspense>
+    <HomePage />
   );
 }
