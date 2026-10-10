@@ -160,6 +160,6 @@ export const thesisHelp: LandingContent = {
     'research-proposal-help',
     'literature-review-help',
     'research-methodology-help',
-    'proofreading-editing-services',
+    'phd-admission-scholarship-help',
   ],
 };

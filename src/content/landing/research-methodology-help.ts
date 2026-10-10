@@ -172,6 +172,6 @@ export const researchMethodologyHelp: LandingContent = {
     'research-proposal-help',
     'data-analysis-help',
     'literature-review-help',
-    'thesis-help',
+    'phd-admission-scholarship-help',
   ],
 };

@@ -7,6 +7,7 @@ import { arAssignmentHelpSaudiArabia } from './ar-assignment-help-saudi-arabia';
 import { researchProposalHelp } from './research-proposal-help';
 import { spssHelp } from './spss-help';
 import { phdAdmissionScholarshipHelp } from './phd-admission-scholarship-help';
+import { arPhdAdmissionScholarshipHelp } from './ar-phd-admission-scholarship-help';
 import { assignmentHelpLondon } from './assignment-help-london';
 import { assignmentHelpManchester } from './assignment-help-manchester';
 import { assignmentHelpBirmingham } from './assignment-help-birmingham';
@@ -88,6 +89,7 @@ export const AR_LANDING_PAGES: LandingContent[] = [
   arAssignmentHelpRiyadh,
   arAssignmentHelpJeddah,
   arAssignmentHelpDammam,
+  arPhdAdmissionScholarshipHelp,
 ];
 
 export function getLandingPage(slug: string, locale: 'en' | 'ar' = 'en'): LandingContent | undefined {

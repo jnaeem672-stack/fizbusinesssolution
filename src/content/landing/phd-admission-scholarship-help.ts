@@ -192,6 +192,7 @@ export const phdAdmissionScholarshipHelp: LandingContent = {
     'Message us on WhatsApp or book a call with your subject, research idea and target universities, and we will share a clear plan and personal quote.',
   whatsappMessage:
     "Hello FIZBS! I need PhD admission help.\nSubject: \nResearch idea: \nTarget universities: \nDeadline: ",
+  offer: { price: '120', description: 'PhD admission support packages from £120' },
   related: [
     'research-proposal-help',
     'literature-review-help',

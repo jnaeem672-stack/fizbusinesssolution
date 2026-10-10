@@ -5,6 +5,7 @@ export const AR_SLUGS = [
   'assignment-help-riyadh',
   'assignment-help-jeddah',
   'assignment-help-dammam',
+  'phd-admission-scholarship-help',
 ];
 
 export const EN_ONLY_FALLBACK: Record<string, string> = {

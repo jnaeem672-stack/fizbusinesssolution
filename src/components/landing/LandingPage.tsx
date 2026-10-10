@@ -34,6 +34,7 @@ const LABELS = {
     sideCta: 'See My Price',
     faqTitle: 'Frequently Asked Questions',
     related: 'Related Services',
+    toc: 'On this page',
   },
   ar: {
     home: 'الرئيسية',
@@ -50,6 +51,7 @@ const LABELS = {
     sideCta: 'اعرف السعر',
     faqTitle: 'الأسئلة الشائعة',
     related: 'خدمات ذات صلة',
+    toc: 'محتويات الصفحة',
   },
 } as const;
 
@@ -61,6 +63,13 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const related = page.related
     .map((slug) => getLandingPage(slug, page.locale) ?? getLandingPage(slug, 'en'))
     .filter((p): p is LandingContent => Boolean(p));
+
+  // Anchor ids for each H2 (used by the table of contents and Google 'jump to' links)
+  const sectionIds = page.sections.map((section, i) => {
+    const id = section.heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+    return id && !isAr ? id : `section-${i + 1}`;
+  });
+  const showToc = page.sections.length >= 6;
 
   const schema = [
     {
@@ -77,7 +86,12 @@ export default function LandingPage({ page }: { page: LandingContent }) {
         url: SITE_URL,
         telephone: '+971543800388',
       },
-      offers: { '@type': 'Offer', priceCurrency: 'GBP', price: '20', description: 'From £20 per 1,000 words' },
+      offers: {
+        '@type': 'Offer',
+        priceCurrency: 'GBP',
+        price: page.offer?.price ?? '20',
+        description: page.offer?.description ?? 'From £20 per 1,000 words',
+      },
     },
     {
       '@context': 'https://schema.org',
@@ -175,9 +189,23 @@ export default function LandingPage({ page }: { page: LandingContent }) {
               ))}
             </div>
 
-            {page.sections.map((section) => (
+            {showToc && (
+              <nav aria-label={t.toc} className="mb-12 rounded-2xl border border-gray-100 bg-gray-50 p-6">
+                <p className="text-sm font-black uppercase tracking-widest text-primary mb-4">{t.toc}</p>
+                <ol className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5 text-[15px]">
+                  {page.sections.map((section, i) => (
+                    <li key={section.heading} className="flex items-start gap-2.5">
+                      <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-navy text-[11px] font-black text-white">{i + 1}</span>
+                      <a href={`#${sectionIds[i]}`} className="font-semibold text-navy hover:text-primary transition-colors">{section.heading}</a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            )}
+
+            {page.sections.map((section, si) => (
               <div key={section.heading} className="mb-10">
-                <h2 className="text-2xl md:text-3xl font-extrabold text-navy tracking-tight mb-4">{section.heading}</h2>
+                <h2 id={sectionIds[si]} className="scroll-mt-[130px] text-2xl md:text-3xl font-extrabold text-navy tracking-tight mb-4">{section.heading}</h2>
                 <div className="space-y-4">
                   {section.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}
                 </div>

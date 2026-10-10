@@ -34,6 +34,8 @@ export interface LandingContent {
   ctaText: string;
   /** Prefilled WhatsApp message for this page */
   whatsappMessage: string;
+  /** Optional starting price for the Service schema (defaults to £20 per 1,000 words) */
+  offer?: { price: string; description: string };
   /** Slugs of related landing pages for internal links (3-5) */
   related: string[];
 }
