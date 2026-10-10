@@ -2,6 +2,7 @@ import type { MetadataRoute } from 'next';
 import { AR_LANDING_PAGES, EN_LANDING_PAGES, SITE_URL } from '@/content/landing';
 import { EXPERTS } from '@/content/experts';
 import { EN_POSTS, AR_POSTS, postPath } from '@/content/blog';
+import { SAMPLES, samplePath } from '@/content/samples';
 
 export const dynamic = 'force-static';
 
@@ -47,5 +48,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     })),
   ];
-  return [...core, ...landing, ...experts, ...blog];
+  const samples: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/samples`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    ...SAMPLES.map((sample) => ({
+      url: `${SITE_URL}${samplePath(sample)}`,
+      lastModified: new Date(sample.published),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+  ];
+  return [...core, ...landing, ...experts, ...blog, ...samples];
 }

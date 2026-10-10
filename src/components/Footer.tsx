@@ -66,12 +66,13 @@ const Footer = () => (
       </a>
     </div>
 
-    <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-4 border-t border-white/5 w-full max-w-3xl text-[10px] uppercase tracking-widest font-bold">
+    <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 pt-4 border-t border-white/5 w-full max-w-3xl text-[10px] uppercase tracking-widest font-bold [&>a]:inline-flex [&>a]:items-center [&>a]:min-h-6">
       <Link href="/" className="hover:text-white transition-colors">Home</Link>
       <Link href="/services" className="hover:text-white transition-colors">Services</Link>
       <Link href="/about" className="hover:text-white transition-colors">About</Link>
       <Link href="/our-team" className="hover:text-white transition-colors">Our Team</Link>
       <Link href="/blog" className="hover:text-white transition-colors">Student Guides</Link>
+      <Link href="/samples" className="hover:text-white transition-colors">Samples</Link>
       <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
       <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
       <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>

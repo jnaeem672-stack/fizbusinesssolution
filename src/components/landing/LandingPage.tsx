@@ -9,6 +9,7 @@ import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { PAYMENT } from '@/constants/payment';
 import { AR_POSTS, EN_POSTS, guidesForService, postPath } from '@/content/blog';
+import { samplePath, samplesForService } from '@/content/samples';
 import { EXPERT_CALL, expertCallUrl } from '@/constants/expertCall';
 import ExpertCallSection from '@/components/ExpertCallSection';
 import {
@@ -75,6 +76,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const showToc = page.sections.length >= 6;
   const matchedGuides = guidesForService(page.slug, page.locale, 4);
   const guides = matchedGuides.length ? matchedGuides : (page.locale === 'ar' ? AR_POSTS : EN_POSTS).slice(0, 3);
+  const workSamples = page.locale === 'en' ? samplesForService(page.slug, 3) : [];
 
   const schema = [
     {
@@ -272,6 +274,23 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                     </li>
                   ))}
                 </ul>
+              </div>
+            )}
+            {workSamples.length > 0 && (
+              <div className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+                <h2 className="text-xl font-extrabold text-navy mb-4">See a Work Sample</h2>
+                <ul className="space-y-3">
+                  {workSamples.map((s) => (
+                    <li key={s.slug}>
+                      <Link href={samplePath(s)} className="flex items-start gap-2 text-[15px] font-bold text-navy hover:text-primary transition-colors leading-snug">
+                        <ChevronRight className="w-4 h-4 mt-0.5 shrink-0 text-primary" /> {s.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <Link href="/samples" className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary hover:underline">
+                  Browse all samples <ChevronRight className="w-4 h-4" />
+                </Link>
               </div>
             )}
           </article>
