@@ -14,7 +14,7 @@ function CallIllustration() {
         </linearGradient>
         <linearGradient id="ec-shirt" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor="#C9A227" />
-          <stop offset="1" stopColor="#9b1730" />
+          <stop offset="1" stopColor="#8A6700" />
         </linearGradient>
       </defs>
       <circle cx="200" cy="190" r="150" fill="url(#ec-bg)" />
@@ -70,7 +70,7 @@ export default function ExpertCallSection({
           <CallIllustration />
         </div>
         <div className="order-1 lg:order-2">
-          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#25D366]/10 text-[#128C4A] text-xs font-black uppercase tracking-widest mb-4">
+          <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#25D366]/10 text-[#0B6B35] text-xs font-black uppercase tracking-widest mb-4">
             <PhoneCall className="w-4 h-4" /> {c.eyebrow}
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-navy tracking-tight mb-4">{c.title}</h2>
@@ -85,7 +85,7 @@ export default function ExpertCallSection({
           <WhatsAppLink
             href={expertCallUrl(locale)}
             aria-label={c.cta}
-            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 bg-[#25D366] text-white font-bold rounded-xl text-lg shadow-xl shadow-[#25D366]/30 hover:brightness-105 hover:scale-[1.02] transition-all"
+            className="inline-flex items-center justify-center gap-3 w-full sm:w-auto px-8 py-4 bg-[#0F7A3D] text-white font-bold rounded-xl text-lg shadow-xl shadow-[#0F7A3D]/30 hover:brightness-105 hover:scale-[1.02] transition-all"
           >
             <WhatsAppIcon size={26} className="w-6 h-6 !text-white" /> {c.cta}
           </WhatsAppLink>

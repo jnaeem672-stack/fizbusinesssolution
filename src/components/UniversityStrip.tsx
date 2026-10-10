@@ -95,7 +95,7 @@ export default function UniversityStrip({
           <Row items={UK} flag="🇬🇧" />
           <Row items={SAUDI} flag="🇸🇦" reverse />
         </div>
-        <p className="text-center text-[10px] text-gray-400 mt-5">
+        <p className="text-center text-[10px] text-gray-500 mt-5">
           {note}
         </p>
       </div>

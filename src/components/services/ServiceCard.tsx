@@ -30,14 +30,14 @@ const ServiceCard = ({ name, desc, icon: Icon, index }: ServiceCardProps) => (
           href={SERVICE_PAGE_LINKS[name]}
           className="inline-flex items-center gap-1.5 text-navy font-bold text-sm uppercase tracking-wider hover:text-primary transition-all"
         >
-          Learn More <ChevronRight className="w-4 h-4" />
+          Learn More<span className="sr-only"> about {name}</span> <ChevronRight className="w-4 h-4" />
         </Link>
       )}
       <Link
         href={SUPPORT_FORM_PATH}
         className="inline-flex items-center gap-2 text-primary font-bold text-sm uppercase tracking-wider hover:gap-3 transition-all"
       >
-        Get a Quote <ChevronRight className="w-4 h-4" />
+        Get a Quote<span className="sr-only"> for {name}</span> <ChevronRight className="w-4 h-4" />
       </Link>
     </div>
   </motion.div>

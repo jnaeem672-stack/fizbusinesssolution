@@ -151,7 +151,7 @@ export default function ServicesPage() {
                         <div className="flex items-center gap-4 mt-auto">
                           {SERVICE_PAGE_LINKS[service.name] && (
                             <Link href={SERVICE_PAGE_LINKS[service.name]} className="inline-flex items-center gap-1.5 text-navy font-black text-[10px] uppercase tracking-widest hover:text-primary transition-all">
-                              Learn More <ChevronRight className="w-4 h-4" />
+                              Learn More<span className="sr-only"> about {service.name}</span> <ChevronRight className="w-4 h-4" />
                             </Link>
                           )}
                           <button type="button" onClick={scrollToSupportForm} className="inline-flex items-center gap-1.5 text-primary font-black text-[10px] uppercase tracking-widest hover:gap-2.5 transition-all">
