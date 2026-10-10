@@ -18,6 +18,16 @@ import { businessDissertationTopicsPost } from './business-dissertation-topics';
 import { howToParaphraseAndAvoidPlagiarismPost } from './how-to-paraphrase-and-avoid-plagiarism';
 import { arHumanVsAiAcademicWritingPost } from './ar-human-vs-ai-academic-writing';
 import { arQuantitativeVsQualitativeResearchPost } from './ar-quantitative-vs-qualitative-research';
+import { howToWriteADissertationIntroductionPost } from './how-to-write-a-dissertation-introduction';
+import { howToWriteADissertationConclusionPost } from './how-to-write-a-dissertation-conclusion';
+import { howToWriteAnAbstractPost } from './how-to-write-an-abstract';
+import { howToWriteABusinessReportPost } from './how-to-write-a-business-report';
+import { howToWriteACaseStudyAnalysisPost } from './how-to-write-a-case-study-analysis';
+import { apaReferencingGuidePost } from './apa-referencing-guide';
+import { ukMastersPersonalStatementPost } from './uk-masters-personal-statement';
+import { arTheoreticalFrameworkAndLiteratureReviewPost } from './ar-theoretical-framework-and-literature-review';
+import { arHowToWriteAnAbstractPost } from './ar-how-to-write-an-abstract';
+import { arHowToChooseAThesisTitlePost } from './ar-how-to-choose-a-thesis-title';
 
 export type { BlogPost } from './types';
 
@@ -38,6 +48,13 @@ export const EN_POSTS: BlogPost[] = [
   thematicAnalysisGuidePost,
   swotAndPestleAnalysisGuidePost,
   howToParaphraseAndAvoidPlagiarismPost,
+  howToWriteADissertationIntroductionPost,
+  howToWriteADissertationConclusionPost,
+  howToWriteAnAbstractPost,
+  apaReferencingGuidePost,
+  howToWriteABusinessReportPost,
+  howToWriteACaseStudyAnalysisPost,
+  ukMastersPersonalStatementPost,
 ];
 
 /** Arabic posts. Served at /ar/blog/{slug} */
@@ -46,6 +63,9 @@ export const AR_POSTS: BlogPost[] = [
   arHowToWriteAResearchProposalPost,
   arQuantitativeVsQualitativeResearchPost,
   arApaReferencingGuidePost,
+  arTheoreticalFrameworkAndLiteratureReviewPost,
+  arHowToWriteAnAbstractPost,
+  arHowToChooseAThesisTitlePost,
 ];
 
 export function getPost(slug: string, locale: 'en' | 'ar' = 'en'): BlogPost | undefined {
