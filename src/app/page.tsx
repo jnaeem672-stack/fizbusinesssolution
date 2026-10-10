@@ -4,7 +4,7 @@ import HomePage from '@/components/pages/HomePage';
 export const metadata: Metadata = {
   title: { absolute: 'Assignment Help & Dissertation Help UK & Saudi Arabia | FIZBS' },
   description:
-    'Need assignment help or dissertation help? FIZBS supports UK and Saudi Arabian students with essays, reports, MBA assignments, research proposals and SPSS analysis. Instant price from £20 per 1,000 words, 10% off your first order.',
+    'Assignment and dissertation help for UK and Saudi students from qualified experts. Instant price from £20 per 1,000 words and 10% off your first order.',
   alternates: {
     canonical: 'https://fizbusinessolutions.com/',
     languages: { 'en-GB': 'https://fizbusinessolutions.com/', 'ar-SA': 'https://fizbusinessolutions.com/ar' },

@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #A67C00; /* deep gold: text and accents on light backgrounds */
+  --color-primary: #8A6700; /* deep gold: text and accents on light backgrounds */
   --color-gold: #C9A227; /* bright gold: buttons, bars, highlights */
   --color-navy: #0B1D3A;
   --color-navy-light: #17325E;

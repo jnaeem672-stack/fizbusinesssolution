@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useId } from 'react';
 import { useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
 import SubmitButton from './ui/SubmitButton';
@@ -111,6 +111,8 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
     }
   };
 
+  const uid = useId();
+
   return (
     <div className="w-full bg-white rounded-xl p-4 md:p-6 shadow-[0_4px_24px_rgba(0,0,0,0.12)]" dir={isAr ? 'rtl' : undefined}>
       <div className="mb-3 md:mb-5 text-center">
@@ -122,32 +124,32 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 md:space-y-4">
         <div className="grid grid-cols-2 gap-x-2 gap-y-3 md:gap-4">
           <div>
-            <label className={labelClasses}>{t.name}</label>
-            <input {...register('fullName', { required: true })} type="text" placeholder={t.namePh} className={inputClasses} />
+            <label htmlFor={`${uid}-name`} className={labelClasses}>{t.name}</label>
+            <input id={`${uid}-name`} {...register('fullName', { required: true })} type="text" placeholder={t.namePh} className={inputClasses} />
           </div>
           <div>
-            <label className={labelClasses}>{t.email}</label>
-            <input {...register('email', { required: true, pattern: /^\S+@\S+$/i })} type="email" placeholder={t.emailPh} className={inputClasses} />
+            <label htmlFor={`${uid}-email`} className={labelClasses}>{t.email}</label>
+            <input id={`${uid}-email`} {...register('email', { required: true, pattern: /^\S+@\S+$/i })} type="email" placeholder={t.emailPh} className={inputClasses} />
           </div>
 
           <div className="col-span-2 md:col-span-1 flex gap-2">
             <div className="w-20 sm:w-24 shrink-0">
-              <label className={labelClasses}>{t.code}</label>
-              <select {...register('countryCode')} className={inputClasses} defaultValue="+44">
+              <label htmlFor={`${uid}-code`} className={labelClasses}>{t.code}</label>
+              <select id={`${uid}-code`} {...register('countryCode')} className={inputClasses} defaultValue="+44">
                 {countries.map((c) => (
                   <option key={`${c.name}-${c.code}`} value={c.code}>{c.code}</option>
                 ))}
               </select>
             </div>
             <div className="flex-1 min-w-0">
-              <label className={labelClasses}>{t.whatsapp}</label>
-              <input {...register('phone', { required: true })} type="tel" placeholder={t.phonePh} className={inputClasses} />
+              <label htmlFor={`${uid}-phone`} className={labelClasses}>{t.whatsapp}</label>
+              <input id={`${uid}-phone`} {...register('phone', { required: true })} type="tel" placeholder={t.phonePh} className={inputClasses} />
             </div>
           </div>
 
           <div className="col-span-2 md:col-span-1">
-            <label className={labelClasses}>{t.service}</label>
-            <select {...register('supportType', { required: true })} className={inputClasses} defaultValue="">
+            <label htmlFor={`${uid}-service`} className={labelClasses}>{t.service}</label>
+            <select id={`${uid}-service`} {...register('supportType', { required: true })} className={inputClasses} defaultValue="">
               <option value="">{t.selectService}</option>
               {supportTypes.map((type) => (
                 <option key={type} value={type}>{isAr ? AR_SERVICE_LABELS[type] ?? type : type}</option>
@@ -155,22 +157,22 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
             </select>
           </div>
           <div>
-            <label className={labelClasses}>{t.level}</label>
-            <select {...register('educationLevel')} className={inputClasses} defaultValue="Undergraduate">
+            <label htmlFor={`${uid}-level`} className={labelClasses}>{t.level}</label>
+            <select id={`${uid}-level`} {...register('educationLevel')} className={inputClasses} defaultValue="Undergraduate">
               {educationLevels.map((level) => (
                 <option key={level} value={level}>{isAr ? AR_LEVEL_LABELS[level] ?? level : level}</option>
               ))}
             </select>
           </div>
           <div>
-            <label className={labelClasses}>{t.deadline}</label>
-            <input {...register('preferredDate')} type="date" className={`${inputClasses} block appearance-none h-[42px] md:h-auto`} />
+            <label htmlFor={`${uid}-deadline`} className={labelClasses}>{t.deadline}</label>
+            <input id={`${uid}-deadline`} {...register('preferredDate')} type="date" className={`${inputClasses} block appearance-none h-[42px] md:h-auto`} />
           </div>
 
           <div className="col-span-2">
-            <label className={labelClasses}>{t.need}</label>
+            <label htmlFor={`${uid}-need`} className={labelClasses}>{t.need}</label>
             <textarea
-              {...register('supportTopic', { required: true })}
+              id={`${uid}-need`} {...register('supportTopic', { required: true })}
               placeholder={t.needPh}
               className={`${inputClasses} h-16 md:h-20 resize-none`}
             />
