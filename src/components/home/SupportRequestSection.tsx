@@ -34,7 +34,7 @@ export default function SupportRequestSection() {
             className="lg:col-span-2 space-y-6"
           >
             <div className="bg-navy rounded-2xl p-8 text-white relative overflow-hidden">
-              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:20px_20px]" />
+              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:20px_20px]" />
               <div className="relative z-10">
                 <h3 className="text-2xl font-bold mb-4">What You Get</h3>
                 <ul className="space-y-4">

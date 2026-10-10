@@ -16,7 +16,7 @@ const ServiceCard = ({ name, desc, icon: Icon, index }: ServiceCardProps) => (
     whileHover={{ y: -8 }}
     className="group relative overflow-hidden p-6 md:p-8 bg-white rounded-2xl border border-gray-100 shadow-sm hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/20 transition-all h-full flex flex-col"
   >
-    <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-[#e8455f] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
+    <span className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary to-[#E0BC4A] scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-500" />
     <div className="w-14 h-14 icon-gradient rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-6 transition-transform">
       <Icon className="w-7 h-7" />
     </div>

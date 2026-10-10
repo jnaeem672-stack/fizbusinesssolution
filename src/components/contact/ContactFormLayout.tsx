@@ -96,7 +96,7 @@ export default function ContactFormLayout() {
               transition={{ delay: 0.12 }}
               className="bg-navy rounded-2xl p-6 md:p-8 text-white relative overflow-hidden"
             >
-              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:20px_20px]" />
+              <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:20px_20px]" />
               <div className="relative z-10">
                 <h4 className="font-black text-lg mb-4">Before you contact us</h4>
                 <ul className="space-y-3">

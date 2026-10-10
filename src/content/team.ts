@@ -23,7 +23,7 @@ export const TEAM: TeamMember[] = [
     highlights: ['Professional researcher since 2015', '20 published articles', 'Research & academic writing'],
     bio: 'Sajjad has worked as a professional researcher since 2015 and co-founded FIZ Business Solutions to give students clear, reliable academic support. With an MBA and 20 published articles, he brings hands-on research experience to research proposals, dissertations, articles and proofreading.',
     icon: 'research',
-    gradient: 'from-[#C41E3A] to-[#e8455f]',
+    gradient: 'from-[#A67C00] to-[#C9A227]',
     group: 'founders',
   },
   {
@@ -105,7 +105,7 @@ export const SPECIALIST_GROUPS: SpecialistGroup[] = [
   {
     title: 'Business, Management & Marketing',
     icon: 'chart',
-    gradient: 'from-[#C41E3A] to-[#e8455f]',
+    gradient: 'from-[#A67C00] to-[#C9A227]',
     members: [
       { name: 'Ahmed K.', qualification: 'MSc Management', university: 'University of Manchester, UK', year: 2012, expertise: 'Business Management, Strategy', experience: '10 years', languages: 'English, Urdu' },
       { name: 'Sara M.', qualification: 'PhD Marketing', university: 'University of Leeds, UK', year: 2016, expertise: 'Marketing, Consumer Behaviour', experience: '8 years', languages: 'English, Urdu' },

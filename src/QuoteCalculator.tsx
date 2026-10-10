@@ -239,7 +239,7 @@ export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar
                 value={WORD_OPTIONS.indexOf(words)}
                 onChange={(event) => setWords(WORD_OPTIONS[Number(event.target.value)])}
                 aria-label="Word count"
-                className="w-full accent-[#C41E3A] cursor-pointer"
+                className="w-full accent-[#C9A227] cursor-pointer"
               />
               <div className="flex justify-between text-[10px] font-bold text-gray-400 mt-1">
                 <span>1,000</span>
@@ -259,7 +259,7 @@ export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar
                 type="checkbox"
                 checked={firstOrder}
                 onChange={(event) => setFirstOrder(event.target.checked)}
-                className="w-5 h-5 accent-[#C41E3A] cursor-pointer"
+                className="w-5 h-5 accent-[#C9A227] cursor-pointer"
               />
               <span className="text-[13px] sm:text-sm font-bold text-navy">
                 🎁 {t.firstOrder} <span className="text-primary">{t.firstOrderHint}</span>

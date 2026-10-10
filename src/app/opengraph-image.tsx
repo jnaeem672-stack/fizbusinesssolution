@@ -33,7 +33,7 @@ export default function OpengraphImage() {
           <div style={{ display: 'flex', fontSize: 68, fontWeight: 900, lineHeight: 1.08, letterSpacing: '-0.03em' }}>
             Assignment & Dissertation Help
           </div>
-          <div style={{ display: 'flex', fontSize: 68, fontWeight: 900, lineHeight: 1.08, color: '#e8455f' }}>
+          <div style={{ display: 'flex', fontSize: 68, fontWeight: 900, lineHeight: 1.08, color: '#E0BC4A' }}>
             UK & Saudi Arabia
           </div>
           <div style={{ display: 'flex', fontSize: 30, marginTop: 24, color: 'rgba(255,255,255,0.75)' }}>

@@ -11,7 +11,7 @@ import { countries, supportTypes, educationLevels } from '@/constants/supportOpt
 import type { SupportRequestFormData } from '@/types';
 
 const inputClasses =
-  'bg-[#fce4ec] border border-[#f8bbd9] px-3 py-2 md:p-[10px_14px] rounded-[6px] text-base md:text-[14px] min-w-0 max-w-full outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition-all w-full text-navy placeholder:text-gray-400';
+  'bg-[#FBF6E6] border border-[#E9DCAE] px-3 py-2 md:p-[10px_14px] rounded-[6px] text-base md:text-[14px] min-w-0 max-w-full outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition-all w-full text-navy placeholder:text-gray-400';
 const labelClasses = 'block text-primary font-semibold text-[10px] md:text-[11px] uppercase mb-1 md:mb-2 tracking-[1px]';
 
 const TEXT = {
@@ -177,7 +177,7 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
           </div>
         </div>
 
-        <details className="group rounded-lg border border-dashed border-[#f8bbd9] p-3">
+        <details className="group rounded-lg border border-dashed border-[#E9DCAE] p-3">
           <summary className="cursor-pointer text-[12px] font-semibold text-primary list-none flex items-center justify-between">
             {t.attach}
             <span className="text-gray-400 group-open:rotate-180 transition-transform">▾</span>

@@ -48,7 +48,7 @@ function Header({ badge, title, subtitle, light = false }: { badge: string; titl
       </span>
       <h2 className={`text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 ${light ? 'text-white' : 'text-navy'}`}>{title}</h2>
       <p className={`max-w-2xl mx-auto text-base md:text-lg leading-relaxed ${light ? 'text-gray-400' : 'text-gray-500'}`}>{subtitle}</p>
-      <div className="h-1 w-16 rounded-full bg-gradient-to-r from-primary to-[#e8455f] mt-6 mx-auto" />
+      <div className="h-1 w-16 rounded-full bg-gradient-to-r from-primary to-[#E0BC4A] mt-6 mx-auto" />
     </div>
   );
 }
@@ -74,7 +74,7 @@ export default function ArHomePage() {
           />
         </div>
         <div className="absolute inset-0 z-[1] bg-gradient-to-bl from-navy/95 via-navy/85 to-navy-light/90" />
-        <div className="absolute inset-0 z-[1] opacity-20 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+        <div className="absolute inset-0 z-[1] opacity-20 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
 
         <div className="relative z-10 w-full max-w-[1600px] mx-auto px-4 sm:px-6 lg:px-10 py-16 md:py-20">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16 items-start lg:items-center">
@@ -257,7 +257,7 @@ export default function ArHomePage() {
 
       {/* CTA */}
       <section className="relative py-20 md:py-24 overflow-hidden bg-navy">
-        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
         <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
           <span className="inline-block px-4 py-1.5 bg-white/10 text-primary text-xs font-black rounded-full mb-6 border border-white/10">{c.cta.badge}</span>
           <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-5 leading-tight">{c.cta.title}</h2>

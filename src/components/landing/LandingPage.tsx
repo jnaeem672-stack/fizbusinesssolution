@@ -110,7 +110,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       {/* Hero */}
       <section id="landing-hero" className="relative overflow-hidden bg-navy pb-16 lg:pb-20">
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-light" />
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
         <div className="absolute bottom-0 -right-32 w-80 h-80 bg-primary/15 rounded-full blur-[100px]" />
 
@@ -288,7 +288,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
 
       {/* Final CTA */}
       <section className="relative py-16 md:py-20 overflow-hidden bg-navy" dir={isAr ? 'rtl' : undefined}>
-        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
         <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">{page.ctaTitle}</h2>
           <p className="text-gray-300 text-base md:text-lg mb-8 leading-relaxed">{page.ctaText}</p>

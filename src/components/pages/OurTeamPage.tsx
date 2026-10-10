@@ -96,7 +96,7 @@ export default function OurTeamPage() {
       {/* Hero */}
       <section className="relative overflow-hidden bg-navy">
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-light" />
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
         <div className="absolute top-0 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
         <div className="relative z-10 max-w-site mx-auto px-4 pt-16 pb-24 md:pt-20 md:pb-28 text-center">
           <nav aria-label="Breadcrumb" className="text-xs font-bold text-white/50 mb-6">
@@ -221,7 +221,7 @@ export default function OurTeamPage() {
 
       {/* CTA */}
       <section className="relative py-16 md:py-20 overflow-hidden bg-navy">
-        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
         <div className="relative z-10 max-w-3xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4 tracking-tight">Work With Our Team</h2>
           <p className="text-gray-300 text-lg mb-8 leading-relaxed">Share your subject, word count and deadline. Get a clear price, 10% off your first order, and pay 50% to start.</p>

@@ -63,7 +63,7 @@ export default function ExpertProfilePage({ expert }: { expert: ExpertProfile })
       {/* Hero / profile card */}
       <section className="relative overflow-hidden bg-navy pb-16">
         <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy to-navy-light" />
-        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+        <div className="absolute inset-0 opacity-20 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
         <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
         <div className="relative z-10 max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-10 pt-10 md:pt-14">
           <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-bold text-white/50 mb-8">

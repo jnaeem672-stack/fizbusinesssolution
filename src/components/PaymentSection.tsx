@@ -30,12 +30,12 @@ export default function PaymentSection({ locale = 'en', className = 'bg-white' }
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight mb-4">{p.section.title}</h2>
           <p className="max-w-2xl mx-auto text-gray-500 text-base md:text-lg leading-relaxed">{p.section.subtitle}</p>
-          <div className="h-1 w-16 rounded-full bg-gradient-to-r from-primary to-[#e8455f] mt-6 mx-auto" />
+          <div className="h-1 w-16 rounded-full bg-gradient-to-r from-primary to-[#E0BC4A] mt-6 mx-auto" />
         </div>
 
         {/* 50 / 50 journey */}
         <div className="relative max-w-5xl mx-auto mb-14">
-          <div className="hidden md:block absolute top-10 left-[16%] right-[16%] h-1.5 rounded-full bg-gradient-to-r from-primary via-[#e8455f] to-primary opacity-30" />
+          <div className="hidden md:block absolute top-10 left-[16%] right-[16%] h-1.5 rounded-full bg-gradient-to-r from-primary via-[#E0BC4A] to-primary opacity-30" />
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
             {p.section.steps.map((step, i) => (
               <div key={step.title} className="text-center">

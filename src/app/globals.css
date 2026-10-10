@@ -1,9 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #C41E3A;
-  --color-navy: #0f1f3d;
-  --color-navy-light: #1a2f5e;
+  --color-primary: #A67C00; /* deep gold: text and accents on light backgrounds */
+  --color-gold: #C9A227; /* bright gold: buttons, bars, highlights */
+  --color-navy: #0B1D3A;
+  --color-navy-light: #17325E;
   --color-whatsapp: #25D366;
   --max-width-site: 90rem; /* 1440px */
 }
@@ -44,7 +45,7 @@
 }
 
 .gradient-text {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #e85d75 50%, var(--color-primary) 100%);
+  background: linear-gradient(135deg, var(--color-gold) 0%, #F0D77A 50%, var(--color-gold) 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -85,13 +86,40 @@ h1, h2, h3 {
 }
 
 .bg-soft-rose {
-  background-color: #fff6f7;
-  background-image: radial-gradient(rgba(196, 30, 58, 0.07) 1px, transparent 1px);
+  background-color: #FBF8F0;
+  background-image: radial-gradient(rgba(201, 162, 39, 0.09) 1px, transparent 1px);
   background-size: 22px 22px;
 }
 
 .icon-gradient {
-  background: linear-gradient(135deg, #c41e3a 0%, #e8455f 100%);
-  color: #fff;
-  box-shadow: 0 10px 24px -8px rgba(196, 30, 58, 0.55);
+  background: linear-gradient(135deg, #C9A227 0%, #E0BC4A 100%);
+  color: var(--color-navy);
+  box-shadow: 0 10px 24px -8px rgba(201, 162, 39, 0.55);
+}
+
+/* ===== Royal Navy + Gold theme =====
+   Unlayered rules, so they win over Tailwind utilities.
+   Solid gold surfaces use the bright gold with navy text for contrast. */
+.bg-primary,
+.hover\:bg-primary:hover,
+.group:hover .group-hover\:bg-primary {
+  background-color: var(--color-gold);
+  color: var(--color-navy);
+}
+.bg-primary .text-white,
+.bg-primary.text-white,
+.hover\:bg-primary:hover .text-white,
+.hover\:bg-primary.hover\:text-white:hover {
+  color: var(--color-navy);
+}
+/* Gold text reads brighter on navy sections, deep gold on white cards inside them */
+.bg-navy .text-primary,
+[class*="from-navy"] .text-primary,
+footer .text-primary {
+  color: var(--color-gold);
+}
+.bg-navy .bg-white .text-primary,
+[class*="from-navy"] .bg-white .text-primary,
+.bg-navy [class*="bg-gray-50"] .text-primary {
+  color: var(--color-primary);
 }

@@ -14,7 +14,7 @@ const FileUploadZone = ({
   <div className="space-y-3">
     {uploadedFiles.length < maxFiles && (
       <div
-        className="relative border-2 border-dashed border-[#f8bbd9] rounded-xl p-6 md:p-8 bg-[#fce4ec] flex flex-col items-center justify-center transition-all hover:border-primary group cursor-pointer"
+        className="relative border-2 border-dashed border-[#E9DCAE] rounded-xl p-6 md:p-8 bg-[#FBF6E6] flex flex-col items-center justify-center transition-all hover:border-primary group cursor-pointer"
         onClick={() => document.getElementById('support-file-upload')?.click()}
         onDragOver={(e) => e.preventDefault()}
         onDrop={(e) => {
@@ -44,7 +44,7 @@ const FileUploadZone = ({
     )}
 
     {Object.entries(uploadingFiles).map(([id, file]) => (
-      <div key={id} className="bg-white border border-[#f8bbd9] rounded-lg p-3">
+      <div key={id} className="bg-white border border-[#E9DCAE] rounded-lg p-3">
         <div className="flex items-center justify-between mb-2">
           <div className="flex items-center gap-2 overflow-hidden">
             <Loader2 className="w-4 h-4 text-primary animate-spin shrink-0" />

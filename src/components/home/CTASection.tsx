@@ -21,7 +21,7 @@ const CTASection = ({
 }: CTASectionProps) => (
   <section className="relative py-20 md:py-28 overflow-hidden bg-navy">
     <div className="absolute inset-0 bg-gradient-to-br from-navy via-navy-light to-navy" />
-    <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+    <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
     <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/20 rounded-full blur-[120px]" />
     <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-primary/10 rounded-full blur-[100px]" />
 

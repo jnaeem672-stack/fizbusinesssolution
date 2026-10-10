@@ -63,7 +63,7 @@ export default function HomeHero() {
       </div>
 
       <div className="absolute inset-0 z-[1] bg-gradient-to-br from-navy/95 via-navy/85 to-navy-light/90" />
-      <div className="absolute inset-0 z-[1] opacity-20 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+      <div className="absolute inset-0 z-[1] opacity-20 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px] z-[1] animate-float" />
       <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-primary/15 rounded-full blur-[100px] z-[1] animate-float" style={{ animationDelay: '2s' }} />
 

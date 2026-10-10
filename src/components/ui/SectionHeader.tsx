@@ -51,7 +51,7 @@ const SectionHeader = ({
       whileInView={{ width: 64 }}
       viewport={{ once: true }}
       transition={{ delay: 0.2, duration: 0.5 }}
-      className={`h-1 rounded-full bg-gradient-to-r from-primary to-[#e8455f] mt-6 ${centered ? 'mx-auto' : ''}`}
+      className={`h-1 rounded-full bg-gradient-to-r from-primary to-[#E0BC4A] mt-6 ${centered ? 'mx-auto' : ''}`}
     />
   </motion.div>
 );

@@ -22,7 +22,7 @@ const PageHero = ({
       style={{ backgroundImage: `url(${backgroundImage})` }}
     />
     <div className="absolute inset-0 z-[1] bg-gradient-to-br from-navy/95 via-navy/88 to-navy-light/92" />
-    <div className="absolute inset-0 z-[1] opacity-20 bg-[radial-gradient(#C41E3A_1px,transparent_1px)] [background-size:24px_24px]" />
+    <div className="absolute inset-0 z-[1] opacity-20 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
     <div className="absolute top-0 right-0 w-96 h-96 bg-primary/15 rounded-full blur-[120px] z-[1]" />
     <div className="absolute bottom-0 left-0 w-80 h-80 bg-primary/10 rounded-full blur-[100px] z-[1]" />
 

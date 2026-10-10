@@ -13,12 +13,12 @@ function CallIllustration() {
           <stop offset="1" stopColor="#2d4a8a" />
         </linearGradient>
         <linearGradient id="ec-shirt" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0" stopColor="#C41E3A" />
+          <stop offset="0" stopColor="#C9A227" />
           <stop offset="1" stopColor="#9b1730" />
         </linearGradient>
       </defs>
       <circle cx="200" cy="190" r="150" fill="url(#ec-bg)" />
-      <circle cx="200" cy="190" r="150" fill="none" stroke="#C41E3A" strokeOpacity=".35" strokeWidth="2" strokeDasharray="6 10" />
+      <circle cx="200" cy="190" r="150" fill="none" stroke="#C9A227" strokeOpacity=".35" strokeWidth="2" strokeDasharray="6 10" />
       {/* body */}
       <path d="M95 340c8-62 52-96 105-96s97 34 105 96z" fill="url(#ec-shirt)" />
       <path d="M178 246l22 30 22-30" fill="none" stroke="#fff" strokeWidth="5" strokeLinejoin="round" />
@@ -45,7 +45,7 @@ function CallIllustration() {
         <rect width="118" height="58" rx="16" fill="#fff" />
         <path d="M86 58l14 16 2-16z" fill="#fff" />
         <rect x="16" y="16" width="70" height="8" rx="4" fill="#0f1f3d" />
-        <rect x="16" y="32" width="86" height="8" rx="4" fill="#C41E3A" fillOpacity=".7" />
+        <rect x="16" y="32" width="86" height="8" rx="4" fill="#C9A227" fillOpacity=".7" />
       </g>
       {/* sound waves */}
       <path d="M300 186q12 14 0 28M314 176q22 24 0 48" fill="none" stroke="#25D366" strokeWidth="5" strokeLinecap="round" />

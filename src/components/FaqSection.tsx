@@ -47,7 +47,7 @@ export default function FaqSection({
           </span>
           <h2 className="text-3xl md:text-4xl font-extrabold text-navy tracking-tight mb-3">{title}</h2>
           {subtitle && <p className="text-gray-500 text-base md:text-lg leading-relaxed">{subtitle}</p>}
-          <div className="h-1 w-16 rounded-full bg-gradient-to-r from-primary to-[#e8455f] mt-6 mx-auto" />
+          <div className="h-1 w-16 rounded-full bg-gradient-to-r from-primary to-[#E0BC4A] mt-6 mx-auto" />
         </div>
 
         <div className="space-y-3">

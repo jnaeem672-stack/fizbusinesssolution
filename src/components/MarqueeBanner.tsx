@@ -36,7 +36,7 @@ const MarqueeBanner = () => {
         </div>
       </div>
 
-      <div ref={boxRef} className="relative shrink-0 flex items-center gap-1.5 sm:gap-2 pl-2 pr-2 sm:pr-4 h-full bg-primary shadow-[-12px_0_12px_-4px_rgba(196,30,58,1)]">
+      <div ref={boxRef} className="relative shrink-0 flex items-center gap-1.5 sm:gap-2 pl-2 pr-2 sm:pr-4 h-full bg-primary shadow-[-12px_0_12px_-4px_rgba(201,162,39,1)]">
         <WhatsAppLink
           href={ORDER_URL}
           aria-label="Order on WhatsApp"
