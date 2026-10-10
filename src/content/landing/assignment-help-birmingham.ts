@@ -33,6 +33,20 @@ export const assignmentHelpBirmingham: LandingContent = {
       ],
     },
     {
+      heading: 'Five Birmingham universities, five different assignment styles',
+      paragraphs: [
+        'Each university in the city has its own character, and the type of assignment you meet depends a great deal on where and what you study. Understanding the expectations of your institution helps you decide whether to focus on theory, application or reflection.',
+        'Whichever applies to you, your expert adapts the approach to fit, whether that means going deeper into theory, sharpening how you apply a model or making a reflective piece more structured and honest.',
+      ],
+      bullets: [
+        'University of Birmingham: a research-intensive university where many modules expect wide reading, critical essays and research-based projects',
+        'Aston University: well known for business education and placement years, so applied business reports and placement reflections are common',
+        'Birmingham City University: a broad mix of professional courses, including nursing, health, law, media and the creative industries, often assessed through practical and portfolio work',
+        'University College Birmingham: focused on hospitality, tourism, culinary arts, business and education, with assignments built around industry practice',
+        'Newman University: known for education, teacher training and social sciences, where reflective writing and professional practice are central',
+      ],
+    },
+    {
       heading: 'Help that works around commuting and part-time work',
       paragraphs: [
         "Travelling in for a 9am seminar, working a shift at the weekend and keeping up with weekly reading leaves little room for anything else. When an assignment brief feels confusing, waiting several days for a reply from a tutor can cost you valuable time. Our process is designed to remove that delay and fit into the gaps in your week.",
@@ -43,6 +57,39 @@ export const assignmentHelpBirmingham: LandingContent = {
         'Book early to keep the standard rate of £20 per 1,000 words',
         'Shorter turnarounds available: 3 to 6 days (+25%) or within 48 hours (+50%)',
         'No meetings to attend and no location to visit',
+      ],
+    },
+    {
+      heading: 'Making the most of short study windows',
+      paragraphs: [
+        'If you live at home and commute in, your study time probably arrives in short blocks: a train journey, a free hour between seminars or an evening once the house is quiet. A 3,000-word assignment can feel impossible in those fragments, but breaking it into smaller pieces changes that.',
+      ],
+      bullets: [
+        'Ask an expert to help you split the brief into small, clearly defined tasks',
+        'Use short sessions for reading and note-taking, and longer ones for writing',
+        'Keep a running reference list from day one so citations do not pile up at the end',
+        'Send questions on WhatsApp as they come up instead of saving them for campus days',
+        'Leave a buffer before the deadline for proofreading and final checks',
+      ],
+    },
+    {
+      heading: 'What to send for the most useful help',
+      paragraphs: [
+        'You can get a quote with just your subject, word count and deadline. When you are ready to start, sharing the right material lets your expert follow your lecturer\'s expectations closely and saves back-and-forth later.',
+      ],
+      bullets: [
+        'The assignment brief exactly as your lecturer issued it',
+        'The marking rubric, grade descriptors or learning outcomes',
+        'Module handbook pages that explain format or referencing rules',
+        'Any feedback from earlier assignments on the same module',
+        'Your own notes, outline or draft, however rough',
+      ],
+    },
+    {
+      heading: 'Returning to study as a mature or part-time student',
+      paragraphs: [
+        'Plenty of students in Birmingham come back to education after years in work or raising a family, and others study part-time alongside a job. If it has been a long time since you last wrote an essay, university expectations around critical analysis, academic tone and referencing can feel unfamiliar. At the same time, mature students often bring valuable work and life experience that, used well, can strengthen reflective and applied assignments.',
+        'Experts can explain what academic writing looks like today, how to search library databases for journal articles, how to cite correctly and how to structure your answer so it lines up with the marking criteria. Support can be as focused as reviewing a single section or as broad as guiding you through a whole module, and you can book a WhatsApp call in English with an expert before ordering to talk through where you need most help.',
       ],
     },
     {
@@ -72,6 +119,13 @@ export const assignmentHelpBirmingham: LandingContent = {
         "MBA assignment help Birmingham professionals request often involves combining theory with their own workplace experience. Experts can help you apply frameworks to a real organisation, structure a consultancy report and reflect on leadership in a way that meets postgraduate standards.",
       ],
     },
+    {
+      heading: 'Support for Saudi students studying in Birmingham',
+      paragraphs: [
+        "Birmingham's universities welcome students from many countries, including Saudi students on undergraduate, Master's and MBA programmes. FIZBS supports students from Saudi Arabia, both at Saudi universities and studying in the UK, so the step from one academic system to another is familiar ground for our experts.",
+        'Common requests include help adapting to UK essay and report structures, writing critically rather than descriptively and using Harvard or APA referencing consistently. Postgraduate students also ask for guidance on research proposals and on applying business frameworks to organisations in Saudi Arabia or the wider Gulf region. Payment can be made by Saudi bank transfer in SAR or UK bank transfer in GBP, split into 50% at the start and 50% on completion.',
+      ],
+    },
   ],
   faqs: [
     {
@@ -97,6 +151,18 @@ export const assignmentHelpBirmingham: LandingContent = {
     {
       q: 'How do you protect my personal information?',
       a: 'The service is 100% confidential. Your personal details and the files you share are never passed to anyone.',
+    },
+    {
+      q: 'Can I get help with just one section or chapter?',
+      a: 'Yes. You can ask for guidance on a single part of your work, such as a literature review, methodology or reflective section, rather than the whole assignment. The price is based on the word count involved.',
+    },
+    {
+      q: 'I am a Saudi student in Birmingham. Can I pay from a Saudi bank account?',
+      a: 'Yes. You can pay by Saudi bank transfer in SAR or by UK bank transfer in GBP. Payment is split into 50% to start and 50% on completion.',
+    },
+    {
+      q: "I haven't studied for years. Can you help me get back into academic writing?",
+      a: 'Yes. Experts can explain essay structure, academic tone, referencing and how to use the marking criteria. You can also book a WhatsApp call in English with an expert before ordering to discuss where you would like support.',
     },
   ],
   ctaTitle: 'Start with a quick, clear price',

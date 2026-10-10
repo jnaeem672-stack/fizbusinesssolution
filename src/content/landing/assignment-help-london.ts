@@ -46,10 +46,31 @@ export const assignmentHelpLondon: LandingContent = {
       ],
     },
     {
+      heading: 'Research-led essays or applied reports: what your London course expects',
+      paragraphs: [
+        "London's universities do not all assess students in the same way, and recognising the style of your course is half the battle. At research-intensive institutions such as UCL, King's College London and LSE, many modules are built around long reading lists, theoretical debate and essays that reward a sustained critical argument. Markers often want to see you weigh competing authors against each other rather than simply summarise what they say.",
+        "At universities with a strong applied or professional focus, such as the University of Westminster, Middlesex University, the University of Greenwich and the University of East London, assessments frequently take the form of business reports, case study analyses, portfolios and reflective pieces linked to industry. Here the challenge is usually applying a model correctly to a real organisation and presenting recommendations in a clear, practical format.",
+        'An expert can help you read your brief the way a marker would:',
+      ],
+      bullets: [
+        'Work out whether the task calls for an argument-led essay or a structured report',
+        'Pick out command words such as "critically evaluate", "analyse" or "recommend"',
+        'Map each marking criterion to a section of your plan',
+        'Choose theory and evidence at the depth your level of study requires',
+      ],
+    },
+    {
       heading: 'Guidance for international students in London',
       paragraphs: [
         "London welcomes students from every part of the world, and adjusting to UK academic conventions can take time. Critical writing, building an argument from sources and referencing correctly are skills many international students are asked to master in their very first term.",
         "Our experts can explain what UK markers look for, help you structure an essay or report clearly and show you how to use Harvard, APA, MLA, IEEE or OSCOLA referencing with confidence. Essay help London students request most often covers structure, critical evaluation and academic tone, and proofreading from £12 per 1,000 words is available when you want a final check on clarity and grammar.",
+      ],
+    },
+    {
+      heading: 'Law, accounting and professional courses in London',
+      paragraphs: [
+        "London is a major centre for professional education. Law and business students at places like King's College London, LSE, Queen Mary and BPP's London campuses often work on problem questions, case notes, legal memos and professionally styled reports. These tasks follow conventions that differ from a standard essay, and OSCOLA referencing has its own detailed rules for cases, statutes and footnotes.",
+        "Our experts can guide you through the IRAC approach to problem questions, help you structure a legal memo or show you how to present financial analysis in the format an accounting or finance module expects. Finance and accounting are among our strongest subjects, which suits students on courses connected to the City's financial and professional services sector.",
       ],
     },
     {
@@ -66,10 +87,37 @@ export const assignmentHelpLondon: LandingContent = {
       ],
     },
     {
+      heading: "A realistic dissertation timeline for a one-year London Master's",
+      paragraphs: [
+        "Many taught Master's programmes in London run for twelve months, with the dissertation usually due towards the end of the summer. Starting early and working in stages keeps the project under control. A typical plan might look like this:",
+      ],
+      bullets: [
+        'Spring term: narrow your topic and draft a research proposal with clear aims',
+        'Late spring: build your literature review while final modules and exams wind down',
+        'Early summer: confirm your methodology and collect primary or secondary data',
+        'Mid-summer: analyse your findings and write up the results and discussion chapters',
+        'Final weeks: refine the introduction and conclusion, check referencing and proofread',
+      ],
+    },
+    {
       heading: 'Subjects and pricing at a glance',
       paragraphs: [
         "Our strongest areas are business, management, marketing, finance and accounting, which suits the many London students on business school and finance-focused courses. We also support health, law, computing, engineering and more than 115 subjects in total.",
         "Our assignment help London pricing starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and requests needed within 48 hours add 50%. New customers receive 10% off their first order, and your details and files stay 100% confidential.",
+      ],
+    },
+    {
+      heading: 'How it works: from WhatsApp message to finished work',
+      paragraphs: [
+        'The process is the same whether you live in Camden, Croydon or Canary Wharf, and it is designed to take as little of your time as possible.',
+      ],
+      bullets: [
+        'Send your brief, marking rubric, word count and deadline on WhatsApp or through our website',
+        'Receive a clear price, or check it yourself with the instant calculator, with 10% off your first order',
+        'Book an optional WhatsApp call in English with an expert if you want to talk the task through first',
+        'Pay 50% to start by UK bank transfer in GBP or Saudi bank transfer in SAR',
+        'Your subject expert works through the task and keeps you updated on WhatsApp',
+        'Review the work, ask any questions, then pay the remaining 50% on completion',
       ],
     },
   ],
@@ -97,6 +145,18 @@ export const assignmentHelpLondon: LandingContent = {
     {
       q: 'Is my information kept private?',
       a: 'Yes, the service is 100% confidential. Your name, university details and files are never shared with anyone.',
+    },
+    {
+      q: 'Can I talk to an expert before I place an order?',
+      a: 'Yes. You can book a WhatsApp call with an expert before ordering to discuss your brief, your deadline and the kind of support you need. Calls are held in English.',
+    },
+    {
+      q: 'Do you support law students who use OSCOLA?',
+      a: 'Yes. Experts can guide you on problem questions, case analysis and legal essays, and explain how to reference cases, legislation and secondary sources in OSCOLA. This suits students on LLB, LLM and conversion courses across London.',
+    },
+    {
+      q: "When should I get in touch about my one-year Master's dissertation?",
+      a: "As early as you can, ideally while you are drafting your proposal. Deadlines of seven days or more stay at the standard rate, and working in stages gives you time to act on your supervisor's feedback between chapters.",
     },
   ],
   ctaTitle: 'Get expert help without leaving your desk',

@@ -42,6 +42,55 @@ export const mbaAssignmentHelp: LandingContent = {
       ],
     },
     {
+      heading: 'Common MBA assignment types and what they ask for',
+      paragraphs: [
+        'MBA assessments come in a handful of recurring formats. Each one has its own expectations, and knowing them helps you plan your time and structure from the start.',
+      ],
+      bullets: [
+        "Strategic analysis: assess an organisation's external environment with PESTLE (political, economic, social, technological, legal and environmental factors), its industry with Porter's Five Forces (rivalry, threat of new entrants, threat of substitutes, buyer power and supplier power) and its internal position with SWOT or a resource-based view, then recommend a strategic direction.",
+        'Financial analysis: interpret annual reports using profitability, liquidity, efficiency and gearing ratios, or evaluate an investment with NPV, IRR and payback. Marks come from explaining what the numbers mean for the business, not just calculating them.',
+        "Leadership and personal development reflections: analyse your own experience as a manager using a model such as Gibbs' Reflective Cycle or Kolb's learning cycle, linked to leadership theories such as transformational, situational or authentic leadership.",
+        'Consultancy reports: diagnose a real problem for a client organisation, often your own employer, and present prioritised, costed recommendations with an implementation plan.',
+        'Marketing plans and change management reports: apply tools such as segmentation, targeting and positioning, or change models such as Kotter\'s eight steps and Lewin\'s three-stage model, to a specific organisational situation.',
+      ],
+    },
+    {
+      heading: 'How MBA marking differs from undergraduate work',
+      paragraphs: [
+        'An MBA is a Master\'s-level qualification, and the marking reflects that. At many UK universities the pass mark for Master\'s modules is 50% rather than the 40% common at undergraduate level, and the criteria reward different things.',
+        'At undergraduate level, explaining a model accurately can earn solid marks. On an MBA, description alone rarely gets beyond a bare pass. Markers want to see you question the framework, compare it with alternatives and show where it fits or fails for your organisation.',
+      ],
+      bullets: [
+        'Critical evaluation: weigh up evidence and theories instead of accepting them at face value',
+        'Application to practice: every framework is tied to real data about a real organisation',
+        'Synthesis: findings from different models are pulled together into one coherent argument',
+        'Justified recommendations: clear, prioritised actions with costs, risks and timescales',
+        'Balanced sources: peer-reviewed journals alongside credible practitioner sources such as annual reports and industry data',
+        'Professional presentation: report format, executive summary, clear visuals and accurate referencing',
+      ],
+    },
+    {
+      heading: 'Support for working professionals',
+      paragraphs: [
+        'Most MBA students are working while they study. Your experience is a real strength, but it can also create problems in assignments. Markers look for academic evidence, so a point based only on "in my experience" needs supporting with literature or data.',
+        'Using your own employer as the case organisation is common and often encouraged. It does raise practical questions: how much internal information you can share, whether you need permission and how to anonymise the company. Your expert can help you present sensitive material appropriately, and everything you share with us stays 100% confidential.',
+        'Time is usually the biggest pressure. Our 24/7 WhatsApp support means you can send questions late at night or between meetings, and you can book a WhatsApp call with an expert (in English) before ordering to talk through your brief. This works well for students in Saudi Arabia and the Gulf studying on UK or local English-language programmes.',
+      ],
+    },
+    {
+      heading: 'How our experts help at each stage',
+      paragraphs: [
+        'You can ask for support with a whole assignment or just the part you are finding difficult. Here is how help typically fits into the stages of an MBA assignment.',
+      ],
+      bullets: [
+        'Understanding the brief: your expert breaks down the task and marking criteria so you know exactly what is being assessed. How FIZBS helps: a clear outline of what each section needs to cover.',
+        'Choosing frameworks: selecting the models that genuinely suit your question rather than using every tool available. How FIZBS helps: guidance on which frameworks to use and how they connect.',
+        'Research and evidence: finding journal articles, company reports and industry data. How FIZBS helps: suggestions of credible, relevant sources for each argument.',
+        'Analysis and recommendations: moving from description to critical evaluation. How FIZBS helps: feedback on where your analysis can go deeper and how to justify recommendations.',
+        'Final checks: structure, flow, referencing and presentation. How FIZBS helps: proofreading from £12 per 1,000 words and referencing support in Harvard, APA and other styles.',
+      ],
+    },
+    {
       heading: 'Case studies, frameworks and reflective reports',
       paragraphs: [
         "Much of an MBA is assessed through case studies. Our MBA case study help focuses on applying the right tools properly rather than listing them, so your analysis links each framework to the evidence and to your final recommendations. Your expert also helps you find credible sources, such as annual reports and industry data, to support each point.",
@@ -130,6 +179,14 @@ export const mbaAssignmentHelp: LandingContent = {
     {
       q: 'Is my MBA assignment request kept confidential?',
       a: 'Yes, our service is 100% confidential. Your personal details, company information and files are never shared with anyone.',
+    },
+    {
+      q: 'Can I use my own company as the case study for my MBA assignment?',
+      a: 'Often yes, if your brief allows it. Your expert can help you apply frameworks to your organisation, support your points with evidence and anonymise sensitive details where needed.',
+    },
+    {
+      q: 'How is MBA marking different from undergraduate marking?',
+      a: 'MBA marking rewards critical evaluation, application to a real organisation and well-justified recommendations rather than description. At many UK universities the Master\'s pass mark is also higher, at 50%.',
     },
   ],
   ctaTitle: 'Get your MBA assignment price today',

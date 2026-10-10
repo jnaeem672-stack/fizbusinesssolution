@@ -42,6 +42,64 @@ export const spssHelp: LandingContent = {
       ],
     },
     {
+      heading: 'Choosing the right statistical test',
+      paragraphs: [
+        'The right test depends on your research question (comparing groups or looking at relationships?), your variable types (categorical, ordinal or continuous) and how many groups or measurements are involved. Here are the tests students use most often.',
+      ],
+      bullets: [
+        'Independent samples t-test: compares the mean of a continuous variable between two separate groups, such as job satisfaction scores for male and female employees.',
+        'Paired samples t-test: compares two measurements from the same participants, such as scores before and after a training programme.',
+        'One-way ANOVA: compares means across three or more independent groups, such as satisfaction across three departments. If the result is significant, post hoc tests (for example Tukey) show which groups differ.',
+        'Chi-square test of independence: tests whether two categorical variables are associated, such as gender and preferred shopping channel.',
+        "Pearson correlation: measures the strength and direction of a linear relationship between two continuous variables. Spearman's rho is used for ordinal data or when assumptions are not met.",
+        'Linear and multiple regression: tests how well one or more predictors explain an outcome, such as whether pay, workload and recognition predict employee engagement.',
+        'Non-parametric alternatives: Mann-Whitney U (instead of an independent t-test), Wilcoxon signed-rank (instead of a paired t-test) and Kruskal-Wallis (instead of one-way ANOVA).',
+      ],
+    },
+    {
+      heading: 'Checking assumptions before you report results',
+      paragraphs: [
+        'Every parametric test rests on assumptions, and markers expect you to show that you checked them. Your expert checks the relevant assumptions, explains the output and tells you what to do if one is violated, such as switching to a non-parametric test or using a corrected result.',
+      ],
+      bullets: [
+        'Normality: Shapiro-Wilk tests, histograms and Q-Q plots, interpreted with your sample size in mind.',
+        "Homogeneity of variance: Levene's test, which SPSS reports with the independent t-test. If it is significant, you report the \"equal variances not assumed\" row, or Welch's test for ANOVA.",
+        'Outliers: boxplots and standardised scores to spot extreme values and decide how to handle them.',
+        'Expected cell counts for chi-square: when too many expected counts fall below 5, Fisher\'s exact test may be more appropriate.',
+        'Regression checks: linearity, homoscedasticity in residual plots, multicollinearity using VIF and tolerance values, and independence of errors using the Durbin-Watson statistic.',
+      ],
+    },
+    {
+      heading: 'Reporting SPSS results in APA style',
+      paragraphs: [
+        'SPSS output is not written for a reader. A good findings chapter turns it into short, precise statements that give the test statistic, degrees of freedom, p value and an effect size, followed by a plain-English sentence explaining what the result means for your hypothesis.',
+        'In APA 7th edition, statistical symbols such as t, F, p and r are italicised, p values are given exactly to two or three decimal places (or as p < .001 when very small), and values that cannot exceed 1, such as p and r, are written without a leading zero.',
+      ],
+      bullets: [
+        't-test: t(58) = 2.45, p = .017, d = 0.63',
+        'ANOVA: F(2, 87) = 4.12, p = .019, η² = .09',
+        'Chi-square: χ²(1, N = 120) = 6.30, p = .012',
+        'Correlation: r(98) = .42, p < .001',
+        'Regression: report R², the overall F test and each predictor\'s coefficient (B or β), its t value and p value, usually in a table',
+      ],
+    },
+    {
+      heading: 'Common SPSS mistakes to avoid',
+      paragraphs: [
+        'Many issues markers comment on come from small slips in preparing data or describing output, not advanced statistics. Check for these before you submit.',
+      ],
+      bullets: [
+        'Reporting "p = .000": SPSS rounds very small values, so report p < .001 instead.',
+        'Forgetting to define missing value codes, so a code like 99 is treated as a real answer and distorts your means.',
+        'Not reverse-coding negatively worded items before combining a scale or calculating Cronbach\'s alpha.',
+        'Running several t-tests instead of one ANOVA, which increases the chance of a false positive result.',
+        'Claiming that a correlation proves one variable causes another.',
+        'Reporting significance without an effect size, so the reader cannot judge how meaningful the result is.',
+        'Pasting raw SPSS output into the chapter instead of formatted tables with a written interpretation.',
+        'Saying a hypothesis is "proven" rather than supported or not supported by the data.',
+      ],
+    },
+    {
       heading: 'Beyond SPSS: Excel, NVivo, Stata and Python',
       paragraphs: [
         'Not every project uses SPSS. Our Excel data analysis help is popular for business and finance modules that need pivot tables, summary statistics and clear charts.',
@@ -63,12 +121,24 @@ export const spssHelp: LandingContent = {
         'Students usually contact us when something in their analysis does not feel right. Often the issue is not the software itself but knowing which option to choose and how to explain the output.',
       ],
       bullets: [
-        'Not knowing whether to use a parametric or non-parametric test',
         'Variables coded inconsistently or entered in the wrong format',
         'Confusing output tables full of values you are unsure how to report',
-        'Questionnaire scales that need reversing, combining or reliability checks',
         'Results that do not seem to match your hypotheses and need careful interpretation',
         'Feedback from a supervisor asking for clearer reporting of statistics',
+      ],
+    },
+    {
+      heading: 'What to send us for SPSS help',
+      paragraphs: [
+        'The more context your expert has, the faster they can recommend the right analysis. Before you get in touch, try to gather the following. If something is missing, send what you have and we will tell you what else is needed.',
+      ],
+      bullets: [
+        'Your data file: an SPSS .sav file, or an Excel or CSV file if you have not imported it yet',
+        'Your questionnaire or data collection tool, including where each scale came from',
+        'Your research questions and hypotheses, even if they are still in draft form',
+        'The assignment brief, marking criteria and any word count for the findings section',
+        'Your methodology chapter or proposal, if you have one, so the analysis matches what you planned',
+        'Any supervisor feedback and your deadline',
       ],
     },
     {
@@ -129,6 +199,14 @@ export const spssHelp: LandingContent = {
     {
       q: 'Can you create APA-style tables from my SPSS output?',
       a: 'Yes. We help turn SPSS output into clear APA-style tables and charts, along with an explanation of what each result shows.',
+    },
+    {
+      q: 'What should I do if my data is not normally distributed?',
+      a: 'It depends on your sample size and how far the data departs from normality. Options include using a non-parametric test such as Mann-Whitney U or Kruskal-Wallis, or transforming the variable. Your expert explains which option suits your data and how to justify it.',
+    },
+    {
+      q: 'Can I send my data in Excel instead of an SPSS file?',
+      a: 'Yes. Excel and CSV files can be imported into SPSS. Please include your questionnaire too, so variables can be labelled and coded correctly before analysis.',
     },
   ],
   ctaTitle: 'Get help with your data analysis today',

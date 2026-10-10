@@ -23,6 +23,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
     "Looking for assignment help Saudi Arabia students can rely on? FIZ Business Solutions (FIZBS) has supported university students since 2015, and more than 10,000 students have come to us for expert guidance on their academic work.",
     "Many students in the Kingdom study in English, at institutions such as King Saud University, King Abdulaziz University, King Fahd University of Petroleum & Minerals, Prince Sultan University, Alfaisal University and Effat University. Writing at a high academic standard in a second language can be demanding, especially when deadlines overlap.",
     "We also support Saudi students studying at UK universities, who need to meet British marking criteria while managing life far from home. Wherever you study, a qualified subject expert can help you understand your task and move forward with confidence.",
+    "Below you can see what our support includes, the subjects we cover, how ordering and payment in Saudi riyals work, and what Saudi students in the UK should know about British assessment. If you study in Riyadh, Jeddah or the Eastern Province, our city pages also explain the support most relevant to you.",
   ],
   sections: [
     {
@@ -67,11 +68,58 @@ export const assignmentHelpSaudiArabia: LandingContent = {
       ],
     },
     {
+      heading: 'Talk to an expert before you order',
+      paragraphs: [
+        "Not sure whether you need full assignment support, help with one section or just proofreading? You can book a WhatsApp call with an expert before you place an order. Calls are held in English, and they are a good way to explain a confusing brief, agree what kind of help is most useful and check that your deadline is realistic.",
+        "Written questions are welcome at any time on WhatsApp, in English or Arabic, so you can also share screenshots of your brief and ask quick questions before deciding.",
+      ],
+    },
+    {
       heading: 'Clear pricing in GBP, with SAR on request',
       paragraphs: [
         'Assignment support starts from £20 per 1,000 words. Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. Proofreading starts from £12 per 1,000 words.',
         'Shorter deadlines carry a surcharge: +25% for 3 to 6 days and +50% for anything within 48 hours. New customers receive 10% off their first order.',
         'Prices are shown in British pounds. If you prefer to see the equivalent in Saudi riyals, just ask on WhatsApp and we will share your SAR price.',
+      ],
+    },
+    {
+      heading: 'Paying from Saudi Arabia in SAR',
+      paragraphs: [
+        "You do not need a UK bank account or an international card to use FIZBS. Students in the Kingdom can pay by Saudi bank transfer in SAR, and students with a UK account can pay by UK bank transfer in GBP.",
+        "Payment is split into two parts, so you never pay the full amount upfront:",
+      ],
+      bullets: [
+        '50% to start, once you have agreed your quote',
+        '50% on completion of your order',
+        'SAR equivalent confirmed on WhatsApp before you pay',
+        '10% off your first order, applied to your quote',
+      ],
+    },
+    {
+      heading: 'Saudi students at UK universities: what to expect',
+      paragraphs: [
+        "Studying in the UK, whether on a scholarship, with employer sponsorship or self-funded, usually means adjusting to a different style of assessment. British markers expect critical evaluation rather than description, a wide range of academic sources, a clear argument that answers the exact question set and careful referencing, most often in Harvard or APA. Universities also take academic integrity seriously and expect you to understand their rules on referencing and the use of sources.",
+        "Our experts have supported students at UK universities since 2015, so they can help you read a British module brief, understand grade descriptors and plan work that meets UK expectations. Saudi Arabia is two or three hours ahead of the UK depending on the time of year, and our 24/7 WhatsApp support means family calls home, UK lectures and expert help can all fit into the same day.",
+      ],
+    },
+    {
+      heading: 'Support across the Kingdom, not only the largest cities',
+      paragraphs: [
+        "Because FIZBS is fully online, students get the same service wherever they live. The process is identical whether you study in Riyadh, Jeddah or the Eastern Province, or in cities such as Makkah, Madinah, Abha, Taif, Tabuk or the Qassim region, and it works just as well for Saudis enrolled on online programmes with universities abroad.",
+        "All you need is WhatsApp and a copy of your brief. If you study in one of the main cities, you can read our dedicated pages for assignment help in Riyadh, Jeddah and Dammam.",
+      ],
+    },
+    {
+      heading: 'Getting the most from expert guidance',
+      paragraphs: [
+        "Students who benefit most from our help treat it as a way to understand their subject better, not only to meet a deadline. A few simple habits make a big difference:",
+      ],
+      bullets: [
+        'Read your university\'s academic integrity policy and make sure the way you use support follows it.',
+        'Share your marking rubric so guidance focuses on the criteria that carry the most marks.',
+        'Ask your expert to explain the reasoning behind a structure or argument, so you can repeat it in future modules.',
+        'Keep notes of the sources and frameworks suggested to you for exams and later assignments.',
+        'Start early: a deadline of seven days or more gives more time for questions and keeps the standard price.',
       ],
     },
     {
@@ -122,7 +170,15 @@ export const assignmentHelpSaudiArabia: LandingContent = {
     },
     {
       q: 'Can I contact you on WhatsApp at any time?',
-      a: 'Yes. Our WhatsApp support is available 24/7, so you can share your brief or ask a question whenever it suits you, whatever your time zone.',
+      a: 'Yes. Our WhatsApp support is available 24/7, so you can share your brief or ask a question whenever it suits you, whatever your time zone. You can also book a WhatsApp call with an expert, held in English.',
+    },
+    {
+      q: 'Can I pay in Saudi riyals?',
+      a: 'Yes. You can pay by Saudi bank transfer in SAR, or by UK bank transfer in GBP. You pay 50% to start and 50% on completion, and we confirm the SAR amount on WhatsApp first.',
+    },
+    {
+      q: 'Do you help students outside Riyadh, Jeddah and Dammam?',
+      a: 'Yes. Our service is fully online, so students anywhere in Saudi Arabia, including Makkah, Madinah, Abha and Tabuk, can get the same expert support through WhatsApp.',
     },
     {
       q: 'Is your assignment help service confidential?',
