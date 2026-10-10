@@ -14,6 +14,7 @@ import FaqSection from '@/components/FaqSection';
 import PaymentSection from '@/components/PaymentSection';
 import TeamTeaser from '@/components/team/TeamTeaser';
 import ExpertCallSection from '@/components/ExpertCallSection';
+import LatestGuides from '@/components/home/LatestGuides';
 import { HOME_FAQS } from '@/content/homeFaqs';
 import StickyHelpBanner from '@/components/home/StickyHelpBanner';
 import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
@@ -55,6 +56,7 @@ export default function HomePage() {
         <ExpertCallSection className="bg-white" />
         <HowItWorks />
         <Testimonials />
+        <LatestGuides />
         <PaymentSection className="bg-white" />
         <FaqSection
           faqs={HOME_FAQS}

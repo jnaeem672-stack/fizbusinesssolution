@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { AR_LANDING_PAGES, EN_LANDING_PAGES, SITE_URL } from '@/content/landing';
 import { EXPERTS } from '@/content/experts';
+import { EN_POSTS, AR_POSTS, postPath } from '@/content/blog';
 
 export const dynamic = 'force-static';
 
@@ -36,5 +37,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
-  return [...core, ...landing, ...experts];
+  const blog: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}/blog`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/ar/blog`, lastModified, changeFrequency: 'weekly', priority: 0.7 },
+    ...[...EN_POSTS, ...AR_POSTS].map((post) => ({
+      url: `${SITE_URL}${postPath(post)}`,
+      lastModified: new Date(post.published),
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    })),
+  ];
+  return [...core, ...landing, ...experts, ...blog];
 }

@@ -15,6 +15,9 @@ export const EN_ONLY_FALLBACK: Record<string, string> = {
 /** Returns the URL of the same page in the other language, or the other language's homepage. */
 export function alternateLanguagePath(pathname: string): { href: string; toArabic: boolean } {
   const clean = pathname.replace(/\/+$/, '') || '/';
+  // Blog: articles differ per language, so switch to the other language's blog index
+  if (clean === '/ar/blog' || clean.startsWith('/ar/blog/')) return { href: '/blog', toArabic: false };
+  if (clean === '/blog' || clean.startsWith('/blog/')) return { href: '/ar/blog', toArabic: true };
   if (clean === '/ar' || clean.startsWith('/ar/')) {
     const slug = clean === '/ar' ? '' : clean.slice(4);
     if (!slug) return { href: '/', toArabic: false };
