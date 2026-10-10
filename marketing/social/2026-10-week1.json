@@ -1,43 +1,197 @@
 {
   "week": "2026-10-12 to 2026-10-18",
   "time": "18:00 UK (20:00 Saudi, 22:00 Pakistan)",
-  "networks": ["facebook", "instagram"],
+  "networks": [
+    "facebook"
+  ],
   "rules": "No fake reviews or claims, no guarantees, no em dashes. Instagram links are not clickable, so mention the website as text.",
   "posts": [
     {
       "date": "2026-10-12",
       "image": "https://fizbusinessolutions.com/social/2026-10-week1/post-1-intro.jpg",
-      "caption": "Struggling with an assignment or dissertation? 🎓\nFIZBS has helped university students in the UK and Saudi Arabia since 2015.\n\n✅ Master's and PhD qualified experts\n✅ 10,000+ students supported\n✅ Clear prices in GBP or SAR\n✅ 10% off your first order\n\nGet your instant price at fizbusinessolutions.com or message us on WhatsApp: +971 54 380 0388\n\n#AssignmentHelp #DissertationHelp #UKStudents #SaudiStudents #UniversityLife #MastersDegree #PhDLife #StudentSupport"
+      "caption": "Struggling with an assignment or dissertation? 🎓\nFIZBS has helped university students in the UK and Saudi Arabia since 2015.\n\n✅ Master's and PhD qualified experts\n✅ 10,000+ students supported\n✅ Clear prices in GBP or SAR\n✅ 10% off your first order\n\nGet your instant price at fizbusinessolutions.com or message us on WhatsApp: +971 54 380 0388\n\n#AssignmentHelp #DissertationHelp #UKStudents #SaudiStudents #UniversityLife #MastersDegree #PhDLife #StudentSupport",
+      "slug": "post-1-intro",
+      "design": {
+        "layout": "list",
+        "eyebrow": "UK & Saudi Students",
+        "title": "Assignment &amp; Dissertation Help <em>You Can Trust</em>",
+        "items": [
+          "Helping students since 2015",
+          "10,000+ students supported",
+          "Master's & PhD qualified experts",
+          "10% off your first order"
+        ],
+        "cta": "fizbusinessolutions.com"
+      },
+      "metricool": {
+        "id": 392831899,
+        "uuid": "1986446769429891200",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-13",
       "image": "https://fizbusinessolutions.com/social/2026-10-week1/post-2-topic-too-broad.jpg",
-      "caption": "Is your dissertation topic too broad? Check these 5 signs 👇\n\n1. You can't explain it in one sentence\n2. Your search returns thousands of sources\n3. It covers many countries or industries at once\n4. You can't collect the data before your deadline\n5. Your question has no clear group or setting\n\nIf 2 or more sound familiar, narrow it down: one sector, one country, one clear question.\n\nMore free guides: fizbusinessolutions.com/blog\nNeed help shaping your topic? WhatsApp +971 54 380 0388\n\n#Dissertation #DissertationTips #ResearchQuestion #MastersStudent #UKUniversity #StudentTips"
+      "caption": "Is your dissertation topic too broad? Check these 5 signs 👇\n\n1. You can't explain it in one sentence\n2. Your search returns thousands of sources\n3. It covers many countries or industries at once\n4. You can't collect the data before your deadline\n5. Your question has no clear group or setting\n\nIf 2 or more sound familiar, narrow it down: one sector, one country, one clear question.\n\nMore free guides: fizbusinessolutions.com/blog\nNeed help shaping your topic? WhatsApp +971 54 380 0388\n\n#Dissertation #DissertationTips #ResearchQuestion #MastersStudent #UKUniversity #StudentTips",
+      "slug": "post-2-topic-too-broad",
+      "design": {
+        "layout": "list",
+        "numbered": true,
+        "eyebrow": "Dissertation Tip",
+        "title": "5 Signs Your Dissertation Topic Is <em>Too Broad</em>",
+        "items": [
+          "You can't explain it in one sentence",
+          "Your search returns thousands of sources",
+          "It covers many countries or industries at once",
+          "You can't collect the data before your deadline",
+          "Your question has no clear group or setting"
+        ],
+        "cta": "fizbusinessolutions.com/blog"
+      },
+      "metricool": {
+        "id": 392831940,
+        "uuid": "3241673097790242947",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-14",
       "image": "https://fizbusinessolutions.com/social/2026-10-week1/post-3-prices.jpg",
-      "caption": "No hidden fees. Know your price before you order 💷\n\n📝 Assignments and essays: £20 per 1,000 words\n📚 Dissertations: £30 per 1,000 words, never more than £350\n🔍 Proofreading: from £12 per 1,000 words\n🎁 10% off your first order\n\nPay 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR).\nPrices are for deadlines of 7+ days. Try the instant price calculator: fizbusinessolutions.com\n\n#AssignmentHelp #DissertationHelp #StudentBudget #UKStudents #SaudiStudents"
+      "caption": "No hidden fees. Know your price before you order 💷\n\n📝 Assignments and essays: £20 per 1,000 words\n📚 Dissertations: £30 per 1,000 words, never more than £350\n🔍 Proofreading: from £12 per 1,000 words\n🎁 10% off your first order\n\nPay 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR).\nPrices are for deadlines of 7+ days. Try the instant price calculator: fizbusinessolutions.com\n\n#AssignmentHelp #DissertationHelp #StudentBudget #UKStudents #SaudiStudents",
+      "slug": "post-3-prices",
+      "design": {
+        "layout": "rows",
+        "eyebrow": "Clear Prices in GBP",
+        "title": "Know Your Price <em>Before You Order</em>",
+        "rows": [
+          [
+            "Assignments & essays",
+            "£20 / 1,000 words"
+          ],
+          [
+            "Dissertations",
+            "£30 / 1,000 · max £350"
+          ],
+          [
+            "Proofreading",
+            "from £12 / 1,000"
+          ],
+          [
+            "First order",
+            "10% OFF"
+          ]
+        ],
+        "note": "Pay 50% to start and 50% on completion. Prices shown for deadlines of 7+ days.",
+        "cta": "Instant price: fizbusinessolutions.com"
+      },
+      "metricool": {
+        "id": 392831965,
+        "uuid": "709661529495716780",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-15",
       "image": "https://fizbusinessolutions.com/social/2026-10-week1/post-4-phd-deadlines.jpg",
-      "caption": "Planning a UK PhD for 2027 entry? Some deadlines are only weeks away ⏳\n\n📌 King's Business School: 1 Dec 2026\n📌 Imperial Business School: 2 Dec 2026\n📌 LSE (first deadline): 3 Dec 2026\n📌 Cambridge (funding): 8 Dec 2026\n\nDates vary by programme, so always check the official university page.\n\nOur free step-by-step guide covers research proposals, supervisor emails and 17 top UK universities: fizbusinessolutions.com/phd-admission-scholarship-help\n\n#PhD #PhDAdmission #UKUniversities #PhDLife #ResearchProposal #StudyInUK #SaudiStudents"
+      "caption": "Planning a UK PhD for 2027 entry? Some deadlines are only weeks away ⏳\n\n📌 King's Business School: 1 Dec 2026\n📌 Imperial Business School: 2 Dec 2026\n📌 LSE (first deadline): 3 Dec 2026\n📌 Cambridge (funding): 8 Dec 2026\n\nDates vary by programme, so always check the official university page.\n\nOur free step-by-step guide covers research proposals, supervisor emails and 17 top UK universities: fizbusinessolutions.com/phd-admission-scholarship-help\n\n#PhD #PhDAdmission #UKUniversities #PhDLife #ResearchProposal #StudyInUK #SaudiStudents",
+      "slug": "post-4-phd-deadlines",
+      "design": {
+        "layout": "rows",
+        "eyebrow": "UK PhD · 2027 Entry",
+        "title": "Early PhD Deadlines Are <em>Weeks Away</em>",
+        "rows": [
+          [
+            "King's Business School",
+            "1 Dec 2026"
+          ],
+          [
+            "Imperial Business School",
+            "2 Dec 2026"
+          ],
+          [
+            "LSE (first deadline)",
+            "3 Dec 2026"
+          ],
+          [
+            "Cambridge (funding)",
+            "8 Dec 2026"
+          ]
+        ],
+        "note": "Dates vary by programme. Always check the official university page before you apply.",
+        "cta": "Free PhD guide: fizbusinessolutions.com"
+      },
+      "metricool": {
+        "id": 392831995,
+        "uuid": "-4816838441692674688",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-16",
       "image": "https://fizbusinessolutions.com/social/2026-10-week1/post-5-arabic.jpg",
-      "caption": "هل تحتاج مساعدة في الواجبات أو الرسالة العلمية؟ 🎓\nنساعد طلاب الجامعات في السعودية وبريطانيا منذ 2015.\n\n✅ خبراء يحملون الماجستير والدكتوراه\n✅ أسعار واضحة والدفع بالريال عبر تحويل بنكي سعودي\n✅ خصم 10% على أول طلب\n\nاعرف السعر الآن: fizbusinessolutions.com/ar\nواتساب: +971 54 380 0388\n\n#مساعدة_في_الواجبات #رسالة_ماجستير #طلاب_السعودية #الرياض #جدة #الدمام #دكتوراه"
+      "caption": "هل تحتاج مساعدة في الواجبات أو الرسالة العلمية؟ 🎓\nنساعد طلاب الجامعات في السعودية وبريطانيا منذ 2015.\n\n✅ خبراء يحملون الماجستير والدكتوراه\n✅ أسعار واضحة والدفع بالريال عبر تحويل بنكي سعودي\n✅ خصم 10% على أول طلب\n\nاعرف السعر الآن: fizbusinessolutions.com/ar\nواتساب: +971 54 380 0388\n\n#مساعدة_في_الواجبات #رسالة_ماجستير #طلاب_السعودية #الرياض #جدة #الدمام #دكتوراه",
+      "slug": "post-5-arabic",
+      "design": {
+        "layout": "list",
+        "ar": true,
+        "eyebrow": "لطلاب الجامعات في السعودية",
+        "title": "مساعدة في الواجبات <em>والرسائل العلمية</em>",
+        "items": [
+          "خبراء يحملون الماجستير والدكتوراه",
+          "نساعد الطلاب منذ 2015",
+          "خصم 10% على أول طلب",
+          "الدفع بالريال عبر تحويل بنكي سعودي"
+        ],
+        "cta": "fizbusinessolutions.com/ar"
+      },
+      "metricool": {
+        "id": 392832017,
+        "uuid": "8319086621550136171",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-17",
       "image": "https://fizbusinessolutions.com/social/2026-10-week1/post-6-samples.jpg",
-      "caption": "Want to see the quality of our work first? 👀\nWe now share free work samples on our website, sorted by category.\n\nOur latest sample is a full hotel database project: Crow's Foot ER diagram, EER, 3NF normalisation and tested MySQL queries, procedure and trigger.\n\nBrowse samples: fizbusinessolutions.com/samples\nSamples are for reference only, with all personal details removed.\n\n#SQL #Database #ComputerScience #ITStudents #AssignmentHelp #UKStudents"
+      "caption": "Want to see the quality of our work first? 👀\nWe now share free work samples on our website, sorted by category.\n\nOur latest sample is a full hotel database project: Crow's Foot ER diagram, EER, 3NF normalisation and tested MySQL queries, procedure and trigger.\n\nBrowse samples: fizbusinessolutions.com/samples\nSamples are for reference only, with all personal details removed.\n\n#SQL #Database #ComputerScience #ITStudents #AssignmentHelp #UKStudents",
+      "slug": "post-6-samples",
+      "design": {
+        "layout": "image",
+        "eyebrow": "Free Work Samples",
+        "title": "See Our Work <em>Before You Order</em>",
+        "text": "New sample: hotel database project with ER diagram, 3NF normalisation and tested SQL.",
+        "image": "public/samples/suncrest-hotels-erd.webp",
+        "cta": "fizbusinessolutions.com/samples"
+      },
+      "metricool": {
+        "id": 392832038,
+        "uuid": "-6471353541740575484",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-18",
       "image": "https://fizbusinessolutions.com/social/2026-10-week1/post-7-harvard.jpg",
-      "caption": "Losing easy marks on referencing? Get these 3 Harvard rules right ✍️\n\n1️⃣ In-text: (Author, Year), e.g. (Smith, 2024)\n2️⃣ Direct quote: add the page, e.g. (Smith, 2024, p. 12)\n3️⃣ Reference list: A to Z by surname, with every source you cited\n\nAlways check your university's own Harvard guide, as small details differ.\n\nFull free guide: fizbusinessolutions.com/blog/harvard-referencing-guide\n\n#HarvardReferencing #Referencing #EssayTips #UniversityLife #UKStudents #StudentTips"
+      "caption": "Losing easy marks on referencing? Get these 3 Harvard rules right ✍️\n\n1️⃣ In-text: (Author, Year), e.g. (Smith, 2024)\n2️⃣ Direct quote: add the page, e.g. (Smith, 2024, p. 12)\n3️⃣ Reference list: A to Z by surname, with every source you cited\n\nAlways check your university's own Harvard guide, as small details differ.\n\nFull free guide: fizbusinessolutions.com/blog/harvard-referencing-guide\n\n#HarvardReferencing #Referencing #EssayTips #UniversityLife #UKStudents #StudentTips",
+      "slug": "post-7-harvard",
+      "design": {
+        "layout": "list",
+        "numbered": true,
+        "eyebrow": "Referencing Tip",
+        "title": "Harvard Referencing: <em>3 Rules</em> Markers Check",
+        "items": [
+          "In-text: (Author, Year), e.g. (Smith, 2024)",
+          "Direct quote: add the page, e.g. (Smith, 2024, p. 12)",
+          "Reference list: A to Z by surname, with every source you cited"
+        ],
+        "cta": "fizbusinessolutions.com/blog"
+      },
+      "metricool": {
+        "id": 392832066,
+        "uuid": "-133795812656329177",
+        "status": "scheduled"
+      }
     }
-  ]
+  ],
+  "metricoolBrandId": 7347569
 }
