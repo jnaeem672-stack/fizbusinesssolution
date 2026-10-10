@@ -62,6 +62,7 @@ const Navbar = () => {
     { title: 'Experts', path: '/our-team' },
     { title: 'Blog', path: '/blog' },
     { title: 'Samples', path: '/samples' },
+    { title: 'Results', path: '/results' },
     { title: 'Get Price', path: '/#quote' },
     { title: 'Contact', path: '/contact' },
   ];
@@ -79,7 +80,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <div
               key={link.title}
-              className={`relative ${link.mega ? 'h-full flex items-center' : 'flex items-center'} ${link.path === '/' ? 'hidden 2xl:flex' : link.path === '/#quote' || link.path === '/blog' || link.path === '/samples' ? 'hidden xl:flex' : ''}`}
+              className={`relative ${link.mega ? 'h-full flex items-center' : 'flex items-center'} ${link.path === '/results' ? 'hidden' : link.path === '/' ? 'hidden 2xl:flex' : link.path === '/#quote' || link.path === '/blog' || link.path === '/samples' ? 'hidden xl:flex' : ''}`}
               onMouseEnter={() => link.mega && setShowMegaMenu(true)}
               onMouseLeave={() => link.mega && setShowMegaMenu(false)}
             >

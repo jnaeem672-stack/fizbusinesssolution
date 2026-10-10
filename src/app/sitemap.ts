@@ -50,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ];
   const samples: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/samples`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/results`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
     ...SAMPLES.map((sample) => ({
       url: `${SITE_URL}${samplePath(sample)}`,
       lastModified: new Date(sample.published),

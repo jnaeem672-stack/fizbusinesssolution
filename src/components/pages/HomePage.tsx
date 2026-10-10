@@ -9,6 +9,7 @@ import SubjectsSection from '@/components/SubjectsSection';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import HowItWorks from '@/components/HowItWorks';
 import Testimonials from '@/components/Testimonials';
+import ResultsStrip from '@/components/results/ResultsStrip';
 import CTASection from '@/components/home/CTASection';
 import FaqSection from '@/components/FaqSection';
 import PaymentSection from '@/components/PaymentSection';
@@ -56,6 +57,7 @@ export default function HomePage() {
         <ExpertCallSection className="bg-white" />
         <HowItWorks />
         <Testimonials />
+        <ResultsStrip />
         <LatestGuides />
         <PaymentSection className="bg-white" />
         <FaqSection

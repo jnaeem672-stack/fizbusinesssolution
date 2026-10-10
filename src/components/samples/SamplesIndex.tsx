@@ -4,6 +4,8 @@ import SupportRequestForm from '@/components/SupportRequestForm';
 import { SITE_URL, getLandingPage, landingLabel, landingPath } from '@/content/landing';
 import { SAMPLES, SAMPLE_CATEGORIES, getSampleCategory, samplePath } from '@/content/samples';
 import SamplesBrowser, { type CategoryChip, type SampleCard } from './SamplesBrowser';
+import ResultsGallery from '@/components/results/ResultsGallery';
+import { STUDENT_RESULTS } from '@/content/results';
 import { CATEGORY_ICONS } from './categoryIcons';
 
 export default function SamplesIndex() {
@@ -84,6 +86,22 @@ export default function SamplesIndex() {
 
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-[1200px] mx-auto px-4">
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-8">
+            <div>
+              <p className="text-[11px] font-black uppercase tracking-widest text-primary mb-2">Real Student Results</p>
+              <h2 className="text-2xl md:text-4xl font-extrabold text-navy tracking-tight">Grades our students received</h2>
+              <p className="mt-2 text-gray-600">Real screenshots shared by students, with every personal detail removed.</p>
+            </div>
+            <Link href="/results" className="inline-flex items-center gap-2 self-start md:self-auto rounded-xl bg-navy px-6 py-3.5 font-bold text-white hover:bg-navy-light transition-colors">
+              See all {STUDENT_RESULTS.length} results <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
+          <ResultsGallery results={STUDENT_RESULTS.slice(0, 6)} />
+        </div>
+      </section>
+
+      <section className="py-12 md:py-16">
+        <div className="max-w-[1200px] mx-auto px-4">
           <div className="text-center max-w-2xl mx-auto mb-10">
             <h2 className="text-2xl md:text-4xl font-extrabold text-navy tracking-tight mb-3">Sample categories</h2>
             <p className="text-gray-600 text-lg">Each category links to the matching service, so you can see prices and how we help.</p>
@@ -94,7 +112,7 @@ export default function SamplesIndex() {
               const count = SAMPLES.filter((s) => s.category === c.id).length;
               const service = getLandingPage(c.service, 'en');
               return (
-                <div key={c.id} className="flex flex-col rounded-2xl border border-gray-100 bg-gray-50 p-6">
+                <div key={c.id} className="flex flex-col rounded-2xl border border-gray-100 bg-white p-6">
                   <div className="w-11 h-11 rounded-xl bg-navy text-[#C9A227] flex items-center justify-center mb-4">
                     <Icon className="w-5 h-5" />
                   </div>
@@ -115,7 +133,7 @@ export default function SamplesIndex() {
         </div>
       </section>
 
-      <section className="py-12 md:py-16">
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-[900px] mx-auto px-4">
           <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-5">How to use these samples</h2>
           <ul className="space-y-3 text-gray-700 text-[17px] leading-relaxed">
