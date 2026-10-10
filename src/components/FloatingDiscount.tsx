@@ -17,15 +17,24 @@ export default function FloatingDiscount() {
     return () => clearTimeout(t);
   }, []);
 
-  // Hide while the price calculator is on screen, so the button never covers the price
+  // Hide while the price calculator or quote form is on screen, so the button never covers them
   useEffect(() => {
-    const calc = document.getElementById('quote');
-    if (!calc || typeof IntersectionObserver === 'undefined') {
+    const targets = ['quote', 'support-form']
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => Boolean(el));
+    if (!targets.length || typeof IntersectionObserver === 'undefined') {
       setCalcInView(false);
       return;
     }
-    const io = new IntersectionObserver(([entry]) => setCalcInView(entry.isIntersecting), { threshold: 0.05 });
-    io.observe(calc);
+    const visibleSet = new Set<Element>();
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => (entry.isIntersecting ? visibleSet.add(entry.target) : visibleSet.delete(entry.target)));
+        setCalcInView(visibleSet.size > 0);
+      },
+      { threshold: 0.05 }
+    );
+    targets.forEach((el) => io.observe(el));
     return () => io.disconnect();
   }, [pathname]);
 

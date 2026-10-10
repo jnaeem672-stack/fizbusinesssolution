@@ -11,8 +11,8 @@ import { countries, supportTypes, educationLevels } from '@/constants/supportOpt
 import type { SupportRequestFormData } from '@/types';
 
 const inputClasses =
-  'bg-[#fce4ec] border border-[#f8bbd9] p-[10px_14px] rounded-[6px] text-[14px] outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition-all w-full text-navy placeholder:text-gray-400';
-const labelClasses = 'block text-primary font-semibold text-[11px] uppercase mb-2 tracking-[1px]';
+  'bg-[#fce4ec] border border-[#f8bbd9] px-3 py-2 md:p-[10px_14px] rounded-[6px] text-base md:text-[14px] min-w-0 max-w-full outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition-all w-full text-navy placeholder:text-gray-400';
+const labelClasses = 'block text-primary font-semibold text-[10px] md:text-[11px] uppercase mb-1 md:mb-2 tracking-[1px]';
 
 const TEXT = {
   en: {
@@ -112,15 +112,15 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
   };
 
   return (
-    <div className="w-full bg-white rounded-xl p-5 md:p-6 shadow-[0_4px_24px_rgba(0,0,0,0.12)]" dir={isAr ? 'rtl' : undefined}>
-      <div className="mb-5 text-center">
+    <div className="w-full bg-white rounded-xl p-4 md:p-6 shadow-[0_4px_24px_rgba(0,0,0,0.12)]" dir={isAr ? 'rtl' : undefined}>
+      <div className="mb-3 md:mb-5 text-center">
         <h2 className="text-xl font-black text-navy mb-1 uppercase tracking-tight">{t.title}</h2>
         <div className="w-12 h-1 bg-primary mx-auto" />
         <p className="text-gray-500 text-xs mt-2">{t.sub}</p>
       </div>
 
-      <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <form onSubmit={handleSubmit(onSubmit)} className="space-y-3 md:space-y-4">
+        <div className="grid grid-cols-2 gap-x-2 gap-y-3 md:gap-4">
           <div>
             <label className={labelClasses}>{t.name}</label>
             <input {...register('fullName', { required: true })} type="text" placeholder={t.namePh} className={inputClasses} />
@@ -130,8 +130,8 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
             <input {...register('email', { required: true, pattern: /^\S+@\S+$/i })} type="email" placeholder={t.emailPh} className={inputClasses} />
           </div>
 
-          <div className="flex gap-2">
-            <div className="w-20 sm:w-24">
+          <div className="col-span-2 md:col-span-1 flex gap-2">
+            <div className="w-20 sm:w-24 shrink-0">
               <label className={labelClasses}>{t.code}</label>
               <select {...register('countryCode')} className={inputClasses} defaultValue="+44">
                 {countries.map((c) => (
@@ -139,21 +139,13 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
                 ))}
               </select>
             </div>
-            <div className="flex-1">
+            <div className="flex-1 min-w-0">
               <label className={labelClasses}>{t.whatsapp}</label>
               <input {...register('phone', { required: true })} type="tel" placeholder={t.phonePh} className={inputClasses} />
             </div>
           </div>
-          <div>
-            <label className={labelClasses}>{t.level}</label>
-            <select {...register('educationLevel')} className={inputClasses} defaultValue="Undergraduate">
-              {educationLevels.map((level) => (
-                <option key={level} value={level}>{isAr ? AR_LEVEL_LABELS[level] ?? level : level}</option>
-              ))}
-            </select>
-          </div>
 
-          <div>
+          <div className="col-span-2 md:col-span-1">
             <label className={labelClasses}>{t.service}</label>
             <select {...register('supportType', { required: true })} className={inputClasses} defaultValue="">
               <option value="">{t.selectService}</option>
@@ -163,16 +155,24 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
             </select>
           </div>
           <div>
+            <label className={labelClasses}>{t.level}</label>
+            <select {...register('educationLevel')} className={inputClasses} defaultValue="Undergraduate">
+              {educationLevels.map((level) => (
+                <option key={level} value={level}>{isAr ? AR_LEVEL_LABELS[level] ?? level : level}</option>
+              ))}
+            </select>
+          </div>
+          <div>
             <label className={labelClasses}>{t.deadline}</label>
-            <input {...register('preferredDate')} type="date" className={inputClasses} />
+            <input {...register('preferredDate')} type="date" className={`${inputClasses} block appearance-none h-[42px] md:h-auto`} />
           </div>
 
-          <div className="col-span-full">
+          <div className="col-span-2">
             <label className={labelClasses}>{t.need}</label>
             <textarea
               {...register('supportTopic', { required: true })}
               placeholder={t.needPh}
-              className={`${inputClasses} h-20 resize-none`}
+              className={`${inputClasses} h-16 md:h-20 resize-none`}
             />
           </div>
         </div>
