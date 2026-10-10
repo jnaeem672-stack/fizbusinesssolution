@@ -66,7 +66,7 @@ export default function ArHomePage() {
             src={`${HERO_IMAGE}&w=1600`}
             srcSet={heroSrcSet}
             sizes="100vw"
-            alt=""
+            alt="طلاب جامعيون يحتفلون بالتخرج"
             aria-hidden="true"
             fetchPriority="high"
             decoding="async"

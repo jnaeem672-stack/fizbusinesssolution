@@ -54,7 +54,7 @@ export default function HomeHero() {
           src={`${HERO_IMAGE}&w=1600`}
           srcSet={heroSrcSet}
           sizes="100vw"
-          alt=""
+          alt="University graduates celebrating success"
           aria-hidden="true"
           fetchPriority="low"
           decoding="async"
