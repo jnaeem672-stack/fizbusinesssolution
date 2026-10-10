@@ -203,6 +203,21 @@ export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar
           className="grid grid-cols-1 lg:grid-cols-5 gap-4 sm:gap-6 lg:gap-8"
         >
           <div className="lg:col-span-3 bg-white rounded-3xl border border-gray-100 shadow-xl shadow-gray-200/60 p-4 sm:p-6 md:p-10 space-y-6 md:space-y-8">
+            {/* Mobile: live price stays visible while choosing options */}
+            <a
+              href="#quote-estimate"
+              className="lg:hidden sticky top-[118px] z-20 -mx-1 flex items-center justify-between gap-3 rounded-2xl bg-navy px-4 py-3 text-white shadow-xl shadow-navy/30"
+              aria-live="polite"
+            >
+              <span className="text-[11px] font-black uppercase tracking-widest text-white/70">{t.estimate}</span>
+              <span className="flex items-baseline gap-2">
+                {quote.total < quote.base && <span className="text-sm font-bold text-white/40 line-through">{gbp(quote.base)}</span>}
+                <span className="text-2xl font-black">{gbp(quote.total)}</span>
+                {quote.discount > 0 && !quote.capped && (
+                  <span className="rounded-full bg-primary px-2 py-0.5 text-[10px] font-black">-{Math.round(quote.discount * 100)}%</span>
+                )}
+              </span>
+            </a>
             <OptionGroup
               label={t.type}
               options={SERVICES.map(({ key, label }) => ({ key, label: lbl(key, label) }))}
@@ -252,7 +267,7 @@ export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar
             </label>
           </div>
 
-          <div className="lg:col-span-2 bg-navy rounded-3xl p-5 sm:p-6 md:p-10 text-white flex flex-col shadow-2xl">
+          <div id="quote-estimate" className="lg:col-span-2 bg-navy rounded-3xl p-5 sm:p-6 md:p-10 text-white flex flex-col shadow-2xl scroll-mt-[120px]">
             <div className="flex items-center gap-3 mb-4 md:mb-6">
               <div className="p-2.5 bg-primary/20 rounded-xl">
                 <Calculator className="w-6 h-6 text-primary" />

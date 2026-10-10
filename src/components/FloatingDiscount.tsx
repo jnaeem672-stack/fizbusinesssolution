@@ -10,10 +10,24 @@ export default function FloatingDiscount() {
   const isAr = pathname === '/ar' || pathname.startsWith('/ar/');
   const [visible, setVisible] = useState(false);
 
+  const [calcInView, setCalcInView] = useState(false);
+
   useEffect(() => {
     const t = setTimeout(() => setVisible(true), 1000);
     return () => clearTimeout(t);
   }, []);
+
+  // Hide while the price calculator is on screen, so the button never covers the price
+  useEffect(() => {
+    const calc = document.getElementById('quote');
+    if (!calc || typeof IntersectionObserver === 'undefined') {
+      setCalcInView(false);
+      return;
+    }
+    const io = new IntersectionObserver(([entry]) => setCalcInView(entry.isIntersecting), { threshold: 0.05 });
+    io.observe(calc);
+    return () => io.disconnect();
+  }, [pathname]);
 
   const fallback = isAr ? '/ar#quote' : '/#quote';
 
@@ -32,7 +46,7 @@ export default function FloatingDiscount() {
       onClick={handleClick}
       aria-label={isAr ? 'خصم حتى 10% على أول طلب' : 'Get up to 10% off your first order'}
       className={`group fixed z-[9997] left-4 sm:left-6 bottom-[5.25rem] sm:bottom-6 flex items-center gap-2.5 pl-1.5 pr-4 py-1.5 rounded-full bg-gradient-to-r from-primary to-[#e8455f] text-white shadow-xl shadow-primary/40 ring-2 ring-white hover:scale-105 active:scale-95 transition-all duration-500 ${
-        visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
+        visible && !calcInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
       }`}
     >
       <span className="relative flex items-center justify-center w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-white text-primary shadow-inner">

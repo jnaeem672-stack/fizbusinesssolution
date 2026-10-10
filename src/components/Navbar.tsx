@@ -23,6 +23,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [showMegaMenu, setShowMegaMenu] = useState(false);
+  const [mobileServicesOpen, setMobileServicesOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
 
@@ -186,51 +187,65 @@ const Navbar = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 h-full w-[85%] max-w-[400px] bg-white z-[2001] shadow-2xl p-8 flex flex-col"
+              className="fixed top-0 right-0 h-full w-[85%] max-w-[400px] bg-white z-[2001] shadow-2xl p-6 sm:p-8 flex flex-col overflow-y-auto"
             >
-              <div className="flex items-center justify-between mb-12">
+              <div className="flex items-center justify-between mb-8">
                 <Logo />
                 <button onClick={() => setIsOpen(false)} className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors">
                   <X className="w-6 h-6" />
                 </button>
               </div>
 
-              <div className="flex flex-col gap-6 flex-grow">
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.title}
-                    href={link.path}
-                    className={`text-2xl font-black uppercase tracking-tight transition-all pb-2 border-b-4 ${isActive(link.path) ? 'text-primary border-primary' : 'text-navy border-transparent'}`}
-                    onClick={(e) => handleNavClick(e, link.path)}
-                  >
-                    {link.title}
-                  </Link>
-                ))}
+              <div className="flex flex-col gap-4 flex-grow">
+                {navLinks.map((link) =>
+                  link.mega ? (
+                    <div key={link.title}>
+                      <button
+                        type="button"
+                        onClick={() => setMobileServicesOpen((v) => !v)}
+                        aria-expanded={mobileServicesOpen}
+                        className={`w-full flex items-center justify-between text-xl font-black uppercase tracking-tight pb-2 border-b-4 ${mobileServicesOpen || pathname === '/services' ? 'text-primary border-primary' : 'text-navy border-transparent'}`}
+                      >
+                        {link.title}
+                        <ChevronDown className={`w-6 h-6 transition-transform ${mobileServicesOpen ? 'rotate-180' : ''}`} />
+                      </button>
+                      {mobileServicesOpen && (
+                        <div className="mt-3 space-y-4 rounded-2xl bg-gray-50 border border-gray-100 p-4">
+                          {MEGA_MENU_CATEGORIES.map((col) => (
+                            <div key={col.title}>
+                              <p className="text-[10px] font-black uppercase tracking-widest text-primary mb-2">{col.title}</p>
+                              <ul className="space-y-2">
+                                {col.links.map((item) => (
+                                  <li key={item}>
+                                    <Link href={MENU_LINKS[item] ?? '/services'} onClick={() => setIsOpen(false)} className="block text-[15px] font-bold text-navy hover:text-primary">
+                                      {item}
+                                    </Link>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          ))}
+                          <Link href="/services" onClick={() => setIsOpen(false)} className="flex items-center gap-2 text-sm font-black text-primary pt-1">
+                            View all services <ArrowRight className="w-4 h-4" />
+                          </Link>
+                        </div>
+                      )}
+                    </div>
+                  ) : (
+                    <Link
+                      key={link.title}
+                      href={link.path}
+                      className={`text-xl font-black uppercase tracking-tight transition-all pb-2 border-b-4 ${isActive(link.path) ? 'text-primary border-primary' : 'text-navy border-transparent'}`}
+                      onClick={(e) => handleNavClick(e, link.path)}
+                    >
+                      {link.title}
+                    </Link>
+                  )
+                )}
               </div>
 
-              <details className="mt-6 border-t pt-5">
-                <summary className="cursor-pointer list-none text-sm font-black uppercase tracking-widest text-primary flex items-center justify-between">
-                  All Services <ChevronDown className="w-4 h-4" />
-                </summary>
-                <div className="mt-4 space-y-5 max-h-[40vh] overflow-y-auto pr-1">
-                  {MEGA_MENU_CATEGORIES.map((col) => (
-                    <div key={col.title}>
-                      <p className="text-[10px] font-black uppercase tracking-widest text-gray-400 mb-2">{col.title}</p>
-                      <ul className="space-y-2">
-                        {col.links.map((item) => (
-                          <li key={item}>
-                            <Link href={MENU_LINKS[item] ?? '/services'} onClick={() => setIsOpen(false)} className="text-sm font-bold text-navy">
-                              {item}
-                            </Link>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-                  ))}
-                </div>
-              </details>
 
-              <div className="flex flex-col gap-4 mt-auto">
+              <div className="flex flex-col gap-4 mt-8 pb-4">
                 <button
                   onClick={handleSupportRequest}
                   className="w-full py-4 text-center bg-primary text-white font-black uppercase tracking-widest rounded-xl shadow-lg shadow-primary/30"

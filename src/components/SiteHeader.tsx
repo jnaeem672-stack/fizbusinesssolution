@@ -7,7 +7,7 @@ import Navbar from '@/components/Navbar';
 export default function SiteHeader() {
   return (
     <>
-      <header className="fixed top-0 inset-x-0 z-[1000] w-full">
+      <header className="fixed top-0 inset-x-0 z-[10005] w-full">
         <MarqueeBanner />
         <Navbar />
       </header>
