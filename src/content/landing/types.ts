@@ -1,7 +1,22 @@
+export interface LandingLink {
+  /** Link title, e.g. a university name */
+  label: string;
+  /** Absolute external URL */
+  href: string;
+  /** Short description shown on the card */
+  note?: string;
+  /** Small tag, e.g. city */
+  tag?: string;
+}
+
 export interface LandingSection {
   heading: string;
   paragraphs?: string[];
   bullets?: string[];
+  /** Optional external resource cards (e.g. university admission pages) */
+  links?: LandingLink[];
+  /** Optional numbered checklist shown after paragraphs */
+  steps?: string[];
 }
 
 export interface LandingFaq {

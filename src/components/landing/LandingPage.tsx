@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CheckCircle2, Award, GraduationCap, BookOpenCheck, Layers, ChevronRight, Calculator, PhoneCall } from 'lucide-react';
+import { CheckCircle2, Award, GraduationCap, BookOpenCheck, Layers, ChevronRight, Calculator, PhoneCall, ExternalLink } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import QuoteCalculator from '@/QuoteCalculator';
 import FaqSection from '@/components/FaqSection';
@@ -214,6 +214,40 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                 <div className="space-y-4">
                   {section.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}
                 </div>
+                {section.steps && (
+                  <ol className="mt-5 space-y-3">
+                    {section.steps.map((step, i) => (
+                      <li key={i} className="flex items-start gap-3">
+                        <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-black">{i + 1}</span>
+                        <span>{step}</span>
+                      </li>
+                    ))}
+                  </ol>
+                )}
+                {section.links && (
+                  <ul className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    {section.links.map((link) => (
+                      <li key={link.href}>
+                        <a
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="group flex h-full flex-col rounded-2xl border border-gray-100 bg-gray-50 p-5 hover:border-primary/40 hover:bg-white hover:shadow-lg transition-all"
+                        >
+                          <span className="flex items-start justify-between gap-3">
+                            <span className="text-[16px] font-extrabold text-navy leading-snug group-hover:text-primary transition-colors">{link.label}</span>
+                            <ExternalLink className="w-4 h-4 mt-1 shrink-0 text-primary" aria-hidden="true" />
+                          </span>
+                          {link.tag && <span className="mt-1 text-[11px] font-black uppercase tracking-widest text-primary">{link.tag}</span>}
+                          {link.note && <span className="mt-2 text-[14px] leading-relaxed text-gray-600">{link.note}</span>}
+                          <span className="mt-3 text-[13px] font-bold text-navy underline underline-offset-4 decoration-primary/40 group-hover:decoration-primary">
+                            {isAr ? 'صفحة القبول الرسمية' : 'Official admissions page'}
+                          </span>
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                )}
                 {section.bullets && (
                   <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
                     {section.bullets.map((b) => (

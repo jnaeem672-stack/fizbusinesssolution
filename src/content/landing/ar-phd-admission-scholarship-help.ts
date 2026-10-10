@@ -50,6 +50,122 @@ export const arPhdAdmissionScholarshipHelp: LandingContent = {
       ],
     },
     {
+      heading: "أشهر الجامعات البريطانية لدراسة الدكتوراه: روابط القبول الرسمية",
+      paragraphs: [
+        "فيما يلي 17 جامعة بريطانية معروفة يقبل عليها الطلاب الدوليون والسعوديون لدراسة الدكتوراه. اضغط على اسم الجامعة لفتح صفحة القبول الرسمية في نافذة جديدة. الشروط والمواعيد تتغير كل عام، لذلك تأكد دائمًا من التفاصيل في الصفحة الرسمية. FIZBS جهة مستقلة ولا ترتبط بأي من هذه الجامعات.",
+      ],
+      links: [
+        {
+          label: "University of Oxford",
+          tag: "أكسفورد",
+          href: "https://www.ox.ac.uk/admissions/graduate/application-guide",
+          note: "تسمي أكسفورد الدكتوراه DPhil، ويشرح دليل التقديم النموذج والمستندات المطلوبة. مواعيد المنح غالبًا مبكرة.",
+        },
+        {
+          label: "University of Cambridge",
+          tag: "كامبريدج",
+          href: "https://www.postgraduate.study.cam.ac.uk/apply",
+          note: "يتم التقديم عبر بوابة الدراسات العليا في كامبريدج، وتختلف المواعيد حسب البرنامج.",
+        },
+        {
+          label: "Imperial College London",
+          tag: "لندن",
+          href: "https://www.imperial.ac.uk/study/apply/postgraduate-doctoral/application-process/",
+          note: "قوية في العلوم والهندسة والطب والأعمال، ويُنصح بالتواصل مع المشرف قبل التقديم.",
+        },
+        {
+          label: "University College London (UCL)",
+          tag: "لندن",
+          href: "https://www.ucl.ac.uk/study/prospective-students/graduate/how-apply/applying-graduate-research-study-ucl",
+          note: "مجموعة واسعة جدًا من برامج الدكتوراه، مع شرح لطريقة تحديد المشرف وإعداد الطلب.",
+        },
+        {
+          label: "London School of Economics (LSE)",
+          tag: "لندن",
+          href: "https://www.lse.ac.uk/study-at-lse/Graduate/Applying-for-Graduate-research-programme",
+          note: "رائدة في الاقتصاد والإدارة والعلوم الاجتماعية، مع دليل تقديم خطوة بخطوة.",
+        },
+        {
+          label: "King's College London",
+          tag: "لندن",
+          href: "https://www.kcl.ac.uk/study/postgraduate-research/how-to-apply",
+          note: "مشهورة في الصحة والقانون والأعمال، وتشرح التقديم الإلكتروني والمستندات المطلوبة.",
+        },
+        {
+          label: "University of Edinburgh",
+          tag: "إدنبرة، اسكتلندا",
+          href: "https://study.ed.ac.uk/postgraduate/degree-types/research",
+          note: "تشرح برامج الدكتوراه والماجستير البحثي وطريقة اقتراح بحثك الخاص.",
+        },
+        {
+          label: "University of Manchester",
+          tag: "مانشستر",
+          href: "https://www.manchester.ac.uk/study/postgraduate-research/admissions/how-to-apply/",
+          note: "من أكبر الجامعات البحثية في بريطانيا، مع إرشادات تقديم واضحة.",
+        },
+        {
+          label: "University of Warwick",
+          tag: "كوفنتري",
+          href: "https://warwick.ac.uk/study/postgraduate/apply/",
+          note: "مقر كلية وارويك للأعمال، وتشرح خطوات إيجاد المشرف وإعداد المقترح.",
+        },
+        {
+          label: "University of Bristol",
+          tag: "بريستول",
+          href: "https://www.bristol.ac.uk/study/postgraduate/about/research-programmes/",
+          note: "تشرح أنواع الدرجات البحثية وروابط التقديم لكل كلية.",
+        },
+        {
+          label: "University of Leeds",
+          tag: "ليدز",
+          href: "https://ses.leeds.ac.uk/info/22226/research-degree-admissions-and-registration/896/applications-for-postgraduate-research-degrees",
+          note: "تشرح التقديم الإلكتروني للدرجات البحثية والمستندات المطلوبة.",
+        },
+        {
+          label: "University of Birmingham",
+          tag: "برمنغهام",
+          href: "https://www.birmingham.ac.uk/study/postgraduate/research",
+          note: "توضح طريقين للدكتوراه: مشروع معلن أو اقتراح بحثك الخاص.",
+        },
+        {
+          label: "University of Glasgow",
+          tag: "غلاسكو، اسكتلندا",
+          href: "https://www.gla.ac.uk/postgraduate/research/",
+          note: "قائمة بالبرامج البحثية حسب التخصص مع أداة للبحث عن مشرف.",
+        },
+        {
+          label: "University of Nottingham",
+          tag: "نوتنغهام",
+          href: "https://www.nottingham.ac.uk/pgstudy/how-to-apply/research.aspx",
+          note: "تشرح مواعيد البدء والشروط الأكاديمية واللغوية والمقترح البحثي.",
+        },
+        {
+          label: "University of Southampton",
+          tag: "ساوثهامبتون",
+          href: "https://www.southampton.ac.uk/study/postgraduate-research/apply",
+          note: "توضح المستندات المطلوبة وخطوات التقديم الإلكتروني للدكتوراه.",
+        },
+        {
+          label: "University of Kent",
+          tag: "كانتربري",
+          href: "https://www.kent.ac.uk/courses/postgraduate/how-to-apply",
+          note: "في مدينة كانتربري، وتنصح بالتواصل مع المشرف أولًا ثم التقديم عبر بوابة Kent Vision.",
+        },
+        {
+          label: "Canterbury Christ Church University",
+          tag: "كانتربري",
+          href: "https://www.canterbury.ac.uk/study-here/explore-postgraduate/explore-postgraduate-research",
+          note: "الجامعة الثانية في كانتربري، وتشرح طريقة بدء درجة بحثية في مجالات متعددة.",
+        },
+      ],
+    },
+    {
+      heading: "ملاحظة حول جامعة كانتربري",
+      paragraphs: [
+        "يبحث كثير من الطلاب عن \"جامعة كانتربري\" ظنًا أنها في بريطانيا، لكن University of Canterbury تقع في مدينة كرايستشيرش في نيوزيلندا. أما في مدينة كانتربري البريطانية فتوجد جامعتان: University of Kent وCanterbury Christ Church University، وكلتاهما مذكورتان أعلاه مع روابط القبول الرسمية.",
+      ],
+    },
+    {
       heading: 'الخطوة 3: البحث عن المشرف المناسب',
       paragraphs: [
         'في الدكتوراه بمقترح شخصي يكون المشرف غالبًا العامل الأهم. ابحث عن أكاديميين نشروا مؤخرًا في موضوعات قريبة من موضوعك ويشرفون على طلاب دكتوراه. صفحات أعضاء هيئة التدريس وGoogle Scholar والمقالات الحديثة أفضل نقطة بداية.',
