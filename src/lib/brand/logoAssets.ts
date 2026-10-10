@@ -1,7 +1,7 @@
 /** Brand colors — keep in sync with globals.css */
 export const BRAND_COLORS = {
   primary: '#C9A227',
-  navy: '#0f1f3d',
+  navy: '#0B1D3A',
   whatsapp: '#25D366',
   white: '#ffffff',
 } as const;

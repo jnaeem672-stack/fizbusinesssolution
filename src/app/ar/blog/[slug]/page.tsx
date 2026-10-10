@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     keywords: post.keywords,
     alternates: { canonical: url },
     openGraph: {
+      images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
       title: post.metaTitle,
       description: post.metaDescription,
       url,

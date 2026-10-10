@@ -20,7 +20,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: expert.article.metaDescription,
     keywords: expert.article.keywords,
     alternates: { canonical: url },
-    openGraph: { title: expert.article.metaTitle, description: expert.article.metaDescription, url, type: 'profile' },
+    openGraph: {
+      images: [{ url: '/opengraph-image', width: 1200, height: 630 }], title: expert.article.metaTitle, description: expert.article.metaDescription, url, type: 'profile' },
   };
 }
 

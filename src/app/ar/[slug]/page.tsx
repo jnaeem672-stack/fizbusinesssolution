@@ -23,7 +23,8 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       canonical: url,
       ...(hasEnglish && { languages: { 'ar-SA': url, 'en-GB': `${SITE_URL}/${page.slug}` } }),
     },
-    openGraph: { title: page.metaTitle, description: page.metaDescription, url, type: 'website', locale: 'ar_SA' },
+    openGraph: {
+      images: [{ url: '/opengraph-image', width: 1200, height: 630 }], title: page.metaTitle, description: page.metaDescription, url, type: 'website', locale: 'ar_SA' },
   };
 }
 

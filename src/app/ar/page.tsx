@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     languages: { 'ar-SA': `${SITE_URL}/ar`, 'en-GB': `${SITE_URL}/` },
   },
   openGraph: {
+      images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
     title: AR_HOME.metaTitle,
     description: AR_HOME.metaDescription,
     url: `${SITE_URL}/ar`,

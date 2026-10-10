@@ -81,7 +81,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
       dateModified: post.published,
       articleSection: post.category,
       keywords: post.keywords.join(', '),
-      author: { '@type': 'Organization', name: 'FIZ Business Solutions', url: SITE_URL },
+      author: { '@type': 'Organization', name: 'FIZ Business Solutions academic team', url: `${SITE_URL}/our-team` },
       publisher: {
         '@type': 'Organization',
         name: 'FIZ Business Solutions',
@@ -120,7 +120,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-[1.15] mb-5 max-w-4xl">{post.title}</h1>
           <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mb-6">{post.excerpt}</p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/70 font-semibold">
-            <span>{t.by}</span>
+            <Link href="/our-team" className="underline-offset-4 hover:underline hover:text-white">{t.by}</Link>
             <span className="inline-flex items-center gap-1.5"><CalendarDays className="w-4 h-4 text-primary" /> {t.updated} {formatDate(post.published, post.locale)}</span>
             <span className="inline-flex items-center gap-1.5"><Clock className="w-4 h-4 text-primary" /> {minutes} {t.read}</span>
           </div>

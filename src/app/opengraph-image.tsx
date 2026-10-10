@@ -46,6 +46,7 @@ export default function OpengraphImage() {
             style={{
               display: 'flex',
               background: BRAND_COLORS.primary,
+              color: BRAND_COLORS.navy,
               borderRadius: 999,
               padding: '12px 28px',
               fontSize: 28,
