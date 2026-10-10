@@ -11,6 +11,26 @@ Images are published on the website at `public/social/<week>/<slug>.jpg`, so Met
 - Volume: **5 posts a week, Monday to Friday**. The Metricool free plan allows about 20 scheduled posts a month.
   If Metricool returns a plan or limit error, stop and report it; do not delete existing posts to make room.
 
+## Google Business Profile (one update a week)
+
+- Every **Wednesday at 16:00 Asia/Karachi**, schedule one Google Business Profile text update in Metricool:
+  providers `[{"network":"gmb"}]`, `gmbData: {"type":"publication"}`, no media needed, text up to 1,500 characters.
+- Do **not** put phone numbers in Google Business Profile text; point people to the website instead.
+- Use a different topic each week (a service, the price calculator, a free guide, the samples page, the PhD guide).
+
+## Weekly analytics report (read only)
+
+Before preparing posts, pull the last 7 days from Metricool `getAnalyticsDataByMetrics` (brand `7347569`):
+- Google Ads: totals `GAEV01` impressions, `GAEV02` spent, `GAEV03` clicks, `GAEV04` conversions; campaigns `GACA01,GACA03,GACA04,GACA05,GACA07,GACA09,GACA10`;
+  keywords `GAKW02,GAKW03,GAKW04,GAKW05,GAKW07,GAKW09,GAKW10,GAKW12`.
+- Google Business Profile: `GMEV18` search reach, `GMEV19` maps reach, `GMEV21` website clicks, `GMEV22` call clicks, `GMEV25` messages; search keywords `GMKW01,GMKW02`.
+- Facebook: `FBEV17` followers, `FBEV47` followers gained, `FBEV12` post impressions, `FBEV10` interactions.
+
+Write a short report: what changed versus the previous week, top keywords by spend, keywords that spend but bring no conversions,
+the words people search to find the Business Profile, Facebook growth, and 3 practical recommendations.
+**Never change anything in Google Ads** (campaigns, budgets, bids, keywords, negatives, conversion settings). Recommendations only;
+the owner makes Google Ads changes himself. If Metricool has no data yet, say so instead of guessing.
+
 ## Weekly content mix (rotate, do not repeat a topic used in the last 4 week files)
 
 1. Monday: a study tip taken from one of the website's blog guides (`src/content/blog/*.ts`), linking to that guide.
