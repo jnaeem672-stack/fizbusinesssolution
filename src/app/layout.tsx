@@ -10,6 +10,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import FloatingDiscount from '@/components/FloatingDiscount';
 import CookieConsent from '@/components/CookieConsent';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import { SOCIAL_URLS } from '@/constants/social';
 
 // Self-hosted heading font (was a render-blocking Google Fonts @import)
 const jakarta = localFont({
@@ -67,6 +68,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               logo: 'https://fizbusinessolutions.com/apple-icon',
               description: 'Assignment help and dissertation help for students in the UK and Saudi Arabia since 2015.',
               foundingDate: '2015',
+              sameAs: SOCIAL_URLS,
               founder: [
                 { '@type': 'Person', name: 'Sajjad Akbar Ali' },
                 { '@type': 'Person', name: 'Fawad Hussain Khan' },

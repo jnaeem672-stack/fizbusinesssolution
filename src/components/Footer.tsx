@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import { Linkedin, Twitter, Instagram, Facebook, Mail, Landmark, ShieldCheck } from 'lucide-react';
+import { Instagram, Facebook, Mail, Landmark, ShieldCheck } from 'lucide-react';
+import { SOCIAL_LINKS } from '@/constants/social';
 import Logo from './Logo';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
@@ -79,10 +80,22 @@ const Footer = () => (
       <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</Link>
     </div>
 
-    <div className="flex gap-6 text-white/30">
-      {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
-        <span key={i} aria-hidden="true"><Icon className="w-4 h-4" /></span>
-      ))}
+    <div className="flex gap-3">
+      {SOCIAL_LINKS.map(({ label, href }) => {
+        const Icon = label === 'Facebook' ? Facebook : Instagram;
+        return (
+          <a
+            key={label}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={`FIZBS on ${label}`}
+            className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/10 text-white/80 hover:bg-[#C9A227] hover:text-[#0B1D3A] transition-colors"
+          >
+            <Icon className="w-4 h-4" />
+          </a>
+        );
+      })}
     </div>
   </footer>
 );
