@@ -9,12 +9,23 @@ import { whichStatisticalTestSpssPost } from './which-statistical-test-spss';
 import { gibbsReflectiveCycleGuidePost } from './gibbs-reflective-cycle-guide';
 import { arHowToWriteAResearchProposalPost } from './ar-how-to-write-a-research-proposal';
 import { arApaReferencingGuidePost } from './ar-apa-referencing-guide';
+import { humanVsAiAcademicWritingPost } from './human-vs-ai-academic-writing';
+import { howToStructureAUniversityEssayPost } from './how-to-structure-a-university-essay';
+import { howToWriteAResearchQuestionPost } from './how-to-write-a-research-question';
+import { thematicAnalysisGuidePost } from './thematic-analysis-guide';
+import { swotAndPestleAnalysisGuidePost } from './swot-and-pestle-analysis-guide';
+import { businessDissertationTopicsPost } from './business-dissertation-topics';
+import { howToParaphraseAndAvoidPlagiarismPost } from './how-to-paraphrase-and-avoid-plagiarism';
+import { arHumanVsAiAcademicWritingPost } from './ar-human-vs-ai-academic-writing';
+import { arQuantitativeVsQualitativeResearchPost } from './ar-quantitative-vs-qualitative-research';
 
 export type { BlogPost } from './types';
 
 /** English posts, newest/most important first. Served at /blog/{slug} */
 export const EN_POSTS: BlogPost[] = [
+  humanVsAiAcademicWritingPost,
   howToWriteADissertationPost,
+  businessDissertationTopicsPost,
   howToWriteALiteratureReviewPost,
   dissertationMethodologyGuidePost,
   harvardReferencingGuidePost,
@@ -22,10 +33,20 @@ export const EN_POSTS: BlogPost[] = [
   ukUniversityGradingSystemPost,
   howToEmailAPhdSupervisorPost,
   gibbsReflectiveCycleGuidePost,
+  howToStructureAUniversityEssayPost,
+  howToWriteAResearchQuestionPost,
+  thematicAnalysisGuidePost,
+  swotAndPestleAnalysisGuidePost,
+  howToParaphraseAndAvoidPlagiarismPost,
 ];
 
 /** Arabic posts. Served at /ar/blog/{slug} */
-export const AR_POSTS: BlogPost[] = [arHowToWriteAResearchProposalPost, arApaReferencingGuidePost];
+export const AR_POSTS: BlogPost[] = [
+  arHumanVsAiAcademicWritingPost,
+  arHowToWriteAResearchProposalPost,
+  arQuantitativeVsQualitativeResearchPost,
+  arApaReferencingGuidePost,
+];
 
 export function getPost(slug: string, locale: 'en' | 'ar' = 'en'): BlogPost | undefined {
   return (locale === 'ar' ? AR_POSTS : EN_POSTS).find((p) => p.slug === slug);
@@ -56,4 +77,10 @@ export function readingMinutes(post: BlogPost): number {
     ...post.faqs.flatMap((f) => [f.q, f.a]),
   ].join(' ');
   return Math.max(3, Math.round(text.split(/\s+/).length / 220));
+}
+
+/** Guides that list a given landing page slug in their relatedServices (for "Free guides" links on service pages) */
+export function guidesForService(slug: string, locale: 'en' | 'ar' = 'en', limit = 4): BlogPost[] {
+  const list = locale === 'ar' ? AR_POSTS : EN_POSTS;
+  return list.filter((p) => p.relatedServices.includes(slug)).slice(0, limit);
 }

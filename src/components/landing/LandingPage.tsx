@@ -8,6 +8,7 @@ import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { PAYMENT } from '@/constants/payment';
+import { AR_POSTS, EN_POSTS, guidesForService, postPath } from '@/content/blog';
 import { EXPERT_CALL, expertCallUrl } from '@/constants/expertCall';
 import ExpertCallSection from '@/components/ExpertCallSection';
 import {
@@ -35,6 +36,7 @@ const LABELS = {
     faqTitle: 'Frequently Asked Questions',
     related: 'Related Services',
     toc: 'On this page',
+    guides: 'Free Student Guides',
   },
   ar: {
     home: 'الرئيسية',
@@ -52,6 +54,7 @@ const LABELS = {
     faqTitle: 'الأسئلة الشائعة',
     related: 'خدمات ذات صلة',
     toc: 'محتويات الصفحة',
+    guides: 'أدلة مجانية للطلاب',
   },
 } as const;
 
@@ -70,6 +73,8 @@ export default function LandingPage({ page }: { page: LandingContent }) {
     return id && !isAr ? id : `section-${i + 1}`;
   });
   const showToc = page.sections.length >= 6;
+  const matchedGuides = guidesForService(page.slug, page.locale, 4);
+  const guides = matchedGuides.length ? matchedGuides : (page.locale === 'ar' ? AR_POSTS : EN_POSTS).slice(0, 3);
 
   const schema = [
     {
@@ -221,6 +226,20 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                 )}
               </div>
             ))}
+            {guides.length > 0 && (
+              <div className="mt-4 rounded-2xl border border-[#E9DCAE] bg-[#FBF6E6] p-6">
+                <h2 className="text-xl font-extrabold text-navy mb-4">{t.guides}</h2>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {guides.map((g) => (
+                    <li key={g.slug}>
+                      <Link href={postPath(g)} className="flex items-start gap-2 text-[15px] font-bold text-navy hover:text-primary transition-colors leading-snug">
+                        <ChevronRight className={`w-4 h-4 mt-0.5 shrink-0 text-primary ${isAr ? 'rotate-180' : ''}`} /> {g.title}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </article>
 
           <aside className="lg:col-span-4">
