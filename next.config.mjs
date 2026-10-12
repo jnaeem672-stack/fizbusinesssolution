@@ -10,6 +10,13 @@ const nextConfig = {
         destination: 'https://fizbusinessolutions.com/:path*',
         permanent: true,
       },
+      // Same rule when the hosting proxy passes the visitor's address in X-Forwarded-Host
+      {
+        source: '/:path*',
+        has: [{ type: 'header', key: 'x-forwarded-host', value: 'www.fizbusinessolutions.com' }],
+        destination: 'https://fizbusinessolutions.com/:path*',
+        permanent: true,
+      },
     ];
   },
   images: {
