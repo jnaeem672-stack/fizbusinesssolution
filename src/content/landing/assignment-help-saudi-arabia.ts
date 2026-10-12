@@ -106,7 +106,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
       heading: 'Support across the Kingdom, not only the largest cities',
       paragraphs: [
         "Because FIZBS is fully online, students get the same service wherever they live. The process is identical whether you study in Riyadh, Jeddah or the Eastern Province, or in cities such as Makkah, Madinah, Abha, Taif, Tabuk or the Qassim region, and it works just as well for Saudis enrolled on online programmes with universities abroad.",
-        "All you need is WhatsApp and a copy of your brief. If you study in one of the main cities, you can read our dedicated pages for assignment help in Riyadh, Jeddah and Dammam.",
+        "All you need is WhatsApp and a copy of your brief. We also have dedicated pages for students in Riyadh, Jeddah, Dammam, Makkah, Madinah, Abha, Taif, Qassim and Tabuk, linked further down this page.",
       ],
     },
     {
@@ -178,7 +178,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
     },
     {
       q: 'Do you help students outside Riyadh, Jeddah and Dammam?',
-      a: 'Yes. Our service is fully online, so students anywhere in Saudi Arabia, including Makkah, Madinah, Abha and Tabuk, can get the same expert support through WhatsApp.',
+      a: 'Yes. Our service is fully online, so students anywhere in Saudi Arabia get the same expert support through WhatsApp. We have dedicated pages for Makkah, Madinah, Abha, Taif, Qassim and Tabuk, and students in smaller towns are just as welcome.',
     },
     {
       q: 'Is your assignment help service confidential?',

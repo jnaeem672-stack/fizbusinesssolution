@@ -55,6 +55,22 @@ import { psychologyAssignmentHelp } from './psychology-assignment-help';
 import { educationAssignmentHelp } from './education-assignment-help';
 import { projectManagementAssignmentHelp } from './project-management-assignment-help';
 import { supplyChainLogisticsAssignmentHelp } from './supply-chain-logistics-assignment-help';
+import { assignmentHelpMakkah } from './assignment-help-makkah';
+import { assignmentHelpMadinah } from './assignment-help-madinah';
+import { assignmentHelpAbha } from './assignment-help-abha';
+import { assignmentHelpTaif } from './assignment-help-taif';
+import { assignmentHelpQassim } from './assignment-help-qassim';
+import { assignmentHelpTabuk } from './assignment-help-tabuk';
+import { arAssignmentHelpMakkah } from './ar-assignment-help-makkah';
+import { arAssignmentHelpMadinah } from './ar-assignment-help-madinah';
+import { arAssignmentHelpAbha } from './ar-assignment-help-abha';
+import { arAssignmentHelpTaif } from './ar-assignment-help-taif';
+import { arAssignmentHelpQassim } from './ar-assignment-help-qassim';
+import { arAssignmentHelpTabuk } from './ar-assignment-help-tabuk';
+import { arResearchProposalHelp } from './ar-research-proposal-help';
+import { arSpssHelp } from './ar-spss-help';
+import { arMbaAssignmentHelp } from './ar-mba-assignment-help';
+import { arThesisHelp } from './ar-thesis-help';
 
 export type { LandingContent } from './types';
 
@@ -81,6 +97,12 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   assignmentHelpRiyadh,
   assignmentHelpJeddah,
   assignmentHelpDammam,
+  assignmentHelpMakkah,
+  assignmentHelpMadinah,
+  assignmentHelpAbha,
+  assignmentHelpTaif,
+  assignmentHelpQassim,
+  assignmentHelpTabuk,
   essayHelp,
   courseworkReportHelp,
   caseStudyHelp,
@@ -121,6 +143,16 @@ export const AR_LANDING_PAGES: LandingContent[] = [
   arAssignmentHelpRiyadh,
   arAssignmentHelpJeddah,
   arAssignmentHelpDammam,
+  arAssignmentHelpMakkah,
+  arAssignmentHelpMadinah,
+  arAssignmentHelpAbha,
+  arAssignmentHelpTaif,
+  arAssignmentHelpQassim,
+  arAssignmentHelpTabuk,
+  arMbaAssignmentHelp,
+  arResearchProposalHelp,
+  arThesisHelp,
+  arSpssHelp,
   arPhdAdmissionScholarshipHelp,
 ];
 
@@ -169,6 +201,12 @@ export const CITY_LINKS: { label: string; href: string }[] = [
   { label: 'Assignment Help Riyadh', href: '/assignment-help-riyadh' },
   { label: 'Assignment Help Jeddah', href: '/assignment-help-jeddah' },
   { label: 'Assignment Help Dammam', href: '/assignment-help-dammam' },
+  { label: 'Assignment Help Makkah', href: '/assignment-help-makkah' },
+  { label: 'Assignment Help Madinah', href: '/assignment-help-madinah' },
+  { label: 'Assignment Help Abha', href: '/assignment-help-abha' },
+  { label: 'Assignment Help Taif', href: '/assignment-help-taif' },
+  { label: 'Assignment Help Qassim', href: '/assignment-help-qassim' },
+  { label: 'Assignment Help Tabuk', href: '/assignment-help-tabuk' },
 ];
 
 export const SUBJECT_LINKS: { label: string; href: string }[] = [
@@ -188,7 +226,18 @@ export const SUBJECT_LINKS: { label: string; href: string }[] = [
   { label: 'Engineering', href: '/engineering-assignment-help' },
 ];
 
-const SAUDI_CITY_HREFS = ['/assignment-help-riyadh', '/assignment-help-jeddah', '/assignment-help-dammam'];
+const SAUDI_CITY_SLUGS = [
+  'assignment-help-riyadh',
+  'assignment-help-jeddah',
+  'assignment-help-dammam',
+  'assignment-help-makkah',
+  'assignment-help-madinah',
+  'assignment-help-abha',
+  'assignment-help-taif',
+  'assignment-help-qassim',
+  'assignment-help-tabuk',
+];
+const SAUDI_CITY_HREFS = SAUDI_CITY_SLUGS.map((slug) => `/${slug}`);
 export const UK_CITY_LINKS = CITY_LINKS.filter((l) => !SAUDI_CITY_HREFS.includes(l.href));
 export const SAUDI_CITY_LINKS = CITY_LINKS.filter((l) => SAUDI_CITY_HREFS.includes(l.href));
 
@@ -203,8 +252,48 @@ const QUALIFICATION_GROUP_PAGES = [
   ...QUALIFICATION_LINKS.map((l) => l.href.slice(1)),
 ];
 
-/** Groups of internal links shown inside the content of an English landing page */
-export function linkGroupsForPage(slug: string): { title: string; links: { label: string; href: string }[] }[] {
+/** Arabic city pages, labelled for Arabic readers (same slugs as the English city pages) */
+const AR_CITY_NAMES: Record<string, string> = {
+  'assignment-help-riyadh': 'الرياض',
+  'assignment-help-jeddah': 'جدة',
+  'assignment-help-dammam': 'الدمام',
+  'assignment-help-makkah': 'مكة المكرمة',
+  'assignment-help-madinah': 'المدينة المنورة',
+  'assignment-help-abha': 'أبها وعسير',
+  'assignment-help-taif': 'الطائف',
+  'assignment-help-qassim': 'القصيم',
+  'assignment-help-tabuk': 'تبوك',
+};
+export const AR_CITY_LINKS = SAUDI_CITY_SLUGS.map((slug) => ({
+  label: `الواجبات الجامعية في ${AR_CITY_NAMES[slug]}`,
+  href: `/ar/${slug}`,
+}));
+
+/** Arabic service pages */
+export const AR_SERVICE_LINKS: { label: string; href: string }[] = [
+  { label: 'المساعدة في الواجبات الجامعية', href: '/ar/assignment-help-saudi-arabia' },
+  { label: 'المساعدة في الرسائل العلمية', href: '/ar/dissertation-help-saudi-arabia' },
+  { label: 'المساعدة في خطة البحث', href: '/ar/research-proposal-help' },
+  { label: 'المساعدة في رسالة الدكتوراه', href: '/ar/thesis-help' },
+  { label: 'التحليل الإحصائي SPSS', href: '/ar/spss-help' },
+  { label: 'المساعدة في واجبات MBA', href: '/ar/mba-assignment-help' },
+  { label: 'المساعدة في القبول في الدكتوراه', href: '/ar/phd-admission-scholarship-help' },
+];
+
+/** Groups of internal links shown inside the content of an Arabic landing page */
+function arLinkGroupsForPage(slug: string): { title: string; links: { label: string; href: string }[] }[] {
+  const self = `/ar/${slug}`;
+  const groups: { title: string; links: { label: string; href: string }[] }[] = [];
+  if (SAUDI_CITY_SLUGS.includes(slug) || slug === 'assignment-help-saudi-arabia') {
+    groups.push({ title: 'ندعم الطلاب في مدن المملكة', links: AR_CITY_LINKS.filter((l) => l.href !== self) });
+  }
+  groups.push({ title: 'خدمات أخرى بالعربية', links: AR_SERVICE_LINKS.filter((l) => l.href !== self) });
+  return groups.filter((g) => g.links.length > 0);
+}
+
+/** Groups of internal links shown inside the content of a landing page */
+export function linkGroupsForPage(slug: string, locale: 'en' | 'ar' = 'en'): { title: string; links: { label: string; href: string }[] }[] {
+  if (locale === 'ar') return arLinkGroupsForPage(slug);
   const self = `/${slug}`;
   const groups: { title: string; links: { label: string; href: string }[] }[] = [];
   const isUkCity = UK_CITY_LINKS.some((l) => l.href === self);

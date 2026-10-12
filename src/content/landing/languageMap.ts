@@ -5,6 +5,16 @@ export const AR_SLUGS = [
   'assignment-help-riyadh',
   'assignment-help-jeddah',
   'assignment-help-dammam',
+  'assignment-help-makkah',
+  'assignment-help-madinah',
+  'assignment-help-abha',
+  'assignment-help-taif',
+  'assignment-help-qassim',
+  'assignment-help-tabuk',
+  'mba-assignment-help',
+  'research-proposal-help',
+  'thesis-help',
+  'spss-help',
   'phd-admission-scholarship-help',
 ];
 

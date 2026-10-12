@@ -6,7 +6,7 @@ import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
 import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
-import { SERVICE_LINKS, CITY_LINKS, QUALIFICATION_LINKS } from '@/content/landing';
+import { SERVICE_LINKS, UK_CITY_LINKS, SAUDI_CITY_LINKS, QUALIFICATION_LINKS } from '@/content/landing';
 import { PAYMENT } from '@/constants/payment';
 
 const Footer = () => (
@@ -21,7 +21,7 @@ const Footer = () => (
       </p>
     </div>
 
-    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-12 w-full max-w-4xl pt-2 text-[12px]">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 w-full max-w-5xl pt-2 text-[12px]">
       <div>
         <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Popular Services</h2>
         <ul className="space-y-2">
@@ -43,9 +43,19 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Assignment Help by City</h2>
+        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">UK Cities</h2>
         <ul className="space-y-2">
-          {CITY_LINKS.map((link) => (
+          {UK_CITY_LINKS.map((link) => (
+            <li key={link.href}>
+              <Link href={link.href} className="text-white/60 hover:text-white transition-colors">{link.label}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <div>
+        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Saudi Arabia</h2>
+        <ul className="space-y-2">
+          {SAUDI_CITY_LINKS.map((link) => (
             <li key={link.href}>
               <Link href={link.href} className="text-white/60 hover:text-white transition-colors">{link.label}</Link>
             </li>

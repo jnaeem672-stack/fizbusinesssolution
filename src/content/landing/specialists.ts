@@ -32,4 +32,13 @@ export const PAGE_SPECIALISTS: Record<string, string[]> = {
   'hnd-hnc-assignment-help': ['ahmed-k', 'naeem'],
   'othm-athe-assignment-help': ['priya-d', 'ahmed-k'],
   'assignment-help-saudi-arabia': ['abdul-rehman', 'omar-f'],
+  'assignment-help-riyadh': ['james-p', 'ahmed-k'],
+  'assignment-help-jeddah': ['ahmed-k', 'maya-c'],
+  'assignment-help-dammam': ['clara-v', 'james-p'],
+  'assignment-help-makkah': ['maya-c', 'ahmed-k'],
+  'assignment-help-madinah': ['sajjad-akbar-ali', 'hassan-r'],
+  'assignment-help-abha': ['ayesha-h', 'hassan-r'],
+  'assignment-help-taif': ['hassan-r', 'ahmed-k'],
+  'assignment-help-qassim': ['hassan-r', 'ahmed-k'],
+  'assignment-help-tabuk': ['james-p', 'clara-v'],
 };

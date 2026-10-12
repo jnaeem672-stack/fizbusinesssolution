@@ -83,7 +83,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const guides = matchedGuides.length ? matchedGuides : (page.locale === 'ar' ? AR_POSTS : EN_POSTS).slice(0, 3);
   const workSamples = page.locale === 'en' ? samplesForService(page.slug, 3) : [];
   const freeTools = page.locale === 'en' ? toolsForService(page.slug) : [];
-  const linkGroups = page.locale === 'en' ? linkGroupsForPage(page.slug) : [];
+  const linkGroups = linkGroupsForPage(page.slug, page.locale);
   const specialists = page.locale === 'en' ? (PAGE_SPECIALISTS[page.slug] ?? []).map((s) => getExpert(s)).filter((e) => e !== undefined) : [];
 
   const schema = [
@@ -343,7 +343,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                   {group.links.map((l) => (
                     <li key={l.href}>
                       <Link href={l.href} className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-navy hover:border-primary hover:text-primary transition-colors">
-                        {l.label} <ChevronRight className="w-3.5 h-3.5 text-primary" />
+                        {l.label} <ChevronRight className={`w-3.5 h-3.5 text-primary ${isAr ? 'rotate-180' : ''}`} />
                       </Link>
                     </li>
                   ))}
