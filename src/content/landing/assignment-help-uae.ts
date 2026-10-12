@@ -70,7 +70,19 @@ export const assignmentHelpUae: LandingContent = {
       heading: 'MBA and postgraduate support for working professionals',
       paragraphs: [
         "Many students in the UAE study a part-time MBA or Master's while working full-time. Assignments ask you to apply strategy, finance, leadership and HR theory to real organisations, often your own employer. Our business specialists help you use published information and the frameworks your module expects, and plan staged deadlines around your working week.",
-        "For dissertations, our experts have supported more than 350 research projects, with data analysis in SPSS, NVivo, Excel, Stata and Python. Dissertation support costs £30 per 1,000 words, with a maximum of £350.",
+        "For dissertations, our experts have supported more than 350 research projects, with data analysis in SPSS, NVivo, Excel, Stata and Python. Dissertation guidance costs £30 per 1,000 words, with a maximum of £350.",
+      ],
+    },
+    {
+      heading: 'What our guidance includes',
+      paragraphs: [
+        'You stay the author of your work. Our experts help you understand the task and improve your own writing:',
+      ],
+      bullets: [
+        'One-to-one explanation of your brief, the theory and the marking criteria',
+        'A clear plan for the structure of your work and the sources to use',
+        'Written feedback on your own draft, showing what to improve and why',
+        'Proofreading of work you have written yourself',
       ],
     },
     {
@@ -81,14 +93,14 @@ export const assignmentHelpUae: LandingContent = {
         'If you would like to talk it through first, book a WhatsApp call with an expert. Calls are in English.',
         'Receive a clear quote in GBP, with the AED equivalent on request and 10% off your first order.',
         'Pay 50% to start by bank transfer in GBP, which you can send from any UAE bank.',
-        'Your subject expert works on your request, and you can message us with questions at any time.',
+        'Your subject expert explains the task, helps you plan and gives feedback on your work, and you can message us with questions at any time.',
         'Pay the remaining 50% on completion.',
       ],
     },
     {
       heading: 'Prices and payment from the UAE',
       paragraphs: [
-        'Assignments and essays start from £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for urgent work within 48 hours. New customers get 10% off their first order, and you can check your GBP price instantly with the calculator on our homepage.',
+        'Guidance and feedback on assignments and essays start from £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for urgent work within 48 hours. New customers get 10% off their first order, and you can check your GBP price instantly with the calculator on our homepage.',
         'Prices are set in GBP because we support students in the UK and across the Gulf. Ask on WhatsApp for the AED equivalent of your order. Payment is by bank transfer in GBP, which you can make from a UAE bank account.',
       ],
     },

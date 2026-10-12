@@ -79,7 +79,19 @@ export const assignmentHelpDubai: LandingContent = {
     {
       heading: 'Dissertations and research projects',
       paragraphs: [
-        "Our experts have supported more than 350 research projects. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python. Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation.",
+        "Our experts have supported more than 350 research projects. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python. Dissertation guidance costs £30 per 1,000 words, with a maximum of £350 per dissertation.",
+      ],
+    },
+    {
+      heading: 'What our guidance includes',
+      paragraphs: [
+        'You stay the author of your work. Our experts help you understand the task and improve your own writing:',
+      ],
+      bullets: [
+        'One-to-one explanation of your brief, the theory and the marking criteria',
+        'A clear plan for the structure of your work and the sources to use',
+        'Written feedback on your own draft, showing what to improve and why',
+        'Proofreading of work you have written yourself',
       ],
     },
     {
@@ -90,14 +102,14 @@ export const assignmentHelpDubai: LandingContent = {
         'If you would like to discuss it first, book a WhatsApp call with an expert. Calls are in English.',
         'Receive a clear quote in GBP, with the AED equivalent on request and 10% off your first order.',
         'Pay 50% to start by bank transfer in GBP from your UAE bank.',
-        'Your subject expert works on your request, and you can message us with questions at any time.',
+        'Your subject expert explains the task, helps you plan and gives feedback on your work, and you can message us with questions at any time.',
         'Pay the remaining 50% on completion.',
       ],
     },
     {
       heading: 'Prices and payment from Dubai',
       paragraphs: [
-        'Assignments and essays start from £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for urgent work within 48 hours. Proofreading starts from £12 per 1,000 words, and new customers get 10% off their first order.',
+        'Guidance and feedback on assignments and essays start from £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for urgent work within 48 hours. Proofreading starts from £12 per 1,000 words, and new customers get 10% off their first order.',
         'Prices are set in GBP. Ask on WhatsApp for the AED equivalent of your order, and pay by bank transfer in GBP from any UAE bank.',
       ],
     },
