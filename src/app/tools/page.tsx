@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, ChevronRight, Lock, Sparkles } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
+import FaqSection from '@/components/FaqSection';
 import { TOOL_ICONS } from '@/components/tools/toolIcons';
 import { SITE_URL } from '@/content/landing';
 import { getPost, postPath } from '@/content/blog';
@@ -23,6 +24,35 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
+
+const NEEDS: { need: string; tool: string; slug: string }[] = [
+  { need: 'I want to know my degree class, or the marks I need for a First, 2:1 or Distinction', tool: 'Degree Classification Calculator', slug: 'degree-classification-calculator' },
+  { need: 'I need to reference a book, chapter, journal article, website or report in Harvard', tool: 'Harvard Referencing Generator', slug: 'harvard-referencing-generator' },
+  { need: 'I need my word count without the reference list, or to know how many pages it fills', tool: 'Word Counter and Pages Converter', slug: 'word-counter' },
+];
+
+const HUB_FAQS = [
+  {
+    q: 'Are the tools really free?',
+    a: 'Yes. All three tools are free to use, with no sign-up and no limit on how often you use them.',
+  },
+  {
+    q: 'Is anything I type saved or sent to FIZBS?',
+    a: 'No. The tools run in your browser. Your marks and text are not sent to us. The Harvard generator keeps your reference list in your own browser only, so you can come back to it on the same device.',
+  },
+  {
+    q: 'Which version of Harvard does the referencing generator use?',
+    a: 'It follows the Cite Them Right version of Harvard, which many UK universities use. Always check your module handbook, because some universities use their own variation.',
+  },
+  {
+    q: "Will the degree calculator match my university's result?",
+    a: "It works out your average from the marks, credits and year weightings you enter. Your official result follows your university's regulations, which may include rounding, borderline rules or discounted credits.",
+  },
+  {
+    q: 'Can I get expert help after using a tool?',
+    a: 'Yes. If you would like feedback on a draft, a proofread or a full referencing check, message us on WhatsApp. Proofreading starts from £12 per 1,000 words and first orders get 10% off.',
+  },
+];
 
 const GUIDE_SLUGS = ['harvard-referencing-guide', 'uk-university-grading-system', 'how-to-structure-a-university-essay', 'how-to-write-a-dissertation'];
 
@@ -97,7 +127,33 @@ export default function Page() {
         </div>
       </section>
 
-      <section className="py-12 md:py-16 bg-white">
+      <section className="pb-4">
+        <div className="max-w-[900px] mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-5">Which tool do I need?</h2>
+          <div className="overflow-x-auto rounded-2xl border border-gray-200 bg-white">
+            <table className="w-full text-left text-[15px]">
+              <thead className="bg-navy text-white">
+                <tr>
+                  <th scope="col" className="px-4 py-3 font-bold">If you need to...</th>
+                  <th scope="col" className="px-4 py-3 font-bold">Use</th>
+                </tr>
+              </thead>
+              <tbody>
+                {NEEDS.map((n) => (
+                  <tr key={n.slug} className="border-t border-gray-100">
+                    <td className="px-4 py-3 text-gray-700">{n.need}</td>
+                    <td className="px-4 py-3">
+                      <Link href={`${TOOLS_PATH}/${n.slug}`} className="font-bold text-primary hover:underline">{n.tool}</Link>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 md:py-16 bg-white mt-12">
         <div className="max-w-[900px] mx-auto px-4 text-gray-700 text-[17px] leading-relaxed">
           <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-4">Built for UK university rules</h2>
           <p className="mb-4">
@@ -122,6 +178,8 @@ export default function Page() {
           )}
         </div>
       </section>
+
+      <FaqSection faqs={HUB_FAQS} title="Questions About the Free Tools" className="bg-gray-50" />
 
       <section className="py-14 md:py-20 bg-navy">
         <div className="max-w-[1100px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

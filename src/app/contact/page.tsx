@@ -7,8 +7,39 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://fizbusinessolutions.com/contact' },
 };
 
+const SCHEMA = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contact FIZ Business Solutions',
+  url: 'https://fizbusinessolutions.com/contact',
+  mainEntity: {
+    '@type': 'Organization',
+    name: 'FIZ Business Solutions',
+    alternateName: 'FIZBS',
+    url: 'https://fizbusinessolutions.com/',
+    email: 'jnaeem672@gmail.com',
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'customer support',
+      telephone: '+971543800388',
+      email: 'jnaeem672@gmail.com',
+      areaServed: ['GB', 'SA'],
+      availableLanguage: ['English'],
+      hoursAvailable: {
+        '@type': 'OpeningHoursSpecification',
+        dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
+        opens: '00:00',
+        closes: '23:59',
+      },
+    },
+  },
+};
+
 export default function Page() {
   return (
-    <ContactPage />
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(SCHEMA) }} />
+      <ContactPage />
+    </>
   );
 }

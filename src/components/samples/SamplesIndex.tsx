@@ -1,12 +1,36 @@
 import Link from 'next/link';
 import { ArrowRight, BookOpen, CheckCircle2, Eye, Layers, ShieldCheck } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
+import FaqSection from '@/components/FaqSection';
 import { SITE_URL, getLandingPage, landingLabel, landingPath } from '@/content/landing';
 import { SAMPLES, SAMPLE_CATEGORIES, getSampleCategory, samplePath } from '@/content/samples';
 import SamplesBrowser, { type CategoryChip, type SampleCard } from './SamplesBrowser';
 import ResultsGallery from '@/components/results/ResultsGallery';
 import { STUDENT_RESULTS } from '@/content/results';
 import { CATEGORY_ICONS } from './categoryIcons';
+
+const SAMPLE_FAQS = [
+  {
+    q: 'Are the samples free to read?',
+    a: 'Yes. Every sample is free to read online, with no sign-up.',
+  },
+  {
+    q: 'Can I submit a sample as my own work?',
+    a: 'No. The samples are published for reference and learning only. Copying or submitting any part of one would count as plagiarism at your university.',
+  },
+  {
+    q: 'How are the samples prepared?',
+    a: 'Each sample is prepared by one of our subject experts. Any personal or identifying details are removed before it is published.',
+  },
+  {
+    q: 'How should I use a sample?',
+    a: 'Use it to see how a strong answer is structured, how claims are supported and how sources are referenced, then compare that with your own brief and marking criteria.',
+  },
+  {
+    q: 'Can I get help with a similar task?',
+    a: 'Yes. Send your brief on WhatsApp or through the form below. Assignments start from £20 per 1,000 words, with 10% off your first order.',
+  },
+];
 
 export default function SamplesIndex() {
   const cards: SampleCard[] = SAMPLES.map((s) => ({
@@ -153,6 +177,8 @@ export default function SamplesIndex() {
           </p>
         </div>
       </section>
+
+      <FaqSection faqs={SAMPLE_FAQS} title="Questions About Our Samples" className="bg-gray-50" />
 
       <section className="py-14 md:py-20 bg-navy">
         <div className="max-w-[1100px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

@@ -3,6 +3,7 @@
 import PageHero from '@/components/ui/PageHero';
 import ContactFormLayout from '@/components/contact/ContactFormLayout';
 import ContactForm from '@/components/contact/ContactForm';
+import ContactInfo from '@/components/contact/ContactInfo';
 import AnimateIn from '@/components/ui/AnimateIn';
 import SectionHeader from '@/components/ui/SectionHeader';
 import { SUPPORT_FORM_HASH } from '@/constants/supportNavigation';
@@ -40,6 +41,8 @@ export default function ContactPage() {
           </div>
         </AnimateIn>
       </section>
+
+      <ContactInfo />
     </div>
   );
 }

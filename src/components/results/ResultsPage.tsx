@@ -1,11 +1,36 @@
 import Link from 'next/link';
 import { ArrowRight, Award, CheckCircle2, EyeOff, FileCheck2, Info, ShieldCheck } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
+import FaqSection from '@/components/FaqSection';
 import { SITE_URL } from '@/content/landing';
 import { RESULTS_HIGHEST, STUDENT_RESULTS } from '@/content/results';
 import ResultsGallery from './ResultsGallery';
 
+const RESULT_FAQS = [
+  {
+    q: 'Are these results real?',
+    a: 'Yes. Each one is a real screenshot shared with us by a student after their marks were released. We remove every personal detail and add our watermark before publishing.',
+  },
+  {
+    q: 'Will I get a grade like these?',
+    a: 'That depends on your own work, the brief and the marker, so no one can honestly promise a grade. Our experts help you understand what the marker wants and how to strengthen your work.',
+  },
+  {
+    q: 'Why are names and universities hidden?',
+    a: 'To protect our students. Names, student IDs, university names, logos, module codes and similarity reports are covered or cropped out, so no result can be traced back to a person.',
+  },
+  {
+    q: 'What do UK marks like 70 or 65 mean?',
+    a: 'At most UK universities, 70 and above is the top band: a First at undergraduate level or a Distinction at Master\'s level. 60 to 69 is a 2:1 or a Merit, and 50 to 59 is a 2:2 or a Pass.',
+  },
+  {
+    q: 'Can I share my own result?',
+    a: 'Yes, if you would like to. Send a screenshot on WhatsApp and tell us it is fine to publish. We remove all personal details first, and we never publish a result without your permission.',
+  },
+];
+
 export default function ResultsPage() {
+  const lowest = Math.min(...STUDENT_RESULTS.map((r) => r.best));
   const schema = [
     {
       '@context': 'https://schema.org',
@@ -106,6 +131,34 @@ export default function ResultsPage() {
           </ul>
         </div>
       </section>
+
+      <section className="py-12 md:py-16">
+        <div className="max-w-[1000px] mx-auto px-4 text-gray-700 text-[17px] leading-relaxed">
+          <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-4">What these results show</h2>
+          <p className="mb-4">
+            The {STUDENT_RESULTS.length} results cover undergraduate and postgraduate work: individual reports, case studies, a poster assessment, finance and business assignments, MBA and MSc modules, and a dissertation with its research proposal. The highest marks shown range from {lowest} to {RESULTS_HIGHEST}.
+          </p>
+          <p className="mb-6">
+            We publish them to show the kinds of modules and levels we support, not to promise a particular grade. To see where a mark sits in the UK system, or what you need in your remaining modules, try our free tools and guides.
+          </p>
+          <ul className="flex flex-wrap gap-2.5">
+            {[
+              { label: 'Degree Classification Calculator', href: '/tools/degree-classification-calculator' },
+              { label: 'UK University Grading System Explained', href: '/blog/uk-university-grading-system' },
+              { label: 'Dissertation Help UK', href: '/dissertation-help-uk' },
+              { label: 'MBA Assignment Help', href: '/mba-assignment-help' },
+            ].map((l) => (
+              <li key={l.href}>
+                <Link href={l.href} className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-navy hover:border-primary hover:text-primary transition-colors">
+                  {l.label} <ArrowRight className="w-3.5 h-3.5 text-primary" />
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      <FaqSection faqs={RESULT_FAQS} title="Questions About Our Results" className="bg-white" />
 
       <section className="py-14 md:py-20 bg-navy">
         <div className="max-w-[1100px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
