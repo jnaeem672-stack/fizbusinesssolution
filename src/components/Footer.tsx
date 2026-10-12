@@ -6,7 +6,7 @@ import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
 import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
-import { SERVICE_LINKS, UK_CITY_LINKS, SAUDI_CITY_LINKS, QUALIFICATION_LINKS } from '@/content/landing';
+import { SERVICE_LINKS, UK_CITY_LINKS, SAUDI_CITY_LINKS, UAE_LINKS, QUALIFICATION_LINKS } from '@/content/landing';
 import { PAYMENT } from '@/constants/payment';
 
 const Footer = () => (
@@ -53,9 +53,9 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Saudi Arabia</h2>
+        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Saudi Arabia and UAE</h2>
         <ul className="space-y-2">
-          {SAUDI_CITY_LINKS.map((link) => (
+          {[...SAUDI_CITY_LINKS, ...UAE_LINKS.slice(1)].map((link) => (
             <li key={link.href}>
               <Link href={link.href} className="text-white/60 hover:text-white transition-colors">{link.label}</Link>
             </li>

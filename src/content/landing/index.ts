@@ -67,6 +67,9 @@ import { assignmentHelpAbha } from './assignment-help-abha';
 import { assignmentHelpTaif } from './assignment-help-taif';
 import { assignmentHelpQassim } from './assignment-help-qassim';
 import { assignmentHelpTabuk } from './assignment-help-tabuk';
+import { assignmentHelpUae } from './assignment-help-uae';
+import { assignmentHelpDubai } from './assignment-help-dubai';
+import { assignmentHelpAbuDhabi } from './assignment-help-abu-dhabi';
 import { arAssignmentHelpMakkah } from './ar-assignment-help-makkah';
 import { arAssignmentHelpMadinah } from './ar-assignment-help-madinah';
 import { arAssignmentHelpAbha } from './ar-assignment-help-abha';
@@ -115,6 +118,9 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   assignmentHelpTaif,
   assignmentHelpQassim,
   assignmentHelpTabuk,
+  assignmentHelpUae,
+  assignmentHelpDubai,
+  assignmentHelpAbuDhabi,
   essayHelp,
   courseworkReportHelp,
   caseStudyHelp,
@@ -187,6 +193,7 @@ export const SERVICE_LINKS: { label: string; href: string }[] = [
   { label: 'Dissertation Help UK', href: '/dissertation-help-uk' },
   { label: 'MBA Assignment Help', href: '/mba-assignment-help' },
   { label: 'Assignment Help Saudi Arabia', href: '/assignment-help-saudi-arabia' },
+  { label: 'Assignment Help UAE', href: '/assignment-help-uae' },
   { label: 'Research Proposal Help', href: '/research-proposal-help' },
   { label: 'SPSS Help', href: '/spss-help' },
   { label: 'PhD Admission & Scholarship Help', href: '/phd-admission-scholarship-help' },
@@ -256,6 +263,12 @@ const SAUDI_CITY_SLUGS = [
   'assignment-help-tabuk',
 ];
 const SAUDI_CITY_HREFS = SAUDI_CITY_SLUGS.map((slug) => `/${slug}`);
+/** UAE pages (hub first) */
+export const UAE_LINKS: { label: string; href: string }[] = [
+  { label: 'Assignment Help UAE', href: '/assignment-help-uae' },
+  { label: 'Assignment Help Dubai', href: '/assignment-help-dubai' },
+  { label: 'Assignment Help Abu Dhabi', href: '/assignment-help-abu-dhabi' },
+];
 export const UK_CITY_LINKS = CITY_LINKS.filter((l) => !SAUDI_CITY_HREFS.includes(l.href));
 export const SAUDI_CITY_LINKS = CITY_LINKS.filter((l) => SAUDI_CITY_HREFS.includes(l.href));
 
@@ -321,6 +334,10 @@ export function linkGroupsForPage(slug: string, locale: 'en' | 'ar' = 'en'): { t
   }
   if (isSaudiCity || slug === 'assignment-help-saudi-arabia') {
     groups.push({ title: 'We support students across Saudi Arabia', links: SAUDI_CITY_LINKS.filter((l) => l.href !== self) });
+  }
+  if (UAE_LINKS.some((l) => l.href === self)) {
+    groups.push({ title: 'We support students across the UAE', links: UAE_LINKS.filter((l) => l.href !== self) });
+    groups.push({ title: 'We also support students in Saudi Arabia', links: SAUDI_CITY_LINKS.slice(0, 3) });
   }
   if (SUBJECT_LINKS.some((l) => l.href === self)) {
     groups.push({ title: 'Other subjects we support', links: SUBJECT_LINKS.filter((l) => l.href !== self) });
