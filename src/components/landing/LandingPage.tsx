@@ -10,6 +10,8 @@ import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { PAYMENT } from '@/constants/payment';
 import { AR_POSTS, EN_POSTS, guidesForService, postPath } from '@/content/blog';
 import { samplePath, samplesForService } from '@/content/samples';
+import { toolPath, toolsForService } from '@/content/tools';
+import { TOOL_ICONS } from '@/components/tools/toolIcons';
 import { EXPERT_CALL, expertCallUrl } from '@/constants/expertCall';
 import ExpertCallSection from '@/components/ExpertCallSection';
 import {
@@ -77,6 +79,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const matchedGuides = guidesForService(page.slug, page.locale, 4);
   const guides = matchedGuides.length ? matchedGuides : (page.locale === 'ar' ? AR_POSTS : EN_POSTS).slice(0, 3);
   const workSamples = page.locale === 'en' ? samplesForService(page.slug, 3) : [];
+  const freeTools = page.locale === 'en' ? toolsForService(page.slug) : [];
 
   const schema = [
     {
@@ -291,6 +294,23 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                 <Link href="/samples" className="mt-4 inline-flex items-center gap-1.5 text-sm font-black text-primary hover:underline">
                   Browse all samples <ChevronRight className="w-4 h-4" />
                 </Link>
+              </div>
+            )}
+            {freeTools.length > 0 && (
+              <div className="mt-4 rounded-2xl border border-gray-200 bg-white p-6">
+                <h2 className="text-xl font-extrabold text-navy mb-4">Free Student Tools</h2>
+                <ul className="space-y-3">
+                  {freeTools.map((tool) => {
+                    const Icon = TOOL_ICONS[tool.slug];
+                    return (
+                      <li key={tool.slug}>
+                        <Link href={toolPath(tool)} className="flex items-start gap-2 text-[15px] font-bold text-navy hover:text-primary transition-colors leading-snug">
+                          <Icon className="w-4 h-4 mt-1 shrink-0 text-primary" /> {tool.name}
+                        </Link>
+                      </li>
+                    );
+                  })}
+                </ul>
               </div>
             )}
           </article>

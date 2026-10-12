@@ -3,6 +3,7 @@ import { AR_LANDING_PAGES, EN_LANDING_PAGES, SITE_URL } from '@/content/landing'
 import { EXPERTS } from '@/content/experts';
 import { EN_POSTS, AR_POSTS, postPath } from '@/content/blog';
 import { SAMPLES, samplePath } from '@/content/samples';
+import { TOOLS, TOOLS_PATH, toolPath } from '@/content/tools';
 
 export const dynamic = 'force-static';
 
@@ -58,5 +59,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     })),
   ];
-  return [...core, ...landing, ...experts, ...blog, ...samples];
+  const tools: MetadataRoute.Sitemap = [
+    { url: `${SITE_URL}${TOOLS_PATH}`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
+    ...TOOLS.map((tool) => ({
+      url: `${SITE_URL}${toolPath(tool)}`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    })),
+  ];
+  return [...core, ...landing, ...experts, ...blog, ...samples, ...tools];
 }

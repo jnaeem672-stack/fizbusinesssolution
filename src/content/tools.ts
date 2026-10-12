@@ -1,0 +1,363 @@
+/**
+ * Free student tools at /tools/{slug}. Each tool page combines an interactive tool (client component)
+ * with guide content, FAQs (FAQPage schema) and links to related services and guides.
+ */
+export type ToolId = 'degree-classification-calculator' | 'harvard-referencing-generator' | 'word-counter';
+
+export interface ToolSection {
+  heading: string;
+  paragraphs?: string[];
+  bullets?: string[];
+  steps?: string[];
+  table?: { caption: string; head: string[]; rows: string[][] };
+}
+
+export interface ToolContent {
+  slug: ToolId;
+  /** Short name for cards, breadcrumbs and links */
+  name: string;
+  /** Browser/Google title (absolute, max ~60 characters) */
+  metaTitle: string;
+  /** Google description, 140-155 characters */
+  metaDescription: string;
+  h1: string;
+  subtitle: string;
+  /** One-line card description on the tools hub */
+  cardText: string;
+  sections: ToolSection[];
+  faqs: { q: string; a: string }[];
+  /** Landing page slugs that should link to this tool, and that this tool links to */
+  services: string[];
+  /** Blog guide slugs to recommend */
+  guides: string[];
+  whatsappMessage: string;
+}
+
+const PAGES_TABLE_WORDS = [500, 750, 1000, 1500, 2000, 2500, 3000, 4000, 5000, 8000, 10000, 12000, 15000];
+const pages = (words: number, perPage: number) => {
+  const p = Math.round((words / perPage) * 2) / 2;
+  return p % 1 === 0 ? String(p) : p.toFixed(1);
+};
+
+export const TOOLS: ToolContent[] = [
+  {
+    slug: 'degree-classification-calculator',
+    name: 'Degree Classification Calculator',
+    metaTitle: 'UK Degree Classification Calculator | First, 2:1, 2:2',
+    metaDescription:
+      'Free UK degree calculator. Enter your module marks and year weightings to see your First, 2:1 or 2:2, and the average you need to reach the next band.',
+    h1: 'UK Degree Classification Calculator',
+    subtitle:
+      "Work out your degree classification from your module marks, see how close you are to the next band, and find the average you need in your remaining modules. Works for undergraduate honours degrees and Master's degrees.",
+    cardText: 'See your First, 2:1, 2:2 or Master\'s grade, and the marks you need in your remaining modules.',
+    sections: [
+      {
+        heading: 'How UK degree classifications are worked out',
+        paragraphs: [
+          'Most UK universities mark each module out of 100. Each module carries a number of credits, usually 15, 20, 30 or 40, and a full year of undergraduate study is normally worth 120 credits. Your average for a year is weighted by credits, so a 40-credit dissertation counts twice as much as a 20-credit module.',
+          'Your final classification then combines the averages of the years that count. In England, Wales and Northern Ireland, most three-year degrees use only the second and final years, with the final year weighted more heavily. Four-year degrees in Scotland usually base the classification on the two honours years (Years 3 and 4). The first year normally has to be passed but does not count towards the final mark, although some universities do include it.',
+          'This calculator applies those steps for you: it averages your module marks by credits within each year, applies your year weightings, and compares the result with the usual UK grade bands.',
+        ],
+        table: {
+          caption: 'Common UK grade bands',
+          head: ['Average mark', 'Undergraduate honours', "Taught Master's"],
+          rows: [
+            ['70 and above', 'First Class (1st)', 'Distinction'],
+            ['60 to 69', 'Upper Second Class (2:1)', 'Merit'],
+            ['50 to 59', 'Lower Second Class (2:2)', 'Pass'],
+            ['40 to 49', 'Third Class (3rd)', 'Fail at most universities'],
+            ['Below 40', 'Fail or an ordinary (non-honours) degree', 'Fail'],
+          ],
+        },
+      },
+      {
+        heading: 'Common year weightings',
+        paragraphs: [
+          'Universities publish their weighting in their academic regulations, usually in a section called "degree classification" or "award rules". Common patterns include:',
+        ],
+        bullets: [
+          'Second year 50%, final year 50%',
+          'Second year 40%, final year 60%',
+          'Second year 33%, final year 67% (a 1:2 ratio)',
+          'Second year 25%, final year 75% (a 1:3 ratio)',
+          'Second year 20%, final year 80%',
+          'Final year only (100%)',
+          'Scottish honours degrees: often based on Years 3 and 4',
+        ],
+      },
+      {
+        heading: 'Borderline marks, rounding and other rules',
+        paragraphs: [
+          'Your average is not always the end of the story. Many universities round averages, so 69.5 may become 70. Many also have a borderline zone, often one or two marks below a boundary, where the exam board looks at how many of your credits were in the higher band. Some universities discount your lowest-scoring credits, or calculate your result in two different ways and award the better one.',
+          "Master's degrees can have extra conditions too. For example, some universities require a dissertation mark of 70 or more for a Distinction, even if your overall average is above 70. The result here is a guide based on the numbers you enter, and your official result always follows your own university's regulations.",
+        ],
+      },
+      {
+        heading: 'How to use this calculator',
+        steps: [
+          'Choose undergraduate or Master\'s.',
+          'For an undergraduate degree, pick your university\'s year weighting, or enter your own.',
+          'Add each module with its credits and mark. Leave the mark empty for modules you have not finished yet.',
+          'Check the total credits for each year (usually 120 for undergraduate years and 180 for a Master\'s).',
+          'Read your current classification and the average you need in your remaining credits for each band.',
+        ],
+      },
+      {
+        heading: 'If the next band looks hard to reach',
+        paragraphs: [
+          'Seeing the average you need can be motivating, or worrying. The modules with the most credits left, usually the dissertation or final project, give you the most room to move your average, so it is worth planning those carefully and starting early.',
+          "Read your marking criteria and past feedback, and look for the points that come up again and again: structure, critical analysis and referencing are the most common. If you would like an expert to look at a draft before you submit it, our Master's and PhD-qualified team can give clear, practical feedback from £20 per 1,000 words.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What percentage is a First in the UK?',
+        a: 'At most UK universities, a First Class degree needs an overall weighted average of 70% or above. A 2:1 is usually 60 to 69%, a 2:2 is 50 to 59% and a Third is 40 to 49%.',
+      },
+      {
+        q: 'Does first year count towards my degree?',
+        a: 'At most universities in England, Wales and Northern Ireland, first year has to be passed but does not count towards your final classification. Some universities do give it a small weighting, so check your academic regulations.',
+      },
+      {
+        q: 'How is a 2:1 calculated?',
+        a: 'Your module marks are averaged by credits for each year that counts, then the year averages are combined using your university\'s weighting. If that final average is between 60 and 69, the result is usually a 2:1, subject to any borderline or rounding rules.',
+      },
+      {
+        q: 'What is a borderline degree classification?',
+        a: 'Many universities treat an average just below a boundary, often within one or two marks, as borderline. The exam board may then award the higher class if, for example, most of your credits are in the higher band.',
+      },
+      {
+        q: "How are Master's degrees graded in the UK?",
+        a: "Taught Master's degrees are usually awarded with Distinction (70% and above), Merit (60 to 69%) or Pass (50 to 59%). Some universities also set a minimum dissertation mark for a Distinction or Merit.",
+      },
+      {
+        q: 'Will this calculator match my official result?',
+        a: 'It calculates your result from the marks, credits and weightings you enter. Your official result follows your university\'s regulations, which may include rounding, borderline rules or discounted credits.',
+      },
+      {
+        q: 'Is my data saved or sent anywhere?',
+        a: 'No. The calculation runs in your browser and your marks are not sent to us or stored on our servers.',
+      },
+    ],
+    services: ['dissertation-help-uk', 'assignment-help-uk', 'draft-review-feedback', 'essay-help'],
+    guides: ['uk-university-grading-system', 'how-to-write-a-dissertation', 'how-to-structure-a-university-essay'],
+    whatsappMessage: 'Hello FIZBS! I used your degree calculator and would like help improving my marks. Subject: , Deadline: ',
+  },
+  {
+    slug: 'harvard-referencing-generator',
+    name: 'Harvard Referencing Generator',
+    metaTitle: 'Free Harvard Referencing Generator | Books, Journals, Web',
+    metaDescription:
+      'Free Harvard referencing generator for books, chapters, journal articles, websites and reports. Get your reference and in-text citation in seconds.',
+    h1: 'Free Harvard Referencing Generator',
+    subtitle:
+      'Create Harvard references and in-text citations for books, book chapters, journal articles, websites and reports. Build your reference list in alphabetical order and copy it straight into your document, italics included.',
+    cardText: 'Harvard references and in-text citations for books, journals, websites and reports, with a sorted reference list.',
+    sections: [
+      {
+        heading: 'How to use the Harvard referencing generator',
+        steps: [
+          'Choose the type of source: book, chapter in an edited book, journal article, website or report.',
+          'Enter the authors, or an organisation if there is no individual author.',
+          'Fill in the year, title and the other details shown for that source type.',
+          'Copy the reference and the in-text citation, or add the reference to your list.',
+          'When your list is complete, copy it into your reference list. It is sorted alphabetically for you.',
+        ],
+      },
+      {
+        heading: 'Harvard reference formats used by this tool',
+        paragraphs: [
+          'The generator follows the Cite Them Right version of Harvard, which many UK universities use as their standard. Titles shown in italics below are italic in your reference.',
+        ],
+        bullets: [
+          'Book: Surname, Initial. (Year) Title of book. Edition. Publisher.',
+          "Chapter in an edited book: Surname, Initial. (Year) 'Title of chapter', in Editor, Initial. (ed.) Title of book. Publisher, pp. first-last.",
+          "Journal article: Surname, Initial. (Year) 'Title of article', Journal Name, Volume(Issue), pp. first-last. Available at: DOI.",
+          'Website: Author or Organisation (Year) Title of web page. Available at: URL (Accessed: date).',
+          'Report: Organisation (Year) Title of report. Publisher. Available at: URL (Accessed: date).',
+        ],
+      },
+      {
+        heading: 'Harvard in-text citations',
+        paragraphs: [
+          'Every reference in your list needs at least one matching citation in your text, and every citation needs a matching reference. The generator gives you both forms:',
+        ],
+        bullets: [
+          'Parenthetical: (Smith, 2021) at the end of the sentence',
+          'Narrative: Smith (2021) argues that...',
+          'Two authors: (Smith and Jones, 2021)',
+          'Three authors: (Smith, Jones and Patel, 2021)',
+          'Four or more authors: (Smith et al., 2021)',
+          'Direct quotes need a page number: (Smith, 2021, p. 45)',
+          'No date: (Organisation Name, no date)',
+        ],
+      },
+      {
+        heading: 'Common Harvard referencing mistakes',
+        bullets: [
+          'Citations in the text that do not appear in the reference list, or the other way round',
+          'Using first names instead of initials in the reference list',
+          'Forgetting the accessed date for websites and online reports',
+          'Mixing styles, for example APA punctuation in a Harvard list',
+          'Listing references by date or in the order used instead of alphabetically by surname',
+          'Missing page numbers for direct quotations',
+        ],
+      },
+      {
+        heading: 'Harvard is not one single style',
+        paragraphs: [
+          "There is no single official Harvard style. Universities publish their own versions, and details such as the use of 'et al.', the place of publication or the accessed date for DOIs can differ. Always compare the output with your module handbook or library guide, and follow your university where it differs.",
+          'If you would like an expert to check a full reference list or correct citations throughout a draft, our referencing help covers Harvard, APA, OSCOLA, MLA and IEEE.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is Harvard referencing?',
+        a: "Harvard is an author-date referencing style. You cite the author's surname and the year in your text, for example (Smith, 2021), and give the full details of each source in an alphabetical reference list at the end.",
+      },
+      {
+        q: 'Which version of Harvard does this generator use?',
+        a: 'It follows the Cite Them Right version of Harvard, which is widely used by UK universities. Check your module handbook, because some universities use their own variation.',
+      },
+      {
+        q: 'Do I need an accessed date?',
+        a: 'Yes for websites and other online sources found by URL. For journal articles with a DOI, many versions of Harvard leave out the accessed date, so the generator only adds one if you enter it.',
+      },
+      {
+        q: 'How do I reference a source with no author?',
+        a: 'If an organisation published it, use the organisation as the author. If there is genuinely no author, leave the author empty and the generator will start the reference with the title.',
+      },
+      {
+        q: 'What if there is no date?',
+        a: "Look carefully first, for example for a 'last updated' date. If there is genuinely no date, tick 'No date' and the generator will write (no date) in the reference and the citation.",
+      },
+      {
+        q: 'When should I use et al.?',
+        a: "In the Cite Them Right version of Harvard, use the first author's surname followed by et al. in your citation when there are four or more authors. The reference list here includes all authors.",
+      },
+      {
+        q: 'Is the generator free?',
+        a: 'Yes. It is free to use, needs no sign-up, and runs in your browser, so the details you enter are not sent to us.',
+      },
+    ],
+    services: ['referencing-help', 'essay-help', 'proofreading-editing-services', 'literature-review-help'],
+    guides: ['harvard-referencing-guide', 'apa-referencing-guide', 'how-to-paraphrase-and-avoid-plagiarism'],
+    whatsappMessage: 'Hello FIZBS! I need help checking my Harvard references. Word count: , Deadline: ',
+  },
+  {
+    slug: 'word-counter',
+    name: 'Word Counter and Pages Converter',
+    metaTitle: 'Word Counter and Words to Pages Converter | Free Tool',
+    metaDescription:
+      'Free word counter for essays and assignments: count words, characters and sentences, exclude your reference list, and see how many pages your text fills.',
+    h1: 'Word Counter and Words to Pages Converter',
+    subtitle:
+      'Paste your essay or assignment to count words, characters, sentences and paragraphs. Leave out your reference list in one click, and see how many pages your word count fills at different line spacings.',
+    cardText: 'Count words and characters, exclude your reference list, and convert words to pages.',
+    sections: [
+      {
+        heading: 'How many pages is my word count?',
+        paragraphs: [
+          'The number of pages depends on the font, font size, margins and line spacing. The table below assumes an A4 page with standard 2.54 cm margins and a 12 point font such as Times New Roman or an 11 point font such as Arial. Headings, tables and short paragraphs will add pages, so treat these figures as estimates.',
+        ],
+        table: {
+          caption: 'Words to pages (A4, 12 pt)',
+          head: ['Words', 'Single spaced', '1.5 spaced', 'Double spaced'],
+          rows: PAGES_TABLE_WORDS.map((w) => [w.toLocaleString('en-GB'), pages(w, 500), pages(w, 333), pages(w, 250)]),
+        },
+      },
+      {
+        heading: 'What counts towards your word count?',
+        paragraphs: [
+          'Most UK universities set their own word count rules, so check your module handbook first. As a general pattern:',
+        ],
+        bullets: [
+          'The main text, headings and quotations usually count',
+          'In-text citations usually count, although some departments exclude them',
+          'The reference list or bibliography usually does not count',
+          'Appendices, the title page and the contents page usually do not count',
+          'Tables and figures vary: some count them, some do not',
+          'Many universities allow a margin of around 10% over or under the limit, while others apply a penalty for any overrun',
+        ],
+      },
+      {
+        heading: 'Why counts differ between tools',
+        paragraphs: [
+          'Word processors and online counters do not always agree. Differences usually come from hyphenated words, numbers, symbols, web addresses and text in footnotes or text boxes. This counter treats a word as any group of characters between spaces that contains a letter or a number, which closely matches Microsoft Word for most academic text.',
+          "If your university uses a specific tool, such as Word's own count, use that for the final check before you submit.",
+        ],
+      },
+      {
+        heading: 'Typical word counts for UK assignments',
+        paragraphs: [
+          'Lengths vary by university, subject and level, but these ranges are common:',
+        ],
+        bullets: [
+          'Undergraduate essays and reports: 1,500 to 3,000 words',
+          "Master's assignments: 2,500 to 5,000 words",
+          'Reflective reports: 1,000 to 2,500 words',
+          'Undergraduate dissertations: 8,000 to 12,000 words',
+          "Master's dissertations: 12,000 to 20,000 words",
+          'A presentation script: about 130 words per minute of speaking',
+        ],
+      },
+      {
+        heading: 'Getting to the right length',
+        paragraphs: [
+          'If you are over the limit, cut repetition first: summaries that restate earlier sections, long quotations and descriptive background usually go before analysis. If you are under, add depth rather than padding: more evidence, a counter-argument, or a closer link between theory and your example.',
+          'Our proofreading and draft feedback services can help you tighten a draft that is too long or strengthen one that is too thin, from £12 per 1,000 words for proofreading.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'How many pages is 1,000 words?',
+        a: 'About 2 pages single spaced, 3 pages at 1.5 spacing, or 4 pages double spaced, on A4 with a 12 point font and standard margins.',
+      },
+      {
+        q: 'How many pages is 2,000 words?',
+        a: 'About 4 pages single spaced, 6 pages at 1.5 spacing, or 8 pages double spaced, on A4 with a 12 point font and standard margins.',
+      },
+      {
+        q: 'How many pages is 3,000 words?',
+        a: 'About 6 pages single spaced, 9 pages at 1.5 spacing, or 12 pages double spaced, on A4 with a 12 point font and standard margins.',
+      },
+      {
+        q: 'Does the reference list count towards the word count?',
+        a: "At most UK universities the reference list does not count. Tick 'Exclude reference list' and the counter will stop counting at a heading called References, Reference List or Bibliography.",
+      },
+      {
+        q: 'Do in-text citations count towards the word count?',
+        a: 'Usually yes, but some departments exclude them. Check your module handbook or ask your tutor.',
+      },
+      {
+        q: 'What is the 10% word count rule?',
+        a: 'Many UK universities allow you to go up to around 10% over or under the stated word count without a penalty. Others apply penalties for any overrun, so check your own assessment rules.',
+      },
+      {
+        q: 'Is my text saved or uploaded?',
+        a: 'No. Your text is counted in your browser and is never sent to us or stored on our servers.',
+      },
+    ],
+    services: ['essay-help', 'proofreading-editing-services', 'coursework-report-help', 'draft-review-feedback'],
+    guides: ['how-to-structure-a-university-essay', 'how-to-write-a-business-report', 'how-to-write-an-abstract'],
+    whatsappMessage: 'Hello FIZBS! I need help with my assignment. Word count: , Deadline: ',
+  },
+];
+
+export const TOOLS_PATH = '/tools';
+
+export function getTool(slug: string): ToolContent | undefined {
+  return TOOLS.find((t) => t.slug === slug);
+}
+
+export function toolPath(tool: Pick<ToolContent, 'slug'>): string {
+  return `${TOOLS_PATH}/${tool.slug}`;
+}
+
+/** Tools that are relevant to a landing page (for the "Free Student Tools" box on service pages) */
+export function toolsForService(slug: string): ToolContent[] {
+  return TOOLS.filter((t) => t.services.includes(slug));
+}

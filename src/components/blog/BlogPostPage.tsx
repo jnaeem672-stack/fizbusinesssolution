@@ -8,6 +8,8 @@ import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { expertCallUrl, EXPERT_CALL } from '@/constants/expertCall';
 import { SITE_URL, getLandingPage, landingLabel, landingPath, type LandingContent } from '@/content/landing';
 import { EN_POSTS, AR_POSTS, postPath, readingMinutes, sectionId, type BlogPost } from '@/content/blog';
+import { TOOLS, toolPath } from '@/content/tools';
+import { TOOL_ICONS } from '@/components/tools/toolIcons';
 
 const LABELS = {
   en: {
@@ -67,6 +69,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
     .filter((p): p is LandingContent => Boolean(p));
   const morePosts = (isAr ? AR_POSTS : EN_POSTS).filter((p) => p.slug !== post.slug).slice(0, 3);
   const ids = post.sections.map((s, i) => sectionId(s.heading, i, post.locale));
+  const tools = isAr ? [] : TOOLS.filter((tool) => tool.guides.includes(post.slug));
 
   const schema = [
     {
@@ -220,6 +223,24 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                   <PhoneCall className="w-4 h-4 text-[#25D366]" /> {EXPERT_CALL[post.locale].sideCta}
                 </WhatsAppLink>
               </div>
+
+              {tools.length > 0 && (
+                <div className="rounded-3xl p-7 border border-[#E9DCAE] bg-[#FBF6E6]">
+                  <p className="text-lg font-extrabold text-navy mb-4">Free Student Tools</p>
+                  <ul className="space-y-2.5">
+                    {tools.map((tool) => {
+                      const Icon = TOOL_ICONS[tool.slug];
+                      return (
+                        <li key={tool.slug}>
+                          <Link href={toolPath(tool)} className="flex items-center gap-2 text-sm font-bold text-navy hover:text-primary transition-colors">
+                            <Icon className="w-4 h-4 text-primary shrink-0" /> {tool.name}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </div>
+              )}
 
               {services.length > 0 && (
                 <div className="bg-gray-50 rounded-3xl p-7 border border-gray-100">

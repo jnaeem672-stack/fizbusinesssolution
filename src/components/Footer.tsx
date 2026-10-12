@@ -84,6 +84,7 @@ const Footer = () => (
       <Link href="/our-team" className="hover:text-white transition-colors">Our Team</Link>
       <Link href="/blog" className="hover:text-white transition-colors">Student Guides</Link>
       <Link href="/samples" className="hover:text-white transition-colors">Samples</Link>
+      <Link href="/tools" className="hover:text-white transition-colors">Free Tools</Link>
       <Link href="/results" className="hover:text-white transition-colors">Results</Link>
       <Link href="/terms" className="hover:text-white transition-colors">Terms</Link>
       <Link href="/contact" className="hover:text-white transition-colors">Contact</Link>
