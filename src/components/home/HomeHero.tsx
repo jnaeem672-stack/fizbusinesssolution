@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m as motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowDown, BookOpenCheck, ShieldCheck, Globe2, GraduationCap, Award, CheckCircle2 } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';

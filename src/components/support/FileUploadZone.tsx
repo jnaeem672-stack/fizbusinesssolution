@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import { Upload, Plus, Loader2, CheckCircle2, X } from 'lucide-react';
 import type { FileUploadZoneProps } from '@/types';
 

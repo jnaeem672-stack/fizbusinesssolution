@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Send } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import toast from 'react-hot-toast';
 import FormField from '../ui/FormField';
 import SubmitButton from '../ui/SubmitButton';

@@ -1,10 +1,17 @@
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { EN_POSTS, postPath } from '@/content/blog';
+
+/** Only the fields the strip needs, passed from the server so the full guides never ship to the browser */
+export interface GuideCard {
+  slug: string;
+  href: string;
+  title: string;
+  excerpt: string;
+  category: string;
+}
 
 /** Homepage strip linking to the newest student guides (internal links for SEO). */
-export default function LatestGuides() {
-  const posts = EN_POSTS.slice(0, 3);
+export default function LatestGuides({ posts }: { posts: GuideCard[] }) {
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="max-w-6xl mx-auto px-4">
@@ -19,7 +26,7 @@ export default function LatestGuides() {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {posts.map((p) => (
-            <Link key={p.slug} href={postPath(p)} className="group rounded-3xl border border-gray-100 bg-gray-50 p-7 hover:shadow-xl hover:-translate-y-1 transition-all">
+            <Link key={p.slug} href={p.href} className="group rounded-3xl border border-gray-100 bg-gray-50 p-7 hover:shadow-xl hover:-translate-y-1 transition-all">
               <span className="text-[11px] font-black uppercase tracking-widest text-primary">{p.category}</span>
               <h3 className="mt-3 text-lg font-extrabold text-navy leading-snug group-hover:text-primary transition-colors">{p.title}</h3>
               <p className="mt-3 text-sm text-gray-500 leading-relaxed line-clamp-3">{p.excerpt}</p>

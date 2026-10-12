@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL } from '@/constants/whatsapp';
@@ -32,10 +32,13 @@ export default function FloatingWhatsApp() {
         <span className="hidden sm:flex items-center bg-navy text-white text-[10px] font-black uppercase tracking-widest px-4 py-2.5 rounded-xl shadow-xl opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all duration-300 whitespace-nowrap border border-white/10">
           Chat with us!
         </span>
-        <WhatsAppIcon
-          size={56}
-          className="w-14 h-14 sm:w-16 sm:h-16 pulse-button hover:scale-105 active:scale-95 transition-transform"
-        />
+        <span className="relative inline-flex">
+          <span aria-hidden="true" className="pulse-ring absolute inset-0 rounded-full bg-[#25D366]" />
+          <WhatsAppIcon
+            size={56}
+            className="relative w-14 h-14 sm:w-16 sm:h-16 pulse-button hover:scale-105 active:scale-95 transition-transform"
+          />
+        </span>
       </WhatsAppLink>
     </motion.div>
   );

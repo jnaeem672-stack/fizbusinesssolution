@@ -15,12 +15,12 @@ import FaqSection from '@/components/FaqSection';
 import PaymentSection from '@/components/PaymentSection';
 import TeamTeaser from '@/components/team/TeamTeaser';
 import ExpertCallSection from '@/components/ExpertCallSection';
-import LatestGuides from '@/components/home/LatestGuides';
+import LatestGuides, { type GuideCard } from '@/components/home/LatestGuides';
 import { HOME_FAQS } from '@/content/homeFaqs';
 import StickyHelpBanner from '@/components/home/StickyHelpBanner';
 import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 
-export default function HomePage() {
+export default function HomePage({ guides }: { guides: GuideCard[] }) {
   const [showHelper, setShowHelper] = useState(false);
   useSupportFormScroll();
 
@@ -58,7 +58,7 @@ export default function HomePage() {
         <HowItWorks />
         <Testimonials />
         <ResultsStrip />
-        <LatestGuides />
+        <LatestGuides posts={guides} />
         <PaymentSection className="bg-white" />
         <FaqSection
           faqs={HOME_FAQS}

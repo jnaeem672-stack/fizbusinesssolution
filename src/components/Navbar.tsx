@@ -3,7 +3,7 @@
 import { useState, useEffect, type MouseEvent } from 'react';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
+import { m as motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react';
 import Logo from './Logo';
 import { SUPPORT_FORM_PATH, scrollToSupportForm } from '@/constants/supportNavigation';

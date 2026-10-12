@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import HomePage from '@/components/pages/HomePage';
+import { EN_POSTS, postPath } from '@/content/blog';
 
 const TITLE = 'FIZ Business Solutions | Assignment & Dissertation Help UK';
 
@@ -28,11 +29,20 @@ const WEBSITE_SCHEMA = {
   url: 'https://fizbusinessolutions.com/',
 };
 
+// Built on the server so the full guide texts are never bundled into the homepage JavaScript
+const LATEST_GUIDES = EN_POSTS.slice(0, 3).map((p) => ({
+  slug: p.slug,
+  href: postPath(p),
+  title: p.title,
+  excerpt: p.excerpt,
+  category: p.category,
+}));
+
 export default function Page() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(WEBSITE_SCHEMA) }} />
-      <HomePage />
+      <HomePage guides={LATEST_GUIDES} />
     </>
   );
 }

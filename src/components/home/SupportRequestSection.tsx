@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import { CheckCircle2, BookOpenCheck, Lock } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import SectionHeader from '@/components/ui/SectionHeader';

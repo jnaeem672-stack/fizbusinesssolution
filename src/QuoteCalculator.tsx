@@ -1,7 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import { Calculator, CheckCircle2 } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';

@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import { Mail, ArrowRight, Paperclip, CheckCircle2 } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import SectionHeader from '@/components/ui/SectionHeader';

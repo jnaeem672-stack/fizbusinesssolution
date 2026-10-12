@@ -1,6 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { m as motion } from 'framer-motion';
 import type { FeatureCardProps } from '@/types';
 
 const FeatureCard = ({ title, desc, icon: Icon, index }: FeatureCardProps) => (
