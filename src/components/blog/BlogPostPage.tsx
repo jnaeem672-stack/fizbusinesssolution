@@ -67,7 +67,9 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
   const services = post.relatedServices
     .map((slug) => getLandingPage(slug, post.locale) ?? getLandingPage(slug, 'en'))
     .filter((p): p is LandingContent => Boolean(p));
-  const morePosts = (isAr ? AR_POSTS : EN_POSTS).filter((p) => p.slug !== post.slug).slice(0, 3);
+  // Same-category guides first (e.g. other dissertation topic lists), then the most important others
+  const others = (isAr ? AR_POSTS : EN_POSTS).filter((p) => p.slug !== post.slug);
+  const morePosts = [...others.filter((p) => p.category === post.category), ...others.filter((p) => p.category !== post.category)].slice(0, 3);
   const ids = post.sections.map((s, i) => sectionId(s.heading, i, post.locale));
   const tools = isAr ? [] : TOOLS.filter((tool) => tool.guides.includes(post.slug));
 

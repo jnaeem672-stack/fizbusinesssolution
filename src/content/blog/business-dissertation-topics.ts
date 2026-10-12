@@ -15,7 +15,7 @@ export const businessDissertationTopicsPost: BlogPost = {
     "finance dissertation topics",
     "Saudi Vision 2030 dissertation topics"
   ],
-  category: "Dissertation",
+  category: "Dissertation Topics",
   excerpt: "Fifty specific, researchable business and MBA dissertation topics for 2026 across marketing, HRM, finance, strategy, operations, ESG, AI and Saudi Vision 2030, with advice on narrowing a topic and finding data.",
   published: "2026-10-10",
   intro: [

@@ -28,6 +28,12 @@ import { ukMastersPersonalStatementPost } from './uk-masters-personal-statement'
 import { arTheoreticalFrameworkAndLiteratureReviewPost } from './ar-theoretical-framework-and-literature-review';
 import { arHowToWriteAnAbstractPost } from './ar-how-to-write-an-abstract';
 import { arHowToChooseAThesisTitlePost } from './ar-how-to-choose-a-thesis-title';
+import { hrmDissertationTopicsPost } from './hrm-dissertation-topics';
+import { marketingDissertationTopicsPost } from './marketing-dissertation-topics';
+import { financeAccountingDissertationTopicsPost } from './finance-accounting-dissertation-topics';
+import { nursingHealthcareDissertationTopicsPost } from './nursing-healthcare-dissertation-topics';
+import { educationDissertationTopicsPost } from './education-dissertation-topics';
+import { computerScienceDissertationTopicsPost } from './computer-science-dissertation-topics';
 
 export type { BlogPost } from './types';
 
@@ -55,6 +61,12 @@ export const EN_POSTS: BlogPost[] = [
   howToWriteABusinessReportPost,
   howToWriteACaseStudyAnalysisPost,
   ukMastersPersonalStatementPost,
+  hrmDissertationTopicsPost,
+  marketingDissertationTopicsPost,
+  financeAccountingDissertationTopicsPost,
+  nursingHealthcareDissertationTopicsPost,
+  educationDissertationTopicsPost,
+  computerScienceDissertationTopicsPost,
 ];
 
 /** Arabic posts. Served at /ar/blog/{slug} */
