@@ -64,6 +64,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               '@context': 'https://schema.org',
               '@type': 'ProfessionalService',
               name: 'FIZ Business Solutions',
+              alternateName: ['FIZBS', 'FIZ Business Solution'],
               url: 'https://fizbusinessolutions.com',
               logo: 'https://fizbusinessolutions.com/apple-icon',
               description: 'Assignment help and dissertation help for students in the UK and Saudi Arabia since 2015.',

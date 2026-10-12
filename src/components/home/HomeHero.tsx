@@ -81,7 +81,7 @@ export default function HomeHero() {
               </a>
               <span className="inline-flex items-center gap-2 px-4 py-1.5 bg-white/10 backdrop-blur-md rounded-full text-[11px] font-bold border border-white/20 text-white uppercase tracking-wider">
                 <ShieldCheck className="w-3.5 h-3.5 text-primary" />
-                Trusted Since 2015
+                FIZ Business Solutions · Since 2015
               </span>
               <a
                 href="#expert-call"
