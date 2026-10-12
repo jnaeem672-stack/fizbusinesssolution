@@ -25,7 +25,7 @@ export default function TermsPage() {
     <div className="min-h-screen bg-gray-50">
       <PageHero
         title="Terms of Service & Acceptable Use"
-        subtitle="The conditions that apply to coaching, tutoring, feedback, proofreading, research guidance, and professional support."
+        subtitle="The conditions that apply to tutoring, feedback, proofreading, research guidance, and professional support."
         breadcrumb="Terms"
         badge="Clear Service Boundaries"
         backgroundImage="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1600&q=80"

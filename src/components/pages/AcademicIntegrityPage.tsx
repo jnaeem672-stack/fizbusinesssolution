@@ -31,7 +31,7 @@ export default function AcademicIntegrityPage() {
     <div className="min-h-screen bg-gray-50">
       <PageHero
         title="Academic Integrity Policy"
-        subtitle="Clear boundaries for ethical coaching, tutoring, feedback, proofreading, research guidance, and responsible AI use."
+        subtitle="Clear boundaries for tutoring, feedback, proofreading, research guidance, and responsible AI use."
         breadcrumb="Academic Integrity"
         badge="Integrity Before Revenue"
         backgroundImage="https://images.unsplash.com/photo-1456406644174-8ddd4cd52a06?w=1600&q=80"
