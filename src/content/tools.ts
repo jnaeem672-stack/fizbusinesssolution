@@ -43,7 +43,7 @@ export const TOOLS: ToolContent[] = [
   {
     slug: 'degree-classification-calculator',
     name: 'Degree Classification Calculator',
-    metaTitle: 'UK Degree Classification Calculator | First, 2:1, 2:2',
+    metaTitle: 'UK Degree Calculator | First, 2:1 and Master\'s Grades',
     metaDescription:
       'Free UK degree calculator. Enter your module marks and year weightings to see your First, 2:1 or 2:2, and the average you need to reach the next band.',
     h1: 'UK Degree Classification Calculator',
@@ -69,6 +69,20 @@ export const TOOLS: ToolContent[] = [
             ['Below 40', 'Fail or an ordinary (non-honours) degree', 'Fail'],
           ],
         },
+      },
+      {
+        heading: "Master's degree classification in the UK",
+        paragraphs: [
+          "Taught Master's degrees such as an MSc, MA or MBA are not classified as a First or a 2:1. Most UK universities award them as a Distinction, a Merit or a Pass, based on your credit-weighted average across all modules, including the dissertation.",
+          "A full taught Master's is usually worth 180 credits (90 ECTS credits), and the dissertation or final project is often 60 of those credits, so it has a big effect on your final average. Students who leave early may receive a Postgraduate Diploma (usually 120 credits) or a Postgraduate Certificate (usually 60 credits).",
+        ],
+        bullets: [
+          'Distinction: usually an overall average of 70 or above',
+          'Merit: usually 60 to 69',
+          'Pass: usually 50 to 59',
+          'Some universities also set a minimum dissertation mark for a Distinction or a Merit',
+          "Choose \"Master's\" in the calculator above to see your grade and the marks you need",
+        ],
       },
       {
         heading: 'Common year weightings',
@@ -130,6 +144,14 @@ export const TOOLS: ToolContent[] = [
       {
         q: "How are Master's degrees graded in the UK?",
         a: "Taught Master's degrees are usually awarded with Distinction (70% and above), Merit (60 to 69%) or Pass (50 to 59%). Some universities also set a minimum dissertation mark for a Distinction or Merit.",
+      },
+      {
+        q: "What is a Merit in a UK Master's degree?",
+        a: "A Merit is usually awarded for an overall Master's average of 60 to 69%. It sits above a Pass (50 to 59%) and below a Distinction (70% and above).",
+      },
+      {
+        q: "How many credits is a UK Master's degree?",
+        a: "A taught Master's is usually 180 credits, equal to 90 ECTS credits. The dissertation or final project often accounts for 60 of them.",
       },
       {
         q: 'Will this calculator match my official result?',
