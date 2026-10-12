@@ -10,6 +10,7 @@ import { SITE_URL, getLandingPage, landingLabel, landingPath, type LandingConten
 import { EN_POSTS, AR_POSTS, postPath, readingMinutes, sectionId, type BlogPost } from '@/content/blog';
 import { TOOLS, toolPath } from '@/content/tools';
 import { GUIDE_GEO } from '@/content/blog/geo';
+import { GUIDE_FIGURES, type GuideFigure } from '@/content/blog/figures';
 import { getExpert } from '@/content/experts';
 import { TOOL_ICONS } from '@/components/tools/toolIcons';
 
@@ -75,6 +76,9 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
   const ids = post.sections.map((s, i) => sectionId(s.heading, i, post.locale));
   const tools = isAr ? [] : TOOLS.filter((tool) => tool.guides.includes(post.slug));
   const geo = isAr ? undefined : GUIDE_GEO[post.slug];
+  const figures = isAr ? [] : GUIDE_FIGURES[post.slug] ?? [];
+  const figuresFor = (heading: string, position?: GuideFigure['position']) =>
+    figures.filter((f) => f.section === heading && f.position === position).map((f) => <Figure key={f.src} figure={f} />);
   const specialist = geo ? getExpert(geo.specialist) : undefined;
   const modified = geo?.updated ?? post.published;
 
@@ -90,6 +94,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
       datePublished: post.published,
       dateModified: modified,
       ...(geo ? { abstract: geo.quickAnswer } : {}),
+      ...(figures.length ? { image: figures.map((f) => ({ '@type': 'ImageObject', url: `${SITE_URL}${f.src}`, caption: f.caption, width: f.width, height: f.height })) } : {}),
       articleSection: post.category,
       keywords: post.keywords.join(', '),
       author: { '@type': 'Organization', name: 'FIZ Business Solutions academic team', url: `${SITE_URL}/our-team` },
@@ -169,7 +174,9 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
             {post.sections.map((s, si) => (
               <div key={s.heading} className="mb-11">
                 <h2 id={ids[si]} className="scroll-mt-[130px] text-2xl md:text-3xl font-extrabold text-navy tracking-tight mb-4">{s.heading}</h2>
+                {figuresFor(s.heading, 'top')}
                 <div className="space-y-4">{s.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}</div>
+                {figuresFor(s.heading, 'afterText')}
                 {s.steps && (
                   <ol className="mt-5 space-y-3">
                     {s.steps.map((step, i) => (
@@ -189,6 +196,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                     ))}
                   </ul>
                 )}
+                {figuresFor(s.heading, undefined)}
                 {s.subsections?.map((sub) => (
                   <div key={sub.heading} className="mt-7">
                     <h3 className="text-xl font-extrabold text-navy mb-3">{sub.heading}</h3>
@@ -323,5 +331,25 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
         </section>
       )}
     </div>
+  );
+}
+
+function Figure({ figure }: { figure: GuideFigure }) {
+  return (
+    <figure className="my-7">
+      <a href={figure.src} target="_blank" rel="noopener" className="block" title="Open the full-size diagram">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={figure.src}
+          alt={figure.alt}
+          width={figure.width}
+          height={figure.height}
+          loading="lazy"
+          decoding="async"
+          className="w-full h-auto rounded-2xl"
+        />
+      </a>
+      <figcaption className="mt-2.5 text-sm text-gray-500">{figure.caption} Tap or click to enlarge.</figcaption>
+    </figure>
   );
 }

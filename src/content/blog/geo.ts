@@ -21,7 +21,7 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       'To write a dissertation, choose a focused topic you can research, write a proposal, plan a realistic timeline, then draft the chapters: introduction (about 10%), literature review (20 to 30%), methodology (10 to 15%), findings (15 to 20%), discussion (20 to 25%) and conclusion (5 to 10%). Meet your supervisor regularly and leave time to edit and proofread.',
     specialist: 'sajjad-akbar-ali',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'business-dissertation-topics': {
     quickAnswer:
@@ -33,31 +33,31 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       'To write a literature review, search academic databases with a clear keyword strategy, screen sources for relevance and quality, and organise them by theme in a synthesis matrix. Then write critically: compare and evaluate studies rather than summarising them one by one, and finish by stating the research gap your study addresses.',
     specialist: 'ayesha-h',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'dissertation-methodology-guide': {
     quickAnswer:
       'A dissertation methodology explains and justifies how you did your research: your research philosophy and approach, your design (qualitative, quantitative or mixed), sampling, data collection, data analysis, research approval and limitations. Markers want each choice linked to your research question, not just described.',
     specialist: 'sajjad-akbar-ali',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'harvard-referencing-guide': {
     quickAnswer:
       'Harvard is an author-date referencing style. In the text you cite the author and year, for example (Smith, 2021), adding a page number for direct quotes. At the end you list every source alphabetically by surname with full details. Many UK universities follow the Cite Them Right version, so check your handbook for small differences.',
     specialist: 'meera-k',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'which-statistical-test-spss': {
     quickAnswer:
       'The right statistical test depends on your research question and your variable types. Use t-tests or ANOVA to compare group means, correlation or chi-square to test relationships, and regression to predict an outcome. If your data breaks the assumptions of these parametric tests, use a non-parametric alternative such as Mann-Whitney or Kruskal-Wallis.',
     specialist: 'hassan-r',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'uk-university-grading-system': {
     quickAnswer:
       "At most UK universities, a First Class degree is 70% and above, a 2:1 is 60 to 69%, a 2:2 is 50 to 59% and a Third is 40 to 49%. Taught Master's degrees are usually graded Distinction (70% and above), Merit (60 to 69%) and Pass (50 to 59%). Marks above 70 are reserved for excellent work.",
     specialist: 'sajjad-akbar-ali',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'how-to-email-a-phd-supervisor': {
     quickAnswer:
@@ -69,31 +69,31 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       "Gibbs' Reflective Cycle has six stages: Description, Feelings, Evaluation, Analysis, Conclusion and Action plan. Give the most words to Analysis, where you link the experience to theory and evidence, keep Description short, and finish with a specific action plan for next time.",
     specialist: 'ayesha-h',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'how-to-structure-a-university-essay': {
     quickAnswer:
       'A university essay has an introduction with a clear thesis (about 10% of the words), body paragraphs that each make one point using the PEEL structure (point, evidence, explanation, link), and a conclusion that answers the question (about 10%). Plan before writing, and use critical analysis rather than description to reach the higher grade bands.',
     specialist: 'meera-k',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'how-to-write-a-research-question': {
     quickAnswer:
       'A good research question is focused, researchable with the data you can get, and analytical, usually starting with "how", "why" or "to what extent". Narrow a broad topic by adding a specific relationship, a context and a population, and check it against the FINER criteria used on many research methods courses. Health and nursing students often use PICO.',
     specialist: 'sophia-l',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'thematic-analysis-guide': {
     quickAnswer:
       "Braun and Clarke's thematic analysis has six phases: familiarise yourself with the data, generate initial codes, search for themes, review themes, define and name themes, and write the report. It suits interview and focus group data, and can be done by hand or in NVivo.",
     specialist: 'ayesha-h',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'swot-and-pestle-analysis-guide': {
     quickAnswer:
       'PESTLE analyses the external environment (political, economic, social, technological, legal and environmental factors), while SWOT combines internal strengths and weaknesses with external opportunities and threats. In assignments, use PESTLE findings to inform the opportunities and threats in your SWOT, then turn the SWOT into strategy with a TOWS matrix.',
     specialist: 'ahmed-k',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'how-to-paraphrase-and-avoid-plagiarism': {
     quickAnswer:
@@ -117,25 +117,25 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       'An abstract is a short summary of your whole study, usually 150 to 300 words. A simple five-part structure works well: the background, the aim, the method, the key findings and the conclusion or implications. Write it last, in the past tense for what you did, and stay within the word limit.',
     specialist: 'meera-k',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'apa-referencing-guide': {
     quickAnswer:
       'APA 7th edition is an author-date style. In the text you cite the surname and year, for example (Smith, 2021), and use "et al." from three or more authors. The reference list is alphabetical, with the year in brackets after the authors and sentence case for article titles. Direct quotes need a page number.',
     specialist: 'emilia-k',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'how-to-write-a-business-report': {
     quickAnswer:
       'A university business report usually has a title page, an executive summary, contents, an introduction, numbered sections of findings and analysis, conclusions, recommendations, references and appendices. Unlike an essay, it uses headings, tables and charts, and the executive summary gives the key findings and recommendations on one page.',
     specialist: 'james-p',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'how-to-write-a-case-study-analysis': {
     quickAnswer:
       'To write a case study analysis, read the case and brief carefully, identify the key issues, analyse them with relevant theory and frameworks, generate and evaluate options against clear criteria, and finish with practical recommendations and an implementation plan. Support each point with evidence from the case.',
     specialist: 'james-p',
-    updated: '2026-10-12',
+    updated: '2026-10-13',
   },
   'uk-masters-personal-statement': {
     quickAnswer:

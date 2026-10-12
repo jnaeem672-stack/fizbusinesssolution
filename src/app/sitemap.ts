@@ -5,6 +5,7 @@ import { EN_POSTS, AR_POSTS, postPath } from '@/content/blog';
 import { SAMPLES, samplePath } from '@/content/samples';
 import { TOOLS, TOOLS_PATH, toolPath } from '@/content/tools';
 import { GUIDE_GEO } from '@/content/blog/geo';
+import { GUIDE_FIGURES } from '@/content/blog/figures';
 
 export const dynamic = 'force-static';
 
@@ -46,6 +47,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date((post.locale === 'en' && GUIDE_GEO[post.slug]?.updated) || post.published),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
+      ...(post.locale === 'en' && GUIDE_FIGURES[post.slug] ? { images: GUIDE_FIGURES[post.slug].map((f) => `${SITE_URL}${f.src}`) } : {}),
     })),
   ];
   const samples: MetadataRoute.Sitemap = [
