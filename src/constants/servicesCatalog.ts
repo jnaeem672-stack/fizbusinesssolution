@@ -41,7 +41,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     ],
   },
   {
-    title: 'Subject & Qualification Help',
+    title: 'Subject Help',
     services: [
       { id: 20, name: 'Business & Management Assignment Help', desc: 'Strategy, operations, HRM, leadership and international business assignments.', areas: 'Business' },
       { id: 21, name: 'MBA Assignment Help', desc: 'MBA assignments, case studies and dissertations for UK and Saudi Arabian business schools.', areas: 'MBA' },
@@ -51,6 +51,17 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       { id: 25, name: 'Law Assignment Help', desc: 'Case analysis, legal essays, problem questions and accurate OSCOLA referencing.', areas: 'Law' },
       { id: 26, name: 'Computing & IT Assignment Help', desc: 'Computer science, IT, data science and cyber security assignments and reports.', areas: 'Computing' },
       { id: 27, name: 'Engineering Assignment Help', desc: 'Civil, mechanical, electrical and petroleum engineering assignments and technical reports.', areas: 'Engineering' },
+      { id: 32, name: 'HRM Assignment Help', desc: 'Strategic HRM, employment relations, reward, talent management and international HRM.', areas: 'HRM' },
+      { id: 33, name: 'Economics Assignment Help', desc: 'Microeconomics, macroeconomics, econometrics and applied economics essays with diagrams.', areas: 'Economics' },
+      { id: 34, name: 'Psychology Assignment Help', desc: 'APA lab reports, critical essays, research methods and SPSS statistics.', areas: 'Psychology' },
+      { id: 35, name: 'Education Assignment Help', desc: 'PGCE, early years, SEND, TESOL and Master\'s in Education assignments.', areas: 'Education' },
+      { id: 36, name: 'Project Management Assignment Help', desc: 'Project plans, PRINCE2, Agile, risk registers, Gantt charts and case studies.', areas: 'Projects' },
+      { id: 37, name: 'Supply Chain & Logistics Assignment Help', desc: 'Procurement, inventory, lean operations, logistics and supply chain risk.', areas: 'Supply Chain' },
+    ],
+  },
+  {
+    title: 'Professional Qualifications',
+    services: [
       { id: 28, name: 'CIPD Assignment Help', desc: 'CIPD Level 3, 5 and 7 units in people management and L&D, mapped to every assessment criterion.', areas: 'CIPD' },
       { id: 29, name: 'HND & HNC Assignment Help', desc: 'Pearson BTEC Higher National units with clear guidance on Pass, Merit and Distinction criteria.', areas: 'HND' },
       { id: 30, name: 'CMI Assignment Help', desc: 'CMI Level 3, 5 and 7 management and leadership units, including apprenticeship programmes.', areas: 'CMI' },

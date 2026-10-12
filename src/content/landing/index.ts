@@ -49,6 +49,12 @@ import { assignmentHelpEdinburgh } from './assignment-help-edinburgh';
 import { assignmentHelpNottingham } from './assignment-help-nottingham';
 import { assignmentHelpSheffield } from './assignment-help-sheffield';
 import { assignmentHelpLiverpool } from './assignment-help-liverpool';
+import { hrmAssignmentHelp } from './hrm-assignment-help';
+import { economicsAssignmentHelp } from './economics-assignment-help';
+import { psychologyAssignmentHelp } from './psychology-assignment-help';
+import { educationAssignmentHelp } from './education-assignment-help';
+import { projectManagementAssignmentHelp } from './project-management-assignment-help';
+import { supplyChainLogisticsAssignmentHelp } from './supply-chain-logistics-assignment-help';
 
 export type { LandingContent } from './types';
 
@@ -96,6 +102,12 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   lawAssignmentHelp,
   computingItAssignmentHelp,
   engineeringAssignmentHelp,
+  hrmAssignmentHelp,
+  economicsAssignmentHelp,
+  psychologyAssignmentHelp,
+  educationAssignmentHelp,
+  projectManagementAssignmentHelp,
+  supplyChainLogisticsAssignmentHelp,
   cipdAssignmentHelp,
   hndHncAssignmentHelp,
   cmiAssignmentHelp,
@@ -159,6 +171,23 @@ export const CITY_LINKS: { label: string; href: string }[] = [
   { label: 'Assignment Help Dammam', href: '/assignment-help-dammam' },
 ];
 
+export const SUBJECT_LINKS: { label: string; href: string }[] = [
+  { label: 'Business & Management', href: '/business-management-assignment-help' },
+  { label: 'MBA', href: '/mba-assignment-help' },
+  { label: 'Marketing', href: '/marketing-assignment-help' },
+  { label: 'Finance & Accounting', href: '/finance-accounting-assignment-help' },
+  { label: 'HRM', href: '/hrm-assignment-help' },
+  { label: 'Economics', href: '/economics-assignment-help' },
+  { label: 'Project Management', href: '/project-management-assignment-help' },
+  { label: 'Supply Chain & Logistics', href: '/supply-chain-logistics-assignment-help' },
+  { label: 'Healthcare & Nursing', href: '/healthcare-nursing-assignment-help' },
+  { label: 'Psychology', href: '/psychology-assignment-help' },
+  { label: 'Education', href: '/education-assignment-help' },
+  { label: 'Law', href: '/law-assignment-help' },
+  { label: 'Computing & IT', href: '/computing-it-assignment-help' },
+  { label: 'Engineering', href: '/engineering-assignment-help' },
+];
+
 const SAUDI_CITY_HREFS = ['/assignment-help-riyadh', '/assignment-help-jeddah', '/assignment-help-dammam'];
 export const UK_CITY_LINKS = CITY_LINKS.filter((l) => !SAUDI_CITY_HREFS.includes(l.href));
 export const SAUDI_CITY_LINKS = CITY_LINKS.filter((l) => SAUDI_CITY_HREFS.includes(l.href));
@@ -185,6 +214,9 @@ export function linkGroupsForPage(slug: string): { title: string; links: { label
   }
   if (isSaudiCity || slug === 'assignment-help-saudi-arabia') {
     groups.push({ title: 'We support students across Saudi Arabia', links: SAUDI_CITY_LINKS.filter((l) => l.href !== self) });
+  }
+  if (SUBJECT_LINKS.some((l) => l.href === self)) {
+    groups.push({ title: 'Other subjects we support', links: SUBJECT_LINKS.filter((l) => l.href !== self) });
   }
   if (QUALIFICATION_GROUP_PAGES.includes(slug)) {
     groups.push({ title: 'Professional and vocational qualifications', links: QUALIFICATION_LINKS.filter((l) => l.href !== self) });

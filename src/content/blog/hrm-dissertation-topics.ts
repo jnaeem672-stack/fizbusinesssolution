@@ -163,5 +163,5 @@ export const hrmDissertationTopicsPost: BlogPost = {
       a: 'Usually yes, if your supervisor agrees and you can reach participants or data. Saudisation, women in the workforce and leadership in family businesses are popular choices.',
     },
   ],
-  relatedServices: ['dissertation-help-uk', 'business-management-assignment-help', 'cipd-assignment-help', 'research-proposal-help'],
+  relatedServices: ['dissertation-help-uk', 'hrm-assignment-help', 'cipd-assignment-help', 'research-proposal-help'],
 };

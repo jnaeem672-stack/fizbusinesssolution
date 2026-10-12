@@ -160,5 +160,5 @@ export const educationDissertationTopicsPost: BlogPost = {
       a: 'Yes. English language teaching, early childhood education and online learning in Saudi universities are popular areas linked to Vision 2030.',
     },
   ],
-  relatedServices: ['dissertation-help-uk', 'research-proposal-help', 'nvivo-thematic-analysis-help', 'research-methodology-help'],
+  relatedServices: ['dissertation-help-uk', 'education-assignment-help', 'research-proposal-help', 'nvivo-thematic-analysis-help'],
 };

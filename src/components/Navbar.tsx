@@ -108,7 +108,7 @@ const Navbar = () => {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute top-[70px] -left-24 w-[800px] bg-white shadow-2xl rounded-b-2xl border-t border-gray-50 p-8 grid grid-cols-3 gap-8"
+                      className="fixed top-[110px] left-1/2 -translate-x-1/2 w-[min(1080px,calc(100vw-32px))] bg-white shadow-2xl rounded-b-2xl border-t border-gray-50 p-8 grid grid-cols-4 gap-6"
                     >
                       {MEGA_MENU_CATEGORIES.map((col) => (
                         <div key={col.title}>
@@ -124,7 +124,7 @@ const Navbar = () => {
                           </ul>
                         </div>
                       ))}
-                      <div className="col-span-3 -mx-8 -mb-8 mt-2 px-8 py-4 bg-gradient-to-r from-navy to-navy-light rounded-b-2xl flex items-center justify-between gap-4">
+                      <div className="col-span-4 -mx-8 -mb-8 mt-2 px-8 py-4 bg-gradient-to-r from-navy to-navy-light rounded-b-2xl flex items-center justify-between gap-4">
                         <p className="text-white text-sm font-bold">
                           🎁 First order 10% OFF <span className="text-white/60 font-semibold">· Assignments from £20 per 1,000 words · Dissertations max £350</span>
                         </p>
