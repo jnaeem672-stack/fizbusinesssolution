@@ -41,7 +41,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     ],
   },
   {
-    title: 'Subject Help',
+    title: 'Subject & Qualification Help',
     services: [
       { id: 20, name: 'Business & Management Assignment Help', desc: 'Strategy, operations, HRM, leadership and international business assignments.', areas: 'Business' },
       { id: 21, name: 'MBA Assignment Help', desc: 'MBA assignments, case studies and dissertations for UK and Saudi Arabian business schools.', areas: 'MBA' },
@@ -51,6 +51,10 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       { id: 25, name: 'Law Assignment Help', desc: 'Case analysis, legal essays, problem questions and accurate OSCOLA referencing.', areas: 'Law' },
       { id: 26, name: 'Computing & IT Assignment Help', desc: 'Computer science, IT, data science and cyber security assignments and reports.', areas: 'Computing' },
       { id: 27, name: 'Engineering Assignment Help', desc: 'Civil, mechanical, electrical and petroleum engineering assignments and technical reports.', areas: 'Engineering' },
+      { id: 28, name: 'CIPD Assignment Help', desc: 'CIPD Level 3, 5 and 7 units in people management and L&D, mapped to every assessment criterion.', areas: 'CIPD' },
+      { id: 29, name: 'HND & HNC Assignment Help', desc: 'Pearson BTEC Higher National units with clear guidance on Pass, Merit and Distinction criteria.', areas: 'HND' },
+      { id: 30, name: 'CMI Assignment Help', desc: 'CMI Level 3, 5 and 7 management and leadership units, including apprenticeship programmes.', areas: 'CMI' },
+      { id: 31, name: 'OTHM & ATHE Assignment Help', desc: 'OTHM and ATHE diplomas from Level 3 to Level 7, including strategic management and leadership.', areas: 'Diplomas' },
     ],
   },
 ];

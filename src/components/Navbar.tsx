@@ -108,7 +108,7 @@ const Navbar = () => {
                       initial={{ opacity: 0, y: 10 }}
                       animate={{ opacity: 1, y: 0 }}
                       exit={{ opacity: 0, y: 10 }}
-                      className="absolute top-[70px] left-1/2 -translate-x-1/2 w-[800px] bg-white shadow-2xl rounded-b-2xl border-t border-gray-50 p-8 grid grid-cols-3 gap-8"
+                      className="absolute top-[70px] -left-24 w-[800px] bg-white shadow-2xl rounded-b-2xl border-t border-gray-50 p-8 grid grid-cols-3 gap-8"
                     >
                       {MEGA_MENU_CATEGORIES.map((col) => (
                         <div key={col.title}>

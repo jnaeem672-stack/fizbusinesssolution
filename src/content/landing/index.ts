@@ -39,6 +39,10 @@ import { arAssignmentHelpRiyadh } from './ar-assignment-help-riyadh';
 import { arAssignmentHelpJeddah } from './ar-assignment-help-jeddah';
 import { arAssignmentHelpDammam } from './ar-assignment-help-dammam';
 import { arDissertationHelpSaudiArabia } from './ar-dissertation-help-saudi-arabia';
+import { cipdAssignmentHelp } from './cipd-assignment-help';
+import { hndHncAssignmentHelp } from './hnd-hnc-assignment-help';
+import { cmiAssignmentHelp } from './cmi-assignment-help';
+import { othmAtheAssignmentHelp } from './othm-athe-assignment-help';
 
 export type { LandingContent } from './types';
 
@@ -80,6 +84,10 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   lawAssignmentHelp,
   computingItAssignmentHelp,
   engineeringAssignmentHelp,
+  cipdAssignmentHelp,
+  hndHncAssignmentHelp,
+  cmiAssignmentHelp,
+  othmAtheAssignmentHelp,
 ];
 
 /** Arabic landing pages, served at /ar/{slug} */
@@ -115,6 +123,13 @@ export const SERVICE_LINKS: { label: string; href: string }[] = [
   { label: 'SPSS Help', href: '/spss-help' },
   { label: 'PhD Admission & Scholarship Help', href: '/phd-admission-scholarship-help' },
   { label: 'مساعدة في الواجبات الجامعية', href: '/ar/assignment-help-saudi-arabia' },
+];
+
+export const QUALIFICATION_LINKS: { label: string; href: string }[] = [
+  { label: 'CIPD Assignment Help', href: '/cipd-assignment-help' },
+  { label: 'HND & HNC Assignment Help', href: '/hnd-hnc-assignment-help' },
+  { label: 'CMI Assignment Help', href: '/cmi-assignment-help' },
+  { label: 'OTHM & ATHE Assignment Help', href: '/othm-athe-assignment-help' },
 ];
 
 export const CITY_LINKS: { label: string; href: string }[] = [
