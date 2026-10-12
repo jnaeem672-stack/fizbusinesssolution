@@ -217,5 +217,5 @@ export const swotAndPestleAnalysisGuidePost: BlogPost = {
       a: "Only if your brief allows it. Most assignments ask you to analyse a real organisation using real evidence. If you use a real company, only include facts you can support with cited sources, and never invent figures. Check your assignment brief or ask your tutor if unsure."
     }
   ],
-  relatedServices: ["mba-assignment-help", "case-study-help", "assignment-help-uk"]
+  relatedServices: ["mba-assignment-help", "case-study-help", "assignment-help-uk", "hnd-hnc-assignment-help"]
 };

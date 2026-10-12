@@ -19,6 +19,7 @@ import {
   getLandingPage,
   landingLabel,
   landingPath,
+  linkGroupsForPage,
   type LandingContent,
 } from '@/content/landing';
 
@@ -80,6 +81,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const guides = matchedGuides.length ? matchedGuides : (page.locale === 'ar' ? AR_POSTS : EN_POSTS).slice(0, 3);
   const workSamples = page.locale === 'en' ? samplesForService(page.slug, 3) : [];
   const freeTools = page.locale === 'en' ? toolsForService(page.slug) : [];
+  const linkGroups = page.locale === 'en' ? linkGroupsForPage(page.slug) : [];
 
   const schema = [
     {
@@ -313,6 +315,20 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                 </ul>
               </div>
             )}
+            {linkGroups.map((group) => (
+              <div key={group.title} className="mt-4 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+                <h2 className="text-xl font-extrabold text-navy mb-4">{group.title}</h2>
+                <ul className="flex flex-wrap gap-2.5">
+                  {group.links.map((l) => (
+                    <li key={l.href}>
+                      <Link href={l.href} className="inline-flex items-center gap-1.5 rounded-full border border-gray-200 bg-white px-4 py-2 text-sm font-bold text-navy hover:border-primary hover:text-primary transition-colors">
+                        {l.label} <ChevronRight className="w-3.5 h-3.5 text-primary" />
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
           </article>
 
           <aside className="lg:col-span-4">

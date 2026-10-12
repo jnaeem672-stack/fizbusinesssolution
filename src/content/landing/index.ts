@@ -158,3 +158,36 @@ export const CITY_LINKS: { label: string; href: string }[] = [
   { label: 'Assignment Help Jeddah', href: '/assignment-help-jeddah' },
   { label: 'Assignment Help Dammam', href: '/assignment-help-dammam' },
 ];
+
+const SAUDI_CITY_HREFS = ['/assignment-help-riyadh', '/assignment-help-jeddah', '/assignment-help-dammam'];
+export const UK_CITY_LINKS = CITY_LINKS.filter((l) => !SAUDI_CITY_HREFS.includes(l.href));
+export const SAUDI_CITY_LINKS = CITY_LINKS.filter((l) => SAUDI_CITY_HREFS.includes(l.href));
+
+const QUALIFICATION_GROUP_PAGES = [
+  'assignment-help-uk',
+  'business-management-assignment-help',
+  'mba-assignment-help',
+  'healthcare-nursing-assignment-help',
+  'computing-it-assignment-help',
+  'engineering-assignment-help',
+  'coursework-report-help',
+  ...QUALIFICATION_LINKS.map((l) => l.href.slice(1)),
+];
+
+/** Groups of internal links shown inside the content of an English landing page */
+export function linkGroupsForPage(slug: string): { title: string; links: { label: string; href: string }[] }[] {
+  const self = `/${slug}`;
+  const groups: { title: string; links: { label: string; href: string }[] }[] = [];
+  const isUkCity = UK_CITY_LINKS.some((l) => l.href === self);
+  const isSaudiCity = SAUDI_CITY_LINKS.some((l) => l.href === self);
+  if (isUkCity || slug === 'assignment-help-uk' || slug === 'dissertation-help-uk') {
+    groups.push({ title: 'We support students across the UK', links: UK_CITY_LINKS.filter((l) => l.href !== self) });
+  }
+  if (isSaudiCity || slug === 'assignment-help-saudi-arabia') {
+    groups.push({ title: 'We support students across Saudi Arabia', links: SAUDI_CITY_LINKS.filter((l) => l.href !== self) });
+  }
+  if (QUALIFICATION_GROUP_PAGES.includes(slug)) {
+    groups.push({ title: 'Professional and vocational qualifications', links: QUALIFICATION_LINKS.filter((l) => l.href !== self) });
+  }
+  return groups.filter((g) => g.links.length > 0);
+}
