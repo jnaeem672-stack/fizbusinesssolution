@@ -10,7 +10,7 @@ import { TOOLS, TOOLS_PATH, toolPath } from '@/content/tools';
 
 const TITLE = 'Free Tools for University Students | FIZBS';
 const DESCRIPTION =
-  'Free tools for UK university students: a degree classification calculator, a Harvard referencing generator and a word counter with a words to pages converter.';
+  'Free tools for UK university students: a degree classification calculator, Harvard and APA referencing generators and a word counter with pages converter.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -28,21 +28,22 @@ export const metadata: Metadata = {
 const NEEDS: { need: string; tool: string; slug: string }[] = [
   { need: 'I want to know my degree class, or the marks I need for a First, 2:1 or Distinction', tool: 'Degree Classification Calculator', slug: 'degree-classification-calculator' },
   { need: 'I need to reference a book, chapter, journal article, website or report in Harvard', tool: 'Harvard Referencing Generator', slug: 'harvard-referencing-generator' },
+  { need: 'My course uses APA 7, for example in psychology, nursing, education or business', tool: 'APA Referencing Generator', slug: 'apa-referencing-generator' },
   { need: 'I need my word count without the reference list, or to know how many pages it fills', tool: 'Word Counter and Pages Converter', slug: 'word-counter' },
 ];
 
 const HUB_FAQS = [
   {
     q: 'Are the tools really free?',
-    a: 'Yes. All three tools are free to use, with no sign-up and no limit on how often you use them.',
+    a: 'Yes. All four tools are free to use, with no sign-up and no limit on how often you use them.',
   },
   {
     q: 'Is anything I type saved or sent to FIZBS?',
-    a: 'No. The tools run in your browser. Your marks and text are not sent to us. The Harvard generator keeps your reference list in your own browser only, so you can come back to it on the same device.',
+    a: 'No. The tools run in your browser. Your marks and text are not sent to us. The Harvard and APA generators keep your reference list in your own browser only, so you can come back to it on the same device.',
   },
   {
-    q: 'Which version of Harvard does the referencing generator use?',
-    a: 'It follows the Cite Them Right version of Harvard, which many UK universities use. Always check your module handbook, because some universities use their own variation.',
+    q: 'Which referencing styles do the generators use?',
+    a: 'The Harvard generator follows the Cite Them Right version of Harvard, which many UK universities use, and the APA generator follows APA 7th edition. Always check your module handbook, because some universities use their own variation.',
   },
   {
     q: "Will the degree calculator match my university's result?",
@@ -94,7 +95,7 @@ export default function Page() {
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-white tracking-tight leading-[1.15] mb-4">Free Tools for University Students</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Quick, free tools for the jobs every UK student faces: working out your degree classification, referencing your sources in Harvard, and checking your word count.
+            Quick, free tools for the jobs every UK student faces: working out your degree classification, referencing your sources in Harvard or APA, and checking your word count.
           </p>
           <p className="mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm font-bold text-white/85">
             <Lock className="w-4 h-4 text-[#C9A227]" /> No sign-up. Everything runs in your browser.
@@ -105,7 +106,7 @@ export default function Page() {
       <section className="py-12 md:py-16">
         <div className="max-w-[1100px] mx-auto px-4">
           <h2 className="sr-only">Tools</h2>
-          <ul className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
             {TOOLS.map((t) => {
               const Icon = TOOL_ICONS[t.slug];
               return (
@@ -157,7 +158,7 @@ export default function Page() {
         <div className="max-w-[900px] mx-auto px-4 text-gray-700 text-[17px] leading-relaxed">
           <h2 className="text-2xl md:text-3xl font-extrabold text-navy mb-4">Built for UK university rules</h2>
           <p className="mb-4">
-            Each tool follows the conventions most UK universities use: credit-weighted averages and the usual First, 2:1 and 2:2 bands, the Cite Them Right version of Harvard, and word count rules that leave out your reference list. Every university has its own regulations, so each tool explains what to check in your handbook.
+            Each tool follows the conventions most UK universities use: credit-weighted averages and the usual First, 2:1 and 2:2 bands, the Cite Them Right version of Harvard, APA 7th edition, and word count rules that leave out your reference list. Every university has its own regulations, so each tool explains what to check in your handbook.
           </p>
           <p>
             FIZ Business Solutions (FIZBS) has supported university students in the UK and Saudi Arabia since 2015. If you would like an expert to look at your work, our Master&apos;s and PhD-qualified team can help with feedback, proofreading and referencing.

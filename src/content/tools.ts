@@ -2,7 +2,7 @@
  * Free student tools at /tools/{slug}. Each tool page combines an interactive tool (client component)
  * with guide content, FAQs (FAQPage schema) and links to related services and guides.
  */
-export type ToolId = 'degree-classification-calculator' | 'harvard-referencing-generator' | 'word-counter';
+export type ToolId = 'degree-classification-calculator' | 'harvard-referencing-generator' | 'apa-referencing-generator' | 'word-counter';
 
 export interface ToolSection {
   heading: string;
@@ -267,6 +267,118 @@ export const TOOLS: ToolContent[] = [
     services: ['referencing-help', 'essay-help', 'proofreading-editing-services', 'literature-review-help'],
     guides: ['harvard-referencing-guide', 'apa-referencing-guide', 'how-to-paraphrase-and-avoid-plagiarism'],
     whatsappMessage: 'Hello FIZBS! I need help checking my Harvard references. Word count: , Deadline: ',
+  },
+  {
+    slug: 'apa-referencing-generator',
+    name: 'APA Referencing Generator',
+    metaTitle: 'Free APA 7 Referencing Generator | Books, Journals, Web',
+    metaDescription:
+      'Free APA 7th edition referencing generator for books, chapters, journal articles, websites and reports. Get your reference and in-text citation in seconds.',
+    h1: 'Free APA Referencing Generator (7th Edition)',
+    subtitle:
+      'Create APA 7 references and in-text citations for books, book chapters, journal articles, websites and reports. Build your reference list in alphabetical order and copy it straight into your document, italics included.',
+    cardText: 'APA 7 references and in-text citations for books, journals, websites and reports, with a sorted reference list.',
+    sections: [
+      {
+        heading: 'How to use the APA referencing generator',
+        steps: [
+          'Choose the type of source: book, chapter in an edited book, journal article, website or report.',
+          'Enter the authors, or an organisation if there is no individual author.',
+          'Fill in the year, the title in sentence case and the other details shown for that source type.',
+          'Copy the reference and the in-text citation, or add the reference to your list.',
+          'When your list is complete, copy it into your References page. It is sorted alphabetically for you.',
+        ],
+      },
+      {
+        heading: 'APA 7 reference formats used by this tool',
+        paragraphs: [
+          'Book, report and web page titles, journal names and journal volume numbers are italic in your reference. The generator adds the italics for you.',
+        ],
+        bullets: [
+          'Book: Author, A. A. (Year). Title of book (2nd ed.). Publisher. https://doi.org/xxxx',
+          'Chapter in an edited book: Author, A. A. (Year). Title of chapter. In E. E. Editor (Ed.), Title of book (pp. first-last). Publisher.',
+          'Journal article: Author, A. A., & Author, B. B. (Year). Title of article. Journal Name, Volume(Issue), first-last. https://doi.org/xxxx',
+          'Web page: Author or Organisation. (Year). Title of page. Website Name. URL',
+          'Report: Organisation. (Year). Title of report. Publisher. URL',
+        ],
+      },
+      {
+        heading: 'APA in-text citations',
+        paragraphs: [
+          'Every reference in your list needs at least one matching citation in your text, and every citation needs a matching reference. The generator gives you both forms:',
+        ],
+        bullets: [
+          'One author: (Smith, 2021) in brackets, or Smith (2021) in a sentence',
+          'Two authors: (Smith & Jones, 2021) in brackets, but Smith and Jones (2021) in a sentence',
+          'Three or more authors: (Smith et al., 2021), from the very first citation',
+          'Group author: (World Health Organization, 2023)',
+          'Direct quotes need a page number: (Smith, 2021, p. 45)',
+          'No date: (Smith, n.d.)',
+        ],
+      },
+      {
+        heading: 'APA 7 compared with APA 6',
+        paragraphs: ['If your older notes or a senior student\'s work use APA 6, these are the changes that catch most people out:'],
+        bullets: [
+          'The place of publication is no longer included for books',
+          'Up to 20 authors are listed in the reference list, instead of 7',
+          'et al. is used from the first citation for three or more authors',
+          'DOIs are written as links, for example https://doi.org/10.1191/1478088706qp063oa',
+          '"Retrieved from" is only used when a retrieval date is needed',
+        ],
+      },
+      {
+        heading: 'Common APA referencing mistakes',
+        bullets: [
+          'Using title case for book and article titles instead of sentence case',
+          'Forgetting the ampersand (&) before the last author in the reference list',
+          'Writing "and" inside brackets, or "&" in the running text',
+          'Leaving out the italics on the journal name and volume number',
+          'Adding "Retrieved from" or an access date when it is not needed',
+          'Mixing APA and Harvard punctuation in the same reference list',
+        ],
+      },
+      {
+        heading: 'Check your course guidance',
+        paragraphs: [
+          'Some departments ask for small changes to APA, for example in how they want secondary sources, lecture slides or unpublished material referenced. Always compare the output with your module handbook or library guide, and follow your department where it differs.',
+          'If you would like an expert to check a full reference list or correct citations throughout a draft, our referencing help covers APA, Harvard, OSCOLA, MLA and IEEE.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is APA referencing?',
+        a: 'APA is an author-date style from the American Psychological Association, widely used in psychology, education, nursing, business and the social sciences. You cite the surname and year in your text and list the full details of each source alphabetically at the end.',
+      },
+      {
+        q: 'Does this generator use APA 7?',
+        a: 'Yes. It follows the rules of the 7th edition of the APA Publication Manual, including up to 20 authors in the reference list, et al. for three or more authors in citations, and DOIs written as links.',
+      },
+      {
+        q: 'Will the generator change my titles to sentence case?',
+        a: 'No. Type book, article, report and web page titles in sentence case, capitalising only the first word, the first word after a colon and proper nouns. Type journal names in title case, as they appear on the journal.',
+      },
+      {
+        q: 'Do I need a retrieval date for a website?',
+        a: 'Usually not. APA 7 only asks for a retrieval date for pages that are designed to change over time and are not archived. For most web pages, the URL is enough.',
+      },
+      {
+        q: 'When do I use et al. in APA?',
+        a: 'From the first citation whenever a source has three or more authors, for example (Smith et al., 2021). The reference list itself includes up to 20 authors.',
+      },
+      {
+        q: 'How do I reference a source with no author?',
+        a: 'If an organisation published it, use the organisation as the author. If there is genuinely no author, leave the author empty: the title moves to the start of the reference and is used in the in-text citation.',
+      },
+      {
+        q: 'Is the generator free?',
+        a: 'Yes. It is free to use, needs no sign-up, and runs in your browser, so the details you enter are not sent to us.',
+      },
+    ],
+    services: ['referencing-help', 'psychology-assignment-help', 'healthcare-nursing-assignment-help', 'education-assignment-help'],
+    guides: ['apa-referencing-guide', 'harvard-referencing-guide', 'how-to-write-a-literature-review'],
+    whatsappMessage: 'Hello FIZBS! I need help checking my APA references. Word count: , Deadline: ',
   },
   {
     slug: 'word-counter',

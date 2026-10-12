@@ -49,6 +49,12 @@ import { assignmentHelpEdinburgh } from './assignment-help-edinburgh';
 import { assignmentHelpNottingham } from './assignment-help-nottingham';
 import { assignmentHelpSheffield } from './assignment-help-sheffield';
 import { assignmentHelpLiverpool } from './assignment-help-liverpool';
+import { assignmentHelpBristol } from './assignment-help-bristol';
+import { assignmentHelpNewcastle } from './assignment-help-newcastle';
+import { assignmentHelpLeicester } from './assignment-help-leicester';
+import { assignmentHelpCoventry } from './assignment-help-coventry';
+import { assignmentHelpCardiff } from './assignment-help-cardiff';
+import { assignmentHelpSouthampton } from './assignment-help-southampton';
 import { hrmAssignmentHelp } from './hrm-assignment-help';
 import { economicsAssignmentHelp } from './economics-assignment-help';
 import { psychologyAssignmentHelp } from './psychology-assignment-help';
@@ -94,6 +100,12 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   assignmentHelpNottingham,
   assignmentHelpSheffield,
   assignmentHelpLiverpool,
+  assignmentHelpBristol,
+  assignmentHelpNewcastle,
+  assignmentHelpLeicester,
+  assignmentHelpCoventry,
+  assignmentHelpCardiff,
+  assignmentHelpSouthampton,
   assignmentHelpRiyadh,
   assignmentHelpJeddah,
   assignmentHelpDammam,
@@ -198,6 +210,12 @@ export const CITY_LINKS: { label: string; href: string }[] = [
   { label: 'Assignment Help Nottingham', href: '/assignment-help-nottingham' },
   { label: 'Assignment Help Sheffield', href: '/assignment-help-sheffield' },
   { label: 'Assignment Help Liverpool', href: '/assignment-help-liverpool' },
+  { label: 'Assignment Help Bristol', href: '/assignment-help-bristol' },
+  { label: 'Assignment Help Newcastle', href: '/assignment-help-newcastle' },
+  { label: 'Assignment Help Leicester', href: '/assignment-help-leicester' },
+  { label: 'Assignment Help Coventry', href: '/assignment-help-coventry' },
+  { label: 'Assignment Help Cardiff', href: '/assignment-help-cardiff' },
+  { label: 'Assignment Help Southampton', href: '/assignment-help-southampton' },
   { label: 'Assignment Help Riyadh', href: '/assignment-help-riyadh' },
   { label: 'Assignment Help Jeddah', href: '/assignment-help-jeddah' },
   { label: 'Assignment Help Dammam', href: '/assignment-help-dammam' },
