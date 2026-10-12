@@ -191,3 +191,22 @@ Pay 50% Upfront Only
 - No student results or grade screenshots in ads or sitelinks.
 - Do not add "writing service" keywords.
 - One change at a time, then wait 5 to 7 days.
+
+## Competitor ad research (Google Ads Transparency Center, 12 Oct 2026)
+
+- Big organic brands (myassignmenthelp.com, locusassignments.com, ukassignmenthelp.uk, rapidassignmenthelp.co.uk,
+  globalassignmenthelp.com) showed **0 Google ads in the UK**. Searching "writing" showed only unrelated advertisers
+  (children's handwriting kits, will writing, bid writing, AI writing tools, grammar software, GCSE tutoring).
+- The one academic competitor found running ads: **bestassignments.com** (advertiser verified as an individual), 1 ad:
+  - Headline: "UK Academic Tutoring - Referencing Help UK"
+  - Description: "UK assignment, editing & referencing help. Call for a free consult."
+  - Final URL path: /tutoring/uk (a separate, tutoring-worded landing page)
+- Lesson: ads that run use tutoring / help / editing / referencing wording and point to a dedicated safe landing page.
+
+Optional headlines to test (swap in for weaker ones once data shows which headlines perform):
+```
+UK Academic Tutoring
+Referencing Help UK
+Book a Free Expert Call
+```
+("Book a Free Expert Call" only if the expert call stays free.)
