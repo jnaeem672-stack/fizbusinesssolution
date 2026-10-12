@@ -1,0 +1,143 @@
+import type { LandingContent } from './types';
+
+export const assignmentHelpGlasgow: LandingContent = {
+  slug: 'assignment-help-glasgow',
+  locale: 'en',
+  metaTitle: 'Assignment Help Glasgow | Online Support from £20',
+  metaDescription:
+    'Assignment help Glasgow students can use for essays, reports and Honours dissertations. Expert guidance, 24/7 WhatsApp and 10% off your first order.',
+  keywords: [
+    'assignment help Glasgow',
+    'dissertation help Glasgow',
+    'essay help Glasgow',
+    'Honours dissertation help',
+    'assignment help Scotland',
+    'MSc dissertation help Glasgow',
+  ],
+  badge: 'Glasgow Students',
+  h1: 'Assignment Help for Glasgow University Students',
+  heroSubtitle:
+    'Online expert guidance for students at Glasgow universities, from first-year essays to the Honours dissertation, with support that follows Scottish degree structures and your own marking criteria.',
+  highlights: ['Fully online support', 'From £20 per 1,000 words', 'Honours dissertations', '10% off first order'],
+  intro: [
+    "Glasgow is Scotland's largest city and one of the UK's biggest student centres, with universities spread from the West End to the city centre and beyond. If you are looking for assignment help Glasgow students can access around classes, part-time jobs and placements, FIZ Business Solutions (FIZBS) offers subject-specific support that runs entirely online.",
+    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and grade descriptors, and they understand how Scottish degrees differ from those in the rest of the UK.",
+  ],
+  sections: [
+    {
+      heading: 'Where our Glasgow students study',
+      paragraphs: [
+        'Students who contact us study at universities such as the University of Glasgow, the University of Strathclyde, Glasgow Caledonian University and the University of the West of Scotland, whose Paisley campus sits just outside the city. FIZBS is an independent service and is not affiliated with any university.',
+        "The University of Glasgow, founded in 1451, is a research-intensive Russell Group university and home to the Adam Smith Business School. The University of Strathclyde, in the city centre, is well known for business and engineering. Glasgow Caledonian University has a strong focus on health, nursing, social care and business, with many courses that combine study with practice placements.",
+      ],
+    },
+    {
+      heading: 'How Scottish degrees are structured',
+      paragraphs: [
+        "A Scottish undergraduate Honours degree usually takes four years. The first two years tend to be broader, and the final two, often called Junior Honours and Senior Honours, are where your degree classification is usually decided. That means third-year coursework counts, and the Senior Honours dissertation carries a lot of weight.",
+        "Taught Master's degrees in Scotland are usually one year long, with the dissertation written over the summer. In the Scottish Credit and Qualifications Framework (SCQF), an Honours degree sits at level 10 and a Master's degree at level 11.",
+        'Because your expert works from your own course handbook, the guidance reflects the year you are in and how much that work counts towards your final result.',
+      ],
+    },
+    {
+      heading: 'Understanding Glasgow grading scales',
+      paragraphs: [
+        'Not every university marks in percentages. The University of Glasgow, for example, uses a 22-point scale with letter grades from A1 down to H, where A grades broadly correspond to First Class work, B to a 2:1, C to a 2:2 and D to a Third. Other universities in the city use percentage marks.',
+        "Whichever system you are marked under, the grade descriptors explain what separates one band from the next. Our experts read those descriptors with you and show what moving up a band looks like in practice: deeper analysis, a more critical use of sources and a clearer line of argument.",
+      ],
+    },
+    {
+      heading: 'Support with your Honours dissertation',
+      paragraphs: [
+        'The Senior Honours dissertation is often the most demanding piece of work in a Scottish degree. Many students choose a topic and write a proposal in third year, then research and write the dissertation in fourth year alongside other modules.',
+        'Our experts can guide you on narrowing your topic, building a critical literature review, choosing and justifying a research method, and analysing your data with SPSS, Excel, NVivo, Stata or Python. Dissertation help is £30 per 1,000 words, with a maximum of £350 for any dissertation.',
+      ],
+      bullets: [
+        'Turning a broad interest into a focused research question',
+        'Writing a proposal with clear aims and a realistic plan',
+        'Structuring the literature review around themes and debates',
+        'Explaining your methodology and its limitations',
+        'Presenting findings and linking them back to the literature',
+      ],
+    },
+    {
+      heading: 'Business, engineering and health students',
+      paragraphs: [
+        'Business and management students in Glasgow often work on case studies, strategy reports and group projects with an individual element. Engineering students face technical reports, design projects and lab write-ups where clear structure and accurate presentation of results matter as much as the calculations. Nursing, health and social care students balance academic essays with practice placements and reflective writing.',
+      ],
+      bullets: [
+        'Strategy, marketing and HRM reports applied to real organisations',
+        'Technical and lab reports with clear methods, results and discussion',
+        'Reflective accounts for practice placements using Gibbs or Kolb',
+        'Evidence-based practice essays for nursing and health courses',
+        'Referencing in Harvard, APA or the style your school requires',
+      ],
+    },
+    {
+      heading: "Master's students in Glasgow",
+      paragraphs: [
+        "Glasgow's universities attract a large number of international students onto one-year Master's programmes in business, management, finance, engineering and public health. The pace is fast: assessments start within weeks, and the dissertation follows straight after the taught semesters.",
+        "Our experts can help you adjust quickly to UK academic expectations, plan your dissertation early and keep your literature review and methodology on track during the summer.",
+      ],
+    },
+    {
+      heading: 'What Glasgow students ask us for',
+      bullets: [
+        'Essay help with structure, argument and critical evaluation',
+        'Business reports and case study analysis',
+        'Honours and Master\'s dissertation guidance',
+        'Data analysis support with SPSS, NVivo and Excel',
+        'Reflective writing for placements',
+        'Proofreading from £12 per 1,000 words',
+        'Referencing checks before submission',
+      ],
+    },
+    {
+      heading: 'Pricing and deadlines',
+      paragraphs: [
+        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%.',
+        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
+      ],
+    },
+    {
+      heading: 'Getting started',
+      paragraphs: [
+        'Send your subject, word count and deadline on WhatsApp for a quick quote. If you would like your expert to follow your course closely, share your brief, grade descriptors or marking rubric, reading list and any feedback you have received. Everything you share stays confidential.',
+      ],
+    },
+  ],
+  faqs: [
+    {
+      q: 'Is FIZBS based in Glasgow?',
+      a: 'We are an online service rather than a local office. Students in Glasgow share their brief on WhatsApp or through our website and receive expert support remotely.',
+    },
+    {
+      q: 'Which Glasgow universities do you support?',
+      a: 'We support students from any university, including the University of Glasgow, the University of Strathclyde, Glasgow Caledonian University and the University of the West of Scotland. We are not affiliated with any institution.',
+    },
+    {
+      q: 'Do your experts understand Scottish degrees?',
+      a: 'Yes. Our experts work from your course handbook and understand the four-year Honours structure, the weight given to the Honours years and the grading scales used by Scottish universities.',
+    },
+    {
+      q: 'Can you help with my Honours dissertation?',
+      a: 'Yes. We support every stage, from your proposal and literature review to methodology, data analysis and your final chapters. Dissertation help is £30 per 1,000 words with a maximum of £350.',
+    },
+    {
+      q: 'My university uses letter grades. Can you still help?',
+      a: 'Yes. Whether you are marked on the 22-point scale or in percentages, your expert uses your grade descriptors to show what moving up a band requires.',
+    },
+    {
+      q: 'How much does assignment help in Glasgow cost?',
+      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. Shorter deadlines add 25% or 50%, and first-time customers get 10% off.',
+    },
+    {
+      q: 'How do I pay?',
+      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+    },
+  ],
+  ctaTitle: 'Get your Glasgow assignment price in minutes',
+  ctaText: 'Message us on WhatsApp any time or use the instant calculator to see your price. New customers get 10% off their first order.',
+  whatsappMessage: 'Hi FIZBS! I am a student in Glasgow and need assignment help. Subject: , Word count: , Deadline: ',
+  related: ['assignment-help-uk', 'dissertation-help-uk', 'assignment-help-edinburgh', 'research-methodology-help', 'spss-help'],
+};

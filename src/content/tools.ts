@@ -140,7 +140,7 @@ export const TOOLS: ToolContent[] = [
         a: 'No. The calculation runs in your browser and your marks are not sent to us or stored on our servers.',
       },
     ],
-    services: ['dissertation-help-uk', 'assignment-help-uk', 'draft-review-feedback', 'essay-help'],
+    services: ['dissertation-help-uk', 'assignment-help-uk', 'draft-review-feedback', 'essay-help', 'assignment-help-glasgow', 'assignment-help-edinburgh'],
     guides: ['uk-university-grading-system', 'how-to-write-a-dissertation', 'how-to-structure-a-university-essay'],
     whatsappMessage: 'Hello FIZBS! I used your degree calculator and would like help improving my marks. Subject: , Deadline: ',
   },

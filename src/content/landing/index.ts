@@ -43,6 +43,12 @@ import { cipdAssignmentHelp } from './cipd-assignment-help';
 import { hndHncAssignmentHelp } from './hnd-hnc-assignment-help';
 import { cmiAssignmentHelp } from './cmi-assignment-help';
 import { othmAtheAssignmentHelp } from './othm-athe-assignment-help';
+import { assignmentHelpLeeds } from './assignment-help-leeds';
+import { assignmentHelpGlasgow } from './assignment-help-glasgow';
+import { assignmentHelpEdinburgh } from './assignment-help-edinburgh';
+import { assignmentHelpNottingham } from './assignment-help-nottingham';
+import { assignmentHelpSheffield } from './assignment-help-sheffield';
+import { assignmentHelpLiverpool } from './assignment-help-liverpool';
 
 export type { LandingContent } from './types';
 
@@ -60,6 +66,12 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   assignmentHelpLondon,
   assignmentHelpManchester,
   assignmentHelpBirmingham,
+  assignmentHelpLeeds,
+  assignmentHelpGlasgow,
+  assignmentHelpEdinburgh,
+  assignmentHelpNottingham,
+  assignmentHelpSheffield,
+  assignmentHelpLiverpool,
   assignmentHelpRiyadh,
   assignmentHelpJeddah,
   assignmentHelpDammam,
@@ -136,6 +148,12 @@ export const CITY_LINKS: { label: string; href: string }[] = [
   { label: 'Assignment Help London', href: '/assignment-help-london' },
   { label: 'Assignment Help Manchester', href: '/assignment-help-manchester' },
   { label: 'Assignment Help Birmingham', href: '/assignment-help-birmingham' },
+  { label: 'Assignment Help Leeds', href: '/assignment-help-leeds' },
+  { label: 'Assignment Help Glasgow', href: '/assignment-help-glasgow' },
+  { label: 'Assignment Help Edinburgh', href: '/assignment-help-edinburgh' },
+  { label: 'Assignment Help Nottingham', href: '/assignment-help-nottingham' },
+  { label: 'Assignment Help Sheffield', href: '/assignment-help-sheffield' },
+  { label: 'Assignment Help Liverpool', href: '/assignment-help-liverpool' },
   { label: 'Assignment Help Riyadh', href: '/assignment-help-riyadh' },
   { label: 'Assignment Help Jeddah', href: '/assignment-help-jeddah' },
   { label: 'Assignment Help Dammam', href: '/assignment-help-dammam' },
