@@ -9,6 +9,7 @@ import Footer from '@/components/Footer';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import FloatingDiscount from '@/components/FloatingDiscount';
 import CookieConsent from '@/components/CookieConsent';
+import LeadSourceTracker from '@/components/LeadSourceTracker';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { SOCIAL_URLS } from '@/constants/social';
 
@@ -71,8 +72,25 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               foundingDate: '2015',
               sameAs: SOCIAL_URLS,
               founder: [
-                { '@type': 'Person', name: 'Sajjad Akbar Ali' },
-                { '@type': 'Person', name: 'Fawad Hussain Khan' },
+                { '@type': 'Person', name: 'Sajjad Akbar Ali', jobTitle: 'Co-Founder', url: 'https://fizbusinessolutions.com/experts/sajjad-akbar-ali' },
+                { '@type': 'Person', name: 'Fawad Hussain Khan', jobTitle: 'Co-Founder', url: 'https://fizbusinessolutions.com/experts/fawad-hussain-khan' },
+              ],
+              email: 'jnaeem672@gmail.com',
+              knowsAbout: [
+                'Business and management',
+                'MBA',
+                'Marketing',
+                'Finance and accounting',
+                'Human resource management',
+                'Economics',
+                'Healthcare and nursing',
+                'Education',
+                'Psychology',
+                'Computing and IT',
+                'Research methods',
+                'SPSS and data analysis',
+                'Harvard and APA referencing',
+                'CIPD, CMI, HND and OTHM qualifications',
               ],
               areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates'],
               priceRange: '£20 - £350',
@@ -147,6 +165,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <FloatingDiscount />
           <FloatingWhatsApp />
           <CookieConsent />
+          <LeadSourceTracker />
         </Providers>
       </body>
     </html>

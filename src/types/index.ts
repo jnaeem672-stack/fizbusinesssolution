@@ -33,6 +33,8 @@ export interface SupportRequestFormData {
   currentProgress?: string;
   learningGoals?: string;
   academicIntegrityConfirmed: boolean;
+  /** How the visitor reached the website (first touch this session) */
+  leadSource?: { channel: string; detail: string; landing: string };
   uploadedFiles?: UploadedFile[];
 }
 

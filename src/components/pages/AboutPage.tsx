@@ -18,6 +18,7 @@ import TeamTeaser from '@/components/team/TeamTeaser';
 import FaqSection from '@/components/FaqSection';
 import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 import { SUPPORT_FORM_HASH } from '@/constants/supportNavigation';
+import KeyFacts from '@/components/about/KeyFacts';
 
 const values: { title: string; icon: LucideIcon; desc: string }[] = [
   { title: 'Qualified Experts', icon: UserRoundCheck, desc: "Master's and PhD-qualified specialists in business, management, finance, health, law, computing and more." },
@@ -109,7 +110,9 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-20 bg-white">
+      <KeyFacts />
+
+      <section className="py-16 md:py-20 bg-gray-50">
         <div className="max-w-5xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-14 text-gray-600 text-[17px] leading-relaxed">
           <div>
             <h2 className="text-3xl md:text-4xl font-black text-navy mb-5">Our Story</h2>

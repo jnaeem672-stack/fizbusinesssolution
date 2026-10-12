@@ -24,7 +24,7 @@ const sections = [
           <li><strong>Support-request information:</strong> subject area, education level, support type, learning goals, current progress, preferred dates, and referencing style.</li>
           <li><strong>Uploaded materials:</strong> drafts, assessment guidance, feedback, or other files you are permitted to share.</li>
           <li><strong>Communication data:</strong> messages sent through forms, email, or WhatsApp.</li>
-          <li><strong>Technical data:</strong> IP address, browser, device, pages visited, and cookie preferences where available.</li>
+          <li><strong>Technical data:</strong> IP address, browser, device, pages visited, how you reached our website (for example a search engine, an advert or a referring website, sent with any quote request you submit), and cookie preferences where available.</li>
         </ul>
       </>
     ),

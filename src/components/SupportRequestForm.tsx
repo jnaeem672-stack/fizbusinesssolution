@@ -7,6 +7,7 @@ import SubmitButton from './ui/SubmitButton';
 import FileUploadZone from './support/FileUploadZone';
 import { useFileUpload } from '@/hooks/useFileUpload';
 import { sendSupportRequestEmail } from '@/utils/api';
+import { getLeadSource } from '@/lib/leadSource';
 import { countries, supportTypes, educationLevels } from '@/constants/supportOptions';
 import type { SupportRequestFormData } from '@/types';
 
@@ -84,7 +85,7 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
   const onSubmit = async (data: SupportRequestFormData) => {
     setIsSubmitting(true);
     try {
-      await sendSupportRequestEmail({ ...data, uploadedFiles });
+      await sendSupportRequestEmail({ ...data, uploadedFiles, leadSource: getLeadSource() });
 
       // Google Ads conversion: Support request submitted
       const gtag = (window as unknown as { gtag?: (...args: unknown[]) => void }).gtag;

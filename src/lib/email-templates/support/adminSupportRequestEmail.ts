@@ -43,6 +43,7 @@ export function adminSupportRequestEmail({
     learningGoals,
     academicIntegrityConfirmed,
     uploadedFiles = [],
+    leadSource,
   } = data;
 
   const safeName = escapeHtml(fullName);
@@ -83,6 +84,10 @@ export function adminSupportRequestEmail({
       ${detailRow('Learning Goals', learningGoals ? formatMultiline(learningGoals) : '—')}
       ${detailRow('Integrity Confirmation', academicIntegrityConfirmed ? 'Confirmed' : 'Not confirmed')}
       ${detailRow('Submitted At', formatDateTime(new Date().toISOString()))}
+      ${tableSectionHeader('📈 How They Found Us')}
+      ${detailRow('Channel', leadSource?.channel ? escapeHtml(leadSource.channel) : 'Not recorded')}
+      ${detailRow('Source Details', leadSource?.detail ? escapeHtml(leadSource.detail) : '—')}
+      ${detailRow('First Page Visited', leadSource?.landing ? escapeHtml(leadSource.landing) : '—')}
     `)}
     ${sectionTitle('📎 Uploaded Drafts or Supporting Files', attachedNote)}
     ${attachmentList(uploadedFiles, attachmentCount > 0)}

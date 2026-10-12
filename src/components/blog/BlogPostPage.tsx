@@ -9,6 +9,8 @@ import { expertCallUrl, EXPERT_CALL } from '@/constants/expertCall';
 import { SITE_URL, getLandingPage, landingLabel, landingPath, type LandingContent } from '@/content/landing';
 import { EN_POSTS, AR_POSTS, postPath, readingMinutes, sectionId, type BlogPost } from '@/content/blog';
 import { TOOLS, toolPath } from '@/content/tools';
+import { GUIDE_GEO } from '@/content/blog/geo';
+import { getExpert } from '@/content/experts';
 import { TOOL_ICONS } from '@/components/tools/toolIcons';
 
 const LABELS = {
@@ -72,6 +74,9 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
   const morePosts = [...others.filter((p) => p.category === post.category), ...others.filter((p) => p.category !== post.category)].slice(0, 3);
   const ids = post.sections.map((s, i) => sectionId(s.heading, i, post.locale));
   const tools = isAr ? [] : TOOLS.filter((tool) => tool.guides.includes(post.slug));
+  const geo = isAr ? undefined : GUIDE_GEO[post.slug];
+  const specialist = geo ? getExpert(geo.specialist) : undefined;
+  const modified = geo?.updated ?? post.published;
 
   const schema = [
     {
@@ -83,7 +88,8 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
       mainEntityOfPage: url,
       inLanguage: isAr ? 'ar' : 'en-GB',
       datePublished: post.published,
-      dateModified: post.published,
+      dateModified: modified,
+      ...(geo ? { abstract: geo.quickAnswer } : {}),
       articleSection: post.category,
       keywords: post.keywords.join(', '),
       author: { '@type': 'Organization', name: 'FIZ Business Solutions academic team', url: `${SITE_URL}/our-team` },
@@ -126,7 +132,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
           <p className="text-gray-300 text-lg leading-relaxed max-w-3xl mb-6">{post.excerpt}</p>
           <div className="flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/70 font-semibold">
             <Link href="/our-team" className="underline-offset-4 hover:underline hover:text-white">{t.by}</Link>
-            <span className="inline-flex items-center gap-1.5"><CalendarDays className="w-4 h-4 text-primary" /> {t.updated} {formatDate(post.published, post.locale)}</span>
+            <span className="inline-flex items-center gap-1.5"><CalendarDays className="w-4 h-4 text-primary" /> {t.updated} {formatDate(modified, post.locale)}</span>
             <span className="inline-flex items-center gap-1.5"><Clock className="w-4 h-4 text-primary" /> {minutes} {t.read}</span>
           </div>
         </div>
@@ -136,6 +142,12 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
       <section className="py-12 md:py-16 bg-white" dir={isAr ? 'rtl' : undefined}>
         <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
           <article className="lg:col-span-8 text-gray-700 text-[17px] leading-relaxed">
+            {geo && (
+              <div id="quick-answer" className="mb-8 rounded-2xl border-l-4 border-[#C9A227] bg-[#FBF6E6] p-6">
+                <p className="text-sm font-black uppercase tracking-widest text-primary mb-2">Quick answer</p>
+                <p className="text-navy text-[17px] leading-relaxed">{geo.quickAnswer}</p>
+              </div>
+            )}
             <div className="space-y-5 mb-10">
               {post.intro.map((p, i) => (
                 <p key={i} className={i === 0 ? 'text-lg text-navy font-medium' : undefined}>{p}</p>
@@ -225,6 +237,22 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                   <PhoneCall className="w-4 h-4 text-[#25D366]" /> {EXPERT_CALL[post.locale].sideCta}
                 </WhatsAppLink>
               </div>
+
+              {specialist && (
+                <div className="rounded-3xl p-7 border border-gray-100 bg-white shadow-sm">
+                  <p className="text-lg font-extrabold text-navy mb-1">Talk to a specialist</p>
+                  <p className="text-sm text-gray-600 mb-4">Questions about this topic? Our specialist can help with your own work.</p>
+                  <Link href={`/experts/${specialist.slug}`} className="group flex items-center gap-3">
+                    <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${specialist.gradient} text-sm font-black text-white`}>
+                      {specialist.initials}
+                    </span>
+                    <span>
+                      <span className="block font-extrabold text-navy group-hover:text-primary transition-colors">{specialist.name}</span>
+                      <span className="block text-xs font-semibold text-gray-500">{specialist.qualification} · {specialist.title}</span>
+                    </span>
+                  </Link>
+                </div>
+              )}
 
               {tools.length > 0 && (
                 <div className="rounded-3xl p-7 border border-[#E9DCAE] bg-[#FBF6E6]">

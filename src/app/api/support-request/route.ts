@@ -34,7 +34,12 @@ export async function POST(request: NextRequest) {
     }
 
     const uploadedFiles = sanitizeUploadedFiles(data.uploadedFiles);
-    const safeData: SupportRequestFormData = { ...data, uploadedFiles };
+    const clip = (v: unknown) => (typeof v === 'string' ? v.slice(0, 200) : '');
+    const leadSource =
+      data.leadSource && typeof data.leadSource === 'object'
+        ? { channel: clip(data.leadSource.channel), detail: clip(data.leadSource.detail), landing: clip(data.leadSource.landing) }
+        : undefined;
+    const safeData: SupportRequestFormData = { ...data, uploadedFiles, leadSource };
     const requestRef = generateRequestRef();
     const attachments = await buildEmailAttachments(uploadedFiles);
 
