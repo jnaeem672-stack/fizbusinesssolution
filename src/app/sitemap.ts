@@ -4,54 +4,53 @@ import { EXPERTS } from '@/content/experts';
 import { EN_POSTS, AR_POSTS, postPath } from '@/content/blog';
 import { SAMPLES, samplePath } from '@/content/samples';
 import { TOOLS, TOOLS_PATH, toolPath } from '@/content/tools';
+import { GUIDE_GEO } from '@/content/blog/geo';
 
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
+  // lastmod is only given where we know when the content really changed (guides and samples).
+  // A build date on every page would tell Google nothing and can make it ignore lastmod altogether.
   const core: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}/`, lastModified, changeFrequency: 'weekly', priority: 1 },
-    { url: `${SITE_URL}/ar`, lastModified, changeFrequency: 'weekly', priority: 0.95 },
-    { url: `${SITE_URL}/services`, lastModified, changeFrequency: 'weekly', priority: 0.9 },
-    { url: `${SITE_URL}/about`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${SITE_URL}/our-team`, lastModified, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${SITE_URL}/contact`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${SITE_URL}/terms`, lastModified, changeFrequency: 'yearly', priority: 0.3 },
-    { url: `${SITE_URL}/privacy-policy`, lastModified, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${SITE_URL}/`, changeFrequency: 'weekly', priority: 1 },
+    { url: `${SITE_URL}/ar`, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${SITE_URL}/services`, changeFrequency: 'weekly', priority: 0.9 },
+    { url: `${SITE_URL}/about`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${SITE_URL}/our-team`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${SITE_URL}/contact`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE_URL}/terms`, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${SITE_URL}/privacy-policy`, changeFrequency: 'yearly', priority: 0.3 },
   ];
   const landing: MetadataRoute.Sitemap = [
     ...EN_LANDING_PAGES.map((page) => ({
       url: `${SITE_URL}/${page.slug}`,
-      lastModified,
       changeFrequency: 'weekly' as const,
       priority: page.slug.startsWith('assignment-help-') && !['assignment-help-uk', 'assignment-help-saudi-arabia'].includes(page.slug) ? 0.8 : 0.9,
     })),
     ...AR_LANDING_PAGES.map((page) => ({
       url: `${SITE_URL}/ar/${page.slug}`,
-      lastModified,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     })),
   ];
   const experts: MetadataRoute.Sitemap = EXPERTS.map((e) => ({
     url: `${SITE_URL}/experts/${e.slug}`,
-    lastModified,
     changeFrequency: 'monthly' as const,
     priority: 0.6,
   }));
   const blog: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}/blog`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${SITE_URL}/ar/blog`, lastModified, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${SITE_URL}/blog`, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/ar/blog`, changeFrequency: 'weekly', priority: 0.7 },
     ...[...EN_POSTS, ...AR_POSTS].map((post) => ({
       url: `${SITE_URL}${postPath(post)}`,
-      lastModified: new Date(post.published),
+      lastModified: new Date((post.locale === 'en' && GUIDE_GEO[post.slug]?.updated) || post.published),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
     })),
   ];
   const samples: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}/samples`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
-    { url: `${SITE_URL}/results`, lastModified, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/samples`, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${SITE_URL}/results`, changeFrequency: 'weekly', priority: 0.8 },
     ...SAMPLES.map((sample) => ({
       url: `${SITE_URL}${samplePath(sample)}`,
       lastModified: new Date(sample.published),
@@ -60,10 +59,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })),
   ];
   const tools: MetadataRoute.Sitemap = [
-    { url: `${SITE_URL}${TOOLS_PATH}`, lastModified, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${SITE_URL}${TOOLS_PATH}`, changeFrequency: 'monthly', priority: 0.8 },
     ...TOOLS.map((tool) => ({
       url: `${SITE_URL}${toolPath(tool)}`,
-      lastModified,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     })),

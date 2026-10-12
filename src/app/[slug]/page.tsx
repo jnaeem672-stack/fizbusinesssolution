@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     keywords: page.keywords,
     alternates: {
       canonical: url,
-      ...(hasArabic && { languages: { 'en-GB': url, 'ar-SA': `${SITE_URL}/ar/${page.slug}` } }),
+      ...(hasArabic && { languages: { 'en-GB': url, 'ar-SA': `${SITE_URL}/ar/${page.slug}`, 'x-default': url } }),
     },
     openGraph: { title: page.metaTitle, description: page.metaDescription, url, type: 'website', locale: 'en_GB' },
   };

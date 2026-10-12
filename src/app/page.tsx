@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     'FIZ Business Solutions (FIZBS): assignment and dissertation help for UK and Saudi students. From £20 per 1,000 words, 10% off your first order.',
   alternates: {
     canonical: 'https://fizbusinessolutions.com/',
-    languages: { 'en-GB': 'https://fizbusinessolutions.com/', 'ar-SA': 'https://fizbusinessolutions.com/ar' },
+    languages: { 'en-GB': 'https://fizbusinessolutions.com/', 'ar-SA': 'https://fizbusinessolutions.com/ar', 'x-default': 'https://fizbusinessolutions.com/' },
   },
   openGraph: {
     title: TITLE,

@@ -12,6 +12,8 @@ import { AR_POSTS, EN_POSTS, guidesForService, postPath } from '@/content/blog';
 import { samplePath, samplesForService } from '@/content/samples';
 import { toolPath, toolsForService } from '@/content/tools';
 import { TOOL_ICONS } from '@/components/tools/toolIcons';
+import { PAGE_SPECIALISTS } from '@/content/landing/specialists';
+import { getExpert } from '@/content/experts';
 import { EXPERT_CALL, expertCallUrl } from '@/constants/expertCall';
 import ExpertCallSection from '@/components/ExpertCallSection';
 import {
@@ -82,6 +84,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const workSamples = page.locale === 'en' ? samplesForService(page.slug, 3) : [];
   const freeTools = page.locale === 'en' ? toolsForService(page.slug) : [];
   const linkGroups = page.locale === 'en' ? linkGroupsForPage(page.slug) : [];
+  const specialists = page.locale === 'en' ? (PAGE_SPECIALISTS[page.slug] ?? []).map((s) => getExpert(s)).filter((e) => e !== undefined) : [];
 
   const schema = [
     {
@@ -312,6 +315,24 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                       </li>
                     );
                   })}
+                </ul>
+              </div>
+            )}
+            {specialists.length > 0 && (
+              <div className="mt-4 rounded-2xl border border-gray-200 bg-white p-6">
+                <h2 className="text-xl font-extrabold text-navy mb-4">Specialists in this subject</h2>
+                <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {specialists.map((e) => (
+                    <li key={e.slug}>
+                      <Link href={`/experts/${e.slug}`} className="group flex items-center gap-3">
+                        <span className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-gradient-to-br ${e.gradient} text-sm font-black text-white`}>{e.initials}</span>
+                        <span>
+                          <span className="block font-extrabold text-navy group-hover:text-primary transition-colors">{e.name}</span>
+                          <span className="block text-xs font-semibold text-gray-500">{e.qualification} · {e.title}</span>
+                        </span>
+                      </Link>
+                    </li>
+                  ))}
                 </ul>
               </div>
             )}
