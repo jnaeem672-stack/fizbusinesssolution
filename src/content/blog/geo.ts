@@ -179,4 +179,16 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     specialist: 'omar-f',
     updated: '2026-10-12',
   },
+  'how-to-write-a-research-proposal': {
+    quickAnswer:
+      "A research proposal explains what you want to study, why it matters and how you will do it. Most include a title, background, research problem, aim, objectives and research questions, a short literature review, methodology, research approval and consent, a timeline and references. Master's proposals are often 1,000 to 3,000 words, and PhD proposals are commonly longer.",
+    specialist: 'sajjad-akbar-ali',
+    updated: '2026-10-13',
+  },
+  'quantitative-vs-qualitative-research': {
+    quickAnswer:
+      'Quantitative research collects numerical data, usually through surveys, experiments or existing datasets, and analyses it with statistics to measure and test relationships. Qualitative research collects words and observations, usually through interviews or focus groups, and analyses them for themes to understand experiences. Choose quantitative for how much or to what extent questions, and qualitative for how and why questions.',
+    specialist: 'sophia-l',
+    updated: '2026-10-13',
+  },
 };

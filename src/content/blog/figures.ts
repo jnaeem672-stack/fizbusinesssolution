@@ -170,4 +170,26 @@ export const GUIDE_FIGURES: Record<string, GuideFigure[]> = {
       height: 834,
     },
   ],
+  "how-to-write-a-research-proposal": [
+    {
+      section: "Research proposal structure: section by section",
+      src: '/images/guides/research-proposal-structure.svg',
+      alt: "The usual order of a research proposal: title, introduction and background, research problem, aim, objectives and questions, literature review, methodology, approval and consent, timeline and references.",
+      caption: "The usual order of sections in a research proposal. Check your university template for its exact headings.",
+      width: 800,
+      height: 967,
+      position: 'afterText',
+    },
+  ],
+  "quantitative-vs-qualitative-research": [
+    {
+      section: "Quantitative vs qualitative: the key differences",
+      src: '/images/guides/quantitative-vs-qualitative.svg',
+      alt: "Comparison table: quantitative research asks how much or to what extent, uses numbers, larger samples, surveys and statistics, and gives generalisable patterns; qualitative research asks how and why, uses words, smaller purposive samples, interviews and thematic coding, and gives deep understanding of a context.",
+      caption: "How quantitative and qualitative research differ, from the questions they ask to the results they give.",
+      width: 800,
+      height: 676,
+      position: 'top',
+    },
+  ],
 };

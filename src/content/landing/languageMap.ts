@@ -18,6 +18,15 @@ export const AR_SLUGS = [
   'phd-admission-scholarship-help',
 ];
 
+/** Guides that exist in both languages with the same slug (the switcher links straight to the other version) */
+export const BILINGUAL_GUIDE_SLUGS = [
+  'human-vs-ai-academic-writing',
+  'how-to-write-a-research-proposal',
+  'quantitative-vs-qualitative-research',
+  'apa-referencing-guide',
+  'how-to-write-an-abstract',
+];
+
 export const EN_ONLY_FALLBACK: Record<string, string> = {
   'dissertation-help-saudi-arabia': '/dissertation-help-uk',
 };
@@ -26,8 +35,11 @@ export const EN_ONLY_FALLBACK: Record<string, string> = {
 export function alternateLanguagePath(pathname: string): { href: string; toArabic: boolean } {
   const clean = pathname.replace(/\/+$/, '') || '/';
   // Blog: articles differ per language, so switch to the other language's blog index
-  if (clean === '/ar/blog' || clean.startsWith('/ar/blog/')) return { href: '/blog', toArabic: false };
-  if (clean === '/blog' || clean.startsWith('/blog/')) return { href: '/ar/blog', toArabic: true };
+  const guide = /^\/(?:ar\/)?blog\/([^/]+)$/.exec(clean)?.[1];
+  if (clean === '/ar/blog' || clean.startsWith('/ar/blog/'))
+    return { href: guide && BILINGUAL_GUIDE_SLUGS.includes(guide) ? `/blog/${guide}` : '/blog', toArabic: false };
+  if (clean === '/blog' || clean.startsWith('/blog/'))
+    return { href: guide && BILINGUAL_GUIDE_SLUGS.includes(guide) ? `/ar/blog/${guide}` : '/ar/blog', toArabic: true };
   if (clean === '/ar' || clean.startsWith('/ar/')) {
     const slug = clean === '/ar' ? '' : clean.slice(4);
     if (!slug) return { href: '/', toArabic: false };

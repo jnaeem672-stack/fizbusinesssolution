@@ -34,6 +34,8 @@ import { financeAccountingDissertationTopicsPost } from './finance-accounting-di
 import { nursingHealthcareDissertationTopicsPost } from './nursing-healthcare-dissertation-topics';
 import { educationDissertationTopicsPost } from './education-dissertation-topics';
 import { computerScienceDissertationTopicsPost } from './computer-science-dissertation-topics';
+import { howToWriteAResearchProposalPost } from './how-to-write-a-research-proposal';
+import { quantitativeVsQualitativeResearchPost } from './quantitative-vs-qualitative-research';
 
 export type { BlogPost } from './types';
 
@@ -43,7 +45,9 @@ export const EN_POSTS: BlogPost[] = [
   howToWriteADissertationPost,
   businessDissertationTopicsPost,
   howToWriteALiteratureReviewPost,
+  howToWriteAResearchProposalPost,
   dissertationMethodologyGuidePost,
+  quantitativeVsQualitativeResearchPost,
   harvardReferencingGuidePost,
   whichStatisticalTestSpssPost,
   ukUniversityGradingSystemPost,
