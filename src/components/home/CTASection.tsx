@@ -56,7 +56,7 @@ const CTASection = ({
             <Award className="w-4 h-4 text-primary" /> Since 2015
           </span>
           <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider">
-            <Clock className="w-4 h-4 text-primary" /> On-Time Delivery
+            <Clock className="w-4 h-4 text-primary" /> Deadline Planning
           </span>
           <span className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider">
             <ShieldCheck className="w-4 h-4 text-primary" /> 100% Confidential

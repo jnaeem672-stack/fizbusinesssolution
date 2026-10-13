@@ -10,7 +10,7 @@ const promises = [
     icon: UserRoundCheck,
   },
   {
-    title: 'On-Time Delivery',
+    title: 'Planned Around Your Deadline',
     desc: 'We plan around your deadline and keep you updated on WhatsApp at every stage.',
     icon: Clock,
   },

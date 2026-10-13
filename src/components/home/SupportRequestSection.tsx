@@ -7,7 +7,7 @@ import SectionHeader from '@/components/ui/SectionHeader';
 
 const principles = [
   { icon: BookOpenCheck, text: "Qualified Master's and PhD subject experts" },
-  { icon: CheckCircle2, text: 'On-time delivery with updates on WhatsApp' },
+  { icon: CheckCircle2, text: 'Planned around your deadline, with updates on WhatsApp' },
   { icon: Lock, text: '100% confidential: your details are never shared' },
 ];
 

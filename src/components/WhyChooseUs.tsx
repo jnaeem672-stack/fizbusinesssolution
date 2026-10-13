@@ -12,7 +12,7 @@ const features: { title: string; desc: string; icon: LucideIcon }[] = [
     icon: UserRoundCheck,
   },
   {
-    title: 'On-Time, Every Time',
+    title: 'Planned Around Your Deadline',
     desc: 'Deadlines from 48 hours to several weeks, with regular progress updates on WhatsApp.',
     icon: Clock,
   },

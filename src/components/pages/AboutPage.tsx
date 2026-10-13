@@ -22,7 +22,7 @@ import KeyFacts from '@/components/about/KeyFacts';
 
 const values: { title: string; icon: LucideIcon; desc: string }[] = [
   { title: 'Qualified Experts', icon: UserRoundCheck, desc: "Master's and PhD-qualified specialists in business, management, finance, health, law, computing and more." },
-  { title: 'On-Time Delivery', icon: Clock, desc: 'We plan around your deadline, from 48 hours to several weeks, and keep you updated on WhatsApp.' },
+  { title: 'Planned Around Your Deadline', icon: Clock, desc: 'We plan around your deadline, from 48 hours to several weeks, and keep you updated on WhatsApp.' },
   { title: 'Fair UK Pricing', icon: BadgePoundSterling, desc: 'Transparent prices in GBP from £20 per 1,000 words, with 10% off your first order.' },
   { title: '100% Confidential', icon: ShieldCheck, desc: 'Your name, university and files are kept private and never shared with anyone.' },
 ];

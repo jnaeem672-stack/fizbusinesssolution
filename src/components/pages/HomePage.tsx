@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, type ReactNode } from 'react';
 import HomeHero from '@/components/home/HomeHero';
 import ServicesGrid from '@/components/ServicesGrid';
 import QuoteCalculator from '@/QuoteCalculator';
@@ -20,7 +20,7 @@ import { HOME_FAQS } from '@/content/homeFaqs';
 import StickyHelpBanner from '@/components/home/StickyHelpBanner';
 import { useSupportFormScroll } from '@/hooks/useSupportFormScroll';
 
-export default function HomePage({ guides }: { guides: GuideCard[] }) {
+export default function HomePage({ guides, seo }: { guides: GuideCard[]; seo?: ReactNode }) {
   const [showHelper, setShowHelper] = useState(false);
   useSupportFormScroll();
 
@@ -59,6 +59,7 @@ export default function HomePage({ guides }: { guides: GuideCard[] }) {
         <Testimonials />
         <ResultsStrip />
         <LatestGuides posts={guides} />
+        {seo}
         <PaymentSection className="bg-white" />
         <FaqSection
           faqs={HOME_FAQS}

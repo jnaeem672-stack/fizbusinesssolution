@@ -26,7 +26,7 @@ const features = [
   'Qualified Subject Experts',
   'Harvard, APA & OSCOLA Referencing',
   '100% Confidential',
-  'On-Time Delivery',
+  'Deadline Planning',
   '24/7 WhatsApp Support',
 ];
 
@@ -95,7 +95,7 @@ export default function HomeHero() {
               className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white mb-6 tracking-tight leading-[1.08]"
             >
               Assignment &amp; Dissertation Help{' '}
-              <span className="gradient-text">UK &amp; Saudi Arabia</span>
+              <span className="gradient-text">UK, Saudi Arabia &amp; UAE</span>
             </h1>
 
             <div className="h-12 sm:h-14 mb-6 flex items-center">
