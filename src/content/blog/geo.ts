@@ -57,7 +57,7 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       "At most UK universities, a First Class degree is 70% and above, a 2:1 is 60 to 69%, a 2:2 is 50 to 59% and a Third is 40 to 49%. Taught Master's degrees are usually graded Distinction (70% and above), Merit (60 to 69%) and Pass (50 to 59%). Marks above 70 are reserved for excellent work.",
     specialist: 'sajjad-akbar-ali',
-    updated: '2026-10-13',
+    updated: '2026-10-14',
   },
   'how-to-email-a-phd-supervisor': {
     quickAnswer:

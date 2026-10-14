@@ -46,7 +46,7 @@ const GROUPS: { title: string; links: { label: string; href: string }[]; rtl?: b
     title: 'Saudi Arabia',
     links: [{ label: 'Assignment Help Saudi Arabia', href: '/assignment-help-saudi-arabia' }, ...SAUDI_CITY_LINKS],
   },
-  { title: 'United Arab Emirates', links: UAE_LINKS },
+  { title: 'UAE and USA', links: [...UAE_LINKS, { label: 'Assignment Help USA', href: '/assignment-help-usa' }] },
   { title: 'Free student tools', links: TOOLS.map((t) => ({ label: t.name, href: toolPath(t) })) },
   { title: 'بالعربية', links: AR_SERVICE_LINKS, rtl: true },
 ];
@@ -76,8 +76,8 @@ export default function HomeSeoHub() {
             </p>
             <p>
               We work with Bachelor&apos;s, Master&apos;s, MBA and PhD students at UK universities, at Saudi universities in English or
-              Arabic, at UK and international branch campuses in the UAE, and on distance learning programmes taken from anywhere in the
-              world. Everything happens online, through WhatsApp and this website, at any hour.
+              Arabic, at UK and international branch campuses in the UAE, at colleges and universities in the United States, and on distance
+              learning programmes taken from anywhere in the world. Everything happens online, through WhatsApp and this website, at any hour.
             </p>
           </div>
 
@@ -104,7 +104,8 @@ export default function HomeSeoHub() {
             UK students get experts who know British grade bands, critical writing and Harvard or APA referencing. Students in Saudi Arabia
             can message us in Arabic or English, read our Arabic pages and pay in Saudi riyals by local bank transfer. Students in the UAE
             get guidance that follows the standards of their UK or international branch campus, with prices in GBP and the AED equivalent
-            on request.
+            on request. Students in the United States get guidance on APA and MLA papers, capstone projects and theses, with the US
+            dollar equivalent on request.
           </p>
 
           <h3 className="mt-10 text-2xl font-extrabold text-navy mb-3">Clear pricing</h3>

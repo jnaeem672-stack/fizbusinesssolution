@@ -23,7 +23,7 @@ const SCHEMA = {
       contactType: 'customer support',
       telephone: '+971543800388',
       email: 'jnaeem672@gmail.com',
-      areaServed: ['GB', 'SA', 'AE'],
+      areaServed: ['GB', 'SA', 'AE', 'US'],
       availableLanguage: ['English'],
       hoursAvailable: {
         '@type': 'OpeningHoursSpecification',

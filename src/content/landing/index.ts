@@ -68,6 +68,7 @@ import { assignmentHelpTaif } from './assignment-help-taif';
 import { assignmentHelpQassim } from './assignment-help-qassim';
 import { assignmentHelpTabuk } from './assignment-help-tabuk';
 import { assignmentHelpUae } from './assignment-help-uae';
+import { assignmentHelpUsa } from './assignment-help-usa';
 import { assignmentHelpDubai } from './assignment-help-dubai';
 import { assignmentHelpAbuDhabi } from './assignment-help-abu-dhabi';
 import { arAssignmentHelpMakkah } from './ar-assignment-help-makkah';
@@ -121,6 +122,7 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   assignmentHelpUae,
   assignmentHelpDubai,
   assignmentHelpAbuDhabi,
+  assignmentHelpUsa,
   essayHelp,
   courseworkReportHelp,
   caseStudyHelp,
@@ -194,6 +196,7 @@ export const SERVICE_LINKS: { label: string; href: string }[] = [
   { label: 'MBA Assignment Help', href: '/mba-assignment-help' },
   { label: 'Assignment Help Saudi Arabia', href: '/assignment-help-saudi-arabia' },
   { label: 'Assignment Help UAE', href: '/assignment-help-uae' },
+  { label: 'Assignment Help USA', href: '/assignment-help-usa' },
   { label: 'Research Proposal Help', href: '/research-proposal-help' },
   { label: 'SPSS Help', href: '/spss-help' },
   { label: 'PhD Admission & Scholarship Help', href: '/phd-admission-scholarship-help' },
@@ -338,6 +341,16 @@ export function linkGroupsForPage(slug: string, locale: 'en' | 'ar' = 'en'): { t
   if (UAE_LINKS.some((l) => l.href === self)) {
     groups.push({ title: 'We support students across the UAE', links: UAE_LINKS.filter((l) => l.href !== self) });
     groups.push({ title: 'We also support students in Saudi Arabia', links: SAUDI_CITY_LINKS.slice(0, 3) });
+  }
+  if (slug === 'assignment-help-usa') {
+    groups.push({
+      title: 'We also support students in the UK, Saudi Arabia and the UAE',
+      links: [
+        { label: 'Assignment Help UK', href: '/assignment-help-uk' },
+        { label: 'Assignment Help Saudi Arabia', href: '/assignment-help-saudi-arabia' },
+        { label: 'Assignment Help UAE', href: '/assignment-help-uae' },
+      ],
+    });
   }
   if (SUBJECT_LINKS.some((l) => l.href === self)) {
     groups.push({ title: 'Other subjects we support', links: SUBJECT_LINKS.filter((l) => l.href !== self) });

@@ -92,7 +92,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 'Harvard and APA referencing',
                 'CIPD, CMI, HND and OTHM qualifications',
               ],
-              areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates'],
+              areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates', 'United States'],
               priceRange: '£20 - £350',
               serviceType: [
                 'Assignment help',

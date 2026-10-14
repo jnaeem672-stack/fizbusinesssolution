@@ -94,7 +94,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       description: page.metaDescription,
       url,
       serviceType: landingLabel(page),
-      areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates'],
+      areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates', 'United States'],
       provider: {
         '@type': 'ProfessionalService',
         name: 'FIZ Business Solutions',

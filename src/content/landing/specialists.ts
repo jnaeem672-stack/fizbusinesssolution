@@ -39,6 +39,7 @@ export const PAGE_SPECIALISTS: Record<string, string[]> = {
   'assignment-help-cardiff': ['maya-c', 'ayesha-h'],
   'assignment-help-southampton': ['ahmed-k', 'hassan-r'],
   'assignment-help-uae': ['james-p', 'ahmed-k'],
+  'assignment-help-usa': ['james-p', 'sophia-l', 'hassan-r'],
   'assignment-help-dubai': ['james-p', 'sara-m'],
   'assignment-help-abu-dhabi': ['clara-v', 'priya-d'],
   'assignment-help-riyadh': ['james-p', 'ahmed-k'],

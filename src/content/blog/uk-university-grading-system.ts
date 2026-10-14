@@ -13,6 +13,8 @@ export const ukUniversityGradingSystemPost: BlogPost = {
     `first class honours percentage`,
     `2:2 degree meaning`,
     `Master's distinction merit pass`,
+    `UK Master's degree grading system`,
+    `Master's distinction percentage`,
     `UK grades for international students`,
   ],
   category: `Study Skills`,
@@ -70,7 +72,7 @@ export const ukUniversityGradingSystemPost: BlogPost = {
       tip: `Many universities use borderline rules. For example, if your average is just below a boundary (such as 59.5% or 68.5%), the exam board may look at how many of your credits fall in the higher band. Your handbook will explain whether and how this applies.`,
     },
     {
-      heading: `Master's grades: distinction, merit and pass`,
+      heading: `UK Master's degree grading system: distinction, merit and pass`,
       paragraphs: [
         `Taught Master's degrees (such as an MSc, MA or MBA) are not classified as Firsts or 2:1s. Instead, most UK universities award a distinction, merit or pass. The bands commonly used are:`,
       ],
@@ -79,6 +81,41 @@ export const ukUniversityGradingSystemPost: BlogPost = {
         `Merit: commonly 60 to 69% overall, sometimes with a minimum dissertation mark.`,
         `Pass: commonly 50 to 59%. At postgraduate level, the pass mark for modules is usually 50% rather than 40%.`,
         `Fail: below the pass mark, although many universities allow resits or compensation for a limited number of credits.`,
+      ],
+      subsections: [
+        {
+          heading: `How your overall Master's grade is calculated`,
+          paragraphs: [
+            `A taught Master's degree in the UK is usually worth 180 credits: around 120 credits of taught modules and a dissertation or final project worth around 60 credits. Your overall mark is normally a credit-weighted average, so the dissertation alone can count for about a third of the final result.`,
+            `Some universities add extra rules. For example, a distinction may be awarded only if a set number of credits, often including the dissertation, are at 70% or above, or a borderline average such as 68% may be raised if most of your credits are in the higher band.`,
+          ],
+        },
+        {
+          heading: `Why the dissertation often decides your grade`,
+          paragraphs: [
+            `Because of its weight, the dissertation is often the deciding factor between a merit and a distinction. Many programmes also set a minimum dissertation mark for each grade, so strong marks in your taught modules may not be enough on their own. Plan your dissertation early, agree your research approach with your supervisor and use their feedback on each chapter.`,
+          ],
+        },
+        {
+          heading: `Resits, compensation and exit awards`,
+          bullets: [
+            `Compensation: some universities let you pass overall with a narrowly failed module, often a mark of 40 to 49%, if your other marks are strong enough.`,
+            `Resits: the mark for a resit module is often capped at the pass mark, usually 50%, which can affect your chance of a merit or distinction.`,
+            `Exit awards: if you complete the taught modules but not the dissertation, you may receive a Postgraduate Diploma (usually 120 credits) or a Postgraduate Certificate (usually 60 credits) instead of the Master's.`,
+          ],
+        },
+        {
+          heading: `How Master's grades appear on your certificate`,
+          paragraphs: [
+            `Your award is usually written as, for example, 'MSc Management with Distinction' or 'MA Education with Merit'. A pass is shown simply as the degree title, such as 'MBA'. Your transcript lists the individual module marks.`,
+          ],
+        },
+        {
+          heading: `Master's grades and PhD applications`,
+          paragraphs: [
+            `Many UK PhD programmes ask for a Master's with merit, and some also set a minimum dissertation mark. A distinction strengthens a scholarship application, but supervisors also look closely at your research proposal and research experience, so check the entry requirements of each programme.`,
+          ],
+        },
       ],
       tip: `The higher pass mark at Master's level catches many students out. A mark of 45% that would pass an undergraduate module may be a fail on a postgraduate one, so check the regulations for your programme.`,
     },
@@ -191,7 +228,7 @@ export const ukUniversityGradingSystemPost: BlogPost = {
       heading: `Need help with your UK university grades?`,
       paragraphs: [
         `If you are aiming to move up a grade band, FIZBS (FIZ Business Solutions) has supported students since 2015, with experts holding Master's and PhD qualifications across business, management, MBA, finance and many other subjects. Our team can give expert guidance on structure, critical analysis, referencing and proofreading, and help you understand your feedback and marking criteria.`,
-        `You can message us on WhatsApp at any time, 24/7, and book a WhatsApp call with an expert before ordering. Assignment help starts from £20 per 1,000 words, proofreading from £12 per 1,000 words, and you get 10% off your first order. Everything is 100% confidential.`,
+        `You can message us on WhatsApp at any time, 24/7, and book a WhatsApp call with an expert before ordering. Guidance and feedback on assignments start from £20 per 1,000 words, proofreading from £12 per 1,000 words, and you get 10% off your first order. Everything is 100% confidential.`,
       ],
     },
   ],
@@ -211,6 +248,18 @@ export const ukUniversityGradingSystemPost: BlogPost = {
     {
       q: `What is the pass mark for a Master's degree in the UK?`,
       a: `The pass mark for taught Master's modules is commonly 50%, compared with 40% at undergraduate level. Merit is commonly 60 to 69% and distinction 70% and above, but each university sets its own rules, so confirm in your programme handbook.`,
+    },
+    {
+      q: `What is a distinction in a Master's degree?`,
+      a: `A distinction is the highest grade for a taught Master's degree in the UK. It is commonly awarded for an overall average of 70% or above, often with a dissertation mark of at least 70% as well, and signals consistently excellent work.`,
+    },
+    {
+      q: `Is a merit good for a Master's degree?`,
+      a: `Yes. A merit, commonly 60 to 69% overall, shows very good work. It meets the usual entry requirement for many UK PhD programmes and is well regarded by employers.`,
+    },
+    {
+      q: `What happens if I fail my Master's dissertation?`,
+      a: `Most universities allow one resubmission of a failed dissertation, sometimes with the mark capped at the pass mark. If you still do not pass, you may receive a Postgraduate Diploma for your taught credits instead. Check your university's regulations for the exact rules.`,
     },
     {
       q: `Can I do a Master's with a 2:2?`,
