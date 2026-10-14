@@ -191,4 +191,16 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     specialist: 'sophia-l',
     updated: '2026-10-13',
   },
+  'how-to-write-a-dissertation-discussion': {
+    quickAnswer:
+      'The discussion chapter interprets your findings and explains what they mean. Briefly restate your aim, then for each key finding explain its meaning, compare it with the studies in your literature review, account for differences or surprises and set out the implications. Finish with the main limitations and a link to your conclusion. It is often about 20 to 25% of the word count.',
+    specialist: 'sajjad-akbar-ali',
+    updated: '2026-10-14',
+  },
+  'primary-vs-secondary-research': {
+    quickAnswer:
+      'Primary research means collecting new data yourself, for example through questionnaires, interviews or experiments. Secondary research uses data or studies that already exist, such as journal articles, official statistics or company reports. Primary data fits your question exactly but takes longer; secondary data is quicker and often larger but was collected for another purpose. Many dissertations combine both.',
+    specialist: 'sophia-l',
+    updated: '2026-10-14',
+  },
 };

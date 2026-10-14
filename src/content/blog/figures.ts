@@ -192,4 +192,26 @@ export const GUIDE_FIGURES: Record<string, GuideFigure[]> = {
       position: 'top',
     },
   ],
+  "how-to-write-a-dissertation-discussion": [
+    {
+      section: "Discussion chapter structure",
+      src: '/images/guides/discussion-chapter-structure.svg',
+      alt: "The usual order of a dissertation discussion chapter: introduction, interpretation, comparison with the literature, unexpected findings, implications, limitations and summary.",
+      caption: "The usual order of sections in a dissertation discussion chapter, from introduction to summary.",
+      width: 800,
+      height: 781,
+      position: 'afterText',
+    },
+  ],
+  "primary-vs-secondary-research": [
+    {
+      section: "Primary vs secondary research: the key differences",
+      src: '/images/guides/primary-vs-secondary.svg',
+      alt: "Comparison table: primary research is collected by you for your own question through questionnaires, interviews or experiments, usually takes more time and needs approval for research with people; secondary research uses existing articles, statistics or reports, is usually quicker and larger, but was collected for another purpose.",
+      caption: "How primary and secondary research differ, from who collects the data to the approval you need.",
+      width: 800,
+      height: 655,
+      position: 'top',
+    },
+  ],
 };

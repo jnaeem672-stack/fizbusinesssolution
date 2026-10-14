@@ -36,6 +36,8 @@ import { educationDissertationTopicsPost } from './education-dissertation-topics
 import { computerScienceDissertationTopicsPost } from './computer-science-dissertation-topics';
 import { howToWriteAResearchProposalPost } from './how-to-write-a-research-proposal';
 import { quantitativeVsQualitativeResearchPost } from './quantitative-vs-qualitative-research';
+import { howToWriteADissertationDiscussionPost } from './how-to-write-a-dissertation-discussion';
+import { primaryVsSecondaryResearchPost } from './primary-vs-secondary-research';
 
 export type { BlogPost } from './types';
 
@@ -48,6 +50,7 @@ export const EN_POSTS: BlogPost[] = [
   howToWriteAResearchProposalPost,
   dissertationMethodologyGuidePost,
   quantitativeVsQualitativeResearchPost,
+  primaryVsSecondaryResearchPost,
   harvardReferencingGuidePost,
   whichStatisticalTestSpssPost,
   ukUniversityGradingSystemPost,
@@ -59,6 +62,7 @@ export const EN_POSTS: BlogPost[] = [
   swotAndPestleAnalysisGuidePost,
   howToParaphraseAndAvoidPlagiarismPost,
   howToWriteADissertationIntroductionPost,
+  howToWriteADissertationDiscussionPost,
   howToWriteADissertationConclusionPost,
   howToWriteAnAbstractPost,
   apaReferencingGuidePost,
