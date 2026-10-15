@@ -113,6 +113,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             }),
           }}
         />
+        {/* Ahrefs Web Analytics: cookieless, no personal data. Separate from the Google Ads tag below. */}
+        <script src="https://analytics.ahrefs.com/analytics.js" data-key="TxLBMbGB1JMz1MncuJJ6UA" async></script>
       </head>
       <body className="antialiased">
         <Script
