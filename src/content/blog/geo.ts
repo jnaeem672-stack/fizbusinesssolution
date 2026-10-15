@@ -117,7 +117,7 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       'An abstract is a short summary of your whole study, usually 150 to 300 words. A simple five-part structure works well: the background, the aim, the method, the key findings and the conclusion or implications. Write it last, in the past tense for what you did, and stay within the word limit.',
     specialist: 'meera-k',
-    updated: '2026-10-13',
+    updated: '2026-10-15',
   },
   'apa-referencing-guide': {
     quickAnswer:

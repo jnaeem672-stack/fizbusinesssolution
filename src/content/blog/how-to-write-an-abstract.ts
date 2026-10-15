@@ -3,25 +3,27 @@ import type { BlogPost } from './types';
 export const howToWriteAnAbstractPost: BlogPost = {
   slug: 'how-to-write-an-abstract',
   locale: 'en',
-  title: 'How to Write an Abstract for a Dissertation or Research Paper (With Example)',
-  metaTitle: 'How to Write an Abstract: Structure and Example',
+  title: 'How to Write an Abstract for a Dissertation or Research Paper (With Examples)',
+  metaTitle: 'How to Write an Abstract: Structure and Examples',
   metaDescription:
-    'Learn how to write an abstract for a dissertation or research paper: structure, word count, tense and keywords, with a worked example and checklist.',
+    'Learn how to write an abstract for a dissertation or research paper: structure, word count, tense and keywords, with four examples and a checklist.',
   keywords: [
     'how to write an abstract',
     'dissertation abstract example',
+    'abstract example',
+    'abstract examples',
     'abstract structure',
     'research paper abstract',
     'abstract word count',
   ],
   category: 'Academic Writing',
   excerpt:
-    'An abstract is a short summary of your whole study. Here is a simple five-part structure, a worked example and a checklist so yours is clear, complete and within the word limit.',
+    'An abstract is a short summary of your whole study. Here is a simple five-part structure, four examples for different types of study and a checklist so yours is clear, complete and within the word limit.',
   published: '2026-10-10',
   intro: [
     'The abstract is often the shortest part of a dissertation or research paper, yet it is one of the most read. Markers, examiners and journal editors use it to decide what your study is about before they read anything else. Knowing how to write an abstract well means you can summarise months of work in a single, clear paragraph.',
     'Most abstracts are between 150 and 300 words, although dissertations sometimes allow more. The exact limit depends on your university or journal, so always check the guidance. What matters most is that the abstract covers the whole study: why you did it, how you did it, what you found and what it means.',
-    'This guide gives you a simple structure, explains common rules about tense and keywords, and includes an illustrative example you can use as a model.',
+    'This guide gives you a simple structure, explains common rules about tense and keywords, and includes four illustrative examples, for qualitative, quantitative and literature-based studies, that you can use as models.',
   ],
   sections: [
     {
@@ -88,6 +90,33 @@ export const howToWriteAnAbstractPost: BlogPost = {
         'The example below is illustrative and describes an invented study. It is about 190 words.',
         '"Hybrid working has become common in professional services, yet little is known about how small firms maintain employee engagement in hybrid teams. This study aimed to explore how managers in small and medium-sized UK accounting firms support engagement in hybrid teams. A qualitative design was adopted, using semi-structured interviews with 12 managers and employees from five firms. Data were analysed using thematic analysis. Three themes emerged: the importance of informal check-ins, uneven access to development opportunities, and unclear expectations about availability. Employees valued regular, informal contact with managers more than formal engagement schemes, but junior staff felt less visible when working remotely. The findings suggest that small firms can improve engagement through structured but informal communication routines and fairer allocation of development opportunities. The study contributes to research on hybrid working by highlighting the experiences of smaller firms, and it offers practical recommendations for managers in the sector."',
       ],
+    },
+    {
+      heading: 'More abstract examples for different types of study',
+      paragraphs: [
+        'Each example below is illustrative and describes an invented study, so do not cite it. Notice how every example gives most of its words to the method and findings, and ends with what the results mean.',
+      ],
+      subsections: [
+        {
+          heading: 'Quantitative abstract example (marketing, about 170 words)',
+          paragraphs: [
+            '"Social media influencers are widely used in fashion marketing, but evidence on how trust in influencers affects purchase intention among young UK consumers remains limited. This study examined the relationship between perceived influencer credibility and purchase intention among consumers aged 18 to 25. A quantitative cross-sectional design was used, with an online questionnaire completed by 214 respondents recruited through social media. Credibility was measured across trustworthiness, expertise and attractiveness, and the data were analysed using correlation and multiple regression in SPSS. Trustworthiness was the strongest predictor of purchase intention, while attractiveness had no significant effect once the other dimensions were controlled for. The findings suggest that fashion brands should choose influencers whose audiences regard them as honest rather than simply popular. Because the sample was self-selected and limited to one age group, further research with broader samples is recommended."',
+          ],
+        },
+        {
+          heading: 'Qualitative abstract example (nursing, about 160 words)',
+          paragraphs: [
+            '"Newly qualified nurses often describe their first year in practice as stressful, and preceptorship programmes are intended to support this transition. This study explored newly qualified nurses\' experiences of preceptorship on adult wards in one NHS trust. A qualitative descriptive design was used, with semi-structured interviews conducted with eight nurses in their first year of practice, and the transcripts were analysed using reflexive thematic analysis. Three themes were identified: protected time as the foundation of support, the preceptor as a role model, and learning to ask for help. Participants valued preceptorship most when meetings were protected from ward pressures, and several felt unsupported when staffing shortages cancelled sessions. The findings indicate that the value of preceptorship depends less on its formal content than on whether time is reliably protected. Trusts may strengthen support by scheduling preceptorship time in advance and monitoring cancellations."',
+          ],
+        },
+        {
+          heading: 'Literature review abstract example (education, about 165 words)',
+          paragraphs: [
+            '"Retrieval practice, in which learners recall information from memory, is widely promoted in UK schools, but its effectiveness in everyday secondary classrooms is less clear than in laboratory studies. This dissertation reviewed classroom-based research on retrieval practice in secondary education published between 2010 and 2025. A systematic search of ERIC and the British Education Index identified 23 studies that met the inclusion criteria, which were appraised for quality and synthesised thematically. Most studies reported improved recall of factual knowledge, particularly when low-stakes quizzes were spaced over time. Evidence for benefits to higher-order skills, such as extended writing, was limited and mixed, and few studies followed students for longer than one term. The review concludes that retrieval practice is a useful strategy for consolidating knowledge, but that claims about wider benefits are not yet well supported. Longer-term classroom studies across a wider range of subjects are recommended."',
+          ],
+        },
+      ],
+      tip: 'Compare the three examples: the quantitative one names variables and the direction of results, the qualitative one names its themes, and the literature review states how sources were found and what patterns they showed.',
     },
     {
       heading: 'Keywords',
