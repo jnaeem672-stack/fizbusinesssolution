@@ -33,6 +33,57 @@ export const assignmentHelpLondon: LandingContent = {
       ],
     },
     {
+      heading: "London universities we support",
+      paragraphs: ["We support students at every university in London. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "UCL (University College London)",
+          paragraphs: ["UCL is a research-intensive Russell Group university in Bloomsbury with strengths across the sciences, social sciences, education and the built environment. Modules usually expect extensive independent reading and critical, research-led writing.", "Our experts can help with:"],
+          bullets: ["Critical essays built on wide academic reading", "Research proposals and dissertations in education, management and the social sciences", "Statistical and qualitative analysis for research projects"],
+        },
+        {
+          heading: "King's College London",
+          paragraphs: ["King's is a Russell Group university with campuses along the Thames, including the Strand and Guy's. It is well known for health and nursing, law, and business through King's Business School.", "Our experts can help with:"],
+          bullets: ["Evidence-based nursing and health essays", "Law problem questions with OSCOLA referencing", "Business and management reports"],
+        },
+        {
+          heading: "LSE (London School of Economics and Political Science)",
+          paragraphs: ["LSE specialises in the social sciences, including economics, finance, management, politics and international relations. Assessment combines exams with essays and dissertations that demand rigorous argument.", "Our experts can help with:"],
+          bullets: ["Essays that build a clear, critical argument", "Economics and finance dissertations with quantitative analysis", "Policy and international relations essays"],
+        },
+        {
+          heading: "Queen Mary University of London",
+          paragraphs: ["Queen Mary is a Russell Group university based mainly at Mile End in East London, with strengths in law, business and management, economics, engineering and medicine.", "Our experts can help with:"],
+          bullets: ["Business and economics coursework", "Law essays and problem questions", "Engineering reports and projects"],
+        },
+        {
+          heading: "City St George's, University of London",
+          paragraphs: ["City St George's was formed in 2024 when City, University of London joined with St George's. It is home to Bayes Business School and is known for business and finance, law, journalism, nursing and health sciences.", "Our experts can help with:"],
+          bullets: ["Finance, accounting and MBA assignments", "Nursing and health science essays", "Journalism and law coursework"],
+        },
+        {
+          heading: "University of Greenwich",
+          paragraphs: ["Greenwich teaches at its historic Maritime Greenwich campus, at Avery Hill and at Medway in Kent. It is known for business, computing, nursing and engineering, and has many international students.", "Our experts can help with:"],
+          bullets: ["Business and computing reports", "Nursing and health assignments", "Guidance for international students new to UK marking"],
+        },
+        {
+          heading: "Middlesex University",
+          paragraphs: ["Middlesex is based in Hendon, North London, and is known for business, law, psychology, nursing and computing, with a large international student community.", "Our experts can help with:"],
+          bullets: ["Business and law coursework", "Psychology research reports in APA style", "Clear academic English and Harvard referencing"],
+        },
+        {
+          heading: "University of Westminster",
+          paragraphs: ["Westminster teaches across central London sites, including Regent Street and Marylebone, and is known for business, media and communication, architecture, computer science and law.", "Our experts can help with:"],
+          bullets: ["Business and marketing reports", "Media and communication essays", "Computing projects and technical reports"],
+        },
+        {
+          heading: "London campuses of other UK universities",
+          paragraphs: ["Several universities based elsewhere also teach in the capital, including Ulster University, Coventry University, Northumbria University, the University of Sunderland and Anglia Ruskin University. Many of their students are international postgraduates on business, management, health and computing courses who study while working.", "Our experts can help with:"],
+          bullets: ["Business and MBA assignments on real organisations", "Reflective essays and professional portfolios", "Staged deadlines planned around your work shifts"],
+        },
+      ],
+    },
+    {
       heading: 'Built for busy London schedules',
       paragraphs: [
         "Many London students juggle study with part-time work in retail, hospitality or office roles, and evening learners at places like Birkbeck often fit lectures around full-time jobs. When your free time arrives at 11pm, it helps to have support that is still available.",

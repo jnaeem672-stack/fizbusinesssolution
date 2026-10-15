@@ -25,10 +25,34 @@ export const assignmentHelpLiverpool: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Liverpool students study',
-      paragraphs: [
-        'Students who contact us study at universities such as the University of Liverpool, Liverpool John Moores University, Liverpool Hope University and Edge Hill University in nearby Ormskirk, as well as the Liverpool School of Tropical Medicine. FIZBS is an independent service and is not affiliated with any university.',
-        'The University of Liverpool is a research-intensive Russell Group university with a management school in the city and a campus in London. Liverpool John Moores University offers a wide range of applied courses through faculties such as Liverpool Business School, and is well known for sport and exercise science. Liverpool Hope University and Edge Hill University both have a strong tradition in education and teacher training, and Edge Hill also in nursing and health.',
+      heading: "Universities in Liverpool we support",
+      paragraphs: ["We support students at every university in Liverpool. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Liverpool",
+          paragraphs: ["A Russell Group university with a well-known management school and strengths in medicine, health and life sciences. It also offers online Master's programmes, including an online MBA.", "Our experts can help with:"],
+          bullets: ["Management essays and dissertations", "Health and life science assignments", "Online MBA coursework"],
+        },
+        {
+          heading: "Liverpool John Moores University (LJMU)",
+          paragraphs: ["LJMU is known for business, sport and exercise science, nursing, engineering and maritime studies, with many applied and professional courses.", "Our experts can help with:"],
+          bullets: ["Business and maritime reports", "Sport science lab reports", "Nursing assignments"],
+        },
+        {
+          heading: "Liverpool Hope University",
+          paragraphs: ["Hope, with its main campus in Childwall, is known for education, psychology, business and the humanities, taught in small seminar groups.", "Our experts can help with:"],
+          bullets: ["Education essays", "Psychology research reports", "Humanities essays"],
+        },
+        {
+          heading: "Edge Hill University",
+          paragraphs: ["Edge Hill, in nearby Ormskirk, is known for teacher training, nursing and health, business and the creative arts.", "Our experts can help with:"],
+          bullets: ["Teacher training assignments", "Nursing and health essays", "Business coursework"],
+        },
+        {
+          heading: "Liverpool School of Tropical Medicine",
+          paragraphs: ["A specialist postgraduate institution for tropical medicine and global public health.", "Our experts can help with:"],
+          bullets: ["Public health essays and reports", "Research proposals", "Statistics for health research"],
+        },
       ],
     },
     {

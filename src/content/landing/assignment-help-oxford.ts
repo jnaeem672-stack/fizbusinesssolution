@@ -25,10 +25,19 @@ export const assignmentHelpOxford: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Oxford students study",
-      paragraphs: [
-        "Students who contact us study at the University of Oxford and Oxford Brookes University, whose main campus is in Headington. FIZBS is an independent service and is not affiliated with any university.",
-        "Oxford Brookes is known for business, hospitality and tourism management, architecture, nursing, and motorsport and automotive engineering.",
+      heading: "Universities in Oxford we support",
+      paragraphs: ["We support students at every university in Oxford. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Oxford",
+          paragraphs: ["A collegiate university where teaching is built around small-group tutorials and frequent essays, with Saïd Business School for business and management.", "Our experts can help with:"],
+          bullets: ["Planning and structuring tutorial essays", "Business and management coursework", "Research proposals and dissertations"],
+        },
+        {
+          heading: "Oxford Brookes University",
+          paragraphs: ["Brookes has its main campus in Headington and is known for business, hospitality management, architecture, nursing, and motorsport and automotive engineering.", "Our experts can help with:"],
+          bullets: ["Business and hospitality reports", "Nursing assignments", "Engineering projects"],
+        },
       ],
     },
     {

@@ -17,6 +17,8 @@ export interface LandingSection {
   links?: LandingLink[];
   /** Optional numbered checklist shown after paragraphs */
   steps?: string[];
+  /** Optional H3 blocks shown after the bullets, e.g. one per university */
+  subsections?: { heading: string; paragraphs?: string[]; bullets?: string[] }[];
 }
 
 export interface LandingFaq {

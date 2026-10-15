@@ -25,10 +25,14 @@ export const assignmentHelpMiddlesbrough: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Teesside students study",
-      paragraphs: [
-        "Students who contact us study at Teesside University, whose campus is in the centre of Middlesbrough. FIZBS is an independent service and is not affiliated with any university.",
-        "Teesside is known for computing, games and animation, engineering, health and sport, and business, and it has a large community of international postgraduate students.",
+      heading: "Universities in Middlesbrough we support",
+      paragraphs: ["We support students at every university in Middlesbrough and Teesside. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Teesside University",
+          paragraphs: ["Teesside has a city-centre campus in Middlesbrough and is known for computing, games and animation, engineering, health and sport, and its international business school, with a large community of international postgraduates.", "Our experts can help with:"],
+          bullets: ["Computing and games projects", "Engineering reports", "International Master's and MBA assignments"],
+        },
       ],
     },
     {

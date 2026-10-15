@@ -268,6 +268,28 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                     ))}
                   </ul>
                 )}
+                {section.subsections && (
+                  <div className="mt-6 space-y-4">
+                    {section.subsections.map((sub) => (
+                      <div key={sub.heading} className="rounded-2xl border border-gray-100 bg-gray-50 p-5">
+                        <h3 className="text-lg font-extrabold text-navy mb-2">{sub.heading}</h3>
+                        <div className="space-y-3">
+                          {sub.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}
+                        </div>
+                        {sub.bullets && (
+                          <ul className="mt-3 space-y-2">
+                            {sub.bullets.map((b) => (
+                              <li key={b} className="flex items-start gap-2.5">
+                                <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                                <span>{b}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
             {guides.length > 0 && (

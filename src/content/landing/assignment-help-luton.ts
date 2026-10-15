@@ -25,10 +25,19 @@ export const assignmentHelpLuton: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Luton and Bedford students study",
-      paragraphs: [
-        "Students who contact us study at the University of Bedfordshire, at its Luton and Bedford campuses. FIZBS is an independent service and is not affiliated with any university.",
-        "The university is known for business and computing, nursing and health, education and teacher training, and sport, and it has one of the largest communities of international postgraduate students in the area.",
+      heading: "Universities in Luton and Bedford we support",
+      paragraphs: ["We support students at every university in Luton and Bedford. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Bedfordshire, Luton campus",
+          paragraphs: ["The main campus in Luton town centre teaches business, computing, health and the creative industries, with a large number of international postgraduates.", "Our experts can help with:"],
+          bullets: ["Business and MBA assignments", "Computing projects", "Health assignments"],
+        },
+        {
+          heading: "University of Bedfordshire, Bedford campus",
+          paragraphs: ["The Bedford campus is known for teacher education, sport and physical education.", "Our experts can help with:"],
+          bullets: ["Teacher education assignments", "Sport and physical education reports", "Reflective writing"],
+        },
       ],
     },
     {

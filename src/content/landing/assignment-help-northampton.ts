@@ -25,10 +25,19 @@ export const assignmentHelpNorthampton: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Northampton students study",
-      paragraphs: [
-        "Students who contact us study at the University of Northampton, whose Waterside Campus opened in 2018 close to the town centre, and on distance learning programmes run from nearby Milton Keynes, the home of the Open University. FIZBS is an independent service and is not affiliated with any university.",
-        "Northampton is known for business, nursing and midwifery, education, social work and psychology, and it attracts a large number of international students on taught Master's and MBA programmes.",
+      heading: "Universities in Northampton we support",
+      paragraphs: ["We support students at every university in Northampton. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Northampton",
+          paragraphs: ["Its Waterside Campus opened in 2018 beside the River Nene. The university is known for business, nursing and midwifery, education, social work and psychology, and it teaches many international Master's and MBA students.", "Our experts can help with:"],
+          bullets: ["International Master's and MBA assignments", "Nursing, midwifery and social work essays", "Education placement reflections"],
+        },
+        {
+          heading: "The Open University (Milton Keynes)",
+          paragraphs: ["The Open University, based in nearby Milton Keynes, is the UK's largest distance learning university. Most modules are assessed through tutor-marked assignments (TMAs) and an end-of-module assessment (EMA) or exam.", "Our experts can help with:"],
+          bullets: ["Planning TMAs from the module guidance notes", "Structuring EMAs and longer projects", "Fitting study around work and family"],
+        },
       ],
     },
     {

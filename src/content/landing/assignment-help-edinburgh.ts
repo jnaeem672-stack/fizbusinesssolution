@@ -25,10 +25,29 @@ export const assignmentHelpEdinburgh: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Edinburgh students study',
-      paragraphs: [
-        'Students who contact us study at universities such as the University of Edinburgh, Edinburgh Napier University, Heriot-Watt University and Queen Margaret University in Musselburgh. FIZBS is an independent service and is not affiliated with any university.',
-        'The University of Edinburgh, founded in 1583, is a research-intensive Russell Group university where many modules are built around extensive reading, seminar discussion and long critical essays. Edinburgh Napier University offers a wide range of professional and applied courses across its Merchiston, Craiglockhart and Sighthill campuses. Heriot-Watt University is known for business, engineering and science, and Queen Margaret University for health professions, nursing and hospitality-related courses.',
+      heading: "Universities in Edinburgh we support",
+      paragraphs: ["We support students at every university in Edinburgh. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Edinburgh",
+          paragraphs: ["Founded in 1583, Edinburgh is a Russell Group university where many modules are built around extensive reading, seminars and research-led essays, from the business school to the social sciences.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business and social science dissertations", "Research methods and data analysis"],
+        },
+        {
+          heading: "Edinburgh Napier University",
+          paragraphs: ["Napier teaches at its Merchiston, Craiglockhart and Sighthill campuses and is known for business, nursing and midwifery, computing and the creative industries, with applied coursework.", "Our experts can help with:"],
+          bullets: ["Business reports and case studies", "Nursing and midwifery assignments", "Computing projects"],
+        },
+        {
+          heading: "Heriot-Watt University",
+          paragraphs: ["Heriot-Watt has its main campus at Riccarton and also teaches in Dubai and Malaysia. It is known for engineering, energy, actuarial science, finance and business, including distance learning programmes.", "Our experts can help with:"],
+          bullets: ["Engineering and energy reports", "Finance and business assignments", "Support for students on the Dubai campus too"],
+        },
+        {
+          heading: "Queen Margaret University",
+          paragraphs: ["QMU, in Musselburgh, is known for health and rehabilitation sciences, nursing, business and the creative industries.", "Our experts can help with:"],
+          bullets: ["Health science essays and case studies", "Business coursework", "Reflective practice writing"],
+        },
       ],
     },
     {

@@ -25,10 +25,24 @@ export const assignmentHelpCardiff: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Cardiff students study',
-      paragraphs: [
-        'Students who contact us study at universities such as Cardiff University, Cardiff Metropolitan University and the University of South Wales, which has a campus in the city. FIZBS is an independent service and is not affiliated with any university.',
-        'Cardiff University is a research-intensive Russell Group university, where modules expect wide reading and research-led argument. Cardiff Met is known for applied courses in areas such as sport, education, art and design, health and business, where practical projects, portfolios and reflective work are common.',
+      heading: "Universities in Cardiff we support",
+      paragraphs: ["We support students at every university in Cardiff. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Cardiff University",
+          paragraphs: ["A Russell Group university with a well-known business school and strengths in journalism, law, engineering and health. Modules expect wide reading and research-led argument.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business and journalism coursework", "Health and law assignments"],
+        },
+        {
+          heading: "Cardiff Metropolitan University",
+          paragraphs: ["Cardiff Met is known for management, sport, education and art and design, with applied and practice-based courses.", "Our experts can help with:"],
+          bullets: ["Management reports", "Sport and education assignments", "Reflective writing"],
+        },
+        {
+          heading: "University of South Wales",
+          paragraphs: ["USW has a Cardiff campus focused on the creative industries, with nearby campuses at Treforest and Glyntaff for business, law, engineering, nursing and health.", "Our experts can help with:"],
+          bullets: ["Business and law coursework", "Nursing and health assignments", "Creative industries projects"],
+        },
       ],
     },
     {

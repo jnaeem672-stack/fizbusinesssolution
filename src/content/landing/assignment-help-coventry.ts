@@ -25,10 +25,19 @@ export const assignmentHelpCoventry: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Coventry students study',
-      paragraphs: [
-        'Students who contact us study at universities such as Coventry University and the University of Warwick, and on programmes run by these universities at other campuses and online. FIZBS is an independent service and is not affiliated with any university.',
-        "Coventry University focuses on applied, career-led courses with a lot of coursework, group projects and practical assessment. The University of Warwick is a research-intensive university where essays and projects are expected to show wide reading and independent critical argument. Our experts adapt to the style of assessment your module uses.",
+      heading: "Universities in Coventry we support",
+      paragraphs: ["We support students at every university in Coventry. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Coventry University",
+          paragraphs: ["Coventry focuses on applied, career-led courses with a lot of coursework, group projects and practical assessment, and it also teaches in London and online.", "Our experts can help with:"],
+          bullets: ["Applied reports and case studies", "Group project and reflection guidance", "Online and London campus coursework"],
+        },
+        {
+          heading: "University of Warwick",
+          paragraphs: ["A research-intensive Russell Group university on the edge of Coventry, home to Warwick Business School and well known for economics and for engineering through WMG.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business, economics and finance coursework", "Engineering and management projects"],
+        },
       ],
     },
     {

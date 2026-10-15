@@ -25,10 +25,29 @@ export const assignmentHelpGlasgow: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Glasgow students study',
-      paragraphs: [
-        'Students who contact us study at universities such as the University of Glasgow, the University of Strathclyde, Glasgow Caledonian University and the University of the West of Scotland, whose Paisley campus sits just outside the city. FIZBS is an independent service and is not affiliated with any university.',
-        "The University of Glasgow, founded in 1451, is a research-intensive Russell Group university and home to the Adam Smith Business School. The University of Strathclyde, in the city centre, is well known for business and engineering. Glasgow Caledonian University has a strong focus on health, nursing, social care and business, with many courses that combine study with practice placements.",
+      heading: "Universities in Glasgow we support",
+      paragraphs: ["We support students at every university in Glasgow. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Glasgow",
+          paragraphs: ["Founded in 1451, Glasgow is a Russell Group university and home to the Adam Smith Business School. Many assessments are marked on its 22-point scale, and essays are expected to show extensive reading and critical argument.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business, economics and finance dissertations", "Understanding feedback on the 22-point scale"],
+        },
+        {
+          heading: "University of Strathclyde",
+          paragraphs: ["Strathclyde is a city-centre technological university known for engineering, law, education and Strathclyde Business School, with many applied and industry-linked projects.", "Our experts can help with:"],
+          bullets: ["Engineering reports and design projects", "Business and MBA assignments", "Law essays and problem questions"],
+        },
+        {
+          heading: "Glasgow Caledonian University",
+          paragraphs: ["GCU is known for nursing and health, business, the social sciences and the built environment, with practical courses linked to professional standards.", "Our experts can help with:"],
+          bullets: ["Nursing and health assignments", "Business and social science essays", "Reflective writing and portfolios"],
+        },
+        {
+          heading: "University of the West of Scotland",
+          paragraphs: ["UWS has a campus in Paisley, just outside the city, as well as campuses in Lanarkshire, Ayr, Dumfries and London. It is known for business, nursing, education and computing.", "Our experts can help with:"],
+          bullets: ["Business and computing coursework", "Nursing and education assignments", "Guidance for international students"],
+        },
       ],
     },
     {

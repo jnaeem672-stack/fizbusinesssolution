@@ -25,10 +25,24 @@ export const assignmentHelpSouthampton: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Southampton students study',
-      paragraphs: [
-        'Students who contact us study at universities such as the University of Southampton and Solent University, and we also support students in nearby Portsmouth and Winchester. FIZBS is an independent service and is not affiliated with any university.',
-        "The University of Southampton is a research-intensive Russell Group university with strengths in engineering, science and health, where modules expect research-led essays and projects. Solent University focuses on applied and professional courses, including maritime, business, media and sport, where practical projects, reports and portfolios are common.",
+      heading: "Universities in Southampton we support",
+      paragraphs: ["We support students at every university in Southampton. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Southampton",
+          paragraphs: ["A Russell Group university based at Highfield, known for engineering, electronics and computer science, ocean and earth science, health sciences and Southampton Business School.", "Our experts can help with:"],
+          bullets: ["Engineering and computing reports", "Health science assignments", "Business dissertations"],
+        },
+        {
+          heading: "Solent University",
+          paragraphs: ["Solent is a city-centre university known for maritime studies through its Warsash School of Maritime Science and Engineering, as well as business, sport and media.", "Our experts can help with:"],
+          bullets: ["Maritime and logistics reports", "Business and sport coursework", "Media projects"],
+        },
+        {
+          heading: "University of Winchester (nearby)",
+          paragraphs: ["Winchester is known for education, business and the humanities.", "Our experts can help with:"],
+          bullets: ["Education essays", "Business assignments", "Humanities essays"],
+        },
       ],
     },
     {

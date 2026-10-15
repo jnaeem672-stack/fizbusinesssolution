@@ -25,10 +25,24 @@ export const assignmentHelpNewcastle: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Newcastle students study',
-      paragraphs: [
-        'Students who contact us study at universities such as Newcastle University and Northumbria University, and we also hear from students in Durham and Sunderland. FIZBS is an independent service and is not affiliated with any university.',
-        "Newcastle University is a research-intensive Russell Group university, where modules often expect research-led essays and independent projects. Northumbria University has a strong focus on professional and applied courses, including business, law, nursing, computing and design, and runs a range of online and blended Master's programmes taken by students outside the UK.",
+      heading: "Universities in Newcastle we support",
+      paragraphs: ["We support students at every university in Newcastle and the North East. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Newcastle University",
+          paragraphs: ["A Russell Group university in the city centre with a well-known business school and strengths in medicine, engineering and the social sciences. Modules often expect research-led essays and independent projects.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business and engineering coursework", "Dissertations and research projects"],
+        },
+        {
+          heading: "Northumbria University",
+          paragraphs: ["Northumbria has its City Campus in Newcastle, a London campus and a large online and distance learning offer. It is known for Newcastle Business School, law, nursing, computing and design.", "Our experts can help with:"],
+          bullets: ["Business and law assignments", "Nursing and health essays", "Distance learning coursework"],
+        },
+        {
+          heading: "Durham University (nearby)",
+          paragraphs: ["Durham is a collegiate Russell Group university known for its business school, law and the humanities, with demanding essay-based assessment.", "Our experts can help with:"],
+          bullets: ["Essays with a clear critical argument", "Business school reports", "Dissertations"],
+        },
       ],
     },
     {

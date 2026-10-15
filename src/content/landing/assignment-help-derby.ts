@@ -25,10 +25,14 @@ export const assignmentHelpDerby: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Derby students study",
-      paragraphs: [
-        "Students who contact us study at the University of Derby, whose main campus is at Kedleston Road, and we also support students in nearby Nottingham and Loughborough. FIZBS is an independent service and is not affiliated with any university.",
-        "The University of Derby is known for business, engineering and technology, nursing and health, education, psychology and law.",
+      heading: "Universities in Derby we support",
+      paragraphs: ["We support students at every university in Derby. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Derby",
+          paragraphs: ["Derby's main campus is at Kedleston Road, and the university also has sites in the city centre and a large online learning offer. It is known for Derby Business School, engineering and technology, nursing and health, education, psychology and law.", "Our experts can help with:"],
+          bullets: ["Business and engineering reports", "Nursing and education assignments", "Online learning coursework"],
+        },
       ],
     },
     {

@@ -25,10 +25,19 @@ export const assignmentHelpBradford: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Bradford students study",
-      paragraphs: [
-        "Students who contact us study at the University of Bradford and on degree courses at Bradford College, and we also support students in nearby Leeds. FIZBS is an independent service and is not affiliated with any university.",
-        "The University of Bradford is known for pharmacy and health sciences, management, engineering, archaeological and forensic sciences, and its long-established peace studies department.",
+      heading: "Universities in Bradford we support",
+      paragraphs: ["We support students at every university in Bradford. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Bradford",
+          paragraphs: ["Bradford is known for pharmacy, optometry and health sciences, its School of Management, engineering, archaeological and forensic sciences, and a long-established peace studies department.", "Our experts can help with:"],
+          bullets: ["Pharmacy and health science reports", "Management assignments", "Peace studies and social science essays"],
+        },
+        {
+          heading: "Bradford College",
+          paragraphs: ["Bradford College offers degree-level courses through its University Centre, in subjects such as business, education and health and social care.", "Our experts can help with:"],
+          bullets: ["Business coursework", "Education assignments", "Health and social care essays"],
+        },
       ],
     },
     {

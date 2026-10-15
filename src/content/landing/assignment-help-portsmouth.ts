@@ -25,10 +25,19 @@ export const assignmentHelpPortsmouth: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Portsmouth students study",
-      paragraphs: [
-        "Students who contact us study at the University of Portsmouth, both in the city and at its London campus. FIZBS is an independent service and is not affiliated with any university.",
-        "The university has a large international community and is known for business and law, criminology and forensic studies, computing and cyber security, engineering and health subjects.",
+      heading: "Universities in Portsmouth we support",
+      paragraphs: ["We support students at every university in Portsmouth. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Portsmouth",
+          paragraphs: ["Portsmouth has its campus in the heart of the city, and its School of Criminology and Criminal Justice is one of the largest in the UK. It is also known for business and law, computing and cyber security, and engineering.", "Our experts can help with:"],
+          bullets: ["Criminology and law essays", "Business and computing coursework", "Engineering reports"],
+        },
+        {
+          heading: "University of Portsmouth London",
+          paragraphs: ["Portsmouth also teaches in London, where many international students take business, management and computing courses.", "Our experts can help with:"],
+          bullets: ["Business and management assignments", "Computing projects", "Clear academic English and Harvard referencing"],
+        },
       ],
     },
     {

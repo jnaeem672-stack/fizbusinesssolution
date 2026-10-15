@@ -25,10 +25,19 @@ export const assignmentHelpSunderland: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Sunderland students study",
-      paragraphs: [
-        "Students who contact us study at the University of Sunderland, at its City Campus and riverside St Peter's Campus, and at the University of Sunderland in London, which teaches many international students. FIZBS is an independent service and is not affiliated with any university.",
-        "The university is known for pharmacy, nursing and medicine, business and tourism, media and journalism, sport and education.",
+      heading: "Universities in Sunderland we support",
+      paragraphs: ["We support students at every university in Sunderland. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Sunderland",
+          paragraphs: ["Sunderland teaches at its City Campus and its riverside St Peter's Campus, and is known for pharmacy, nursing and medicine, business and tourism, media and journalism, sport and education.", "Our experts can help with:"],
+          bullets: ["Pharmacy and nursing assignments", "Business and tourism reports", "Media and journalism coursework"],
+        },
+        {
+          heading: "University of Sunderland in London",
+          paragraphs: ["The London campus teaches many international students on business, tourism, hospitality and health courses, often alongside work.", "Our experts can help with:"],
+          bullets: ["Business and hospitality assignments", "Health management essays", "Staged deadlines around your shifts"],
+        },
       ],
     },
     {

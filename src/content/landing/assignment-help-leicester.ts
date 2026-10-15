@@ -25,10 +25,24 @@ export const assignmentHelpLeicester: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Leicester students study',
-      paragraphs: [
-        'Students who contact us study at universities such as the University of Leicester and De Montfort University (DMU), and we also support students at nearby Loughborough University. FIZBS is an independent service and is not affiliated with any university.',
-        'The University of Leicester is a research-intensive university with a long history of distance learning programmes, while DMU in the city centre is known for applied and professional courses in areas such as business, law, pharmacy, design and computing.',
+      heading: "Universities in Leicester we support",
+      paragraphs: ["We support students at every university in Leicester. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Leicester",
+          paragraphs: ["A research-intensive university with a long history of distance learning, known for its School of Business, law, criminology and medicine.", "Our experts can help with:"],
+          bullets: ["Distance learning assignments", "Criminology and law essays", "Business dissertations"],
+        },
+        {
+          heading: "De Montfort University (DMU)",
+          paragraphs: ["DMU, in the city centre, is known for business and law, pharmacy, computing, nursing and art and design, with many applied and professional courses.", "Our experts can help with:"],
+          bullets: ["Business and law coursework", "Pharmacy and nursing assignments", "Computing projects"],
+        },
+        {
+          heading: "Loughborough University (nearby)",
+          paragraphs: ["Loughborough is known for sport, engineering and its School of Business and Economics, with many students taking a placement year.", "Our experts can help with:"],
+          bullets: ["Sport science reports", "Engineering projects", "Business and economics assignments"],
+        },
       ],
     },
     {

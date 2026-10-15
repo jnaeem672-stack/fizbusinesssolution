@@ -25,10 +25,24 @@ export const assignmentHelpBristol: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Bristol students study',
-      paragraphs: [
-        'Students who contact us study at universities such as the University of Bristol and the University of the West of England (UWE Bristol), and we also support students in nearby Bath. FIZBS is an independent service and is not affiliated with any university.',
-        'The University of Bristol is a research-intensive Russell Group university, and its modules tend to expect wide reading, critical essays and research-led projects. UWE Bristol runs many applied and professional courses in areas such as engineering, health, business and the built environment, where reports, case studies, portfolios and placement work are common. The two styles call for different writing, and our experts adapt to the one your module uses.',
+      heading: "Universities in Bristol we support",
+      paragraphs: ["We support students at every university in Bristol. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Bristol",
+          paragraphs: ["A Russell Group university in Clifton, known for engineering, law, economics and its business school. Modules tend to expect wide reading, critical essays and research-led projects.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Engineering and economics coursework", "Dissertations and research projects"],
+        },
+        {
+          heading: "UWE Bristol",
+          paragraphs: ["The University of the West of England teaches mainly at its Frenchay campus, with health courses at Glenside. It is known for engineering, business, nursing and allied health, and architecture, with a strong focus on placements.", "Our experts can help with:"],
+          bullets: ["Engineering and design reports", "Nursing and allied health assignments", "Placement reflections"],
+        },
+        {
+          heading: "University of Bath (nearby)",
+          paragraphs: ["Bath is known for its School of Management, engineering and placement degrees, with highly analytical coursework.", "Our experts can help with:"],
+          bullets: ["Management reports and essays", "Engineering projects", "Placement year assignments"],
+        },
       ],
     },
     {

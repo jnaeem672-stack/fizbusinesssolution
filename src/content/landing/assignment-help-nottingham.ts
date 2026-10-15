@@ -25,10 +25,19 @@ export const assignmentHelpNottingham: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Nottingham students study',
-      paragraphs: [
-        'Students who contact us study at the University of Nottingham and Nottingham Trent University, among others. FIZBS is an independent service and is not affiliated with any university.',
-        'The University of Nottingham is a research-intensive Russell Group university with its main campus at University Park and its business school on the Jubilee Campus. Nottingham Trent University teaches across its City, Clifton and Brackenhurst campuses, and its Nottingham Business School and many other courses place a strong emphasis on practical, career-focused learning.',
+      heading: "Universities in Nottingham we support",
+      paragraphs: ["We support students at every university in Nottingham. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Nottingham",
+          paragraphs: ["A Russell Group university with its main campus at University Park and Nottingham University Business School on the Jubilee Campus. It also has campuses in Malaysia and China, so many students study its programmes outside the UK.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business school reports and dissertations", "Support for students on overseas campuses"],
+        },
+        {
+          heading: "Nottingham Trent University (NTU)",
+          paragraphs: ["NTU teaches across its City, Clifton and Brackenhurst campuses and is known for Nottingham Business School, law, art and design, and applied courses with placements.", "Our experts can help with:"],
+          bullets: ["Applied business reports and case studies", "Law coursework", "Placement reflections"],
+        },
       ],
     },
     {

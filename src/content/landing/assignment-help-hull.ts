@@ -25,10 +25,19 @@ export const assignmentHelpHull: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Hull students study",
-      paragraphs: [
-        "Students who contact us study at the University of Hull, including students on medicine and health programmes linked to the Hull York Medical School. FIZBS is an independent service and is not affiliated with any university.",
-        "The university is known for law and politics, business, nursing and health, education and energy and environmental research.",
+      heading: "Universities in Hull we support",
+      paragraphs: ["We support students at every university in Hull. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Hull",
+          paragraphs: ["Based at its Cottingham Road campus, Hull is known for law and politics, Hull University Business School, nursing and health, and energy and environmental research.", "Our experts can help with:"],
+          bullets: ["Law and politics essays", "Business school reports and dissertations", "Energy and environment projects"],
+        },
+        {
+          heading: "Hull York Medical School",
+          paragraphs: ["A joint medical school of the Universities of Hull and York, teaching medicine and postgraduate health research.", "Our experts can help with:"],
+          bullets: ["Evidence-based essays and reflective writing", "Research proposals and literature reviews", "Statistics for health research"],
+        },
       ],
     },
     {

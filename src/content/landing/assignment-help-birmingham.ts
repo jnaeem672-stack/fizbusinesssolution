@@ -38,12 +38,32 @@ export const assignmentHelpBirmingham: LandingContent = {
         'Each university in the city has its own character, and the type of assignment you meet depends a great deal on where and what you study. Understanding the expectations of your institution helps you decide whether to focus on theory, application or reflection.',
         'Whichever applies to you, your expert adapts the approach to fit, whether that means going deeper into theory, sharpening how you apply a model or making a reflective piece more structured and honest.',
       ],
-      bullets: [
-        'University of Birmingham: a research-intensive university where many modules expect wide reading, critical essays and research-based projects',
-        'Aston University: well known for business education and placement years, so applied business reports and placement reflections are common',
-        'Birmingham City University: a broad mix of professional courses, including nursing, health, law, media and the creative industries, often assessed through practical and portfolio work',
-        'University College Birmingham: focused on hospitality, tourism, culinary arts, business and education, with assignments built around industry practice',
-        'Newman University: known for education, teacher training and social sciences, where reflective writing and professional practice are central',
+      subsections: [
+        {
+          heading: "University of Birmingham",
+          paragraphs: ["A research-intensive Russell Group university on its Edgbaston campus, home to Birmingham Business School. Many modules expect wide reading, critical essays and research-based projects.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business school reports and dissertations", "Research methods and data analysis"],
+        },
+        {
+          heading: "Aston University",
+          paragraphs: ["A city-centre university well known for business education through Aston Business School, as well as engineering and health sciences. Placement years are common, so applied reports and placement reflections are a regular part of assessment.", "Our experts can help with:"],
+          bullets: ["Applied business reports on real organisations", "Placement reflections linked to theory", "Engineering and health science coursework"],
+        },
+        {
+          heading: "Birmingham City University (BCU)",
+          paragraphs: ["BCU teaches at its City Centre campus and at City South in Edgbaston, where many health courses are based. It offers a broad mix of professional courses, including nursing, law, business, media and art and design, often assessed through practical and portfolio work.", "Our experts can help with:"],
+          bullets: ["Nursing and health assignments", "Law and business coursework", "Portfolios and reflective writing"],
+        },
+        {
+          heading: "University College Birmingham (UCB)",
+          paragraphs: ["UCB focuses on hospitality, tourism, culinary arts, business and education, with assignments built around industry practice and real organisations.", "Our experts can help with:"],
+          bullets: ["Hospitality and tourism management reports", "Business case studies", "Reflective accounts from placements"],
+        },
+        {
+          heading: "Newman University",
+          paragraphs: ["Newman, in Bartley Green, is known for education, teacher training and the social sciences, where reflective writing and professional practice are central.", "Our experts can help with:"],
+          bullets: ["Education essays and lesson evaluations", "Reflective writing with a recognised model", "Social science research projects"],
+        },
       ],
     },
     {

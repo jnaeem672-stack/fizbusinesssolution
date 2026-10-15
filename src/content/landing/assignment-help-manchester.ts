@@ -25,10 +25,24 @@ export const assignmentHelpManchester: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Manchester students study',
-      paragraphs: [
-        "Students who use our service come from universities such as the University of Manchester, Manchester Metropolitan University and the University of Salford. Each has its own expectations: some modules lean heavily on independent research, others on applied reports, reflective logs or practical case studies.",
-        "Because your expert works directly from your module handbook, brief and marking rubric, the support you get matches the course you are actually taking. FIZBS is an independent provider and has no affiliation with any university.",
+      heading: "Universities in Manchester we support",
+      paragraphs: ["We support students at every university in Manchester. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Manchester",
+          paragraphs: ["A Russell Group university and one of the largest in the UK, home to Alliance Manchester Business School. Modules range from research-led essays to quantitative coursework, and many Master's programmes end in a substantial dissertation.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business, finance and management dissertations", "Quantitative analysis in SPSS, Stata or Python"],
+        },
+        {
+          heading: "Manchester Metropolitan University",
+          paragraphs: ["Manchester Met is a large city-centre university known for business and law, education, health and art and design. Courses are often applied, with reports, case studies, portfolios and placement assessments.", "Our experts can help with:"],
+          bullets: ["Applied business reports and case studies", "Education and health assignments", "Portfolios and reflective writing"],
+        },
+        {
+          heading: "University of Salford",
+          paragraphs: ["Salford has its main campus in Salford and a base at MediaCityUK, and is known for health and nursing, engineering, the built environment, business and media.", "Our experts can help with:"],
+          bullets: ["Nursing and health essays", "Engineering and construction reports", "Media and business coursework"],
+        },
       ],
     },
     {

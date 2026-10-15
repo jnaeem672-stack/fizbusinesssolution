@@ -25,10 +25,14 @@ export const assignmentHelpWolverhampton: LandingContent = {
   ],
   sections: [
     {
-      heading: "Where our Wolverhampton students study",
-      paragraphs: [
-        "Students who contact us study at the University of Wolverhampton, at its City Campus and its campuses in Walsall and Telford, and we also support students in nearby Birmingham. FIZBS is an independent service and is not affiliated with any university.",
-        "The university is known for business and law, nursing and health, education, computing, and architecture and the built environment.",
+      heading: "Universities in Wolverhampton we support",
+      paragraphs: ["We support students at every university in Wolverhampton. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Wolverhampton",
+          paragraphs: ["The university teaches at its City Campus, at Walsall and Telford, and at its Springfield Campus, which focuses on architecture and the built environment. It is known for business and law, nursing and health, education and computing.", "Our experts can help with:"],
+          bullets: ["Business and law coursework", "Architecture and construction assignments", "Nursing and education essays"],
+        },
       ],
     },
     {

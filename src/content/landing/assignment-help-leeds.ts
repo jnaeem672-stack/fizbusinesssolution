@@ -25,10 +25,24 @@ export const assignmentHelpLeeds: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Leeds students study',
-      paragraphs: [
-        'Students who contact us study at universities such as the University of Leeds, Leeds Beckett University and Leeds Trinity University, as well as specialist institutions and the Leeds campuses of national providers. FIZBS is an independent service and is not affiliated with any university.',
-        'The University of Leeds is a large research-intensive Russell Group university, and its modules often expect wide reading, critical essays and research-led projects. Leeds Beckett University, with campuses in the city centre and at Headingley, runs many applied and professional courses where reports, case studies and portfolios are common. Leeds Trinity University in Horsforth is known for its professional focus and for placements built into many of its degrees.',
+      heading: "Universities in Leeds we support",
+      paragraphs: ["We support students at every university in Leeds. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Leeds",
+          paragraphs: ["A Russell Group university with a large campus close to the city centre and a well-known business school. Modules often expect wide reading, critical essays and independent research.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business school reports and dissertations", "Research design and data analysis"],
+        },
+        {
+          heading: "Leeds Beckett University",
+          paragraphs: ["Leeds Beckett teaches at its City and Headingley campuses and is known for sport, business, law, health and events management, with many applied and professional courses.", "Our experts can help with:"],
+          bullets: ["Sport and exercise science reports", "Business and events management assignments", "Law coursework and problem questions"],
+        },
+        {
+          heading: "Leeds Trinity University",
+          paragraphs: ["Leeds Trinity, in Horsforth, is known for education and teacher training, journalism, psychology and business, often with professional placements.", "Our experts can help with:"],
+          bullets: ["Education essays and placement reflections", "Psychology research reports", "Business coursework"],
+        },
       ],
     },
     {

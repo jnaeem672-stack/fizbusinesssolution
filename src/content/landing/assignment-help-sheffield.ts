@@ -25,10 +25,19 @@ export const assignmentHelpSheffield: LandingContent = {
   ],
   sections: [
     {
-      heading: 'Where our Sheffield students study',
-      paragraphs: [
-        'Students who contact us study at the University of Sheffield and Sheffield Hallam University, among others. FIZBS is an independent service and is not affiliated with any university.',
-        'The University of Sheffield is a research-intensive Russell Group university, well known for engineering and home to the Sheffield University Management School. Sheffield Hallam University, one of the largest universities in the UK, teaches across its City and Collegiate campuses and runs many professional and applied courses through departments such as Sheffield Business School.',
+      heading: "Universities in Sheffield we support",
+      paragraphs: ["We support students at every university in Sheffield. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Sheffield",
+          paragraphs: ["A Russell Group university well known for engineering, and home to Sheffield University Management School and a long-established Information School.", "Our experts can help with:"],
+          bullets: ["Engineering reports and projects", "Management dissertations", "Information and data analysis projects"],
+        },
+        {
+          heading: "Sheffield Hallam University",
+          paragraphs: ["One of the largest universities in the UK, teaching at its City and Collegiate campuses. It is known for business, teacher education, nursing and health, sport and engineering, with many applied and placement-based courses.", "Our experts can help with:"],
+          bullets: ["Business reports and case studies", "Education and nursing assignments", "Placement reflections"],
+        },
       ],
     },
     {
