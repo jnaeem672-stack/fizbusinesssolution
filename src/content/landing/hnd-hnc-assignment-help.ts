@@ -15,6 +15,10 @@ export const hndHncAssignmentHelp: LandingContent = {
     'HND health and social care assignment help',
     'HND computing assignment help',
     'HNC engineering assignment help',
+    'MFRD assignment help',
+    'Managing Financial Resources and Decisions assignment',
+    'HND management accounting assignment help',
+    'managing a successful business project help',
   ],
   badge: 'Higher Nationals Support',
   h1: 'HND and HNC Assignment Help for BTEC Higher National Students',
@@ -46,6 +50,23 @@ export const hndHncAssignmentHelp: LandingContent = {
         'Computing: programming, networking, database design and development, security, the software development lifecycle and planning a computing project',
         'Engineering and construction: engineering design, engineering mathematics and science, project management and construction technology',
         'Hospitality and tourism management: hospitality operations, food and beverage management, and events',
+      ],
+    },
+    {
+      heading: 'Popular HND Business units, including MFRD',
+      paragraphs: [
+        'Students often look for help by the name of the unit. These are the business units we are asked about most. Unit titles and numbers vary between Pearson specifications and centres, so always follow your own assignment brief.',
+      ],
+      bullets: [
+        'Managing Financial Resources and Decisions (MFRD): sources of finance, budgeting, investment appraisal such as payback, ARR and NPV, and interpreting financial statements',
+        'Management Accounting: costing methods, budgets and variance analysis, and using accounting information for decisions',
+        'Business and the Business Environment: types of organisation, stakeholders, and PESTLE and SWOT analysis',
+        'Marketing Processes and Planning: the marketing mix, segmentation and a marketing plan for a real organisation',
+        'Human Resource Management: recruitment, training, employee relations and HR practice in a chosen organisation',
+        'Management and Operations: leadership and management approaches and how operations are managed',
+        'Managing a Successful Business Project: the Pearson-set project, from project plan and research to reflection',
+        'Business Decision Making, and Organisations and Behaviour: using data for decisions, motivation, teams and culture',
+        'Business Strategy and the Level 5 Research Project: strategic analysis and choice, and a small-scale research study',
       ],
     },
     {
@@ -127,6 +148,10 @@ export const hndHncAssignmentHelp: LandingContent = {
     },
   ],
   faqs: [
+    {
+      q: 'Can you help with the MFRD unit?',
+      a: 'Yes. Our finance experts guide you through Managing Financial Resources and Decisions tasks such as sources of finance, budgets, investment appraisal and financial statement analysis, and explain what each Pass, Merit and Distinction criterion asks for.',
+    },
     {
       q: 'How much does HND assignment help cost?',
       a: 'HND and HNC assignment help at FIZBS starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. New customers get 10% off their first order.',

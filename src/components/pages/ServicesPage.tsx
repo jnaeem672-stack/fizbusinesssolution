@@ -60,7 +60,7 @@ export default function ServicesPage() {
     <div className="min-h-screen bg-gray-50 flex flex-col">
       <PageHero
         title="All Our Assignment, Dissertation and Research Services"
-        subtitle="Expert assignment help, dissertation help, research proposal help and proofreading for students in the UK and Saudi Arabia since 2015."
+        subtitle="Expert assignment help, dissertation help, research proposal help and proofreading for students in the UK, Saudi Arabia, the UAE and the USA, supporting students since 2015."
         breadcrumb="Services"
         badge="Trusted Since 2015"
         backgroundImage="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1600&q=80"

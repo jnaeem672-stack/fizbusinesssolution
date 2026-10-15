@@ -68,7 +68,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               alternateName: ['FIZBS', 'FIZ Business Solution'],
               url: 'https://fizbusinessolutions.com',
               logo: 'https://fizbusinessolutions.com/apple-icon',
-              description: 'Assignment help and dissertation help for students in the UK and Saudi Arabia since 2015.',
+              description: 'Assignment and dissertation guidance for students in the UK, Saudi Arabia, the UAE and the USA, supporting students since 2015.',
               foundingDate: '2015',
               sameAs: SOCIAL_URLS,
               founder: [

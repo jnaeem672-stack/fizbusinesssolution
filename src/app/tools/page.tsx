@@ -161,7 +161,7 @@ export default function Page() {
             Each tool follows the conventions most UK universities use: credit-weighted averages and the usual First, 2:1 and 2:2 bands, the Cite Them Right version of Harvard, APA 7th edition, and word count rules that leave out your reference list. Every university has its own regulations, so each tool explains what to check in your handbook.
           </p>
           <p>
-            FIZ Business Solutions (FIZBS) has supported university students in the UK and Saudi Arabia since 2015. If you would like an expert to look at your work, our Master&apos;s and PhD-qualified team can help with feedback, proofreading and referencing.
+            FIZ Business Solutions (FIZBS) has supported university students since 2015, today in the UK, Saudi Arabia, the UAE and the USA. If you would like an expert to look at your work, our Master&apos;s and PhD-qualified team can help with feedback, proofreading and referencing.
           </p>
           {guides.length > 0 && (
             <div className="mt-8 rounded-2xl border border-[#E9DCAE] bg-[#FBF6E6] p-6">

@@ -75,7 +75,7 @@ export default function AboutPage() {
     <div className="min-h-screen bg-white">
       <PageHero
         title="About FIZ Business Solutions"
-        subtitle="Trusted assignment and dissertation help for students in the UK and Saudi Arabia since 2015. 10,000+ students supported and 350+ research projects completed."
+        subtitle="Trusted assignment and dissertation help for students in the UK, Saudi Arabia, the UAE and the USA, supporting students since 2015. 10,000+ students supported and 350+ research projects completed."
         breadcrumb="About Us"
         badge="Since 2015"
         backgroundImage="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1600&q=80"

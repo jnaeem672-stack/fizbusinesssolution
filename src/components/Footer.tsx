@@ -14,7 +14,7 @@ const Footer = () => (
     <div className="flex flex-col items-center gap-4">
       <Logo dark />
       <p className="text-center max-w-2xl leading-relaxed text-white/60">
-        Assignment, dissertation and research help for students in the UK and Saudi Arabia since 2015. Qualified subject experts, transparent pricing and 24/7 WhatsApp support.
+        Assignment, dissertation and research help for students in the UK, Saudi Arabia, the UAE and the USA, supporting students since 2015. Qualified subject experts, transparent pricing and 24/7 WhatsApp support.
       </p>
       <p className="text-center max-w-md leading-relaxed">
         © {new Date().getFullYear()} FIZ Business Solutions. All rights reserved.
