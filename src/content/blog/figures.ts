@@ -214,4 +214,15 @@ export const GUIDE_FIGURES: Record<string, GuideFigure[]> = {
       position: 'top',
     },
   ],
+  "how-to-write-a-dissertation-findings-chapter": [
+    {
+      section: "Findings chapter structure",
+      src: '/images/guides/findings-chapter-structure.svg',
+      alt: "The usual order of a dissertation findings chapter: introduction, sample or participants, data preparation, main findings by research question or theme, additional findings and summary.",
+      caption: "The usual order of sections in a dissertation findings chapter, from introduction to summary.",
+      width: 800,
+      height: 688,
+      position: 'afterText',
+    },
+  ],
 };

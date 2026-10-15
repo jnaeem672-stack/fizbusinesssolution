@@ -191,6 +191,12 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     specialist: 'sophia-l',
     updated: '2026-10-13',
   },
+  'how-to-write-a-dissertation-findings-chapter': {
+    quickAnswer:
+      'The findings chapter reports what your research found, objectively and in a logical order. Introduce the chapter, describe your sample or participants, note how the data were prepared, then present the results for each research question or theme with statistics, tables or short quotes. Keep interpretation for the discussion chapter. It is often about 15 to 20% of the word count.',
+    specialist: 'hassan-r',
+    updated: '2026-10-15',
+  },
   'how-to-write-a-dissertation-discussion': {
     quickAnswer:
       'The discussion chapter interprets your findings and explains what they mean. Briefly restate your aim, then for each key finding explain its meaning, compare it with the studies in your literature review, account for differences or surprises and set out the implications. Finish with the main limitations and a link to your conclusion. It is often about 20 to 25% of the word count.',

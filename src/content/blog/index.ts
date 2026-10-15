@@ -37,6 +37,7 @@ import { computerScienceDissertationTopicsPost } from './computer-science-disser
 import { howToWriteAResearchProposalPost } from './how-to-write-a-research-proposal';
 import { quantitativeVsQualitativeResearchPost } from './quantitative-vs-qualitative-research';
 import { howToWriteADissertationDiscussionPost } from './how-to-write-a-dissertation-discussion';
+import { howToWriteADissertationFindingsChapterPost } from './how-to-write-a-dissertation-findings-chapter';
 import { primaryVsSecondaryResearchPost } from './primary-vs-secondary-research';
 
 export type { BlogPost } from './types';
@@ -62,6 +63,7 @@ export const EN_POSTS: BlogPost[] = [
   swotAndPestleAnalysisGuidePost,
   howToParaphraseAndAvoidPlagiarismPost,
   howToWriteADissertationIntroductionPost,
+  howToWriteADissertationFindingsChapterPost,
   howToWriteADissertationDiscussionPost,
   howToWriteADissertationConclusionPost,
   howToWriteAnAbstractPost,
