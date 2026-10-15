@@ -34,6 +34,42 @@ export const assignmentHelpRiyadh: LandingContent = {
       ],
     },
     {
+      heading: "Universities in Riyadh we support",
+      paragraphs: ["We support students at every university in Riyadh, whether your programme is taught in English or Arabic. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own course brief and marking criteria."],
+      subsections: [
+        {
+          heading: "King Saud University",
+          paragraphs: ["Founded in 1957, King Saud University is the Kingdom's first university and one of its largest. Many programmes in medicine, engineering, science and business are taught in English, and its College of Business Administration is one of the biggest in the country.", "Our experts can help with:"],
+          bullets: ["Business and economics reports in English", "Engineering and science lab reports", "Graduation projects and Master's theses"],
+        },
+        {
+          heading: "Princess Nourah bint Abdulrahman University",
+          paragraphs: ["One of the largest women's universities in the world, with colleges of business, health and rehabilitation sciences, computer and information sciences, education and languages.", "Our experts can help with:"],
+          bullets: ["Business and management assignments", "Health sciences research projects", "Education essays and research proposals"],
+        },
+        {
+          heading: "Imam Mohammad Ibn Saud Islamic University",
+          paragraphs: ["Known for Sharia and Arabic studies, as well as economics and administrative sciences, computer science and media, with many programmes taught in Arabic.", "Our experts can help with:"],
+          bullets: ["Research written in Arabic, with clear structure and documentation", "Economics and administration assignments", "Graduation projects"],
+        },
+        {
+          heading: "Prince Sultan University",
+          paragraphs: ["A private non-profit university known for business, law, engineering and computer science, teaching mainly in English.", "Our experts can help with:"],
+          bullets: ["Business reports and case studies", "Law essays and research", "Computing and engineering projects"],
+        },
+        {
+          heading: "Alfaisal University",
+          paragraphs: ["A private, English-medium university known for medicine, engineering, business and science, with research-led teaching.", "Our experts can help with:"],
+          bullets: ["Business assignments in academic English", "Engineering and science reports", "Research proposals and literature reviews"],
+        },
+        {
+          heading: "Saudi Electronic University",
+          paragraphs: ["Headquartered in Riyadh, SEU offers blended and online programmes in business, health sciences and computing, popular with students who work full-time.", "Our experts can help with:"],
+          bullets: ["Online course assignments and discussion tasks", "Business and health management reports", "Planning study around a full-time job"],
+        },
+      ],
+    },
+    {
       heading: 'Writing confidently in academic English',
       paragraphs: [
         "In English-medium programmes, marks often depend as much on how clearly you express an idea as on the idea itself. Our experts help you bridge that gap, so your understanding of the subject comes through in your writing.",

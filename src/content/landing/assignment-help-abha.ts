@@ -33,6 +33,22 @@ export const assignmentHelpAbha: LandingContent = {
       ],
     },
     {
+      heading: "Universities in Abha and the Asir region we support",
+      paragraphs: ["We support students at every university in Abha and the Asir region, whether your programme is taught in English or Arabic. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own course brief and marking criteria."],
+      subsections: [
+        {
+          heading: "King Khalid University",
+          paragraphs: ["The main university of the Asir region, with colleges of medicine, engineering, business, computer science, education and Sharia.", "Our experts can help with:"],
+          bullets: ["Business and computing assignments", "Education research and teaching practice", "Medical and health research projects"],
+        },
+        {
+          heading: "University of Bisha",
+          paragraphs: ["Established in 2014, with colleges of business, medicine, science and education.", "Our experts can help with:"],
+          bullets: ["Business coursework", "Science reports", "Education assignments"],
+        },
+      ],
+    },
+    {
       heading: 'Why online support works well in Asir',
       paragraphs: [
         'Universities in the region serve students spread across a wide, mountainous area, and many students commute long distances or study at branch campuses. Online support removes the need to travel: you can photograph a brief between lectures, ask a quick question in the evening, or share a draft from your phone.',

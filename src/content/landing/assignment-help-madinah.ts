@@ -33,6 +33,22 @@ export const assignmentHelpMadinah: LandingContent = {
       ],
     },
     {
+      heading: "Universities in the Madinah region we support",
+      paragraphs: ["We support students at every university in the Madinah region, whether your programme is taught in English or Arabic. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own course brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Taibah University",
+          paragraphs: ["The main public university in Madinah, with colleges of business, medicine and health sciences, engineering, computing and education, and branches in Yanbu, AlUla and other governorates.", "Our experts can help with:"],
+          bullets: ["Business and computing assignments", "Health sciences research projects", "Graduation projects"],
+        },
+        {
+          heading: "Islamic University of Madinah",
+          paragraphs: ["Founded in 1961, the university welcomes students from many countries to study Sharia, Hadith, Quran and Arabic language, alongside newer science and engineering programmes.", "Our experts can help with:"],
+          bullets: ["Research written in Arabic", "Academic writing in a second language", "Documentation and referencing"],
+        },
+      ],
+    },
+    {
       heading: 'Research written in Arabic: structure and documentation',
       paragraphs: [
         "Many graduation projects and Master's theses in Madinah are written in Arabic. Departments usually expect a familiar structure, and the problems we see most often are about organisation rather than knowledge: an unclear research problem, previous studies listed one after another without comparison, or citations that do not match the department's style.",

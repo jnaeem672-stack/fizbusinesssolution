@@ -32,6 +32,42 @@ export const assignmentHelpDubai: LandingContent = {
       ],
     },
     {
+      heading: "Universities in Dubai we support",
+      paragraphs: ["We support students at every university in Dubai, from UK and international branch campuses to federal and private universities. FIZBS is an independent online service and is not affiliated with any of them. Each university follows its own home system of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Heriot-Watt University Dubai",
+          paragraphs: ["Heriot-Watt's Dubai campus teaches the same programmes and assessments as in Scotland, in business, engineering, computing and psychology.", "Our experts can help with:"],
+          bullets: ["UK-style critical essays and reports", "Engineering and computing projects", "Business dissertations"],
+        },
+        {
+          heading: "Middlesex University Dubai",
+          paragraphs: ["Middlesex's Dubai campus teaches business, computing, psychology, media and law to the same UK standards as its London campus.", "Our experts can help with:"],
+          bullets: ["Business and law coursework", "Psychology research reports", "Harvard referencing to UK standards"],
+        },
+        {
+          heading: "University of Birmingham Dubai",
+          paragraphs: ["Opened in 2018 in Dubai International Academic City, the campus teaches business, computer science, education, engineering and psychology with UK assessment.", "Our experts can help with:"],
+          bullets: ["Critical essays and literature reviews", "Business and computing assignments", "Dissertations"],
+        },
+        {
+          heading: "University of Wollongong in Dubai",
+          paragraphs: ["Established in 1993, the Australian university's Dubai campus is known for business, finance, engineering and IT, with Australian-style assessment.", "Our experts can help with:"],
+          bullets: ["Business and finance reports", "Engineering and IT projects", "Group assignments and presentations"],
+        },
+        {
+          heading: "American University in Dubai",
+          paragraphs: ["A US-style university with business, engineering, media and design programmes, graded on a GPA scale.", "Our experts can help with:"],
+          bullets: ["APA and MLA papers", "Business case studies", "Capstone projects"],
+        },
+        {
+          heading: "Zayed University",
+          paragraphs: ["A federal university with campuses in Dubai and Abu Dhabi, known for business, communication, education and technology, teaching mainly in English.", "Our experts can help with:"],
+          bullets: ["Business and communication assignments", "Education coursework", "Writing in academic English"],
+        },
+      ],
+    },
+    {
       heading: 'Branch campus assessment: same standards, faster pace',
       paragraphs: [
         "A degree from a UK branch campus is normally assessed against the same criteria as on the home campus in Britain. Some campuses also teach in shorter terms or intensive blocks, so briefs arrive and deadlines follow quickly. Students who plan their reading early, and understand exactly what the marking criteria reward, find the pace much easier to manage.",

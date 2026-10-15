@@ -34,6 +34,27 @@ export const assignmentHelpDammam: LandingContent = {
       ],
     },
     {
+      heading: "Universities in Dammam, Dhahran and Al Khobar we support",
+      paragraphs: ["We support students at every university in Dammam, Dhahran and Al Khobar, whether your programme is taught in English or Arabic. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own course brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Imam Abdulrahman Bin Faisal University",
+          paragraphs: ["Formerly the University of Dammam, the university is known for its health colleges, as well as engineering, architecture, business and design.", "Our experts can help with:"],
+          bullets: ["Health sciences research projects", "Engineering and architecture reports", "Business assignments"],
+        },
+        {
+          heading: "King Fahd University of Petroleum & Minerals (KFUPM)",
+          paragraphs: ["Based in Dhahran and teaching in English, KFUPM is known for engineering, science and its business school, with demanding technical and mathematical coursework.", "Our experts can help with:"],
+          bullets: ["Technical reports and calculations explained clearly", "Business and management assignments", "Data analysis in Excel, SPSS or Python"],
+        },
+        {
+          heading: "Prince Mohammad Bin Fahd University",
+          paragraphs: ["A private, English-medium university in Al Khobar known for business, engineering and computing.", "Our experts can help with:"],
+          bullets: ["Business reports in academic English", "Engineering and computing projects", "Graduation projects"],
+        },
+      ],
+    },
+    {
       heading: 'Technical and data-heavy coursework',
       paragraphs: [
         "Engineering and science courses in the Eastern Province often involve calculations, design reports, simulations and data interpretation, all written up in English. Our experts can help you organise technical content into a clear report and explain the reasoning behind your methods. This is where the assignment help Dammam engineering and science students request is often most valuable: turning solid technical work into a report that reads clearly and meets the marking criteria.",

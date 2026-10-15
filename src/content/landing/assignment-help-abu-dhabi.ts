@@ -32,6 +32,42 @@ export const assignmentHelpAbuDhabi: LandingContent = {
       ],
     },
     {
+      heading: "Universities in Abu Dhabi and Al Ain we support",
+      paragraphs: ["We support students at every university in Abu Dhabi and Al Ain, from UK and international branch campuses to federal and private universities. FIZBS is an independent online service and is not affiliated with any of them. Each university follows its own home system of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Khalifa University",
+          paragraphs: ["A research-focused, English-medium university of science and technology, known for engineering, medicine and the sciences.", "Our experts can help with:"],
+          bullets: ["Engineering and science reports", "Research proposals and literature reviews", "Data analysis"],
+        },
+        {
+          heading: "United Arab Emirates University",
+          paragraphs: ["Founded in 1976 in Al Ain, UAEU is the country's first national university, with colleges of business and economics, engineering, education, science and medicine.", "Our experts can help with:"],
+          bullets: ["Business and economics assignments", "Education research", "Science and engineering reports"],
+        },
+        {
+          heading: "Abu Dhabi University",
+          paragraphs: ["A private university known for business, engineering, law and health sciences, with campuses in Abu Dhabi, Al Ain and Dubai.", "Our experts can help with:"],
+          bullets: ["Business and law coursework", "Engineering projects", "Health sciences assignments"],
+        },
+        {
+          heading: "Higher Colleges of Technology",
+          paragraphs: ["HCT offers applied, career-focused programmes across the Emirates, assessed through practical projects, reports and presentations.", "Our experts can help with:"],
+          bullets: ["Applied reports and projects", "Presentations", "Business and technology assignments"],
+        },
+        {
+          heading: "NYU Abu Dhabi",
+          paragraphs: ["A US-style liberal arts university where courses rely on essays, seminar discussion and independent research.", "Our experts can help with:"],
+          bullets: ["Research papers and essays", "Capstone research projects", "APA and MLA referencing"],
+        },
+        {
+          heading: "Sorbonne University Abu Dhabi",
+          paragraphs: ["The French university's Abu Dhabi campus teaches law, business and the humanities, with some programmes in French.", "Our experts can help with:"],
+          bullets: ["Law and business assignments", "Humanities essays", "Research projects"],
+        },
+      ],
+    },
+    {
       heading: 'Energy, sustainability and engineering topics',
       paragraphs: [
         "Abu Dhabi is one of the world's major oil and gas producers and is also investing heavily in renewable energy and sustainable cities, with Masdar City as a well-known example. That makes energy and sustainability popular topics in engineering, business and environmental modules.",

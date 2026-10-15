@@ -33,6 +33,17 @@ export const assignmentHelpQassim: LandingContent = {
       ],
     },
     {
+      heading: "Universities in the Qassim region we support",
+      paragraphs: ["We support students at every university in the Qassim region, whether your programme is taught in English or Arabic. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own course brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Qassim University",
+          paragraphs: ["Based in Buraydah, Qassim University is known for agriculture and veterinary medicine, medicine and health sciences, engineering, and business and economics.", "Our experts can help with:"],
+          bullets: ["Agribusiness and economics assignments", "Health sciences research", "Engineering reports"],
+        },
+      ],
+    },
+    {
       heading: 'Agribusiness, food security and the date sector',
       paragraphs: [
         "Qassim is one of the Kingdom's main farming regions and is especially well known for dates, with large seasonal date markets in Buraydah. That makes it a strong source of examples for students in agriculture, economics, business and supply chain modules.",

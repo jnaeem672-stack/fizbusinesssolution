@@ -34,6 +34,37 @@ export const assignmentHelpJeddah: LandingContent = {
       ],
     },
     {
+      heading: "Universities in Jeddah we support",
+      paragraphs: ["We support students at every university in Jeddah, whether your programme is taught in English or Arabic. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own course brief and marking criteria."],
+      subsections: [
+        {
+          heading: "King Abdulaziz University",
+          paragraphs: ["One of the largest universities in the Kingdom, with campuses for male and female students and a large distance learning programme. It is known for economics and administration, engineering, medicine and marine sciences.", "Our experts can help with:"],
+          bullets: ["Economics and administration assignments", "Engineering reports and projects", "Distance learning coursework"],
+        },
+        {
+          heading: "University of Jeddah",
+          paragraphs: ["Established in 2014, the University of Jeddah offers programmes in business, computing, engineering and science.", "Our experts can help with:"],
+          bullets: ["Business reports and case studies", "Computing projects", "Science lab reports"],
+        },
+        {
+          heading: "Effat University",
+          paragraphs: ["A private women's university known for architecture, engineering, business and psychology, teaching mainly in English.", "Our experts can help with:"],
+          bullets: ["Business and psychology assignments in English", "Architecture and design reports", "Research projects"],
+        },
+        {
+          heading: "Dar Al-Hekma University",
+          paragraphs: ["A private university known for business, law, design and education.", "Our experts can help with:"],
+          bullets: ["Business coursework", "Law essays", "Education assignments"],
+        },
+        {
+          heading: "University of Business and Technology (UBT)",
+          paragraphs: ["A private university focused on business, engineering and computing, with applied, industry-linked courses.", "Our experts can help with:"],
+          bullets: ["Applied business reports", "Engineering and computing projects", "Presentations and group work"],
+        },
+      ],
+    },
+    {
       heading: 'Subjects Jeddah students ask about most',
       paragraphs: [
         "Business remains the most popular area for students in Jeddah, which fits well with our main strengths. We also support a broad set of other disciplines.",

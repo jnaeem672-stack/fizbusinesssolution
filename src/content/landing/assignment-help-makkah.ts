@@ -33,6 +33,17 @@ export const assignmentHelpMakkah: LandingContent = {
       ],
     },
     {
+      heading: "Universities in Makkah we support",
+      paragraphs: ["We support students at every university in Makkah, whether your programme is taught in English or Arabic. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own course brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Umm Al-Qura University",
+          paragraphs: ["The main university in Makkah, known for Sharia and Islamic studies, Arabic language, education, medicine and engineering, and for research on Hajj and Umrah through its dedicated research institute.", "Our experts can help with:"],
+          bullets: ["Research written in Arabic, with clear structure and documentation", "Education and Islamic studies research", "Engineering and health assignments"],
+        },
+      ],
+    },
+    {
       heading: 'Planning coursework around Ramadan and the Hajj season',
       paragraphs: [
         'Life in Makkah follows a calendar that few other cities share. During Ramadan and the Hajj season, many students work extra shifts in hotels, hospitals, transport or visitor services, roads become busier and family commitments grow. Deadlines rarely move to match, so the students who cope best are the ones who plan ahead.',

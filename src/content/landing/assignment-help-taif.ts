@@ -33,6 +33,17 @@ export const assignmentHelpTaif: LandingContent = {
       ],
     },
     {
+      heading: "Universities in Taif we support",
+      paragraphs: ["We support students at every university in Taif, whether your programme is taught in English or Arabic. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own course brief and marking criteria."],
+      subsections: [
+        {
+          heading: "Taif University",
+          paragraphs: ["With colleges of medicine and health sciences, engineering, computing, business administration, science and education, and branch colleges in nearby governorates.", "Our experts can help with:"],
+          bullets: ["Lab reports and scientific writing", "Business administration assignments", "Preparatory year and first-year coursework"],
+        },
+      ],
+    },
+    {
       heading: 'Lab reports and scientific writing',
       paragraphs: [
         'Science, health and engineering students in Taif write many lab and technical reports, often in English. These reports follow a strict structure, and marks are most often lost in the parts students rush: the presentation of results and the discussion. Our experts help you get each part right.',

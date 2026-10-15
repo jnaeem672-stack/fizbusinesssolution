@@ -33,6 +33,22 @@ export const assignmentHelpTabuk: LandingContent = {
       ],
     },
     {
+      heading: "Universities in Tabuk we support",
+      paragraphs: ["We support students at every university in Tabuk, whether your programme is taught in English or Arabic. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own course brief and marking criteria."],
+      subsections: [
+        {
+          heading: "University of Tabuk",
+          paragraphs: ["The main public university in the region, with colleges of business administration, medicine, engineering, computing and science, and branch colleges in other governorates.", "Our experts can help with:"],
+          bullets: ["Business and project management assignments", "Engineering and computing reports", "Graduation projects"],
+        },
+        {
+          heading: "Fahad Bin Sultan University",
+          paragraphs: ["A private university in Tabuk with programmes in business, engineering and computing taught in English.", "Our experts can help with:"],
+          bullets: ["Business reports in academic English", "Engineering and computing projects", "Presentations"],
+        },
+      ],
+    },
+    {
       heading: 'Writing about NEOM and other giga-projects critically',
       paragraphs: [
         'Projects such as NEOM and the Red Sea tourism destination are popular assignment topics in Tabuk, and it is easy to see why. The challenge is to write about them critically. Much of the published material comes from the projects themselves, plans can change, and independent data is often limited. Markers reward students who recognise this and weigh the evidence carefully.',
