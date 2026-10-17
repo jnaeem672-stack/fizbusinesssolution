@@ -3,12 +3,16 @@ import type { BlogPost } from './types';
 export const primaryVsSecondaryResearchPost: BlogPost = {
   slug: 'primary-vs-secondary-research',
   locale: 'en',
-  title: 'Primary vs Secondary Research: Differences, Examples and When to Use Each',
-  metaTitle: 'Primary vs Secondary Research: Differences and Examples',
+  title: 'Primary vs Secondary Research: What Is the Difference? (With Examples)',
+  metaTitle: "Primary vs Secondary Research: What's the Difference?",
   metaDescription:
-    'Primary vs secondary research explained: key differences, examples by subject, where to find secondary data and how to choose for your dissertation.',
+    'What is the difference between primary and secondary research? A clear answer, examples, pros and cons, and where to find data for your dissertation.',
   keywords: [
     'primary vs secondary research',
+    'what is the difference between primary and secondary research',
+    'primary research vs secondary research',
+    'advantages and disadvantages of primary research',
+    'advantages and disadvantages of secondary research',
     'primary and secondary research',
     'primary research examples',
     'secondary research examples',
@@ -25,6 +29,21 @@ export const primaryVsSecondaryResearchPost: BlogPost = {
     'This guide explains both, compares them, gives examples from different subjects, lists reliable sources of secondary data and shows you how to decide.',
   ],
   sections: [
+    {
+      heading: 'What is the difference between primary and secondary research?',
+      paragraphs: [
+        'The difference between primary and secondary research is who collected the data and why. In primary research, you collect new data yourself for your own research question, for example through a survey, interviews or an experiment. In secondary research, you use data or studies that someone else has already collected, such as journal articles, government statistics or company reports.',
+        'Primary data fits your question exactly but takes more time and usually needs research approval. Secondary data is quicker to access and often covers larger samples, but it was collected for a different purpose. Here are the key differences side by side:',
+      ],
+      bullets: [
+        'Who collects the data: you, or another researcher or organisation',
+        'Fit to your question: designed for it, or adapted from another purpose',
+        'Time and cost: usually higher for primary, usually lower for secondary',
+        'Control over quality: full control in primary research, none over how secondary data was collected',
+        'Sample size: often small in student primary research, often large in secondary datasets',
+        'Approval: research with people needs university approval (in the US, from your Institutional Review Board, or IRB); analysing public, anonymised data usually needs less, but check your department',
+      ],
+    },
     {
       heading: 'What is primary research?',
       paragraphs: [
@@ -48,14 +67,44 @@ export const primaryVsSecondaryResearchPost: BlogPost = {
       ],
     },
     {
-      heading: 'Primary vs secondary research: the key differences',
-      bullets: [
-        'Who collects the data: you, or another researcher or organisation',
-        'Fit to your question: designed for it, or adapted from another purpose',
-        'Time and cost: usually higher for primary, usually lower for secondary',
-        'Control over quality: full control in primary research, none over how secondary data was collected',
-        'Sample size: often small in student primary research, often large in secondary datasets',
-        'Approval: research with people needs university approval; analysing public, anonymised data usually needs less, but check your department',
+      heading: 'Advantages and disadvantages of primary and secondary research',
+      subsections: [
+        {
+          heading: 'Advantages of primary research',
+          bullets: [
+            'Data is designed to answer your exact research question',
+            'You control how, when and from whom the data is collected',
+            'Findings are current and can explore new or local topics',
+            'Shows markers that you can design and carry out research yourself',
+          ],
+        },
+        {
+          heading: 'Disadvantages of primary research',
+          bullets: [
+            'Takes time to design, recruit participants and collect data',
+            'Samples in student projects are often small or convenience-based',
+            'Needs research approval and informed consent before you start',
+            'Response rates can be low, especially for online surveys',
+          ],
+        },
+        {
+          heading: 'Advantages of secondary research',
+          bullets: [
+            'Quick and usually free to access through your library or official websites',
+            'Large, high-quality datasets that a student could never collect alone',
+            'Allows comparisons over many years or between countries',
+            'Usually needs little or no approval for public, anonymised data',
+          ],
+        },
+        {
+          heading: 'Disadvantages of secondary research',
+          bullets: [
+            'The data was collected for another purpose and may not fit your question',
+            'You cannot control how the data was collected or fix gaps in it',
+            'Some data may be out of date by the time you use it',
+            'Access to some databases depends on your university subscriptions',
+          ],
+        },
       ],
     },
     {
@@ -102,6 +151,7 @@ export const primaryVsSecondaryResearchPost: BlogPost = {
       heading: 'Where to find good secondary data',
       bullets: [
         'UK: the Office for National Statistics (ONS) and the UK Data Service',
+        'United States: the U.S. Census Bureau, the Bureau of Labor Statistics, data.gov and the Pew Research Center',
         'Saudi Arabia: the General Authority for Statistics (GASTAT)',
         'International: World Bank Open Data, OECD Data and Eurostat',
         'Companies: annual reports and sustainability reports published on company websites',
@@ -142,6 +192,14 @@ export const primaryVsSecondaryResearchPost: BlogPost = {
     },
   ],
   faqs: [
+    {
+      q: 'Is a survey primary or secondary research?',
+      a: 'A survey you design and send out yourself is primary research. Using the results of a survey that someone else carried out, such as a national census or a published poll, is secondary research.',
+    },
+    {
+      q: 'Is a case study primary or secondary research?',
+      a: 'It depends on the data. A case study based on your own interviews or observations is primary research, while one built from published reports, articles and company documents is secondary research. Many case studies use both.',
+    },
     {
       q: 'Is a literature review primary or secondary research?',
       a: 'A literature review is secondary research, because it analyses studies that other researchers have already published.',

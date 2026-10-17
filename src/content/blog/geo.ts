@@ -199,8 +199,8 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
   },
   'primary-vs-secondary-research': {
     quickAnswer:
-      'Primary research means collecting new data yourself, for example through questionnaires, interviews or experiments. Secondary research uses data or studies that already exist, such as journal articles, official statistics or company reports. Primary data fits your question exactly but takes longer; secondary data is quicker and often larger but was collected for another purpose. Many dissertations combine both.',
+      'The difference between primary and secondary research is who collected the data. Primary research means collecting new data yourself, for example through surveys, interviews or experiments. Secondary research uses data or studies that already exist, such as journal articles, government statistics or company reports. Primary data fits your question exactly but takes longer; secondary data is quicker and often larger but was collected for another purpose. Many dissertations combine both.',
     specialist: 'sophia-l',
-    updated: '2026-10-14',
+    updated: '2026-10-17',
   },
 };

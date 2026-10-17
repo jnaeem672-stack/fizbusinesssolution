@@ -205,13 +205,13 @@ export const GUIDE_FIGURES: Record<string, GuideFigure[]> = {
   ],
   "primary-vs-secondary-research": [
     {
-      section: "Primary vs secondary research: the key differences",
+      section: "What is the difference between primary and secondary research?",
       src: '/images/guides/primary-vs-secondary.svg',
       alt: "Comparison table: primary research is collected by you for your own question through questionnaires, interviews or experiments, usually takes more time and needs approval for research with people; secondary research uses existing articles, statistics or reports, is usually quicker and larger, but was collected for another purpose.",
       caption: "How primary and secondary research differ, from who collects the data to the approval you need.",
       width: 800,
       height: 655,
-      position: 'top',
+      position: 'afterText',
     },
   ],
 };
