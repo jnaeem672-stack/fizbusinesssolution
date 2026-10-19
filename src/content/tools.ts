@@ -169,12 +169,12 @@ export const TOOLS: ToolContent[] = [
   {
     slug: 'harvard-referencing-generator',
     name: 'Harvard Referencing Generator',
-    metaTitle: 'Free Harvard Referencing Generator | Books, Journals, Web',
+    metaTitle: 'Free Harvard Referencing Generator & Citation Maker',
     metaDescription:
-      'Free Harvard referencing generator for books, chapters, journal articles, websites and reports. Get your reference and in-text citation in seconds.',
+      'Free Harvard referencing generator and citation tool. Create references, in-text citations and a sorted bibliography for books, journals and websites.',
     h1: 'Free Harvard Referencing Generator',
     subtitle:
-      'Create Harvard references and in-text citations for books, book chapters, journal articles, websites and reports. Build your reference list in alphabetical order and copy it straight into your document, italics included.',
+      'A free Harvard citation generator and bibliography maker. Create Harvard references and in-text citations for books, book chapters, journal articles, websites and reports, build your reference list in alphabetical order and copy it straight into your document, italics included.',
     cardText: 'Harvard references and in-text citations for books, journals, websites and reports, with a sorted reference list.',
     sections: [
       {
@@ -227,6 +227,26 @@ export const TOOLS: ToolContent[] = [
         ],
       },
       {
+        heading: 'Harvard citation generator, referencer or bibliography maker?',
+        paragraphs: [
+          'Students search for this kind of tool under many names: a Harvard citation generator, a Harvard referencer, a citation tool or a bibliography maker. They all mean the same thing. This generator creates both parts you need: the in-text citation, such as (Smith, 2021), and the full reference for the list at the end of your work.',
+          'A reference list contains only the sources you cited in your text. A bibliography usually also includes sources you read but did not cite. Most UK universities ask for a reference list, but some modules ask for a bibliography as well. You can use the generator for both: add every source you consulted, then remove the ones you did not cite if your handbook asks for a reference list only.',
+        ],
+      },
+      {
+        heading: 'University versions of Harvard: Cite Them Right, Leeds Harvard and others',
+        paragraphs: [
+          "This generator follows Cite Them Right Harvard, the version most UK universities use. Some universities publish their own version instead, such as Leeds Harvard at the University of Leeds, and others adapt Harvard for particular departments. The core idea is the same everywhere, author and year in the text and an alphabetical list at the end, but small details differ. If your university uses its own version, generate the reference here, then check these points against your library guide:",
+        ],
+        bullets: [
+          'Whether the year goes in brackets, for example (2021), or without them',
+          'Whether the place of publication is included before the publisher',
+          'How many authors you list in the text before using et al.',
+          'How online sources are shown, for example "Available at:" or "Available from:" and the format of the accessed date',
+          'Whether titles are in italics or another format',
+        ],
+      },
+      {
         heading: 'Harvard is not one single style',
         paragraphs: [
           "There is no single official Harvard style. Universities publish their own versions, and details such as the use of 'et al.', the place of publication or the accessed date for DOIs can differ. Always compare the output with your module handbook or library guide, and follow your university where it differs.",
@@ -242,6 +262,18 @@ export const TOOLS: ToolContent[] = [
       {
         q: 'Which version of Harvard does this generator use?',
         a: 'It follows the Cite Them Right version of Harvard, which is widely used by UK universities. Check your module handbook, because some universities use their own variation.',
+      },
+      {
+        q: 'Is this a Harvard citation generator or a bibliography maker?',
+        a: 'Both. It creates the in-text citation and the full reference for each source, and builds an alphabetical list you can use as a reference list or a bibliography.',
+      },
+      {
+        q: 'Can I use it for Leeds Harvard?',
+        a: 'The generator follows Cite Them Right Harvard. Leeds Harvard, used at the University of Leeds, differs in some details, so generate your reference here and then check it against the Leeds library guide, adjusting points such as brackets, place of publication and online source format.',
+      },
+      {
+        q: 'What is the difference between a reference list and a bibliography?',
+        a: 'A reference list includes only the sources you cited in your work. A bibliography usually also lists sources you read for background but did not cite. Follow your module handbook on which one to include.',
       },
       {
         q: 'Do I need an accessed date?',
