@@ -28,11 +28,27 @@ const features: { title: string; desc: string; icon: LucideIcon }[] = [
   },
 ];
 
+// Students studying together (cottonbro studio, Pexels License: free for commercial use)
+const BG_IMAGE = 'https://images.pexels.com/photos/4778621/pexels-photo-4778621.jpeg?auto=compress&cs=tinysrgb';
+const bgSrcSet = [800, 1200, 1600, 2000].map((w) => `${BG_IMAGE}&w=${w} ${w}w`).join(', ');
+
 const WhyChooseUs = () => (
   <div className="bg-navy relative overflow-hidden">
     <StatsBar />
 
-    <section className="py-20 md:py-28 relative z-10">
+    <section className="py-20 md:py-28 relative z-10 overflow-hidden">
+      <img
+        src={`${BG_IMAGE}&w=1600`}
+        srcSet={bgSrcSet}
+        sizes="100vw"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+        className="absolute inset-0 -z-10 w-full h-full object-cover object-center"
+      />
+      {/* Dark enough for the cards to stay readable, light enough for the students to show */}
+      <div aria-hidden="true" className="absolute inset-0 -z-10 bg-gradient-to-b from-navy/90 via-navy/80 to-navy/95" />
       <div className="max-w-site mx-auto px-4">
         <SectionHeader
           badge="Why FIZBS"
