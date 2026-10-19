@@ -363,8 +363,13 @@ export default function ReferenceGenerator({ style: initialStyle }: { style: Ref
   const applyCite = (r: CiteResult) => {
     const d = r.data;
     loadSource({ ...d, noDate: false, accessed: '', citePage: '' });
+    const missingDate = !d.year
+      ? d.type === 'video'
+        ? ' We could not find the upload date: it is shown under the video, so add the year (and the day and month for APA), or tick No date if there is none.'
+        : ' We could not find the date, so add the year from the source, or tick No date if there is none.'
+      : '';
     setNotice(
-      `We filled in the details from ${r.source}. Check them against your source before you use the reference, especially the capitalisation of the title, the year and the edition.`,
+      `We filled in the details from ${r.source}. Check them against your source before you use the reference, especially the capitalisation of the title, the year and the edition.${missingDate}`,
     );
     // On phones the preview sits below the form, so bring it into view
     if (window.innerWidth < 1024) setTimeout(() => scrollTo(previewRef.current), 50);

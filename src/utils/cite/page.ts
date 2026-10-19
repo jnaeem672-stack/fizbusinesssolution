@@ -281,6 +281,12 @@ export function parsePage(html: string, pageUrl: string): PageCitation {
 
 /** Upload date from a YouTube watch page (its JSON player data) */
 export function youtubeDate(html: string): { year: string; month: string; day: string } {
-  const m = /"(?:uploadDate|publishDate)"\s*:\s*"(\d{4}-\d{2}-\d{2})/.exec(html) || /itemprop="(?:uploadDate|datePublished)"\s+content="(\d{4}-\d{2}-\d{2})/.exec(html);
-  return parseLooseDate(m ? m[1] : '');
+  const iso =
+    /"(?:uploadDate|publishDate|datePublished)"\s*:\s*"(\d{4}-\d{2}-\d{2})/.exec(html) ||
+    /itemprop=["'](?:uploadDate|datePublished)["'][^>]*content=["'](\d{4}-\d{2}-\d{2})/.exec(html) ||
+    /content=["'](\d{4}-\d{2}-\d{2})[^"']*["'][^>]*itemprop=["'](?:uploadDate|datePublished)["']/.exec(html);
+  if (iso) return parseLooseDate(iso[1]);
+  // The date shown under the video, e.g. "10 Apr 2021" or "Premiered Apr 10, 2021"
+  const shown = /"dateText"\s*:\s*\{\s*"simpleText"\s*:\s*"([^"]+)"/.exec(html);
+  return parseLooseDate(shown ? shown[1] : '');
 }

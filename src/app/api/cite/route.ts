@@ -33,7 +33,7 @@ function rateLimited(ip: string): boolean {
 }
 
 const CACHE_MS = 6 * 60 * 60 * 1000;
-const cache = new Map<string, { t: number; body: { ok: true; result: CiteResult; doi: string } }>();
+const cache = new Map<string, { t: number; body: { ok: true; result: CiteResult; doi: string; detail?: string } }>();
 
 function json(body: unknown, status = 200) {
   return NextResponse.json(body, { status, headers: { 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex' } });
@@ -78,9 +78,18 @@ export async function GET(req: NextRequest) {
   try {
     let result: CiteResult;
     let doi = '';
+    // Short reason when a detail could not be read, to help with support questions
+    let detail = '';
     const isYouTube = hostLookup({ 'youtube.com': 'y', 'youtu.be': 'y' }, target.hostname) !== '';
     if (isYouTube) {
-      const [oembed, page] = await Promise.all([youtubeOEmbed(key), fetchPage(key).catch(() => null)]);
+      // SOCS/CONSENT cookies skip the cookie consent page YouTube shows to European servers
+      const [oembed, page] = await Promise.all([
+        youtubeOEmbed(key),
+        fetchPage(key, { cookie: 'SOCS=CAI; CONSENT=YES+cb', maxBytes: 3_000_000 }).catch((err: Error) => {
+          detail = `page: ${err.message}`.slice(0, 80);
+          return null;
+        }),
+      ]);
       const parsed = page ? parsePage(page.html, key).data : null;
       if (!oembed && !parsed?.title) throw new Error('no data');
       const date = page ? youtubeDate(page.html) : { year: '', month: '', day: '' };
@@ -96,6 +105,7 @@ export async function GET(req: NextRequest) {
       data.month = date.month || data.month;
       data.day = date.day || data.day;
       data.url = key;
+      if (!data.year && !detail) detail = page && /consent\.youtube|Before you continue/i.test(page.html.slice(0, 20000)) ? 'consent page' : 'no date found';
       result = { source: 'YouTube', data };
     } else {
       const page = await fetchPage(key);
@@ -104,7 +114,7 @@ export async function GET(req: NextRequest) {
       result = { source: 'Web page', data: parsed.data };
       doi = parsed.doi;
     }
-    const body = { ok: true as const, result, doi };
+    const body = { ok: true as const, result, doi, ...(detail ? { detail } : {}) };
     if (cache.size > 500) cache.delete(cache.keys().next().value as string);
     cache.set(key, { t: Date.now(), body });
     return json(body);

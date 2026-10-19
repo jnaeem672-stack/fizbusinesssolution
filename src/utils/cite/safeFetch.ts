@@ -62,8 +62,10 @@ function safeLookup(hostname: string, options: dns.LookupOptions, callback: Look
       e.code = 'EBLOCKED';
       return callback(e, '');
     }
-    if (options && options.all) return callback(null, list);
-    return callback(null, list[0].address, list[0].family);
+    // IPv4 first: many hosting servers have no working IPv6 route
+    const sorted = [...list].sort((a, b) => a.family - b.family);
+    if (options && options.all) return callback(null, sorted);
+    return callback(null, sorted[0].address, sorted[0].family);
   });
 }
 
@@ -91,7 +93,11 @@ interface Options {
   /** Tests only: allow local addresses */
   allowPrivate?: boolean;
   userAgent?: string;
+  /** Cookie header, e.g. to skip a cookie consent page */
+  cookie?: string;
 }
+
+type Resolved = Required<Omit<Options, 'cookie'>> & { cookie: string };
 
 const UA = 'Mozilla/5.0 (compatible; FIZBS-ReferenceGenerator/1.0; +https://fizbusinessolutions.com/tools/harvard-referencing-generator)';
 
@@ -102,7 +108,7 @@ function charsetOf(contentType: string, head: Buffer): string {
   return (/<meta[^>]+charset=["']?([\w-]+)/i.exec(sniff)?.[1] ?? 'utf-8').toLowerCase();
 }
 
-function requestOnce(u: URL, opts: Required<Omit<Options, 'userAgent'>> & { userAgent: string }, deadline: number) {
+function requestOnce(u: URL, opts: Resolved, deadline: number) {
   return new Promise<{ status: number; location?: string; html?: string }>((resolveOuter, rejectOuter) => {
     const mod = u.protocol === 'https:' ? https : http;
     const remaining = Math.max(1000, deadline - Date.now());
@@ -125,6 +131,7 @@ function requestOnce(u: URL, opts: Required<Omit<Options, 'userAgent'>> & { user
           Accept: 'text/html,application/xhtml+xml;q=0.9,*/*;q=0.5',
           'Accept-Language': 'en-GB,en;q=0.9',
           'Accept-Encoding': 'gzip, deflate, br',
+          ...(opts.cookie ? { Cookie: opts.cookie } : {}),
         },
         lookup: opts.allowPrivate ? undefined : (safeLookup as unknown as net.LookupFunction),
         timeout: remaining,
@@ -193,6 +200,7 @@ export async function fetchPage(rawUrl: string, options: Options = {}): Promise<
     maxRedirects: options.maxRedirects ?? 4,
     allowPrivate: options.allowPrivate ?? false,
     userAgent: options.userAgent ?? UA,
+    cookie: options.cookie ?? '',
   };
   const deadline = Date.now() + opts.timeoutMs;
   let u = new URL(rawUrl);
