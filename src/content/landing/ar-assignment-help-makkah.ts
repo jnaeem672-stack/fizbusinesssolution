@@ -39,7 +39,12 @@ export const arAssignmentHelpMakkah: LandingContent = {
         {
           heading: "جامعة أم القرى",
           paragraphs: ["الجامعة الرئيسية في مكة المكرمة، وتشتهر بالشريعة والدراسات الإسلامية واللغة العربية والتربية والطب والهندسة، وبأبحاث الحج والعمرة عبر معهدها البحثي المتخصص.", "يساعدك خبراؤنا في:"],
-          bullets: ["البحوث المكتوبة بالعربية بهيكل وتوثيق واضحين", "بحوث التربية والدراسات الإسلامية", "واجبات الهندسة والعلوم الصحية"],
+          bullets: [
+            "البحوث المكتوبة بالعربية بهيكل وتوثيق واضحين",
+            "بحوث التربية والدراسات الإسلامية",
+            "واجبات الهندسة والعلوم الصحية",
+            "مشاريع التصميم وتصميم المنتجات في 3ds Max وAutoCAD",
+          ],
         },
       ],
     },
@@ -163,5 +168,5 @@ export const arAssignmentHelpMakkah: LandingContent = {
     'أرسل متطلبات واجبك عبر واتساب بالعربية أو الإنجليزية واطلب السعر بالريال، أو استخدم حاسبة الأسعار الفورية. طلاب مكة يحصلون على خصم 10% على أول طلب.',
   whatsappMessage:
     'مرحبًا FIZBS! أنا طالب في مكة المكرمة وأحتاج إلى مساعدة في واجب جامعي. التخصص: ، عدد الكلمات: ، الموعد النهائي: ',
-  related: ['assignment-help-saudi-arabia', 'assignment-help-jeddah', 'assignment-help-madinah', 'dissertation-help-saudi-arabia'],
+  related: ['assignment-help-saudi-arabia', 'assignment-help-jeddah', 'assignment-help-madinah', '3ds-max-design-help', 'dissertation-help-saudi-arabia'],
 };

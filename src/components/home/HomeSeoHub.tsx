@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { CheckCircle2 } from 'lucide-react';
 import {
   AR_SERVICE_LINKS,
+  AR_TECH_LINKS,
   QUALIFICATION_LINKS,
   SAUDI_CITY_LINKS,
   SUBJECT_LINKS,
@@ -48,7 +49,7 @@ const GROUPS: { title: string; links: { label: string; href: string }[]; rtl?: b
   },
   { title: 'UAE and USA', links: [...UAE_LINKS, { label: 'Assignment Help USA', href: '/assignment-help-usa' }] },
   { title: 'Free student tools', links: TOOLS.map((t) => ({ label: t.name, href: toolPath(t) })) },
-  { title: 'بالعربية', links: AR_SERVICE_LINKS, rtl: true },
+  { title: 'بالعربية', links: [...AR_SERVICE_LINKS, ...AR_TECH_LINKS], rtl: true },
 ];
 
 const GUIDANCE = [

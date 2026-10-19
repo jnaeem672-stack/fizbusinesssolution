@@ -29,6 +29,11 @@ export const BILINGUAL_GUIDE_SLUGS = [
 
 export const EN_ONLY_FALLBACK: Record<string, string> = {
   'dissertation-help-saudi-arabia': '/dissertation-help-uk',
+  // Arabic-only pages: send English readers to the closest English page
+  '3ds-max-design-help': '/engineering-assignment-help',
+  'autocad-help': '/engineering-assignment-help',
+  'solidworks-help': '/engineering-assignment-help',
+  'programming-help': '/computing-it-assignment-help',
 };
 
 /** Returns the URL of the same page in the other language, or the other language's homepage. */

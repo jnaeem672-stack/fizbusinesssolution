@@ -91,6 +91,10 @@ import { arResearchProposalHelp } from './ar-research-proposal-help';
 import { arSpssHelp } from './ar-spss-help';
 import { arMbaAssignmentHelp } from './ar-mba-assignment-help';
 import { arThesisHelp } from './ar-thesis-help';
+import { ar3dsMaxDesignHelp } from './ar-3ds-max-design-help';
+import { arAutocadHelp } from './ar-autocad-help';
+import { arSolidworksHelp } from './ar-solidworks-help';
+import { arProgrammingHelp } from './ar-programming-help';
 
 export type { LandingContent } from './types';
 
@@ -194,6 +198,10 @@ export const AR_LANDING_PAGES: LandingContent[] = [
   arThesisHelp,
   arSpssHelp,
   arPhdAdmissionScholarshipHelp,
+  ar3dsMaxDesignHelp,
+  arAutocadHelp,
+  arSolidworksHelp,
+  arProgrammingHelp,
 ];
 
 export function getLandingPage(slug: string, locale: 'en' | 'ar' = 'en'): LandingContent | undefined {
@@ -344,6 +352,14 @@ export const AR_SERVICE_LINKS: { label: string; href: string }[] = [
   { label: 'المساعدة في القبول في الدكتوراه', href: '/ar/phd-admission-scholarship-help' },
 ];
 
+/** Arabic pages for design, engineering software and programming projects */
+export const AR_TECH_LINKS: { label: string; href: string }[] = [
+  { label: 'مشاريع 3ds Max والتصميم الداخلي', href: '/ar/3ds-max-design-help' },
+  { label: 'مشاريع AutoCAD والرسم الهندسي', href: '/ar/autocad-help' },
+  { label: 'مشاريع SolidWorks والتصميم الميكانيكي', href: '/ar/solidworks-help' },
+  { label: 'واجبات البرمجة Python وMATLAB', href: '/ar/programming-help' },
+];
+
 /** Groups of internal links shown inside the content of an Arabic landing page */
 function arLinkGroupsForPage(slug: string): { title: string; links: { label: string; href: string }[] }[] {
   const self = `/ar/${slug}`;
@@ -351,6 +367,7 @@ function arLinkGroupsForPage(slug: string): { title: string; links: { label: str
   if (SAUDI_CITY_SLUGS.includes(slug) || slug === 'assignment-help-saudi-arabia') {
     groups.push({ title: 'ندعم الطلاب في مدن المملكة', links: AR_CITY_LINKS.filter((l) => l.href !== self) });
   }
+  groups.push({ title: 'برامج التصميم والهندسة والبرمجة', links: AR_TECH_LINKS.filter((l) => l.href !== self) });
   groups.push({ title: 'خدمات أخرى بالعربية', links: AR_SERVICE_LINKS.filter((l) => l.href !== self) });
   return groups.filter((g) => g.links.length > 0);
 }
