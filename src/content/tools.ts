@@ -30,8 +30,29 @@ export interface ToolContent {
   services: string[];
   /** Blog guide slugs to recommend */
   guides: string[];
+  /** Extra landing pages that show this tool in their Free Student Tools box (not listed on the tool page) */
+  showOn?: string[];
+  /** Guides that carry an in-article box linking to this tool */
+  promotedIn?: string[];
+  /** ISO date the tool or its page last changed meaningfully (sitemap lastmod) */
+  updated?: string;
   whatsappMessage: string;
 }
+
+const UK_CITIES = [
+  'birmingham', 'bradford', 'bristol', 'cardiff', 'coventry', 'derby', 'edinburgh', 'glasgow', 'hull', 'leeds', 'leicester', 'liverpool', 'london',
+  'luton', 'manchester', 'middlesbrough', 'newcastle', 'northampton', 'nottingham', 'oxford', 'portsmouth', 'sheffield', 'southampton', 'sunderland', 'wolverhampton',
+].map((c) => `assignment-help-${c}`);
+const SAUDI_PAGES = ['saudi-arabia', 'riyadh', 'jeddah', 'dammam', 'makkah', 'madinah', 'abha', 'taif', 'qassim', 'tabuk'].map((c) => `assignment-help-${c}`);
+
+/** Guides where an in-article box points students to the referencing generators */
+const REFERENCING_GUIDES = [
+  'harvard-referencing-guide', 'apa-referencing-guide', 'how-to-paraphrase-and-avoid-plagiarism', 'how-to-write-a-literature-review',
+  'how-to-write-a-dissertation', 'how-to-write-a-dissertation-introduction', 'how-to-write-a-dissertation-discussion', 'how-to-write-a-dissertation-conclusion',
+  'dissertation-methodology-guide', 'how-to-write-a-research-proposal', 'how-to-structure-a-university-essay', 'how-to-write-a-business-report',
+  'how-to-write-a-case-study-analysis', 'gibbs-reflective-cycle-guide', 'swot-and-pestle-analysis-guide', 'thematic-analysis-guide',
+  'primary-vs-secondary-research', 'quantitative-vs-qualitative-research', 'human-vs-ai-academic-writing',
+];
 
 const PAGES_TABLE_WORDS = [500, 750, 1000, 1500, 2000, 2500, 3000, 4000, 5000, 8000, 10000, 12000, 15000];
 const pages = (words: number, perPage: number) => {
@@ -323,6 +344,13 @@ export const TOOLS: ToolContent[] = [
     ],
     services: ['referencing-help', 'essay-help', 'proofreading-editing-services', 'literature-review-help'],
     guides: ['harvard-referencing-guide', 'apa-referencing-guide', 'how-to-paraphrase-and-avoid-plagiarism'],
+    showOn: [
+      ...UK_CITIES, 'assignment-help-uk', 'dissertation-help-uk', 'assignment-help-uae', 'assignment-help-dubai', 'assignment-help-abu-dhabi',
+      'coursework-report-help', 'business-management-assignment-help', 'mba-assignment-help', 'research-proposal-help', 'case-study-help',
+      'cipd-assignment-help', 'cmi-assignment-help', 'hnd-hnc-assignment-help', 'othm-athe-assignment-help', 'marketing-assignment-help', 'hrm-assignment-help',
+    ],
+    promotedIn: REFERENCING_GUIDES,
+    updated: '2026-10-19',
     whatsappMessage: 'Hello FIZBS! I need help checking my Harvard references. Word count: , Deadline: ',
   },
   {
@@ -456,6 +484,9 @@ export const TOOLS: ToolContent[] = [
     ],
     services: ['referencing-help', 'psychology-assignment-help', 'healthcare-nursing-assignment-help', 'education-assignment-help'],
     guides: ['apa-referencing-guide', 'harvard-referencing-guide', 'how-to-write-a-literature-review'],
+    showOn: [...SAUDI_PAGES, 'assignment-help-usa', 'assignment-help-uae', 'dissertation-help-uk', 'thesis-help', 'research-methodology-help', 'spss-help', 'data-analysis-help', 'nvivo-thematic-analysis-help'],
+    promotedIn: REFERENCING_GUIDES,
+    updated: '2026-10-19',
     whatsappMessage: 'Hello FIZBS! I need help checking my APA references. Word count: , Deadline: ',
   },
   {
@@ -571,5 +602,5 @@ export function toolPath(tool: Pick<ToolContent, 'slug'>): string {
 
 /** Tools that are relevant to a landing page (for the "Free Student Tools" box on service pages) */
 export function toolsForService(slug: string): ToolContent[] {
-  return TOOLS.filter((t) => t.services.includes(slug));
+  return TOOLS.filter((t) => t.services.includes(slug) || t.showOn?.includes(slug));
 }

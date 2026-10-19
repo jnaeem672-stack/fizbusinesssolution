@@ -75,6 +75,11 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
   const morePosts = [...others.filter((p) => p.category === post.category), ...others.filter((p) => p.category !== post.category)].slice(0, 3);
   const ids = post.sections.map((s, i) => sectionId(s.heading, i, post.locale));
   const tools = isAr ? [] : TOOLS.filter((tool) => tool.guides.includes(post.slug));
+  // In-article box pointing to the referencing generators (APA first on the APA guide)
+  const refTools = isAr ? [] : TOOLS.filter((tool) => tool.promotedIn?.includes(post.slug));
+  const harvardTool = refTools.find((tool) => tool.slug === 'harvard-referencing-generator');
+  const apaTool = refTools.find((tool) => tool.slug === 'apa-referencing-generator');
+  const [mainRefTool, altRefTool] = post.slug === 'apa-referencing-guide' ? [apaTool, harvardTool] : [harvardTool, apaTool];
   const geo = isAr ? undefined : GUIDE_GEO[post.slug];
   const figures = isAr ? [] : GUIDE_FIGURES[post.slug] ?? [];
   const figuresFor = (heading: string, position?: GuideFigure['position']) =>
@@ -220,6 +225,29 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                 )}
               </div>
             ))}
+            {mainRefTool && (
+              <div className="mb-11 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+                <p className="flex items-center gap-2 text-lg font-extrabold text-navy">
+                  <BookOpen className="w-5 h-5 text-primary shrink-0" /> Reference your sources in seconds
+                </p>
+                <p className="mt-2 text-[16px]">
+                  Paste a DOI, ISBN or web link into our{' '}
+                  <Link href={toolPath(mainRefTool)} className="font-bold text-navy underline decoration-primary decoration-2 underline-offset-2 hover:text-primary">
+                    free {mainRefTool.slug === 'apa-referencing-generator' ? 'APA' : 'Harvard'} referencing generator
+                  </Link>{' '}
+                  and get the full reference and in-text citation, ready to copy into your work.
+                  {altRefTool && (
+                    <>
+                      {' '}Using {altRefTool.slug === 'apa-referencing-generator' ? 'APA 7' : 'Harvard'}? Try the{' '}
+                      <Link href={toolPath(altRefTool)} className="font-bold text-navy underline decoration-primary decoration-2 underline-offset-2 hover:text-primary">
+                        free {altRefTool.slug === 'apa-referencing-generator' ? 'APA' : 'Harvard'} referencing generator
+                      </Link>
+                      .
+                    </>
+                  )}
+                </p>
+              </div>
+            )}
           </article>
 
           <aside className="lg:col-span-4">

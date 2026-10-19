@@ -10,7 +10,7 @@ import { GUIDE_FIGURES } from '@/content/blog/figures';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // lastmod is only given where we know when the content really changed (guides and samples).
+  // lastmod is only given where we know when the content really changed (guides, samples and updated tools).
   // A build date on every page would tell Google nothing and can make it ignore lastmod altogether.
   const core: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, changeFrequency: 'weekly', priority: 1 },
@@ -64,6 +64,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}${TOOLS_PATH}`, changeFrequency: 'monthly', priority: 0.8 },
     ...TOOLS.map((tool) => ({
       url: `${SITE_URL}${toolPath(tool)}`,
+      ...(tool.updated ? { lastModified: new Date(tool.updated) } : {}),
       changeFrequency: 'monthly' as const,
       priority: 0.8,
     })),
