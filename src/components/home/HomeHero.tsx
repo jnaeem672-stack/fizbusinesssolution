@@ -10,7 +10,8 @@ import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL } from '@/constants/whatsapp';
 import { SUPPORT_FORM_HASH } from '@/constants/supportNavigation';
 
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=60';
+// Students walking together (Eliott Reyna, Unsplash License: free for commercial use)
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?auto=format&fit=crop&q=60';
 const heroSrcSet = [640, 1024, 1600, 2000].map((w) => `${HERO_IMAGE}&w=${w} ${w}w`).join(', ');
 
 const typingTexts = [
@@ -54,15 +55,16 @@ export default function HomeHero() {
           src={`${HERO_IMAGE}&w=1600`}
           srcSet={heroSrcSet}
           sizes="100vw"
-          alt="University graduates celebrating success"
+          alt="University students walking together and laughing"
           aria-hidden="true"
           fetchPriority="low"
           decoding="async"
-          className="w-full h-full object-cover scale-105"
+          className="w-full h-full object-cover object-center scale-105"
         />
       </div>
 
-      <div className="absolute inset-0 z-[1] bg-gradient-to-br from-navy/95 via-navy/85 to-navy-light/90" />
+      {/* Lighter than before so the students show through; darkest behind the headline for readability */}
+      <div className="absolute inset-0 z-[1] bg-gradient-to-b from-navy/70 via-navy/85 to-navy/95 lg:bg-gradient-to-r lg:from-navy/95 lg:via-navy/80 lg:to-navy/50" />
       <div className="absolute inset-0 z-[1] opacity-20 bg-[radial-gradient(#C9A227_1px,transparent_1px)] [background-size:24px_24px]" />
       <div className="absolute top-1/4 -left-32 w-96 h-96 bg-primary/20 rounded-full blur-[120px] z-[1] animate-float" />
       <div className="absolute bottom-1/4 -right-32 w-80 h-80 bg-primary/15 rounded-full blur-[100px] z-[1] animate-float" style={{ animationDelay: '2s' }} />
