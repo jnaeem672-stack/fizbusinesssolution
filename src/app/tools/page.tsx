@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 
 const NEEDS: { need: string; tool: string; slug: string }[] = [
   { need: 'I want to know my degree class, or the marks I need for a First, 2:1 or Distinction', tool: 'Degree Classification Calculator', slug: 'degree-classification-calculator' },
-  { need: 'I need to reference a book, chapter, journal article, website or report in Harvard', tool: 'Harvard Referencing Generator', slug: 'harvard-referencing-generator' },
+  { need: 'I need to reference a book, journal article, website, newspaper, thesis or video in Harvard, or create a reference from a DOI or ISBN', tool: 'Harvard Referencing Generator', slug: 'harvard-referencing-generator' },
   { need: 'My course uses APA 7, for example in psychology, nursing, education or business', tool: 'APA Referencing Generator', slug: 'apa-referencing-generator' },
   { need: 'I need my word count without the reference list, or to know how many pages it fills', tool: 'Word Counter and Pages Converter', slug: 'word-counter' },
 ];
@@ -39,7 +39,7 @@ const HUB_FAQS = [
   },
   {
     q: 'Is anything I type saved or sent to FIZBS?',
-    a: 'No. The tools run in your browser. Your marks and text are not sent to us. The Harvard and APA generators keep your reference list in your own browser only, so you can come back to it on the same device.',
+    a: 'The degree calculator and word counter run entirely in your browser, so your marks and text are not sent to us. The Harvard and APA generators keep your reference list in your own browser only, so you can come back to it on the same device. If you use autocite, the DOI, ISBN, title or link you enter is sent to public lookup services such as Crossref, or to our server to read a web page, only to fill in the details.',
   },
   {
     q: 'Which referencing styles do the generators use?',

@@ -2,9 +2,21 @@
  * APA 7th edition reference formatting (author-date, sentence-case titles, "&" before the last author,
  * DOI as https://doi.org/..., no retrieval date by default). Uses the same input shape as the Harvard tool.
  */
-import { normaliseUrl, type Formatted, type Person, type Segment, type SourceInput } from './harvard';
+import {
+  dayNumber,
+  kindLabel,
+  mergeSegments,
+  monthName,
+  normaliseUrl,
+  videoPlatform,
+  type Formatted,
+  type Person,
+  type Segment,
+  type SourceInput,
+  type SourceType,
+} from './harvard';
 
-const clean = (s: string) => s.trim().replace(/\s+/g, ' ');
+const clean = (s: string | undefined) => String(s ?? '').trim().replace(/\s+/g, ' ');
 
 /** "Sarah Anne" -> "S. A.", "Jean-Paul" -> "J.-P." */
 export function apaInitials(given: string): string {
@@ -85,10 +97,17 @@ export function apaPages(pages: string): string {
 /** Add a full stop unless the text already ends with terminal punctuation */
 const stop = (s: string) => (/[.?!]$/.test(s) ? '' : '.');
 
+/** Parts of a larger work: plain title in the reference, quotation marks in a title-only citation */
+const APA_PART_TYPES: SourceType[] = ['journal', 'chapter', 'newspaper', 'conference'];
+/** Sources dated to the day in APA: (2024, March 5) */
+const APA_FULL_DATE_TYPES: SourceType[] = ['newspaper', 'website', 'video', 'lecture'];
+
 export function formatApa(src: SourceInput): Formatted {
   const people = src.authors.filter((a) => clean(a.surname));
   const org = clean(src.org);
   const year = src.noDate ? 'n.d.' : clean(src.year) || 'n.d.';
+  const month = year !== 'n.d.' && APA_FULL_DATE_TYPES.includes(src.type) ? monthName(src.month) : '';
+  const date = month ? `${year}, ${month}${dayNumber(src.day) ? ` ${dayNumber(src.day)}` : ''}` : year;
   const title = clean(src.title);
   const container = clean(src.container);
   const publisher = clean(src.publisher);
@@ -97,14 +116,29 @@ export function formatApa(src: SourceInput): Formatted {
   const hasAuthor = Boolean(org || people.length);
   const authorText = org || apaAuthorList(people);
 
-  // Standalone works (book, report, web page) have italic titles; parts of a larger work (article, chapter) do not
-  const titleIsPart = src.type === 'journal' || src.type === 'chapter';
+  // Standalone works (book, report, web page, video, thesis, slides) have italic titles; parts of a larger work do not
+  const titleIsPart = APA_PART_TYPES.includes(src.type);
   const italicTitle = !titleIsPart;
 
-  // Title plus any bracketed description that belongs directly after it, e.g. (3rd ed.)
+  // A thesis counts as published when it comes from a repository or database
+  const thesisPublished = Boolean(url || container);
+  const description = (): string => {
+    if (src.type === 'video') return '[Video]';
+    if (src.type === 'lecture') return `[${kindLabel('lecture', src.kind, 'apa')}]`;
+    if (src.type === 'thesis') {
+      const level = kindLabel('thesis', src.kind, 'apa');
+      if (thesisPublished) return `[${level}${publisher ? `, ${publisher}` : ''}]`;
+      return `[Unpublished ${level.charAt(0).toLowerCase()}${level.slice(1)}]`;
+    }
+    return '';
+  };
+
+  // Title plus any bracketed description that belongs directly after it, e.g. (3rd ed.) or [Video]
   const titleBlock = (): Segment[] => {
     const segs: Segment[] = [{ text: title, italic: italicTitle }];
     if ((src.type === 'book' || src.type === 'report') && edition) segs.push({ text: ` (${edition})` });
+    const desc = description();
+    if (desc) segs.push({ text: ` ${desc}` });
     const last = segs[segs.length - 1].text;
     segs.push({ text: stop(last) });
     return segs;
@@ -112,31 +146,31 @@ export function formatApa(src: SourceInput): Formatted {
 
   const ref: Segment[] = [];
   if (hasAuthor) {
-    ref.push({ text: `${authorText}${stop(authorText)} (${year}). ` }, ...titleBlock());
+    ref.push({ text: `${authorText}${stop(authorText)} (${date}). ` }, ...titleBlock());
   } else {
     // No author: the title moves to the author position
-    ref.push(...titleBlock(), { text: ` (${year}).` });
+    ref.push(...titleBlock(), { text: ` (${date}).` });
   }
 
   const tailUrl = () => (url ? ` ${url}` : '');
+  const addPart = (s: string) => {
+    if (s && s.toLowerCase() !== authorText.toLowerCase()) ref.push({ text: ` ${s}${stop(s)}` });
+  };
 
   switch (src.type) {
-    case 'book': {
-      if (publisher && publisher.toLowerCase() !== org.toLowerCase()) ref.push({ text: ` ${publisher}${stop(publisher)}` });
-      ref.push({ text: tailUrl() });
-      break;
-    }
+    case 'book':
     case 'report': {
       if (publisher && publisher.toLowerCase() !== org.toLowerCase()) ref.push({ text: ` ${publisher}${stop(publisher)}` });
       ref.push({ text: tailUrl() });
       break;
     }
-    case 'chapter': {
+    case 'chapter':
+    case 'conference': {
       const eds = src.editors.filter((e) => clean(e.surname));
       ref.push({ text: ' In ' });
       if (eds.length) ref.push({ text: `${editorList(eds)} (${eds.length > 1 ? 'Eds.' : 'Ed.'}), ` });
       ref.push({ text: container, italic: true });
-      const details = [edition, apaPages(src.pages)].filter(Boolean).join(', ');
+      const details = [src.type === 'chapter' ? edition : '', apaPages(src.pages)].filter(Boolean).join(', ');
       ref.push({ text: details ? ` (${details}).` : stop(container) });
       if (publisher) ref.push({ text: ` ${publisher}${stop(publisher)}` });
       ref.push({ text: tailUrl() });
@@ -154,8 +188,32 @@ export function formatApa(src: SourceInput): Formatted {
       ref.push({ text: tailUrl() });
       break;
     }
+    case 'newspaper': {
+      ref.push({ text: ' ' }, { text: container, italic: true });
+      const range = bareRange(src.pages);
+      if (range) ref.push({ text: `, ${range}` });
+      ref.push({ text: '.' });
+      ref.push({ text: tailUrl() });
+      break;
+    }
     case 'website': {
-      if (container && container.toLowerCase() !== authorText.toLowerCase()) ref.push({ text: ` ${container}${stop(container)}` });
+      addPart(container);
+      ref.push({ text: tailUrl() });
+      break;
+    }
+    case 'video': {
+      addPart(videoPlatform(container, src.url));
+      ref.push({ text: tailUrl() });
+      break;
+    }
+    case 'thesis': {
+      if (thesisPublished) addPart(container);
+      else addPart(publisher);
+      ref.push({ text: tailUrl() });
+      break;
+    }
+    case 'lecture': {
+      addPart(publisher);
       ref.push({ text: tailUrl() });
       break;
     }
@@ -190,22 +248,11 @@ export function formatApa(src: SourceInput): Formatted {
   // An untitled-author article or chapter keeps the comma inside the quotation marks: ("Title," 2020)
   const quotedTitle = !hasAuthor && titleIsPart;
   return {
-    reference: merge(ref),
+    reference: mergeSegments(ref),
     parenthetical: quotedTitle
       ? [{ text: `("${title}," ${tail})` }]
-      : merge([{ text: '(' }, ...par, { text: `, ${tail})` }]),
-    narrative: merge([...nar, { text: ` (${tail})` }]),
+      : mergeSegments([{ text: '(' }, ...par, { text: `, ${tail})` }]),
+    narrative: mergeSegments([...nar, { text: ` (${tail})` }]),
     sortKey,
   };
-}
-
-function merge(segs: Segment[]): Segment[] {
-  const out: Segment[] = [];
-  for (const s of segs) {
-    if (!s.text) continue;
-    const last = out[out.length - 1];
-    if (last && Boolean(last.italic) === Boolean(s.italic)) last.text += s.text;
-    else out.push({ ...s });
-  }
-  return out;
 }

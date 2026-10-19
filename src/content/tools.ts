@@ -171,19 +171,19 @@ export const TOOLS: ToolContent[] = [
     name: 'Harvard Referencing Generator',
     metaTitle: 'Free Harvard Referencing Generator & Citation Maker',
     metaDescription:
-      'Free Harvard referencing generator and citation tool. Create references, in-text citations and a sorted bibliography for books, journals and websites.',
+      'Free Harvard referencing generator with autocite. Paste a DOI, ISBN or link for references, in-text citations and a sorted bibliography in seconds.',
     h1: 'Free Harvard Referencing Generator',
     subtitle:
-      'A free Harvard citation generator and bibliography maker. Create Harvard references and in-text citations for books, book chapters, journal articles, websites and reports, build your reference list in alphabetical order and copy it straight into your document, italics included.',
-    cardText: 'Harvard references and in-text citations for books, journals, websites and reports, with a sorted reference list.',
+      'A free Harvard citation generator and bibliography maker. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and lecture slides, then copy your sorted reference list straight into your document, italics included.',
+    cardText: 'Autocite by DOI, ISBN or link. Harvard references and in-text citations for 10 source types, with a sorted reference list.',
     sections: [
       {
         heading: 'How to use the Harvard referencing generator',
         steps: [
-          'Choose the type of source: book, chapter in an edited book, journal article, website or report.',
-          'Enter the authors, or an organisation if there is no individual author.',
-          'Fill in the year, title and the other details shown for that source type.',
+          'Paste a DOI, ISBN or web link into the autocite box, or type the title of the book or article, and select Find source.',
+          'Check the details that fill in against your source, especially the capitalisation of the title, the year and the edition. If nothing is found, choose the source type and fill in the details yourself.',
           'Copy the reference and the in-text citation, or add the reference to your list.',
+          'Edit or remove any reference in your list. You can also switch between Harvard and APA 7 at any time, and the whole list changes style.',
           'When your list is complete, copy it into your reference list. It is sorted alphabetically for you.',
         ],
       },
@@ -198,6 +198,19 @@ export const TOOLS: ToolContent[] = [
           "Journal article: Surname, Initial. (Year) 'Title of article', Journal Name, Volume(Issue), pp. first-last. Available at: DOI.",
           'Website: Author or Organisation (Year) Title of web page. Available at: URL (Accessed: date).',
           'Report: Organisation (Year) Title of report. Publisher. Available at: URL (Accessed: date).',
+          "Newspaper or magazine article: Surname, Initial. (Year) 'Title of article', Newspaper Name, Day Month, p. page. Available at: URL (Accessed: date).",
+          'Thesis or dissertation: Surname, Initial. (Year) Title of thesis. PhD thesis. University. Available at: URL (Accessed: date).',
+          'Video: Creator or Channel (Year) Title of video. Available at: URL (Accessed: date).',
+          "Conference paper: Surname, Initial. (Year) 'Title of paper', in Editor, Initial. (ed.) Title of proceedings. Publisher, pp. first-last.",
+          "Lecture or slides: Surname, Initial. (Year) 'Title' [PowerPoint presentation]. Module code: Module title. University. Available at: URL (Accessed: date).",
+        ],
+      },
+      {
+        heading: 'Autocite: Harvard references from a DOI, ISBN or link',
+        paragraphs: [
+          'Typing every detail by hand is slow and easy to get wrong, so the generator can look a source up for you. Paste a DOI for a journal article or book chapter, an ISBN for a book, or the link to a web page, news article or YouTube video. You can also type a title and choose the right match from the results.',
+          'Journal articles, chapters and conference papers come from Crossref and DataCite, the official DOI registries. Books come from Open Library and Google Books. For web pages, our server reads the page once and picks out the title, author, date and site name that the publisher has added for search engines and social media.',
+          'The details are only as good as the records behind them. Some publishers store titles in capital letters, some web pages hide the author or date, and a few sites block automatic reading. Always compare the reference with your source, use the Sentence case button if a title comes in with capitals on every word, and fill in anything that is missing.',
         ],
       },
       {
@@ -277,7 +290,7 @@ export const TOOLS: ToolContent[] = [
       },
       {
         q: 'Do I need an accessed date?',
-        a: 'Yes for websites and other online sources found by URL. For journal articles with a DOI, many versions of Harvard leave out the accessed date, so the generator only adds one if you enter it.',
+        a: 'Yes for websites and other online sources found by a URL. A DOI is a permanent link, so when you use a DOI the generator leaves out the accessed date, as Cite Them Right does.',
       },
       {
         q: 'How do I reference a source with no author?',
@@ -292,8 +305,20 @@ export const TOOLS: ToolContent[] = [
         a: "In the Cite Them Right version of Harvard, use the first author's surname followed by et al. in your citation when there are four or more authors. The reference list here includes all authors.",
       },
       {
+        q: 'Can it create a Harvard reference from a DOI, ISBN or link?',
+        a: 'Yes. Paste a DOI, an ISBN or a web link into the autocite box, or type the title, and the generator fills in the details from Crossref, DataCite, Open Library, Google Books or the web page itself. Check the details against your source before you use the reference, because records are sometimes incomplete.',
+      },
+      {
+        q: 'Which sources can I reference?',
+        a: 'Books, chapters in edited books, journal articles, websites, newspaper and magazine articles, reports, theses and dissertations, videos, conference papers, and lectures or slides from your course.',
+      },
+      {
+        q: 'Can I switch my reference list from Harvard to APA?',
+        a: 'Yes. Use the style switch above the tool. Every reference in your saved list is rewritten in the style you choose, so you can move between Harvard and APA 7 without typing anything again.',
+      },
+      {
         q: 'Is the generator free?',
-        a: 'Yes. It is free to use, needs no sign-up, and runs in your browser, so the details you enter are not sent to us.',
+        a: 'Yes. It is free to use and needs no sign-up, and your reference list is saved in your own browser only. When you use autocite, the DOI, ISBN, title or link you enter is sent to the lookup services named above, or to our server to read a web page, so that the details can be filled in.',
       },
     ],
     services: ['referencing-help', 'essay-help', 'proofreading-editing-services', 'literature-review-help'],
@@ -305,19 +330,19 @@ export const TOOLS: ToolContent[] = [
     name: 'APA Referencing Generator',
     metaTitle: 'Free APA 7 Referencing Generator | Books, Journals, Web',
     metaDescription:
-      'Free APA 7th edition referencing generator for books, chapters, journal articles, websites and reports. Get your reference and in-text citation in seconds.',
+      'Free APA 7th edition referencing generator with autocite. Paste a DOI, ISBN or link, or fill in the form, for references and in-text citations in seconds.',
     h1: 'Free APA Referencing Generator (7th Edition)',
     subtitle:
-      'Create APA 7 references and in-text citations for books, book chapters, journal articles, websites and reports. Build your reference list in alphabetical order and copy it straight into your document, italics included.',
-    cardText: 'APA 7 references and in-text citations for books, journals, websites and reports, with a sorted reference list.',
+      'Create APA 7 references and in-text citations in seconds. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and videos, then copy your sorted reference list straight into your document, italics included.',
+    cardText: 'Autocite by DOI, ISBN or link. APA 7 references and in-text citations for 10 source types, with a sorted reference list.',
     sections: [
       {
         heading: 'How to use the APA referencing generator',
         steps: [
-          'Choose the type of source: book, chapter in an edited book, journal article, website or report.',
-          'Enter the authors, or an organisation if there is no individual author.',
-          'Fill in the year, the title in sentence case and the other details shown for that source type.',
+          'Paste a DOI, ISBN or web link into the autocite box, or type the title of the book or article, and select Find source.',
+          'Check the details that fill in against your source. APA titles need sentence case, so use the Sentence case button if a title comes in with capitals on every word. If nothing is found, choose the source type and fill in the details yourself.',
           'Copy the reference and the in-text citation, or add the reference to your list.',
+          'Edit or remove any reference in your list. You can also switch between APA 7 and Harvard at any time, and the whole list changes style.',
           'When your list is complete, copy it into your References page. It is sorted alphabetically for you.',
         ],
       },
@@ -332,6 +357,19 @@ export const TOOLS: ToolContent[] = [
           'Journal article: Author, A. A., & Author, B. B. (Year). Title of article. Journal Name, Volume(Issue), first-last. https://doi.org/xxxx',
           'Web page: Author or Organisation. (Year). Title of page. Website Name. URL',
           'Report: Organisation. (Year). Title of report. Publisher. URL',
+          'Newspaper article: Author, A. A. (Year, Month Day). Title of article. Newspaper Name. URL',
+          'Thesis or dissertation: Author, A. A. (Year). Title of thesis [Doctoral dissertation, University]. Database or Repository. URL',
+          'Video: Author or Channel. (Year, Month Day). Title of video [Video]. YouTube. URL',
+          'Conference paper in proceedings: Author, A. A. (Year). Title of paper. In E. E. Editor (Ed.), Title of proceedings (pp. first-last). Publisher. https://doi.org/xxxx',
+          'Lecture slides: Lecturer, A. A. (Year, Month Day). Title of slides [PowerPoint slides]. University or Course Website. URL',
+        ],
+      },
+      {
+        heading: 'Autocite: APA references from a DOI, ISBN or link',
+        paragraphs: [
+          'APA 7 asks for a DOI wherever a source has one, and a DOI is also the quickest way to build the reference. Paste it into the autocite box and the generator fills in the authors, year, title, journal, volume, issue and pages. An ISBN works the same way for books, and a link works for web pages, news articles and YouTube videos. You can also type a title and choose the right match from the results.',
+          'Journal articles, chapters and conference papers come from Crossref and DataCite, the official DOI registries. Books come from Open Library and Google Books. For web pages, our server reads the page once and picks out the title, author, date and site name.',
+          'Records are not always complete or in APA format. Titles often arrive in title case, so convert them to sentence case and check proper nouns, and add any missing date or author before you use the reference.',
         ],
       },
       {
@@ -389,7 +427,7 @@ export const TOOLS: ToolContent[] = [
       },
       {
         q: 'Will the generator change my titles to sentence case?',
-        a: 'No. Type book, article, report and web page titles in sentence case, capitalising only the first word, the first word after a colon and proper nouns. Type journal names in title case, as they appear on the journal.',
+        a: 'Only when you ask it to. Titles are kept as you type them or as the publisher records them, which is often title case. Select Sentence case above the title box to convert one, then check proper nouns such as place, company and theory names. Keep journal names in title case, as they appear on the journal.',
       },
       {
         q: 'Do I need a retrieval date for a website?',
@@ -404,8 +442,16 @@ export const TOOLS: ToolContent[] = [
         a: 'If an organisation published it, use the organisation as the author. If there is genuinely no author, leave the author empty: the title moves to the start of the reference and is used in the in-text citation.',
       },
       {
+        q: 'Can it create an APA reference from a DOI?',
+        a: 'Yes. Paste the DOI, or a link that contains it, into the autocite box. The generator looks it up in Crossref or DataCite and fills in the details, with the DOI written as a link at the end of the reference as APA 7 requires.',
+      },
+      {
+        q: 'Which sources can I reference?',
+        a: 'Books, chapters in edited books, journal articles, web pages, newspaper and magazine articles, reports, theses and dissertations, videos, conference papers, and lecture slides or notes.',
+      },
+      {
         q: 'Is the generator free?',
-        a: 'Yes. It is free to use, needs no sign-up, and runs in your browser, so the details you enter are not sent to us.',
+        a: 'Yes. It is free to use and needs no sign-up, and your reference list is saved in your own browser only. When you use autocite, the DOI, ISBN, title or link you enter is sent to the lookup services named above, or to our server to read a web page, so that the details can be filled in.',
       },
     ],
     services: ['referencing-help', 'psychology-assignment-help', 'healthcare-nursing-assignment-help', 'education-assignment-help'],
