@@ -2,12 +2,13 @@
 
 import { useMemo, useState } from 'react';
 import { m as motion } from 'framer-motion';
-import { Calculator, CheckCircle2 } from 'lucide-react';
+import { Calculator, CheckCircle2, Wrench } from 'lucide-react';
 import SectionHeader from '@/components/ui/SectionHeader';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { PAYMENT } from '@/constants/payment';
+import { BASE_PRICES, formatPrice, inCurrency, type Currency } from '@/constants/pricing';
 
 type Level = 'ug' | 'pg' | 'phd';
 type ServiceKey = 'assignment' | 'dissertation' | 'proofreading';
@@ -19,23 +20,23 @@ const LEVELS: { key: Level; label: string }[] = [
   { key: 'phd', label: 'PhD' },
 ];
 
-// Price in GBP per 1,000 words
+// Price in GBP per 1,000 words (converted for SAR and AED pages)
 const SERVICES: { key: ServiceKey; label: string; rates: Record<Level, number> }[] = [
-  { key: 'assignment', label: 'Assignment / Essay', rates: { ug: 20, pg: 20, phd: 20 } },
-  { key: 'dissertation', label: 'Dissertation / Thesis', rates: { ug: 30, pg: 30, phd: 30 } },
-  { key: 'proofreading', label: 'Proofreading', rates: { ug: 12, pg: 15, phd: 18 } },
+  { key: 'assignment', label: 'Assignment / Essay', rates: { ug: BASE_PRICES.assignment, pg: BASE_PRICES.assignment, phd: BASE_PRICES.assignment } },
+  { key: 'dissertation', label: 'Dissertation / Thesis', rates: { ug: BASE_PRICES.dissertation, pg: BASE_PRICES.dissertation, phd: BASE_PRICES.dissertation } },
+  { key: 'proofreading', label: 'Proofreading', rates: { ...BASE_PRICES.proofreading } },
 ];
 
 const DEADLINES: { key: Deadline; label: string; multiplier: number }[] = [
   { key: 'standard', label: '7+ days', multiplier: 1 },
-  { key: 'priority', label: '3–6 days', multiplier: 1.25 },
+  { key: 'priority', label: '3 to 6 days', multiplier: 1.25 },
   { key: 'urgent', label: '48 hours', multiplier: 1.5 },
 ];
 
 const FIRST_ORDER_DISCOUNT = 0.1;
 
 // Maximum total price (GBP) per type of work
-const MAX_PRICE: Partial<Record<ServiceKey, number>> = { dissertation: 350 };
+const MAX_PRICE: Partial<Record<ServiceKey, number>> = { dissertation: BASE_PRICES.dissertationMax };
 
 const WORD_OPTIONS = [1000, 2000, 3000, 5000, 8000, 10000, 12000, 15000, 20000];
 
@@ -44,8 +45,6 @@ function discountFor(words: number): number {
   if (words >= 8000) return 0.1;
   return 0;
 }
-
-const gbp = (value: number) => `£${value.toLocaleString('en-GB', { maximumFractionDigits: 0 })}`;
 
 const AR_LABELS: Record<string, string> = {
   ug: 'بكالوريوس',
@@ -81,6 +80,7 @@ const UI = {
     perks: ['1-to-1 support from a subject expert', 'Clear, actionable feedback', 'Confidential & secure'],
     cta: 'Get Exact Quote on WhatsApp',
     note: 'Estimate only. Your final quote is confirmed after we review your requirements.',
+    techNote: 'Technical and software projects, such as 3ds Max, AutoCAD, SolidWorks, programming or large data analysis, are priced separately after we review your files.',
   },
   ar: {
     badge: 'السعر الفوري',
@@ -103,6 +103,7 @@ const UI = {
     perks: ['دعم فردي من خبير في تخصصك', 'ملاحظات واضحة وعملية', 'سرية وأمان تام'],
     cta: 'احصل على السعر الدقيق عبر واتساب',
     note: 'هذا سعر تقديري. يتم تأكيد السعر النهائي بعد مراجعة متطلباتك.',
+    techNote: 'مشاريع البرمجيات والتصميم التقني الكبيرة، مثل 3ds Max وAutoCAD وSolidWorks والبرمجة وتحليل البيانات الكبير، يُتفق على سعرها بشكل منفصل بعد الاطلاع على الملفات.',
   },
 } as const;
 
@@ -141,8 +142,11 @@ function OptionGroup<T extends string>({
   );
 }
 
-export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) {
+export default function QuoteCalculator({ locale = 'en', currency }: { locale?: 'en' | 'ar'; currency?: Currency } = {}) {
   const isAr = locale === 'ar';
+  // Arabic pages show Saudi riyals unless a currency is passed in
+  const cur: Currency = currency ?? (isAr ? 'SAR' : 'GBP');
+  const gbp = (value: number) => formatPrice(value, cur, locale);
   const t = UI[locale];
   const lbl = (key: string, en: string) => (isAr ? AR_LABELS[key] ?? en : en);
   const [level, setLevel] = useState<Level>('pg');
@@ -154,17 +158,18 @@ export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar
   const quote = useMemo(() => {
     const serviceInfo = SERVICES.find((s) => s.key === service)!;
     const deadlineInfo = DEADLINES.find((d) => d.key === deadline)!;
-    const rate = serviceInfo.rates[level];
+    const rate = inCurrency(serviceInfo.rates[level], cur);
     const base = (words / 1000) * rate * deadlineInfo.multiplier;
     const volumeDiscount = discountFor(words);
     const firstOrderApplies = firstOrder && FIRST_ORDER_DISCOUNT > volumeDiscount;
     const discount = Math.max(volumeDiscount, firstOrder ? FIRST_ORDER_DISCOUNT : 0);
     const discounted = base * (1 - discount);
-    const cap = MAX_PRICE[service];
+    const capGbp = MAX_PRICE[service];
+    const cap = capGbp === undefined ? undefined : inCurrency(capGbp, cur);
     const capped = cap !== undefined && discounted > cap;
     const total = capped ? cap : discounted;
     return { rate, base, discount, total, capped, serviceInfo, deadlineInfo, firstOrderApplies };
-  }, [level, service, deadline, words, firstOrder]);
+  }, [level, service, deadline, words, firstOrder, cur]);
 
   const levelLabel = LEVELS.find((l) => l.key === level)!.label;
 
@@ -210,9 +215,9 @@ export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar
               aria-live="polite"
             >
               <span className="text-[11px] font-black uppercase tracking-widest text-white/70">{t.estimate}</span>
-              <span className="flex items-baseline gap-2">
+              <span className="flex items-baseline gap-2 whitespace-nowrap">
                 {quote.total < quote.base && <span className="text-sm font-bold text-white/40 line-through">{gbp(quote.base)}</span>}
-                <span className="text-2xl font-black">{gbp(quote.total)}</span>
+                <span className={`${cur === 'GBP' ? 'text-2xl' : 'text-xl'} font-black`}>{gbp(quote.total)}</span>
                 {quote.discount > 0 && !quote.capped && (
                   <span className="rounded-full bg-primary px-2 py-0.5 text-[10px] font-black">-{Math.round(quote.discount * 100)}%</span>
                 )}
@@ -265,6 +270,11 @@ export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar
                 🎁 {t.firstOrder} <span className="text-primary">{t.firstOrderHint}</span>
               </span>
             </label>
+
+            <p className="flex items-start gap-2.5 rounded-2xl bg-gray-50 border border-gray-100 p-3 sm:p-4 text-[12px] sm:text-[13px] leading-relaxed text-gray-600">
+              <Wrench className="w-4 h-4 text-primary shrink-0 mt-0.5" aria-hidden="true" />
+              <span>{t.techNote}</span>
+            </p>
           </div>
 
           <div id="quote-estimate" className="lg:col-span-2 bg-navy rounded-3xl p-5 sm:p-6 md:p-10 text-white flex flex-col shadow-2xl scroll-mt-[120px]">
@@ -278,7 +288,7 @@ export default function QuoteCalculator({ locale = 'en' }: { locale?: 'en' | 'ar
             {quote.total < quote.base && (
               <p className="text-xl font-bold text-white/40 line-through mb-1">{gbp(quote.base)}</p>
             )}
-            <p className="text-5xl md:text-6xl font-black mb-2">{gbp(quote.total)}</p>
+            <p className="text-5xl md:text-6xl font-black mb-2 whitespace-nowrap">{gbp(quote.total)}</p>
             <p className="text-sm text-white/60 mb-5 md:mb-8">
               {gbp(quote.rate)} {t.per1000}
               {quote.deadlineInfo.multiplier > 1 && ` · +${Math.round((quote.deadlineInfo.multiplier - 1) * 100)}% ${t.priority}`}

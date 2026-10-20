@@ -5,7 +5,7 @@ export const assignmentHelpUae: LandingContent = {
   locale: 'en',
   metaTitle: 'Assignment Help UAE | Dubai, Abu Dhabi and Sharjah',
   metaDescription:
-    "Assignment help UAE students use at UK branch campuses and UAE universities. Master's and PhD experts, 24/7 WhatsApp, prices in GBP with AED on request.",
+    "Assignment help UAE students use at UK branch campuses and UAE universities. Master's and PhD experts, 24/7 WhatsApp, prices from AED 100.",
   keywords: [
     'assignment help UAE',
     'assignment help Dubai',
@@ -63,14 +63,14 @@ export const assignmentHelpUae: LandingContent = {
     {
       heading: 'Writing in English as a second language',
       paragraphs: [
-        'Almost all UAE programmes are taught in English, but for many students English is a second or third language. Common problems are long sentences translated from Arabic, Hindi, Urdu or another language, describing sources instead of analysing them, and inconsistent referencing. Our experts help you write in clear academic English, and proofreading starts from £12 per 1,000 words for work you have written yourself.',
+        'Almost all UAE programmes are taught in English, but for many students English is a second or third language. Common problems are long sentences translated from Arabic, Hindi, Urdu or another language, describing sources instead of analysing them, and inconsistent referencing. Our experts help you write in clear academic English, and proofreading starts from AED 60 per 1,000 words for work you have written yourself.',
       ],
     },
     {
       heading: 'MBA and postgraduate support for working professionals',
       paragraphs: [
         "Many students in the UAE study a part-time MBA or Master's while working full-time. Assignments ask you to apply strategy, finance, leadership and HR theory to real organisations, often your own employer. Our business specialists help you use published information and the frameworks your module expects, and plan staged deadlines around your working week.",
-        "For dissertations, our experts have supported more than 350 research projects, with data analysis in SPSS, NVivo, Excel, Stata and Python. Dissertation guidance costs £30 per 1,000 words, with a maximum of £350.",
+        "For dissertations, our experts have supported more than 350 research projects, with data analysis in SPSS, NVivo, Excel, Stata and Python. Dissertation guidance costs AED 150 per 1,000 words, with a maximum of AED 1,750.",
       ],
     },
     {
@@ -91,8 +91,8 @@ export const assignmentHelpUae: LandingContent = {
       steps: [
         'Message us on WhatsApp in English or Arabic with your subject, word count, deadline and a copy of your brief and marking criteria.',
         'If you would like to talk it through first, book a WhatsApp call with an expert. Calls are in English.',
-        'Receive a clear quote in GBP, with the AED equivalent on request and 10% off your first order.',
-        'Pay 50% to start by bank transfer in GBP, which you can send from any UAE bank.',
+        'Receive a clear quote in AED, with 10% off your first order.',
+        'Pay 50% to start by bank transfer to our UK account, which you can send from any UAE bank.',
         'Your subject expert explains the task, helps you plan and gives feedback on your work, and you can message us with questions at any time.',
         'Pay the remaining 50% on completion.',
       ],
@@ -100,8 +100,8 @@ export const assignmentHelpUae: LandingContent = {
     {
       heading: 'Prices and payment from the UAE',
       paragraphs: [
-        'Guidance and feedback on assignments and essays start from £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for urgent work within 48 hours. New customers get 10% off their first order, and you can check your GBP price instantly with the calculator on our homepage.',
-        'Prices are set in GBP because we support students in the UK and across the Gulf. Ask on WhatsApp for the AED equivalent of your order. Payment is by bank transfer in GBP, which you can make from a UAE bank account.',
+        'Guidance and feedback on assignments and essays start from AED 100 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for urgent work within 48 hours. New customers get 10% off their first order, and the calculator on this page shows your price in AED instantly.',
+        'Large technical and software projects, such as programming, CAD and 3D modelling or big data analysis, are priced separately after we review your files. Payment is by bank transfer to our UK account, which you can make from a UAE bank account.',
       ],
     },
   ],
@@ -115,12 +115,12 @@ export const assignmentHelpUae: LandingContent = {
       a: 'Yes. Your expert works from your module brief and marking criteria and follows UK marking expectations and referencing styles, the same as for students in Britain.',
     },
     {
-      q: 'Can I see the price in AED?',
-      a: 'Our prices are in GBP, starting from £20 per 1,000 words for assignments. Message us on WhatsApp and we will tell you the AED equivalent for your order.',
+      q: 'Are your prices in AED?',
+      a: 'Yes. Prices for UAE students are shown in AED, starting from AED 100 per 1,000 words for assignments, and the calculator on this page shows your price in AED instantly. Large technical and software projects are priced separately after we review your files.',
     },
     {
       q: 'How do I pay from the UAE?',
-      a: 'You pay by bank transfer in GBP, which you can send from a UAE bank account: 50% to start and the remaining 50% on completion.',
+      a: 'You pay by bank transfer to our UK account, which you can send from a UAE bank account: 50% to start and the remaining 50% on completion.',
     },
     {
       q: 'Can I message you in Arabic?',
@@ -137,7 +137,7 @@ export const assignmentHelpUae: LandingContent = {
   ],
   ctaTitle: 'Get your price on WhatsApp today',
   ctaText:
-    'Send your brief and ask for the AED equivalent, or use our instant GBP calculator. Students in the UAE get 10% off their first order.',
+    'Send your brief on WhatsApp, or use our instant calculator to see your price in AED. Students in the UAE get 10% off their first order.',
   whatsappMessage: 'Hello FIZBS! I am a student in the UAE and need assignment help. Subject: , Word count: , Deadline: ',
   related: ['assignment-help-dubai', 'assignment-help-abu-dhabi', 'mba-assignment-help', 'assignment-help-uk', 'assignment-help-saudi-arabia'],
 };

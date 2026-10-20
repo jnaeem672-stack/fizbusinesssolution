@@ -5,7 +5,7 @@ export const assignmentHelpDubai: LandingContent = {
   locale: 'en',
   metaTitle: 'Assignment Help Dubai | UK Branch Campus Experts',
   metaDescription:
-    "Assignment help Dubai students use at UK and international branch campuses: essays, reports, MBA work and dissertations. 24/7 WhatsApp, AED on request.",
+    "Assignment help Dubai students use at UK and international branch campuses: essays, reports, MBA work and dissertations. 24/7 WhatsApp, prices in AED.",
   keywords: [
     'assignment help Dubai',
     'dissertation help Dubai',
@@ -115,7 +115,7 @@ export const assignmentHelpDubai: LandingContent = {
     {
       heading: 'Dissertations and research projects',
       paragraphs: [
-        "Our experts have supported more than 350 research projects. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python. Dissertation guidance costs £30 per 1,000 words, with a maximum of £350 per dissertation.",
+        "Our experts have supported more than 350 research projects. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python. Dissertation guidance costs AED 150 per 1,000 words, with a maximum of AED 1,750 per dissertation.",
       ],
     },
     {
@@ -136,8 +136,8 @@ export const assignmentHelpDubai: LandingContent = {
       steps: [
         'Message us on WhatsApp in English or Arabic with your subject, word count, deadline and a copy of your brief and marking criteria.',
         'If you would like to discuss it first, book a WhatsApp call with an expert. Calls are in English.',
-        'Receive a clear quote in GBP, with the AED equivalent on request and 10% off your first order.',
-        'Pay 50% to start by bank transfer in GBP from your UAE bank.',
+        'Receive a clear quote in AED, with 10% off your first order.',
+        'Pay 50% to start by bank transfer to our UK account from your UAE bank.',
         'Your subject expert explains the task, helps you plan and gives feedback on your work, and you can message us with questions at any time.',
         'Pay the remaining 50% on completion.',
       ],
@@ -145,8 +145,8 @@ export const assignmentHelpDubai: LandingContent = {
     {
       heading: 'Prices and payment from Dubai',
       paragraphs: [
-        'Guidance and feedback on assignments and essays start from £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for urgent work within 48 hours. Proofreading starts from £12 per 1,000 words, and new customers get 10% off their first order.',
-        'Prices are set in GBP. Ask on WhatsApp for the AED equivalent of your order, and pay by bank transfer in GBP from any UAE bank.',
+        'Guidance and feedback on assignments and essays start from AED 100 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for urgent work within 48 hours. Proofreading starts from AED 60 per 1,000 words, and new customers get 10% off their first order.',
+        'Large technical and software projects, such as programming, CAD and 3D modelling or big data analysis, are priced separately after we review your files. You pay by bank transfer to our UK account from any UAE bank.',
       ],
     },
   ],
@@ -168,12 +168,12 @@ export const assignmentHelpDubai: LandingContent = {
       a: 'Yes. We can help with your own section, the overall structure and the individual reflection on group work.',
     },
     {
-      q: 'Can I see the price in AED?',
-      a: 'Our prices are in GBP, starting from £20 per 1,000 words for assignments. Message us on WhatsApp and we will tell you the AED equivalent for your order.',
+      q: 'Are your prices in AED?',
+      a: 'Yes. Prices for UAE students are shown in AED, starting from AED 100 per 1,000 words for assignments, and the calculator on this page shows your price in AED instantly. Large technical and software projects are priced separately after we review your files.',
     },
     {
       q: 'How do I pay from Dubai?',
-      a: 'You pay by bank transfer in GBP from any UAE bank: 50% to start and the remaining 50% on completion.',
+      a: 'You pay by bank transfer to our UK account from any UAE bank: 50% to start and the remaining 50% on completion.',
     },
     {
       q: 'Is my information kept confidential?',
@@ -182,7 +182,7 @@ export const assignmentHelpDubai: LandingContent = {
   ],
   ctaTitle: 'Get your price on WhatsApp today',
   ctaText:
-    'Send your brief and ask for the AED equivalent, or use our instant GBP calculator. Dubai students get 10% off their first order.',
+    'Send your brief on WhatsApp, or use our instant calculator to see your price in AED. Dubai students get 10% off their first order.',
   whatsappMessage: 'Hello FIZBS! I am a student in Dubai and need assignment help. Subject: , Word count: , Deadline: ',
   related: ['assignment-help-uae', 'assignment-help-abu-dhabi', 'mba-assignment-help', 'business-management-assignment-help', 'assignment-help-uk'],
 };

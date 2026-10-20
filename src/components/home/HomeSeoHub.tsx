@@ -103,9 +103,9 @@ export default function HomeSeoHub() {
           <h3 className="mt-10 text-2xl font-extrabold text-navy mb-3">Support that fits where you study</h3>
           <p>
             UK students get experts who know British grade bands, critical writing and Harvard or APA referencing. Students in Saudi Arabia
-            can message us in Arabic or English, read our Arabic pages and pay in Saudi riyals by local bank transfer. Students in the UAE
-            get guidance that follows the standards of their UK or international branch campus, with prices in GBP and the AED equivalent
-            on request. Students in the United States get guidance on APA and MLA papers, capstone projects and theses, with the US
+            can message us in Arabic or English, read our Arabic pages with prices in riyals, and pay in Saudi riyals by local bank transfer. Students in the UAE
+            get guidance that follows the standards of their UK or international branch campus, with prices shown in AED on
+            our UAE pages. Students in the United States get guidance on APA and MLA papers, capstone projects and theses, with the US
             dollar equivalent on request.
           </p>
 

@@ -24,6 +24,7 @@ import {
   linkGroupsForPage,
   type LandingContent,
 } from '@/content/landing';
+import { currencyFor, formatPrice, inCurrency } from '@/constants/pricing';
 
 const LABELS = {
   en: {
@@ -55,7 +56,7 @@ const LABELS = {
       { icon: Layers, value: '+115', label: 'تخصص' },
     ],
     sideTitle: 'اعرف السعر خلال ثوانٍ',
-    sideItems: ['الواجبات من 20 جنيهًا لكل 1,000 كلمة', 'الرسائل العلمية بحد أقصى 350 جنيهًا', 'خصم 10% على أول طلب', 'دعم عبر واتساب على مدار الساعة'],
+    sideItems: ['الواجبات من 100 ريال لكل 1,000 كلمة', 'الرسائل العلمية بحد أقصى 1,750 ريالًا', 'خصم 10% على أول طلب', 'دعم عبر واتساب على مدار الساعة'],
     sideCta: 'اعرف السعر',
     faqTitle: 'الأسئلة الشائعة',
     related: 'خدمات ذات صلة',
@@ -67,6 +68,13 @@ const LABELS = {
 export default function LandingPage({ page }: { page: LandingContent }) {
   const isAr = page.locale === 'ar';
   const t = LABELS[page.locale];
+  // Arabic pages show riyals, UAE pages dirhams, all other pages pounds
+  const currency = currencyFor(page.slug, page.locale);
+  const sideItems: readonly string[] =
+    currency === 'AED'
+      ? [`Assignments from ${formatPrice(inCurrency(20, 'AED'), 'AED')} per 1,000 words`, `Dissertations capped at ${formatPrice(inCurrency(350, 'AED'), 'AED')}`, '10% off your first order', '24/7 WhatsApp support']
+      : t.sideItems;
+  const offerPrice = inCurrency(Number(page.offer?.price ?? '20'), currency);
   const url = `${SITE_URL}${landingPath(page)}`;
   const whatsappUrl = buildWhatsAppUrl(page.whatsappMessage);
   const related = page.related
@@ -106,9 +114,12 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       },
       offers: {
         '@type': 'Offer',
-        priceCurrency: 'GBP',
-        price: page.offer?.price ?? '20',
-        description: page.offer?.description ?? 'From £20 per 1,000 words',
+        priceCurrency: currency,
+        price: String(offerPrice),
+        description:
+          currency === 'GBP'
+            ? page.offer?.description ?? 'From £20 per 1,000 words'
+            : `From ${currency} ${offerPrice.toLocaleString('en-GB')} per 1,000 words`,
       },
     },
     {
@@ -385,7 +396,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                 </div>
                 <h2 className="text-xl font-extrabold mb-4">{t.sideTitle}</h2>
                 <ul className="space-y-3 mb-6 text-sm text-white/80">
-                  {t.sideItems.map((item) => (
+                  {sideItems.map((item) => (
                     <li key={item} className="flex items-start gap-2">
                       <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-0.5" /> {item}
                     </li>
@@ -434,7 +445,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
 
       <ExpertCallSection locale={page.locale} className="bg-gray-50" />
 
-      <QuoteCalculator locale={page.locale} />
+      <QuoteCalculator locale={page.locale} currency={currency} />
 
       <PaymentSection locale={page.locale} className="bg-soft-rose" />
 
