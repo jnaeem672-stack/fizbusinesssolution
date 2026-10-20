@@ -110,6 +110,7 @@ export const arHowToWriteAResearchIntroductionPost: BlogPost = {
         'يراجع خبراؤنا مقدمة بحثك وبقية أجزائه، ويوضحون لك ما يحتاج إلى تحسين في الصياغة والترتيب والتوثيق، ويبقى البحث عملك. وتبدأ المساعدة في الواجبات والبحوث من 100 ريال لكل 1,000 كلمة، مع خصم 10% على أول طلب.',
       ],
       links: [
+        { label: 'كيف تكتب خاتمة البحث', href: '/ar/blog/how-to-write-a-research-conclusion' },
         { label: 'دليل مشروع التخرج', href: '/ar/blog/graduation-project-guide' },
         { label: 'كيف تختار عنوان البحث', href: '/ar/blog/how-to-choose-a-thesis-title' },
       ],

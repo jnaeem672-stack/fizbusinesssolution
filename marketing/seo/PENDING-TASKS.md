@@ -19,7 +19,7 @@ The owner liked the "Base" design and "Idea 1: Chat with FIZBS" from the design 
 ## Task B: "Semrush SEO Plan"
 
 ### Saudi (Arabic), biggest opportunity, competitors are weak
-Done 20 Oct: items 1, 2 and 3. Next: item 4 (خاتمة البحث).
+Done 20 Oct: items 1, 2, 3 and 4. Next: item 5 (فهرس البحث، خطوات البحث العلمي، الماجستير عن بعد).
 1. Move /ar/student-services to the "مكتب ومكتبة خدمات الطالب أونلاين" cluster (about 18,000 buyer searches):
    مكتبة لخدمات الطالب 9,900 (KD 20), مكتبة خدمة الطالب 3,600, مركز خدمات الطالب 1,900, مكتب خدمات الطالب
    1,300 (KD 12), مكتبة خدمات الطالب 720 (KD 11), مكتب خدمات طلابية 480 (KD 11). Add a "رقم مكتب خدمات طلابية"
