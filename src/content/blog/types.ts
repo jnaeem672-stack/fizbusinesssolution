@@ -10,6 +10,8 @@ export interface BlogSection {
   subsections?: { heading: string; paragraphs?: string[]; bullets?: string[] }[];
   /** Optional highlighted tip / example box */
   tip?: string;
+  /** Optional internal links shown at the end of the section (e.g. related guides) */
+  links?: { label: string; href: string }[];
 }
 
 export interface BlogPost {
@@ -36,4 +38,6 @@ export interface BlogPost {
   faqs: { q: string; a: string }[];
   /** 2-4 landing page slugs to link to as related services (must exist for the same locale or English) */
   relatedServices: string[];
+  /** Optional external sources the guide is based on, listed at the end of the article */
+  sources?: { label: string; href: string }[];
 }

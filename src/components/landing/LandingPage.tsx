@@ -18,6 +18,9 @@ import { EXPERT_CALL, expertCallUrl } from '@/constants/expertCall';
 import ExpertCallSection from '@/components/ExpertCallSection';
 import {
   SITE_URL,
+  CITY_LINKS,
+  SAUDI_CITY_LINKS,
+  UAE_LINKS,
   getLandingPage,
   landingLabel,
   landingPath,
@@ -75,6 +78,19 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       ? [`Assignments from ${formatPrice(inCurrency(20, 'AED'), 'AED')} per 1,000 words`, `Dissertations capped at ${formatPrice(inCurrency(350, 'AED'), 'AED')}`, '10% off your first order', '24/7 WhatsApp support']
       : t.sideItems;
   const offerPrice = inCurrency(Number(page.offer?.price ?? '20'), currency);
+  // City pages tell search engines which city they serve
+  const cityLink = [...CITY_LINKS, ...UAE_LINKS].find((l) => l.href === `/${page.slug}` && l.href !== '/assignment-help-uae');
+  const city = cityLink
+    ? {
+        '@type': 'City',
+        name: cityLink.label.replace('Assignment Help ', ''),
+        containedInPlace: {
+          '@type': 'Country',
+          name: SAUDI_CITY_LINKS.includes(cityLink) ? 'Saudi Arabia' : UAE_LINKS.includes(cityLink) ? 'United Arab Emirates' : 'United Kingdom',
+        },
+      }
+    : null;
+  const baseAreas = isAr ? ['Saudi Arabia', 'United Arab Emirates'] : ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates', 'United States'];
   const url = `${SITE_URL}${landingPath(page)}`;
   const whatsappUrl = buildWhatsAppUrl(page.whatsappMessage);
   const related = page.related
@@ -105,7 +121,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       url,
       inLanguage: isAr ? 'ar' : 'en-GB',
       serviceType: landingLabel(page),
-      areaServed: isAr ? ['Saudi Arabia', 'United Arab Emirates'] : ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates', 'United States'],
+      areaServed: city ? [city, ...baseAreas] : baseAreas,
       provider: {
         '@type': 'ProfessionalService',
         name: 'FIZ Business Solutions',

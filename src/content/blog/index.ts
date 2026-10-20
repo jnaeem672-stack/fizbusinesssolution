@@ -28,6 +28,7 @@ import { ukMastersPersonalStatementPost } from './uk-masters-personal-statement'
 import { arTheoreticalFrameworkAndLiteratureReviewPost } from './ar-theoretical-framework-and-literature-review';
 import { arHowToWriteAnAbstractPost } from './ar-how-to-write-an-abstract';
 import { arHowToChooseAThesisTitlePost } from './ar-how-to-choose-a-thesis-title';
+import { arMastersGraduationProjectUmmAlQuraPost } from './ar-masters-graduation-project-umm-al-qura';
 import { hrmDissertationTopicsPost } from './hrm-dissertation-topics';
 import { marketingDissertationTopicsPost } from './marketing-dissertation-topics';
 import { financeAccountingDissertationTopicsPost } from './finance-accounting-dissertation-topics';
@@ -86,6 +87,7 @@ export const AR_POSTS: BlogPost[] = [
   arTheoreticalFrameworkAndLiteratureReviewPost,
   arHowToWriteAnAbstractPost,
   arHowToChooseAThesisTitlePost,
+  arMastersGraduationProjectUmmAlQuraPost,
 ];
 
 export function getPost(slug: string, locale: 'en' | 'ar' = 'en'): BlogPost | undefined {

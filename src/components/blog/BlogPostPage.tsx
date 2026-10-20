@@ -32,6 +32,8 @@ const LABELS = {
     formText: 'Tell us what you need and we will reply on WhatsApp with a clear price. 50% to start, 50% on completion.',
     more: 'More Student Guides',
     tipLabel: 'Tip',
+    seeAlso: 'Read next',
+    sources: 'Sources',
     msg: (title: string) => `Hello FIZBS! I read your guide "${title}" and I need help.\nSubject: \nWord count: \nDeadline: `,
   },
   ar: {
@@ -51,6 +53,8 @@ const LABELS = {
     formText: 'أخبرنا بما تحتاجه وسنرد عليك عبر واتساب بسعر واضح. 50% عند البدء و50% عند الإنجاز.',
     more: 'المزيد من أدلة الطلاب',
     tipLabel: 'نصيحة',
+    seeAlso: 'اقرأ أيضًا',
+    sources: 'المصادر',
     msg: (title: string) => `مرحبًا FIZBS! قرأت دليل "${title}" وأحتاج مساعدة.\nالتخصص: \nعدد الكلمات: \nالموعد النهائي: `,
   },
 } as const;
@@ -223,8 +227,32 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                     <p className="text-[16px] text-navy"><strong>{t.tipLabel}: </strong>{s.tip}</p>
                   </div>
                 )}
+                {s.links && s.links.length > 0 && (
+                  <div className="mt-5 flex flex-wrap items-center gap-2 text-[15px]">
+                    <span className="font-bold text-navy">{t.seeAlso}:</span>
+                    {s.links.map((l) => (
+                      <Link key={l.href} href={l.href} className="rounded-full border border-gray-200 bg-gray-50 px-3 py-1 font-bold text-navy hover:border-primary hover:text-primary transition-colors">
+                        {l.label}
+                      </Link>
+                    ))}
+                  </div>
+                )}
               </div>
             ))}
+            {post.sources && post.sources.length > 0 && (
+              <div className="mb-11 rounded-2xl border border-gray-200 bg-gray-50 p-6">
+                <p className="text-lg font-extrabold text-navy mb-3">{t.sources}</p>
+                <ul className="space-y-2 text-[15px]">
+                  {post.sources.map((src) => (
+                    <li key={src.href}>
+                      <a href={src.href} target="_blank" rel="noopener noreferrer" className="font-bold text-navy underline decoration-primary decoration-2 underline-offset-2 hover:text-primary break-words">
+                        {src.label}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             {mainRefTool && (
               <div className="mb-11 rounded-2xl border border-gray-200 bg-gray-50 p-6">
                 <p className="flex items-center gap-2 text-lg font-extrabold text-navy">
