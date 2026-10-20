@@ -83,6 +83,43 @@ US (us_bulk_new-pages.csv), for the English pages only, no US targeting:
   statistics assignment help 720 (22), java 320 (28), matlab 260 (31), mba dissertation help 90 (3).
 - So statistics, Java, MATLAB and MBA dissertation pages get searches from both the UK and the US.
 
+Second bulk check, 20 Oct 22:40 (sa_bulk_list1-99.csv and uk_bulk_list2-95.csv):
+- Saudi buyers: حل واجبات 9,900 (no KD), حل واجبات انجليزي 320, رسالة ماجستير 480 (16), تحليل احصائي 140 (15), محلل احصائي 70.
+- Saudi presentation cluster about 7,000: برزنتيشن 3,600 (30), عرض بوربوينت 1,600 (36), قوالب بوربوينت 1,000 (28),
+  عرض تقديمي جاهز 480 (44), بوربوينت جاهز 390 (17), عمل بوربوينت 110 (33).
+- Saudi questionnaire cluster: استبيان قوقل 6,600 (41, people want Google Forms), مقياس ليكرت 1,300 (23), نموذج استبيان 880 (32),
+  عمل استبيان 720 (29), كيف اسوي استبيان 480 (34), طريقة عمل استبيان 210 (30), استبيان جاهز 140 (21), اسئلة استبيان 110 (16).
+- Saudi proofreading cluster about 3,450: مدقق لغوي 1,000 (26), تدقيق املائي 880 (28), تصحيح لغوي 720 (24), تدقيق لغوي 590 (19), مدقق املائي 260 (18).
+  Many of these people want a free spell checker; our page is a human checking service, so say that clearly.
+- Saudi distance master's cluster about 5,000: الماجستير عن بعد 2,400, ماجستير تنفيذي 1,300, ماجستير عن بعد معتمد في السعودية 880 (13),
+  جامعة الملك عبدالعزيز 260 (24), جامعة الملك فيصل 260 (18), ماجستير ادارة اعمال عن بعد 170 (9). Needs careful, checked facts.
+- Saudi guides: مشروع تخرج 1,000 (14) and مشاريع تخرج 1,000, مقدمة بحث 1,000 (19), نموذج تقرير 720 (15), طريقة كتابة تقرير 210 (23),
+  مناهج البحث العلمي 390 (18), انواع البحث العلمي 210 (20), المنهج الوصفي 170 (20), مراجع البحث 260 (18), فهرس المحتويات 110 (28).
+- Saudi engineering: ماتلاب 1,000 (61, too hard), ريفيت 590 (17), مخططات اوتوكاد 210, تعلم اوتوكاد 140, رسم اوتوكاد 140 (27).
+- Saudi cities for خدمات الطالب: almost zero (Tabuk 20, Abha 10). Do not build more city pages.
+- UK Harvard cluster about 80,000: harvard reference generator 40,500 (46), harvard referencing generator 22,200 (42),
+  harvard citation generator 8,100 (42), harvard style referencing generator 4,400 (41), harvard referencing website 2,900 (41),
+  harvard referencing tool 1,000 (41), free 480 (40), cite them right harvard generator 320 (41). Our tool already ranks 42 to 82 for these.
+- UK OSCOLA (law referencing), low KD: oscola referencing 5,400 (16), oscola referencing generator 2,400 (22), oscola citation generator 1,900 (28).
+- UK tools: university grade calculator 4,400 (32), degree classification calculator 720 (23), apa citation generator 2,900 (60),
+  apa referencing generator 1,300 (50), referencing generator 1,600 (46).
+- UK services, easy (KD 15 or less): statistics dissertation help 210 (4), tort law 140 (4), cmi 110 (6), contract law 110 (9), sql 170 (11),
+  law dissertation help 390 (12), spss assignment help 480 (14), cipd level 5 110 (14), law essay help 210 (15).
+- UK services, medium: law 880 (40), nursing 880 (49), accounting 720 (30), programming 720 (47), cipd 720 (43), marketing 590 (19),
+  finance 590 (26), mba 590 (36), project management 590 (32), python 480 (23), computer science 480 (28), healthcare 390 (17), btec 260 (19).
+- UK cities: York, Reading, Swansea, Brighton all 0; Aberdeen 50. Do not build more city pages.
+
+### Proposed priority (20 Oct night, waiting for owner's yes)
+1. Quick wins on pages that already exist (titles, headings, a few new sections): Harvard generator (target "harvard reference
+   generator"), degree calculator ("university grade calculator"), Saudi assignment page ("حل واجبات" in help wording),
+   graduation project guide ("مشروع تخرج", "مشاريع تخرج"), ar-thesis-help ("رسالة ماجستير"), spss-help ("spss assignment help",
+   "statistics dissertation help"), law page (law dissertation, law essay, tort, contract), ar-autocad-help (اتوكاد, ريفيت).
+2. استبيان guide with مقياس ليكرت and a Google Forms section.
+3. OSCOLA referencing generator tool plus guide (UK law students, links to the law page).
+4. Arabic presentation page (برزنتيشن, عرض بوربوينت).
+5. تدقيق لغوي page. 6. الماجستير عن بعد guide. 7. كتابة تقرير guide. 8. مناهج البحث العلمي guide.
+9. English Java, MATLAB, statistics assignment help, MBA dissertation help pages.
+
 ### Backlinks
 Competitor backlinks are almost all spam (score 2 to 5, auto-generated sites). Do not buy or copy them.
 Real links only: LinkedIn, Haraj, Business Profile, education blogs, and the GPA calculator and Harvard

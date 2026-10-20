@@ -1,0 +1,89 @@
+Keyword,Intent,Volume,Trend,Keyword Difficulty,CPC (USD),SERP Features
+harvard reference generator,Commercial,40500,"0.16,0.30,0.68,1.00,0.68,0.68,0.68,0.82,0.68,0.55,0.23,0.16",46,2.59,"Reviews, Video, Related searches"
+oscola referencing,Informational,5400,"0.24,0.24,0.81,1.00,0.81,1.00,0.44,0.67,0.81,0.67,0.13,0.15",16,2.23,"AI Overview, Reviews, Video, People also ask"
+harvard style referencing generator,Informational,4400,"0.82,0.67,0.67,0.36,1.00,0.29,0.44,0.36,0.09,0.09,0.15,0.36",41,2.59,"AI Overview, Reviews, Video, People also ask, Related searches"
+university grade calculator,Commercial,4400,"0.28,0.14,0.14,0.28,0.22,0.36,0.53,1.00,0.44,0.53,0.81,0.44",32,0.00,"Video, People also ask"
+apa citation generator,Informational,2900,"0.24,0.24,0.82,1.00,0.82,0.67,0.44,0.82,0.82,0.44,0.24,0.82",60,2.81,"Reviews, Video, Related searches"
+harvard referencing website,Informational,2900,"0.35,0.54,0.81,1.00,0.65,1.00,0.43,0.65,0.54,0.65,0.35,0.19",41,2.01,"AI Overview, Reviews, Video, People also ask, Related searches"
+oscola referencing generator,Commercial,2400,"0.21,0.08,0.54,0.79,0.67,0.67,0.33,0.79,1.00,0.67,0.04,0.08",22,3.03,"AI Overview, Reviews, Video, Related searches"
+oscola citation generator,Commercial,1900,"0.28,0.22,0.81,1.00,1.00,0.81,0.44,0.53,0.67,0.28,0.08,0.19",28,3.03,"AI Overview, Reviews, Video, Related searches"
+referencing generator,Informational,1600,"0.27,0.20,0.44,0.67,0.44,0.53,0.36,0.36,0.53,1.00,0.36,0.53",46,2.04,"Reviews, Video, People also ask, Related searches"
+apa referencing generator,"Informational, Commercial",1300,"0.37,0.26,1.00,1.00,1.00,0.53,0.68,0.68,0.68,0.53,0.21,0.37",50,1.85,"Reviews, Video, People also ask, Related searches"
+dissertation help,Informational,1000,"0.62,1.00,0.62,0.62,0.62,0.62,0.62,0.55,0.55,0.29,0.36,0.44",50,6.16,"AI Overview, Reviews, Video, Video carousel, People also ask, Related searches"
+harvard referencing tool,Commercial,1000,"0.25,0.52,0.85,1.00,0.52,0.68,0.52,0.68,0.68,0.52,0.37,0.05",41,1.75,"Reviews, Video, People also ask"
+law assignment help,Informational,880,"0.45,0.55,0.55,0.62,1.00,0.81,0.55,0.45,0.45,0.45,0.45,0.45",40,0.00,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches"
+mla citation generator,Commercial,880,"0.29,0.46,0.76,1.00,0.76,0.76,0.68,1.00,1.00,0.54,1.00,0.37",63,1.77,"Reviews, Video, People also ask, Related searches"
+nursing assignment help,Informational,880,"1.00,1.00,0.88,1.00,1.00,1.00,0.72,0.59,0.59,0.72,0.72,0.59",49,0.00,"AI Overview, Reviews, Image pack, Video, People also ask, Related searches"
+accounting assignment help,Informational,720,"0.59,1.00,0.88,0.88,1.00,0.88,0.72,0.72,0.59,0.59,0.59,0.72",30,0.00,"AI Overview, Reviews, Video, Related searches"
+apa 7 referencing generator,"Informational, Commercial",720,"0.23,0.32,0.91,1.00,0.73,0.36,0.73,0.73,0.91,0.73,0.23,0.36",55,3.00,"Reviews, Video, People also ask, Related searches"
+cipd assignment help,"Informational, Transactional",720,"0.45,0.68,0.55,0.77,1.00,0.55,0.68,0.68,0.77,0.55,0.45,0.45",43,0.00,"Reviews, People also ask, Knowledge panel, Related searches"
+degree classification calculator,Informational,720,"0.38,0.47,0.32,0.24,0.21,0.38,0.59,0.38,0.38,0.71,1.00,0.59",23,0.00,"AI Overview, Reviews, Video, People also ask, Related searches"
+programming assignment help,"Informational, Commercial",720,"0.67,1.00,0.81,0.81,1.00,1.00,0.81,0.67,0.44,0.67,0.67,0.54",47,0.00,"AI Overview, Reviews, Image pack, Video, People also ask, Knowledge panel, Discussions and forums, Related searches"
+engineering assignment help,Informational,590,"0.48,0.72,0.88,1.00,1.00,0.88,0.26,0.32,0.59,0.48,0.32,0.48",40,0.00,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches"
+finance assignment help,Informational,590,"0.67,1.00,0.67,0.81,1.00,0.81,0.67,0.44,0.54,0.36,0.54,0.67",26,0.00,"AI Overview, Reviews, People also ask"
+marketing assignment help,Informational,590,"0.81,0.81,0.67,1.00,0.67,1.00,0.67,0.54,0.54,0.44,0.54,0.54",19,0.00,"AI Overview, Reviews, Video, People also ask, Related searches"
+mba assignment help,Informational,590,"0.67,0.67,0.67,1.00,0.81,1.00,0.44,0.44,0.54,0.44,0.44,0.54",36,0.00,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches"
+project management assignment help,Informational,590,"0.32,0.39,0.48,1.00,0.88,0.72,0.59,0.59,0.59,0.48,0.39,0.48",32,0.00,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches"
+computer science assignment help,Informational,480,"0.54,0.81,0.67,1.00,0.81,0.29,0.54,0.23,0.54,0.67,0.54,0.54",28,0.00,"AI Overview, Reviews, Video, People also ask, Related searches"
+economics assignment help,Informational,480,"0.38,0.71,0.59,0.71,1.00,0.59,0.38,0.38,0.38,0.38,0.32,0.38",40,0.00,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches"
+harvard referencing generator free,Commercial,480,"0.04,0.25,0.31,0.60,0.88,0.38,1.00,0.31,0.38,0.71,0.71,0.38",40,1.93,"Reviews, Video, People also ask, Related searches"
+psychology assignment help,Informational,480,"0.44,1.00,0.54,0.81,0.81,0.54,0.67,0.44,0.54,0.54,0.36,0.44",47,5.58,"AI Overview, Reviews, Image pack, Video, Related searches"
+python assignment help,"Informational, Commercial",480,"0.29,0.81,0.81,0.81,0.81,1.00,0.44,0.36,0.29,0.29,0.29,0.44",23,0.00,"Reviews, Video, Related searches"
+spss assignment help,Informational,480,"0.66,0.81,0.66,1.00,0.66,0.81,1.00,0.81,0.81,0.81,0.81,1.00",14,0.00,"AI Overview, Reviews, Video"
+healthcare assignment help,Informational,390,"0.36,1.00,1.00,0.44,0.23,0.44,0.54,0.44,0.44,0.36,0.44,0.19",17,0.00,"AI Overview, Reviews, Video, People also ask, Related searches"
+law dissertation help,Informational,390,"0.55,0.55,0.55,0.65,0.82,1.00,0.55,0.55,0.29,0.44,0.36,0.18",12,6.98,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches"
+cite them right harvard generator,Commercial,320,"0.28,0.43,1.00,1.00,0.66,0.43,0.34,0.54,0.54,0.54,0.15,0.22",41,2.16,"AI Overview, Reviews, Video, People also ask, Related searches"
+database assignment help,Informational,320,"0.28,0.54,0.81,1.00,1.00,0.66,0.66,0.35,0.44,0.44,0.54,0.66",29,0.00,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches"
+btec assignment help,Informational,260,"0.28,1.00,0.54,0.44,0.44,0.35,0.23,0.44,0.54,0.66,0.44,0.66",19,0.00,"Sitelinks, AI Overview, Reviews, Video, People also ask, Related searches"
+thesis help uk,Commercial,260,"0.28,0.18,0.15,0.35,0.66,1.00,0.44,0.44,0.35,0.28,0.35,0.44",52,5.08,"AI Overview, Reviews, Video, People also ask, Related searches"
+law essay help,Informational,210,"1.00,0.81,0.43,0.81,1.00,0.81,0.43,0.43,0.43,0.34,0.43,0.34",15,0.00,"AI Overview, Reviews, Video, People also ask, Related searches"
+statistics dissertation help,Informational,210,"0.43,0.82,0.53,0.82,1.00,1.00,0.35,0.43,0.23,0.28,0.23,0.28",4,9.33,"AI Overview, Reviews, Video, Related searches"
+case study help,Informational,170,"0.17,0.53,0.17,0.23,0.17,1.00,0.66,0.66,0.66,0.43,0.66,0.82",30,5.05,"Sitelinks, Reviews, Image pack, Video, People also ask, Local pack, Related searches"
+sql assignment help,Commercial,170,"0.15,0.34,0.53,0.65,1.00,0.81,1.00,1.00,0.34,0.34,0.34,0.34",11,0.00,"Reviews, Video, Related searches"
+coursework help uk,Informational,140,"1.00,0.80,0.42,0.34,0.42,0.42,0.15,0.19,0.42,0.26,0.42,0.42",46,0.00,"AI Overview, Reviews, Video, People also ask, Related searches"
+dissertation proofreading services,Informational,140,"0.66,0.41,0.52,0.66,0.41,0.41,0.17,0.24,1.00,0.79,0.66,0.66",26,4.66,"AI Overview, Reviews, Video, People also ask, Related searches"
+hnc assignment help,Informational,140,"0.07,0.42,0.53,0.65,0.07,0.42,1.00,0.65,0.34,0.65,0.65,1.00",34,0.00,"Sitelinks, AI Overview, Reviews, People also ask, Related searches"
+tort law assignment help,"Informational, Commercial",140,"0.42,0.42,0.53,0.80,0.80,1.00,0.34,0.26,0.26,0.26,0.26,0.42",4,0.00,"Sitelinks, AI Overview, Reviews, Video, People also ask"
+athe assignment help,Informational,110,"0.80,0.52,0.42,0.80,1.00,0.80,0.33,0.23,0.52,0.52,0.52,0.52",23,0.00,"Sitelinks, AI Overview, Reviews, People also ask"
+cipd level 5 assignment help,Informational,110,"1.00,0.53,0.41,0.53,0.53,0.41,0.29,0.41,0.41,1.00,0.53,0.29",14,0.00,"AI Overview, Reviews, Video, Video carousel, Related searches"
+cmi assignment help,Commercial,110,"1.00,1.00,1.00,0.78,0.78,0.50,0.50,0.50,0.78,0.64,0.78,0.78",6,0.00,"Reviews, Image pack, Video, People also ask, Related searches"
+contract law assignment help,"Informational, Commercial",110,"0.82,0.64,0.82,1.00,1.00,0.52,0.52,0.11,0.11,0.29,0.29,0.41",9,0.00,"AI Overview, Reviews, Video"
+dissertation proposal help,Informational,110,"0.83,0.65,0.53,1.00,0.41,0.83,0.53,0.41,0.65,0.29,0.65,0.65",24,0.00,"AI Overview, Reviews, Video, Video carousel, People also ask, Related searches"
+literature review help,"Informational, Commercial",110,"0.40,1.00,0.83,0.83,0.83,0.83,0.63,0.51,0.51,0.51,0.11,0.11",35,5.35,"Sitelinks, AI Overview, Video, People also ask, Related searches"
+phd thesis help,Informational,110,"0.32,0.43,0.32,0.66,1.00,0.82,0.43,0.66,0.23,0.32,0.32,0.14",24,0.00,"AI Overview, Reviews, Video, People also ask, Related searches"
+statistics homework help,Informational,110,"1.00,0.83,0.51,0.63,0.51,0.40,0.17,0.40,0.29,0.29,0.29,0.23",25,0.00,"Reviews, Video, Related searches"
+mba dissertation topics,,90,"0.65,0.65,0.52,1.00,0.52,0.40,0.17,0.29,0.29,0.65,0.40,0.29",,0.00,
+spss help,Informational,90,"0.63,1.00,0.51,0.23,0.29,0.51,0.40,0.23,0.51,0.51,0.51,0.51",35,4.50,"Video, Video carousel, People also ask, Related searches"
+supply chain management assignment help,,90,"0.19,0.14,0.42,1.00,1.00,1.00,0.33,0.09,0.09,0.09,0.09,0.14",,0.00,
+coding assignment help,,70,"0.26,0.19,0.19,0.34,0.26,0.19,0.15,0.15,0.15,0.26,0.19,1.00",,0.00,
+presentation help,,70,"0.50,0.14,0.14,1.00,0.50,0.50,0.50,1.00,0.35,0.50,0.64,0.50",,2.25,
+assignment help aberdeen,,50,"0.21,0.07,0.35,0.35,0.14,0.78,0.14,0.00,0.78,1.00,0.07,0.78",,0.00,
+spss dissertation help,,40,"0.55,0.55,0.22,0.22,0.22,0.22,0.22,0.33,0.44,0.78,1.00,0.78",,0.00,
+urgent assignment help,,40,"1.00,0.77,0.33,0.33,0.22,0.55,0.22,0.22,0.33,0.22,0.22,0.22",,0.00,
+data analysis dissertation help,,30,"1.00,0.78,0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22,0.22",,0.00,
+ilm assignment help,,30,"0.80,0.80,0.80,0.60,1.00,0.60,0.40,0.40,0.60,0.60,0.80,0.60",,0.00,
+academic proofreading uk,,20,"1.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,0.00,0.44,1.00,1.00",,0.00,
+c++ assignment help,,20,"0.57,0.28,0.28,0.28,1.00,0.42,0.28,0.28,0.28,0.28,0.28,0.14",,0.00,
+dissertation methodology help,,20,"1.00,0.50,0.50,1.00,0.50,1.00,1.00,1.00,1.00,1.00,0.50,1.00",,0.00,
+excel assignment help,,20,"0.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,0.50",,0.00,
+matlab homework help,,20,"0.29,0.00,0.29,0.29,0.29,0.29,0.29,0.29,0.29,0.14,0.43,1.00",,0.00,
+nvivo help,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,0.00,
+othm assignment help,,20,"0.50,0.00,0.50,0.00,0.50,0.50,0.00,0.50,0.50,0.50,1.00,0.50",,0.00,
+r assignment help,,20,"0.67,0.00,0.67,0.67,1.00,0.67,0.67,0.67,0.67,0.67,0.67,0.67",,0.00,
+reference generator uk,,20,"0.65,0.65,0.65,1.00,1.00,1.00,0.65,1.00,0.65,1.00,0.65,0.65",,0.00,
+report writing help,,20,"1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00,1.00",,2.10,
+stata assignment help,,20,"0.64,0.00,0.00,0.64,1.00,0.64,0.64,0.64,0.64,0.64,0.64,0.64",,0.00,
+uk degree calculator,,20,"0.00,1.00,0.71,0.71,0.00,0.29,0.14,0.00,0.00,0.14,0.71,0.14",,0.00,
+hrm assignment help,,10,"0.00,0.00,0.00,1.00,1.00,1.00,0.00,1.00,1.00,1.00,1.00,1.00",,0.00,
+java homework help,,10,"1.00,0.00,0.00,1.00,1.00,1.00,1.00,1.00,1.00,0.00,0.50,1.00",,0.00,
+land law assignment help,,10,"1.00,0.28,0.14,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,
+mba dissertation writing,,10,"1.00,1.00,1.00,1.00,0.00,1.00,0.00,1.00,1.00,1.00,0.00,0.00",,0.00,
+assignment help brighton,,0,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,
+assignment help reading,,0,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,
+assignment help swansea,,0,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,
+assignment help york,,0,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,
+emergency assignment help,,0,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,
+leadership and management assignment help,,0,"0.00,0.00,0.00,0.00,0.00,1.00,0.00,0.00,1.00,1.00,1.00,0.00",,0.00,
+pearson assignment help,,0,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,
+same day assignment help,,0,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,
+simulink assignment help,,0,"0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00,0.00",,0.00,
