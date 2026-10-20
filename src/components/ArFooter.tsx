@@ -48,6 +48,7 @@ const ArFooter = () => (
         <ul className="space-y-2">
           <li><Link href="/ar" className="text-white/60 hover:text-white transition-colors">الصفحة الرئيسية</Link></li>
           <li><Link href="/ar/blog" className="text-white/60 hover:text-white transition-colors">أدلة مجانية للطلاب</Link></li>
+          <li><Link href="/ar/gpa-calculator" className="text-white/60 hover:text-white transition-colors">حساب المعدل التراكمي</Link></li>
           <li><Link href="/ar#quote" className="text-white/60 hover:text-white transition-colors">اعرف السعر</Link></li>
           <li><Link href="/" hrefLang="en" className="text-white/60 hover:text-white transition-colors">English website</Link></li>
         </ul>

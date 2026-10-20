@@ -41,6 +41,7 @@ const AR_NAV: NavLink[] = [
   { title: 'الرئيسية', path: '/ar' },
   { title: 'خدماتنا', path: '/ar/assignment-help-saudi-arabia', mega: true },
   { title: 'أدلة الطلاب', path: '/ar/blog' },
+  { title: 'حساب المعدل', path: '/ar/gpa-calculator' },
   { title: 'اعرف السعر', path: '/ar#quote' },
 ];
 

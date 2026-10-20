@@ -34,6 +34,8 @@ export const EN_ONLY_FALLBACK: Record<string, string> = {
   'autocad-help': '/engineering-assignment-help',
   'solidworks-help': '/engineering-assignment-help',
   'programming-help': '/computing-it-assignment-help',
+  'gpa-calculator': '/tools/degree-classification-calculator',
+  'student-services': '/assignment-help-saudi-arabia',
 };
 
 /** Returns the URL of the same page in the other language, or the other language's homepage. */

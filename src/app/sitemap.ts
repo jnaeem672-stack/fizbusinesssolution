@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const core: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/`, changeFrequency: 'weekly', priority: 1 },
     { url: `${SITE_URL}/ar`, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${SITE_URL}/ar/gpa-calculator`, lastModified: new Date('2026-10-20'), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${SITE_URL}/services`, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${SITE_URL}/about`, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${SITE_URL}/our-team`, changeFrequency: 'monthly', priority: 0.7 },
