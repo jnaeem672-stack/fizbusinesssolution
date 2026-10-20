@@ -143,6 +143,14 @@ Second bulk check, 20 Oct 22:40 (sa_bulk_list1-99.csv and uk_bulk_list2-95.csv):
 5. تدقيق لغوي page. 6. الماجستير عن بعد guide. 7. كتابة تقرير guide. 8. مناهج البحث العلمي guide.
 9. English Java, MATLAB, statistics assignment help, MBA dissertation help pages.
 
+### Season (from the Trend column of the bulk exports, assumed Oct 2025 to Sep 2026, busiest month = 100)
+- Saudi, 67 student keywords: Oct 95, Nov 90, Dec 81, Jan 84, Feb 66, Mar 76, Apr 41, May 100, Jun 75, Jul 55,
+  Aug 32, Sep 47. Busy Oct to Jan and May; quiet Apr (Eid holidays) and Aug (summer).
+- UK, 55 service keywords: busy Nov to Mar (peak Feb 100); Apr to Sep about 56 to 68.
+- UK Harvard tool keywords: peak Jan 100, also Dec 69 and May 76; low Aug to Nov (22 to 29).
+- Use: publish or refresh pages 6 to 8 weeks before a peak (Saudi: by March for May, by August for October;
+  UK: by November for Jan to Feb; Harvard tool before December). Check 5 years in Google Trends to confirm.
+
 ### Competitor review (20 Oct 2026, doc "FIZBS Competitor Review: Saudi Arabia and UK" in the owner's Claude docs)
 - Saudi (Sanad, Wagibat, Ejada, Al-Manara, Emtiyaz, Services Researcher, Al-Daam, SciGuide, Haraj sellers, Khamsat):
   none shows prices; most run from Egypt (+20 WhatsApp); traffic mostly from Blackboard guides. Ejada ranks #2 for
