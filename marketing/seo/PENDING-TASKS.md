@@ -109,7 +109,8 @@ Second bulk check, 20 Oct 22:40 (sa_bulk_list1-99.csv and uk_bulk_list2-95.csv):
   finance 590 (26), mba 590 (36), project management 590 (32), python 480 (23), computer science 480 (28), healthcare 390 (17), btec 260 (19).
 - UK cities: York, Reading, Swansea, Brighton all 0; Aberdeen 50. Do not build more city pages.
 
-### Proposed priority (20 Oct night, waiting for owner's yes)
+### Priority (owner decided 20 Oct night: start item 1 "Quick wins" on 21 Oct morning;
+### Saudi title wording "مساعدة في حل الواجبات", not plain "حل واجبات جامعية")
 1. Quick wins on pages that already exist (titles, headings, a few new sections): Harvard generator (target "harvard reference
    generator"), degree calculator ("university grade calculator"), Saudi assignment page ("حل واجبات" in help wording),
    graduation project guide ("مشروع تخرج", "مشاريع تخرج"), ar-thesis-help ("رسالة ماجستير"), spss-help ("spss assignment help",
