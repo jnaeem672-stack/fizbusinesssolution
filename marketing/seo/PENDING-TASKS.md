@@ -10,6 +10,22 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
    the owner says yes (owner rule: discuss each SEO item before doing it).
 4. Give the owner a short Semrush keyword list when the next items need data (free plan: 10 requests a day).
 
+## Scheduled queue (owner, 20 Oct night)
+- 21 Oct: Quick wins (approved, see Priority below).
+- 22 Oct: Task C "Business Profile" (owner asked to schedule it). Prepare a copy-paste pack for the existing
+  Google Business Profile: main and 2 to 3 secondary categories, 750-character description (Saudi and UK students),
+  services with prices (from £20 / 100 riyal per 1,000 words), website and WhatsApp links, photo list (no student
+  results), review reply template. First ask the owner: which city/address is the profile on, and does FIZBS have a
+  real person or place in Saudi Arabia? Never a fake Saudi address: Google allows only real locations, service
+  area about 2 hours' drive, and may suspend profiles that break this.
+- Offered, waiting for owner's yes: "Backlink Kit" (profile texts EN/AR, categories, signup links for LinkedIn,
+  YouTube, Pinterest, X, Trustpilot, Crunchbase, Haraj, Mstaml, OpenSooq, UK listings if a UK address exists);
+  Arabic reviewer job post for Khamsat/Mostaql; 2 to 3 guides for Issuu/Medium.
+- Owner budget idea: PKR 50,000 a month = 20,000 Saudi Arabic reviewer, 15,000 short Arabic videos for guides,
+  15,000 outreach freelancer from month 2 (pay for work, never pay sites for links). No agency, no Semrush Pro for now.
+- Owner to-do: Search Console export (Performance, country Saudi Arabia, 3 months, Queries and Pages), Semrush
+  Position Tracking setup (10 Saudi keywords, mobile), Site Audit, and confirm nobody bought links.
+
 ## Standing rules for every page
 - No fake reviews, ratings or testimonials. No guarantees. Never "plagiarism-free", "zero AI", "AI-free",
   "free revisions" or "100% original". No em or en dashes. Avoid the words "coaching" and "ethical".
