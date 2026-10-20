@@ -42,6 +42,8 @@ import { arAssignmentHelpDammam } from './ar-assignment-help-dammam';
 import { arDissertationHelpSaudiArabia } from './ar-dissertation-help-saudi-arabia';
 import { cipdAssignmentHelp } from './cipd-assignment-help';
 import { hndHncAssignmentHelp } from './hnd-hnc-assignment-help';
+import { hncAssignmentHelp } from './hnc-assignment-help';
+import { mfrdAssignmentHelp } from './mfrd-assignment-help';
 import { cmiAssignmentHelp } from './cmi-assignment-help';
 import { othmAtheAssignmentHelp } from './othm-athe-assignment-help';
 import { assignmentHelpLeeds } from './assignment-help-leeds';
@@ -178,6 +180,8 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   supplyChainLogisticsAssignmentHelp,
   cipdAssignmentHelp,
   hndHncAssignmentHelp,
+  hncAssignmentHelp,
+  mfrdAssignmentHelp,
   cmiAssignmentHelp,
   othmAtheAssignmentHelp,
 ];
@@ -236,6 +240,8 @@ export const SERVICE_LINKS: { label: string; href: string }[] = [
 export const QUALIFICATION_LINKS: { label: string; href: string }[] = [
   { label: 'CIPD Assignment Help', href: '/cipd-assignment-help' },
   { label: 'HND & HNC Assignment Help', href: '/hnd-hnc-assignment-help' },
+  { label: 'HNC Assignment Help', href: '/hnc-assignment-help' },
+  { label: 'MFRD Assignment Help', href: '/mfrd-assignment-help' },
   { label: 'CMI Assignment Help', href: '/cmi-assignment-help' },
   { label: 'OTHM & ATHE Assignment Help', href: '/othm-athe-assignment-help' },
 ];

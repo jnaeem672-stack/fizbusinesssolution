@@ -30,6 +30,8 @@ export const PAGE_SPECIALISTS: Record<string, string[]> = {
   'cipd-assignment-help': ['nadia-s'],
   'cmi-assignment-help': ['priya-d', 'james-p'],
   'hnd-hnc-assignment-help': ['ahmed-k', 'naeem'],
+  'hnc-assignment-help': ['clara-v', 'ahmed-k', 'lukas-w'],
+  'mfrd-assignment-help': ['abdul-rehman', 'naeem', 'daniel-r'],
   'othm-athe-assignment-help': ['priya-d', 'ahmed-k'],
   'assignment-help-saudi-arabia': ['abdul-rehman', 'omar-f'],
   'assignment-help-bristol': ['clara-v', 'ahmed-k'],

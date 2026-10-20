@@ -35,6 +35,8 @@ export const SERVICE_PAGE_LINKS: Record<string, string> = {
   'Supply Chain & Logistics Assignment Help': '/supply-chain-logistics-assignment-help',
   'CIPD Assignment Help': '/cipd-assignment-help',
   'HND & HNC Assignment Help': '/hnd-hnc-assignment-help',
+  'HNC Assignment Help': '/hnc-assignment-help',
+  'MFRD Assignment Help': '/mfrd-assignment-help',
   'CMI Assignment Help': '/cmi-assignment-help',
   'OTHM & ATHE Assignment Help': '/othm-athe-assignment-help',
 };

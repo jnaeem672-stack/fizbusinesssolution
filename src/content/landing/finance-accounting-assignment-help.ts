@@ -161,6 +161,6 @@ export const financeAccountingAssignmentHelp: LandingContent = {
     'business-management-assignment-help',
     'mba-assignment-help',
     'case-study-help',
-    'data-analysis-help',
+    'mfrd-assignment-help',
   ],
 };

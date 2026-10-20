@@ -64,6 +64,8 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     services: [
       { id: 28, name: 'CIPD Assignment Help', desc: 'CIPD Level 3, 5 and 7 units in people management and L&D, mapped to every assessment criterion.', areas: 'CIPD' },
       { id: 29, name: 'HND & HNC Assignment Help', desc: 'Pearson BTEC Higher National units with clear guidance on Pass, Merit and Distinction criteria.', areas: 'HND' },
+      { id: 38, name: 'HNC Assignment Help', desc: 'Level 4 HNC units in engineering, construction, business and computing, built around how each criterion is assessed.', areas: 'HNC' },
+      { id: 39, name: 'MFRD Assignment Help', desc: 'Managing Financial Resources and Decisions: sources of finance, budgets, NPV, payback and ratio analysis explained.', areas: 'HND Finance' },
       { id: 30, name: 'CMI Assignment Help', desc: 'CMI Level 3, 5 and 7 management and leadership units, including apprenticeship programmes.', areas: 'CMI' },
       { id: 31, name: 'OTHM & ATHE Assignment Help', desc: 'OTHM and ATHE diplomas from Level 3 to Level 7, including strategic management and leadership.', areas: 'Diplomas' },
     ],
