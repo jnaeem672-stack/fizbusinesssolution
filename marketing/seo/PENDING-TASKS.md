@@ -12,7 +12,13 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
 
 ## Scheduled queue (owner, 20 Oct night)
 - 21 Oct: Quick wins (approved, see Priority below).
-- 22 Oct: Task C "Business Profile" (owner asked to schedule it). Prepare a copy-paste pack for the existing
+- 21 Oct, after Quick wins (owner moved it up on 20 Oct 23:29): Task C "Business Profile". The owner says FIZBS
+  has a person, phone number and address in Saudi Arabia, the UK and the USA. For each one, check with the owner
+  before any profile: does that person really work for FIZBS from that place, meet or serve students there (or
+  travel to them), with set hours, and can they pass Google's video verification? If yes, plan one profile per
+  real location (hide a home address and use a service area). Never store their addresses or numbers in this
+  repo (it is on GitHub); keep them only in the chat.
+- Task C also covers improving the existing profile: prepare a copy-paste pack for the existing
   Google Business Profile: main and 2 to 3 secondary categories, 750-character description (Saudi and UK students),
   services with prices (from £20 / 100 riyal per 1,000 words), website and WhatsApp links, photo list (no student
   results), review reply template. First ask the owner: which city/address is the profile on, and does FIZBS have a
