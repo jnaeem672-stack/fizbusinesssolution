@@ -121,6 +121,16 @@ Second bulk check, 20 Oct 22:40 (sa_bulk_list1-99.csv and uk_bulk_list2-95.csv):
 5. تدقيق لغوي page. 6. الماجستير عن بعد guide. 7. كتابة تقرير guide. 8. مناهج البحث العلمي guide.
 9. English Java, MATLAB, statistics assignment help, MBA dissertation help pages.
 
+### Competitor review (20 Oct 2026, doc "FIZBS Competitor Review: Saudi Arabia and UK" in the owner's Claude docs)
+- Saudi (Sanad, Wagibat, Ejada, Al-Manara, Emtiyaz, Services Researcher, Al-Daam, SciGuide, Haraj sellers, Khamsat):
+  none shows prices; most run from Egypt (+20 WhatsApp); traffic mostly from Blackboard guides. Ejada ranks #2 for
+  مكتبة لخدمات الطالب and #3 for ماجستير عن بعد with simple posts.
+- UK (UK-Assignments, Native, New, UK Assignment Help, Locus, Assignment Master, Global, Assignment Desk, Students AH,
+  Assignment Experts): all sell on AI-free, plagiarism-free and 50 to 60% off banners; prices from about £32 to £68
+  per 1,000 words where shown; FIZBS (£20) is the cheapest. Many sell finished work, which is an offence in England
+  since the Skills and Post-16 Education Act 2022, so keep the help-and-guidance wording.
+- Waiting: Semrush Backlink Bulk Analysis of the 20 domains to fill authority and links.
+
 ### Backlinks
 Competitor backlinks are almost all spam (score 2 to 5, auto-generated sites). Do not buy or copy them.
 Real links only: LinkedIn, Haraj, Business Profile, education blogs, and the GPA calculator and Harvard
