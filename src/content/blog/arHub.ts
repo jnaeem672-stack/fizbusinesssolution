@@ -22,6 +22,7 @@ export const AR_BLOG_HUB: { sections: HubSection[]; faqs: { q: string; a: string
         { label: 'دليل مشروع التخرج مع أفكار حسب التخصص', href: '/ar/blog/graduation-project-guide' },
         { label: 'كيف تكتب مقدمة بحث جامعي', href: '/ar/blog/how-to-write-a-research-introduction' },
         { label: 'غلاف رسالة الماجستير والإهداء: نماذج', href: '/ar/blog/thesis-cover-page-and-dedication' },
+        { label: 'ما هو الاسايمنت وكيف تكتبه', href: '/ar/blog/what-is-an-assignment' },
         { label: 'مشروع التخرج للماجستير في جامعة أم القرى', href: '/ar/blog/masters-graduation-project-umm-al-qura' },
         { label: 'المساعدة لطلاب مكة المكرمة', href: '/ar/assignment-help-makkah' },
       ],
