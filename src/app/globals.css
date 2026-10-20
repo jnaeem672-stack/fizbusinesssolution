@@ -7,6 +7,8 @@
   --color-navy-light: #17325E;
   --color-whatsapp: #25D366;
   --max-width-site: 90rem; /* 1440px */
+  /* Cairo comes first but only covers Arabic letters (unicode-range), so English text keeps the system font */
+  --font-sans: var(--font-arabic), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 @keyframes marquee {
@@ -90,8 +92,13 @@ body {
 
 /* Headings font + polish */
 h1, h2, h3 {
-  font-family: var(--font-jakarta), "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-arabic), var(--font-jakarta), "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
   letter-spacing: -0.02em;
+}
+
+/* Arabic letters join together, so right-to-left text never gets extra or negative letter spacing */
+:dir(rtl) {
+  letter-spacing: normal;
 }
 
 .bg-soft-rose {

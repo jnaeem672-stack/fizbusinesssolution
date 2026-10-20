@@ -22,6 +22,20 @@ const jakarta = localFont({
   variable: '--font-jakarta',
 });
 
+// Arabic font (Cairo, OFL). The unicode-range limits it to Arabic letters, so English text
+// keeps its current fonts. Not preloaded: English visitors never download it.
+const cairoArabic = localFont({
+  src: '../fonts/cairo-arabic-wght.woff2',
+  weight: '200 1000',
+  display: 'swap',
+  variable: '--font-arabic',
+  preload: false,
+  adjustFontFallback: false,
+  declarations: [
+    { prop: 'unicode-range', value: 'U+0600-06FF, U+0750-077F, U+0870-088E, U+0890-0891, U+0897-08E1, U+08E3-08FF, U+200C-200E, U+2010-2011, U+204F, U+2E41, U+FB50-FDFF, U+FE70-FE74, U+FE76-FEFC' },
+  ],
+});
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://fizbusinessolutions.com'),
   title: {
@@ -57,7 +71,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={jakarta.variable}>
+    <html lang="en" className={`${jakarta.variable} ${cairoArabic.variable}`}>
       <head>
         <script
           type="application/ld+json"
