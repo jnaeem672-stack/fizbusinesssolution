@@ -238,6 +238,14 @@ export const ukUniversityGradingSystemPost: BlogPost = {
       a: `A First Class Honours degree is typically awarded for an overall average of 70% or above. Some universities also use borderline rules, so an average just below 70% may be considered for a First depending on how your credits are distributed. Check your university's regulations for the exact rule.`,
     },
     {
+      q: `Is 66% a 2:1?`,
+      a: `Yes. At most UK universities a final weighted average of 66% falls in the 2:1 (Upper Second Class) band, which runs from 60 to 69%. A single module mark of 66 is also a 2:1-level mark, but your degree class depends on your overall average across the years that count.`,
+    },
+    {
+      q: `What is an upper second class degree?`,
+      a: `An upper second class degree, usually called a 2:1, is an honours degree awarded for a final average of about 60 to 69%. It is the second-highest classification after a First and is the minimum many employers and Master's programmes ask for.`,
+    },
+    {
       q: `Is a 2:1 a good degree?`,
       a: `Yes. A 2:1 (Upper Second Class Honours, typically 60 to 69%) is a very good result and is the classification many students achieve. Many graduate employers and postgraduate programmes list a 2:1 as their usual minimum requirement, although this varies.`,
     },

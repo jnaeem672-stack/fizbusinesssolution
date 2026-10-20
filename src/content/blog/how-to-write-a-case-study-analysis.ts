@@ -6,13 +6,17 @@ export const howToWriteACaseStudyAnalysisPost: BlogPost = {
   title: 'How to Write a Case Study Analysis: A Step-by-Step Guide for Students',
   metaTitle: 'How to Write a Case Study Analysis (Step-by-Step)',
   metaDescription:
-    'How to write a case study analysis for university: identify key issues, apply theory, evaluate options and make recommendations, with a worked mini example.',
+    'How to write a case study analysis: how to analyse a case, the case analysis format and its parts, MBA tips and a worked example with recommendations.',
   keywords: [
     'how to write a case study analysis',
     'case study analysis example',
     'case study assignment',
     'business case study analysis',
     'case study structure',
+    'case analysis format',
+    'parts of a case analysis',
+    'how to analyse a case study',
+    'how to write a case study in MBA',
   ],
   category: 'Business Writing',
   excerpt:
@@ -66,7 +70,7 @@ export const howToWriteACaseStudyAnalysisPost: BlogPost = {
       ],
     },
     {
-      heading: 'Case study analysis structure',
+      heading: 'Case study analysis format: the parts of a case analysis',
       steps: [
         'Introduction: purpose, the organisation or scenario, and the structure.',
         'Background summary: a brief overview of the case (keep it short).',
@@ -88,6 +92,19 @@ export const howToWriteACaseStudyAnalysisPost: BlogPost = {
         'Theory applied: Porter\'s Five Forces shows high rivalry and low switching costs online. Herzberg\'s two-factor theory helps explain why pay rises alone have not reduced turnover, as staff cite lack of recognition and development.',
         'Options: (1) invest in a new e-commerce platform; (2) partner with a third-party delivery service; (3) introduce a structured training and recognition programme.',
         'Recommendation: combine options 2 and 3 in the short term because they are lower cost and address both causes, then review the website investment in year two.',
+      ],
+    },
+    {
+      heading: 'How to write a case study analysis in an MBA',
+      paragraphs: [
+        "MBA case studies, often in the Harvard Business School style, put you in the position of a senior manager who has to make a decision. They are longer, include financial exhibits and leave the answer open on purpose, so markers look closely at your judgement as well as your use of theory.",
+      ],
+      bullets: [
+        "Start from the decision: state the question the protagonist faces in one sentence, and keep every section connected to it.",
+        "Use the exhibits: work out the key numbers yourself, such as margins, growth, cash flow or break-even, and put detailed workings in an appendix.",
+        "Choose strategic frameworks that fit: for example the value chain, VRIO, Porter's generic strategies or Ansoff's matrix, applied to the facts of the case.",
+        "Weigh options against clear criteria such as cost, risk, fit with strategy and speed, and say what you would give up with each choice.",
+        "Make a decision: MBA markers expect a clear recommendation with an implementation plan, risks and how you would measure success.",
       ],
     },
     {
@@ -153,6 +170,14 @@ export const howToWriteACaseStudyAnalysisPost: BlogPost = {
     {
       q: 'How do you structure a case study analysis?',
       a: 'Typically introduction, brief background, key issues, analysis, evaluation of alternatives, recommendations with implementation, conclusion and references.',
+    },
+    {
+      q: 'How do you analyse a case study?',
+      a: 'Read the case twice, separate symptoms from root causes, rank the key issues, explain them with relevant theory and evidence from the case, compare realistic options against clear criteria, and recommend the best option with an implementation plan.',
+    },
+    {
+      q: 'What are the parts of a case analysis?',
+      a: 'Most case analyses have an introduction, a short background, the key issues, analysis of each issue, evaluation of alternatives, recommendations with implementation, a conclusion and references.',
     },
     {
       q: 'How much of the case should I describe?',

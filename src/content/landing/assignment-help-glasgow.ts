@@ -21,12 +21,12 @@ export const assignmentHelpGlasgow: LandingContent = {
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Honours dissertations', '10% off first order'],
   intro: [
     "Glasgow is Scotland's largest city and one of the UK's biggest student centres, with universities spread from the West End to the city centre and beyond. If you are looking for assignment help Glasgow students can access around classes, part-time jobs and placements, FIZ Business Solutions (FIZBS) offers subject-specific support that runs entirely online.",
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and grade descriptors, and they understand how Scottish degrees differ from those in the rest of the UK.",
+    "Studying in Glasgow brings its own rules: a four-year Honours degree, third-year marks that count, and at the University of Glasgow a 22-point letter scale instead of percentages. Our Master's and PhD-qualified experts work from your own course handbook and grade descriptors, so the guidance fits the Scottish system rather than an English template.",
   ],
   sections: [
     {
       heading: "Universities in Glasgow we support",
-      paragraphs: ["We support students at every university in Glasgow. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["Glasgow's universities stretch from the University of Glasgow in the West End to Strathclyde and Glasgow Caledonian in the city centre and UWS in nearby Paisley. FIZBS is an independent online service and is not affiliated with any of them, so your expert always works from your own course handbook and marking criteria."],
       subsections: [
         {
           heading: "University of Glasgow",
@@ -69,7 +69,7 @@ export const assignmentHelpGlasgow: LandingContent = {
       heading: 'Support with your Honours dissertation',
       paragraphs: [
         'The Senior Honours dissertation is often the most demanding piece of work in a Scottish degree. Many students choose a topic and write a proposal in third year, then research and write the dissertation in fourth year alongside other modules.',
-        'Our experts can guide you on narrowing your topic, building a critical literature review, choosing and justifying a research method, and analysing your data with SPSS, Excel, NVivo, Stata or Python. Dissertation help is £30 per 1,000 words, with a maximum of £350 for any dissertation.',
+        'Your expert can help you narrow the topic, build a critical literature review, choose and justify a research method, and work through your data in SPSS, Excel, NVivo, Stata or Python. Honours and Master\'s dissertation support is £30 per 1,000 words, capped at £350.',
       ],
       bullets: [
         'Turning a broad interest into a focused research question',
@@ -112,16 +112,10 @@ export const assignmentHelpGlasgow: LandingContent = {
       ],
     },
     {
-      heading: 'Pricing and deadlines',
+      heading: 'Prices, deadlines and how Glasgow students get started',
       paragraphs: [
-        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%.',
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
-      ],
-    },
-    {
-      heading: 'Getting started',
-      paragraphs: [
-        'Send your subject, word count and deadline on WhatsApp for a quick quote. If you would like your expert to follow your course closely, share your brief, grade descriptors or marking rubric, reading list and any feedback you have received. Everything you share stays confidential.',
+        'Prices start at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 4,000-word engineering report due in 48 hours, for example, comes to £120, or £108 with the 10% first-order discount, so starting early saves money.',
+        'Send your course, word count and deadline on WhatsApp for a quote, along with your brief, grade descriptors or marking rubric and any feedback, which your expert reads before starting. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR, and everything you share stays confidential.',
       ],
     },
   ],
@@ -148,11 +142,11 @@ export const assignmentHelpGlasgow: LandingContent = {
     },
     {
       q: 'How much does assignment help in Glasgow cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. Shorter deadlines add 25% or 50%, and first-time customers get 10% off.',
+      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 4,000-word report due in 48 hours, for example, is £120 before your 10% first-order discount.',
     },
     {
-      q: 'How do I pay?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+      q: 'Does third-year coursework count towards my degree in Scotland?',
+      a: 'Usually, yes. At most Scottish universities your classification is based on the two Honours years, normally third and fourth year, so Junior Honours coursework matters. Check your course handbook for the exact weighting.',
     },
   ],
   ctaTitle: 'Get your Glasgow assignment price in minutes',

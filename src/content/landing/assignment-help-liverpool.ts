@@ -21,12 +21,12 @@ export const assignmentHelpLiverpool: LandingContent = {
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Public health and education', '10% off first order'],
   intro: [
     'Liverpool has a large and lively student population spread across several universities, from research-intensive programmes to professional courses in teaching, nursing and sport. If you are looking for assignment help Liverpool students can fit around lectures, placements and part-time work, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.',
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are taking.",
+    "Liverpool students study an unusually wide range of subjects: public health and tropical medicine, sport and exercise science, teacher training, maritime business and management, including online MBA programmes. Whatever your course, your request goes to a Master's or PhD-qualified expert in that field, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Liverpool we support",
-      paragraphs: ["We support students at every university in Liverpool. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["Liverpool's universities range from the Russell Group University of Liverpool to LJMU's applied courses, Hope's small seminar groups and Edge Hill's teacher training in nearby Ormskirk. FIZBS is an independent online service and is not affiliated with any of them, so your expert always works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Liverpool",
@@ -113,7 +113,7 @@ export const assignmentHelpLiverpool: LandingContent = {
     {
       heading: "Dissertation help for final-year and Master's students",
       paragraphs: [
-        'Our experts can guide you on choosing a focused topic, writing a proposal, structuring a literature review, justifying your methodology and analysing your data with SPSS, Excel, NVivo, Stata or Python.',
+        'In Liverpool, dissertations often grow out of practice: a school-based enquiry for trainee teachers, a secondary data or systematic review project in public health, or a sport science study using your own measurements. Our experts help you shape a focused question, build the literature review, justify your method and analyse data with SPSS, Excel, NVivo, Stata or Python.',
         'Dissertation help is £30 per 1,000 words, with a maximum of £350 for any dissertation, and we have supported more than 350 research projects.',
       ],
     },
@@ -124,16 +124,10 @@ export const assignmentHelpLiverpool: LandingContent = {
       ],
     },
     {
-      heading: 'Pricing and deadlines',
+      heading: 'Prices, deadlines and how Liverpool students get started',
       paragraphs: [
-        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%.',
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
-      ],
-    },
-    {
-      heading: 'Getting started',
-      paragraphs: [
-        'Send your subject, word count and deadline on WhatsApp for a quick quote. To help your expert follow your module closely, share your brief, marking rubric, reading list and any feedback you have received.',
+        'Prices start at £20 per 1,000 words for deadlines of seven days or more. Shorter deadlines cost more: 25% extra for 3 to 6 days and 50% extra within 48 hours. For example, a 3,000-word business report due in five days comes to £75, or £67.50 with the 10% first-order discount. Proofreading starts from £12 per 1,000 words.',
+        'Message us on WhatsApp with your subject, word count and deadline for a quote. If you are on placement or working shifts, send your brief, rubric and feedback whenever suits you, as our team replies 24/7. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
       ],
     },
   ],
@@ -156,15 +150,15 @@ export const assignmentHelpLiverpool: LandingContent = {
     },
     {
       q: 'How much does assignment help in Liverpool cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. Shorter deadlines add 25% or 50%, and first-time customers get 10% off.',
+      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 3,000-word report due in five days, for example, is £75 before your 10% first-order discount, and 48-hour deadlines add 50%.',
     },
     {
-      q: 'Do you help with dissertations?',
-      a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
+      q: 'Can you help with sport and exercise science lab reports?',
+      a: 'Yes. We help you write up the method, present results in clear tables and figures, choose suitable statistical tests and link your discussion to published research.',
     },
     {
-      q: 'How do I pay?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+      q: 'Do you support online MBA students at the University of Liverpool?',
+      a: "Yes. We support online MBA and online Master's students wherever they live, with assignments, reflective pieces and dissertations, working from your module brief and marking criteria.",
     },
   ],
   ctaTitle: 'Get your Liverpool assignment price in minutes',

@@ -57,13 +57,13 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       "At most UK universities, a First Class degree is 70% and above, a 2:1 is 60 to 69%, a 2:2 is 50 to 59% and a Third is 40 to 49%. Taught Master's degrees are usually graded Distinction (70% and above), Merit (60 to 69%) and Pass (50 to 59%). Marks above 70 are reserved for excellent work.",
     specialist: 'sajjad-akbar-ali',
-    updated: '2026-10-14',
+    updated: '2026-10-20',
   },
   'how-to-email-a-phd-supervisor': {
     quickAnswer:
       "Email a potential PhD supervisor with a clear subject line, a short introduction, why their research fits your idea, a brief outline of your proposed project and your relevant qualifications. Attach your CV and a short research outline, keep the body to roughly 200 to 350 words, and send one polite follow-up after about two weeks if you get no reply.",
     specialist: 'sajjad-akbar-ali',
-    updated: '2026-10-12',
+    updated: '2026-10-20',
   },
   'gibbs-reflective-cycle-guide': {
     quickAnswer:
@@ -129,13 +129,13 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       'A university business report usually has a title page, an executive summary, contents, an introduction, numbered sections of findings and analysis, conclusions, recommendations, references and appendices. Unlike an essay, it uses headings, tables and charts, and the executive summary gives the key findings and recommendations on one page.',
     specialist: 'james-p',
-    updated: '2026-10-13',
+    updated: '2026-10-20',
   },
   'how-to-write-a-case-study-analysis': {
     quickAnswer:
       'To write a case study analysis, read the case and brief carefully, identify the key issues, analyse them with relevant theory and frameworks, generate and evaluate options against clear criteria, and finish with practical recommendations and an implementation plan. Support each point with evidence from the case.',
     specialist: 'james-p',
-    updated: '2026-10-13',
+    updated: '2026-10-20',
   },
   'uk-masters-personal-statement': {
     quickAnswer:

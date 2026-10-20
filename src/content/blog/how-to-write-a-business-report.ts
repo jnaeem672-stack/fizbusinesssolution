@@ -6,13 +6,16 @@ export const howToWriteABusinessReportPost: BlogPost = {
   title: 'How to Write a Business Report for University: Format, Structure and Example',
   metaTitle: 'How to Write a Business Report: Format and Example',
   metaDescription:
-    'How to write a business report for university: format, executive summary, headings, analysis, recommendations and a sample outline, with common mistakes.',
+    'How to write a business report: format, structure, an outline and an example executive summary and recommendations, plus how long it takes and common mistakes.',
   keywords: [
     'how to write a business report',
     'business report format',
     'report writing for university',
     'executive summary example',
     'business report structure',
+    'business report outline',
+    'business report example',
+    'management report structure',
   ],
   category: 'Business Writing',
   excerpt:
@@ -84,9 +87,9 @@ export const howToWriteABusinessReportPost: BlogPost = {
       ],
     },
     {
-      heading: 'A sample business report outline',
+      heading: 'Business report outline (sample)',
       paragraphs: [
-        'Here is an illustrative outline for a 3,000-word report on a fictional mid-sized UK coffee chain considering expansion:',
+        'Here is an illustrative business report outline for a 3,000-word report on a fictional mid-sized UK coffee chain considering expansion. You can adapt the headings and word counts to your own brief:',
       ],
       bullets: [
         'Executive summary (counts separately).',
@@ -98,6 +101,37 @@ export const howToWriteABusinessReportPost: BlogPost = {
         '6.0 Conclusions (250 words).',
         '7.0 Recommendations (300 words): actions, responsibilities, timescales.',
         'References and appendices.',
+      ],
+    },
+    {
+      heading: 'Business report example: executive summary and recommendations',
+      paragraphs: [
+        'Students often ask for a business report example, so here are two short, illustrative extracts from the fictional coffee chain report above. They show the tone and level of detail markers expect, not text to copy.',
+        'Example executive summary: "This report assesses whether Harbour Coffee Ltd (a fictional 24-store UK chain) should expand into the North West. External analysis shows strong demand in city centres but intense rivalry from national chains. Internally, the company has a loyal customer base and healthy cash reserves, but limited management capacity. Three options were evaluated: opening company-owned stores, franchising and expanding through drive-through sites. The report recommends a phased opening of four company-owned stores in Manchester over 18 months, funded from retained profit, with a review after the first two stores."',
+      ],
+      bullets: [
+        'Example recommendation 1: open two stores in central Manchester by June 2027, led by the operations director, with a combined budget of £450,000.',
+        'Example recommendation 2: recruit and train two area managers before the first opening to protect service quality.',
+        'Example recommendation 3: review sales and customer feedback after six months, and open the next two stores only if each site reaches its break-even sales target.',
+      ],
+      tip: 'Good recommendations say what should be done, who is responsible, when, and how success will be measured. Each one should follow from a finding in your analysis.',
+    },
+    {
+      heading: 'Management reports and other types of business report',
+      paragraphs: [
+        'The same structure works for most reports you will meet at university and at work, with small changes in emphasis:',
+      ],
+      bullets: [
+        'Formal (long) business report: the full structure in this guide, used for most university assignments and consultancy-style tasks.',
+        'Management report: written for managers inside an organisation, usually shorter, focused on performance against targets, problems and actions.',
+        'Feasibility report: assesses whether a project or idea is practical, often with costs, risks and a clear go or no-go recommendation.',
+        'Short (informal) report or memo report: one or two pages with a brief introduction, findings and recommendations, often without an executive summary.',
+      ],
+    },
+    {
+      heading: 'How long does it take to write a business report?',
+      paragraphs: [
+        'As a rough guide, a 2,500 to 3,000-word university business report usually takes one to two weeks of steady work: two or three days to research the organisation and gather data, a day to plan the structure and word allocation, three or four days to draft, and one or two days to edit, check references and format. Group reports and reports with detailed financial analysis need longer, so start as soon as the brief is released.',
       ],
     },
     {
@@ -165,6 +199,14 @@ export const howToWriteABusinessReportPost: BlogPost = {
     {
       q: 'What is the difference between conclusions and recommendations?',
       a: 'Conclusions summarise what your analysis has found. Recommendations are specific actions the organisation should take, based on those conclusions.',
+    },
+    {
+      q: 'What is a business report outline?',
+      a: 'An outline is a plan of your report headings with a word allocation for each, for example introduction, external analysis, internal analysis, options, conclusions and recommendations. Writing it first keeps your report balanced and within the word count.',
+    },
+    {
+      q: 'How long does it take to write a business report?',
+      a: 'For a 2,500 to 3,000-word university report, plan on one to two weeks: research, planning, drafting and editing. Reports with financial analysis or group work need longer.',
     },
     {
       q: 'Do I need appendices?',

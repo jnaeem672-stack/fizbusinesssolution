@@ -91,7 +91,7 @@ export const howToEmailAPhdSupervisorPost: BlogPost = {
       ],
     },
     {
-      heading: `Template 2: follow-up email`,
+      heading: `Template 2: follow-up email to a potential PhD supervisor`,
       paragraphs: [
         `If you have not heard back after around two weeks, one polite follow-up is acceptable. Reply in the same email thread so the academic can see your original message.`,
         `Subject: Re: Prospective PhD student: [short topic description]`,

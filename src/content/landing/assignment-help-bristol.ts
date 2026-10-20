@@ -21,12 +21,12 @@ export const assignmentHelpBristol: LandingContent = {
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Engineering and business', '10% off first order'],
   intro: [
     "Bristol is one of the UK's most popular student cities, with two large universities, a strong engineering and aerospace sector and a reputation for green and creative business. If you are looking for assignment help Bristol students can fit around lectures, placements and part-time work, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.",
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are actually taking rather than a generic template.",
+    "Bristol students bring a wide mix of work: aerospace and mechanical design reports, placement portfolios from health courses, sustainability essays and research-led dissertations. Your request goes to a Master's or PhD-qualified expert in that subject, who works from your own brief and marking criteria rather than a generic template.",
   ],
   sections: [
     {
       heading: "Universities in Bristol we support",
-      paragraphs: ["We support students at every university in Bristol. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["Bristol's two universities are in different parts of the city, from the University of Bristol in Clifton to UWE at Frenchay, and many students also study in nearby Bath. FIZBS is an independent online service and is not affiliated with any of them, so your expert always works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Bristol",
@@ -86,27 +86,15 @@ export const assignmentHelpBristol: LandingContent = {
     {
       heading: "Dissertations and Master's study in Bristol",
       paragraphs: [
-        "Our experts have supported more than 350 research projects, from undergraduate dissertations to Master's theses. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python.",
-        "If you are an international student new to UK assessment, your expert also explains what UK markers expect: critical evaluation rather than summary, careful paraphrasing and consistent referencing. Everything you share with us stays confidential.",
+        "Bristol dissertations often take an applied angle: an engineering design study, a sustainability case in a real organisation, or a health service evaluation drawn from a placement. Our experts help you narrow the topic, build the literature review, choose a method that fits the data you can access, and analyse results in SPSS, NVivo, Excel, Stata or Python.",
+        "Most one-year Master's courses in Bristol and Bath end with a dissertation written over the summer, straight after the taught modules. Planning your proposal and literature search during the spring makes that summer far less stressful, and your expert can help you set a realistic timeline.",
       ],
     },
     {
-      heading: 'Pricing and deadlines',
+      heading: 'Prices, deadlines and how Bristol students get started',
       paragraphs: [
-        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Dissertation support is £30 per 1,000 words with a maximum of £350, and proofreading starts from £12 per 1,000 words.',
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
-      ],
-    },
-    {
-      heading: 'Getting started',
-      paragraphs: [
-        'A short WhatsApp message with your subject, word count and deadline is enough for a quote. Payment is made in two parts: 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. To help your expert follow your module closely, it helps to share:',
-      ],
-      bullets: [
-        'Your assignment brief and marking rubric',
-        'Your word count, deadline and level of study',
-        'Lecture slides, reading lists or tutor feedback',
-        'Your required referencing style',
+        'Prices start at £20 per 1,000 words when your deadline is seven days or more away, rising by 25% for 3 to 6 days and by 50% for anything due within 48 hours. As an example, guidance on a 2,500-word essay due in ten days comes to £50, or £45 with the 10% first-order discount. Dissertation support is £30 per 1,000 words, capped at £350, and proofreading starts from £12 per 1,000 words.',
+        'To start, send your module, word count and deadline on WhatsApp. Adding the brief, marking rubric and any lecturer feedback lets your expert follow your course closely. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR, and everything you share stays confidential.',
       ],
     },
   ],
@@ -129,15 +117,15 @@ export const assignmentHelpBristol: LandingContent = {
     },
     {
       q: 'How much does assignment help in Bristol cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.',
+      a: 'Guidance starts at £20 per 1,000 words for deadlines of a week or more, so a 2,500-word essay due in ten days is £50 before your 10% first-order discount. Deadlines of 3 to 6 days add 25%, and 48-hour deadlines add 50%.',
     },
     {
-      q: 'Do you help with dissertations?',
-      a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
+      q: 'Can you help with a sustainability or net zero assignment?',
+      a: 'Yes. Our business and environmental experts help you evaluate net zero plans, circular economy models and environmental reporting critically, using recent evidence rather than company claims alone.',
     },
     {
-      q: 'How do I pay?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+      q: 'Do you support students at the University of Bath?',
+      a: 'Yes. We support students in Bath as well, including management reports, engineering projects and placement-year assignments, online through WhatsApp or our website.',
     },
   ],
   ctaTitle: 'Get your Bristol assignment price in minutes',
