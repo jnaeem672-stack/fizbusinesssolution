@@ -6,6 +6,7 @@ import './globals.css';
 import Providers from '@/components/Providers';
 import SiteHeader from '@/components/SiteHeader';
 import Footer from '@/components/Footer';
+import HideOnArabic from '@/components/HideOnArabic';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import FloatingDiscount from '@/components/FloatingDiscount';
 import CookieConsent from '@/components/CookieConsent';
@@ -108,7 +109,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 '@type': 'ContactPoint',
                 telephone: '+971543800388',
                 contactType: 'customer support',
-                availableLanguage: 'English',
+                availableLanguage: ['English', 'Arabic'],
               },
             }),
           }}
@@ -162,7 +163,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Providers>
           <SiteHeader />
           {children}
-          <Footer />
+          <HideOnArabic>
+            <Footer />
+          </HideOnArabic>
           <ScrollToTopButton />
           <FloatingDiscount />
           <FloatingWhatsApp />

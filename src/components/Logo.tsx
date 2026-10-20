@@ -2,8 +2,9 @@ import { GraduationCap } from 'lucide-react';
 import Link from 'next/link';
 import type { LogoProps } from '@/types';
 
-const Logo = ({ className = '', dark = false }: LogoProps) => (
-  <Link href="/" className={`flex items-center gap-3 group transition-all ${className}`}>
+// dir="ltr" keeps the wordmark reading FIZBS inside right-to-left (Arabic) layouts
+const Logo = ({ className = '', dark = false, href = '/' }: LogoProps) => (
+  <Link href={href} dir="ltr" className={`flex items-center gap-3 group transition-all ${className}`}>
     <div className="relative">
       <div className="w-12 h-12 bg-navy rounded-xl flex items-center justify-center shadow-lg shadow-black/20 group-hover:bg-primary transition-colors duration-300 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-tr from-white/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />

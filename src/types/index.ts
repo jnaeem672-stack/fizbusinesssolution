@@ -95,6 +95,8 @@ export interface UserSupportRequestConfirmationData {
 export interface LogoProps {
   className?: string;
   dark?: boolean;
+  /** Homepage the logo links to ('/ar' on Arabic pages) */
+  href?: string;
 }
 
 export interface ProvidersProps {

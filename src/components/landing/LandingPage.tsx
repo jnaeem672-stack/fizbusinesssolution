@@ -85,6 +85,8 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const freeTools = page.locale === 'en' ? toolsForService(page.slug) : [];
   const linkGroups = linkGroupsForPage(page.slug, page.locale);
   const specialists = page.locale === 'en' ? (PAGE_SPECIALISTS[page.slug] ?? []).map((s) => getExpert(s)).filter((e) => e !== undefined) : [];
+  // Arabic pages point back to the Arabic homepage
+  const homePath = isAr ? '/ar' : '/';
 
   const schema = [
     {
@@ -93,8 +95,9 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       name: page.h1,
       description: page.metaDescription,
       url,
+      inLanguage: isAr ? 'ar' : 'en-GB',
       serviceType: landingLabel(page),
-      areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates', 'United States'],
+      areaServed: isAr ? ['Saudi Arabia', 'United Arab Emirates'] : ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates', 'United States'],
       provider: {
         '@type': 'ProfessionalService',
         name: 'FIZ Business Solutions',
@@ -112,7 +115,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
       itemListElement: [
-        { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+        { '@type': 'ListItem', position: 1, name: t.home, item: `${SITE_URL}${isAr ? '/ar' : ''}` },
         { '@type': 'ListItem', position: 2, name: landingLabel(page), item: url },
       ],
     },
@@ -133,7 +136,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16 items-start" dir={isAr ? 'rtl' : undefined}>
             <div className="lg:col-span-7">
               <nav aria-label="Breadcrumb" className="flex items-center gap-2 text-xs font-bold text-white/50 mb-6">
-                <Link href="/" className="hover:text-white">{t.home}</Link>
+                <Link href={homePath} className="hover:text-white">{t.home}</Link>
                 <ChevronRight className={`w-3.5 h-3.5 ${isAr ? 'rotate-180' : ''}`} />
                 <span className="text-white/80">{landingLabel(page)}</span>
               </nav>

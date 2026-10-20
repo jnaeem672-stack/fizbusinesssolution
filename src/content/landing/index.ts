@@ -1,4 +1,5 @@
 import type { LandingContent } from './types';
+import { AR_CITY_LINKS, AR_SERVICE_LINKS, AR_TECH_LINKS, SAUDI_CITY_SLUGS } from '@/constants/arLinks';
 import { assignmentHelpUk } from './assignment-help-uk';
 import { dissertationHelpUk } from './dissertation-help-uk';
 import { mbaAssignmentHelp } from './mba-assignment-help';
@@ -97,6 +98,7 @@ import { arSolidworksHelp } from './ar-solidworks-help';
 import { arProgrammingHelp } from './ar-programming-help';
 
 export type { LandingContent } from './types';
+export { AR_CITY_LINKS, AR_SERVICE_LINKS, AR_TECH_LINKS } from '@/constants/arLinks';
 
 export const SITE_URL = 'https://fizbusinessolutions.com';
 
@@ -292,17 +294,6 @@ export const SUBJECT_LINKS: { label: string; href: string }[] = [
   { label: 'Engineering', href: '/engineering-assignment-help' },
 ];
 
-const SAUDI_CITY_SLUGS = [
-  'assignment-help-riyadh',
-  'assignment-help-jeddah',
-  'assignment-help-dammam',
-  'assignment-help-makkah',
-  'assignment-help-madinah',
-  'assignment-help-abha',
-  'assignment-help-taif',
-  'assignment-help-qassim',
-  'assignment-help-tabuk',
-];
 const SAUDI_CITY_HREFS = SAUDI_CITY_SLUGS.map((slug) => `/${slug}`);
 /** UAE pages (hub first) */
 export const UAE_LINKS: { label: string; href: string }[] = [
@@ -322,42 +313,6 @@ const QUALIFICATION_GROUP_PAGES = [
   'engineering-assignment-help',
   'coursework-report-help',
   ...QUALIFICATION_LINKS.map((l) => l.href.slice(1)),
-];
-
-/** Arabic city pages, labelled for Arabic readers (same slugs as the English city pages) */
-const AR_CITY_NAMES: Record<string, string> = {
-  'assignment-help-riyadh': 'الرياض',
-  'assignment-help-jeddah': 'جدة',
-  'assignment-help-dammam': 'الدمام',
-  'assignment-help-makkah': 'مكة المكرمة',
-  'assignment-help-madinah': 'المدينة المنورة',
-  'assignment-help-abha': 'أبها وعسير',
-  'assignment-help-taif': 'الطائف',
-  'assignment-help-qassim': 'القصيم',
-  'assignment-help-tabuk': 'تبوك',
-};
-export const AR_CITY_LINKS = SAUDI_CITY_SLUGS.map((slug) => ({
-  label: `الواجبات الجامعية في ${AR_CITY_NAMES[slug]}`,
-  href: `/ar/${slug}`,
-}));
-
-/** Arabic service pages */
-export const AR_SERVICE_LINKS: { label: string; href: string }[] = [
-  { label: 'المساعدة في الواجبات الجامعية', href: '/ar/assignment-help-saudi-arabia' },
-  { label: 'المساعدة في الرسائل العلمية', href: '/ar/dissertation-help-saudi-arabia' },
-  { label: 'المساعدة في خطة البحث', href: '/ar/research-proposal-help' },
-  { label: 'المساعدة في رسالة الدكتوراه', href: '/ar/thesis-help' },
-  { label: 'التحليل الإحصائي SPSS', href: '/ar/spss-help' },
-  { label: 'المساعدة في واجبات MBA', href: '/ar/mba-assignment-help' },
-  { label: 'المساعدة في القبول في الدكتوراه', href: '/ar/phd-admission-scholarship-help' },
-];
-
-/** Arabic pages for design, engineering software and programming projects */
-export const AR_TECH_LINKS: { label: string; href: string }[] = [
-  { label: 'مشاريع 3ds Max والتصميم الداخلي', href: '/ar/3ds-max-design-help' },
-  { label: 'مشاريع AutoCAD والرسم الهندسي', href: '/ar/autocad-help' },
-  { label: 'مشاريع SolidWorks والتصميم الميكانيكي', href: '/ar/solidworks-help' },
-  { label: 'واجبات البرمجة Python وMATLAB', href: '/ar/programming-help' },
 ];
 
 /** Groups of internal links shown inside the content of an Arabic landing page */
