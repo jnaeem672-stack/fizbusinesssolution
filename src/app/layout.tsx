@@ -11,6 +11,7 @@ import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import FloatingDiscount from '@/components/FloatingDiscount';
 import CookieConsent from '@/components/CookieConsent';
 import LeadSourceTracker from '@/components/LeadSourceTracker';
+import LangSync from '@/components/LangSync';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { SOCIAL_URLS } from '@/constants/social';
 
@@ -71,8 +72,14 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${jakarta.variable} ${cairoArabic.variable}`}>
+    <html lang="en" className={`${jakarta.variable} ${cairoArabic.variable}`} suppressHydrationWarning>
       <head>
+        {/* Arabic pages (/ar) declare Arabic as the page language before anything renders */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: "(function(){var p=location.pathname;if(p==='/ar'||p.indexOf('/ar/')===0){document.documentElement.lang='ar';}})();",
+          }}
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -185,6 +192,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           <FloatingWhatsApp />
           <CookieConsent />
           <LeadSourceTracker />
+          <LangSync />
         </Providers>
       </body>
     </html>
