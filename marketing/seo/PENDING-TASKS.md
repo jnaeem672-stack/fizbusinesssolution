@@ -2,6 +2,22 @@
 
 Two named tasks to pick up later. Data comes from the Semrush trial exports of 20 Oct 2026.
 
+## Daily SEO routine (owner asked 20 Oct 2026: use the Semrush data for SEO with full effort, every day)
+Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each day:
+1. Save any new Semrush exports the owner sent into marketing/seo/semrush/ and add the key numbers below.
+2. Check yesterday's new pages are live, then give the owner the URLs for Search Console "Request Indexing".
+3. Propose the day's SEO item from the agreed order with its target keywords and numbers. Build only after
+   the owner says yes (owner rule: discuss each SEO item before doing it).
+4. Give the owner a short Semrush keyword list when the next items need data (free plan: 10 requests a day).
+
+## Standing rules for every page
+- No fake reviews, ratings or testimonials. No guarantees. Never "plagiarism-free", "zero AI", "AI-free",
+  "free revisions" or "100% original". No em or en dashes. Avoid the words "coaching" and "ethical".
+- Use help, support and guidance wording, never "writing service". Do not claim authorship for experts.
+- Dissertation pricing has no maximum since 20 Oct 2026. Never mention a £350 / 1,750 riyal cap.
+- Arabic proofreading: offer Arabic and English, say the team checks before delivery, no claims of Arabic linguists.
+- Never touch Google Ads tracking or conversions. Test before every push.
+
 ## Task A: "Calculator Redesign" (DONE 20 Oct 2026: Base design live in src/QuoteCalculator.tsx; chat version not built)
 
 The owner liked the "Base" design and "Idea 1: Chat with FIZBS" from the design canvas
