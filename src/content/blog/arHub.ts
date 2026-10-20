@@ -24,6 +24,7 @@ export const AR_BLOG_HUB: { sections: HubSection[]; faqs: { q: string; a: string
         { label: 'غلاف رسالة الماجستير والإهداء: نماذج', href: '/ar/blog/thesis-cover-page-and-dedication' },
         { label: 'ما هو الاسايمنت وكيف تكتبه', href: '/ar/blog/what-is-an-assignment' },
         { label: 'خاتمة البحث: خطوات ونماذج', href: '/ar/blog/how-to-write-a-research-conclusion' },
+        { label: 'خطوات البحث العلمي بالترتيب', href: '/ar/blog/scientific-research-steps' },
         { label: 'مشروع التخرج للماجستير في جامعة أم القرى', href: '/ar/blog/masters-graduation-project-umm-al-qura' },
         { label: 'المساعدة لطلاب مكة المكرمة', href: '/ar/assignment-help-makkah' },
       ],
@@ -32,6 +33,7 @@ export const AR_BLOG_HUB: { sections: HubSection[]; faqs: { q: string; a: string
       heading: 'كيف تستخدم هذه الأدلة أثناء كتابة رسالتك؟',
       paragraphs: ['إذا كنت في بداية رسالة الماجستير أو مشروع التخرج، فاقرأ الأدلة بهذا الترتيب لأنه يتبع مراحل البحث نفسها:'],
       steps: [
+        { text: 'تعرّف أولًا على خطوات البحث العلمي العشر بالترتيب حتى تعرف أين أنت من الطريق.', href: '/ar/blog/scientific-research-steps', label: 'دليل خطوات البحث العلمي' },
         { text: 'اختر عنوانًا محددًا وقابلًا للبحث يحدد المتغيرات والمجتمع والمكان.', href: '/ar/blog/how-to-choose-a-thesis-title', label: 'دليل اختيار عنوان الرسالة' },
         { text: 'اكتب خطة البحث: المشكلة والأهداف والأسئلة والمنهج والجدول الزمني.', href: '/ar/blog/how-to-write-a-research-proposal', label: 'دليل كتابة خطة البحث' },
         { text: 'ابنِ الإطار النظري وراجع الدراسات السابقة بشكل نقدي لا وصفي.', href: '/ar/blog/theoretical-framework-and-literature-review', label: 'دليل الإطار النظري والدراسات السابقة' },

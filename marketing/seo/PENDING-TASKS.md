@@ -19,7 +19,7 @@ The owner liked the "Base" design and "Idea 1: Chat with FIZBS" from the design 
 ## Task B: "Semrush SEO Plan"
 
 ### Saudi (Arabic), biggest opportunity, competitors are weak
-Done 20 Oct: items 1, 2, 3 and 4. Next: item 5 (فهرس البحث، خطوات البحث العلمي، الماجستير عن بعد).
+Done 20 Oct: items 1 to 4 and خطوات البحث العلمي. Next (owner agreed order 20 Oct): عمل استبيان guide (720, KD 29), تدقيق لغوي page (590, KD 19; Arabic and English, say the team checks before delivery, no claims of Arabic linguists), اتوكاد in the AutoCAD Arabic title (5,400 x 2), English Java (320, KD 14) and MATLAB (480, KD 22) assignment help pages, then عرض بوربوينت (1,600), الماجستير عن بعد (2,400), فهرس البحث.
 1. Move /ar/student-services to the "مكتب ومكتبة خدمات الطالب أونلاين" cluster (about 18,000 buyer searches):
    مكتبة لخدمات الطالب 9,900 (KD 20), مكتبة خدمة الطالب 3,600, مركز خدمات الطالب 1,900, مكتب خدمات الطالب
    1,300 (KD 12), مكتبة خدمات الطالب 720 (KD 11), مكتب خدمات طلابية 480 (KD 11). Add a "رقم مكتب خدمات طلابية"

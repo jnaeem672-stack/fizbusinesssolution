@@ -34,6 +34,7 @@ import { arHowToWriteAResearchIntroductionPost } from './ar-how-to-write-a-resea
 import { arThesisCoverPageAndDedicationPost } from './ar-thesis-cover-page-and-dedication';
 import { arWhatIsAnAssignmentPost } from './ar-what-is-an-assignment';
 import { arHowToWriteAResearchConclusionPost } from './ar-how-to-write-a-research-conclusion';
+import { arScientificResearchStepsPost } from './ar-scientific-research-steps';
 import { hrmDissertationTopicsPost } from './hrm-dissertation-topics';
 import { marketingDissertationTopicsPost } from './marketing-dissertation-topics';
 import { financeAccountingDissertationTopicsPost } from './finance-accounting-dissertation-topics';
@@ -98,6 +99,7 @@ export const AR_POSTS: BlogPost[] = [
   arThesisCoverPageAndDedicationPost,
   arWhatIsAnAssignmentPost,
   arHowToWriteAResearchConclusionPost,
+  arScientificResearchStepsPost,
 ];
 
 export function getPost(slug: string, locale: 'en' | 'ar' = 'en'): BlogPost | undefined {
