@@ -139,3 +139,18 @@ footer .text-primary {
 .bg-navy [class*="bg-gray-50"] .text-primary {
   color: var(--color-primary);
 }
+
+/* Price calculator word slider: the native range input is invisible and sits on top of the drawn track and emoji handle */
+.fiz-range {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  margin: 0;
+  cursor: grab;
+}
+.fiz-range:active { cursor: grabbing; }
+.fiz-range:focus { outline: none; }
+.fiz-range::-webkit-slider-runnable-track { height: 44px; background: transparent; border: 0; }
+.fiz-range::-webkit-slider-thumb { -webkit-appearance: none; width: 44px; height: 44px; border-radius: 50%; background: transparent; border: 0; }
+.fiz-range::-moz-range-track { height: 44px; background: transparent; border: 0; }
+.fiz-range::-moz-range-thumb { width: 44px; height: 44px; border-radius: 50%; background: transparent; border: 0; }
