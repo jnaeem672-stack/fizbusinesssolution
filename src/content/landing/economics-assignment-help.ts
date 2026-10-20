@@ -103,7 +103,7 @@ export const economicsAssignmentHelp: LandingContent = {
       heading: 'How it works and pricing',
       paragraphs: [
         'Send your module, brief, word count and deadline on WhatsApp or through our website. You will receive a clear price, with 10% off your first order, and an economist will work on your request.',
-        'Assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Economics dissertations are £30 per 1,000 words, with a maximum of £350. You pay 50% to start and 50% on completion.',
+        'Assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Economics dissertations are £30 per 1,000 words. You pay 50% to start and 50% on completion.',
       ],
     },
   ],
@@ -126,7 +126,7 @@ export const economicsAssignmentHelp: LandingContent = {
     },
     {
       q: 'Do you help with economics dissertations?',
-      a: 'Yes. We support topic choice, literature reviews, data collection and econometric analysis, at £30 per 1,000 words with a maximum of £350.',
+      a: 'Yes. We support topic choice, literature reviews, data collection and econometric analysis, at £30 per 1,000 words.',
     },
     {
       q: 'Is my request confidential?',

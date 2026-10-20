@@ -136,7 +136,7 @@ export const nursingHealthcareDissertationTopicsPost: BlogPost = {
       heading: 'Need help with your nursing or healthcare dissertation?',
       paragraphs: [
         "FIZBS has supported nursing, health and social care students since 2015. Our experts can help you narrow your topic, build a PICO question, plan your search strategy, appraise studies with CASP and structure your discussion. If your project collects primary data, we can also support the analysis.",
-        'Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. Message us on WhatsApp 24/7.',
+        'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7.',
       ],
     },
   ],

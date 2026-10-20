@@ -69,7 +69,7 @@ export const assignmentHelpGlasgow: LandingContent = {
       heading: 'Support with your Honours dissertation',
       paragraphs: [
         'The Senior Honours dissertation is often the most demanding piece of work in a Scottish degree. Many students choose a topic and write a proposal in third year, then research and write the dissertation in fourth year alongside other modules.',
-        'Your expert can help you narrow the topic, build a critical literature review, choose and justify a research method, and work through your data in SPSS, Excel, NVivo, Stata or Python. Honours and Master\'s dissertation support is £30 per 1,000 words, capped at £350.',
+        'Your expert can help you narrow the topic, build a critical literature review, choose and justify a research method, and work through your data in SPSS, Excel, NVivo, Stata or Python. Honours and Master\'s dissertation support is £30 per 1,000 words.',
       ],
       bullets: [
         'Turning a broad interest into a focused research question',
@@ -134,7 +134,7 @@ export const assignmentHelpGlasgow: LandingContent = {
     },
     {
       q: 'Can you help with my Honours dissertation?',
-      a: 'Yes. We support every stage, from your proposal and literature review to methodology, data analysis and your final chapters. Dissertation help is £30 per 1,000 words with a maximum of £350.',
+      a: 'Yes. We support every stage, from your proposal and literature review to methodology, data analysis and your final chapters. Dissertation help is £30 per 1,000 words.',
     },
     {
       q: 'My university uses letter grades. Can you still help?',

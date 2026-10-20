@@ -128,7 +128,7 @@ export const mbaAssignmentHelp: LandingContent = {
       heading: 'Clear pricing for MBA students',
       paragraphs: [
         'Assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%.',
-        "For MBA dissertation help, the rate is £30 per 1,000 words with a maximum of £350 for any dissertation, however long it is. Proofreading starts from £12 per 1,000 words.",
+        "For MBA dissertation help, the rate is £30 per 1,000 words. Proofreading starts from £12 per 1,000 words.",
         "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
       ],
     },
@@ -162,7 +162,7 @@ export const mbaAssignmentHelp: LandingContent = {
     },
     {
       q: 'How much is MBA dissertation help?',
-      a: 'Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. You can check your price instantly with the calculator on our homepage.',
+      a: 'Dissertation support is £30 per 1,000 words. You can check your price instantly with the calculator on our homepage.',
     },
     {
       q: 'Do you help with strategic management assignments?',

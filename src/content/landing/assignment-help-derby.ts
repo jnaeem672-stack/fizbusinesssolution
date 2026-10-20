@@ -68,7 +68,7 @@ export const assignmentHelpDerby: LandingContent = {
     {
       heading: "Prices and how Derby students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of a week or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 2,000-word engineering report due in five days, for example, comes to £50, or £45 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for deadlines of a week or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 2,000-word engineering report due in five days, for example, comes to £50, or £45 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
         "Send your module, word count and deadline on WhatsApp, and attach the brief and rubric if you have them. Online and apprenticeship learners can also share their portfolio requirements. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },

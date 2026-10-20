@@ -41,7 +41,7 @@ const LABELS = {
       { icon: Layers, value: '115+', label: 'Subjects' },
     ],
     sideTitle: 'Your Price in Seconds',
-    sideItems: ['Assignments from £20 per 1,000 words', 'Dissertations capped at £350', '10% off your first order', '24/7 WhatsApp support'],
+    sideItems: ['Assignments from £20 per 1,000 words', 'Dissertations from £30 per 1,000 words', '10% off your first order', '24/7 WhatsApp support'],
     sideCta: 'See My Price',
     faqTitle: 'Frequently Asked Questions',
     related: 'Related Services',
@@ -59,7 +59,7 @@ const LABELS = {
       { icon: Layers, value: '+115', label: 'تخصص' },
     ],
     sideTitle: 'اعرف السعر خلال ثوانٍ',
-    sideItems: ['الواجبات من 100 ريال لكل 1,000 كلمة', 'الرسائل العلمية بحد أقصى 1,750 ريالًا', 'خصم 10% على أول طلب', 'دعم عبر واتساب على مدار الساعة'],
+    sideItems: ['الواجبات من 100 ريال لكل 1,000 كلمة', 'الرسائل العلمية من 150 ريالًا لكل 1,000 كلمة', 'خصم 10% على أول طلب', 'دعم عبر واتساب على مدار الساعة'],
     sideCta: 'اعرف السعر',
     faqTitle: 'الأسئلة الشائعة',
     related: 'خدمات ذات صلة',
@@ -75,7 +75,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const currency = currencyFor(page.slug, page.locale);
   const sideItems: readonly string[] =
     currency === 'AED'
-      ? [`Assignments from ${formatPrice(inCurrency(20, 'AED'), 'AED')} per 1,000 words`, `Dissertations capped at ${formatPrice(inCurrency(350, 'AED'), 'AED')}`, '10% off your first order', '24/7 WhatsApp support']
+      ? [`Assignments from ${formatPrice(inCurrency(20, 'AED'), 'AED')} per 1,000 words`, `Dissertations from ${formatPrice(inCurrency(30, 'AED'), 'AED')} per 1,000 words`, '10% off your first order', '24/7 WhatsApp support']
       : t.sideItems;
   const offerPrice = inCurrency(Number(page.offer?.price ?? '20'), currency);
   // City pages tell search engines which city they serve

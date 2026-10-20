@@ -73,7 +73,7 @@ export const assignmentHelpSunderland: LandingContent = {
     {
       heading: "Prices and how Sunderland students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for a week or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 2,500-word essay needed within 48 hours, for example, comes to £75, or £67.50 with the 10% first-order discount, so an earlier start saves money. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for a week or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 2,500-word essay needed within 48 hours, for example, comes to £75, or £67.50 with the 10% first-order discount, so an earlier start saves money. Dissertation guidance is £30 per 1,000 words.",
         "Send your module, word count and deadline on WhatsApp with the brief and rubric, whether you study in Sunderland or London. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },

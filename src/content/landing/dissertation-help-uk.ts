@@ -3,9 +3,9 @@ import type { LandingContent } from './types';
 export const dissertationHelpUk: LandingContent = {
   slug: 'dissertation-help-uk',
   locale: 'en',
-  metaTitle: 'Dissertation Help UK | Capped at £350 | FIZBS',
+  metaTitle: 'Dissertation Help UK | £30 per 1,000 Words | FIZBS',
   metaDescription:
-    'Dissertation help UK at £30 per 1,000 words, capped at £350 for any dissertation. PhD-qualified experts and 24/7 WhatsApp support. Get your price today.',
+    'Dissertation help UK at £30 per 1,000 words. PhD-qualified experts and 24/7 WhatsApp support. Get your price today.',
   keywords: [
     'dissertation help UK',
     'dissertation help',
@@ -26,12 +26,12 @@ export const dissertationHelpUk: LandingContent = {
   badge: 'Dissertation Support',
   h1: 'Dissertation Help UK for Every Stage of Your Research',
   heroSubtitle:
-    "From choosing your topic to your final submission, get guidance from Master's and PhD-qualified experts, including help with every round of supervisor feedback. One simple rate, with a maximum of £350 for any dissertation.",
-  highlights: ['£30 per 1,000 words', 'Capped at £350', '350+ research projects', '24/7 WhatsApp support'],
+    "From choosing your topic to your final submission, get guidance from Master's and PhD-qualified experts, including help with every round of supervisor feedback. One simple rate.",
+  highlights: ['£30 per 1,000 words', 'Price shown upfront', '350+ research projects', '24/7 WhatsApp support'],
   intro: [
     "A dissertation is often the largest piece of work you will produce at university, and it is normal to feel overwhelmed. FIZ Business Solutions (FIZBS) offers dissertation help UK students can rely on, with expert support at each stage from choosing a topic to refining your conclusions.",
     "We have worked with university students since 2015 and completed more than 350 research projects. Our experts understand how UK supervisors and markers assess research, so the guidance you receive is focused and practical.",
-    "Pricing is designed to be fair for long projects. Support costs £30 per 1,000 words, and no dissertation will ever cost more than £350, however long it is. This page walks you through every step from topic selection to submission, how we help you handle supervisor feedback and prepare for supervisor meetings, each chapter of a typical UK dissertation, common timelines and what markers look for.",
+    "Pricing is designed to be fair for long projects. Support costs £30 per 1,000 words, and longer projects save 10% from 8,000 words and 15% from 15,000 words. This page walks you through every step from topic selection to submission, how we help you handle supervisor feedback and prepare for supervisor meetings, each chapter of a typical UK dissertation, common timelines and what markers look for.",
   ],
   sections: [
     {
@@ -220,9 +220,9 @@ export const dissertationHelpUk: LandingContent = {
       ],
     },
     {
-      heading: 'Simple dissertation pricing with a £350 cap',
+      heading: 'Simple dissertation pricing: £30 per 1,000 words',
       paragraphs: [
-        "Dissertation support is charged at £30 per 1,000 words, with a maximum of £350 for any dissertation. On a standard deadline, a 5,000-word literature review and methodology costs £150, and a 10,000-word dissertation costs £300 before discounts, or £270 with the 10% saving for 8,000+ words. Orders of 15,000+ words save 15%, and a 12,000, 15,000 or 20,000-word dissertation never costs more than £350. The £350 cap applies to your final price, including shorter deadlines.",
+        "Dissertation support is charged at £30 per 1,000 words. On a standard deadline, a 5,000-word literature review and methodology costs £150, and a 10,000-word dissertation costs £300 before discounts, or £270 with the 10% saving for 8,000+ words. Orders of 15,000+ words save 15%, so a 20,000-word dissertation on a standard deadline costs £510 instead of £600. Shorter deadlines add 25% or 50%.",
         "Standard pricing applies to deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and those within 48 hours add 50%. First-time customers get 10% off their first order.",
       ],
     },
@@ -270,7 +270,7 @@ export const dissertationHelpUk: LandingContent = {
     },
     {
       q: 'How much does dissertation help cost in the UK?',
-      a: 'At FIZBS, dissertation help UK pricing is £30 per 1,000 words, with a maximum of £350 for any dissertation. Short deadlines add a surcharge of 25% or 50%, while orders of 8,000+ words save 10% and 15,000+ words save 15%. The £350 cap always applies to the final price.',
+      a: 'At FIZBS, dissertation help UK pricing is £30 per 1,000 words. Short deadlines add a surcharge of 25% or 50%, while orders of 8,000+ words save 10% and 15,000+ words save 15%.',
     },
     {
       q: 'Can I get help with just one dissertation chapter?',
@@ -307,7 +307,7 @@ export const dissertationHelpUk: LandingContent = {
   ],
   ctaTitle: 'Start your dissertation with expert support',
   ctaText:
-    'Tell us your topic and deadline on WhatsApp or check your price instantly. Any dissertation is capped at £350.',
+    'Tell us your topic and deadline on WhatsApp or check your price instantly. New customers get 10% off their first order.',
   whatsappMessage: 'Hello FIZBS! I need dissertation help. Topic: , Word count: , Deadline: ',
   related: [
     'research-proposal-help',

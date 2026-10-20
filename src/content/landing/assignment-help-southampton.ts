@@ -98,7 +98,7 @@ export const assignmentHelpSouthampton: LandingContent = {
     {
       heading: "Prices and how Southampton students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 4,000-word logistics report due in three days, for example, comes to £100, or £90 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 4,000-word logistics report due in three days, for example, comes to £100, or £90 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
         "Send your module, word count and deadline on WhatsApp, along with the brief, rubric and any lab or field data. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },

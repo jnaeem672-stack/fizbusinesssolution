@@ -141,7 +141,7 @@ export const assignmentHelpRiyadh: LandingContent = {
       heading: 'Dissertation help Riyadh researchers can rely on',
       paragraphs: [
         "A Master's dissertation or PhD thesis written in English is a significant undertaking. Our experts have supported more than 350 research projects and can guide you through each stage, from your research proposal and literature review to methodology, findings and discussion.",
-        "If your study uses surveys or interviews, we provide data analysis support with SPSS, Excel, NVivo, Stata and Python. Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation.",
+        "If your study uses surveys or interviews, we provide data analysis support with SPSS, Excel, NVivo, Stata and Python. Dissertation support costs £30 per 1,000 words.",
       ],
     },
     {

@@ -100,7 +100,7 @@ export const assignmentHelpNottingham: LandingContent = {
       heading: "Dissertation help for final-year and Master's students",
       paragraphs: [
         "Whether you are writing an undergraduate dissertation or a one-year Master's dissertation over the summer, our experts can guide you on choosing a topic, writing a proposal, structuring a literature review, justifying your methodology and analysing your data.",
-        'Dissertation help is £30 per 1,000 words, with a maximum of £350 for any dissertation, and we have supported more than 350 research projects.',
+        'Dissertation help is £30 per 1,000 words, and we have supported more than 350 research projects.',
       ],
     },
     {
@@ -112,7 +112,7 @@ export const assignmentHelpNottingham: LandingContent = {
     {
       heading: "Prices and how Nottingham students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 2,000-word placement report due in ten days, for example, comes to £40, or £36 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 2,000-word placement report due in ten days, for example, comes to £40, or £36 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
         "Send your module, word count and deadline on WhatsApp, along with the brief and rubric, and for placement work your learning log or employer feedback. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
@@ -140,7 +140,7 @@ export const assignmentHelpNottingham: LandingContent = {
     },
     {
       q: 'Do you help with dissertations?',
-      a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
+      a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words.',
     },
     {
       q: "Do you support students at the Clifton and Brackenhurst campuses?",

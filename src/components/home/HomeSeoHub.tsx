@@ -112,7 +112,7 @@ export default function HomeSeoHub() {
           <h3 className="mt-10 text-2xl font-extrabold text-navy mb-3">Clear pricing</h3>
           <p>
             Guidance and feedback on assignments start from £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3
-            to 6 days and 50% for 48 hours. Dissertation guidance is £30 per 1,000 words with a maximum of £350, and proofreading starts
+            to 6 days and 50% for 48 hours. Dissertation guidance is £30 per 1,000 words, and proofreading starts
             from £12 per 1,000 words. New customers get 10% off, and you pay 50% to start and 50% on completion.
           </p>
         </div>

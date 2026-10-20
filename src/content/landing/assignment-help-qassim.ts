@@ -96,7 +96,7 @@ export const assignmentHelpQassim: LandingContent = {
     {
       heading: 'Dissertation and thesis support',
       paragraphs: [
-        'Our experts have supported more than 350 research projects. They can help you narrow your topic, write the proposal, review previous studies, choose a methodology, analyse your data and discuss your results. Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation.',
+        'Our experts have supported more than 350 research projects. They can help you narrow your topic, write the proposal, review previous studies, choose a methodology, analyse your data and discuss your results. Dissertation support costs £30 per 1,000 words.',
       ],
     },
     {

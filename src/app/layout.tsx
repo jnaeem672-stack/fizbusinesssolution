@@ -115,7 +115,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 'CIPD, CMI, HND and OTHM qualifications',
               ],
               areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates', 'United States'],
-              priceRange: '£20 - £350',
+              priceRange: '££',
               serviceType: [
                 'Assignment help',
                 'Dissertation help',

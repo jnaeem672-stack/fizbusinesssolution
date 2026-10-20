@@ -198,7 +198,7 @@ export const howToWriteALiteratureReviewPost: BlogPost = {
       heading: "Need help with your literature review?",
       paragraphs: [
         "A good literature review takes time: searching, reading, organising and rewriting until the argument is clear. If you need expert guidance, FIZBS has supported students since 2015 with dissertations and research projects across more than 115 subjects, especially business, management and MBA topics. Our experts hold Master's and PhD qualifications and can help with search strategies, structure, critical writing and referencing.",
-        "Dissertation support is priced at £30 per 1,000 words, with a maximum of £350 for any dissertation. You can message us on WhatsApp 24/7 or book a call with an expert before ordering to discuss your topic."
+        "Dissertation support is priced at £30 per 1,000 words. You can message us on WhatsApp 24/7 or book a call with an expert before ordering to discuss your topic."
       ]
     }
   ],

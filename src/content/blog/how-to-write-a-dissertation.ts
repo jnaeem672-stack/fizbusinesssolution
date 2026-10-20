@@ -193,7 +193,7 @@ export const howToWriteADissertationPost: BlogPost = {
       heading: "Need help with your dissertation?",
       paragraphs: [
         "If you are stuck at any stage, from refining your research question to structuring your chapters or checking your analysis, FIZBS can help. Our experts hold Master's and PhD qualifications and have supported students since 2015 across more than 115 subjects, with particular strength in business, management, marketing and finance.",
-        "You can message us on WhatsApp 24/7 or book a WhatsApp call with an expert before you decide anything. Dissertation support is priced at £30 per 1,000 words, with a maximum of £350 for any dissertation, and all support is 100% confidential."
+        "You can message us on WhatsApp 24/7 or book a WhatsApp call with an expert before you decide anything. Dissertation support is priced at £30 per 1,000 words, and all support is 100% confidential."
       ]
     }
   ],

@@ -66,7 +66,7 @@ export const assignmentHelpUsa: LandingContent = {
       heading: 'Subjects and experts',
       paragraphs: [
         'Our strongest areas are business administration and the MBA, finance and accounting, marketing, human resources, nursing and public health, psychology, education, sociology, computer science and economics. Your expert is matched to your subject and level, and works from your assignment prompt, rubric and course materials.',
-        'For graduate research, our experts have supported more than 350 research projects, including quantitative studies with surveys and statistical tests and qualitative studies with interviews and thematic analysis. Dissertation guidance costs £30 per 1,000 words, with a maximum of £350.',
+        'For graduate research, our experts have supported more than 350 research projects, including quantitative studies with surveys and statistical tests and qualitative studies with interviews and thematic analysis. Dissertation guidance costs £30 per 1,000 words.',
       ],
     },
     {

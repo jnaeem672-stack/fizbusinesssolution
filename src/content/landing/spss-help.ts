@@ -155,7 +155,7 @@ export const spssHelp: LandingContent = {
     {
       heading: 'Pricing for SPSS and data analysis support',
       paragraphs: [
-        'SPSS assignment help follows our standard assignment pricing from £20 per 1,000 words. Analysis within a dissertation is charged at £30 per 1,000 words, with a maximum of £350 for any dissertation.',
+        'SPSS assignment help follows our standard assignment pricing from £20 per 1,000 words. Analysis within a dissertation is charged at £30 per 1,000 words.',
         "Deadlines of 3 to 6 days add 25% and deadlines within 48 hours add 50%. New customers get 10% off, orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack. You can check prices instantly with the calculator on our homepage.",
       ],
     },
@@ -182,7 +182,7 @@ export const spssHelp: LandingContent = {
     },
     {
       q: 'How much does SPSS data analysis help cost?',
-      a: 'Assignment-level analysis starts from £20 per 1,000 words, and dissertation support is £30 per 1,000 words with a £350 maximum. Short deadlines add 25% or 50%.',
+      a: 'Assignment-level analysis starts from £20 per 1,000 words, and dissertation support is £30 per 1,000 words. Short deadlines add 25% or 50%.',
     },
     {
       q: "How do I calculate Cronbach's alpha in SPSS?",

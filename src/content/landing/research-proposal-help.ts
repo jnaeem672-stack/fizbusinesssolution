@@ -133,7 +133,7 @@ export const researchProposalHelp: LandingContent = {
     {
       heading: 'Transparent pricing',
       paragraphs: [
-        'Our prices are clear from the start. Assignment-level work starts from £20 per 1,000 words, and dissertation work is £30 per 1,000 words, with a maximum of £350 for any dissertation.',
+        'Our prices are clear from the start. Assignment-level work starts from £20 per 1,000 words, and dissertation work is £30 per 1,000 words.',
         'Urgent support is available: delivery within 3 to 6 days adds 25%, and within 48 hours adds 50%. New students get 10% off their first order. Payment is 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR). Use the instant price calculator on our homepage or send us your brief on WhatsApp for an exact quote.',
       ],
     },
@@ -182,7 +182,7 @@ export const researchProposalHelp: LandingContent = {
     },
     {
       q: 'How much does research proposal help cost?',
-      a: 'Assignment-level work starts from £20 per 1,000 words and dissertation work is £30 per 1,000 words, capped at £350. Urgent deadlines cost more, and your first order gets 10% off. Message us on WhatsApp for an exact quote.',
+      a: 'Assignment-level work starts from £20 per 1,000 words and dissertation work is £30 per 1,000 words. Urgent deadlines cost more, and your first order gets 10% off. Message us on WhatsApp for an exact quote.',
     },
     {
       q: 'Is research proposal help confidential?',

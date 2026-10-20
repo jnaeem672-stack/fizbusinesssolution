@@ -133,7 +133,7 @@ export const assignmentHelpLondon: LandingContent = {
         'Research proposals, literature reviews and methodology chapters',
         'Data analysis support in SPSS, Excel, NVivo, Stata or Python',
         'MBA assignment help London professionals use for strategy, finance and leadership modules',
-        'Dissertation support at £30 per 1,000 words, with a maximum of £350 per dissertation',
+        'Dissertation support at £30 per 1,000 words',
         "Guidance from Master's and PhD-qualified experts with 350+ research projects behind us",
       ],
     },
@@ -187,7 +187,7 @@ export const assignmentHelpLondon: LandingContent = {
     },
     {
       q: "Do you offer dissertation help London Master's students can afford?",
-      a: 'Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation. You can check your exact price with the instant calculator on our homepage.',
+      a: 'Dissertation support costs £30 per 1,000 words. You can check your exact price with the instant calculator on our homepage.',
     },
     {
       q: 'Is the service suitable for international students?',

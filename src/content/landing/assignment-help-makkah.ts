@@ -106,7 +106,7 @@ export const assignmentHelpMakkah: LandingContent = {
       heading: 'Research projects, dissertations and theses',
       paragraphs: [
         "Graduation projects and postgraduate theses are where many Makkah students first need structured guidance. Our experts have supported more than 350 research projects. They can help you narrow a topic, write a research proposal, review previous studies, choose a methodology and interpret your results.",
-        'Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation. Data analysis support is available with SPSS, Excel, NVivo, Stata and Python.',
+        'Dissertation support costs £30 per 1,000 words. Data analysis support is available with SPSS, Excel, NVivo, Stata and Python.',
       ],
     },
     {

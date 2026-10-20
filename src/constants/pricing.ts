@@ -10,7 +10,6 @@ export const CURRENCY_FACTOR: Record<Currency, number> = { GBP: 1, SAR: 5, AED: 
 export const BASE_PRICES = {
   assignment: 20,
   dissertation: 30,
-  dissertationMax: 350,
   proofreading: { ug: 12, pg: 15, phd: 18 },
 } as const;
 

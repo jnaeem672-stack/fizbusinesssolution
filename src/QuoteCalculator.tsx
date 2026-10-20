@@ -37,9 +37,6 @@ const DEADLINES: { key: Deadline; en: string; ar: string; multiplier: number; ic
 
 const FIRST_ORDER_DISCOUNT = 0.1;
 
-// Maximum total price (GBP) per type of work
-const MAX_PRICE: Partial<Record<ServiceKey, number>> = { dissertation: BASE_PRICES.dissertationMax };
-
 const WORD_OPTIONS = [1000, 2000, 3000, 5000, 8000, 10000, 12000, 15000, 20000];
 const WORD_SHORT = ['1k', '2k', '3k', '5k', '8k', '10k', '12k', '15k', '20k'];
 
@@ -63,7 +60,6 @@ const UI = {
     deadline: '4. Deadline',
     standardTag: 'Standard price',
     from: (p: string) => `From ${p} per 1,000 words`,
-    dissertationSub: (p: string, max: string) => `${p} per 1,000 words, max ${max}`,
     tickOff: (pct: number) => `${pct}% off`,
     estimate: 'Your estimate',
     youSave: (p: string) => `You save ${p}`,
@@ -71,8 +67,6 @@ const UI = {
     faster: (pct: number) => `Faster deadline (+${pct}%)`,
     firstDisc: (pct: number) => `First order discount (${pct}%)`,
     bigDisc: (pct: number) => `Bigger order discount (${pct}%)`,
-    capLine: (max: string) => `Dissertation help, any length or deadline: maximum ${max}`,
-    capNote: (max: string) => `Maximum ${max} for any dissertation`,
     firstOrder: 'This is my first order',
     firstOrderHint: '(10% off)',
     firstOrderAria: 'First order discount',
@@ -95,7 +89,6 @@ const UI = {
     deadline: '4. الموعد النهائي',
     standardTag: 'السعر الأساسي',
     from: (p: string) => `من ${p} لكل 1,000 كلمة`,
-    dissertationSub: (p: string, max: string) => `${p} لكل 1,000 كلمة، بحد أقصى ${max}`,
     tickOff: (pct: number) => `خصم ${pct}%`,
     estimate: 'السعر التقديري',
     youSave: (p: string) => `وفّرت ${p}`,
@@ -103,8 +96,6 @@ const UI = {
     faster: (pct: number) => `رسوم الاستعجال (+${pct}%)`,
     firstDisc: (pct: number) => `خصم الطلب الأول (${pct}%)`,
     bigDisc: (pct: number) => `خصم الطلبات الكبيرة (${pct}%)`,
-    capLine: (max: string) => `دعم الرسالة بأي طول أو موعد: ${max} كحد أقصى`,
-    capNote: (max: string) => `${max} كحد أقصى لأي رسالة`,
     firstOrder: 'هذا أول طلب لي',
     firstOrderHint: '(خصم 10%)',
     firstOrderAria: 'خصم الطلب الأول',
@@ -183,12 +174,8 @@ export default function QuoteCalculator({ locale = 'en', currency }: { locale?: 
     const volumeDiscount = discountFor(words);
     const firstOrderApplies = firstOrder && FIRST_ORDER_DISCOUNT > volumeDiscount;
     const discount = Math.max(volumeDiscount, firstOrder ? FIRST_ORDER_DISCOUNT : 0);
-    const discounted = base * (1 - discount);
-    const capGbp = MAX_PRICE[service];
-    const cap = capGbp === undefined ? undefined : inCurrency(capGbp, cur);
-    const capped = cap !== undefined && discounted > cap;
-    const total = capped ? cap : discounted;
-    return { rate, wordsCost, base, discount, discounted, total, capped, cap, serviceInfo, deadlineInfo, firstOrderApplies };
+    const total = base * (1 - discount);
+    return { rate, wordsCost, base, discount, total, serviceInfo, deadlineInfo, firstOrderApplies };
   }, [level, service, deadline, words, firstOrder, cur]);
 
   const wordsLabel = words.toLocaleString('en-GB');
@@ -199,14 +186,11 @@ export default function QuoteCalculator({ locale = 'en', currency }: { locale?: 
   const plus = isAr ? '' : '+';
   const minus = isAr ? '' : '-';
   const lines: { k: string; v: string; good?: boolean }[] = [{ k: t.wordsLine(wordsLabel, fmt(quote.rate)), v: fmt(quote.wordsCost) }];
-  // A capped dissertation shows only the fixed maximum: no inflated struck price, no "You save" on the cap
-  const showSaving = !quote.capped && quote.total < quote.base;
-  if (quote.capped && quote.cap !== undefined) {
-    lines.splice(0, lines.length, { k: t.capLine(fmt(quote.cap)), v: fmt(quote.cap) });
-  } else if (quote.deadlineInfo.multiplier > 1) {
+  const showSaving = quote.total < quote.base;
+  if (quote.deadlineInfo.multiplier > 1) {
     lines.push({ k: t.faster(Math.round((quote.deadlineInfo.multiplier - 1) * 100)), v: `${plus}${fmt(quote.base - quote.wordsCost)}` });
   }
-  if (!quote.capped && quote.discount > 0) {
+  if (quote.discount > 0) {
     const pct = Math.round(quote.discount * 100);
     lines.push({ k: quote.firstOrderApplies ? t.firstDisc(pct) : t.bigDisc(pct), v: `${minus}${fmt(quote.base * quote.discount)}`, good: true });
   }
@@ -240,7 +224,7 @@ export default function QuoteCalculator({ locale = 'en', currency }: { locale?: 
 
   const subFor = (key: ServiceKey) => {
     if (key === 'assignment') return t.from(fromGbp(BASE_PRICES.assignment));
-    if (key === 'dissertation') return t.dissertationSub(fromGbp(BASE_PRICES.dissertation), fromGbp(BASE_PRICES.dissertationMax));
+    if (key === 'dissertation') return t.from(fromGbp(BASE_PRICES.dissertation));
     return t.from(fromGbp(BASE_PRICES.proofreading.ug));
   };
 
@@ -448,9 +432,6 @@ export default function QuoteCalculator({ locale = 'en', currency }: { locale?: 
                     <span className="text-sm sm:text-base font-bold text-white/60 line-through">{fmt(quote.base)}</span>
                     <span className="rounded-full bg-green-500/20 px-2.5 py-0.5 text-[12px] sm:text-[13px] font-black text-green-300">{t.youSave(fmt(quote.base - quote.total))}</span>
                   </div>
-                )}
-                {quote.capped && quote.cap !== undefined && (
-                  <span className="w-fit rounded-full bg-amber-400/15 px-2.5 py-0.5 text-[12px] sm:text-[13px] font-black text-amber-300">{t.capNote(fmt(quote.cap))}</span>
                 )}
               </div>
               <StudentArt label={t.art} className="h-16 w-16 shrink-0 sm:h-24 sm:w-24" />

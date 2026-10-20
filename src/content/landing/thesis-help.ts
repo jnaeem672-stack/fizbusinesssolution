@@ -112,7 +112,7 @@ export const thesisHelp: LandingContent = {
     {
       heading: 'Thesis help pricing and deadlines',
       paragraphs: [
-        "Thesis support is charged at £30 per 1,000 words, the same rate as our dissertation help. Our homepage calculator caps any dissertation at £350, and for long PhD theses we provide a tailored quote on WhatsApp based on the chapters and type of support you need.",
+        "Thesis support is charged at £30 per 1,000 words, the same rate as our dissertation help. Our calculator shows your price instantly, and for long PhD theses we provide a tailored quote on WhatsApp based on the chapters and type of support you need.",
         "Standard pricing applies to deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. New customers receive 10% off their first order, and larger orders qualify for 10% off 8,000+ words or 15% off 15,000+ words. Discounts don't stack, so you always receive the best single one.",
       ],
     },

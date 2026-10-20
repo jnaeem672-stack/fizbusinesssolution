@@ -135,7 +135,7 @@ export const howToWriteADissertationIntroductionPost: BlogPost = {
       heading: 'Need help with your dissertation introduction?',
       paragraphs: [
         'If you are struggling to turn your topic into a clear problem statement, aims and research questions, FIZBS can help. Our Master\'s and PhD-qualified experts have supported UK and Saudi students since 2015 and can review your introduction, explain where it needs to be sharper and guide you through the rest of your dissertation.',
-        'Dissertation support is £30 per 1,000 words with a maximum of £350 for any dissertation, and new customers get 10% off their first order. Message us on WhatsApp at any time or book a WhatsApp call with an expert (in English) to talk it through.',
+        'Dissertation support is £30 per 1,000 words, and new customers get 10% off their first order. Message us on WhatsApp at any time or book a WhatsApp call with an expert (in English) to talk it through.',
       ],
     },
   ],

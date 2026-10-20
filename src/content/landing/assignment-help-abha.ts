@@ -97,7 +97,7 @@ export const assignmentHelpAbha: LandingContent = {
       heading: 'Research projects and dissertations',
       paragraphs: [
         "Our experts have supported more than 350 research projects, from graduation projects to Master's theses and PhD research. They can help with your proposal, your review of previous studies, your methodology, your data analysis and the discussion of your results.",
-        'Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation. We support analysis with SPSS, Excel, NVivo, Stata and Python.',
+        'Dissertation support costs £30 per 1,000 words. We support analysis with SPSS, Excel, NVivo, Stata and Python.',
       ],
     },
     {

@@ -46,7 +46,7 @@ const AR_NAV: NavLink[] = [
 ];
 
 const UI = {
-  en: { cta: 'Get Free Quote', open: 'Open menu', close: 'Close menu', allServices: 'All Services', viewAll: 'View all services', allHref: '/services', price: 'Get Instant Price', priceHref: '/#quote', offer: '🎁 First order 10% OFF', offerNote: '· Assignments from £20 per 1,000 words · Dissertations max £350' },
+  en: { cta: 'Get Free Quote', open: 'Open menu', close: 'Close menu', allServices: 'All Services', viewAll: 'View all services', allHref: '/services', price: 'Get Instant Price', priceHref: '/#quote', offer: '🎁 First order 10% OFF', offerNote: '· Assignments from £20 per 1,000 words · Dissertations from £30 per 1,000 words' },
   ar: { cta: 'احصل على عرض سعر', open: 'فتح القائمة', close: 'إغلاق القائمة', allServices: 'كل الخدمات', viewAll: 'عرض كل الخدمات', allHref: '/ar/assignment-help-saudi-arabia', price: 'اعرف السعر الآن', priceHref: '/ar#quote', offer: '🎁 خصم 10% على أول طلب', offerNote: '· الواجبات من 100 ريال لكل 1,000 كلمة · دعم عبر واتساب 24/7' },
 } as const;
 

@@ -137,7 +137,7 @@ export const hrmDissertationTopicsPost: BlogPost = {
       heading: 'Need help with your HRM dissertation?',
       paragraphs: [
         "If you are choosing between topics, refining your research question or planning your methodology, FIZBS can help. Since 2015 we have supported students in more than 115 subjects, with particular strength in business, HRM and management. Our experts hold Master's and PhD qualifications and support UK, Saudi and CIPD students.",
-        'Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. Message us on WhatsApp 24/7, or book a call with an expert to talk through your topic before you order.',
+        'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7, or book a call with an expert to talk through your topic before you order.',
       ],
     },
   ],

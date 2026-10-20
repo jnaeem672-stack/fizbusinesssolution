@@ -69,7 +69,7 @@ export const assignmentHelpWolverhampton: LandingContent = {
     {
       heading: "Prices and how Wolverhampton students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,000-word construction management report due in two weeks, for example, comes to £60, or £54 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,000-word construction management report due in two weeks, for example, comes to £60, or £54 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
         "If you are returning to study, a short WhatsApp message with your module, word count and deadline is all you need, and your expert can begin by explaining the brief in plain English. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },

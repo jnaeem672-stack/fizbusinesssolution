@@ -15,7 +15,7 @@ export function GET() {
     '## Key facts',
     '- Founded: 2015. Founders: Sajjad Akbar Ali (MBA) and Fawad Hussain Khan (MPhil Mass Communication)',
     '- 10,000+ students supported, 350+ research projects, 115+ subjects',
-    '- Prices: assignments from £20 per 1,000 words; dissertations £30 per 1,000 words with a maximum of £350; proofreading from £12 per 1,000 words; 10% off the first order',
+    '- Prices: assignments from £20 per 1,000 words; dissertations £30 per 1,000 words; proofreading from £12 per 1,000 words; 10% off the first order',
     '- Payment: 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR)',
     '- Contact: WhatsApp +971 54 380 0388 (24/7); website form at ' + SITE_URL + '/contact',
     '- Policy: students must submit their own work; see ' + SITE_URL + '/academic-integrity',

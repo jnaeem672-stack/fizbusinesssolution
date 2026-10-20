@@ -134,7 +134,7 @@ export const computerScienceDissertationTopicsPost: BlogPost = {
       heading: 'Need help with your computer science dissertation?',
       paragraphs: [
         "FIZBS has supported computing and IT students since 2015. Our experts can help you choose a realistic project, review the literature, plan your evaluation and explain your results, with support for Python, data analysis and technical reports.",
-        'Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. Message us on WhatsApp 24/7.',
+        'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7.',
       ],
     },
   ],

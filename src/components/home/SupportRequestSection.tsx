@@ -54,7 +54,7 @@ export default function SupportRequestSection() {
                 <div className="mt-7 pt-6 border-t border-white/10">
                   <h4 className="font-bold text-white mb-3">🎁 First Order Offer</h4>
                   <p className="text-white/65 text-sm leading-relaxed">
-                    Get up to 10% off your first order. Assignment help from £20 per 1,000 words, and a maximum of £350 for any dissertation.
+                    Get up to 10% off your first order. Assignment help from £20 per 1,000 words, and dissertation help from £30 per 1,000 words.
                   </p>
                 </div>
               </div>

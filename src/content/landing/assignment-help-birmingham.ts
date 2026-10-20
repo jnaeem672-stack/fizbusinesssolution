@@ -135,7 +135,7 @@ export const assignmentHelpBirmingham: LandingContent = {
     {
       heading: 'Dissertation and MBA support in Birmingham',
       paragraphs: [
-        "Dissertation help Birmingham final-year and postgraduate students use covers each stage of the project, from shaping a research question to analysing data. Our experts work with SPSS, Excel, NVivo, Stata and Python, and we have supported more than 350 research projects. Dissertation support is £30 per 1,000 words, with a maximum of £350 per dissertation.",
+        "Dissertation help Birmingham final-year and postgraduate students use covers each stage of the project, from shaping a research question to analysing data. Our experts work with SPSS, Excel, NVivo, Stata and Python, and we have supported more than 350 research projects. Dissertation support is £30 per 1,000 words.",
         "MBA assignment help Birmingham professionals request often involves combining theory with their own workplace experience. Experts can help you apply frameworks to a real organisation, structure a consultancy report and reflect on leadership in a way that meets postgraduate standards.",
       ],
     },
@@ -162,7 +162,7 @@ export const assignmentHelpBirmingham: LandingContent = {
     },
     {
       q: 'What does dissertation support cost?',
-      a: 'Dissertation support costs £30 per 1,000 words, with a maximum charge of £350 per dissertation. New customers also receive 10% off their first order.',
+      a: 'Dissertation support costs £30 per 1,000 words. New customers also receive 10% off their first order.',
     },
     {
       q: 'Which subjects can you help with?',

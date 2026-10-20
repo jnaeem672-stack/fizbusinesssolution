@@ -116,13 +116,13 @@ export const assignmentHelpEdinburgh: LandingContent = {
     {
       heading: 'Dissertation support',
       paragraphs: [
-        'Our experts can guide you on choosing a focused topic, writing a proposal, structuring a critical literature review, justifying your methodology and analysing your data. Dissertation help is £30 per 1,000 words with a maximum of £350 for any dissertation, and we have supported more than 350 research projects.',
+        'Our experts can guide you on choosing a focused topic, writing a proposal, structuring a critical literature review, justifying your methodology and analysing your data. Dissertation help is £30 per 1,000 words, and we have supported more than 350 research projects.',
       ],
     },
     {
       heading: "Prices and how Edinburgh students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Dissertation guidance is £30 per 1,000 words and never more than £350, so feedback on a 10,000-word Master's dissertation draft comes to £300, or £270 with a 10% discount.",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Dissertation guidance is £30 per 1,000 words, so feedback on a 10,000-word Master's dissertation draft comes to £300, or £270 with a 10% discount.",
         "Send your course, word count and deadline on WhatsApp with the handbook guidance or rubric. Distance and overseas campus students can message us in any time zone. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
@@ -150,7 +150,7 @@ export const assignmentHelpEdinburgh: LandingContent = {
     },
     {
       q: "How much does assignment help in Edinburgh cost?",
-      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more, and dissertation guidance is £30 per 1,000 words, capped at £350. Feedback on a 10,000-word dissertation draft, for example, is £300 before a 10% discount.",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more, and dissertation guidance is £30 per 1,000 words. Feedback on a 10,000-word dissertation draft, for example, is £300 before a 10% discount.",
     },
     {
       q: "Do you support Queen Margaret University health students?",

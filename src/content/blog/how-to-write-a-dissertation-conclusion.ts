@@ -138,7 +138,7 @@ export const howToWriteADissertationConclusionPost: BlogPost = {
     {
       heading: 'Need help with your dissertation conclusion?',
       paragraphs: [
-        'If your conclusion feels thin or repetitive, a fresh expert view can help. FIZBS Master\'s and PhD-qualified experts can review your conclusion, check that it answers your research question and suggest how to strengthen your recommendations and limitations. Dissertation support is £30 per 1,000 words with a maximum of £350, and proofreading starts from £12 per 1,000 words.',
+        'If your conclusion feels thin or repetitive, a fresh expert view can help. FIZBS Master\'s and PhD-qualified experts can review your conclusion, check that it answers your research question and suggest how to strengthen your recommendations and limitations. Dissertation support is £30 per 1,000 words, and proofreading starts from £12 per 1,000 words.',
         'Message us on WhatsApp 24/7 or book a WhatsApp call with an expert (in English). New customers get 10% off their first order.',
       ],
     },

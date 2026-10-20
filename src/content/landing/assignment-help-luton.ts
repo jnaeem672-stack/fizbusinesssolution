@@ -74,7 +74,7 @@ export const assignmentHelpLuton: LandingContent = {
     {
       heading: "Prices and how Luton students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,500-word MBA assignment due in eight days, for example, comes to £70, or £63 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,500-word MBA assignment due in eight days, for example, comes to £70, or £63 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
         "If you work full time, send your module, word count and deadline on WhatsApp whenever suits you: our team replies 24/7, and your expert can work around evenings and weekends. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },

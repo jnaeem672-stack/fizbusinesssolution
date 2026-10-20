@@ -115,7 +115,7 @@ export const assignmentHelpDubai: LandingContent = {
     {
       heading: 'Dissertations and research projects',
       paragraphs: [
-        "Our experts have supported more than 350 research projects. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python. Dissertation guidance costs AED 150 per 1,000 words, with a maximum of AED 1,750 per dissertation.",
+        "Our experts have supported more than 350 research projects. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python. Dissertation guidance costs AED 150 per 1,000 words.",
       ],
     },
     {

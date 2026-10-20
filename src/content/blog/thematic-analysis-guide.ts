@@ -188,7 +188,7 @@ export const thematicAnalysisGuidePost: BlogPost = {
       heading: "Need help with your thematic analysis?",
       paragraphs: [
         "If you are stuck at the coding stage, unsure whether your themes hold together, or need guidance writing up your findings, FIZ Business Solutions (FIZBS) can help. Our experts hold Master's and PhD qualifications and have supported students with qualitative research and NVivo since 2015.",
-        "You can message us on WhatsApp 24/7 or book a WhatsApp call with an expert before ordering. Dissertation support is charged at £30 per 1,000 words with a maximum of £350, there is 10% off your first order, and everything is 100% confidential."
+        "You can message us on WhatsApp 24/7 or book a WhatsApp call with an expert before ordering. Dissertation support is charged at £30 per 1,000 words, there is 10% off your first order, and everything is 100% confidential."
       ]
     }
   ],

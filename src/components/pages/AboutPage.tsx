@@ -137,7 +137,7 @@ export default function AboutPage() {
           <h2 className="text-3xl md:text-4xl font-black text-navy mb-6">What We Stand For</h2>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600 text-[16px] leading-relaxed">
             <li className="rounded-2xl border border-gray-100 bg-gray-50 p-5"><strong className="text-navy">Clear guidance.</strong> We explain what your brief and marking criteria are really asking for, so you understand the work.</li>
-            <li className="rounded-2xl border border-gray-100 bg-gray-50 p-5"><strong className="text-navy">Honest pricing.</strong> Prices are shown upfront in GBP, from £20 per 1,000 words, with a £350 maximum for any dissertation.</li>
+            <li className="rounded-2xl border border-gray-100 bg-gray-50 p-5"><strong className="text-navy">Honest pricing.</strong> Prices are shown upfront in GBP, from £20 per 1,000 words.</li>
             <li className="rounded-2xl border border-gray-100 bg-gray-50 p-5"><strong className="text-navy">Real people.</strong> You talk to real, qualified experts on WhatsApp, and you can book a call before you order.</li>
             <li className="rounded-2xl border border-gray-100 bg-gray-50 p-5"><strong className="text-navy">Privacy first.</strong> Your details and files stay 100% confidential, always.</li>
           </ul>

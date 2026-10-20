@@ -92,7 +92,7 @@ export const assignmentHelpMadinah: LandingContent = {
       heading: 'Business, MBA and postgraduate support',
       paragraphs: [
         "Business administration, accounting and management students often need to apply frameworks such as SWOT, PESTLE and Porter's Five Forces to real Saudi organisations. Our business specialists help you apply theory to a company you know, interpret financial data and write recommendations that follow logically from your analysis.",
-        "Our experts have supported more than 350 research projects. Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation.",
+        "Our experts have supported more than 350 research projects. Dissertation support costs £30 per 1,000 words.",
       ],
     },
     {

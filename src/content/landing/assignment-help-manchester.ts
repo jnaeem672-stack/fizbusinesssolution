@@ -114,7 +114,7 @@ export const assignmentHelpManchester: LandingContent = {
       heading: 'Dissertation help Manchester final-year and Master\'s students use',
       paragraphs: [
         "The dissertation is often the single largest piece of work on a degree, and it usually arrives at the same time as exams, job applications and, for international students, visa planning. Breaking it into manageable stages makes a big difference.",
-        "Our experts can guide you through choosing a focused topic, writing a research proposal, structuring a literature review and justifying your methodology. If your project involves data, we provide support with SPSS, Excel, NVivo, Stata and Python. Dissertation help is priced at £30 per 1,000 words, capped at £350 per dissertation, and we have supported more than 350 research projects.",
+        "Our experts can guide you through choosing a focused topic, writing a research proposal, structuring a literature review and justifying your methodology. If your project involves data, we provide support with SPSS, Excel, NVivo, Stata and Python. Dissertation help is priced at £30 per 1,000 words, and we have supported more than 350 research projects.",
       ],
     },
     {

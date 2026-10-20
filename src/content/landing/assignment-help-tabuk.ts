@@ -95,7 +95,7 @@ export const assignmentHelpTabuk: LandingContent = {
     {
       heading: 'Dissertation and research support',
       paragraphs: [
-        "Our experts have supported more than 350 research projects, from graduation projects to Master's theses. They can help with your proposal, literature review, methodology, data analysis and discussion. Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation, and we support analysis with SPSS, Excel, NVivo, Stata and Python.",
+        "Our experts have supported more than 350 research projects, from graduation projects to Master's theses. They can help with your proposal, literature review, methodology, data analysis and discussion. Dissertation support costs £30 per 1,000 words, and we support analysis with SPSS, Excel, NVivo, Stata and Python.",
       ],
     },
     {

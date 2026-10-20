@@ -182,7 +182,7 @@ export const howToWriteAResearchQuestionPost: BlogPost = {
       heading: "Need help with your dissertation research question?",
       paragraphs: [
         "If you are struggling to narrow your topic or your supervisor has asked you to refine your question, FIZBS can help. Our experts hold Master's and PhD qualifications and can give guidance on research questions, aims and objectives, proposals and methodology across business, health, education and many other subjects.",
-        "Dissertation support is priced at £30 per 1,000 words, with a maximum of £350 for any dissertation. You can message us on WhatsApp 24/7 or book a call with an expert before you order, and everything is 100% confidential."
+        "Dissertation support is priced at £30 per 1,000 words. You can message us on WhatsApp 24/7 or book a call with an expert before you order, and everything is 100% confidential."
       ]
     }
   ],

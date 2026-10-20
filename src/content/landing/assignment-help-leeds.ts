@@ -94,7 +94,7 @@ export const assignmentHelpLeeds: LandingContent = {
       heading: 'Dissertation help Leeds final-year and Master\'s students use',
       paragraphs: [
         'The dissertation is usually the largest piece of work on your degree, and it often overlaps with exams, graduate job applications and, for international students, visa planning. Breaking it into stages makes it far more manageable.',
-        'Our experts can guide you on choosing a focused topic, writing a research proposal, structuring a literature review and justifying your methodology. If your project uses data, we support SPSS, Excel, NVivo, Stata and Python. Dissertation help is £30 per 1,000 words with a maximum of £350 for any dissertation, and we have supported more than 350 research projects.',
+        'Our experts can guide you on choosing a focused topic, writing a research proposal, structuring a literature review and justifying your methodology. If your project uses data, we support SPSS, Excel, NVivo, Stata and Python. Dissertation help is £30 per 1,000 words, and we have supported more than 350 research projects.',
       ],
     },
     {
@@ -118,7 +118,7 @@ export const assignmentHelpLeeds: LandingContent = {
     {
       heading: "Prices and how Leeds students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,500-word finance report due in five days, for example, comes to £87.50, or £78.75 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,500-word finance report due in five days, for example, comes to £87.50, or £78.75 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
         "Send your module, word count and deadline on WhatsApp, and attach the brief, rubric and any data. Law students can include the problem question and the reading list. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
@@ -146,7 +146,7 @@ export const assignmentHelpLeeds: LandingContent = {
     },
     {
       q: 'Do you help with dissertations?',
-      a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
+      a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words.',
     },
     {
       q: "Can you help with an accounting or finance report?",

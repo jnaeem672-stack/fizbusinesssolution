@@ -5,7 +5,7 @@ import { EXPERT_CALL } from '@/constants/expertCall';
 export const HOME_FAQS: FaqItem[] = [
   {
     q: 'How much does assignment help cost?',
-    a: 'Assignment and essay help starts from £20 per 1,000 words. Dissertation help is £30 per 1,000 words with a maximum of £350 for any dissertation, and proofreading starts from £12 per 1,000 words. Use our instant price calculator to see your exact estimate, and get 10% off your first order.',
+    a: 'Assignment and essay help starts from £20 per 1,000 words. Dissertation help is £30 per 1,000 words, and proofreading starts from £12 per 1,000 words. Use our instant price calculator to see your exact estimate, and get 10% off your first order.',
   },
   {
     q: 'How quickly can you help with my assignment?',

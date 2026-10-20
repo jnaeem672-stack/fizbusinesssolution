@@ -73,7 +73,7 @@ export const assignmentHelpOxford: LandingContent = {
     {
       heading: "Prices and how Oxford students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Proofreading starts from £12 per 1,000 words and is £18 at doctoral level, so an 8,000-word DPhil chapter comes to £144, or £129.60 with a 10% discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Proofreading starts from £12 per 1,000 words and is £18 at doctoral level, so an 8,000-word DPhil chapter comes to £144, or £129.60 with a 10% discount. Dissertation guidance is £30 per 1,000 words.",
         "Send your course, word count and deadline on WhatsApp, along with the essay question, reading list or handbook guidance. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },

@@ -93,7 +93,7 @@ export const assignmentHelpBristol: LandingContent = {
     {
       heading: 'Prices, deadlines and how Bristol students get started',
       paragraphs: [
-        'Prices start at £20 per 1,000 words when your deadline is seven days or more away, rising by 25% for 3 to 6 days and by 50% for anything due within 48 hours. As an example, guidance on a 2,500-word essay due in ten days comes to £50, or £45 with the 10% first-order discount. Dissertation support is £30 per 1,000 words, capped at £350, and proofreading starts from £12 per 1,000 words.',
+        'Prices start at £20 per 1,000 words when your deadline is seven days or more away, rising by 25% for 3 to 6 days and by 50% for anything due within 48 hours. As an example, guidance on a 2,500-word essay due in ten days comes to £50, or £45 with the 10% first-order discount. Dissertation support is £30 per 1,000 words, and proofreading starts from £12 per 1,000 words.',
         'To start, send your module, word count and deadline on WhatsApp. Adding the brief, marking rubric and any lecturer feedback lets your expert follow your course closely. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR, and everything you share stays confidential.',
       ],
     },

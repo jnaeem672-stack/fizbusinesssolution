@@ -133,7 +133,7 @@ export const marketingDissertationTopicsPost: BlogPost = {
       heading: 'Need help with your marketing dissertation?',
       paragraphs: [
         "FIZBS has supported students in more than 115 subjects since 2015, and marketing and business are among our strongest areas. Our Master's and PhD-qualified experts can help you choose a focused topic, build your literature review, design your survey and analyse your data in SPSS or SmartPLS.",
-        'Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. Message us on WhatsApp 24/7 with your topic ideas.',
+        'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7 with your topic ideas.',
       ],
     },
   ],

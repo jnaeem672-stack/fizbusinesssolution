@@ -178,7 +178,7 @@ export const dissertationMethodologyGuidePost: BlogPost = {
       heading: "Need help with your dissertation methodology?",
       paragraphs: [
         "If you are unsure which philosophy, design or analysis technique fits your question, FIZBS experts can help. Our team holds Master's and PhD qualifications and has supported students since 2015, including more than 350 research projects, with support for SPSS, NVivo and thematic analysis.",
-        "Message us on WhatsApp 24/7 or book a WhatsApp call with an expert to talk through your methodology before you commit. Dissertation support is £30 per 1,000 words, capped at £350 for any dissertation, and everything is 100% confidential."
+        "Message us on WhatsApp 24/7 or book a WhatsApp call with an expert to talk through your methodology before you commit. Dissertation support is £30 per 1,000 words, and everything is 100% confidential."
       ]
     }
   ],

@@ -122,7 +122,7 @@ export const assignmentHelpJeddah: LandingContent = {
     {
       heading: 'Dissertation and MBA support',
       paragraphs: [
-        "Dissertation help Jeddah postgraduates use covers proposal writing, literature reviews, research design and data analysis. We have supported more than 350 research projects and offer analysis guidance with SPSS, Excel, NVivo, Stata and Python. Dissertation support is £30 per 1,000 words, with a maximum of £350 per dissertation.",
+        "Dissertation help Jeddah postgraduates use covers proposal writing, literature reviews, research design and data analysis. We have supported more than 350 research projects and offer analysis guidance with SPSS, Excel, NVivo, Stata and Python. Dissertation support is £30 per 1,000 words.",
         "Jeddah is a major commercial and trading hub, and many MBA students here already work in logistics, retail, family businesses or finance. MBA assignment help Jeddah professionals ask for often involves applying strategy and finance frameworks to these real settings, and our business experts can help you do that with confidence.",
       ],
     },

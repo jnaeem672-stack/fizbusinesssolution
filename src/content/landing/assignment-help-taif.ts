@@ -80,7 +80,7 @@ export const assignmentHelpTaif: LandingContent = {
       heading: 'Postgraduate research and SPSS',
       paragraphs: [
         "Master's students in education, business, health and the social sciences often use questionnaires. Our data analysis specialists help you design the questionnaire, check reliability with Cronbach's alpha, choose the right statistical test and explain your results in plain language. We support SPSS, Excel, NVivo, Stata and Python.",
-        'Our experts have supported more than 350 research projects. Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation.',
+        'Our experts have supported more than 350 research projects. Dissertation support costs £30 per 1,000 words.',
       ],
     },
     {
@@ -124,7 +124,7 @@ export const assignmentHelpTaif: LandingContent = {
     },
     {
       q: "Can you help with SPSS for my Master's thesis?",
-      a: "Yes. We help with questionnaire design, reliability testing, choosing the right test and explaining the results, at £30 per 1,000 words for dissertation support with a maximum of £350.",
+      a: "Yes. We help with questionnaire design, reliability testing, choosing the right test and explaining the results, at £30 per 1,000 words for dissertation support.",
     },
     {
       q: 'Can I message you in Arabic?',

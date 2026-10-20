@@ -133,7 +133,7 @@ export const assignmentHelpDammam: LandingContent = {
     {
       heading: 'Dissertation help Dammam researchers can rely on',
       paragraphs: [
-        "Final-year projects, Master's dissertations and PhD theses require careful planning. With more than 350 research projects supported, our experts can guide you on your research question, literature review, methodology and analysis. Dissertation support costs £30 per 1,000 words, with a maximum of £350 per dissertation.",
+        "Final-year projects, Master's dissertations and PhD theses require careful planning. With more than 350 research projects supported, our experts can guide you on your research question, literature review, methodology and analysis. Dissertation support costs £30 per 1,000 words.",
       ],
     },
     {

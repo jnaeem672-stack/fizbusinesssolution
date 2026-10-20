@@ -133,7 +133,7 @@ export const financeAccountingDissertationTopicsPost: BlogPost = {
       heading: 'Need help with your finance or accounting dissertation?',
       paragraphs: [
         "Finance and accounting are among FIZBS's strongest subjects. Since 2015 our Master's and PhD-qualified experts have supported students with topic choice, literature reviews, data collection plans and analysis in Excel, SPSS, Stata and EViews.",
-        'Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. Message us on WhatsApp 24/7 to discuss your topic.',
+        'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7 to discuss your topic.',
       ],
     },
   ],

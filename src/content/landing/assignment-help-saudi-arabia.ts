@@ -77,7 +77,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
     {
       heading: 'Clear pricing in GBP, with SAR on request',
       paragraphs: [
-        'Assignment support starts from £20 per 1,000 words. Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. Proofreading starts from £12 per 1,000 words.',
+        'Assignment support starts from £20 per 1,000 words. Dissertation support is £30 per 1,000 words. Proofreading starts from £12 per 1,000 words.',
         'Shorter deadlines carry a surcharge: +25% for 3 to 6 days and +50% for anything within 48 hours. New customers receive 10% off their first order.',
         'Prices are shown in British pounds. If you prefer to see the equivalent in Saudi riyals, just ask on WhatsApp and we will share your SAR price.',
       ],
@@ -158,7 +158,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
     },
     {
       q: 'Do you offer dissertation help for students in Saudi Arabia?',
-      a: "Yes. Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. Our experts guide you through the proposal, literature review, methodology, analysis and discussion.",
+      a: "Yes. Dissertation support is £30 per 1,000 words. Our experts guide you through the proposal, literature review, methodology, analysis and discussion.",
     },
     {
       q: 'Is there MBA assignment help for working professionals in KSA?',

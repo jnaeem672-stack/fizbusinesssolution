@@ -134,7 +134,7 @@ export const educationDissertationTopicsPost: BlogPost = {
       heading: 'Need help with your education dissertation?',
       paragraphs: [
         "FIZBS has supported education students and trainee teachers since 2015. Our experts can help you narrow your topic, connect it to theory, design interviews or questionnaires, and analyse your data with thematic analysis or SPSS.",
-        'Dissertation support is £30 per 1,000 words, with a maximum of £350 for any dissertation. Message us on WhatsApp 24/7.',
+        'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7.',
       ],
     },
   ],

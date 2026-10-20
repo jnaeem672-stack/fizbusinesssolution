@@ -92,7 +92,7 @@ export const assignmentHelpCoventry: LandingContent = {
     {
       heading: "Prices and how Coventry students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Your own 1,500-word section of a group report due in five days, for example, comes to £37.50, or £33.75 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Your own 1,500-word section of a group report due in five days, for example, comes to £37.50, or £33.75 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
         "Send your module, word count and deadline on WhatsApp, and for group tasks include the group brief and the part you are responsible for. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },

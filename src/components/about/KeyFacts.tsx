@@ -10,7 +10,7 @@ const FACTS: [string, string][] = [
   ['Research projects', '350+'],
   ['Subjects covered', '115+'],
   ['Where we work', 'Online, for students in the UK, Saudi Arabia and the Gulf'],
-  ['Prices', 'Assignments from £20 per 1,000 words; dissertations £30 per 1,000 words, maximum £350; proofreading from £12 per 1,000 words'],
+  ['Prices', 'Assignments from £20 per 1,000 words; dissertations £30 per 1,000 words; proofreading from £12 per 1,000 words'],
   ['First order', '10% off'],
   ['Payment', '50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR)'],
   ['Contact', `WhatsApp ${WHATSAPP_NUMBER} (24/7) or ${CONTACT_EMAIL}`],

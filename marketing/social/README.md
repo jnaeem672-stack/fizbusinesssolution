@@ -43,7 +43,7 @@ the owner makes Google Ads changes himself. If Metricool has no data yet, say so
 
 - FIZ Business Solutions (FIZBS), helping students since 2015; 10,000+ students supported; 350+ research projects; 115+ subjects.
 - Experts are Master's and PhD qualified.
-- Prices (for 7+ day deadlines): assignments and essays £20 per 1,000 words; dissertations £30 per 1,000 words, maximum £350;
+- Prices (for 7+ day deadlines): assignments and essays £20 per 1,000 words; dissertations £30 per 1,000 words (no maximum since 20 Oct 2026; never mention a £350 cap);
   proofreading £12 (undergraduate), £15 (postgraduate), £18 (PhD) per 1,000 words. Urgent: +25% for 3 to 6 days, +50% within 48 hours.
 - 10% off the first order. Volume discounts: 10% for 8,000+ words, 15% for 15,000+ words (discounts do not stack).
 - Payment: 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR).

@@ -70,7 +70,7 @@ export const assignmentHelpUae: LandingContent = {
       heading: 'MBA and postgraduate support for working professionals',
       paragraphs: [
         "Many students in the UAE study a part-time MBA or Master's while working full-time. Assignments ask you to apply strategy, finance, leadership and HR theory to real organisations, often your own employer. Our business specialists help you use published information and the frameworks your module expects, and plan staged deadlines around your working week.",
-        "For dissertations, our experts have supported more than 350 research projects, with data analysis in SPSS, NVivo, Excel, Stata and Python. Dissertation guidance costs AED 150 per 1,000 words, with a maximum of AED 1,750.",
+        "For dissertations, our experts have supported more than 350 research projects, with data analysis in SPSS, NVivo, Excel, Stata and Python. Dissertation guidance costs AED 150 per 1,000 words.",
       ],
     },
     {

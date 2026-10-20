@@ -113,7 +113,7 @@ export const psychologyAssignmentHelp: LandingContent = {
       heading: 'How it works and pricing',
       paragraphs: [
         'Send your module, brief, word count and deadline on WhatsApp or through our website, along with any data files. You will receive a clear price, with 10% off your first order, and a psychology specialist will work on your request.',
-        'Assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Psychology dissertations are £30 per 1,000 words, with a maximum of £350. You pay 50% to start and 50% on completion.',
+        'Assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Psychology dissertations are £30 per 1,000 words. You pay 50% to start and 50% on completion.',
       ],
     },
   ],
@@ -136,7 +136,7 @@ export const psychologyAssignmentHelp: LandingContent = {
     },
     {
       q: 'Do you help with psychology dissertations?',
-      a: 'Yes. We support proposals, literature reviews, research design, data analysis and discussion chapters, at £30 per 1,000 words with a maximum of £350.',
+      a: 'Yes. We support proposals, literature reviews, research design, data analysis and discussion chapters, at £30 per 1,000 words.',
     },
     {
       q: 'Is my request confidential?',

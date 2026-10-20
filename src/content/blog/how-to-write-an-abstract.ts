@@ -174,7 +174,7 @@ export const howToWriteAnAbstractPost: BlogPost = {
     {
       heading: 'Need help with your abstract or dissertation?',
       paragraphs: [
-        'FIZBS experts can review your abstract against your full dissertation and suggest how to make it clearer and more complete. Proofreading starts from £12 per 1,000 words and dissertation support is £30 per 1,000 words with a maximum of £350. Message us on WhatsApp at any time, and new customers get 10% off their first order.',
+        'FIZBS experts can review your abstract against your full dissertation and suggest how to make it clearer and more complete. Proofreading starts from £12 per 1,000 words and dissertation support is £30 per 1,000 words. Message us on WhatsApp at any time, and new customers get 10% off their first order.',
       ],
     },
   ],

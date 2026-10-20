@@ -114,7 +114,7 @@ export const assignmentHelpLiverpool: LandingContent = {
       heading: "Dissertation help for final-year and Master's students",
       paragraphs: [
         'In Liverpool, dissertations often grow out of practice: a school-based enquiry for trainee teachers, a secondary data or systematic review project in public health, or a sport science study using your own measurements. Our experts help you shape a focused question, build the literature review, justify your method and analyse data with SPSS, Excel, NVivo, Stata or Python.',
-        'Dissertation help is £30 per 1,000 words, with a maximum of £350 for any dissertation, and we have supported more than 350 research projects.',
+        'Dissertation help is £30 per 1,000 words, and we have supported more than 350 research projects.',
       ],
     },
     {

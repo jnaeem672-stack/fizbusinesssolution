@@ -156,7 +156,7 @@ export const researchMethodologyHelp: LandingContent = {
     },
     {
       q: 'How much does research methodology help cost?',
-      a: 'Methodology chapters for dissertations and theses are £30 per 1,000 words, with a £350 maximum for any dissertation in our calculator. Long PhD theses receive a tailored quote on WhatsApp.',
+      a: 'Methodology chapters for dissertations and theses are £30 per 1,000 words. Long PhD theses receive a tailored quote on WhatsApp.',
     },
     {
       q: 'Can you check my questionnaire or interview guide?',

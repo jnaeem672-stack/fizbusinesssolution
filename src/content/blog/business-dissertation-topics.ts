@@ -182,7 +182,7 @@ export const businessDissertationTopicsPost: BlogPost = {
       heading: "Need help with your business dissertation?",
       paragraphs: [
         "If you are stuck choosing between topics, refining a research question or planning your methodology, FIZBS can help. Since 2015 we have supported students across more than 115 subjects, with particular strength in business, management, MBA, marketing, finance and accounting. Our experts hold Master's and PhD qualifications and work with both UK and Saudi students.",
-        "Dissertation support is priced at £30 per 1,000 words, with a maximum of £350 for any dissertation. You can message us on WhatsApp 24/7 or book a call with an expert before ordering to talk through your topic ideas."
+        "Dissertation support is priced at £30 per 1,000 words. You can message us on WhatsApp 24/7 or book a call with an expert before ordering to talk through your topic ideas."
       ]
     }
   ],

@@ -102,7 +102,7 @@ export const assignmentHelpSheffield: LandingContent = {
       heading: 'Dissertation and project support',
       paragraphs: [
         'Final-year projects and dissertations are where many degrees are won or lost. Our experts can guide you on choosing a focused topic, writing a proposal, structuring your literature review, justifying your methodology and analysing your data.',
-        'Dissertation help is £30 per 1,000 words, with a maximum of £350 for any dissertation, and we have supported more than 350 research projects.',
+        'Dissertation help is £30 per 1,000 words, and we have supported more than 350 research projects.',
       ],
     },
     {
@@ -114,7 +114,7 @@ export const assignmentHelpSheffield: LandingContent = {
     {
       heading: "Prices and how Sheffield students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Your 1,500-word individual reflection on a group design project due in a week, for example, comes to £30, or £27 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Your 1,500-word individual reflection on a group design project due in a week, for example, comes to £30, or £27 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
         "Send your module, word count and deadline on WhatsApp, with the brief, rubric and any lab data or design files. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
@@ -142,7 +142,7 @@ export const assignmentHelpSheffield: LandingContent = {
     },
     {
       q: 'Do you help with dissertations and final-year projects?',
-      a: 'Yes. Support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
+      a: 'Yes. Support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words.',
     },
     {
       q: "Can you help with an advanced manufacturing or materials assignment?",
