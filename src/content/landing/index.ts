@@ -98,6 +98,7 @@ import { ar3dsMaxDesignHelp } from './ar-3ds-max-design-help';
 import { arAutocadHelp } from './ar-autocad-help';
 import { arSolidworksHelp } from './ar-solidworks-help';
 import { arProgrammingHelp } from './ar-programming-help';
+import { arStudentServices } from './ar-student-services';
 
 export type { LandingContent } from './types';
 export { AR_CITY_LINKS, AR_SERVICE_LINKS, AR_TECH_LINKS } from '@/constants/arLinks';
@@ -208,6 +209,7 @@ export const AR_LANDING_PAGES: LandingContent[] = [
   arAutocadHelp,
   arSolidworksHelp,
   arProgrammingHelp,
+  arStudentServices,
 ];
 
 export function getLandingPage(slug: string, locale: 'en' | 'ar' = 'en'): LandingContent | undefined {
@@ -325,7 +327,7 @@ const QUALIFICATION_GROUP_PAGES = [
 function arLinkGroupsForPage(slug: string): { title: string; links: { label: string; href: string }[] }[] {
   const self = `/ar/${slug}`;
   const groups: { title: string; links: { label: string; href: string }[] }[] = [];
-  if (SAUDI_CITY_SLUGS.includes(slug) || slug === 'assignment-help-saudi-arabia') {
+  if (SAUDI_CITY_SLUGS.includes(slug) || slug === 'assignment-help-saudi-arabia' || slug === 'student-services') {
     groups.push({ title: 'ندعم الطلاب في مدن المملكة', links: AR_CITY_LINKS.filter((l) => l.href !== self) });
   }
   groups.push({ title: 'برامج التصميم والهندسة والبرمجة', links: AR_TECH_LINKS.filter((l) => l.href !== self) });

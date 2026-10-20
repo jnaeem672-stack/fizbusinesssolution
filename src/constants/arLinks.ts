@@ -42,6 +42,7 @@ export const AR_CITY_LINKS: NavItem[] = SAUDI_CITY_SLUGS.map((slug) => ({
 
 /** Arabic service pages */
 export const AR_SERVICE_LINKS: NavItem[] = [
+  { label: 'خدمات طلابية أونلاين', href: '/ar/student-services' },
   { label: 'المساعدة في الواجبات الجامعية', href: '/ar/assignment-help-saudi-arabia' },
   { label: 'المساعدة في الرسائل العلمية', href: '/ar/dissertation-help-saudi-arabia' },
   { label: 'المساعدة في خطة البحث', href: '/ar/research-proposal-help' },
