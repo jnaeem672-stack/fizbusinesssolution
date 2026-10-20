@@ -129,7 +129,12 @@ Second bulk check, 20 Oct 22:40 (sa_bulk_list1-99.csv and uk_bulk_list2-95.csv):
   Assignment Experts): all sell on AI-free, plagiarism-free and 50 to 60% off banners; prices from about £32 to £68
   per 1,000 words where shown; FIZBS (£20) is the cheapest. Many sell finished work, which is an offence in England
   since the Skills and Post-16 Education Act 2022, so keep the help-and-guidance wording.
-- Waiting: Semrush Backlink Bulk Analysis of the 20 domains to fill authority and links.
+- Backlink Gap exports (20 Oct, files backlink-gap_*.csv): Saudi competitors' linking sites are 81 to 100% junk
+  (Authority Score 5 or less): Al-Manara 2,508, Ejada 1,134, Talomest 912, Wagibat 550. UK: MyAssignmentHelp 20,677,
+  Native 6,693, UK Assignment Help 6,012, Locus 2,781, UK-Assignments only 310 (yet #1). Free, rule-safe sources seen
+  in their links: Yell, Scoot, Hotfrog, Central Index (UK listings, need a UK address), Crunchbase, GoodFirms,
+  Medium, Substack, Issuu. Not yet checked: Sanad, Al-Daam, Assignment Master, Emtiyaz, Services Researcher,
+  SciGuide, New, Global, Assignment Desk, Students AH, Assignment Experts.
 
 ### Backlinks
 Competitor backlinks are almost all spam (score 2 to 5, auto-generated sites). Do not buy or copy them.
