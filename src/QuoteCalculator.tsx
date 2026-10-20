@@ -71,7 +71,8 @@ const UI = {
     faster: (pct: number) => `Faster deadline (+${pct}%)`,
     firstDisc: (pct: number) => `First order discount (${pct}%)`,
     bigDisc: (pct: number) => `Bigger order discount (${pct}%)`,
-    capLine: (max: string) => `Dissertation maximum (${max})`,
+    capLine: (max: string) => `Dissertation help, any length or deadline: maximum ${max}`,
+    capNote: (max: string) => `Maximum ${max} for any dissertation`,
     firstOrder: 'This is my first order',
     firstOrderHint: '(10% off)',
     firstOrderAria: 'First order discount',
@@ -102,7 +103,8 @@ const UI = {
     faster: (pct: number) => `رسوم الاستعجال (+${pct}%)`,
     firstDisc: (pct: number) => `خصم الطلب الأول (${pct}%)`,
     bigDisc: (pct: number) => `خصم الطلبات الكبيرة (${pct}%)`,
-    capLine: (max: string) => `الحد الأقصى للرسالة (${max})`,
+    capLine: (max: string) => `دعم الرسالة بأي طول أو موعد: ${max} كحد أقصى`,
+    capNote: (max: string) => `${max} كحد أقصى لأي رسالة`,
     firstOrder: 'هذا أول طلب لي',
     firstOrderHint: '(خصم 10%)',
     firstOrderAria: 'خصم الطلب الأول',
@@ -197,15 +199,16 @@ export default function QuoteCalculator({ locale = 'en', currency }: { locale?: 
   const plus = isAr ? '' : '+';
   const minus = isAr ? '' : '-';
   const lines: { k: string; v: string; good?: boolean }[] = [{ k: t.wordsLine(wordsLabel, fmt(quote.rate)), v: fmt(quote.wordsCost) }];
-  if (quote.deadlineInfo.multiplier > 1) {
+  // A capped dissertation shows only the fixed maximum: no inflated struck price, no "You save" on the cap
+  const showSaving = !quote.capped && quote.total < quote.base;
+  if (quote.capped && quote.cap !== undefined) {
+    lines.splice(0, lines.length, { k: t.capLine(fmt(quote.cap)), v: fmt(quote.cap) });
+  } else if (quote.deadlineInfo.multiplier > 1) {
     lines.push({ k: t.faster(Math.round((quote.deadlineInfo.multiplier - 1) * 100)), v: `${plus}${fmt(quote.base - quote.wordsCost)}` });
   }
-  if (quote.discount > 0) {
+  if (!quote.capped && quote.discount > 0) {
     const pct = Math.round(quote.discount * 100);
     lines.push({ k: quote.firstOrderApplies ? t.firstDisc(pct) : t.bigDisc(pct), v: `${minus}${fmt(quote.base * quote.discount)}`, good: true });
-  }
-  if (quote.capped && quote.cap !== undefined) {
-    lines.push({ k: t.capLine(fmt(quote.cap)), v: `${minus}${fmt(quote.discounted - quote.cap)}`, good: true });
   }
 
   const summary = [`${wordsLabel} ${t.wordsUnit}`, name(quote.serviceInfo), name(levelInfo), name(quote.deadlineInfo)];
@@ -440,11 +443,14 @@ export default function QuoteCalculator({ locale = 'en', currency }: { locale?: 
                   <span className="text-5xl sm:text-6xl font-black tracking-tight">{parts.num}</span>
                   {parts.post && <span className="mt-2 text-lg sm:text-xl font-black text-amber-400">{parts.post}</span>}
                 </div>
-                {quote.total < quote.base && (
+                {showSaving && (
                   <div className="flex flex-wrap items-center gap-2">
                     <span className="text-sm sm:text-base font-bold text-white/60 line-through">{fmt(quote.base)}</span>
                     <span className="rounded-full bg-green-500/20 px-2.5 py-0.5 text-[12px] sm:text-[13px] font-black text-green-300">{t.youSave(fmt(quote.base - quote.total))}</span>
                   </div>
+                )}
+                {quote.capped && quote.cap !== undefined && (
+                  <span className="w-fit rounded-full bg-amber-400/15 px-2.5 py-0.5 text-[12px] sm:text-[13px] font-black text-amber-300">{t.capNote(fmt(quote.cap))}</span>
                 )}
               </div>
               <StudentArt label={t.art} className="h-16 w-16 shrink-0 sm:h-24 sm:w-24" />
