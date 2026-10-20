@@ -21,12 +21,12 @@ export const assignmentHelpLeeds: LandingContent = {
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Law, finance and business', '10% off first order'],
   intro: [
     'Leeds is one of the largest student cities in the North of England, with several universities, a busy city centre and a strong jobs market in finance, law and professional services. If you are looking for assignment help Leeds students can fit around lectures, part-time work and placements, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.',
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are actually taking rather than a generic template.",
+    "Leeds is one of the UK's biggest centres for legal and financial services outside London, and its universities reflect that, alongside strong health, education and creative courses at Leeds Beckett and Leeds Trinity. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Leeds we support",
-      paragraphs: ["We support students at every university in Leeds. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["The University of Leeds campus is just north of the city centre, Leeds Beckett University teaches at its City Campus and in Headingley, and Leeds Trinity University is based in Horsforth. FIZBS is an independent online service and is not affiliated with any of them, so your expert works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Leeds",
@@ -116,30 +116,17 @@ export const assignmentHelpLeeds: LandingContent = {
       ],
     },
     {
-      heading: 'Pricing and deadlines',
+      heading: "Prices and how Leeds students get started",
       paragraphs: [
-        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Proofreading starts from £12 per 1,000 words.',
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
-      ],
-    },
-    {
-      heading: 'Getting started',
-      paragraphs: [
-        'A short WhatsApp message with your subject, word count and deadline is enough for a quote. Payment is made in two parts: 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. To help your expert follow your module closely, it helps to share:',
-      ],
-      bullets: [
-        'Your assignment brief and marking rubric',
-        'Your word count, deadline and level of study',
-        'Lecture slides, reading lists or tutor feedback',
-        'Your required referencing style',
-        'Any notes or drafts you have already started',
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,500-word finance report due in five days, for example, comes to £87.50, or £78.75 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Send your module, word count and deadline on WhatsApp, and attach the brief, rubric and any data. Law students can include the problem question and the reading list. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
-      q: 'Is FIZBS based in Leeds?',
-      a: 'We are an online service rather than a local office. Students in Leeds share their brief on WhatsApp or through our website and receive expert support remotely.',
+      q: "Is FIZBS based in Leeds?",
+      a: "No. FIZBS works fully online, so students at Leeds, Leeds Beckett and Leeds Trinity share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: 'Which Leeds universities do you support?',
@@ -150,8 +137,8 @@ export const assignmentHelpLeeds: LandingContent = {
       a: 'Yes. Our law experts can guide you through the IRAC method, help you identify the relevant cases and legislation, and check your OSCOLA referencing.',
     },
     {
-      q: 'How much does assignment help in Leeds cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.',
+      q: "How much does assignment help in Leeds cost?",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 3,500-word report due in five days, for example, is £87.50 before your 10% first-order discount.",
     },
     {
       q: 'Can you help with my placement report or reflective log?',
@@ -162,8 +149,8 @@ export const assignmentHelpLeeds: LandingContent = {
       a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
     },
     {
-      q: 'How do I pay?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+      q: "Can you help with an accounting or finance report?",
+      a: "Yes. Our finance experts help you analyse financial statements, apply valuation and investment appraisal methods and present your workings clearly, often in Excel.",
     },
   ],
   ctaTitle: 'Get your Leeds assignment price in minutes',

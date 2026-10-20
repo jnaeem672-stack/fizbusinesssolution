@@ -21,12 +21,12 @@ export const assignmentHelpWolverhampton: LandingContent = {
   highlights: ["Fully online support", "From £20 per 1,000 words", "Part-time students welcome", "10% off first order"],
   intro: [
     "Wolverhampton is a West Midlands city at the heart of the Black Country, with a strong manufacturing and construction heritage. If you are looking for assignment help Wolverhampton students can use alongside lectures, work and family life, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.",
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are actually taking.",
+    "The University of Wolverhampton has many mature, part-time and first-generation students who balance study with work and family, and it is known for construction, architecture and engineering courses linked to the Black Country's industries. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Wolverhampton we support",
-      paragraphs: ["We support students at every university in Wolverhampton. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["The University of Wolverhampton teaches at its City Campus, at the Springfield Campus for architecture and the built environment, and at campuses in Walsall and Telford. FIZBS is an independent online service and is not affiliated with the university, so your expert works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Wolverhampton",
@@ -60,47 +60,24 @@ export const assignmentHelpWolverhampton: LandingContent = {
       ],
     },
     {
-      heading: "What our guidance includes",
+      heading: "Dissertation and project ideas with a Black Country angle",
       paragraphs: [
-        "You stay the author of your work. Our experts help you understand the task and improve your own writing:",
-      ],
-      bullets: [
-        "One-to-one explanation of your brief, the theory and the marking criteria",
-        "A clear plan for the structure of your work and the sources to use",
-        "Written feedback on your own draft, showing what to improve and why",
-        "Proofreading and referencing checks on work you have written yourself",
+        "Construction and engineering students often base projects on regeneration schemes, modern methods of construction, health and safety on site or skills shortages in the trades. Business and education students can look at small firms, community organisations or their own workplace, which makes access to data much easier.",
+        "Your expert helps you narrow the topic, plan the literature review and choose a realistic method, from case studies and interviews to surveys analysed in SPSS or Excel. They explain, plan and give feedback, and you stay the author of your work.",
       ],
     },
     {
-      heading: "Dissertations and research support",
+      heading: "Prices and how Wolverhampton students get started",
       paragraphs: [
-        "Our experts have supported more than 350 research projects, from undergraduate dissertations to Master's theses. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python.",
-      ],
-    },
-    {
-      heading: "Pricing and deadlines",
-      paragraphs: [
-        "Guidance and feedback on assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Dissertation guidance is £30 per 1,000 words with a maximum of £350, and proofreading starts from £12 per 1,000 words.",
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
-      ],
-    },
-    {
-      heading: "Getting started",
-      paragraphs: [
-        "A short WhatsApp message with your subject, word count and deadline is enough for a quote. Payment is made in two parts: 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. To help your expert follow your module closely, it helps to share:",
-      ],
-      bullets: [
-        "Your assignment brief and marking rubric",
-        "Your word count, deadline and level of study",
-        "Lecture slides, reading lists or tutor feedback",
-        "Your required referencing style",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,000-word construction management report due in two weeks, for example, comes to £60, or £54 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "If you are returning to study, a short WhatsApp message with your module, word count and deadline is all you need, and your expert can begin by explaining the brief in plain English. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
       q: "Is FIZBS based in Wolverhampton?",
-      a: "We are an online service rather than a local office in Wolverhampton. Students in the city share their brief on WhatsApp or through our website and receive expert support remotely.",
+      a: "No. FIZBS works fully online, so students at every Wolverhampton campus share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: "Which Wolverhampton universities do you support?",
@@ -116,15 +93,15 @@ export const assignmentHelpWolverhampton: LandingContent = {
     },
     {
       q: "How much does assignment help in Wolverhampton cost?",
-      a: "Guidance and feedback start from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 3,000-word report due in two weeks, for example, is £60 before your 10% first-order discount.",
     },
     {
-      q: "Do you help with dissertations?",
-      a: "Yes. Dissertation guidance covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.",
+      q: "Do you support students at the Walsall and Telford campuses?",
+      a: "Yes. Our support is online, so it works the same way for students at the City, Springfield, Walsall and Telford campuses.",
     },
     {
-      q: "How do I pay?",
-      a: "You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
+      q: "Can you help with a BIM or construction technology report?",
+      a: "Yes. Our built environment experts help you explain construction methods, BIM processes and regulations clearly, and support your discussion with current standards and case studies.",
     },
   ],
   ctaTitle: "Get your Wolverhampton assignment price in minutes",

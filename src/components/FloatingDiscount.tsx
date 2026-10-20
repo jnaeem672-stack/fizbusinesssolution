@@ -4,13 +4,27 @@ import { useEffect, useState, type MouseEvent } from 'react';
 import { usePathname } from 'next/navigation';
 import { Gift } from 'lucide-react';
 
-/** Floating "first order discount" button, bottom-left (WhatsApp sits bottom-right). Opens the price calculator. */
+/**
+ * Floating "first order discount" button, bottom-left (WhatsApp sits bottom-right). Opens the price calculator.
+ * On phones it sits on the same row as WhatsApp and shrinks to the gift icon and "10%" once the reader scrolls,
+ * so it covers less of the text.
+ */
 export default function FloatingDiscount() {
   const pathname = usePathname() || '/';
   const isAr = pathname === '/ar' || pathname.startsWith('/ar/');
   const [visible, setVisible] = useState(false);
 
   const [calcInView, setCalcInView] = useState(false);
+  const [compact, setCompact] = useState(false);
+  // The homepage has a sticky help bar along the bottom on phones, so the button stays above it there
+  const aboveHelpBar = pathname === '/';
+
+  useEffect(() => {
+    const onScroll = () => setCompact(window.scrollY > 600);
+    onScroll();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
+  }, []);
 
   useEffect(() => {
     const t = setTimeout(() => setVisible(true), 1000);
@@ -54,7 +68,7 @@ export default function FloatingDiscount() {
       href={fallback}
       onClick={handleClick}
       aria-label={isAr ? 'خصم حتى 10% على أول طلب' : 'Get up to 10% off your first order'}
-      className={`group fixed z-[9997] left-4 sm:left-6 bottom-[5.25rem] sm:bottom-6 flex items-center gap-2.5 pl-1.5 pr-4 py-1.5 rounded-full bg-gradient-to-r from-[#C9A227] to-[#E0BC4A] text-navy shadow-xl shadow-primary/40 ring-2 ring-white hover:scale-105 active:scale-95 transition-all duration-500 ${
+      className={`group fixed z-[9997] left-4 sm:left-6 ${aboveHelpBar ? 'bottom-[5.25rem]' : 'bottom-5'} sm:bottom-6 flex items-center gap-2.5 pl-1.5 ${compact ? 'max-sm:gap-1.5 max-sm:pr-3' : ''} pr-4 py-1.5 rounded-full bg-gradient-to-r from-[#C9A227] to-[#E0BC4A] text-navy shadow-xl shadow-primary/40 ring-2 ring-white hover:scale-105 active:scale-95 transition-all duration-500 ${
         visible && !calcInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none'
       }`}
     >
@@ -62,7 +76,10 @@ export default function FloatingDiscount() {
         <span className="absolute inset-0 rounded-full bg-white animate-ping opacity-30" />
         <Gift className="relative w-5 h-5 sm:w-6 sm:h-6 group-hover:rotate-12 transition-transform" strokeWidth={2.4} />
       </span>
-      <span className="flex flex-col leading-none" dir={isAr ? 'rtl' : undefined}>
+      {compact && (
+        <span className="sm:hidden text-[15px] font-black tracking-tight" aria-hidden="true">10%</span>
+      )}
+      <span className={`flex flex-col leading-none ${compact ? 'max-sm:hidden' : ''}`} dir={isAr ? 'rtl' : undefined}>
         <span className="text-[15px] sm:text-base font-black tracking-tight">{isAr ? 'خصم حتى 10%' : 'Up to 10% OFF'}</span>
         <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider text-navy/80 mt-1">
           {isAr ? 'على أول طلب' : 'First Order'}

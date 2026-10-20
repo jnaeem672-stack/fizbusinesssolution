@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { ArrowRight, BookOpen, Clock } from 'lucide-react';
 import { postPath, readingMinutes, type BlogPost } from '@/content/blog';
+import type { HubSection } from '@/content/blog/arHub';
 
 const TEXT = {
   en: {
@@ -23,7 +24,16 @@ const TEXT = {
   },
 } as const;
 
-export default function BlogIndex({ posts, locale }: { posts: BlogPost[]; locale: 'en' | 'ar' }) {
+export default function BlogIndex({
+  posts,
+  locale,
+  hub,
+}: {
+  posts: BlogPost[];
+  locale: 'en' | 'ar';
+  /** Optional guide-hub content shown under the cards (used on /ar/blog) */
+  hub?: { sections: HubSection[]; faqs: { q: string; a: string }[]; faqTitle: string };
+}) {
   const t = TEXT[locale];
   const isAr = locale === 'ar';
   return (
@@ -61,6 +71,55 @@ export default function BlogIndex({ posts, locale }: { posts: BlogPost[]; locale
               </Link>
             ))}
           </div>
+          {hub && (
+            <div className="mt-14 max-w-3xl mx-auto space-y-10">
+              {hub.sections.map((section) => (
+                <section key={section.heading} className="rounded-3xl bg-white border border-gray-100 p-6 md:p-8 shadow-sm">
+                  <h2 className="text-2xl font-extrabold text-navy mb-4">{section.heading}</h2>
+                  {section.paragraphs?.map((para) => (
+                    <p key={para} className="text-gray-600 leading-loose mb-4 last:mb-0">{para}</p>
+                  ))}
+                  {section.steps && (
+                    <ol className="mt-2 space-y-3">
+                      {section.steps.map((step, i) => (
+                        <li key={step.text} className="flex gap-3">
+                          <span className="shrink-0 w-7 h-7 rounded-full bg-navy text-white text-sm font-black flex items-center justify-center">{i + 1}</span>
+                          <span className="text-gray-700 leading-loose">
+                            {step.text}{' '}
+                            {step.href && (
+                              <Link href={step.href} className="font-bold text-primary hover:underline">{step.label}</Link>
+                            )}
+                          </span>
+                        </li>
+                      ))}
+                    </ol>
+                  )}
+                  {section.links && (
+                    <ul className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      {section.links.map((link) => (
+                        <li key={link.href}>
+                          <Link href={link.href} className="flex items-center justify-between gap-2 rounded-2xl border border-gray-100 bg-gray-50 px-4 py-3 text-sm font-bold text-navy hover:border-primary hover:text-primary transition-colors">
+                            {link.label} <ArrowRight className={`w-4 h-4 shrink-0 ${isAr ? 'rotate-180' : ''}`} />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </section>
+              ))}
+              <section className="rounded-3xl bg-white border border-gray-100 p-6 md:p-8 shadow-sm">
+                <h2 className="text-2xl font-extrabold text-navy mb-4">{hub.faqTitle}</h2>
+                <div className="divide-y divide-gray-100">
+                  {hub.faqs.map((f) => (
+                    <div key={f.q} className="py-4 first:pt-0 last:pb-0">
+                      <h3 className="font-extrabold text-navy mb-1.5">{f.q}</h3>
+                      <p className="text-gray-600 leading-loose">{f.a}</p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            </div>
+          )}
           <div className="text-center mt-10">
             <Link href={t.otherHref} className="inline-flex items-center gap-2 text-sm font-black text-navy hover:text-primary">
               {t.other} <ArrowRight className="w-4 h-4" />

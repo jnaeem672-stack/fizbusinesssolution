@@ -21,12 +21,12 @@ export const assignmentHelpPortsmouth: LandingContent = {
   highlights: ["Fully online support", "From £20 per 1,000 words", "Business and criminology", "10% off first order"],
   intro: [
     "Portsmouth is the UK's only island city and the home of the Royal Navy, with one of the largest universities on the South Coast right in its centre. If you are looking for assignment help Portsmouth students can use alongside lectures, placements and part-time work, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.",
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are actually taking.",
+    "Portsmouth students study in the heart of a naval and maritime city, and the university is especially known for criminology and forensic subjects, engineering and business, with a London campus as well. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Portsmouth we support",
-      paragraphs: ["We support students at every university in Portsmouth. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["The University of Portsmouth's buildings are spread across the city centre, a short walk from Southsea, and University of Portsmouth London teaches business and related courses in the capital. FIZBS is an independent online service and is not affiliated with the university, so your expert works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Portsmouth",
@@ -64,47 +64,24 @@ export const assignmentHelpPortsmouth: LandingContent = {
       ],
     },
     {
-      heading: "What our guidance includes",
+      heading: "Dissertation and project ideas with a Portsmouth angle",
       paragraphs: [
-        "You stay the author of your work. Our experts help you understand the task and improve your own writing:",
-      ],
-      bullets: [
-        "One-to-one explanation of your brief, the theory and the marking criteria",
-        "A clear plan for the structure of your work and the sources to use",
-        "Written feedback on your own draft, showing what to improve and why",
-        "Proofreading and referencing checks on work you have written yourself",
+        "Criminology and policing students often build dissertations on secondary data such as crime statistics or published inquiry reports, while maritime and engineering students look at port operations, naval technology or offshore renewables. Business students in Portsmouth and London can draw on international management and digital marketing cases.",
+        "Your expert helps you pick a question your data can answer, structure the literature review and justify your method, including how you handle sensitive or secondary data. They explain, plan and give feedback, and you stay the author of your work.",
       ],
     },
     {
-      heading: "Dissertations and research support",
+      heading: "Prices and how Portsmouth students get started",
       paragraphs: [
-        "Our experts have supported more than 350 research projects, from undergraduate dissertations to Master's theses. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python.",
-      ],
-    },
-    {
-      heading: "Pricing and deadlines",
-      paragraphs: [
-        "Guidance and feedback on assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Dissertation guidance is £30 per 1,000 words with a maximum of £350, and proofreading starts from £12 per 1,000 words.",
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
-      ],
-    },
-    {
-      heading: "Getting started",
-      paragraphs: [
-        "A short WhatsApp message with your subject, word count and deadline is enough for a quote. Payment is made in two parts: 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. To help your expert follow your module closely, it helps to share:",
-      ],
-      bullets: [
-        "Your assignment brief and marking rubric",
-        "Your word count, deadline and level of study",
-        "Lecture slides, reading lists or tutor feedback",
-        "Your required referencing style",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Dissertation guidance is £30 per 1,000 words, capped at £350, so feedback on a 5,000-word chapter due in ten days comes to £150, or £135 with the 10% first-order discount.",
+        "Send your module, word count and deadline on WhatsApp, with the brief, rubric and any tutor feedback, whether you study in Portsmouth or London. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
       q: "Is FIZBS based in Portsmouth?",
-      a: "We are an online service rather than a local office in Portsmouth. Students in the city share their brief on WhatsApp or through our website and receive expert support remotely.",
+      a: "No. FIZBS works fully online, so students in Portsmouth and at the London campus share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: "Which Portsmouth universities do you support?",
@@ -120,15 +97,15 @@ export const assignmentHelpPortsmouth: LandingContent = {
     },
     {
       q: "How much does assignment help in Portsmouth cost?",
-      a: "Guidance and feedback start from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more, and dissertation guidance is £30 per 1,000 words. A 5,000-word dissertation chapter due in ten days, for example, is £150 before your 10% first-order discount.",
     },
     {
-      q: "Do you help with dissertations?",
-      a: "Yes. Dissertation guidance covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.",
+      q: "Can you help with a criminology dissertation based on secondary data?",
+      a: "Yes. We help you find suitable published data and reports, design a clear analysis and discuss the findings critically, with careful attention to ethics and limitations.",
     },
     {
-      q: "How do I pay?",
-      a: "You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
+      q: "I study at University of Portsmouth London. Can you help?",
+      a: "Yes. We support business and management students on the London campus with reports, case studies and dissertations, working from your module brief and marking criteria.",
     },
   ],
   ctaTitle: "Get your Portsmouth assignment price in minutes",

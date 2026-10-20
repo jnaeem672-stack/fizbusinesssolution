@@ -21,12 +21,12 @@ export const assignmentHelpEdinburgh: LandingContent = {
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Distance learners welcome', '10% off first order'],
   intro: [
     "Edinburgh is a compact capital city with several universities, a large international student population and, every August, one of the busiest festival seasons in the world. If you are looking for assignment help Edinburgh students can access wherever they are studying, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.",
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief, reading list and marking criteria, so the guidance fits your course rather than a generic template.",
+    "Edinburgh students include Honours undergraduates on four-year Scottish degrees, one-year Master's students and many distance learners, including Heriot-Watt students on overseas campuses. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Edinburgh we support",
-      paragraphs: ["We support students at every university in Edinburgh. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["The University of Edinburgh is centred on George Square and the Old Town, Edinburgh Napier has several campuses across the city, Heriot-Watt's main campus is at Riccarton on the western edge, and Queen Margaret University is in Musselburgh. FIZBS is an independent online service and is not affiliated with any of them, so your expert works from your own course handbook and marking criteria."],
       subsections: [
         {
           heading: "University of Edinburgh",
@@ -120,23 +120,17 @@ export const assignmentHelpEdinburgh: LandingContent = {
       ],
     },
     {
-      heading: 'Pricing and deadlines',
+      heading: "Prices and how Edinburgh students get started",
       paragraphs: [
-        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%.',
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving. You pay 50% to start and 50% on completion.",
-      ],
-    },
-    {
-      heading: 'Getting started',
-      paragraphs: [
-        'Send your subject, word count and deadline on WhatsApp for a quick quote. To help your expert follow your module closely, share your brief, marking criteria, reading list and any feedback you have received. Everything you share stays confidential.',
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Dissertation guidance is £30 per 1,000 words and never more than £350, so feedback on a 10,000-word Master's dissertation draft comes to £300, or £270 with a 10% discount.",
+        "Send your course, word count and deadline on WhatsApp with the handbook guidance or rubric. Distance and overseas campus students can message us in any time zone. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
-      q: 'Is FIZBS based in Edinburgh?',
-      a: 'We are an online service rather than a local office. Students in Edinburgh, and those studying Edinburgh programmes by distance learning, share their brief on WhatsApp or through our website.',
+      q: "Is FIZBS based in Edinburgh?",
+      a: "No. FIZBS works fully online, so students in Edinburgh, distance learners and Heriot-Watt students overseas share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: 'Which Edinburgh universities do you support?',
@@ -155,12 +149,12 @@ export const assignmentHelpEdinburgh: LandingContent = {
       a: "For many one-year taught Master's programmes the dissertation is due in August, but dates vary by programme. Check your handbook and plan your proposal early.",
     },
     {
-      q: 'How much does assignment help in Edinburgh cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. Shorter deadlines add 25% or 50%, and first-time customers get 10% off.',
+      q: "How much does assignment help in Edinburgh cost?",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more, and dissertation guidance is £30 per 1,000 words, capped at £350. Feedback on a 10,000-word dissertation draft, for example, is £300 before a 10% discount.",
     },
     {
-      q: 'How do I pay?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+      q: "Do you support Queen Margaret University health students?",
+      a: "Yes. We support nursing, dietetics, physiotherapy and other allied health students with evidence-based essays, reflective writing and research projects.",
     },
   ],
   ctaTitle: 'Get your Edinburgh assignment price in minutes',

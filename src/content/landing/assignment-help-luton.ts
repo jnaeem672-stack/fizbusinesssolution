@@ -21,12 +21,12 @@ export const assignmentHelpLuton: LandingContent = {
   highlights: ["Fully online support", "From £20 per 1,000 words", "International Master's", "10% off first order"],
   intro: [
     "Luton is a busy town just north of London, best known for its airport, and it is the main campus of the University of Bedfordshire. If you are looking for assignment help Luton students can use alongside lectures, work and commuting, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.",
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are actually taking.",
+    "Many Luton students are working professionals or international postgraduates, often commuting from London, and the University of Bedfordshire is known for business, aviation and tourism, health, education and sport. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Luton and Bedford we support",
-      paragraphs: ["We support students at every university in Luton and Bedford. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["The University of Bedfordshire's main campus is in Luton town centre, with a second campus in Bedford for education, sport and health courses. FIZBS is an independent online service and is not affiliated with the university, so your expert works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Bedfordshire, Luton campus",
@@ -65,47 +65,24 @@ export const assignmentHelpLuton: LandingContent = {
       ],
     },
     {
-      heading: "What our guidance includes",
+      heading: "Dissertation and project ideas with a Luton angle",
       paragraphs: [
-        "You stay the author of your work. Our experts help you understand the task and improve your own writing:",
-      ],
-      bullets: [
-        "One-to-one explanation of your brief, the theory and the marking criteria",
-        "A clear plan for the structure of your work and the sources to use",
-        "Written feedback on your own draft, showing what to improve and why",
-        "Proofreading and referencing checks on work you have written yourself",
+        "With a major airport on the town's doorstep, aviation and tourism students often research airline strategy, airport operations or passenger experience, while MBA and MSc students can base projects on their own employer. Health and education students in Bedford can choose service evaluations or classroom enquiries linked to placements.",
+        "Your expert helps you narrow the idea, structure the literature review and choose a method you can complete in the time you have, from secondary data to interviews and surveys analysed in SPSS. They explain, plan and give feedback, and you stay the author of your work.",
       ],
     },
     {
-      heading: "Dissertations and research support",
+      heading: "Prices and how Luton students get started",
       paragraphs: [
-        "Our experts have supported more than 350 research projects, from undergraduate dissertations to Master's theses. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python.",
-      ],
-    },
-    {
-      heading: "Pricing and deadlines",
-      paragraphs: [
-        "Guidance and feedback on assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Dissertation guidance is £30 per 1,000 words with a maximum of £350, and proofreading starts from £12 per 1,000 words.",
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
-      ],
-    },
-    {
-      heading: "Getting started",
-      paragraphs: [
-        "A short WhatsApp message with your subject, word count and deadline is enough for a quote. Payment is made in two parts: 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. To help your expert follow your module closely, it helps to share:",
-      ],
-      bullets: [
-        "Your assignment brief and marking rubric",
-        "Your word count, deadline and level of study",
-        "Lecture slides, reading lists or tutor feedback",
-        "Your required referencing style",
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,500-word MBA assignment due in eight days, for example, comes to £70, or £63 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "If you work full time, send your module, word count and deadline on WhatsApp whenever suits you: our team replies 24/7, and your expert can work around evenings and weekends. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
       q: "Is FIZBS based in Luton?",
-      a: "We are an online service rather than a local office in Luton. Students in the town share their brief on WhatsApp or through our website and receive expert support remotely.",
+      a: "No. FIZBS works fully online, so students on the Luton and Bedford campuses share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: "Which Luton universities do you support?",
@@ -121,15 +98,15 @@ export const assignmentHelpLuton: LandingContent = {
     },
     {
       q: "How much does assignment help in Luton cost?",
-      a: "Guidance and feedback start from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 3,500-word MBA assignment due in eight days, for example, is £70 before your 10% first-order discount.",
     },
     {
-      q: "Do you help with dissertations?",
-      a: "Yes. Dissertation guidance covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.",
+      q: "Can you help with an MBA project based on my own workplace?",
+      a: "Yes. We help you choose a workplace problem you can research, handle access and confidentiality, and turn your findings into practical recommendations for the organisation.",
     },
     {
-      q: "How do I pay?",
-      a: "You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
+      q: "Do you support students on the Bedford campus?",
+      a: "Yes. We support education, sport and health students in Bedford with essays, reflective writing and research projects, all online.",
     },
   ],
   ctaTitle: "Get your Luton assignment price in minutes",

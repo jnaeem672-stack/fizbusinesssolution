@@ -21,12 +21,12 @@ export const assignmentHelpSunderland: LandingContent = {
   highlights: ["Fully online support", "From £20 per 1,000 words", "Pharmacy, health and business", "10% off first order"],
   intro: [
     "Sunderland is a riverside city in the North East with a long industrial history and one of the UK's largest car plants. If you are looking for assignment help Sunderland students can use alongside lectures, placements and part-time work, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.",
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are actually taking.",
+    "Sunderland students span a wide range of courses, from pharmacy and the newer medical school to automotive engineering, business and media, and the university also teaches many students on its London campus. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Sunderland we support",
-      paragraphs: ["We support students at every university in Sunderland. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["The University of Sunderland teaches at its City Campus, at the riverside St Peter's Campus and at a separate campus in London. FIZBS is an independent online service and is not affiliated with the university, so your expert works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Sunderland",
@@ -64,47 +64,24 @@ export const assignmentHelpSunderland: LandingContent = {
       ],
     },
     {
-      heading: "What our guidance includes",
+      heading: "Dissertation and project ideas with a Sunderland angle",
       paragraphs: [
-        "You stay the author of your work. Our experts help you understand the task and improve your own writing:",
-      ],
-      bullets: [
-        "One-to-one explanation of your brief, the theory and the marking criteria",
-        "A clear plan for the structure of your work and the sources to use",
-        "Written feedback on your own draft, showing what to improve and why",
-        "Proofreading and referencing checks on work you have written yourself",
+        "The city's car plant and the growth of electric vehicle battery manufacturing make Sunderland a natural base for projects on EV supply chains, lean production and the green skills gap. Pharmacy and health students often choose service evaluations, medicines optimisation or patient safety topics, and business students on the London campus can draw on international case studies.",
+        "Your expert helps you shape a focused question, review the literature and choose a method that fits your access to data, then analyse it in SPSS, NVivo or Excel. They explain, plan and give feedback, and you stay the author of your work.",
       ],
     },
     {
-      heading: "Dissertations and research support",
+      heading: "Prices and how Sunderland students get started",
       paragraphs: [
-        "Our experts have supported more than 350 research projects, from undergraduate dissertations to Master's theses. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python.",
-      ],
-    },
-    {
-      heading: "Pricing and deadlines",
-      paragraphs: [
-        "Guidance and feedback on assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Dissertation guidance is £30 per 1,000 words with a maximum of £350, and proofreading starts from £12 per 1,000 words.",
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
-      ],
-    },
-    {
-      heading: "Getting started",
-      paragraphs: [
-        "A short WhatsApp message with your subject, word count and deadline is enough for a quote. Payment is made in two parts: 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. To help your expert follow your module closely, it helps to share:",
-      ],
-      bullets: [
-        "Your assignment brief and marking rubric",
-        "Your word count, deadline and level of study",
-        "Lecture slides, reading lists or tutor feedback",
-        "Your required referencing style",
+        "Guidance starts at £20 per 1,000 words for a week or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 2,500-word essay needed within 48 hours, for example, comes to £75, or £67.50 with the 10% first-order discount, so an earlier start saves money. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Send your module, word count and deadline on WhatsApp with the brief and rubric, whether you study in Sunderland or London. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
       q: "Is FIZBS based in Sunderland?",
-      a: "We are an online service rather than a local office in Sunderland. Students in the city share their brief on WhatsApp or through our website and receive expert support remotely.",
+      a: "No. FIZBS works fully online, so students in Sunderland and on the London campus share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: "Which Sunderland universities do you support?",
@@ -120,15 +97,15 @@ export const assignmentHelpSunderland: LandingContent = {
     },
     {
       q: "How much does assignment help in Sunderland cost?",
-      a: "Guidance and feedback start from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 2,500-word essay due within 48 hours, for example, is £75 before your 10% first-order discount.",
     },
     {
-      q: "Do you help with dissertations?",
-      a: "Yes. Dissertation guidance covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.",
+      q: "Can you help with an electric vehicle or battery supply chain assignment?",
+      a: "Yes. Our operations and engineering experts help you analyse EV supply chains, battery production and sustainability using recent industry and government sources.",
     },
     {
-      q: "How do I pay?",
-      a: "You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
+      q: "Can you help with a pharmacy reflective portfolio?",
+      a: "Yes. We help you structure reflections with a recognised model, link your placement experience to evidence and professional standards, and keep patient details anonymous.",
     },
   ],
   ctaTitle: "Get your Sunderland assignment price in minutes",

@@ -21,12 +21,12 @@ export const assignmentHelpSheffield: LandingContent = {
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Technical and health subjects', '10% off first order'],
   intro: [
     'Sheffield is a large and friendly student city in South Yorkshire, with two big universities and a strong reputation for engineering, management and professional courses such as nursing, social work and teaching. If you are looking for assignment help Sheffield students can fit around labs, placements and part-time work, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.',
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are taking.",
+    "Sheffield combines a steel-making heritage with advanced manufacturing research, and its two universities are known for engineering, health, education and sport, with many students on placements and group design projects. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Sheffield we support",
-      paragraphs: ["We support students at every university in Sheffield. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["The University of Sheffield's campus runs west from the city centre, and Sheffield Hallam University teaches at its City Campus and at Collegiate Crescent. FIZBS is an independent online service and is not affiliated with either, so your expert works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Sheffield",
@@ -112,23 +112,17 @@ export const assignmentHelpSheffield: LandingContent = {
       ],
     },
     {
-      heading: 'Pricing and deadlines',
+      heading: "Prices and how Sheffield students get started",
       paragraphs: [
-        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%.',
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
-      ],
-    },
-    {
-      heading: 'Getting started',
-      paragraphs: [
-        'Send your subject, word count and deadline on WhatsApp for a quick quote. To help your expert follow your module closely, share your brief, marking rubric, lab sheets or data, and any feedback you have received.',
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. Your 1,500-word individual reflection on a group design project due in a week, for example, comes to £30, or £27 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Send your module, word count and deadline on WhatsApp, with the brief, rubric and any lab data or design files. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
-      q: 'Is FIZBS based in Sheffield?',
-      a: 'We are an online service rather than a local office. Students in Sheffield share their brief on WhatsApp or through our website and receive expert support remotely.',
+      q: "Is FIZBS based in Sheffield?",
+      a: "No. FIZBS works fully online, so students at the University of Sheffield and Sheffield Hallam share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: 'Which Sheffield universities do you support?',
@@ -143,16 +137,16 @@ export const assignmentHelpSheffield: LandingContent = {
       a: 'Yes. We help with reflective writing, evidence-based practice essays, case studies and portfolios for professional courses with placements.',
     },
     {
-      q: 'How much does assignment help in Sheffield cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. Shorter deadlines add 25% or 50%, and first-time customers get 10% off.',
+      q: "How much does assignment help in Sheffield cost?",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 1,500-word reflection due in a week, for example, is £30 before your 10% first-order discount.",
     },
     {
       q: 'Do you help with dissertations and final-year projects?',
       a: 'Yes. Support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
     },
     {
-      q: 'How do I pay?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+      q: "Can you help with an advanced manufacturing or materials assignment?",
+      a: "Yes. Our engineering experts help with materials selection, manufacturing processes and Industry 4.0 topics, and show you how to present calculations and results clearly.",
     },
   ],
   ctaTitle: 'Get your Sheffield assignment price in minutes',

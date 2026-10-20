@@ -21,12 +21,12 @@ export const assignmentHelpLeicester: LandingContent = {
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Distance learners welcome', '10% off first order'],
   intro: [
     'Leicester is a major student city in the East Midlands and one of the most diverse cities in the UK. It also has a long tradition of distance learning, so many of its students study from home, from work or from another country. If you are looking for assignment help Leicester students can use wherever they are, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.',
-    "Since 2015 we have supported more than 10,000 university students in the UK, Saudi Arabia and the Gulf. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are actually taking.",
+    "Leicester students range from campus undergraduates at the University of Leicester and De Montfort University to distance learners studying Leicester programmes from around the world, and many choose research topics shaped by the city's diverse communities. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Leicester we support",
-      paragraphs: ["We support students at every university in Leicester. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["The University of Leicester is just south of the city centre near Victoria Park, De Montfort University's campus sits in the city centre by the River Soar, and Loughborough University is a short trip away. FIZBS is an independent online service and is not affiliated with any of them, so your expert works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Leicester",
@@ -78,35 +78,24 @@ export const assignmentHelpLeicester: LandingContent = {
       ],
     },
     {
-      heading: 'Dissertations and research support',
+      heading: "Dissertation and project ideas with a Leicester angle",
       paragraphs: [
-        "Our experts have supported more than 350 research projects, from undergraduate dissertations to Master's theses. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python.",
+        "Leicester's mix of communities and businesses gives students strong material for projects on diaspora entrepreneurship, health inequalities, community pharmacy or inclusive education, while law and criminology students often work with published case law and policy documents. Distance learners usually build their dissertation around their own workplace or country.",
+        "Your expert helps you design a project you can complete with the access you have, plan the literature review and analyse data in SPSS, NVivo or Excel. They explain, plan and give feedback, and you stay the author of your work.",
       ],
     },
     {
-      heading: 'Pricing and deadlines',
+      heading: "Prices and how Leicester students get started",
       paragraphs: [
-        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Dissertation support is £30 per 1,000 words with a maximum of £350, and proofreading starts from £12 per 1,000 words.',
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
-      ],
-    },
-    {
-      heading: 'Getting started',
-      paragraphs: [
-        'A short WhatsApp message with your subject, word count and deadline is enough for a quote. Payment is made in two parts: 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. To help your expert follow your module closely, it helps to share:',
-      ],
-      bullets: [
-        'Your assignment brief and marking rubric',
-        'Your word count, deadline and level of study',
-        'Module materials, reading lists or tutor feedback',
-        'Your required referencing style',
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,000-word law essay due in four days, for example, comes to £75, or £67.50 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Send your module, word count and deadline on WhatsApp with the brief and rubric. Distance learners in any time zone can message us whenever suits them, as our team replies 24/7. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
-      q: 'Is FIZBS based in Leicester?',
-      a: 'We are an online service rather than a local office. Students in Leicester and on Leicester distance learning programmes share their brief on WhatsApp or through our website and receive expert support remotely.',
+      q: "Is FIZBS based in Leicester?",
+      a: "No. FIZBS works fully online, so students on campus in Leicester and distance learners abroad share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: 'Which Leicester universities do you support?',
@@ -121,16 +110,16 @@ export const assignmentHelpLeicester: LandingContent = {
       a: 'Yes. Our law experts guide you through the IRAC method, help you identify the relevant cases and legislation, and check your OSCOLA referencing.',
     },
     {
-      q: 'How much does assignment help in Leicester cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.',
+      q: "How much does assignment help in Leicester cost?",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 3,000-word essay due in four days, for example, is £75 before your 10% first-order discount.",
     },
     {
-      q: 'Do you help with dissertations?',
-      a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
+      q: "Can you help with a pharmacy assignment at De Montfort?",
+      a: "Yes. Our health and pharmacy experts help with case studies, reflective portfolios and research projects, linking your work to evidence and professional standards.",
     },
     {
-      q: 'How do I pay?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+      q: "Do you support students at Loughborough University too?",
+      a: "Yes. We support Loughborough students in business, engineering and sport science, online through WhatsApp or our website.",
     },
   ],
   ctaTitle: 'Get your Leicester assignment price in minutes',

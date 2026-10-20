@@ -21,12 +21,12 @@ export const assignmentHelpSouthampton: LandingContent = {
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Maritime and logistics', '10% off first order'],
   intro: [
     "Southampton is a port city with two universities, the UK's busiest cruise port and a national centre for ocean science. If you are looking for assignment help Southampton students can fit around lectures, lab sessions and part-time work, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.",
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are actually taking.",
+    "Southampton students study in one of the UK's busiest port cities, with strengths in oceanography, engineering, maritime studies and business, and a large international community at both universities. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Southampton we support",
-      paragraphs: ["We support students at every university in Southampton. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["The University of Southampton's main campus is at Highfield, with ocean science at the waterfront National Oceanography Centre, while Solent University is in the city centre and runs the Warsash Maritime School. FIZBS is an independent online service and is not affiliated with any university, so your expert works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Southampton",
@@ -89,35 +89,24 @@ export const assignmentHelpSouthampton: LandingContent = {
       ],
     },
     {
-      heading: 'Dissertations and research support',
+      heading: "Dissertation and project ideas with a Southampton angle",
       paragraphs: [
-        "Our experts have supported more than 350 research projects. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python.",
+        "The port and the cruise industry give business and logistics students plenty to research, from container terminal efficiency to sustainable cruise tourism, while ocean and environmental science students often work with marine data sets. Events, sport and marketing students at Solent can build projects around live events or local clubs.",
+        "Your expert helps you frame a focused question, structure the literature review and choose a method, whether that is analysing published data, running a survey or interviewing managers. They explain, plan and give feedback, and you stay the author of your work.",
       ],
     },
     {
-      heading: 'Pricing and deadlines',
+      heading: "Prices and how Southampton students get started",
       paragraphs: [
-        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Dissertation support is £30 per 1,000 words with a maximum of £350, and proofreading starts from £12 per 1,000 words.',
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
-      ],
-    },
-    {
-      heading: 'Getting started',
-      paragraphs: [
-        'A short WhatsApp message with your subject, word count and deadline is enough for a quote. Payment is made in two parts: 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. To help your expert follow your module closely, it helps to share:',
-      ],
-      bullets: [
-        'Your assignment brief and marking rubric',
-        'Your word count, deadline and level of study',
-        'Lecture slides, reading lists or tutor feedback',
-        'Your required referencing style',
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 4,000-word logistics report due in three days, for example, comes to £100, or £90 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Send your module, word count and deadline on WhatsApp, along with the brief, rubric and any lab or field data. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
-      q: 'Is FIZBS based in Southampton?',
-      a: 'We are an online service rather than a local office. Students in Southampton share their brief on WhatsApp or through our website and receive expert support remotely.',
+      q: "Is FIZBS based in Southampton?",
+      a: "No. FIZBS works fully online, so students at the University of Southampton, Solent and Winchester share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: 'Which Southampton universities do you support?',
@@ -132,16 +121,16 @@ export const assignmentHelpSouthampton: LandingContent = {
       a: 'Yes. We help you structure each section, present data clearly and write a discussion that explains what your results mean.',
     },
     {
-      q: 'How much does assignment help in Southampton cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.',
+      q: "How much does assignment help in Southampton cost?",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 4,000-word report due in three days, for example, is £100 before your 10% first-order discount.",
     },
     {
-      q: 'Do you help with dissertations?',
-      a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
+      q: "Can you help with an events or sport management assignment?",
+      a: "Yes. Our business experts help with event plans, risk assessments, sponsorship and marketing reports, and sport management case studies.",
     },
     {
-      q: 'How do I pay?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+      q: "Can you help with a cruise or tourism case study?",
+      a: "Yes. We help you analyse cruise and tourism businesses with frameworks such as PESTLE and the services marketing mix, using current industry evidence.",
     },
   ],
   ctaTitle: 'Get your Southampton assignment price in minutes',

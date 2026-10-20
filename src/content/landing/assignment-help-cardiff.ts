@@ -21,12 +21,12 @@ export const assignmentHelpCardiff: LandingContent = {
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Welsh policy context', '10% off first order'],
   intro: [
     "Cardiff is the capital of Wales and its largest student city, with several universities and a policy landscape that is different in important ways from England's. If you are looking for assignment help Cardiff students can fit around lectures, placements and part-time work, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.",
-    "Since 2015 we have supported more than 10,000 university students. Our Master's and PhD-qualified experts work from your own brief and marking criteria, so the guidance fits the module you are actually taking.",
+    "Cardiff students work within a Welsh policy context, from NHS Wales to the Curriculum for Wales, and the city's three universities cover everything from medicine and journalism to sport and the creative industries. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
   ],
   sections: [
     {
       heading: "Universities in Cardiff we support",
-      paragraphs: ["We support students at every university in Cardiff. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["Cardiff University is centred on Cathays Park, Cardiff Metropolitan University teaches at Llandaff and Cyncoed, and the University of South Wales has a campus in the city as well as in Pontypridd. FIZBS is an independent online service and is not affiliated with any of them, so your expert works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "Cardiff University",
@@ -88,35 +88,24 @@ export const assignmentHelpCardiff: LandingContent = {
       ],
     },
     {
-      heading: 'Dissertations and research support',
+      heading: "Dissertation and project ideas with a Welsh angle",
       paragraphs: [
-        "Our experts have supported more than 350 research projects. They can help you narrow a topic, write a proposal, review the literature, choose a methodology and analyse data in SPSS, NVivo, Excel, Stata or Python.",
+        "Many strong Cardiff dissertations use Welsh policy as their frame: the Well-being of Future Generations Act in sustainability or public services projects, the Curriculum for Wales in education research, or NHS Wales priorities in nursing and health topics. Sport, media and journalism students can draw on the city's stadiums, broadcasters and festivals.",
+        "Your expert helps you choose a focused question, review Welsh and UK sources critically and design a method you can complete, from policy analysis to interviews or surveys. They explain, plan and give feedback, and you stay the author of your work.",
       ],
     },
     {
-      heading: 'Pricing and deadlines',
+      heading: "Prices and how Cardiff students get started",
       paragraphs: [
-        'Support starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Dissertation support is £30 per 1,000 words with a maximum of £350, and proofreading starts from £12 per 1,000 words.',
-        "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
-      ],
-    },
-    {
-      heading: 'Getting started',
-      paragraphs: [
-        'A short WhatsApp message with your subject, word count and deadline is enough for a quote. Payment is made in two parts: 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. To help your expert follow your module closely, it helps to share:',
-      ],
-      bullets: [
-        'Your assignment brief and marking rubric',
-        'Your word count, deadline and level of study',
-        'Lecture slides, reading lists or tutor feedback',
-        'Your required referencing style',
+        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,000-word nursing essay due in nine days, for example, comes to £60, or £54 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words, capped at £350.",
+        "Send your module, word count and deadline on WhatsApp with the brief and rubric. Our experts support work written in English. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
   faqs: [
     {
-      q: 'Is FIZBS based in Cardiff?',
-      a: 'We are an online service rather than a local office. Students in Cardiff share their brief on WhatsApp or through our website and receive expert support remotely.',
+      q: "Is FIZBS based in Cardiff?",
+      a: "No. FIZBS works fully online, so students at Cardiff University, Cardiff Met and the University of South Wales share their brief on WhatsApp or through our website and receive support remotely.",
     },
     {
       q: 'Which Cardiff universities do you support?',
@@ -131,16 +120,16 @@ export const assignmentHelpCardiff: LandingContent = {
       a: 'Our experts support work written in English. If your module allows either language, we can help you with the English version of your assignment.',
     },
     {
-      q: 'How much does assignment help in Cardiff cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.',
+      q: "How much does assignment help in Cardiff cost?",
+      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 3,000-word essay due in nine days, for example, is £60 before your 10% first-order discount.",
     },
     {
-      q: 'Do you help with dissertations?',
-      a: 'Yes. Dissertation support covers topic choice, proposals, literature reviews, methodology and data analysis, at £30 per 1,000 words with a maximum of £350.',
+      q: "Can you help with a sport or exercise science assignment at Cardiff Met?",
+      a: "Yes. We help sport and exercise science students with lab reports, coaching reflections and research projects, including statistics and clear presentation of results.",
     },
     {
-      q: 'How do I pay?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+      q: "Can you help with a journalism or media essay?",
+      a: "Yes. Our media experts help you build a clear argument, use current examples and reference news sources correctly in the style your school requires.",
     },
   ],
   ctaTitle: 'Get your Cardiff assignment price in minutes',
