@@ -19,6 +19,8 @@ export const AR_BLOG_HUB: { sections: HubSection[]; faqs: { q: string; a: string
         'تغطي الأدلة أهم ما يُطلب في الرسائل العلمية والبحوث الجامعية: اختيار عنوان الرسالة، وكتابة خطة البحث، والإطار النظري والدراسات السابقة، والفرق بين البحث الكمي والنوعي، وكتابة الملخص، والتوثيق بنظام APA، إضافة إلى دليل يوضح حدود استخدام الذكاء الاصطناعي في الكتابة الأكاديمية، ودليل خاص بمشروع التخرج لمرحلة الماجستير في جامعة أم القرى.',
       ],
       links: [
+        { label: 'دليل مشروع التخرج مع أفكار حسب التخصص', href: '/ar/blog/graduation-project-guide' },
+        { label: 'كيف تكتب مقدمة بحث جامعي', href: '/ar/blog/how-to-write-a-research-introduction' },
         { label: 'مشروع التخرج للماجستير في جامعة أم القرى', href: '/ar/blog/masters-graduation-project-umm-al-qura' },
         { label: 'المساعدة لطلاب مكة المكرمة', href: '/ar/assignment-help-makkah' },
       ],
