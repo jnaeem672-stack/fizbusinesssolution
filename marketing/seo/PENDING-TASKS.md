@@ -136,6 +136,17 @@ Second bulk check, 20 Oct 22:40 (sa_bulk_list1-99.csv and uk_bulk_list2-95.csv):
   Medium, Substack, Issuu. Not yet checked: Sanad, Al-Daam, Assignment Master, Emtiyaz, Services Researcher,
   SciGuide, New, Global, Assignment Desk, Students AH, Assignment Experts.
 
+### Our own site in Semrush (Domain Overview, 20 Oct 2026)
+- Saudi database: NO DATA (Semrush shows no Saudi rankings for us yet). Use Google Search Console (Performance,
+  country Saudi Arabia) for real Arabic queries and positions; Position Tracking (10 Saudi keywords) from 21 Oct.
+- Keywords by country: UK 34%, US 21%, Australia 10%, Canada, Sweden, South Africa 3% each, UAE 3%.
+- US positions (us_fizbs-positions.csv, 13 rows): "primary research versus secondary research" 32 (260),
+  "how to write literature review for research proposal" 38, Harvard generator terms 75 to 90.
+- Backlinks: 61 links from 28 domains. The top ones are spam from link-selling sites (.xyz pages, anchors like
+  "the niche edits for fizbusinessolutions.com boosted traffic by 150%"). They look like automated spam that link
+  sellers put on many sites. Unless someone bought them, ignore them; no disavow unless Search Console shows a
+  manual action.
+
 ### Backlinks
 Competitor backlinks are almost all spam (score 2 to 5, auto-generated sites). Do not buy or copy them.
 Real links only: LinkedIn, Haraj, Business Profile, education blogs, and the GPA calculator and Harvard
