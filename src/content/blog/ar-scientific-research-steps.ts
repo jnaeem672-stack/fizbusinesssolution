@@ -100,6 +100,7 @@ export const arScientificResearchStepsPost: BlogPost = {
       ],
       links: [
         { label: 'دليل الإطار النظري والدراسات السابقة', href: '/ar/blog/theoretical-framework-and-literature-review' },
+        { label: 'عمل استبيان خطوة بخطوة', href: '/ar/blog/how-to-make-a-questionnaire' },
         { label: 'كيف تكتب خاتمة البحث', href: '/ar/blog/how-to-write-a-research-conclusion' },
       ],
     },

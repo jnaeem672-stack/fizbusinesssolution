@@ -102,6 +102,7 @@ export const arQuantitativeVsQualitativeResearchPost: BlogPost = {
           ],
         },
       ],
+      links: [{ label: 'دليل عمل الاستبيان خطوة بخطوة', href: '/ar/blog/how-to-make-a-questionnaire' }],
     },
     {
       heading: 'العينات في البحث الكمي والنوعي',

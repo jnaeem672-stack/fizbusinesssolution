@@ -17,6 +17,9 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   dissertation help, law page (tort, contract, criminal, company subsections, law dissertation section).
   "رسالة ماجستير" went on /ar/dissertation-help-saudi-arabia (the master's page), not ar-thesis-help (PhD page), so
   two pages do not compete. Request Indexing for these 8 pages on 22 Oct.
+- 21 Oct: Questionnaire guide DONE: /ar/blog/how-to-make-a-questionnaire (عمل استبيان, نموذج استبيان, مقياس ليكرت,
+  استبيان قوقل section, صدق وثبات, sample questionnaire). Linked from the hub, research steps and quantitative guides.
+  Next in order: OSCOLA referencing generator and guide (UK), then Arabic presentation page.
 - 21 Oct, after Quick wins (owner moved it up on 20 Oct 23:29): Task C "Business Profile". The owner says FIZBS
   has a person, phone number and address in Saudi Arabia, the UK and the USA. For each one, check with the owner
   before any profile: does that person really work for FIZBS from that place, meet or serve students there (or
