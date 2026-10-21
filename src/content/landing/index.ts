@@ -48,26 +48,10 @@ import { cmiAssignmentHelp } from './cmi-assignment-help';
 import { othmAtheAssignmentHelp } from './othm-athe-assignment-help';
 import { assignmentHelpLeeds } from './assignment-help-leeds';
 import { assignmentHelpGlasgow } from './assignment-help-glasgow';
-import { assignmentHelpEdinburgh } from './assignment-help-edinburgh';
-import { assignmentHelpNottingham } from './assignment-help-nottingham';
-import { assignmentHelpSheffield } from './assignment-help-sheffield';
 import { assignmentHelpLiverpool } from './assignment-help-liverpool';
 import { assignmentHelpBristol } from './assignment-help-bristol';
-import { assignmentHelpNewcastle } from './assignment-help-newcastle';
-import { assignmentHelpLeicester } from './assignment-help-leicester';
-import { assignmentHelpCoventry } from './assignment-help-coventry';
-import { assignmentHelpCardiff } from './assignment-help-cardiff';
-import { assignmentHelpSouthampton } from './assignment-help-southampton';
-import { assignmentHelpNorthampton } from './assignment-help-northampton';
-import { assignmentHelpPortsmouth } from './assignment-help-portsmouth';
-import { assignmentHelpHull } from './assignment-help-hull';
-import { assignmentHelpSunderland } from './assignment-help-sunderland';
-import { assignmentHelpMiddlesbrough } from './assignment-help-middlesbrough';
 import { assignmentHelpLuton } from './assignment-help-luton';
 import { assignmentHelpBradford } from './assignment-help-bradford';
-import { assignmentHelpDerby } from './assignment-help-derby';
-import { assignmentHelpWolverhampton } from './assignment-help-wolverhampton';
-import { assignmentHelpOxford } from './assignment-help-oxford';
 import { hrmAssignmentHelp } from './hrm-assignment-help';
 import { economicsAssignmentHelp } from './economics-assignment-help';
 import { psychologyAssignmentHelp } from './psychology-assignment-help';
@@ -75,21 +59,10 @@ import { educationAssignmentHelp } from './education-assignment-help';
 import { projectManagementAssignmentHelp } from './project-management-assignment-help';
 import { supplyChainLogisticsAssignmentHelp } from './supply-chain-logistics-assignment-help';
 import { assignmentHelpMakkah } from './assignment-help-makkah';
-import { assignmentHelpMadinah } from './assignment-help-madinah';
-import { assignmentHelpAbha } from './assignment-help-abha';
-import { assignmentHelpTaif } from './assignment-help-taif';
-import { assignmentHelpQassim } from './assignment-help-qassim';
-import { assignmentHelpTabuk } from './assignment-help-tabuk';
 import { assignmentHelpUae } from './assignment-help-uae';
 import { assignmentHelpUsa } from './assignment-help-usa';
 import { assignmentHelpDubai } from './assignment-help-dubai';
-import { assignmentHelpAbuDhabi } from './assignment-help-abu-dhabi';
 import { arAssignmentHelpMakkah } from './ar-assignment-help-makkah';
-import { arAssignmentHelpMadinah } from './ar-assignment-help-madinah';
-import { arAssignmentHelpAbha } from './ar-assignment-help-abha';
-import { arAssignmentHelpTaif } from './ar-assignment-help-taif';
-import { arAssignmentHelpQassim } from './ar-assignment-help-qassim';
-import { arAssignmentHelpTabuk } from './ar-assignment-help-tabuk';
 import { arResearchProposalHelp } from './ar-research-proposal-help';
 import { arSpssHelp } from './ar-spss-help';
 import { arMbaAssignmentHelp } from './ar-mba-assignment-help';
@@ -119,38 +92,16 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   assignmentHelpBirmingham,
   assignmentHelpLeeds,
   assignmentHelpGlasgow,
-  assignmentHelpEdinburgh,
-  assignmentHelpNottingham,
-  assignmentHelpSheffield,
   assignmentHelpLiverpool,
   assignmentHelpBristol,
-  assignmentHelpNewcastle,
-  assignmentHelpLeicester,
-  assignmentHelpCoventry,
-  assignmentHelpCardiff,
-  assignmentHelpSouthampton,
-  assignmentHelpNorthampton,
-  assignmentHelpPortsmouth,
-  assignmentHelpHull,
-  assignmentHelpSunderland,
-  assignmentHelpMiddlesbrough,
   assignmentHelpLuton,
   assignmentHelpBradford,
-  assignmentHelpDerby,
-  assignmentHelpWolverhampton,
-  assignmentHelpOxford,
   assignmentHelpRiyadh,
   assignmentHelpJeddah,
   assignmentHelpDammam,
   assignmentHelpMakkah,
-  assignmentHelpMadinah,
-  assignmentHelpAbha,
-  assignmentHelpTaif,
-  assignmentHelpQassim,
-  assignmentHelpTabuk,
   assignmentHelpUae,
   assignmentHelpDubai,
-  assignmentHelpAbuDhabi,
   assignmentHelpUsa,
   essayHelp,
   courseworkReportHelp,
@@ -195,11 +146,6 @@ export const AR_LANDING_PAGES: LandingContent[] = [
   arAssignmentHelpJeddah,
   arAssignmentHelpDammam,
   arAssignmentHelpMakkah,
-  arAssignmentHelpMadinah,
-  arAssignmentHelpAbha,
-  arAssignmentHelpTaif,
-  arAssignmentHelpQassim,
-  arAssignmentHelpTabuk,
   arMbaAssignmentHelp,
   arResearchProposalHelp,
   arThesisHelp,
@@ -254,35 +200,14 @@ export const CITY_LINKS: { label: string; href: string }[] = [
   { label: 'Assignment Help Birmingham', href: '/assignment-help-birmingham' },
   { label: 'Assignment Help Leeds', href: '/assignment-help-leeds' },
   { label: 'Assignment Help Glasgow', href: '/assignment-help-glasgow' },
-  { label: 'Assignment Help Edinburgh', href: '/assignment-help-edinburgh' },
-  { label: 'Assignment Help Nottingham', href: '/assignment-help-nottingham' },
-  { label: 'Assignment Help Sheffield', href: '/assignment-help-sheffield' },
   { label: 'Assignment Help Liverpool', href: '/assignment-help-liverpool' },
   { label: 'Assignment Help Bristol', href: '/assignment-help-bristol' },
-  { label: 'Assignment Help Newcastle', href: '/assignment-help-newcastle' },
-  { label: 'Assignment Help Leicester', href: '/assignment-help-leicester' },
-  { label: 'Assignment Help Coventry', href: '/assignment-help-coventry' },
-  { label: 'Assignment Help Cardiff', href: '/assignment-help-cardiff' },
-  { label: 'Assignment Help Southampton', href: '/assignment-help-southampton' },
-  { label: 'Assignment Help Northampton', href: '/assignment-help-northampton' },
-  { label: 'Assignment Help Portsmouth', href: '/assignment-help-portsmouth' },
-  { label: 'Assignment Help Hull', href: '/assignment-help-hull' },
-  { label: 'Assignment Help Sunderland', href: '/assignment-help-sunderland' },
-  { label: 'Assignment Help Middlesbrough', href: '/assignment-help-middlesbrough' },
   { label: 'Assignment Help Luton', href: '/assignment-help-luton' },
   { label: 'Assignment Help Bradford', href: '/assignment-help-bradford' },
-  { label: 'Assignment Help Derby', href: '/assignment-help-derby' },
-  { label: 'Assignment Help Wolverhampton', href: '/assignment-help-wolverhampton' },
-  { label: 'Assignment Help Oxford', href: '/assignment-help-oxford' },
   { label: 'Assignment Help Riyadh', href: '/assignment-help-riyadh' },
   { label: 'Assignment Help Jeddah', href: '/assignment-help-jeddah' },
   { label: 'Assignment Help Dammam', href: '/assignment-help-dammam' },
   { label: 'Assignment Help Makkah', href: '/assignment-help-makkah' },
-  { label: 'Assignment Help Madinah', href: '/assignment-help-madinah' },
-  { label: 'Assignment Help Abha', href: '/assignment-help-abha' },
-  { label: 'Assignment Help Taif', href: '/assignment-help-taif' },
-  { label: 'Assignment Help Qassim', href: '/assignment-help-qassim' },
-  { label: 'Assignment Help Tabuk', href: '/assignment-help-tabuk' },
 ];
 
 export const SUBJECT_LINKS: { label: string; href: string }[] = [
@@ -307,7 +232,6 @@ const SAUDI_CITY_HREFS = SAUDI_CITY_SLUGS.map((slug) => `/${slug}`);
 export const UAE_LINKS: { label: string; href: string }[] = [
   { label: 'Assignment Help UAE', href: '/assignment-help-uae' },
   { label: 'Assignment Help Dubai', href: '/assignment-help-dubai' },
-  { label: 'Assignment Help Abu Dhabi', href: '/assignment-help-abu-dhabi' },
 ];
 export const UK_CITY_LINKS = CITY_LINKS.filter((l) => !SAUDI_CITY_HREFS.includes(l.href));
 export const SAUDI_CITY_LINKS = CITY_LINKS.filter((l) => SAUDI_CITY_HREFS.includes(l.href));

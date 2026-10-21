@@ -184,5 +184,5 @@ export const assignmentHelpDubai: LandingContent = {
   ctaText:
     'Send your brief on WhatsApp, or use our instant calculator to see your price in AED. Dubai students get 10% off their first order.',
   whatsappMessage: 'Hello FIZBS! I am a student in Dubai and need assignment help. Subject: , Word count: , Deadline: ',
-  related: ['assignment-help-uae', 'assignment-help-abu-dhabi', 'mba-assignment-help', 'business-management-assignment-help', 'assignment-help-uk'],
+  related: ['assignment-help-uae', 'assignment-help-saudi-arabia', 'mba-assignment-help', 'business-management-assignment-help', 'assignment-help-uk'],
 };

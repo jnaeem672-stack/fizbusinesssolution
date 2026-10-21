@@ -14,7 +14,7 @@ export const BASE_PRICES = {
 } as const;
 
 /** UAE landing pages show prices in AED */
-export const UAE_SLUGS = ['assignment-help-uae', 'assignment-help-dubai', 'assignment-help-abu-dhabi'];
+export const UAE_SLUGS = ['assignment-help-uae', 'assignment-help-dubai'];
 
 export function currencyFor(slug: string | undefined, locale: 'en' | 'ar'): Currency {
   if (locale === 'ar') return 'SAR';

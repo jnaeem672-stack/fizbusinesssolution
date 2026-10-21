@@ -156,5 +156,5 @@ export const assignmentHelpLeeds: LandingContent = {
   ctaTitle: 'Get your Leeds assignment price in minutes',
   ctaText: 'Message us on WhatsApp any time or use the instant calculator to see your price. New customers get 10% off their first order.',
   whatsappMessage: 'Hi FIZBS! I am a student in Leeds and need assignment help. Subject: , Word count: , Deadline: ',
-  related: ['assignment-help-uk', 'dissertation-help-uk', 'law-assignment-help', 'assignment-help-manchester', 'assignment-help-sheffield'],
+  related: ['assignment-help-uk', 'dissertation-help-uk', 'law-assignment-help', 'assignment-help-manchester', 'assignment-help-bradford'],
 };

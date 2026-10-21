@@ -15,11 +15,6 @@ export const SAUDI_CITY_SLUGS = [
   'assignment-help-jeddah',
   'assignment-help-dammam',
   'assignment-help-makkah',
-  'assignment-help-madinah',
-  'assignment-help-abha',
-  'assignment-help-taif',
-  'assignment-help-qassim',
-  'assignment-help-tabuk',
 ];
 
 /** Arabic city pages, labelled for Arabic readers (same slugs as the English city pages) */
@@ -28,11 +23,6 @@ const AR_CITY_NAMES: Record<string, string> = {
   'assignment-help-jeddah': 'جدة',
   'assignment-help-dammam': 'الدمام',
   'assignment-help-makkah': 'مكة المكرمة',
-  'assignment-help-madinah': 'المدينة المنورة',
-  'assignment-help-abha': 'أبها وعسير',
-  'assignment-help-taif': 'الطائف',
-  'assignment-help-qassim': 'القصيم',
-  'assignment-help-tabuk': 'تبوك',
 };
 
 export const AR_CITY_LINKS: NavItem[] = SAUDI_CITY_SLUGS.map((slug) => ({

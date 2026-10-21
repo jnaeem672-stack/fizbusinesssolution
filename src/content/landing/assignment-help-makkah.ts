@@ -167,5 +167,5 @@ export const assignmentHelpMakkah: LandingContent = {
   ctaText:
     'Send your brief in Arabic or English and ask for the SAR price, or use our instant GBP calculator. Makkah students get 10% off their first order.',
   whatsappMessage: 'Hello FIZBS! I am a student in Makkah and need assignment help. Subject: , Word count: , Deadline: ',
-  related: ['assignment-help-saudi-arabia', 'healthcare-nursing-assignment-help', 'research-proposal-help', 'assignment-help-jeddah', 'assignment-help-madinah'],
+  related: ['assignment-help-saudi-arabia', 'healthcare-nursing-assignment-help', 'research-proposal-help', 'assignment-help-jeddah', 'assignment-help-riyadh'],
 };

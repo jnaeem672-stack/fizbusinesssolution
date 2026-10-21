@@ -55,6 +55,9 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   country page in the same language; Abu Dhabi to /assignment-help-uae. WAIT for the owner's Search Console Pages
   export first: keep any page that already gets clicks or impressions. Update related lists, UK_CITIES (tools.ts),
   CITY_LINKS and sitemap when redirecting.
+- Done 21 Oct evening: 27 thin city pages removed with permanent redirects in next.config (16 UK to /assignment-help-uk,
+  Abha, Madinah, Qassim, Tabuk, Taif EN and AR to the Saudi page, Abu Dhabi to /assignment-help-uae). Liverpool kept.
+  Sitemap now 168 URLs. 18 city pages remain to enrich.
 - Done 21 Oct (5885699): lighter city template (no call block, payment block or their FAQs on city pages).
   Identical long sentences: Hull vs Luton 52% to 39%, London vs Manchester 24% to 14%.
 - Enrich each kept page with verifiable local detail (universities with official links, their referencing

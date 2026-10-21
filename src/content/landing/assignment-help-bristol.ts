@@ -131,5 +131,5 @@ export const assignmentHelpBristol: LandingContent = {
   ctaTitle: 'Get your Bristol assignment price in minutes',
   ctaText: 'Message us on WhatsApp any time or use the instant calculator to see your price. New customers get 10% off their first order.',
   whatsappMessage: 'Hi FIZBS! I am a student in Bristol and need assignment help. Subject: , Word count: , Deadline: ',
-  related: ['assignment-help-uk', 'dissertation-help-uk', 'engineering-assignment-help', 'assignment-help-cardiff', 'assignment-help-birmingham'],
+  related: ['assignment-help-uk', 'dissertation-help-uk', 'engineering-assignment-help', 'assignment-help-london', 'assignment-help-birmingham'],
 };

@@ -39,11 +39,8 @@ export interface ToolContent {
   whatsappMessage: string;
 }
 
-const UK_CITIES = [
-  'birmingham', 'bradford', 'bristol', 'cardiff', 'coventry', 'derby', 'edinburgh', 'glasgow', 'hull', 'leeds', 'leicester', 'liverpool', 'london',
-  'luton', 'manchester', 'middlesbrough', 'newcastle', 'northampton', 'nottingham', 'oxford', 'portsmouth', 'sheffield', 'southampton', 'sunderland', 'wolverhampton',
-].map((c) => `assignment-help-${c}`);
-const SAUDI_PAGES = ['saudi-arabia', 'riyadh', 'jeddah', 'dammam', 'makkah', 'madinah', 'abha', 'taif', 'qassim', 'tabuk'].map((c) => `assignment-help-${c}`);
+const UK_CITIES = ['birmingham', 'bradford', 'bristol', 'glasgow', 'leeds', 'liverpool', 'london', 'luton', 'manchester'].map((c) => `assignment-help-${c}`);
+const SAUDI_PAGES = ['saudi-arabia', 'riyadh', 'jeddah', 'dammam', 'makkah'].map((c) => `assignment-help-${c}`);
 
 /** Guides where an in-article box points students to the referencing generators */
 const REFERENCING_GUIDES = [
@@ -187,7 +184,7 @@ export const TOOLS: ToolContent[] = [
         a: 'No. The calculation runs in your browser and your marks are not sent to us or stored on our servers.',
       },
     ],
-    services: ['dissertation-help-uk', 'assignment-help-uk', 'draft-review-feedback', 'essay-help', 'assignment-help-glasgow', 'assignment-help-edinburgh'],
+    services: ['dissertation-help-uk', 'assignment-help-uk', 'draft-review-feedback', 'essay-help', 'assignment-help-glasgow', 'assignment-help-london'],
     guides: ['uk-university-grading-system', 'how-to-write-a-dissertation', 'how-to-structure-a-university-essay'],
     updated: '2026-10-21',
     whatsappMessage: 'Hello FIZBS! I used your degree calculator and would like help improving my marks. Subject: , Deadline: ',
@@ -350,7 +347,7 @@ export const TOOLS: ToolContent[] = [
     services: ['referencing-help', 'essay-help', 'proofreading-editing-services', 'literature-review-help'],
     guides: ['harvard-referencing-guide', 'apa-referencing-guide', 'how-to-paraphrase-and-avoid-plagiarism'],
     showOn: [
-      ...UK_CITIES, 'assignment-help-uk', 'dissertation-help-uk', 'assignment-help-uae', 'assignment-help-dubai', 'assignment-help-abu-dhabi',
+      ...UK_CITIES, 'assignment-help-uk', 'dissertation-help-uk', 'assignment-help-uae', 'assignment-help-dubai',
       'coursework-report-help', 'business-management-assignment-help', 'mba-assignment-help', 'research-proposal-help', 'case-study-help',
       'cipd-assignment-help', 'cmi-assignment-help', 'hnd-hnc-assignment-help', 'othm-athe-assignment-help', 'marketing-assignment-help', 'hrm-assignment-help',
     ],
