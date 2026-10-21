@@ -17,12 +17,12 @@ const SCHEMA = {
     name: 'FIZ Business Solutions',
     alternateName: 'FIZBS',
     url: 'https://fizbusinessolutions.com/',
-    email: 'jnaeem672@gmail.com',
+    email: 'info@fizbusinessolutions.com',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
       telephone: '+971543800388',
-      email: 'jnaeem672@gmail.com',
+      email: 'info@fizbusinessolutions.com',
       areaServed: ['GB', 'SA', 'AE', 'US'],
       availableLanguage: ['English'],
       hoursAvailable: {

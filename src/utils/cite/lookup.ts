@@ -7,7 +7,7 @@ import { fromCrossref, fromDataCite, fromGoogleBooks, fromOpenLibrary, fromOpenL
 import type { CiteResult } from './types';
 
 /** Crossref asks API users to identify themselves so that heavy use can be traced back */
-const CROSSREF_MAILTO = 'jnaeem672@gmail.com';
+const CROSSREF_MAILTO = 'info@fizbusinessolutions.com';
 
 type Json = Record<string, unknown>;
 

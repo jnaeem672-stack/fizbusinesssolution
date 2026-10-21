@@ -97,7 +97,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 { '@type': 'Person', name: 'Sajjad Akbar Ali', jobTitle: 'Co-Founder', url: 'https://fizbusinessolutions.com/experts/sajjad-akbar-ali' },
                 { '@type': 'Person', name: 'Fawad Hussain Khan', jobTitle: 'Co-Founder', url: 'https://fizbusinessolutions.com/experts/fawad-hussain-khan' },
               ],
-              email: 'jnaeem672@gmail.com',
+              email: 'info@fizbusinessolutions.com',
               knowsAbout: [
                 'Business and management',
                 'MBA',

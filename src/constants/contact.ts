@@ -1,4 +1,4 @@
-export const CONTACT_EMAIL = 'jnaeem672@gmail.com';
+export const CONTACT_EMAIL = 'info@fizbusinessolutions.com';
 
 const defaultSubject = 'Learning support inquiry from FIZ Business Solutions website';
 const defaultBody =
