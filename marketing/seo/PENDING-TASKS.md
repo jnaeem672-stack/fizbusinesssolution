@@ -26,6 +26,12 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   travel to them), with set hours, and can they pass Google's video verification? If yes, plan one profile per
   real location (hide a home address and use a service area). Never store their addresses or numbers in this
   repo (it is on GitHub); keep them only in the chat.
+- Task C answers (21 Oct 17:41): the Saudi, UK and USA people work from home, all work is online (no in-person
+  meetings), service is 24/7, and they cannot pass video verification. So NO new Business Profiles for those three
+  places (not eligible under Google rules; risk of suspension). Instead: Saudi person posts Haraj, Mstaml and
+  OpenSooq listings with a Saudi number; UK and USA people help collect real reviews (Trustpilot, Facebook);
+  owner may add local WhatsApp numbers to the contact page if those people agree. Still to do: copy-paste pack
+  for the existing profile (ask the owner where that profile is set up).
 - Task C also covers improving the existing profile: prepare a copy-paste pack for the existing
   Google Business Profile: main and 2 to 3 secondary categories, 750-character description (Saudi and UK students),
   services with prices (from £20 / 100 riyal per 1,000 words), website and WhatsApp links, photo list (no student
