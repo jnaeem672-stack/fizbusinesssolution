@@ -64,12 +64,12 @@ export const TOOLS: ToolContent[] = [
   {
     slug: 'degree-classification-calculator',
     name: 'Degree Classification Calculator',
-    metaTitle: 'UK Degree Calculator | First, 2:1 and Master\'s Grades',
+    metaTitle: 'University Grade Calculator UK | Degree Classification',
     metaDescription:
-      'Free UK degree calculator. Enter your module marks and year weightings to see your First, 2:1 or 2:2, and the average you need to reach the next band.',
-    h1: 'UK Degree Classification Calculator',
+      'Free university grade calculator for UK degrees. Enter module marks and year weightings to see your First, 2:1 or 2:2 and the average you need next.',
+    h1: 'University Grade Calculator: UK Degree Classification',
     subtitle:
-      "Work out your degree classification from your module marks, see how close you are to the next band, and find the average you need in your remaining modules. Works for undergraduate honours degrees and Master's degrees.",
+      "Work out your university grade and degree classification from your module marks, see how close you are to the next band, and find the average you need in your remaining modules. Works for undergraduate honours degrees and Master's degrees.",
     cardText: 'See your First, 2:1, 2:2 or Master\'s grade, and the marks you need in your remaining modules.',
     sections: [
       {
@@ -147,6 +147,10 @@ export const TOOLS: ToolContent[] = [
     ],
     faqs: [
       {
+        q: 'How do I calculate my university grade?',
+        a: "Multiply each module mark by its credits, add the results and divide by the total credits for that year. Then combine the year averages using your university's weighting, for example 40% for second year and 60% for final year. The university grade calculator above does both steps for you.",
+      },
+      {
         q: 'What percentage is a First in the UK?',
         a: 'At most UK universities, a First Class degree needs an overall weighted average of 70% or above. A 2:1 is usually 60 to 69%, a 2:2 is 50 to 59% and a Third is 40 to 49%.',
       },
@@ -185,17 +189,18 @@ export const TOOLS: ToolContent[] = [
     ],
     services: ['dissertation-help-uk', 'assignment-help-uk', 'draft-review-feedback', 'essay-help', 'assignment-help-glasgow', 'assignment-help-edinburgh'],
     guides: ['uk-university-grading-system', 'how-to-write-a-dissertation', 'how-to-structure-a-university-essay'],
+    updated: '2026-10-21',
     whatsappMessage: 'Hello FIZBS! I used your degree calculator and would like help improving my marks. Subject: , Deadline: ',
   },
   {
     slug: 'harvard-referencing-generator',
     name: 'Harvard Referencing Generator',
-    metaTitle: 'Free Harvard Referencing Generator & Citation Maker',
+    metaTitle: 'Free Harvard Reference Generator | Harvard Referencing Tool',
     metaDescription:
-      'Free Harvard referencing generator with autocite. Paste a DOI, ISBN or link for references, in-text citations and a sorted bibliography in seconds.',
+      'Free Harvard reference generator in Cite Them Right style. Paste a DOI, ISBN or link for references, in-text citations and a sorted reference list.',
     h1: 'Free Harvard Referencing Generator',
     subtitle:
-      'A free Harvard citation generator and bibliography maker. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and lecture slides, then copy your sorted reference list straight into your document, italics included.',
+      'A free Harvard reference generator, citation maker and bibliography tool in the Cite Them Right style. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and lecture slides, then copy your sorted reference list straight into your document, italics included.',
     cardText: 'Autocite by DOI, ISBN or link. Harvard references and in-text citations for 10 source types, with a sorted reference list.',
     sections: [
       {
@@ -261,9 +266,9 @@ export const TOOLS: ToolContent[] = [
         ],
       },
       {
-        heading: 'Harvard citation generator, referencer or bibliography maker?',
+        heading: 'Harvard reference generator, citation generator or referencing tool?',
         paragraphs: [
-          'Students search for this kind of tool under many names: a Harvard citation generator, a Harvard referencer, a citation tool or a bibliography maker. They all mean the same thing. This generator creates both parts you need: the in-text citation, such as (Smith, 2021), and the full reference for the list at the end of your work.',
+          'Students search for this kind of tool under many names: a Harvard reference generator, a Harvard style referencing generator, a Harvard citation generator, a Harvard referencing website or tool, a referencer or a bibliography maker. They all mean the same thing. This generator creates both parts you need: the in-text citation, such as (Smith, 2021), and the full reference for the list at the end of your work.',
           'A reference list contains only the sources you cited in your text. A bibliography usually also includes sources you read but did not cite. Most UK universities ask for a reference list, but some modules ask for a bibliography as well. You can use the generator for both: add every source you consulted, then remove the ones you did not cite if your handbook asks for a reference list only.',
         ],
       },
@@ -350,7 +355,7 @@ export const TOOLS: ToolContent[] = [
       'cipd-assignment-help', 'cmi-assignment-help', 'hnd-hnc-assignment-help', 'othm-athe-assignment-help', 'marketing-assignment-help', 'hrm-assignment-help',
     ],
     promotedIn: REFERENCING_GUIDES,
-    updated: '2026-10-19',
+    updated: '2026-10-21',
     whatsappMessage: 'Hello FIZBS! I need help checking my Harvard references. Word count: , Deadline: ',
   },
   {

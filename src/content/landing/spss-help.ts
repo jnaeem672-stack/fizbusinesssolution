@@ -3,19 +3,22 @@ import type { LandingContent } from './types';
 export const spssHelp: LandingContent = {
   slug: 'spss-help',
   locale: 'en',
-  metaTitle: 'SPSS Help | Data Analysis Support for Students',
+  metaTitle: 'SPSS Assignment Help and Statistics Dissertation Help',
   metaDescription:
-    'SPSS help for dissertations and assignments: tests, tables and clear interpretation of your own data. Expert support 24/7 on WhatsApp. Get your price now.',
+    'SPSS assignment help and statistics dissertation help: choosing tests, checking assumptions, APA tables and clear interpretation of your own data.',
   keywords: [
-    'SPSS help',
-    'SPSS data analysis help',
     'SPSS assignment help',
+    'statistics dissertation help',
+    'SPSS help',
+    'SPSS dissertation help',
+    'statistics assignment help',
+    'SPSS data analysis help',
     'statistics help for dissertation',
     'NVivo help',
     'Excel data analysis help',
   ],
   badge: 'Data Analysis Support',
-  h1: 'SPSS Help to Analyse and Interpret Your Data',
+  h1: 'SPSS Assignment Help and Statistics Dissertation Support',
   heroSubtitle:
     'Expert guidance on choosing the right tests, running them correctly and explaining your results clearly, for assignments, dissertations and research projects.',
   highlights: ['SPSS, Excel and NVivo', 'APA-style tables', '24/7 WhatsApp support', '100% confidential'],
@@ -39,6 +42,19 @@ export const spssHelp: LandingContent = {
         'Correlation and linear or multiple regression',
         "Reliability testing with Cronbach's alpha",
         'Charts and APA-style tables ready to include in your chapter',
+      ],
+    },
+    {
+      heading: 'SPSS assignment help for module tasks',
+      paragraphs: [
+        'Statistics and research methods modules often give you a dataset and a brief: run set tests, report the output and explain what it means. Marks are usually lost on the explanation, not on clicking the right menu.',
+        'Your expert walks you through each step in SPSS, shows you which numbers in the output matter and why, and gives feedback on your write-up so the interpretation is accurate and in your own words.',
+      ],
+      bullets: [
+        'Matching each question in the brief to the right test',
+        'Reading output tables: which values to report and which to ignore',
+        'Writing results in APA style, for example t(48) = 2.31, p = .025',
+        'Explaining effect sizes and what a non-significant result means',
       ],
     },
     {
@@ -108,9 +124,9 @@ export const spssHelp: LandingContent = {
       ],
     },
     {
-      heading: 'Statistics help for your dissertation',
+      heading: 'Statistics dissertation help',
       paragraphs: [
-        'Statistics help for dissertation students often makes the biggest difference in the methodology and findings chapters. A sound analysis plan keeps your results aligned with your research aims and makes your discussion much easier to write.',
+        'Statistics dissertation help often makes the biggest difference in the methodology and findings chapters. A sound analysis plan keeps your results aligned with your research aims and makes your discussion much easier to write.',
         'Your expert can explain why a particular test suits your data, what assumptions need checking and how to report results in a clear, academic way. The aim is for you to feel confident discussing your analysis with your supervisor.',
         "If your results are not what you expected, that is not a failure. Non-significant findings are still findings, and your expert can help you interpret them honestly and discuss possible reasons in light of the literature.",
       ],

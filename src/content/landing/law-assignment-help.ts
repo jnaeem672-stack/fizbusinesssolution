@@ -3,12 +3,18 @@ import type { LandingContent } from './types';
 export const lawAssignmentHelp: LandingContent = {
   slug: 'law-assignment-help',
   locale: 'en',
-  metaTitle: 'Law Assignment Help | UK & Saudi Experts from £20',
+  metaTitle: 'Law Assignment Help | Essays and Dissertations from £20',
   metaDescription:
-    'Law assignment help from £20 per 1,000 words for problem questions, legal essays and OSCOLA. 10% off your first order. Message our law experts on WhatsApp.',
+    'Law assignment help from £20 per 1,000 words: problem questions, law essays, law dissertations and OSCOLA, including tort, contract and criminal law.',
   keywords: [
     'law assignment help',
+    'law dissertation help',
+    'law essay help',
     'law essay help UK',
+    'tort law assignment help',
+    'contract law assignment help',
+    'criminal law assignment help',
+    'company law assignment help',
     'legal problem question help',
     'OSCOLA referencing help',
     'LLM assignment help',
@@ -68,14 +74,64 @@ export const lawAssignmentHelp: LandingContent = {
         "Our law assignment help covers the core LLB foundation subjects as well as many specialist LLM options. Example tasks range from advising a client on a breach of contract to evaluating whether the Supreme Court should have the power to strike down legislation. Typical areas include:",
       ],
       bullets: [
-        'Contract law: formation, terms, misrepresentation, frustration and remedies',
-        "Tort law: negligence, duty of care, causation, occupiers' liability and nuisance",
-        'Criminal law: actus reus, mens rea, homicide, defences and inchoate offences',
+        'Contract, tort, criminal and company law (more on each below)',
         'Public and constitutional law: parliamentary sovereignty, judicial review and human rights',
         'EU law and its legacy in the UK after Brexit',
-        "Commercial and company law: sale of goods, agency, directors' duties and insolvency",
+        'Commercial law: sale of goods, agency and consumer rights',
         'International law: treaties, state responsibility, trade law and human rights frameworks',
         'Islamic and Saudi commercial law basics: Sharia principles in contracts, the prohibition of riba and gharar, and recent codification in Saudi Arabia',
+      ],
+      subsections: [
+        {
+          heading: 'Contract law assignment help',
+          paragraphs: [
+            'Contract problem questions usually ask you to advise one party: is there a binding contract, what are its terms, and what can be done when it goes wrong? Your expert helps you work through each issue in order and support every step with authority.',
+          ],
+          bullets: [
+            'Formation: offer, acceptance, consideration and intention to create legal relations',
+            'Terms: express and implied terms, exclusion clauses, the Unfair Contract Terms Act 1977 and the Consumer Rights Act 2015',
+            'Vitiating factors: misrepresentation, mistake, duress and undue influence',
+            'Discharge and remedies: breach, frustration, damages, remoteness and specific performance',
+          ],
+        },
+        {
+          heading: 'Tort law assignment help',
+          paragraphs: [
+            'Tort questions reward a disciplined structure: establish duty, breach and causation for each claimant before moving to defences and remedies. Many students lose marks by discussing everything at once or by skipping causation.',
+          ],
+          bullets: [
+            'Negligence: duty of care after Caparo and Robinson, breach, causation and remoteness',
+            'Psychiatric harm and pure economic loss',
+            "Occupiers' liability under the 1957 and 1984 Acts",
+            'Nuisance, Rylands v Fletcher and vicarious liability',
+            'Defences: contributory negligence, consent and illegality',
+          ],
+        },
+        {
+          heading: 'Criminal law assignment help',
+          paragraphs: [
+            'Criminal law answers need the actus reus and mens rea of each offence, then any defences, applied to each defendant in turn. Your expert helps you keep that order and use the leading cases accurately.',
+          ],
+          bullets: [
+            'Murder and manslaughter, including loss of control and diminished responsibility',
+            'Non-fatal offences under the Offences Against the Person Act 1861',
+            'Theft, robbery and burglary under the Theft Act 1968',
+            'Defences: self-defence, duress, intoxication and insanity',
+            'Complicity after R v Jogee and inchoate offences',
+          ],
+        },
+        {
+          heading: 'Company law assignment help',
+          paragraphs: [
+            'Company law assignments often combine a problem question on directors with an essay on corporate personality or governance. Your expert helps you link the statutory duties to the facts and to the policy debate.',
+          ],
+          bullets: [
+            'Separate legal personality after Salomon and lifting the veil after Prest v Petrodel',
+            "Directors' duties under sections 171 to 177 of the Companies Act 2006",
+            'Shareholder remedies: derivative claims and unfair prejudice petitions',
+            'Corporate governance, insolvency and wrongful trading',
+          ],
+        },
       ],
     },
     {
@@ -98,6 +154,21 @@ export const lawAssignmentHelp: LandingContent = {
       paragraphs: [
         "Postgraduate law demands more depth. LLM assignment help often involves comparative analysis between jurisdictions, policy critique, law reform proposals and engagement with theoretical frameworks.",
         "We also support LLM dissertations and PhD research in law, including research questions, doctrinal and socio-legal methodology, and literature reviews. Students at Saudi universities studying commercial or international law can get help comparing Saudi approaches with English or international standards.",
+      ],
+    },
+    {
+      heading: 'Law dissertation help for LLB and LLM students',
+      paragraphs: [
+        'A law dissertation is judged on the quality of its question and argument. The most common problem we see is a topic that is too broad, such as "the law of negligence", instead of a focused question that the dissertation can actually answer.',
+        'Our law dissertation help supports you from the proposal to the final chapter. Your expert gives feedback on your drafts and explains the reasons behind each suggestion, so the research and the argument stay yours.',
+      ],
+      bullets: [
+        'Narrowing your topic into a clear, answerable research question',
+        'Choosing a doctrinal, socio-legal or comparative methodology and explaining it',
+        'Building a literature review from journals, law commission reports and case law',
+        'Structuring chapters so each one moves the argument forward',
+        'Conclusions with realistic recommendations for law reform',
+        'Consistent OSCOLA footnotes and bibliography throughout',
       ],
     },
     {
