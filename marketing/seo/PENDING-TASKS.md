@@ -11,7 +11,12 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
 4. Give the owner a short Semrush keyword list when the next items need data (free plan: 10 requests a day).
 
 ## Scheduled queue (owner, 20 Oct night)
-- 21 Oct: Quick wins (approved, see Priority below).
+- 21 Oct: Quick wins DONE (commit f7c52a1): Harvard tool title "Free Harvard Reference Generator | Harvard Referencing Tool",
+  degree tool "University Grade Calculator UK", Saudi assignment page "مساعدة في حل الواجبات" + English assignments
+  section, graduation guide (مشاريع تخرج, بحث تخرج FAQ), AutoCAD + Revit section, SPSS assignment and statistics
+  dissertation help, law page (tort, contract, criminal, company subsections, law dissertation section).
+  "رسالة ماجستير" went on /ar/dissertation-help-saudi-arabia (the master's page), not ar-thesis-help (PhD page), so
+  two pages do not compete. Request Indexing for these 8 pages on 22 Oct.
 - 21 Oct, after Quick wins (owner moved it up on 20 Oct 23:29): Task C "Business Profile". The owner says FIZBS
   has a person, phone number and address in Saudi Arabia, the UK and the USA. For each one, check with the owner
   before any profile: does that person really work for FIZBS from that place, meet or serve students there (or
