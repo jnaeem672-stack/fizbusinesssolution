@@ -46,6 +46,14 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
 - Owner to-do: Search Console export (Performance, country Saudi Arabia, 3 months, Queries and Pages), Semrush
   Position Tracking setup (10 Saudi keywords, mobile), Site Audit, and confirm nobody bought links.
 
+## Backlinks routine (from 21 Oct 2026)
+- The owner's doc "FIZBS Backlink Kit" (Claude docs) holds the business details, EN/AR descriptions, the 5 link
+  pages with anchors, 12 platforms, Saudi listing ads, content ideas, a 3-week plan and the Link Log table.
+- Every Monday: read the Link Log in that doc, open each new row's link, check the link to fizbusinessolutions.com
+  exists and whether it is dofollow or nofollow, set the Status dropdown, and tell the owner.
+- Monthly: compare Search Console Links export and Semrush referring domains with the month before.
+- When the owner sends new profile links, add them to SOCIAL_URLS (src/constants/social.ts) for the schema sameAs.
+
 ## Standing rules for every page
 - No fake reviews, ratings or testimonials. No guarantees. Never "plagiarism-free", "zero AI", "AI-free",
   "free revisions" or "100% original". No em or en dashes. Avoid the words "coaching" and "ethical".
