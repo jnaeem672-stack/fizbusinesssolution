@@ -46,6 +46,21 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
 - Owner to-do: Search Console export (Performance, country Saudi Arabia, 3 months, Queries and Pages), Semrush
   Position Tracking setup (10 Saudi keywords, mobile), Site Audit, and confirm nobody bought links.
 
+## City pages plan (owner approved 21 Oct 2026, after the Skyline Grow audit)
+- Keep and enrich 17: London, Birmingham, Manchester, Bristol, Leeds, Glasgow, Luton, Bradford (UK, Semrush 110 to 590
+  searches); Riyadh, Jeddah, Makkah, Dammam (EN + AR); Dubai.
+- Merge 28 with 301 redirects: 17 UK cities with about 0 searches (Coventry, Cardiff, Derby, Edinburgh, Hull, Leicester,
+  Liverpool, Middlesbrough, Newcastle, Northampton, Nottingham, Oxford, Portsmouth, Sheffield, Southampton,
+  Sunderland, Wolverhampton) to /assignment-help-uk; Abha, Madinah, Qassim, Tabuk, Taif (EN and AR) to the Saudi
+  country page in the same language; Abu Dhabi to /assignment-help-uae. WAIT for the owner's Search Console Pages
+  export first: keep any page that already gets clicks or impressions. Update related lists, UK_CITIES (tools.ts),
+  CITY_LINKS and sitemap when redirecting.
+- Done 21 Oct (5885699): lighter city template (no call block, payment block or their FAQs on city pages).
+  Identical long sentences: Hull vs Luton 52% to 39%, London vs Manchester 24% to 14%.
+- Enrich each kept page with verifiable local detail (universities with official links, their referencing
+  conventions from library pages, local FAQs) and vary the price and process sentences. Target under 20% shared.
+  No invented results or reviews.
+
 ## Backlinks routine (from 21 Oct 2026)
 - The owner's doc "FIZBS Backlink Kit" (Claude docs) holds the business details, EN/AR descriptions, the 5 link
   pages with anchors, 12 platforms, Saudi listing ads, content ideas, a 3-week plan and the Link Log table.
