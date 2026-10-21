@@ -4,8 +4,8 @@ export const ukUniversityGradingSystemPost: BlogPost = {
   slug: `uk-university-grading-system`,
   locale: `en`,
   title: `UK University Grading System Explained: First, 2:1, 2:2 and Master's Grades`,
-  metaTitle: `UK University Grading System: First, 2:1, 2:2 Explained`,
-  metaDescription: `The UK university grading system explained: First, 2:1, 2:2 and Third bands, Master's distinction, merit and pass, what markers want and how to improve.`,
+  metaTitle: `UK University Grading System: First, 2:1, 2:2 and Merit`,
+  metaDescription: `A First is 70%+, a 2:1 is 60 to 69% (so 66% is a 2:1) and a 2:2 is 50 to 59%. Master's distinction, merit and pass explained, and how to move up a band.`,
   keywords: [
     `UK university grading system`,
     `UK degree classification`,

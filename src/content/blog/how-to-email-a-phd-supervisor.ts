@@ -4,8 +4,8 @@ export const howToEmailAPhdSupervisorPost: BlogPost = {
   slug: `how-to-email-a-phd-supervisor`,
   locale: `en`,
   title: `How to Email a PhD Supervisor (With Templates That Get Replies)`,
-  metaTitle: `How to Email a PhD Supervisor: Templates and Tips`,
-  metaDescription: `Learn how to email a PhD supervisor: finding the right academic, subject lines, what to include and attach, plus first contact and follow-up templates.`,
+  metaTitle: `How to Email a PhD Supervisor (and Follow Up): Templates`,
+  metaDescription: `How to email a potential PhD supervisor and when to follow up (after about two weeks), with subject lines, what to attach and 3 copy-ready templates.`,
   keywords: [
     `how to email a PhD supervisor`,
     `email to potential PhD supervisor`,

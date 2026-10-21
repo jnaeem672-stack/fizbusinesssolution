@@ -57,13 +57,13 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       "At most UK universities, a First Class degree is 70% and above, a 2:1 is 60 to 69%, a 2:2 is 50 to 59% and a Third is 40 to 49%. Taught Master's degrees are usually graded Distinction (70% and above), Merit (60 to 69%) and Pass (50 to 59%). Marks above 70 are reserved for excellent work.",
     specialist: 'sajjad-akbar-ali',
-    updated: '2026-10-20',
+    updated: '2026-10-21',
   },
   'how-to-email-a-phd-supervisor': {
     quickAnswer:
       "Email a potential PhD supervisor with a clear subject line, a short introduction, why their research fits your idea, a brief outline of your proposed project and your relevant qualifications. Attach your CV and a short research outline, keep the body to roughly 200 to 350 words, and send one polite follow-up after about two weeks if you get no reply.",
     specialist: 'sajjad-akbar-ali',
-    updated: '2026-10-20',
+    updated: '2026-10-21',
   },
   'gibbs-reflective-cycle-guide': {
     quickAnswer:
@@ -189,7 +189,7 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       'Quantitative research collects numerical data, usually through surveys, experiments or existing datasets, and analyses it with statistics to measure and test relationships. Qualitative research collects words and observations, usually through interviews or focus groups, and analyses them for themes to understand experiences. Choose quantitative for how much or to what extent questions, and qualitative for how and why questions.',
     specialist: 'sophia-l',
-    updated: '2026-10-13',
+    updated: '2026-10-21',
   },
   'how-to-write-a-dissertation-discussion': {
     quickAnswer:
@@ -201,6 +201,6 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     quickAnswer:
       'The difference between primary and secondary research is who collected the data. Primary research means collecting new data yourself, for example through surveys, interviews or experiments. Secondary research uses data or studies that already exist, such as journal articles, government statistics or company reports. Primary data fits your question exactly but takes longer; secondary data is quicker and often larger but was collected for another purpose. Many dissertations combine both.',
     specialist: 'sophia-l',
-    updated: '2026-10-17',
+    updated: '2026-10-21',
   },
 };

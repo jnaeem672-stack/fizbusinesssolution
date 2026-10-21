@@ -3,15 +3,17 @@ import type { BlogPost } from './types';
 export const quantitativeVsQualitativeResearchPost: BlogPost = {
   slug: 'quantitative-vs-qualitative-research',
   locale: 'en',
-  title: 'Quantitative vs Qualitative Research: Differences, Examples and How to Choose',
-  metaTitle: 'Quantitative vs Qualitative Research: Key Differences',
+  title: 'Quantitative vs Qualitative Research: Differences, 5 Examples and How to Choose',
+  metaTitle: 'Quantitative vs Qualitative Research: 5 Examples Each',
   metaDescription:
-    "Quantitative vs qualitative research explained: key differences, data collection, sampling, analysis and examples, and how to choose your research method.",
+    "Quantitative vs qualitative research with 5 examples of each, the key differences in data, sampling and analysis, and how to choose your research method.",
   keywords: [
     'quantitative vs qualitative research',
     'difference between quantitative and qualitative research',
     'quantitative research examples',
     'qualitative research examples',
+    '5 examples of qualitative and quantitative research',
+    'examples of quantitative and qualitative data',
     'mixed methods research',
     'how to choose a research method',
   ],
@@ -121,7 +123,7 @@ export const quantitativeVsQualitativeResearchPost: BlogPost = {
       ],
     },
     {
-      heading: 'Examples by subject',
+      heading: '5 examples of quantitative and qualitative research',
       subsections: [
         {
           heading: 'Business and management',
@@ -142,6 +144,20 @@ export const quantitativeVsQualitativeResearchPost: BlogPost = {
           bullets: [
             'Quantitative: Is hourly rounding associated with fewer falls on older adult wards?',
             'Qualitative: How do patients describe feeling safe during a hospital stay?',
+          ],
+        },
+        {
+          heading: 'Psychology',
+          bullets: [
+            'Quantitative: Is daily social media use related to sleep quality scores in first-year students?',
+            'Qualitative: How do first-year students describe the pressure to stay online at night?',
+          ],
+        },
+        {
+          heading: 'Marketing',
+          bullets: [
+            'Quantitative: Does a free delivery offer increase the average order value of online shoppers?',
+            'Qualitative: Why do shoppers abandon their basket at the delivery page?',
           ],
         },
       ],
@@ -165,6 +181,10 @@ export const quantitativeVsQualitativeResearchPost: BlogPost = {
     },
   ],
   faqs: [
+    {
+      q: 'What are 5 examples of quantitative and qualitative data?',
+      a: 'Quantitative data: test scores, sales figures, heart rate readings, ratings on a 1 to 5 scale and website visits. Qualitative data: interview transcripts, answers to open survey questions, observation notes, focus group discussions and diary entries. Quantitative data is counted or measured; qualitative data is described in words.',
+    },
     {
       q: 'Is a questionnaire quantitative or qualitative?',
       a: 'It depends on the questions. Closed questions, such as rating scales, give quantitative data, while open questions give qualitative data. Many questionnaires collect both.',

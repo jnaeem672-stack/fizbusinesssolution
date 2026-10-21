@@ -4,9 +4,9 @@ export const primaryVsSecondaryResearchPost: BlogPost = {
   slug: 'primary-vs-secondary-research',
   locale: 'en',
   title: 'Primary vs Secondary Research: What Is the Difference? (With Examples)',
-  metaTitle: "Primary vs Secondary Research: What's the Difference?",
+  metaTitle: "Primary vs Secondary Research: Differences and Examples",
   metaDescription:
-    'What is the difference between primary and secondary research? A clear answer, examples, pros and cons, and where to find data for your dissertation.',
+    'Primary research collects new data yourself, such as surveys or interviews; secondary research uses existing data. Examples, pros and cons, which to use.',
   keywords: [
     'primary vs secondary research',
     'what is the difference between primary and secondary research',
