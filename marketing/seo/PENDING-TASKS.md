@@ -61,6 +61,18 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   conventions from library pages, local FAQs) and vary the price and process sentences. Target under 20% shared.
   No invented results or reviews.
 
+## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
+- Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
+- 30% of impressions show www URLs although next.config redirects www to the main domain: owner to check that
+  www.fizbusinessolutions.com/about changes to fizbusinessolutions.com/about in the browser.
+- City decision from this data: also KEEP Liverpool ("assignment help liverpool" 10 impressions in 12 days). Merge
+  pages had 0 clicks and 4 or fewer impressions (Sheffield 4, Nottingham 2, Madinah 1, ar Taif 1), so merging is safe.
+- Fastest clicks (position 5 to 27 with impressions): quantitative-vs-qualitative-research (5.5, query "5 examples
+  of qualitative and quantitative" at 4.3), uk-university-grading-system (57 impressions, 26.7), swot-and-pestle (17),
+  how-to-email-a-phd-supervisor (17.7; "follow up email to potential phd supervisor" at 47), business-dissertation-
+  topics ("business dissertations" 17.9), hrm-dissertation-topics (19), thematic-analysis-guide (10.8),
+  ar how-to-write-an-abstract (11.6). Biggest guide by impressions: primary-vs-secondary-research (115, at 62).
+
 ## Backlinks routine (from 21 Oct 2026)
 - The owner's doc "FIZBS Backlink Kit" (Claude docs) holds the business details, EN/AR descriptions, the 5 link
   pages with anchors, 12 platforms, Saudi listing ads, content ideas, a 3-week plan and the Link Log table.
