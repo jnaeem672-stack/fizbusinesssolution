@@ -80,6 +80,9 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const offerPrice = inCurrency(Number(page.offer?.price ?? '20'), currency);
   // City pages tell search engines which city they serve
   const cityLink = [...CITY_LINKS, ...UAE_LINKS].find((l) => l.href === `/${page.slug}` && l.href !== '/assignment-help-uae');
+  // City pages carry a lighter template: the call booking, payment block and their FAQs live on the main service pages,
+  // so each city page is mostly its own local content rather than text repeated on every city page.
+  const isCityPage = Boolean(cityLink);
   const city = cityLink
     ? {
         '@type': 'City',
@@ -459,13 +462,13 @@ export default function LandingPage({ page }: { page: LandingContent }) {
         </div>
       </section>
 
-      <ExpertCallSection locale={page.locale} className="bg-gray-50" />
+      {!isCityPage && <ExpertCallSection locale={page.locale} className="bg-gray-50" />}
 
       <QuoteCalculator locale={page.locale} currency={currency} />
 
-      <PaymentSection locale={page.locale} className="bg-soft-rose" />
+      {!isCityPage && <PaymentSection locale={page.locale} className="bg-soft-rose" />}
 
-      <FaqSection faqs={[...page.faqs, EXPERT_CALL[page.locale].faq, PAYMENT[page.locale].faq]} title={t.faqTitle} rtl={isAr} className="bg-white" />
+      <FaqSection faqs={isCityPage ? page.faqs : [...page.faqs, EXPERT_CALL[page.locale].faq, PAYMENT[page.locale].faq]} title={t.faqTitle} rtl={isAr} className="bg-white" />
 
       {/* Final CTA */}
       <section className="relative py-16 md:py-20 overflow-hidden bg-navy" dir={isAr ? 'rtl' : undefined}>
