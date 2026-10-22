@@ -17,7 +17,7 @@ export const assignmentHelpBristol: LandingContent = {
   badge: 'Bristol Students',
   h1: 'Assignment Help for Bristol University Students',
   heroSubtitle:
-    'Online expert guidance with essays, engineering and technical reports, health assignments and dissertations for students across Bristol and Bath. Share your brief on WhatsApp and get a clear price in minutes.',
+    'Online expert guidance with essays, engineering and technical reports, health assignments and dissertations for students across Bristol and Bath. Send your brief on WhatsApp and you will have a clear price within minutes.',
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Engineering and business', '10% off first order'],
   intro: [
     "Bristol is one of the UK's most popular student cities, with two large universities, a strong engineering and aerospace sector and a reputation for green and creative business. If you are looking for assignment help Bristol students can fit around lectures, placements and part-time work, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.",
@@ -26,7 +26,7 @@ export const assignmentHelpBristol: LandingContent = {
   sections: [
     {
       heading: "Universities in Bristol we support",
-      paragraphs: ["Bristol's two universities are in different parts of the city, from the University of Bristol in Clifton to UWE at Frenchay, and many students also study in nearby Bath. FIZBS is an independent online service and is not affiliated with any of them, so your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["Bristol's two universities are in different parts of the city, from the University of Bristol in Clifton to UWE at Frenchay, and many students also study in nearby Bath. FIZBS works independently online and is not connected to any of them, so your expert follows your own module brief and marking criteria."],
       subsections: [
         {
           heading: "University of Bristol",
@@ -42,6 +42,37 @@ export const assignmentHelpBristol: LandingContent = {
           heading: "University of Bath (nearby)",
           paragraphs: ["Bath is known for its School of Management, engineering and placement degrees, with highly analytical coursework.", "Our experts can help with:"],
           bullets: ["Management reports and essays", "Engineering projects", "Placement year assignments"],
+        },
+      ],
+    },
+    {
+      heading: 'Referencing styles at Bristol, UWE and Bath',
+      paragraphs: [
+        "The three universities handle referencing differently, and the rules have recently changed at UWE. For many years UWE Bristol had its own version, UWE Bristol Harvard. From September 2026, Cite Them Right Harvard replaces it as the university's default version, so older handbooks, past feedback or notes from a previous year may still describe the old rules. Check which version your current module asks for.",
+        "The University of Bristol Library points students to Cite Them Right, which shows how to reference almost any type of source in Harvard and other styles such as APA, IEEE and OSCOLA. Your course handbook tells you which style to use. In Bath, the library publishes Harvard (Bath), its own interpretation of Harvard, and advises students who are unsure to check with their department.",
+        "The free Harvard reference generator further down this page follows Cite Them Right, which suits the new UWE default. Engineering students using IEEE, and anyone on a local variant such as Harvard (Bath), can ask their expert to check the reference list against the department's guide.",
+      ],
+      links: [
+        {
+          label: 'UWE Bristol Harvard and the move to Cite Them Right',
+          href: 'https://www.uwe.ac.uk/study/study-support/study-skills/referencing/uwe-bristol-harvard',
+          note: 'UWE Library page confirming Cite Them Right Harvard as the default version from September 2026.',
+          tag: 'UWE Bristol',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Referencing guidance at the University of Bristol',
+          href: 'https://bristol.libguides.com/economics/referencing',
+          note: 'Library guidance with links to Cite Them Right online.',
+          tag: 'University of Bristol',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Harvard (Bath) referencing guide',
+          href: 'https://library.bath.ac.uk/referencing/harvard-bath',
+          note: "The University of Bath Library's own interpretation of Harvard.",
+          tag: 'University of Bath',
+          cta: 'Official referencing guide',
         },
       ],
     },
@@ -94,18 +125,18 @@ export const assignmentHelpBristol: LandingContent = {
       heading: 'Prices, deadlines and how Bristol students get started',
       paragraphs: [
         'Prices start at £20 per 1,000 words when your deadline is seven days or more away, rising by 25% for 3 to 6 days and by 50% for anything due within 48 hours. As an example, guidance on a 2,500-word essay due in ten days comes to £50, or £45 with the 10% first-order discount. Dissertation support is £30 per 1,000 words, and proofreading starts from £12 per 1,000 words.',
-        'To start, send your module, word count and deadline on WhatsApp. Adding the brief, marking rubric and any lecturer feedback lets your expert follow your course closely. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR, and everything you share stays confidential.',
+        'To start, send your module, word count and deadline on WhatsApp. Adding the brief, marking rubric and any lecturer feedback lets your expert follow your course closely. Payment is split into two halves, one at the start and one on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. Everything you share stays confidential.',
       ],
     },
   ],
   faqs: [
     {
       q: 'Is FIZBS based in Bristol?',
-      a: 'We are an online service rather than a local office. Students in Bristol share their brief on WhatsApp or through our website and receive expert support remotely.',
+      a: 'No. FIZBS has no Bristol office. You share your brief on WhatsApp or through our website and an expert supports you online, whether you study in Clifton, at Frenchay or in Bath.',
     },
     {
       q: 'Which Bristol universities do you support?',
-      a: 'We support students from any university, including the University of Bristol and UWE Bristol, as well as students in Bath. We are not affiliated with any institution.',
+      a: 'We support students from any university, including the University of Bristol and UWE Bristol, plus students in Bath. FIZBS is independent and has no ties to these universities.',
     },
     {
       q: 'Can you help with engineering lab and design reports?',
@@ -127,9 +158,17 @@ export const assignmentHelpBristol: LandingContent = {
       q: 'Do you support students at the University of Bath?',
       a: 'Yes. We support students in Bath as well, including management reports, engineering projects and placement-year assignments, online through WhatsApp or our website.',
     },
+    {
+      q: 'Does UWE Bristol still use UWE Bristol Harvard?',
+      a: "UWE's library says Cite Them Right Harvard replaces UWE Bristol Harvard as the university's default referencing version from September 2026. Check your module handbook for the version your module asks for. The free Harvard generator on this page uses Cite Them Right, so it matches the new default.",
+    },
+    {
+      q: 'Which referencing style should I use at the University of Bath?',
+      a: 'The Bath library publishes Harvard (Bath), its own interpretation of Harvard, and advises checking with your department if you are unsure whether to use it. Your expert can check your reference list against that guide.',
+    },
   ],
   ctaTitle: 'Get your Bristol assignment price in minutes',
-  ctaText: 'Message us on WhatsApp any time or use the instant calculator to see your price. New customers get 10% off their first order.',
+  ctaText: 'Send your brief on WhatsApp at any hour, or work out the price yourself with the instant calculator. First orders get 10% off.',
   whatsappMessage: 'Hi FIZBS! I am a student in Bristol and need assignment help. Subject: , Word count: , Deadline: ',
   related: ['assignment-help-uk', 'dissertation-help-uk', 'engineering-assignment-help', 'assignment-help-london', 'assignment-help-birmingham'],
 };

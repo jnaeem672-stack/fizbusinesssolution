@@ -284,7 +284,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                           {link.tag && <span className="mt-1 text-[11px] font-black uppercase tracking-widest text-primary">{link.tag}</span>}
                           {link.note && <span className="mt-2 text-[14px] leading-relaxed text-gray-600">{link.note}</span>}
                           <span className="mt-3 text-[13px] font-bold text-navy underline underline-offset-4 decoration-primary/40 group-hover:decoration-primary">
-                            {isAr ? 'صفحة القبول الرسمية' : 'Official admissions page'}
+                            {link.cta ?? (isAr ? 'صفحة القبول الرسمية' : 'Official admissions page')}
                           </span>
                         </a>
                       </li>

@@ -26,7 +26,7 @@ export const assignmentHelpManchester: LandingContent = {
   sections: [
     {
       heading: "Universities in Manchester we support",
-      paragraphs: ["We support students at every university in Manchester. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["We support students at every university in Manchester. FIZBS works independently online and has no connection with any of these universities. Teaching and assessment differ between them, so your expert works from your own module brief and marking criteria every time."],
       subsections: [
         {
           heading: "University of Manchester",
@@ -46,6 +46,29 @@ export const assignmentHelpManchester: LandingContent = {
       ],
     },
     {
+      heading: 'Referencing styles at Manchester universities',
+      paragraphs: [
+        "Referencing is an easy place to lose marks, and the three universities do not handle it the same way. Manchester Met Library names Cite Them Right Harvard as the institutional author-date style, and most students there follow it, although some departments use a different style. The University of Manchester leaves the choice to each School: its library guide lists Harvard, MLA and Vancouver as commonly used styles and tells students to check with their supervisor. At Salford, follow the style your module handbook names.",
+        "If your module uses Cite Them Right Harvard, the free Harvard reference generator further down this page follows that version. For any other style, your expert checks your in-text citations and reference list against the guide your department names.",
+      ],
+      links: [
+        {
+          label: 'Cite Them Right Harvard at Manchester Met',
+          href: 'https://mmu.ac.uk/library/referencing-and-study-support/referencing/cite-them-right-harvard',
+          note: "Manchester Met Library's guide to the university's institutional Harvard style, with examples.",
+          tag: 'Manchester Met',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Referencing styles at the University of Manchester',
+          href: 'https://subjects.library.manchester.ac.uk/referencing/styles',
+          note: 'Library guidance on Harvard, MLA and Vancouver, with advice to check what your School requires.',
+          tag: 'University of Manchester',
+          cta: 'Official referencing guide',
+        },
+      ],
+    },
+    {
       heading: 'Research-intensive, career-focused or practice-based: three styles of Manchester course',
       paragraphs: [
         "The universities in and around the city tend to assess students in noticeably different ways. The University of Manchester is a large research-intensive university, home to the Alliance Manchester Business School, and many of its modules expect extended essays and projects grounded in academic literature and formal research methods.",
@@ -57,14 +80,14 @@ export const assignmentHelpManchester: LandingContent = {
       heading: 'Placements, part-time jobs and tight deadlines',
       paragraphs: [
         "A lot of Manchester courses include work placements or practical components, and plenty of students hold down part-time jobs in the city centre to cover living costs. When an assignment deadline lands in the same week as a placement review or a run of evening shifts, timing becomes the real challenge.",
-        "Our pricing is designed to reward planning ahead. Requests with seven days or more are charged at the standard rate from £20 per 1,000 words. If time is shorter, support is still available: 3 to 6 days adds 25%, and within 48 hours adds 50%. You can check your price at any time with the instant calculator on our homepage.",
+        "Our pricing is designed to reward planning ahead. Requests with seven days or more are charged at the standard rate from £20 per 1,000 words. If time is shorter, support is still available: 3 to 6 days adds 25%, and within 48 hours adds 50%. A 3,000-word placement report due in five days, for example, comes to £75, or £67.50 with the 10% first-order discount.",
       ],
     },
     {
       heading: 'What students in Manchester ask us for',
       bullets: [
         'Essay help Manchester students need for structure, argument and critical evaluation',
-        'Business reports, marketing plans and case study analysis',
+        'Business reports, marketing plans and analysis of real company cases',
         'Reflective writing for health, nursing and social care placements',
         'Accounting and finance calculations with clear explanations',
         'Coding, computing and engineering coursework guidance',
@@ -139,7 +162,7 @@ export const assignmentHelpManchester: LandingContent = {
       heading: 'Getting started: what to send and how payment works',
       paragraphs: [
         'A short message with your subject, word count and deadline is enough to get a quote, and first-time customers receive 10% off. If you would rather discuss the task before committing, you can book a WhatsApp call in English with an expert first.',
-        'Payment is made in two parts: 50% to begin and 50% when the work is complete, by UK bank transfer in GBP or Saudi bank transfer in SAR. Once you go ahead, the more detail you share, the more closely your expert can follow your module. It helps to include:',
+        'Payment is made in two parts: half to begin and half when the work is complete, by UK bank transfer in GBP or Saudi bank transfer in SAR. Once you go ahead, the more detail you share, the more closely your expert can follow your module. It helps to include:',
       ],
       bullets: [
         'The full assignment brief and the marking rubric or grade descriptors',
@@ -153,7 +176,7 @@ export const assignmentHelpManchester: LandingContent = {
   faqs: [
     {
       q: 'Is FIZBS based in Manchester?',
-      a: 'We are an online service rather than a local office. Students in Manchester share their brief through WhatsApp or our website and receive expert support remotely, so location never limits access.',
+      a: 'No, there is no FIZBS office in Manchester. You send your brief through WhatsApp or our website and an expert supports you remotely, so where you live in Greater Manchester makes no difference.',
     },
     {
       q: 'Can you help while I am on a placement year?',
@@ -161,11 +184,11 @@ export const assignmentHelpManchester: LandingContent = {
     },
     {
       q: 'Which Manchester universities do you support?',
-      a: 'We support students from any university, including those studying at the University of Manchester, Manchester Metropolitan University and the University of Salford. We are not affiliated with any institution.',
+      a: 'Students from any university can use FIZBS, including those at the University of Manchester, Manchester Metropolitan University and the University of Salford. FIZBS works independently and has no link with these universities.',
     },
     {
       q: 'How much does assignment help Manchester students use cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.',
+      a: 'Manchester students pay from £20 per 1,000 words when the deadline is at least a week away. A 3 to 6 day deadline adds 25% and a 48 hour deadline adds 50%. First-time customers get 10% off.',
     },
     {
       q: 'Can you help with data analysis for my dissertation?',
@@ -177,20 +200,28 @@ export const assignmentHelpManchester: LandingContent = {
     },
     {
       q: 'How do I pay for assignment help?',
-      a: 'You pay 50% to start and the remaining 50% on completion. Payment is by UK bank transfer in GBP, or by Saudi bank transfer in SAR for students with Saudi accounts.',
+      a: 'Half the price is paid at the start and the other half when the work is complete. Payment is by UK bank transfer in GBP, or by Saudi bank transfer in SAR for students with Saudi accounts.',
     },
     {
-      q: 'Can you help with my part of a group project?',
+      q: 'Can you guide me on my section of a group project?',
       a: "Yes. An expert can guide you on your individual section, your reflective account of teamwork or a peer assessment write-up, so that it meets the brief and fits the group's overall work.",
     },
     {
       q: "I'm back from placement and starting my dissertation. Where should I begin?",
       a: 'Start by sharing your dissertation brief and any ideas linked to your placement. An expert can help you narrow these into a focused research question and outline a plan for your proposal and literature review.',
     },
+    {
+      q: 'Which referencing style does Manchester Met use?',
+      a: 'Manchester Met Library names Cite Them Right Harvard as the institutional author-date style, and most students use it. Some departments use a different style, so check with your course or module leader. Our free Harvard reference generator follows Cite Them Right.',
+    },
+    {
+      q: 'Is there one referencing style for the whole University of Manchester?',
+      a: 'No. The style depends on your School. The library lists Harvard, MLA and Vancouver among the styles commonly used and advises checking with your supervisor before you submit.',
+    },
   ],
   ctaTitle: 'Get your Manchester assignment price in minutes',
   ctaText:
-    'Message us on WhatsApp any time or use the instant calculator on our homepage. Enjoy 10% off your first order.',
+    'Message us on WhatsApp any time or use the instant calculator on our homepage. Your first order comes with 10% off.',
   whatsappMessage: 'Hi FIZBS! I am a student in Manchester and need assignment help. Subject: , Word count: , Deadline: ',
   related: ['assignment-help-uk', 'dissertation-help-uk', 'spss-help', 'assignment-help-london', 'assignment-help-birmingham'],
 };

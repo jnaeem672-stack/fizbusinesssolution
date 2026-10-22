@@ -17,11 +17,11 @@ export const assignmentHelpLeeds: LandingContent = {
   badge: 'Leeds Students',
   h1: 'Assignment Help for Leeds University Students',
   heroSubtitle:
-    'Online expert guidance with essays, business reports, law problem questions and dissertations for students across Leeds. Share your brief on WhatsApp and get a clear price in minutes.',
+    'Online expert guidance with essays, business reports, law problem questions and dissertations for students across Leeds. Send the brief on WhatsApp and a clear price comes back within minutes.',
   highlights: ['Fully online support', 'From £20 per 1,000 words', 'Law, finance and business', '10% off first order'],
   intro: [
     'Leeds is one of the largest student cities in the North of England, with several universities, a busy city centre and a strong jobs market in finance, law and professional services. If you are looking for assignment help Leeds students can fit around lectures, part-time work and placements, FIZ Business Solutions (FIZBS) offers subject-specific support that runs completely online.',
-    "Leeds is one of the UK's biggest centres for legal and financial services outside London, and its universities reflect that, alongside strong health, education and creative courses at Leeds Beckett and Leeds Trinity. Your request goes to a Master's or PhD-qualified expert in your subject, who works from your own brief and marking criteria.",
+    "Leeds is one of the UK's biggest centres for legal and financial services outside London, and its universities reflect that, alongside strong health, education and creative courses at Leeds Beckett and Leeds Trinity. Each request is matched with a Master's or PhD-qualified expert in the subject, who follows your brief and marking criteria.",
   ],
   sections: [
     {
@@ -42,6 +42,37 @@ export const assignmentHelpLeeds: LandingContent = {
           heading: "Leeds Trinity University",
           paragraphs: ["Leeds Trinity, in Horsforth, is known for education and teacher training, journalism, psychology and business, often with professional placements.", "Our experts can help with:"],
           bullets: ["Education essays and placement reflections", "Psychology research reports", "Business coursework"],
+        },
+      ],
+    },
+    {
+      heading: 'Referencing styles at Leeds universities',
+      paragraphs: [
+        "Each of the three universities has its own approach, and using the wrong version of Harvard is a common way to lose easy marks. At the University of Leeds, every school requires a specific style. The library supports Leeds Harvard, the university's own version of Harvard, as well as Leeds Numeric and MHRA, and it covers APA, IEEE, OSCOLA and Vancouver, with a guide to finding your school's style.",
+        "Most of Leeds Beckett uses Harvard, following the university's Quote, Unquote guidelines, but Law uses OSCOLA and Psychology uses APA. At Leeds Trinity, the library's support focuses on APA, the system used by all undergraduate and taught postgraduate students, while PhD students choose a style with their supervisor.",
+        "Two free tools on this page can help: the Harvard reference generator follows Cite Them Right, and the APA generator follows APA 7th edition. Local versions such as Leeds Harvard can differ from Cite Them Right in small details, so check generated references against your own library guide, or ask your expert to review the full list.",
+      ],
+      links: [
+        {
+          label: 'Referencing at the University of Leeds',
+          href: 'https://library.leeds.ac.uk/referencing',
+          note: "Leeds Harvard, Leeds Numeric, MHRA and other styles, with a guide to your school's style.",
+          tag: 'University of Leeds',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Referencing at Leeds Beckett University',
+          href: 'https://libguides.leedsbeckett.ac.uk/subject_support/referencing_and_plagiarism/referencing',
+          note: 'Harvard through the Quote, Unquote guidelines, plus OSCOLA for Law and APA for Psychology.',
+          tag: 'Leeds Beckett',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Referencing at Leeds Trinity University',
+          href: 'https://library.leedstrinity.ac.uk/referencing',
+          note: 'APA guidance for undergraduate and taught postgraduate students.',
+          tag: 'Leeds Trinity',
+          cta: 'Official referencing guide',
         },
       ],
     },
@@ -69,8 +100,8 @@ export const assignmentHelpLeeds: LandingContent = {
     {
       heading: 'What Leeds students ask us for',
       bullets: [
-        'Essay help with structure, argument and critical evaluation',
-        'Business reports, marketing plans and case study analysis',
+        'Essays that need a sharper structure, argument or critical evaluation',
+        'Business reports, marketing plans and case studies on real organisations',
         'Law problem questions and OSCOLA referencing',
         'Accounting and finance tasks with clear workings',
         'Reflective writing for nursing, education and placement modules',
@@ -94,7 +125,7 @@ export const assignmentHelpLeeds: LandingContent = {
       heading: 'Dissertation help Leeds final-year and Master\'s students use',
       paragraphs: [
         'The dissertation is usually the largest piece of work on your degree, and it often overlaps with exams, graduate job applications and, for international students, visa planning. Breaking it into stages makes it far more manageable.',
-        'Our experts can guide you on choosing a focused topic, writing a research proposal, structuring a literature review and justifying your methodology. If your project uses data, we support SPSS, Excel, NVivo, Stata and Python. Dissertation help is £30 per 1,000 words, and we have supported more than 350 research projects.',
+        'Our experts can guide you on choosing a focused topic, writing a research proposal, structuring a literature review and justifying your methodology. If your project uses data, we support SPSS, Excel, NVivo, Stata and Python. Support costs £30 per 1,000 words, and our team has worked on more than 350 research projects.',
       ],
     },
     {
@@ -118,8 +149,8 @@ export const assignmentHelpLeeds: LandingContent = {
     {
       heading: "Prices and how Leeds students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 3,500-word finance report due in five days, for example, comes to £87.50, or £78.75 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
-        "Send your module, word count and deadline on WhatsApp, and attach the brief, rubric and any data. Law students can include the problem question and the reading list. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
+        "Leeds students pay from £20 per 1,000 words when the deadline is a week or more away, plus 25% for 3 to 6 days or 50% for 48 hours. A 3,500-word finance report due in five days, for example, comes to £87.50, or £78.75 with the 10% first-order discount. Dissertations are charged at £30 per 1,000 words.",
+        "Send your module, word count and deadline on WhatsApp, and attach the brief, rubric and any data. Law students can include the problem question and the reading list. Half is paid up front and half on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
@@ -130,7 +161,7 @@ export const assignmentHelpLeeds: LandingContent = {
     },
     {
       q: 'Which Leeds universities do you support?',
-      a: 'We support students from any university, including the University of Leeds, Leeds Beckett University and Leeds Trinity University. We are not affiliated with any institution.',
+      a: 'We support students from any university, including the University of Leeds, Leeds Beckett University and Leeds Trinity University. FIZBS is independent and not connected to these universities.',
     },
     {
       q: 'Can you help with law problem questions?',
@@ -138,7 +169,7 @@ export const assignmentHelpLeeds: LandingContent = {
     },
     {
       q: "How much does assignment help in Leeds cost?",
-      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 3,500-word report due in five days, for example, is £87.50 before your 10% first-order discount.",
+      a: "From £20 per 1,000 words when you have at least seven days. A 3,500-word report due in five days, for example, is £87.50 before your 10% first-order discount.",
     },
     {
       q: 'Can you help with my placement report or reflective log?',
@@ -152,9 +183,17 @@ export const assignmentHelpLeeds: LandingContent = {
       q: "Can you help with an accounting or finance report?",
       a: "Yes. Our finance experts help you analyse financial statements, apply valuation and investment appraisal methods and present your workings clearly, often in Excel.",
     },
+    {
+      q: 'Which referencing style does Leeds Trinity use?',
+      a: "Leeds Trinity's library focuses on APA, the system used by all undergraduate and taught postgraduate students. PhD students choose a style with their supervisor. Our free APA referencing generator follows APA 7th edition.",
+    },
+    {
+      q: 'Is Leeds Harvard the same as Cite Them Right Harvard?',
+      a: 'Not exactly. Leeds Harvard is the University of Leeds version of Harvard, and some details differ. You can generate a reference with our Cite Them Right generator and then check it against the Leeds library guide, or ask your expert to review your reference list.',
+    },
   ],
   ctaTitle: 'Get your Leeds assignment price in minutes',
-  ctaText: 'Message us on WhatsApp any time or use the instant calculator to see your price. New customers get 10% off their first order.',
+  ctaText: 'WhatsApp us at any time of day, or check the instant calculator for your price. First-time customers save 10%.',
   whatsappMessage: 'Hi FIZBS! I am a student in Leeds and need assignment help. Subject: , Word count: , Deadline: ',
   related: ['assignment-help-uk', 'dissertation-help-uk', 'law-assignment-help', 'assignment-help-manchester', 'assignment-help-bradford'],
 };

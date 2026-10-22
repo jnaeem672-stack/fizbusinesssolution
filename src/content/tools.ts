@@ -486,7 +486,7 @@ export const TOOLS: ToolContent[] = [
     ],
     services: ['referencing-help', 'psychology-assignment-help', 'healthcare-nursing-assignment-help', 'education-assignment-help'],
     guides: ['apa-referencing-guide', 'harvard-referencing-guide', 'how-to-write-a-literature-review'],
-    showOn: [...SAUDI_PAGES, 'assignment-help-usa', 'assignment-help-uae', 'dissertation-help-uk', 'thesis-help', 'research-methodology-help', 'spss-help', 'data-analysis-help', 'nvivo-thematic-analysis-help'],
+    showOn: [...SAUDI_PAGES, 'assignment-help-usa', 'assignment-help-uae', 'assignment-help-leeds', 'dissertation-help-uk', 'thesis-help', 'research-methodology-help', 'spss-help', 'data-analysis-help', 'nvivo-thematic-analysis-help'],
     promotedIn: REFERENCING_GUIDES,
     updated: '2026-10-19',
     whatsappMessage: 'Hello FIZBS! I need help checking my APA references. Word count: , Deadline: ',

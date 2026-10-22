@@ -62,6 +62,18 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   Identical long sentences: Hull vs Luton 52% to 39%, London vs Manchester 24% to 14%.
 - Enrich each kept page with verifiable local detail (universities with official links, their referencing
   conventions from library pages, local FAQs) and vary the price and process sentences. Target under 20% shared.
+- Done 22 Oct: Manchester, Bristol, Leeds. Each got a "Referencing styles at ..." section with official library
+  link cards (LandingLink now has an optional cta text, here "Official referencing guide"), 2 local referencing FAQs,
+  and rewritten price, payment, office and affiliation sentences. Source check (scratchpad dupsrc.py): 0 body
+  sentences shared with any other city page (only the WhatsApp prefill). Rendered check incl. menu, form, calculator
+  and footer: 23 to 31% (that part is site-wide UI and cannot be varied). APA generator now also shows on Leeds.
+  Facts used (all from official library pages, checked 22 Oct): Manchester Met = Cite Them Right Harvard
+  (institutional, some departments differ); Univ. of Manchester = depends on School (Harvard, MLA, Vancouver common);
+  UWE = Cite Them Right Harvard replaces UWE Bristol Harvard from Sept 2026; Bristol = library points to Cite Them
+  Right; Bath = Harvard (Bath); Leeds = school sets style (Leeds Harvard, Leeds Numeric, MHRA, others); Leeds Beckett
+  = Harvard via Quote, Unquote, Law OSCOLA, Psychology APA; Leeds Trinity = APA for UG and taught PG. Salford: no
+  official source found, so no style is stated.
+- Next to enrich: Luton, Bradford, then London, Birmingham, Glasgow, Liverpool, Saudi cities (EN + AR), Dubai.
   No invented results or reviews.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)

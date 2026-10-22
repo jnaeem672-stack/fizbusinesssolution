@@ -7,6 +7,8 @@ export interface LandingLink {
   note?: string;
   /** Small tag, e.g. city */
   tag?: string;
+  /** Text of the call to action on the card (defaults to 'Official admissions page') */
+  cta?: string;
 }
 
 export interface LandingSection {
