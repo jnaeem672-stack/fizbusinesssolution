@@ -46,6 +46,19 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
 - Owner to-do: Search Console export (Performance, country Saudi Arabia, 3 months, Queries and Pages), Semrush
   Position Tracking setup (10 Saudi keywords, mobile), Site Audit, and confirm nobody bought links.
 
+## Site audit, 22 Oct 2026 (doc: https://claude.ai/artifact/QmDKam17urtLakXR87dQ43, Fix plan table has Status dropdowns)
+- Technical is clean: 168/168 pages 200, 0 duplicate titles or descriptions, 1 H1 each, self canonicals, 0 broken
+  links, 0 schema errors, 27/27 redirects correct, 0 mobile overflow, 0 JS errors, Lighthouse SEO 100.
+- 18 fixes, ALL "To discuss" (do not build before the owner agrees), in priority order:
+  1 experts real? (24 initial-named profiles) 2 /results page decision (England contract cheating law, ASA summary)
+  3 Arabic lang="ar" dir="rtl" from the server 4 named reviewer on 47 guides 5 hero LCP (homepage 4.0 s lab, render
+  delay 3.2 to 3.5 s, homepage 2,967 elements) 6 backlinks 7 links to 13 weak pages 8 /academic-integrity in sitemap
+  9 link Sajjad's 20 articles 10 "Hire Expert" to "Talk to [name]" 11 business registration details 12 city pages
+  13 GSC export on 4 Nov + live PageSpeed + security headers 14 wording slips (coaching, professional writing, full
+  dissertation, on-time delivery) 15 form em dash and promo bar copies 16 contrast and aria-labels 17 Organization
+  schema 18 two descriptions over 160.
+- Audit scripts in the scratchpad: audit/crawl.py (raw HTML crawl), pw/mobile_all.mjs, lh/ (Lighthouse 12.8.2).
+
 ## City pages plan (owner approved 21 Oct 2026, after the Skyline Grow audit)
 - Keep and enrich 17: London, Birmingham, Manchester, Bristol, Leeds, Glasgow, Luton, Bradford (UK, Semrush 110 to 590
   searches); Riyadh, Jeddah, Makkah, Dammam (EN + AR); Dubai.
