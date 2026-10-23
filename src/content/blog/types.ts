@@ -31,6 +31,8 @@ export interface BlogPost {
   excerpt: string;
   /** ISO date */
   published: string;
+  /** Optional ISO date of the last content change (used for dateModified and the sitemap) */
+  updated?: string;
   /** Opening paragraphs */
   intro: string[];
   sections: BlogSection[];

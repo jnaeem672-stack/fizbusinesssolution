@@ -46,6 +46,19 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
 - Owner to-do: Search Console export (Performance, country Saudi Arabia, 3 months, Queries and Pages), Semrush
   Position Tracking setup (10 Saudi keywords, mobile), Site Audit, and confirm nobody bought links.
 
+## Search Console 24 h (23 Oct 2026, owner screenshots)
+- 759 impressions, 4 clicks, avg position 18.8 (19 Oct: 179 a day at about 50). /ar/blog/what-is-an-assignment had
+  445 impressions at position 6.2 and 0 clicks (queries اسايمنت بالانجليزي 47, اسايمنت 28, assignment معنى 26).
+  Arabic guides on page 1: scientific-research-steps 6.5, research-conclusion 8.8, graduation 8.3, questionnaire 9.5.
+- Countries: Egypt 369 impressions (pos 6.3), UK 69 (51), Saudi 63 (18.4), US 46 (58), Jordan, Yemen, Syria,
+  Libya, Iraq, Algeria at 7 to 8. UK queries are mostly the Harvard generator at 66 to 83 (needs backlinks).
+- Owner (23 Oct): Egyptian students on UK, US, Canadian or Dubai-style programmes are welcome if they pay.
+- Done 23 Oct: اسايمنت guide CTR update (title "اسايمنت بالانجليزي (Assignment): المعنى ونموذج جاهز", answer-first
+  intro, "نموذج اسايمنت جاهز" template section with English sentence starters, section on British, American and
+  Canadian programmes in Egypt and the Gulf, 4 new FAQs incl. يعني ايه اسايمنت). BlogPost now has optional
+  `updated` (dateModified and sitemap lastmod). Check its CTR in Search Console around 30 Oct.
+- Semrush to check (UK): digital marketing dissertation topics, harvard referencer, how to harvard reference in text.
+
 ## Site audit, 22 Oct 2026 (doc: https://claude.ai/artifact/QmDKam17urtLakXR87dQ43, Fix plan table has Status dropdowns)
 - Technical is clean: 168/168 pages 200, 0 duplicate titles or descriptions, 1 H1 each, self canonicals, 0 broken
   links, 0 schema errors, 27/27 redirects correct, 0 mobile overflow, 0 JS errors, Lighthouse SEO 100.

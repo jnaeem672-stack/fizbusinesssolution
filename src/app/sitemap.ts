@@ -45,7 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/ar/blog`, changeFrequency: 'weekly', priority: 0.7 },
     ...[...EN_POSTS, ...AR_POSTS].map((post) => ({
       url: `${SITE_URL}${postPath(post)}`,
-      lastModified: new Date((post.locale === 'en' && GUIDE_GEO[post.slug]?.updated) || post.published),
+      lastModified: new Date((post.locale === 'en' && GUIDE_GEO[post.slug]?.updated) || post.updated || post.published),
       changeFrequency: 'monthly' as const,
       priority: 0.7,
       ...(post.locale === 'en' && GUIDE_FIGURES[post.slug] ? { images: GUIDE_FIGURES[post.slug].map((f) => `${SITE_URL}${f.src}`) } : {}),

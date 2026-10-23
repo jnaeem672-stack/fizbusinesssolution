@@ -89,7 +89,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
   const figuresFor = (heading: string, position?: GuideFigure['position']) =>
     figures.filter((f) => f.section === heading && f.position === position).map((f) => <Figure key={f.src} figure={f} />);
   const specialist = geo ? getExpert(geo.specialist) : undefined;
-  const modified = geo?.updated ?? post.published;
+  const modified = geo?.updated ?? post.updated ?? post.published;
 
   const schema = [
     {
