@@ -1,6 +1,10 @@
 export interface ArHomeCard {
   title: string;
   desc: string;
+  /** Optional page the card links to (service cards) */
+  href?: string;
+  /** Link text for href, e.g. the page's main search phrase */
+  linkLabel?: string;
 }
 
 export interface ArHomeContent {

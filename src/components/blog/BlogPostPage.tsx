@@ -4,6 +4,7 @@ import FaqSection from '@/components/FaqSection';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
+import InlineText from '@/components/ui/InlineText';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { expertCallUrl, EXPERT_CALL } from '@/constants/expertCall';
 import { SITE_URL, getLandingPage, landingLabel, landingPath, type LandingContent } from '@/content/landing';
@@ -164,7 +165,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
             )}
             <div className="space-y-5 mb-10">
               {post.intro.map((p, i) => (
-                <p key={i} className={i === 0 ? 'text-lg text-navy font-medium' : undefined}>{p}</p>
+                <p key={i} className={i === 0 ? 'text-lg text-navy font-medium' : undefined}><InlineText text={p} /></p>
               ))}
             </div>
 
@@ -184,14 +185,14 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
               <div key={s.heading} className="mb-11">
                 <h2 id={ids[si]} className="scroll-mt-[130px] text-2xl md:text-3xl font-extrabold text-navy tracking-tight mb-4">{s.heading}</h2>
                 {figuresFor(s.heading, 'top')}
-                <div className="space-y-4">{s.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}</div>
+                <div className="space-y-4">{s.paragraphs?.map((p, i) => <p key={i}><InlineText text={p} /></p>)}</div>
                 {figuresFor(s.heading, 'afterText')}
                 {s.steps && (
                   <ol className="mt-5 space-y-3">
                     {s.steps.map((step, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-black">{i + 1}</span>
-                        <span>{step}</span>
+                        <span><InlineText text={step} /></span>
                       </li>
                     ))}
                   </ol>
@@ -200,7 +201,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                   <ul className="mt-5 space-y-2.5">
                     {s.bullets.map((b, i) => (
                       <li key={i} className="flex items-start gap-2.5">
-                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-1" /> <span>{b}</span>
+                        <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-1" /> <span><InlineText text={b} /></span>
                       </li>
                     ))}
                   </ul>
@@ -209,12 +210,12 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                 {s.subsections?.map((sub) => (
                   <div key={sub.heading} className="mt-7">
                     <h3 className="text-xl font-extrabold text-navy mb-3">{sub.heading}</h3>
-                    <div className="space-y-3">{sub.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}</div>
+                    <div className="space-y-3">{sub.paragraphs?.map((p, i) => <p key={i}><InlineText text={p} /></p>)}</div>
                     {sub.bullets && (
                       <ul className="mt-3 space-y-2">
                         {sub.bullets.map((b, i) => (
                           <li key={i} className="flex items-start gap-2.5">
-                            <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1.5" /> <span>{b}</span>
+                            <CheckCircle2 className="w-4 h-4 text-primary shrink-0 mt-1.5" /> <span><InlineText text={b} /></span>
                           </li>
                         ))}
                       </ul>
@@ -224,7 +225,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                 {s.tip && (
                   <div className="mt-6 flex gap-3 rounded-2xl border border-[#E9DCAE] bg-[#FBF6E6] p-5">
                     <Lightbulb className="w-6 h-6 text-primary shrink-0" />
-                    <p className="text-[16px] text-navy"><strong>{t.tipLabel}: </strong>{s.tip}</p>
+                    <p className="text-[16px] text-navy"><strong>{t.tipLabel}: </strong><InlineText text={s.tip} /></p>
                   </div>
                 )}
                 {s.links && s.links.length > 0 && (
