@@ -100,6 +100,7 @@ export const howToWriteAResearchProposalPost: BlogPost = {
         },
       ],
       tip: 'Write the problem statement and research questions first, even if they appear later in the document. Every other section should support them.',
+      links: [{ label: "How to write a dissertation introduction", href: "/blog/how-to-write-a-dissertation-introduction" }],
     },
     {
       heading: 'Writing aims, objectives and research questions that match',
@@ -113,6 +114,7 @@ export const howToWriteAResearchProposalPost: BlogPost = {
         'Objective 3: To recommend how sustainable fashion brands can select and brief influencers.',
         'Matching question: To what extent does perceived influencer credibility predict purchase intention among UK Generation Z consumers of sustainable fashion?',
       ],
+      links: [{ label: "How to write a research question", href: "/blog/how-to-write-a-research-question" }],
     },
     {
       heading: 'The literature review section of a proposal',
@@ -142,6 +144,7 @@ export const howToWriteAResearchProposalPost: BlogPost = {
         "Timeline: a Master's project covers a few months; a PhD covers three to four years",
         'Fit: PhD applicants should also show why the project suits the department and the potential supervisor',
       ],
+      links: [{ label: "How to email a PhD supervisor", href: "/blog/how-to-email-a-phd-supervisor" }],
     },
     {
       heading: 'A short research proposal example (outline)',

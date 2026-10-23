@@ -183,6 +183,7 @@ export const ukUniversityGradingSystemPost: BlogPost = {
         `Keep copies of all correspondence in case you need them later for a job or further study application.`,
       ],
       tip: `If your target is a PhD or a scholarship, check the entry requirements in UK terms (for example 'a 2:1 or equivalent' and 'a Master's with merit') and ask the admissions team directly how they assess your previous qualifications.`,
+      links: [{ label: "UK Master's personal statement", href: "/blog/uk-masters-personal-statement" }],
     },
     {
       heading: `How your final degree classification is calculated`,

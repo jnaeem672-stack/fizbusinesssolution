@@ -73,7 +73,7 @@ export const article: ExpertArticle = {
     {
       heading: "How Maya supports each stage of your assignment",
       paragraphs: [
-        "Public health assignments reward students who move from description to analysis to recommendation. Maya can support students at each stage of that journey, whether they are writing a short essay or a full dissertation.",
+        "Public health assignments reward students who move from description to analysis to recommendation. Maya can support students at each stage of that journey, whether they are writing a short essay or a dissertation.",
         "At the planning stage, she helps students narrow a broad topic into a focused question, identify the population and setting, and choose a framework that fits the task. A clear plan makes it much easier to keep the word count under control and stay relevant to the brief.",
         "During research, Maya explains how to search databases such as PubMed, CINAHL and Google Scholar, how to build a search strategy with keywords and Boolean operators, and how to judge the quality of the evidence found. She can also explain how to read and summarise epidemiological data from national surveys and reports.",
         "At the writing and review stage, she checks that the argument is balanced, that claims are supported by evidence, and that recommendations are realistic, ethical and linked to policy. She also reviews structure, academic tone and referencing so the final work is clear and well presented.",

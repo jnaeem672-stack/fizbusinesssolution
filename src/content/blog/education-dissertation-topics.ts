@@ -136,6 +136,7 @@ export const educationDissertationTopicsPost: BlogPost = {
         "FIZBS has supported education students and trainee teachers since 2015. Our experts can help you narrow your topic, connect it to theory, design interviews or questionnaires, and analyse your data with thematic analysis or SPSS.",
         'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7.',
       ],
+      links: [{ label: "Business dissertation topics", href: "/blog/business-dissertation-topics" }, { label: "Marketing dissertation topics", href: "/blog/marketing-dissertation-topics" }, { label: "HRM dissertation topics", href: "/blog/hrm-dissertation-topics" }, { label: "Finance and accounting topics", href: "/blog/finance-accounting-dissertation-topics" }, { label: "Computer science topics", href: "/blog/computer-science-dissertation-topics" }, { label: "Nursing and healthcare topics", href: "/blog/nursing-healthcare-dissertation-topics" }],
     },
   ],
   faqs: [

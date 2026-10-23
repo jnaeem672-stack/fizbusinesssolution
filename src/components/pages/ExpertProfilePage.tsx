@@ -99,10 +99,10 @@ export default function ExpertProfilePage({ expert }: { expert: ExpertProfile })
               <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
                 <WhatsAppLink
                   href={whatsappUrl}
-                  aria-label={`Hire ${expert.name} on WhatsApp`}
+                  aria-label={`Talk to ${firstName} on WhatsApp`}
                   className="inline-flex items-center justify-center gap-3 px-8 py-4 bg-white text-navy font-bold rounded-xl text-lg shadow-xl hover:scale-[1.02] transition-all"
                 >
-                  <WhatsAppIcon size={28} className="w-7 h-7" /> Hire {firstName} on WhatsApp
+                  <WhatsAppIcon size={28} className="w-7 h-7" /> Talk to {firstName} on WhatsApp
                 </WhatsAppLink>
                 <a href="#quote-form" className="px-8 py-4 bg-primary text-white font-bold rounded-xl text-lg shadow-xl shadow-primary/40 hover:brightness-110 transition-all text-center">
                   Get a Free Quote
@@ -162,10 +162,10 @@ export default function ExpertProfilePage({ expert }: { expert: ExpertProfile })
                 <p className="text-primary text-sm font-bold mb-5">{expert.title}</p>
                 <WhatsAppLink
                   href={whatsappUrl}
-                  aria-label={`Hire ${expert.name} on WhatsApp`}
+                  aria-label={`Talk to ${firstName} on WhatsApp`}
                   className="flex items-center justify-center gap-2 w-full py-3.5 bg-white text-navy font-bold rounded-xl mb-3"
                 >
-                  <WhatsAppIcon size={22} className="w-5 h-5" /> Hire {firstName}
+                  <WhatsAppIcon size={22} className="w-5 h-5" /> Talk to {firstName}
                 </WhatsAppLink>
                 <a href="/#quote" className="block w-full py-3.5 bg-primary text-white font-bold rounded-xl hover:brightness-110 transition-all">
                   See Instant Price

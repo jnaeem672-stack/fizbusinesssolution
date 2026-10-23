@@ -137,7 +137,8 @@ export const dissertationMethodologyGuidePost: BlogPost = {
             "Software such as NVivo, or manual coding in a spreadsheet, explained clearly either way."
           ]
         }
-      ]
+      ],
+      links: [{ label: "Which statistical test in SPSS?", href: "/blog/which-statistical-test-spss" }],
     },
     {
       heading: "Research ethics and limitations",

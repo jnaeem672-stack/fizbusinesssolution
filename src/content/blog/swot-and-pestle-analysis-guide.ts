@@ -169,7 +169,8 @@ export const swotAndPestleAnalysisGuidePost: BlogPost = {
         "Recognise that one factor can be both an opportunity and a threat. Hybrid working may hurt city-centre stores but help suburban ones.",
         "Acknowledge the limitations of the frameworks: SWOT can be subjective and static, and PESTLE can become a long list with no ranking. Mention how you addressed this, for example through evidence and prioritisation.",
         "Use academic sources on strategy. Textbooks such as Johnson, Whittington and colleagues' Exploring Strategy are commonly recommended on UK business modules; check your reading list."
-      ]
+      ],
+      links: [{ label: "How to write a case study analysis", href: "/blog/how-to-write-a-case-study-analysis" }],
     },
     {
       heading: "Common mistakes in SWOT and PESTLE assignments",

@@ -143,6 +143,7 @@ export const arGraduationProjectGuidePost: BlogPost = {
       links: [
         { label: 'مشروع التخرج للماجستير في جامعة أم القرى', href: '/ar/blog/masters-graduation-project-umm-al-qura' },
         { label: 'كيف تكتب الملخص', href: '/ar/blog/how-to-write-an-abstract' },
+        { label: "كيف تكتب خاتمة البحث", href: "/ar/blog/how-to-write-a-research-conclusion" },
       ],
     },
     {

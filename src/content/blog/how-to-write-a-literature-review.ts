@@ -176,7 +176,8 @@ export const howToWriteALiteratureReviewPost: BlogPost = {
         "Conflicting evidence: studies disagree and the reasons are unclear.",
         "Time gap: the evidence is dated and conditions have changed, for example after new regulations or technology."
       ],
-      tip: "Example: 'While existing research has examined remote work and wellbeing in large technology firms, little attention has been given to small and medium-sized enterprises. This study addresses that gap by...' Be specific, and avoid claiming that 'no research exists' unless your searches genuinely support that."
+      tip: "Example: 'While existing research has examined remote work and wellbeing in large technology firms, little attention has been given to small and medium-sized enterprises. This study addresses that gap by...' Be specific, and avoid claiming that 'no research exists' unless your searches genuinely support that.",
+      links: [{ label: "How to write a research question", href: "/blog/how-to-write-a-research-question" }],
     },
     {
       heading: "Common literature review mistakes to avoid",

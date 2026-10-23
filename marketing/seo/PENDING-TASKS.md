@@ -83,6 +83,14 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   dissertation, on-time delivery) 15 form em dash and promo bar copies 16 contrast and aria-labels 17 Organization
   schema 18 two descriptions over 160.
 - Audit scripts in the scratchpad: audit/crawl.py (raw HTML crawl), pw/mobile_all.mjs, lh/ (Lighthouse 12.8.2).
+- DONE 23 Oct night (owner: "agy ka kaam shuro karo seo ka"): items 7 (68 See also links: research question,
+  intro, discussion, conclusion, SPSS test, case study, PhD email, personal statement, topic lists cross-linked,
+  AR conclusion), 8 (/academic-integrity in sitemap, now 169 URLs), 10 ("Talk to [name]" on expert pages,
+  "View profile" on Our Team), 14 (coaching / professional writing / full dissertation / on-time delivery reworded),
+  15 (upload line without em dash; marquee repeats aria-hidden + data-nosnippet), 16 (WhatsApp and support link
+  labels match visible text; badge text #735600 for contrast), 17 (Organization schema with @id, providers point to
+  it; priceRange and serviceType removed), 18 (two descriptions shortened). Still open: 1, 2, 3, 4, 5, 9, 11, 13.
+- all.mjs now reports 7 "BAD" pages: /academic-integrity joins the list only because it has no support form.
 
 ## City pages plan (owner approved 21 Oct 2026, after the Skyline Grow audit)
 - Keep and enrich 17: London, Birmingham, Manchester, Bristol, Leeds, Glasgow, Luton, Bradford (UK, Semrush 110 to 590
@@ -120,7 +128,11 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   (UoB iCite: a version of Harvard adopted as standard; BCU: Harvard main, Cite Them Right Harvard newest, BCU
   Harvard guide too; Newman Harvard based on Cite Them Right, OSCOLA law, APA for MSc Clinical Applications in
   Psychology; Aston and UCB not verified, so no style stated). 2 FAQs London, 1 Birmingham.
-- Next to enrich: Glasgow, Liverpool, Saudi cities (EN + AR), Dubai.
+- Done 23 Oct night: Glasgow (UofG no single style, guides incl. Harvard Leeds; GCU Cite Them Right Harvard with
+  APA psychology, IEEE engineering, Chicago history, OSCOLA law; Strathclyde own Strathclyde Harvard guide) and
+  Liverpool (UoL library supports Cite Them Right; LJMU switched from Harvard LJMU to Cite Them Right from 2024/25;
+  Hope has its own Liverpool Hope Harvard guides 2026). UWS and Edge Hill not verified, so no style stated.
+- Next to enrich: Saudi cities (EN + AR: Riyadh, Jeddah, Makkah, Dammam), Dubai.
 - Request Indexing backlog (owner, 23 Oct 18:51: earlier lists not done yet). ONE running list, give only the next
   10 each morning, skip any URL that shows "URL is on Google" or "Indexing requested". Done: /ar/blog/what-is-an-assignment.
   Batch 1 DONE 23 Oct 19:27 except grading system (quota exceeded): /assignment-help-london, /assignment-help-birmingham, /assignment-help-manchester, /assignment-help-bristol,

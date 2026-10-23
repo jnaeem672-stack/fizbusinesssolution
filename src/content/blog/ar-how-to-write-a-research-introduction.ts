@@ -93,6 +93,7 @@ export const arHowToWriteAResearchIntroductionPost: BlogPost = {
         'نسخ مقدمة من الإنترنت، وتكشفها أنظمة كشف الاقتباس بسهولة',
         'كتابة المقدمة أولًا ثم عدم تحديثها بعد تغيّر البحث',
       ],
+      links: [{ label: "كيف تكتب خاتمة البحث", href: "/ar/blog/how-to-write-a-research-conclusion" }],
     },
     {
       heading: 'مقدمة البحث بالإنجليزية',

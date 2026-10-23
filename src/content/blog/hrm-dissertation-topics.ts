@@ -139,6 +139,7 @@ export const hrmDissertationTopicsPost: BlogPost = {
         "If you are choosing between topics, refining your research question or planning your methodology, FIZBS can help. Since 2015 we have supported students in more than 115 subjects, with particular strength in business, HRM and management. Our experts hold Master's and PhD qualifications and support UK, Saudi and CIPD students.",
         'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7, or book a call with an expert to talk through your topic before you order.',
       ],
+      links: [{ label: "Business dissertation topics", href: "/blog/business-dissertation-topics" }, { label: "Marketing dissertation topics", href: "/blog/marketing-dissertation-topics" }, { label: "Finance and accounting topics", href: "/blog/finance-accounting-dissertation-topics" }, { label: "Computer science topics", href: "/blog/computer-science-dissertation-topics" }, { label: "Education dissertation topics", href: "/blog/education-dissertation-topics" }, { label: "Nursing and healthcare topics", href: "/blog/nursing-healthcare-dissertation-topics" }],
     },
   ],
   faqs: [

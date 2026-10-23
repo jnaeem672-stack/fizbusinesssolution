@@ -38,7 +38,7 @@ const FileUploadZone = ({
         </div>
         <p className="text-sm font-bold text-navy mb-1">Drop files here or click to upload</p>
         <p className="text-[11px] text-gray-500 text-center">
-          PDF, DOC, DOCX, JPG, PNG, ZIP — Max 10MB each, up to {maxFiles} files
+          PDF, DOC, DOCX, JPG, PNG or ZIP, max 10MB each, up to {maxFiles} files
         </p>
       </div>
     )}

@@ -129,6 +129,7 @@ export const howToWriteAnAbstractPost: BlogPost = {
       paragraphs: [
         'Write the abstract last, after your findings, discussion and conclusion are complete. Only then do you know exactly what you found and what it means. If you write it early, it will probably promise things your final dissertation does not deliver.',
       ],
+      links: [{ label: "How to write a dissertation conclusion", href: "/blog/how-to-write-a-dissertation-conclusion" }],
     },
     {
       heading: 'Abstract checklist and common mistakes',

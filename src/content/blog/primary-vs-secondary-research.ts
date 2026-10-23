@@ -179,6 +179,7 @@ export const primaryVsSecondaryResearchPost: BlogPost = {
         'Agree the approach with your supervisor before you start collecting or downloading data.',
       ],
       tip: 'Many strong dissertations combine both: secondary sources build the context and the literature review, and a modest amount of primary data answers the specific question.',
+      links: [{ label: "Which statistical test in SPSS?", href: "/blog/which-statistical-test-spss" }],
     },
     {
       heading: 'Common mistakes',

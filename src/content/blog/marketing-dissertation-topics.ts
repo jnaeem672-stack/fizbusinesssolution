@@ -135,6 +135,7 @@ export const marketingDissertationTopicsPost: BlogPost = {
         "FIZBS has supported students in more than 115 subjects since 2015, and marketing and business are among our strongest areas. Our Master's and PhD-qualified experts can help you choose a focused topic, build your literature review, design your survey and analyse your data in SPSS or SmartPLS.",
         'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7 with your topic ideas.',
       ],
+      links: [{ label: "Business dissertation topics", href: "/blog/business-dissertation-topics" }, { label: "HRM dissertation topics", href: "/blog/hrm-dissertation-topics" }, { label: "Finance and accounting topics", href: "/blog/finance-accounting-dissertation-topics" }, { label: "Computer science topics", href: "/blog/computer-science-dissertation-topics" }, { label: "Education dissertation topics", href: "/blog/education-dissertation-topics" }, { label: "Nursing and healthcare topics", href: "/blog/nursing-healthcare-dissertation-topics" }],
     },
   ],
   faqs: [

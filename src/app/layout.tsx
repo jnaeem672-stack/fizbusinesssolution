@@ -85,7 +85,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           dangerouslySetInnerHTML={{
             __html: JSON.stringify({
               '@context': 'https://schema.org',
-              '@type': 'ProfessionalService',
+              '@type': 'Organization',
+              '@id': 'https://fizbusinessolutions.com/#organization',
               name: 'FIZ Business Solutions',
               alternateName: ['FIZBS', 'FIZ Business Solution'],
               url: 'https://fizbusinessolutions.com',
@@ -115,17 +116,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                 'CIPD, CMI, HND and OTHM qualifications',
               ],
               areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates', 'United States'],
-              priceRange: '££',
-              serviceType: [
-                'Assignment help',
-                'Dissertation help',
-                'Essay help',
-                'Research proposal help',
-                'Thesis help',
-                'Data analysis help',
-                'Proofreading and editing',
-                'Referencing help',
-              ],
               contactPoint: {
                 '@type': 'ContactPoint',
                 telephone: '+971543800388',

@@ -111,6 +111,7 @@ export const quantitativeVsQualitativeResearchPost: BlogPost = {
         "Quantitative analysis starts with cleaning the data and describing it with frequencies, means and standard deviations, then moves to inferential tests that match your question and variables, such as t-tests, chi-square, correlation or regression. Our guide to choosing a statistical test covers this step in detail.",
         "Qualitative analysis usually means reading and re-reading your data, coding it, grouping codes into themes and checking those themes against the data. Braun and Clarke's thematic analysis (2006) is the most widely used approach in student dissertations, and NVivo can help you manage the coding.",
       ],
+      links: [{ label: "Which statistical test in SPSS?", href: "/blog/which-statistical-test-spss" }],
     },
     {
       heading: 'How to choose: five questions to ask yourself',

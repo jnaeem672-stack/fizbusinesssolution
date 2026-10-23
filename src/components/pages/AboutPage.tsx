@@ -104,7 +104,7 @@ export default function AboutPage() {
             <motion.div initial={{ opacity: 0, x: 50 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }} className="space-y-6 text-gray-600 text-lg leading-relaxed">
               <p>FIZ Business Solutions (FIZBS) has provided assignment help and dissertation help to university students since 2015. Over the last 10 years we have supported more than 10,000 students and completed 350+ research projects.</p>
               <p>Our team of qualified subject experts helps Bachelor&apos;s, Master&apos;s, MBA and PhD students at universities across the UK and Saudi Arabia, with a special focus on business, management, marketing, finance and accounting.</p>
-              <p>Whether you need help with an essay, a business report, a case study, a research proposal or a full dissertation, we offer clear pricing, on-time delivery and friendly 24/7 support on WhatsApp.</p>
+              <p>Whether you need help with an essay, a business report, a case study, a research proposal or your dissertation, we offer clear pricing, a plan built around your deadline and friendly 24/7 support on WhatsApp.</p>
             </motion.div>
           </div>
         </div>

@@ -104,6 +104,7 @@ export const howToWriteADissertationConclusionPost: BlogPost = {
         'Overclaiming the impact of a small study.',
         'Ending abruptly without a final concluding statement.',
       ],
+      links: [{ label: "How to write a dissertation discussion", href: "/blog/how-to-write-a-dissertation-discussion" }],
     },
     {
       heading: "Writing a reflection section (if required)",

@@ -100,6 +100,7 @@ export const howToWriteADissertationIntroductionPost: BlogPost = {
           ],
         },
       ],
+      links: [{ label: "How to write a research question", href: "/blog/how-to-write-a-research-question" }],
     },
     {
       heading: 'A short dissertation introduction example',

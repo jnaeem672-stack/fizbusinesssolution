@@ -146,7 +146,7 @@ export default function HomeHero() {
               </a>
               <WhatsAppLink
                 href={WHATSAPP_URL}
-                aria-label="Chat with us on WhatsApp"
+                aria-label="Chat on WhatsApp"
                 className="inline-flex items-center justify-center gap-3 px-7 py-3.5 bg-white text-navy font-bold rounded-xl text-lg shadow-xl hover:scale-[1.03] active:scale-[0.97] transition-all"
               >
                 <WhatsAppIcon size={28} className="w-7 h-7" />
@@ -178,7 +178,7 @@ export default function HomeHero() {
 
       <Link
         href={SUPPORT_FORM_HASH}
-        aria-label="Go to support request form"
+        aria-label="Request Support"
         className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex lg:hidden flex-col items-center gap-2 text-white/40 hover:text-white/70 transition-colors"
       >
         <span className="text-[10px] uppercase tracking-widest font-bold">Request Support</span>

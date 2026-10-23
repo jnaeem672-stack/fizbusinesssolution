@@ -175,6 +175,7 @@ export const arScientificResearchStepsPost: BlogPost = {
         'عرض النتائج دون تفسيرها أو ربطها بالدراسات السابقة',
         'تأجيل التوثيق إلى النهاية فتضيع المصادر',
       ],
+      links: [{ label: "كيف تكتب خاتمة البحث", href: "/ar/blog/how-to-write-a-research-conclusion" }],
     },
     {
       heading: 'هل تحتاج إلى مساعدة في خطوات بحثك؟',

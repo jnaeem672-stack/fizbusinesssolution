@@ -135,6 +135,7 @@ export const financeAccountingDissertationTopicsPost: BlogPost = {
         "Finance and accounting are among FIZBS's strongest subjects. Since 2015 our Master's and PhD-qualified experts have supported students with topic choice, literature reviews, data collection plans and analysis in Excel, SPSS, Stata and EViews.",
         'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7 to discuss your topic.',
       ],
+      links: [{ label: "Business dissertation topics", href: "/blog/business-dissertation-topics" }, { label: "Marketing dissertation topics", href: "/blog/marketing-dissertation-topics" }, { label: "HRM dissertation topics", href: "/blog/hrm-dissertation-topics" }, { label: "Computer science topics", href: "/blog/computer-science-dissertation-topics" }, { label: "Education dissertation topics", href: "/blog/education-dissertation-topics" }, { label: "Nursing and healthcare topics", href: "/blog/nursing-healthcare-dissertation-topics" }],
     },
   ],
   faqs: [

@@ -171,7 +171,8 @@ export const whichStatisticalTestSpssPost: BlogPost = {
         "Regression: \"The model explained 31% of the variance in purchase intention, R² = .31, F(2, 97) = 21.60, p < .001.\"",
         "Mann-Whitney U: \"Satisfaction was higher in Group A (Mdn = 4) than Group B (Mdn = 3), U = 120.50, z = -2.31, p = .021.\""
       ],
-      tip: "Do not paste raw SPSS tables into your dissertation. Rebuild them as APA tables (bold table number, italic title, no vertical lines) and comment on them in the text."
+      tip: "Do not paste raw SPSS tables into your dissertation. Rebuild them as APA tables (bold table number, italic title, no vertical lines) and comment on them in the text.",
+      links: [{ label: "How to write a dissertation discussion", href: "/blog/how-to-write-a-dissertation-discussion" }],
     },
     {
       heading: "Common mistakes when choosing a statistical test",

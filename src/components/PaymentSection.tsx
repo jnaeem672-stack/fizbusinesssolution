@@ -25,7 +25,7 @@ export default function PaymentSection({ locale = 'en', className = 'bg-white' }
     <section id="payment" className={`py-16 md:py-24 ${className}`} dir={isAr ? 'rtl' : undefined}>
       <div className="max-w-site mx-auto px-4">
         <div className="text-center mb-12">
-          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 bg-primary/10 text-primary">
+          <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 bg-primary/10 text-[#735600]">
             <Lock className="w-3 h-3" /> {p.section.badge}
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-navy tracking-tight mb-4">{p.section.title}</h2>

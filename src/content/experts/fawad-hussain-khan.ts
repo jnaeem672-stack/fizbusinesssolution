@@ -83,7 +83,7 @@ export const article: ExpertArticle = {
     {
       heading: "How working with FIZBS works",
       paragraphs: [
-        "Getting media studies assignment help through FIZBS is simple. Students share what they need, receive a clear quote and stay informed throughout. Whether it is a short essay or a full dissertation chapter, the process stays the same, and every piece of support is tailored to the brief and the module's learning outcomes.",
+        "Getting media studies assignment help through FIZBS is simple. Students share what they need, receive a clear quote and stay informed throughout. Whether it is a short essay or a dissertation chapter, the process stays the same, and every piece of support is tailored to the brief and the module's learning outcomes.",
       ],
       bullets: [
         "Share your assignment brief and marking criteria on WhatsApp",

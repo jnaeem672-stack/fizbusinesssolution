@@ -43,7 +43,7 @@ const PROMISE_ICONS = [UserRoundCheck, Clock, MessageCircle, ShieldCheck];
 function Header({ badge, title, subtitle, light = false }: { badge: string; title: string; subtitle: string; light?: boolean }) {
   return (
     <div className="text-center mb-12 md:mb-14">
-      <span className={`inline-flex items-center px-3 py-1 rounded-full text-[11px] font-black mb-4 ${light ? 'bg-white/10 text-primary' : 'bg-primary/10 text-primary'}`}>
+      <span className={`inline-flex items-center px-3 py-1 rounded-full text-[11px] font-black mb-4 ${light ? 'bg-white/10 text-primary' : 'bg-primary/10 text-[#735600]'}`}>
         {badge}
       </span>
       <h2 className={`text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4 ${light ? 'text-white' : 'text-navy'}`}>{title}</h2>

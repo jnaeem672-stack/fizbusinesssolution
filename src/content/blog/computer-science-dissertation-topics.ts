@@ -136,6 +136,7 @@ export const computerScienceDissertationTopicsPost: BlogPost = {
         "FIZBS has supported computing and IT students since 2015. Our experts can help you choose a realistic project, review the literature, plan your evaluation and explain your results, with support for Python, data analysis and technical reports.",
         'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7.',
       ],
+      links: [{ label: "Business dissertation topics", href: "/blog/business-dissertation-topics" }, { label: "Marketing dissertation topics", href: "/blog/marketing-dissertation-topics" }, { label: "HRM dissertation topics", href: "/blog/hrm-dissertation-topics" }, { label: "Finance and accounting topics", href: "/blog/finance-accounting-dissertation-topics" }, { label: "Education dissertation topics", href: "/blog/education-dissertation-topics" }, { label: "Nursing and healthcare topics", href: "/blog/nursing-healthcare-dissertation-topics" }],
     },
   ],
   faqs: [

@@ -37,7 +37,7 @@ const schema = [
     operatingSystem: 'Any',
     description: DESCRIPTION,
     offers: { '@type': 'Offer', price: '0', priceCurrency: 'SAR' },
-    provider: { '@type': 'ProfessionalService', name: 'FIZ Business Solutions', url: SITE_URL },
+    provider: { '@type': 'Organization', '@id': `${SITE_URL}/#organization`, name: 'FIZ Business Solutions', url: SITE_URL },
   },
   {
     '@context': 'https://schema.org',

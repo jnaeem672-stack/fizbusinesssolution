@@ -138,6 +138,7 @@ export const nursingHealthcareDissertationTopicsPost: BlogPost = {
         "FIZBS has supported nursing, health and social care students since 2015. Our experts can help you narrow your topic, build a PICO question, plan your search strategy, appraise studies with CASP and structure your discussion. If your project collects primary data, we can also support the analysis.",
         'Dissertation support is £30 per 1,000 words. Message us on WhatsApp 24/7.',
       ],
+      links: [{ label: "Business dissertation topics", href: "/blog/business-dissertation-topics" }, { label: "Marketing dissertation topics", href: "/blog/marketing-dissertation-topics" }, { label: "HRM dissertation topics", href: "/blog/hrm-dissertation-topics" }, { label: "Finance and accounting topics", href: "/blog/finance-accounting-dissertation-topics" }, { label: "Computer science topics", href: "/blog/computer-science-dissertation-topics" }, { label: "Education dissertation topics", href: "/blog/education-dissertation-topics" }],
     },
   ],
   faqs: [

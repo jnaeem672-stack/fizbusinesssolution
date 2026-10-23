@@ -56,6 +56,37 @@ export const assignmentHelpLiverpool: LandingContent = {
       ],
     },
     {
+      heading: 'Referencing styles at Liverpool universities',
+      paragraphs: [
+        "Harvard is the most common style in Liverpool, but the version differs. The University of Liverpool Library supports the Cite Them Right version of Harvard and reminds students to follow any departmental or school guidelines. Since the 2024/25 academic year, LJMU's institutional Harvard style has been Cite Them Right Harvard, replacing the older Harvard LJMU.",
+        "Liverpool Hope publishes its own Liverpool Hope Harvard guides, updated for 2026, and asks students to check their programme handbook and tutors for the system they need. So a reference that is right for LJMU may need small changes for Hope.",
+        "The free Harvard reference generator further down this page follows Cite Them Right, the version the University of Liverpool and LJMU use. Hope students can use it for a first draft and check each reference against the Hope guide, or ask their expert to review the list.",
+      ],
+      links: [
+        {
+          label: 'Harvard referencing at the University of Liverpool',
+          href: 'https://libguides.liverpool.ac.uk/referencing/harvard',
+          note: 'The library supports the Cite Them Right version of Harvard.',
+          tag: 'University of Liverpool',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'LJMU moves to Cite Them Right Harvard',
+          href: 'https://www.ljmu.ac.uk/about-us/news/articles/2024/10/7/changes-to-harvard-ljmu-referencing',
+          note: 'LJMU news on the change from Harvard LJMU from 2024/25.',
+          tag: 'LJMU',
+          cta: 'Official announcement',
+        },
+        {
+          label: 'Liverpool Hope Harvard principles guide 2026',
+          href: 'https://www.hope.ac.uk/media/gateway/library/Liverpool%20Hope%20Harvard%20Referencing%20Principles%20Guide%202026.pdf',
+          note: "Liverpool Hope Library's guide to its own Harvard rules (PDF).",
+          tag: 'Liverpool Hope',
+          cta: 'Official referencing guide',
+        },
+      ],
+    },
+    {
       heading: 'Public health and international health postgraduates',
       paragraphs: [
         "Liverpool is a well-known centre for public health and tropical medicine, and many postgraduate students arrive with professional experience in healthcare or development work. Master's assessments in these fields often include critical literature reviews, research proposals, policy analyses and dissertations based on secondary data or systematic review methods.",
@@ -101,13 +132,13 @@ export const assignmentHelpLiverpool: LandingContent = {
     {
       heading: 'What Liverpool students ask us for',
       bullets: [
-        'Essay help with structure, argument and critical evaluation',
+        'Essays that need a sharper argument and deeper critical evaluation',
         'Business reports, marketing plans and case study analysis',
         'Public health and nursing assignments',
         'Education essays and reflective writing',
         'Lab and research reports with statistical analysis',
         'Dissertation proposals, literature reviews and methodology',
-        'Proofreading from £12 per 1,000 words',
+        'A final proofread from £12 per 1,000 words',
       ],
     },
     {
@@ -126,19 +157,19 @@ export const assignmentHelpLiverpool: LandingContent = {
     {
       heading: 'Prices, deadlines and how Liverpool students get started',
       paragraphs: [
-        'Prices start at £20 per 1,000 words for deadlines of seven days or more. Shorter deadlines cost more: 25% extra for 3 to 6 days and 50% extra within 48 hours. For example, a 3,000-word business report due in five days comes to £75, or £67.50 with the 10% first-order discount. Proofreading starts from £12 per 1,000 words.',
-        'Message us on WhatsApp with your subject, word count and deadline for a quote. If you are on placement or working shifts, send your brief, rubric and feedback whenever suits you, as our team replies 24/7. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
+        'Prices start at £20 per 1,000 words for deadlines of seven days or more. Shorter deadlines cost more: 25% extra for 3 to 6 days and 50% extra within 48 hours. For example, a 3,000-word business report due in five days comes to £75, or £67.50 with the 10% first-order discount. Proofreading is from £12 per 1,000 words.',
+        'Message us on WhatsApp with your subject, word count and deadline for a quote. If you are on placement or working shifts, send your brief, rubric and feedback whenever suits you, as our team replies 24/7. Half the fee is paid at the start and half on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
       ],
     },
   ],
   faqs: [
     {
       q: 'Is FIZBS based in Liverpool?',
-      a: 'We are an online service rather than a local office. Students in Liverpool share their brief on WhatsApp or through our website and receive expert support remotely.',
+      a: 'No. FIZBS has no Liverpool office. You share your brief on WhatsApp or through our website and an expert supports you online, from the city centre campuses to Ormskirk.',
     },
     {
       q: 'Which Liverpool universities do you support?',
-      a: 'We support students from any university, including the University of Liverpool, Liverpool John Moores University, Liverpool Hope University and Edge Hill University. We are not affiliated with any institution.',
+      a: 'We support students from any university, including the University of Liverpool, Liverpool John Moores University, Liverpool Hope University and Edge Hill University. FIZBS is independent of all of them.',
     },
     {
       q: 'Can you help with a public health Master\'s assignment?',
@@ -150,7 +181,7 @@ export const assignmentHelpLiverpool: LandingContent = {
     },
     {
       q: 'How much does assignment help in Liverpool cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 3,000-word report due in five days, for example, is £75 before your 10% first-order discount, and 48-hour deadlines add 50%.',
+      a: 'Liverpool students pay from £20 per 1,000 words for deadlines a week or more away. A 3,000-word report due in five days, for example, is £75 before your 10% first-order discount, and 48-hour deadlines add 50%.',
     },
     {
       q: 'Can you help with sport and exercise science lab reports?',
@@ -160,9 +191,13 @@ export const assignmentHelpLiverpool: LandingContent = {
       q: 'Do you support online MBA students at the University of Liverpool?',
       a: "Yes. We support online MBA and online Master's students wherever they live, with assignments, reflective pieces and dissertations, working from your module brief and marking criteria.",
     },
+    {
+      q: 'Does LJMU still use Harvard LJMU?',
+      a: "No. LJMU's institutional Harvard style changed from Harvard LJMU to Cite Them Right Harvard from the 2024/25 academic year. If you are unsure, check with your lecturer. Our free Harvard generator already uses Cite Them Right, so it matches the new LJMU style.",
+    },
   ],
   ctaTitle: 'Get your Liverpool assignment price in minutes',
-  ctaText: 'Message us on WhatsApp any time or use the instant calculator to see your price. New customers get 10% off their first order.',
+  ctaText: 'Send your brief on WhatsApp whenever suits you, or see your price in the instant calculator. New students save 10% on a first order.',
   whatsappMessage: 'Hi FIZBS! I am a student in Liverpool and need assignment help. Subject: , Word count: , Deadline: ',
   related: ['assignment-help-uk', 'assignment-help-manchester', 'healthcare-nursing-assignment-help', 'literature-review-help', 'dissertation-help-uk'],
 };

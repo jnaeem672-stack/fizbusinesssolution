@@ -25,7 +25,7 @@ const SectionHeader = ({
       viewport={{ once: true }}
       transition={{ delay: 0.1 }}
       className={`inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest mb-4 ${
-        light ? 'bg-white/10 text-primary' : 'bg-primary/10 text-primary'
+        light ? 'bg-white/10 text-primary' : 'bg-primary/10 text-[#735600]'
       }`}
     >
       <Sparkles className="w-3 h-3" /> {badge}

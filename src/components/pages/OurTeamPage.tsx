@@ -13,10 +13,10 @@ function HireButtons({ name }: { name: string; expertise?: string }) {
     <div className="grid grid-cols-2 gap-2 mt-auto pt-4">
       <Link
         href={`/experts/${expertSlug(name)}`}
-        aria-label={`Hire ${name}`}
+        aria-label={`View profile of ${name}`}
         className="inline-flex items-center justify-center gap-1.5 px-2 py-2.5 rounded-xl bg-navy text-white text-xs font-black whitespace-nowrap hover:brightness-110 transition-all"
       >
-        <WhatsAppIcon size={16} className="w-4 h-4" /> Hire Expert
+        View profile
       </Link>
       <a
         href={SUPPORT_FORM_PATH}

@@ -10,7 +10,7 @@ const sections = [
     title: '1. Introduction',
     content: (
       <>
-        FIZ Business Solutions (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) provides academic coaching, research guidance, proofreading, developmental feedback, and professional communication support. This Privacy Policy explains how we collect, use, store, and protect personal information when you visit our website, submit a support request, upload permitted materials, or contact us.
+        FIZ Business Solutions (&quot;we&quot;, &quot;us&quot;, or &quot;our&quot;) provides academic guidance, research guidance, proofreading, developmental feedback, and professional communication support. This Privacy Policy explains how we collect, use, store, and protect personal information when you visit our website, submit a support request, upload permitted materials, or contact us.
       </>
     ),
   },
@@ -36,7 +36,7 @@ const sections = [
         We use personal information to:
         <ul className="list-disc pl-6 mt-3 space-y-2">
           <li>Review requests and determine whether the proposed support is compatible with our Academic Integrity Policy.</li>
-          <li>Respond to inquiries, recommend an appropriate service, and arrange coaching, feedback, or tutoring.</li>
+          <li>Respond to inquiries, recommend an appropriate service, and arrange guidance, feedback, or tutoring.</li>
           <li>Send confirmations and service-related communications.</li>
           <li>Protect the website, prevent misuse, and comply with applicable legal or accounting obligations.</li>
           <li>Improve our website, service processes, and customer experience.</li>

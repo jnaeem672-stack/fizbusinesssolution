@@ -6,7 +6,7 @@ import AnimateIn from '@/components/ui/AnimateIn';
 import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
 
 const sections = [
-  ['1. Service Scope', 'FIZ Business Solutions provides tutoring, academic coaching, research guidance, developmental feedback, proofreading, data-analysis tutoring, presentation coaching, and legitimate professional writing. The agreed scope will be described before work begins.'],
+  ['1. Service Scope', 'FIZ Business Solutions provides tutoring, academic guidance, research guidance, developmental feedback, proofreading, data-analysis tutoring, presentation guidance, and professional communication support. The agreed scope will be described before work begins.'],
   ['2. Academic Integrity', 'All services are subject to our Academic Integrity Policy. We do not provide ghostwritten assessed work, examination assistance, impersonation, fabricated evidence, plagiarism concealment, or guaranteed academic outcomes.'],
   ['3. Customer Responsibilities', 'Customers must provide accurate information, follow institutional rules, upload only materials they are permitted to share, disclose external support where required, and remain responsible for all final decisions, claims, references, calculations, analysis, and submissions.'],
   ['4. Draft Feedback and Proofreading', 'Feedback identifies strengths, weaknesses, questions, and revision priorities. Proofreading normally addresses language and consistency. Where requested changes would replace authorship or introduce undisclosed substantive content, we may limit or refuse the work.'],

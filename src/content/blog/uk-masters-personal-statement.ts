@@ -132,6 +132,7 @@ export const ukMastersPersonalStatementPost: BlogPost = {
         'Before submitting, read your statement aloud, check it against the course page, and make sure every paragraph answers the question "why me, why this course?". Ask a tutor, colleague or expert to read it for clarity.',
         'FIZBS can review your personal statement and give detailed feedback on structure, clarity and how well it fits the course, and our proofreading service (from £12 per 1,000 words) checks language and tone. The statement should always be your own work and voice. Message us on WhatsApp 24/7, or see our PhD admission help if you are applying for doctoral study.',
       ],
+      links: [{ label: "How to email a PhD supervisor", href: "/blog/how-to-email-a-phd-supervisor" }],
     },
   ],
   faqs: [

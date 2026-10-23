@@ -51,6 +51,37 @@ export const assignmentHelpGlasgow: LandingContent = {
       ],
     },
     {
+      heading: 'Referencing styles at Glasgow universities',
+      paragraphs: [
+        "The University of Glasgow does not use one single referencing style. Its library guides cover Harvard in the Leeds version, APA, MHRA, Chicago, OSCOLA, MLA and Vancouver, and students are told to check the course handbook, Moodle pages or the course convenor for each assignment.",
+        "At Glasgow Caledonian University, Cite Them Right Harvard is in use across the university, although psychology uses APA, engineering uses IEEE or another numeric style, history uses Chicago and law uses OSCOLA. Strathclyde's library publishes its own Strathclyde Harvard guide and reminds students to keep to one version rather than mixing them.",
+        "The free Harvard reference generator further down this page follows Cite Them Right, which matches GCU's Harvard. For Leeds Harvard at Glasgow or Strathclyde Harvard, use it for a first draft of each reference and check the details against your library guide, or ask your expert to review the whole list.",
+      ],
+      links: [
+        {
+          label: 'Referencing styles at the University of Glasgow',
+          href: 'https://www.gla.ac.uk/myglasgow/library/referencing',
+          note: 'Library guides to Harvard (Leeds), APA, MHRA, Chicago, OSCOLA, MLA and Vancouver.',
+          tag: 'University of Glasgow',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Referencing at Glasgow Caledonian University',
+          href: 'https://gcu.libguides.com/referencing/home',
+          note: 'Cite Them Right Harvard across the university, with subject exceptions.',
+          tag: 'Glasgow Caledonian',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Strathclyde Harvard guide',
+          href: 'https://guides.lib.strath.ac.uk/referencing_guide/harvard',
+          note: "The University of Strathclyde Library's own Harvard examples.",
+          tag: 'University of Strathclyde',
+          cta: 'Official referencing guide',
+        },
+      ],
+    },
+    {
       heading: 'How Scottish degrees are structured',
       paragraphs: [
         "A Scottish undergraduate Honours degree usually takes four years. The first two years tend to be broader, and the final two, often called Junior Honours and Senior Honours, are where your degree classification is usually decided. That means third-year coursework counts, and the Senior Honours dissertation carries a lot of weight.",
@@ -102,12 +133,12 @@ export const assignmentHelpGlasgow: LandingContent = {
     {
       heading: 'What Glasgow students ask us for',
       bullets: [
-        'Essay help with structure, argument and critical evaluation',
+        'Essays with a clearer argument and stronger critical evaluation',
         'Business reports and case study analysis',
         'Honours and Master\'s dissertation guidance',
         'Data analysis support with SPSS, NVivo and Excel',
         'Reflective writing for placements',
-        'Proofreading from £12 per 1,000 words',
+        'A careful proofread, from £12 per 1,000 words',
         'Referencing checks before submission',
       ],
     },
@@ -122,11 +153,11 @@ export const assignmentHelpGlasgow: LandingContent = {
   faqs: [
     {
       q: 'Is FIZBS based in Glasgow?',
-      a: 'We are an online service rather than a local office. Students in Glasgow share their brief on WhatsApp or through our website and receive expert support remotely.',
+      a: 'No, there is no FIZBS office in Glasgow. You send your brief on WhatsApp or through our website and an expert supports you online, whether you study in the West End, the city centre or Paisley.',
     },
     {
       q: 'Which Glasgow universities do you support?',
-      a: 'We support students from any university, including the University of Glasgow, the University of Strathclyde, Glasgow Caledonian University and the University of the West of Scotland. We are not affiliated with any institution.',
+      a: 'We support students from any university, including the University of Glasgow, the University of Strathclyde, Glasgow Caledonian University and the University of the West of Scotland. FIZBS works independently and is not linked to these universities.',
     },
     {
       q: 'Do your experts understand Scottish degrees?',
@@ -142,15 +173,23 @@ export const assignmentHelpGlasgow: LandingContent = {
     },
     {
       q: 'How much does assignment help in Glasgow cost?',
-      a: 'Support starts from £20 per 1,000 words for deadlines of seven days or more. A 4,000-word report due in 48 hours, for example, is £120 before your 10% first-order discount.',
+      a: 'Glasgow students pay from £20 per 1,000 words when the deadline is a week or more away. A 4,000-word report due in 48 hours, for example, is £120 before your 10% first-order discount.',
     },
     {
       q: 'Does third-year coursework count towards my degree in Scotland?',
       a: 'Usually, yes. At most Scottish universities your classification is based on the two Honours years, normally third and fourth year, so Junior Honours coursework matters. Check your course handbook for the exact weighting.',
     },
+    {
+      q: 'Which referencing style does Glasgow Caledonian University use?',
+      a: "GCU's library says Cite Them Right Harvard is in use across the university, while some subjects follow their own style, such as APA in psychology, IEEE in engineering, Chicago in history and OSCOLA in law. Check your module assignment guidelines. The free Harvard generator on this page uses Cite Them Right, so it suits GCU modules.",
+    },
+    {
+      q: 'Does the University of Glasgow have one referencing style?',
+      a: 'No. The library says the university does not use one single style, and different subjects and courses may prefer or require specific styles. Check your course handbook, Moodle pages or ask your course convenor.',
+    },
   ],
   ctaTitle: 'Get your Glasgow assignment price in minutes',
-  ctaText: 'Message us on WhatsApp any time or use the instant calculator to see your price. New customers get 10% off their first order.',
+  ctaText: 'Message us on WhatsApp at any time, or check the instant calculator for a price. A first order is 10% cheaper.',
   whatsappMessage: 'Hi FIZBS! I am a student in Glasgow and need assignment help. Subject: , Word count: , Deadline: ',
   related: ['assignment-help-uk', 'dissertation-help-uk', 'assignment-help-london', 'research-methodology-help', 'spss-help'],
 };

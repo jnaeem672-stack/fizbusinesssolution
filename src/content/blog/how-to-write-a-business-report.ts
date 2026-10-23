@@ -127,6 +127,7 @@ export const howToWriteABusinessReportPost: BlogPost = {
         'Feasibility report: assesses whether a project or idea is practical, often with costs, risks and a clear go or no-go recommendation.',
         'Short (informal) report or memo report: one or two pages with a brief introduction, findings and recommendations, often without an executive summary.',
       ],
+      links: [{ label: "How to write a case study analysis", href: "/blog/how-to-write-a-case-study-analysis" }],
     },
     {
       heading: 'How long does it take to write a business report?',

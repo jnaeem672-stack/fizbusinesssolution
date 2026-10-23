@@ -13,7 +13,7 @@ const COPY = {
     text: '🎁 First Order? Get Up To 10% OFF | 📞 Talk to an Expert on a WhatsApp Call | Assignment Help | Dissertation Help | Research Proposal Help | Proofreading & Editing | Harvard, APA & OSCOLA Referencing | 24/7 WhatsApp Support | ',
     orderUrl: buildWhatsAppUrl("Hello FIZBS! I'd like to place an order.\nSubject: \nWord count: \nDeadline: "),
     order: 'WhatsApp Order',
-    orderAria: 'Order on WhatsApp',
+    orderAria: 'WhatsApp Order',
     qr: 'Scan QR',
     qrAria: 'Show WhatsApp QR code',
     qrTitle: 'Scan to order on WhatsApp',
@@ -58,7 +58,11 @@ const MarqueeBanner = () => {
     <div className="relative bg-primary h-[40px] flex items-center border-b border-white/10 shrink-0">
       <div className="flex-1 min-w-0 overflow-hidden h-full flex items-center">
         <div className="animate-marquee">
-          <span dir={isAr ? 'rtl' : undefined} className="text-white text-[13px] font-medium px-4 flex items-center">{text + text + text + text}</span>
+          <span dir={isAr ? 'rtl' : undefined} className="text-white text-[13px] font-medium px-4 flex items-center whitespace-pre">
+            {text}
+            {/* Repeats only make the scrolling seamless: hidden from screen readers and from search snippets */}
+            <span aria-hidden="true" data-nosnippet="">{text + text + text}</span>
+          </span>
         </div>
       </div>
 

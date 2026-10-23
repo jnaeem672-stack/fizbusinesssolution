@@ -153,6 +153,7 @@ export const howToWriteADissertationDiscussionPost: BlogPost = {
         'The main limitations and their effects are discussed',
         'The chapter leads naturally into your conclusion',
       ],
+      links: [{ label: "How to write a dissertation conclusion", href: "/blog/how-to-write-a-dissertation-conclusion" }],
     },
   ],
   faqs: [

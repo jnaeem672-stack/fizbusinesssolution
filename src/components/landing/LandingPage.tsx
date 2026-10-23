@@ -126,7 +126,8 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       serviceType: landingLabel(page),
       areaServed: city ? [city, ...baseAreas] : baseAreas,
       provider: {
-        '@type': 'ProfessionalService',
+        '@type': 'Organization',
+        '@id': `${SITE_URL}/#organization`,
         name: 'FIZ Business Solutions',
         url: SITE_URL,
         telephone: '+971543800388',

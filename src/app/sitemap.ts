@@ -22,6 +22,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/contact`, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${SITE_URL}/terms`, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${SITE_URL}/privacy-policy`, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${SITE_URL}/academic-integrity`, changeFrequency: 'yearly', priority: 0.4 },
   ];
   const landing: MetadataRoute.Sitemap = [
     ...EN_LANDING_PAGES.map((page) => ({

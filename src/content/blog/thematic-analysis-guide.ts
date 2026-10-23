@@ -159,7 +159,8 @@ export const thematicAnalysisGuidePost: BlogPost = {
         "Use quotes from a range of participants, labelled consistently, for example (P4, retail assistant), and show variation within a theme, not just agreement.",
         "Link back to the literature, either in the same chapter or in your discussion, explaining where your findings support, extend or challenge previous research."
       ],
-      tip: "Weak: \"P4 said: [long quote]. P7 said: [long quote].\" Stronger: \"Several participants described the commute as a psychological boundary that remote working removed. As P4 explained, 'on office days it's actually easier because I can switch off on the train home'. This suggests that...\""
+      tip: "Weak: \"P4 said: [long quote]. P7 said: [long quote].\" Stronger: \"Several participants described the commute as a psychological boundary that remote working removed. As P4 explained, 'on office days it's actually easier because I can switch off on the train home'. This suggests that...\"",
+      links: [{ label: "How to write a dissertation discussion", href: "/blog/how-to-write-a-dissertation-discussion" }],
     },
     {
       heading: "Rigour and trustworthiness in thematic analysis",

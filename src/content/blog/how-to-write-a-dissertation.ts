@@ -46,7 +46,8 @@ export const howToWriteADissertationPost: BlogPost = {
         "Turn the topic into one clear research question, plus two to four objectives.",
         "Check feasibility: can you get the data, participants or sources you need in the time available?"
       ],
-      tip: "Example of narrowing: 'Social media and business' becomes 'How do small UK fashion retailers use Instagram to build customer loyalty?' The second version tells you who to study, what to measure and where to look."
+      tip: "Example of narrowing: 'Social media and business' becomes 'How do small UK fashion retailers use Instagram to build customer loyalty?' The second version tells you who to study, what to measure and where to look.",
+      links: [{ label: "How to write a research question", href: "/blog/how-to-write-a-research-question" }],
     },
     {
       heading: "Step 2: Write a clear dissertation proposal",
@@ -129,7 +130,8 @@ export const howToWriteADissertationPost: BlogPost = {
             "Answer the research question directly, summarise how each objective was met, state your contribution, acknowledge limitations and suggest future research or practical recommendations. Do not introduce new evidence here."
           ]
         }
-      ]
+      ],
+      links: [{ label: "How to write a dissertation introduction", href: "/blog/how-to-write-a-dissertation-introduction" }, { label: "How to write a dissertation discussion", href: "/blog/how-to-write-a-dissertation-discussion" }, { label: "How to write a dissertation conclusion", href: "/blog/how-to-write-a-dissertation-conclusion" }],
     },
     {
       heading: "Working with your dissertation supervisor",

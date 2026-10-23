@@ -163,7 +163,8 @@ export const howToWriteAResearchQuestionPost: BlogPost = {
         "Objectives: three to five specific, achievable steps that will deliver the aim. They usually begin with action verbs such as identify, examine, compare, evaluate or recommend. Example: 'To identify the main wellbeing challenges reported by junior staff working hybrid patterns.'",
         "Research questions: the questions your data and analysis will answer. Each objective often maps onto a question. Example: 'What wellbeing challenges do junior staff working hybrid patterns report?'"
       ],
-      tip: "Put your aim, objectives and questions in a simple table side by side. If an objective has no matching question, or a question is not covered by your methods, fix it now rather than in the final chapter."
+      tip: "Put your aim, objectives and questions in a simple table side by side. If an objective has no matching question, or a question is not covered by your methods, fix it now rather than in the final chapter.",
+      links: [{ label: "How to write a dissertation introduction", href: "/blog/how-to-write-a-dissertation-introduction" }],
     },
     {
       heading: "Common mistakes when writing a research question",
