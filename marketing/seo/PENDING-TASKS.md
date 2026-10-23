@@ -135,6 +135,12 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   ar how-to-write-an-abstract (11.6). Biggest guide by impressions: primary-vs-secondary-research (115, at 62).
 
 ## Backlinks routine (from 21 Oct 2026)
+- 23 Oct 19:38: owner will do the Backlink Kit himself in 7 days (24 to 30 Oct; doc plan renamed "7-day plan").
+  Day 1 LinkedIn page + Facebook/Instagram text; Day 2 YouTube + X; Day 3 Pinterest (claim code to Claude) + Bing
+  Webmaster import; Day 4 Trustpilot + ask 5 clients for honest reviews; Day 5 Saudi member Haraj, Mstaml, OpenSooq
+  + Crunchbase; Day 6 Medium + Quora (Claude drafts the Medium article and 2 Quora answers before 29 Oct);
+  Day 7 Arabic LinkedIn article + Issuu PDF (Claude prepares). Claude adds each live profile to SOCIAL_URLS and
+  schema sameAs, and checks the Link Log on Mon 26 Oct and Fri 30 Oct. Remind him in the daily routine.
 - 23 Oct: owner had 4 guest posts placed (britishbusinessblog.co.uk, anadolukobi.web.tr, designingbuildings.co.uk
   user page, allcleanandclearuk.mn.co). Checked: british and anadolukobi live with dofollow links to the Harvard tool
   and /assignment-help-uk (anchors "Harvard tool", "UK assignment help"); both are open mixed-topic sites, low value.
