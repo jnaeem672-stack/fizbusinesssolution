@@ -197,17 +197,17 @@ export const TOOLS: ToolContent[] = [
       'Free Harvard reference generator in Cite Them Right style. Paste a DOI, ISBN or link for references, in-text citations and a sorted reference list.',
     h1: 'Free Harvard Referencing Generator',
     subtitle:
-      'A free Harvard reference generator, citation maker and bibliography tool in the Cite Them Right style. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and lecture slides, then copy your sorted reference list straight into your document, italics included.',
-    cardText: 'Autocite by DOI, ISBN or link. Harvard references and in-text citations for 10 source types, with a sorted reference list.',
+      'A free Harvard reference generator, citation maker and bibliography tool in the Cite Them Right style. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and lecture slides, keep a project for each assignment, and download your list as a Word file or copy it straight into your document, italics included.',
+    cardText: 'Autocite by DOI, ISBN or link. Harvard references for 10 source types, saved in projects, with Word, RIS and BibTeX downloads.',
     sections: [
       {
         heading: 'How to use the Harvard referencing generator',
         steps: [
-          'Paste a DOI, ISBN or web link into the autocite box, or type the title of the book or article, and select Find source.',
-          'Check the details that fill in against your source, especially the capitalisation of the title, the year and the edition. If nothing is found, choose the source type and fill in the details yourself.',
-          'Copy the reference and the in-text citation, or add the reference to your list.',
-          'Edit or remove any reference in your list. You can also switch between Harvard and APA 7 at any time, and the whole list changes style.',
-          'When your list is complete, copy it into your reference list. It is sorted alphabetically for you.',
+          'Choose what you are citing (Website, Book, Journal or More), then paste a DOI, ISBN or web link into the search bar, or type the title, and select Search.',
+          'Check the details that fill in against your source, especially the capitalisation of the title, the year and the edition. If nothing is found, select Manual and fill in the details yourself.',
+          'Select Save to project. Your reference list shows each reference as it will look in your document, sorted A to Z, and every reference has buttons to edit it, copy it or copy its in-text citation.',
+          'Start a new project for each assignment. You can switch between Harvard and APA 7 at any time, and the whole list changes style.',
+          'Select Download References for a Word file with a hanging indent, or an RIS or BibTeX file for Zotero, EndNote, Mendeley or Overleaf. You can also copy the list, or share it with a link.',
         ],
       },
       {
@@ -329,19 +329,27 @@ export const TOOLS: ToolContent[] = [
       },
       {
         q: 'Can it create a Harvard reference from a DOI, ISBN or link?',
-        a: 'Yes. Paste a DOI, an ISBN or a web link into the autocite box, or type the title, and the generator fills in the details from Crossref, DataCite, Open Library, Google Books or the web page itself. Check the details against your source before you use the reference, because records are sometimes incomplete.',
+        a: 'Yes. Paste a DOI, an ISBN or a web link into the search bar, or type the title, and the generator fills in the details from Crossref, DataCite, Open Library, Google Books or the web page itself. Check the details against your source before you save the reference, because records are sometimes incomplete.',
       },
       {
         q: 'Which sources can I reference?',
-        a: 'Books, chapters in edited books, journal articles, websites, newspaper and magazine articles, reports, theses and dissertations, videos, conference papers, and lectures or slides from your course.',
+        a: 'Books, chapters in edited books, journal articles, websites, newspaper and magazine articles, reports, theses and dissertations, videos, conference papers, and lectures or slides from your course. You can also paste a reference you already have as pre-formatted text.',
       },
       {
         q: 'Can I switch my reference list from Harvard to APA?',
-        a: 'Yes. Use the style switch above the tool. Every reference in your saved list is rewritten in the style you choose, so you can move between Harvard and APA 7 without typing anything again.',
+        a: 'Yes. Use the style menu above your list. Every reference in the project is rewritten in the style you choose, so you can move between Harvard and APA 7 without typing anything again.',
+      },
+      {
+        q: 'Can I download my Harvard reference list as a Word document?',
+        a: 'Yes. Select Download References and choose Word document. The file has the heading Reference list, a hanging indent and the font and size you picked. You can also download a plain text file, or an RIS or BibTeX file for Zotero, EndNote, Mendeley or Overleaf.',
+      },
+      {
+        q: 'Can I keep separate reference lists for different assignments?',
+        a: 'Yes. Select Start new project for each essay, report or dissertation. Your projects stay in this browser, and you can rename or delete them at any time. To keep a copy elsewhere, download the list or use Share to create a link.',
       },
       {
         q: 'Is the generator free?',
-        a: 'Yes. It is free to use and needs no sign-up, and your reference list is saved in your own browser only. When you use autocite, the DOI, ISBN, title or link you enter is sent to the lookup services named above, or to our server to read a web page, so that the details can be filled in.',
+        a: 'Yes. It is free to use and needs no sign-up, and your projects are saved in your own browser only. When you search for a source, the DOI, ISBN, title or link you enter is sent to the lookup services named above, or to our server to read a web page, so that the details can be filled in. Share links carry the list inside the link itself, so nothing is stored on our server.',
       },
     ],
     services: ['referencing-help', 'essay-help', 'proofreading-editing-services', 'literature-review-help'],
@@ -352,7 +360,7 @@ export const TOOLS: ToolContent[] = [
       'cipd-assignment-help', 'cmi-assignment-help', 'hnd-hnc-assignment-help', 'othm-athe-assignment-help', 'marketing-assignment-help', 'hrm-assignment-help',
     ],
     promotedIn: REFERENCING_GUIDES,
-    updated: '2026-10-21',
+    updated: '2026-10-23',
     whatsappMessage: 'Hello FIZBS! I need help checking my Harvard references. Word count: , Deadline: ',
   },
   {
@@ -363,17 +371,17 @@ export const TOOLS: ToolContent[] = [
       'Free APA 7th edition referencing generator with autocite. Paste a DOI, ISBN or link, or fill in the form, for references and in-text citations in seconds.',
     h1: 'Free APA Referencing Generator (7th Edition)',
     subtitle:
-      'Create APA 7 references and in-text citations in seconds. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and videos, then copy your sorted reference list straight into your document, italics included.',
-    cardText: 'Autocite by DOI, ISBN or link. APA 7 references and in-text citations for 10 source types, with a sorted reference list.',
+      'Create APA 7 references and in-text citations in seconds. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and videos, keep a project for each assignment, and download your list as a Word file or copy it straight into your document, italics included.',
+    cardText: 'Autocite by DOI, ISBN or link. APA 7 references for 10 source types, saved in projects, with Word, RIS and BibTeX downloads.',
     sections: [
       {
         heading: 'How to use the APA referencing generator',
         steps: [
-          'Paste a DOI, ISBN or web link into the autocite box, or type the title of the book or article, and select Find source.',
-          'Check the details that fill in against your source. APA titles need sentence case, so use the Sentence case button if a title comes in with capitals on every word. If nothing is found, choose the source type and fill in the details yourself.',
-          'Copy the reference and the in-text citation, or add the reference to your list.',
-          'Edit or remove any reference in your list. You can also switch between APA 7 and Harvard at any time, and the whole list changes style.',
-          'When your list is complete, copy it into your References page. It is sorted alphabetically for you.',
+          'Choose what you are citing (Website, Book, Journal or More), then paste a DOI, ISBN or web link into the search bar, or type the title, and select Search.',
+          'Check the details that fill in against your source. APA titles need sentence case, so use the Sentence case button if a title comes in with capitals on every word. If nothing is found, select Manual and fill in the details yourself.',
+          'Select Save to project. Your References page shows each reference with a hanging indent and double spacing, sorted A to Z, and every reference has buttons to edit it, copy it or copy its in-text citation.',
+          'Start a new project for each assignment. You can switch between APA 7 and Harvard at any time, and the whole list changes style.',
+          'Select Download References for a Word file in APA format, or an RIS or BibTeX file for Zotero, EndNote, Mendeley or Overleaf. You can also copy the list, or share it with a link.',
         ],
       },
       {
@@ -397,7 +405,7 @@ export const TOOLS: ToolContent[] = [
       {
         heading: 'Autocite: APA references from a DOI, ISBN or link',
         paragraphs: [
-          'APA 7 asks for a DOI wherever a source has one, and a DOI is also the quickest way to build the reference. Paste it into the autocite box and the generator fills in the authors, year, title, journal, volume, issue and pages. An ISBN works the same way for books, and a link works for web pages, news articles and YouTube videos. You can also type a title and choose the right match from the results.',
+          'APA 7 asks for a DOI wherever a source has one, and a DOI is also the quickest way to build the reference. Paste it into the search bar and the generator fills in the authors, year, title, journal, volume, issue and pages. An ISBN works the same way for books, and a link works for web pages, news articles and YouTube videos. You can also type a title and choose the right match from the results.',
           'Journal articles, chapters and conference papers come from Crossref and DataCite, the official DOI registries. Books come from Open Library and Google Books. For web pages, our server reads the page once and picks out the title, author, date and site name.',
           'Records are not always complete or in APA format. Titles often arrive in title case, so convert them to sentence case and check proper nouns, and add any missing date or author before you use the reference.',
         ],
@@ -473,22 +481,26 @@ export const TOOLS: ToolContent[] = [
       },
       {
         q: 'Can it create an APA reference from a DOI?',
-        a: 'Yes. Paste the DOI, or a link that contains it, into the autocite box. The generator looks it up in Crossref or DataCite and fills in the details, with the DOI written as a link at the end of the reference as APA 7 requires.',
+        a: 'Yes. Paste the DOI, or a link that contains it, into the search bar. The generator looks it up in Crossref or DataCite and fills in the details, with the DOI written as a link at the end of the reference as APA 7 requires.',
       },
       {
         q: 'Which sources can I reference?',
         a: 'Books, chapters in edited books, journal articles, web pages, newspaper and magazine articles, reports, theses and dissertations, videos, conference papers, and lecture slides or notes.',
       },
       {
+        q: 'Can I download my APA reference list as a Word document?',
+        a: 'Yes. Select Download References and choose Word document. The file has the heading References centred in bold, double spacing and a hanging indent, in the font and size you picked. RIS and BibTeX downloads are there for reference managers.',
+      },
+      {
         q: 'Is the generator free?',
-        a: 'Yes. It is free to use and needs no sign-up, and your reference list is saved in your own browser only. When you use autocite, the DOI, ISBN, title or link you enter is sent to the lookup services named above, or to our server to read a web page, so that the details can be filled in.',
+        a: 'Yes. It is free to use and needs no sign-up, and your projects are saved in your own browser only. When you search for a source, the DOI, ISBN, title or link you enter is sent to the lookup services named above, or to our server to read a web page, so that the details can be filled in. Share links carry the list inside the link itself, so nothing is stored on our server.',
       },
     ],
     services: ['referencing-help', 'psychology-assignment-help', 'healthcare-nursing-assignment-help', 'education-assignment-help'],
     guides: ['apa-referencing-guide', 'harvard-referencing-guide', 'how-to-write-a-literature-review'],
     showOn: [...SAUDI_PAGES, 'assignment-help-usa', 'assignment-help-uae', 'assignment-help-leeds', 'dissertation-help-uk', 'thesis-help', 'research-methodology-help', 'spss-help', 'data-analysis-help', 'nvivo-thematic-analysis-help'],
     promotedIn: REFERENCING_GUIDES,
-    updated: '2026-10-19',
+    updated: '2026-10-23',
     whatsappMessage: 'Hello FIZBS! I need help checking my APA references. Word count: , Deadline: ',
   },
   {

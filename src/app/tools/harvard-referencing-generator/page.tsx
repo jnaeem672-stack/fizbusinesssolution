@@ -7,7 +7,7 @@ export const metadata = toolMetadata('harvard-referencing-generator');
 
 export default function Page() {
   return (
-    <ToolPage tool={getTool('harvard-referencing-generator')!}>
+    <ToolPage tool={getTool('harvard-referencing-generator')!} bare>
       <HarvardGenerator />
     </ToolPage>
   );

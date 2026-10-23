@@ -54,7 +54,15 @@ export async function lookupIsbn(isbn: string): Promise<CiteResult | null> {
 
   const fromOl = olRec ? fromOpenLibrary(olRec, edition) : null;
   const fromGb = gbItem ? fromGoogleBooks(gbItem) : null;
-  if (fromOl && fromGb) return { source: 'Open Library', data: mergeCite(fromOl, fromGb) };
+  if (fromOl && fromGb) {
+    const data = mergeCite(fromOl, fromGb);
+    // Google Books lists people in the order printed on the cover; Open Library's order is often wrong
+    if (fromGb.authors.length && !fromGb.org) {
+      data.authors = fromGb.authors;
+      data.org = '';
+    }
+    return { source: 'Open Library', data };
+  }
   if (fromOl) return { source: 'Open Library', data: fromOl };
   if (fromGb) return { source: 'Google Books', data: fromGb };
   return null;

@@ -59,6 +59,18 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   `updated` (dateModified and sitemap lastmod). Check its CTR in Search Console around 30 Oct.
 - Semrush to check (UK): digital marketing dissertation topics, harvard referencer, how to harvard reference in text.
 
+## Reference tool workspace (23 Oct 2026, owner asked for a MyBib-like tool)
+- Harvard and APA tool pages now use src/components/tools/refs/ (ReferenceWorkspace, SourceEditor, store, exporters,
+  ui). Projects in localStorage (key fizbs-ref-projects-v1, old lists migrated), Cite a: Website / Book / Journal /
+  More (+ pre-formatted), one search bar with paste and Manual buttons, editor dialog (portal above the header),
+  page-like list with style, font, size and sort, edit / copy / copy citation / delete, select and bulk actions,
+  undo/redo, downloads (docx built in the browser, txt, RIS, BibTeX), share link (#refs= deflate + base64url).
+- Lookup fixes: ISBN dedupes duplicate authors and takes Google Books author order; edition pulled out of titles;
+  web pages use the last-updated year when later than the published year.
+- Tests: scratchpad pw/refws.mjs (flows), pw/cite2.mjs (mocked autocite), pw/refmob.mjs, pw/refshots.mjs.
+- Next ideas (not agreed): new source types (AI/ChatGPT, legislation, image, social media, podcast, interview) after
+  checking Cite Them Right and APA rules; source-type landing pages; university Harvard variants via CSL; OSCOLA.
+
 ## Site audit, 22 Oct 2026 (doc: https://claude.ai/artifact/QmDKam17urtLakXR87dQ43, Fix plan table has Status dropdowns)
 - Technical is clean: 168/168 pages 200, 0 duplicate titles or descriptions, 1 H1 each, self canonicals, 0 broken
   links, 0 schema errors, 27/27 redirects correct, 0 mobile overflow, 0 JS errors, Lighthouse SEO 100.

@@ -1,5 +1,5 @@
-import ReferenceGenerator from './ReferenceGenerator';
+import ReferenceWorkspace from './refs/ReferenceWorkspace';
 
 export default function HarvardGenerator() {
-  return <ReferenceGenerator style="harvard" />;
+  return <ReferenceWorkspace defaultStyle="harvard" />;
 }

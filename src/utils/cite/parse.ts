@@ -133,27 +133,57 @@ export function fromDataCite(data: Json): CiteData {
   return d;
 }
 
+/** Book records often list one person twice ("Mark N. K. Saunders" and "Mark N.K. Saunders"): keep the first */
+export function dedupePeople(list: Person[]): Person[] {
+  const seen = new Set<string>();
+  return list.filter((p) => {
+    const key = `${p.surname.toLowerCase().replace(/[^a-z\u00c0-\u024f]/g, '')}|${(p.given.trim()[0] ?? '').toLowerCase()}`;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
 function bookAuthors(d: CiteData, names: string[]) {
   const clean = names.map(str).filter(Boolean);
   if (clean.length && isOrgName(clean[0])) d.org = clean[0];
-  else d.authors = clean.map(splitName).filter((p) => p.surname);
+  else d.authors = dedupePeople(clean.map(splitName).filter((p) => p.surname));
+}
+
+const EDITION_TAIL =
+  /[\s,.:;(\-]*\b(\d{1,2}(?:st|nd|rd|th)?|first|second|third|fourth|fifth|sixth|seventh|eighth|ninth|tenth|eleventh|twelfth|thirteenth|fourteenth|fifteenth)\s+(?:edition|edn|ed)\b\.?\)?\s*$/i;
+
+/** Book titles and subtitles sometimes carry the edition ("..., 8th edition"): move it to the edition field */
+function bookTitle(d: CiteData, title: string, subtitle: string) {
+  let t = title;
+  let sub = subtitle;
+  if (sub && /^\s*\(?\s*[\w]+\s+(edition|edn|ed)\b\.?\)?\s*$/i.test(sub)) {
+    d.edition = d.edition || parseEdition(sub);
+    sub = '';
+  }
+  const m = EDITION_TAIL.exec(t);
+  if (m && m.index > 0) {
+    d.edition = d.edition || parseEdition(`${m[1]} edition`);
+    t = t.slice(0, m.index).trim();
+  }
+  d.title = titleWithSubtitle(t, sub);
 }
 
 /** Open Library api/books?jscmd=data record, plus the optional edition record for the edition number */
 export function fromOpenLibrary(rec: Json, edition?: Json): CiteData {
   const d = emptyCite('book');
-  d.title = titleWithSubtitle(str(rec.title), str(rec.subtitle));
+  d.edition = parseEdition(edition ? edition.edition_name : '');
+  bookTitle(d, str(rec.title), str(rec.subtitle));
   bookAuthors(d, arr(rec.authors).map((x) => str(obj(x).name)));
   d.publisher = str(obj(arr(rec.publishers)[0]).name);
   d.year = parseLooseDate(rec.publish_date).year;
-  d.edition = parseEdition(edition ? edition.edition_name : '');
   return d;
 }
 
 /** Google Books volumeInfo */
 export function fromGoogleBooks(v: Json): CiteData {
   const d = emptyCite('book');
-  d.title = titleWithSubtitle(str(v.title), str(v.subtitle));
+  bookTitle(d, str(v.title), str(v.subtitle));
   bookAuthors(d, arr(v.authors).map(str));
   d.publisher = str(v.publisher);
   d.year = parseLooseDate(v.publishedDate).year;
@@ -163,7 +193,7 @@ export function fromGoogleBooks(v: Json): CiteData {
 /** Open Library search.json doc (used when Google Books is unavailable) */
 export function fromOpenLibrarySearch(doc: Json): CiteData {
   const d = emptyCite('book');
-  d.title = titleWithSubtitle(str(doc.title), str(doc.subtitle));
+  bookTitle(d, str(doc.title), str(doc.subtitle));
   bookAuthors(d, arr(doc.author_name).map(str).slice(0, 6));
   d.publisher = str(arr(doc.publisher)[0]);
   d.year = /^\d{4}$/.test(String(doc.first_publish_year ?? '')) ? String(doc.first_publish_year) : '';

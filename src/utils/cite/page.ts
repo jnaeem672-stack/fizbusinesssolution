@@ -249,9 +249,16 @@ export function parsePage(html: string, pageUrl: string): PageCitation {
       'sailthru.date',
     ) || cleanText(ld.datePublished ?? ld.uploadDate ?? ld.dateCreated ?? ''),
   );
-  d.year = date.year;
-  d.month = date.month;
-  d.day = date.day;
+  // Web pages are cited with the year they were published or last updated (Cite Them Right), so a later update wins
+  const updated =
+    type === 'website'
+      ? parseLooseDate(first('article:modified_time', 'og:updated_time', 'dcterms.modified', 'dc.date.modified', 'last-modified') || cleanText(ld.dateModified ?? ''))
+      : { year: '', month: '', day: '' };
+  const useUpdated = Boolean(updated.year) && (!date.year || Number(updated.year) > Number(date.year)) && Number(updated.year) <= new Date().getFullYear();
+  const shown = useUpdated ? updated : date;
+  d.year = shown.year;
+  d.month = shown.month;
+  d.day = shown.day;
 
   // Where it was published
   if (type === 'journal') {

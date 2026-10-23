@@ -16,7 +16,7 @@ function sectionId(heading: string) {
   return heading.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
-export default function ToolPage({ tool, children }: { tool: ToolContent; children: ReactNode }) {
+export default function ToolPage({ tool, children, bare = false }: { tool: ToolContent; children: ReactNode; bare?: boolean }) {
   const url = `${SITE_URL}${toolPath(tool)}`;
   const whatsappUrl = buildWhatsAppUrl(tool.whatsappMessage);
   const services = tool.services.map((s) => getLandingPage(s, 'en')).filter((p) => p !== undefined);
@@ -78,7 +78,7 @@ export default function ToolPage({ tool, children }: { tool: ToolContent; childr
 
       <section className="relative z-10 -mt-16 md:-mt-20 pb-12">
         <div className="max-w-[1100px] mx-auto px-4">
-          <div className="rounded-3xl bg-white shadow-2xl border border-gray-100 p-4 sm:p-6 md:p-8">{children}</div>
+          <div className={`rounded-3xl bg-white shadow-2xl border border-gray-100 ${bare ? 'overflow-hidden' : 'p-4 sm:p-6 md:p-8'}`}>{children}</div>
         </div>
       </section>
 

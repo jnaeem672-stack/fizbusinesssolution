@@ -7,7 +7,7 @@ export const metadata = toolMetadata('apa-referencing-generator');
 
 export default function Page() {
   return (
-    <ToolPage tool={getTool('apa-referencing-generator')!}>
+    <ToolPage tool={getTool('apa-referencing-generator')!} bare>
       <ApaGenerator />
     </ToolPage>
   );

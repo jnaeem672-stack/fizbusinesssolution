@@ -1,5 +1,5 @@
-import ReferenceGenerator from './ReferenceGenerator';
+import ReferenceWorkspace from './refs/ReferenceWorkspace';
 
 export default function ApaGenerator() {
-  return <ReferenceGenerator style="apa" />;
+  return <ReferenceWorkspace defaultStyle="apa" />;
 }
