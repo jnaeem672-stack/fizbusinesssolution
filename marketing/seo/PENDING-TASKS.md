@@ -59,6 +59,22 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   `updated` (dateModified and sitemap lastmod). Check its CTR in Search Console around 30 Oct.
 - Semrush to check (UK): digital marketing dissertation topics, harvard referencer, how to harvard reference in text.
 
+## Search Console check (24 Oct 2026, 02:15 PKT, Claude in the owner's Chrome)
+- Last 24 h: 723 impressions, 3 clicks, avg position 20.2. Final 28-day data ends 21 Oct: 12 clicks, 1.59K
+  impressions, CTR 0.8%, position 42.1; 21 Oct alone 519 impressions at 26.2 (19 and 20 Oct about 178 at 50).
+- Last 24 h is mostly the اسايمنت guide (اسايمنت بالانجليزي 52 at 7.0, assignment معنى 32, اسايمنت 29, يعني ايه اسايمنت 14)
+  with 0 clicks. URL Inspection: Googlebot crawled it 23 Oct 18:33, after the CTR update, so the new title should
+  show from now. Compare CTR on 30 Oct before changing anything else.
+- 28 days by theme: Harvard tool queries 372 impressions at about 79 (needs links, not on-page work); primary vs
+  secondary 152 at 59; Arabic queries 153 at 8; UK city "assignment help" 91 at 78; dissertation 37 at 34.
+- Page indexing report (last update 16 Oct, stale): 144 indexed, 119 not: 91 Discovered not indexed, 9 Crawled
+  not indexed (supply chain, CIPD, psychology, education, economics help pages and 3 expert profiles: thin or
+  similar), 17 alternate canonical (www copies, fine), 2 redirects. www redirect and canonical checked live: OK.
+- Sitemap: Success, 168 found, last read 22 Oct. Manual actions and security issues: none.
+- Quora (24 Oct): profile filled (credential, bio, employment, education, Lahore, 12 topics) and 2 answers live:
+  How do I do Harvard referencing? (link to Harvard tool) and Harvard vs APA (links to both tools). Owner agreed:
+  1 answer a day, a link in only every second or third answer. Medium account: owner creates, then Claude writes.
+
 ## Reference tool workspace (23 Oct 2026, owner asked for a MyBib-like tool)
 - Harvard and APA tool pages now use src/components/tools/refs/ (ReferenceWorkspace, SourceEditor, store, exporters,
   ui). Projects in localStorage (key fizbs-ref-projects-v1, old lists migrated), Cite a: Website / Book / Journal /
@@ -138,10 +154,17 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   Batch 1 DONE 23 Oct 19:27 except grading system (quota exceeded): /assignment-help-london, /assignment-help-birmingham, /assignment-help-manchester, /assignment-help-bristol,
   /assignment-help-leeds, /ar/assignment-help-saudi-arabia, /tools/harvard-referencing-generator,
   /blog/how-to-email-a-phd-supervisor, /blog/quantitative-vs-qualitative-research, /blog/uk-university-grading-system.
-  Batch 2 (next): /blog/uk-university-grading-system, /assignment-help-luton, /assignment-help-bradford, /ar/dissertation-help-saudi-arabia,
-  /ar/blog/how-to-make-a-questionnaire, /ar/blog/graduation-project-guide, /ar/autocad-help, /law-assignment-help,
-  /spss-help, /blog/primary-vs-secondary-research.
-  Batch 3: /tools/degree-classification-calculator, then any new or changed pages.
+  Batch 2 DONE 24 Oct 02:30: requested /blog/uk-university-grading-system, /assignment-help-luton,
+  /assignment-help-bradford, /ar/dissertation-help-saudi-arabia; already on Google: questionnaire, graduation,
+  /ar/autocad-help, /law-assignment-help, /spss-help, primary-vs-secondary, degree calculator, harvard guide,
+  literature review guide, /ar/assignment-help-riyadh. Extra requests (not on Google): /tools/word-counter,
+  /blog/how-to-write-a-dissertation, /ar/blog/how-to-write-a-research-proposal,
+  /blog/how-to-paraphrase-and-avoid-plagiarism, /blog/dissertation-methodology-guide,
+  /blog/how-to-structure-a-university-essay (10 requests used on 24 Oct).
+  Batch 3 (next, inspect first): the other "Discovered" guides: computer-science, finance-accounting, marketing,
+  nursing dissertation topics, gibbs-reflective-cycle, dissertation-introduction, research-question,
+  human-vs-ai-academic-writing, uk-masters-personal-statement, /ar/blog/how-to-write-an-abstract,
+  /ar/blog/theoretical-framework-and-literature-review, /ar/thesis-help, /ar/mba-assignment-help, then Saudi city pages.
   GSC Request Indexing gave "Oops! Something went wrong" on 22 Oct night (Google side); sitemap status Success,
   last read 22 Oct, 168 discovered, so unrequested pages still get found through the sitemap.
   No invented results or reviews.
