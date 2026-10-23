@@ -109,11 +109,16 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   Harvard guide too; Newman Harvard based on Cite Them Right, OSCOLA law, APA for MSc Clinical Applications in
   Psychology; Aston and UCB not verified, so no style stated). 2 FAQs London, 1 Birmingham.
 - Next to enrich: Glasgow, Liverpool, Saudi cities (EN + AR), Dubai.
-- Request Indexing 23 Oct list sent: Manchester, Bristol, Leeds, PhD supervisor, quant vs qual, grading system,
-  primary vs secondary, Harvard tool, AR questionnaire, law. Still to request: degree calculator,
-  /ar/assignment-help-saudi-arabia, /ar/blog/graduation-project-guide, /ar/dissertation-help-saudi-arabia,
-  /ar/autocad-help, /spss-help, Luton, Bradford. GSC Request Indexing gave "Oops! Something went wrong" on 22 Oct
-  night (Google side); sitemap status Success, last read 22 Oct, 168 discovered.
+- Request Indexing backlog (owner, 23 Oct 18:51: earlier lists not done yet). ONE running list, give only the next
+  10 each morning, skip any URL that shows "URL is on Google" or "Indexing requested". Done: /ar/blog/what-is-an-assignment.
+  Batch 1: /assignment-help-london, /assignment-help-birmingham, /assignment-help-manchester, /assignment-help-bristol,
+  /assignment-help-leeds, /ar/assignment-help-saudi-arabia, /tools/harvard-referencing-generator,
+  /blog/how-to-email-a-phd-supervisor, /blog/quantitative-vs-qualitative-research, /blog/uk-university-grading-system.
+  Batch 2: /assignment-help-luton, /assignment-help-bradford, /ar/dissertation-help-saudi-arabia,
+  /ar/blog/how-to-make-a-questionnaire, /ar/blog/graduation-project-guide, /ar/autocad-help, /law-assignment-help,
+  /spss-help, /blog/primary-vs-secondary-research, /tools/degree-classification-calculator.
+  GSC Request Indexing gave "Oops! Something went wrong" on 22 Oct night (Google side); sitemap status Success,
+  last read 22 Oct, 168 discovered, so unrequested pages still get found through the sitemap.
   No invented results or reviews.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
