@@ -86,7 +86,16 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   Right; Bath = Harvard (Bath); Leeds = school sets style (Leeds Harvard, Leeds Numeric, MHRA, others); Leeds Beckett
   = Harvard via Quote, Unquote, Law OSCOLA, Psychology APA; Leeds Trinity = APA for UG and taught PG. Salford: no
   official source found, so no style is stated.
-- Next to enrich: Luton, Bradford, then London, Birmingham, Glasgow, Liverpool, Saudi cities (EN + AR), Dubai.
+- Done 23 Oct: Luton (Bedfordshire library gives Cite Them Right Online: Harvard, APA, OSCOLA, IEEE; no single
+  style stated) and Bradford (University of Bradford has its own Harvard guides, "official style in use at
+  Bradford"; Bradford College library points to Cite Them Right for Harvard and APA). Referencing section, link
+  cards, 1 local FAQ each, shared sentences rewritten (source check: 0 shared body sentences).
+- Next to enrich: London, Birmingham, Glasgow, Liverpool, Saudi cities (EN + AR), Dubai.
+- Request Indexing 23 Oct list sent: Manchester, Bristol, Leeds, PhD supervisor, quant vs qual, grading system,
+  primary vs secondary, Harvard tool, AR questionnaire, law. Still to request: degree calculator,
+  /ar/assignment-help-saudi-arabia, /ar/blog/graduation-project-guide, /ar/dissertation-help-saudi-arabia,
+  /ar/autocad-help, /spss-help, Luton, Bradford. GSC Request Indexing gave "Oops! Something went wrong" on 22 Oct
+  night (Google side); sitemap status Success, last read 22 Oct, 168 discovered.
   No invented results or reviews.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)

@@ -41,6 +41,30 @@ export const assignmentHelpBradford: LandingContent = {
       ],
     },
     {
+      heading: "Referencing at the University of Bradford and Bradford College",
+      paragraphs: [
+        "The University of Bradford publishes its own Harvard guides, which the library describes as the official style in use at Bradford, and it warns that there are many variants of Harvard. Check the small details of each reference, such as punctuation and the format for online sources, against the Bradford guide rather than a generic Harvard example.",
+        "Bradford College students can use Cite Them Right, which the college library points to for guidance on Harvard and APA referencing, along with a short referencing tutorial.",
+        "The free Harvard reference generator further down this page follows Cite Them Right, which suits Bradford College courses that use it. University of Bradford students can use it for a first draft of each reference and then check it against the Bradford guide, or ask their expert to review the whole list.",
+      ],
+      links: [
+        {
+          label: "Referencing at the University of Bradford",
+          href: "https://www.bradford.ac.uk/library/help/referencing-and-plagiarism/referencing",
+          note: "The library's guides to the University of Bradford's Harvard style.",
+          tag: "University of Bradford",
+          cta: "Official referencing guide",
+        },
+        {
+          label: "Cite Them Right at Bradford College",
+          href: "https://library.bradfordcollege.ac.uk/blog/CiteThemRight",
+          note: "Bradford College Library on using Cite Them Right for Harvard and APA.",
+          tag: "Bradford College",
+          cta: "Official library guidance",
+        },
+      ],
+    },
+    {
       heading: "Pharmacy, optometry and health sciences",
       paragraphs: [
         "Health science students write lab reports, case studies, evidence-based essays and reflective accounts. Our healthcare specialists help you appraise research, present results clearly and link practice to guidance and evidence, with accurate referencing.",
@@ -73,8 +97,8 @@ export const assignmentHelpBradford: LandingContent = {
     {
       heading: "Prices and how Bradford students get started",
       paragraphs: [
-        "Guidance starts at £20 per 1,000 words for deadlines of seven days or more, with 25% added for 3 to 6 days and 50% for 48 hours. A 1,500-word pharmacy lab report due in four days, for example, comes to £37.50, or £33.75 with the 10% first-order discount. Dissertation guidance is £30 per 1,000 words.",
-        "Send your module, word count and deadline on WhatsApp in whichever language you prefer, and attach the brief and rubric. You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
+        "For a deadline seven or more days away, guidance costs from £20 per 1,000 words, rising by a quarter for 3 to 6 days and by half for 48 hours. A 1,500-word pharmacy lab report due in four days, for example, comes to £37.50, or £33.75 with the 10% first-order discount. Dissertations cost £30 per 1,000 words.",
+        "Send your module, word count and deadline on WhatsApp in whichever language you prefer, and attach the brief and rubric. Payment comes in two equal parts, at the start and on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.",
       ],
     },
   ],
@@ -85,7 +109,7 @@ export const assignmentHelpBradford: LandingContent = {
     },
     {
       q: "Which Bradford universities do you support?",
-      a: "We support students from any university, including the University of Bradford and Bradford College. We are not affiliated with any institution.",
+      a: "We support students from any university, including the University of Bradford and Bradford College. FIZBS works independently and has no connection with either.",
     },
     {
       q: "Can I message you in Urdu?",
@@ -97,7 +121,7 @@ export const assignmentHelpBradford: LandingContent = {
     },
     {
       q: "How much does assignment help in Bradford cost?",
-      a: "Guidance starts from £20 per 1,000 words for deadlines of seven days or more. A 1,500-word lab report due in four days, for example, is £37.50 before your 10% first-order discount.",
+      a: "Prices start at £20 per 1,000 words when your deadline is at least seven days away. A 1,500-word lab report due in four days, for example, is £37.50 before your 10% first-order discount.",
     },
     {
       q: "Do you support Bradford College HND and degree students?",
@@ -107,9 +131,13 @@ export const assignmentHelpBradford: LandingContent = {
       q: "Can you help with a peace studies or conflict resolution essay?",
       a: "Yes. Our social science experts help you apply theories of conflict and peacebuilding to real cases and build a clear, critical argument.",
     },
+    {
+      q: "Which Harvard style does the University of Bradford use?",
+      a: "The University of Bradford publishes its own Harvard guides, which its library calls the official style in use at Bradford. Check each reference against that guide; our free generator follows Cite Them Right, so small details can differ.",
+    },
   ],
   ctaTitle: "Get your Bradford assignment price in minutes",
-  ctaText: 'Message us on WhatsApp any time or use the instant calculator to see your price. New customers get 10% off their first order.',
+  ctaText: 'WhatsApp us at any hour in English or Urdu, or check the instant calculator for your price. First orders are 10% off.',
   whatsappMessage: "Hi FIZBS! I am a student in Bradford and need assignment help. Subject: , Word count: , Deadline: ",
   related: ["assignment-help-uk", "healthcare-nursing-assignment-help", "business-management-assignment-help", "assignment-help-leeds", "assignment-help-manchester"],
 };
