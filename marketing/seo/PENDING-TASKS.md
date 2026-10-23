@@ -201,6 +201,19 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
 - Monthly: compare Search Console Links export and Semrush referring domains with the month before.
 - When the owner sends new profile links, add them to SOCIAL_URLS (src/constants/social.ts) for the schema sameAs.
 
+## Working rule (owner, 24 Oct 2026 03:49, most important)
+- First agree the FINAL plan with the owner. Make no change to the site or its files until he says "yes do it"
+  for that plan. A general "go ahead" or "heavy SEO" is not approval for new changes found later: show each new
+  change in the plan first. Raise problems yourself (Monday self-audit), but fix them only after his yes.
+- Pending since 24 Oct: branch seo/ar-buyer-keywords-2026-10-24 (Arabic homepage as brand page, service cards
+  linking to money pages, in-text buyer links in 5 Arabic guides, "مكتبة لخدمات الطالب" on student services).
+  Not merged or live; waiting for his yes. Google Ads tag question (remove it, or keep and stop mentioning it)
+  also waiting for his answer.
+- Keyword intent correction (owner, 24 Oct): "مكتبة لخدمات الطالب" / "مكتبة خدمة الطالب" mostly means the print and
+  stationery shop near a university, not assignment buyers. Buyer keywords: مكتب خدمات الطالب 1,300 (KD 12),
+  مكتب خدمات طلابية 480 (KD 11), مشروع تخرج, رسالة ماجستير, SPSS. "حل واجبات" 9,900 is largely school homework.
+  Saudi buyers also use X, WhatsApp/Telegram groups, Snapchat and Haraj.
+
 ## Standing rules for every page
 - No fake reviews, ratings or testimonials. No guarantees. Never "plagiarism-free", "zero AI", "AI-free",
   "free revisions" or "100% original". No em or en dashes. Avoid the words "coaching" and "ethical".
