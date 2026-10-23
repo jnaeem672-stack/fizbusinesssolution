@@ -111,12 +111,13 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
 - Next to enrich: Glasgow, Liverpool, Saudi cities (EN + AR), Dubai.
 - Request Indexing backlog (owner, 23 Oct 18:51: earlier lists not done yet). ONE running list, give only the next
   10 each morning, skip any URL that shows "URL is on Google" or "Indexing requested". Done: /ar/blog/what-is-an-assignment.
-  Batch 1: /assignment-help-london, /assignment-help-birmingham, /assignment-help-manchester, /assignment-help-bristol,
+  Batch 1 DONE 23 Oct 19:27 except grading system (quota exceeded): /assignment-help-london, /assignment-help-birmingham, /assignment-help-manchester, /assignment-help-bristol,
   /assignment-help-leeds, /ar/assignment-help-saudi-arabia, /tools/harvard-referencing-generator,
   /blog/how-to-email-a-phd-supervisor, /blog/quantitative-vs-qualitative-research, /blog/uk-university-grading-system.
-  Batch 2: /assignment-help-luton, /assignment-help-bradford, /ar/dissertation-help-saudi-arabia,
+  Batch 2 (next): /blog/uk-university-grading-system, /assignment-help-luton, /assignment-help-bradford, /ar/dissertation-help-saudi-arabia,
   /ar/blog/how-to-make-a-questionnaire, /ar/blog/graduation-project-guide, /ar/autocad-help, /law-assignment-help,
-  /spss-help, /blog/primary-vs-secondary-research, /tools/degree-classification-calculator.
+  /spss-help, /blog/primary-vs-secondary-research.
+  Batch 3: /tools/degree-classification-calculator, then any new or changed pages.
   GSC Request Indexing gave "Oops! Something went wrong" on 22 Oct night (Google side); sitemap status Success,
   last read 22 Oct, 168 discovered, so unrequested pages still get found through the sitemap.
   No invented results or reviews.
