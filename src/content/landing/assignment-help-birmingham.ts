@@ -67,6 +67,37 @@ export const assignmentHelpBirmingham: LandingContent = {
       ],
     },
     {
+      heading: 'Referencing styles at Birmingham universities',
+      paragraphs: [
+        "Harvard is the main style at the University of Birmingham, Birmingham City University and Newman, but each uses its own version. The University of Birmingham's library guide says a version of the Harvard author-date system has been adopted as the standard for academic writing at the university, and it advises checking the details with your tutor.",
+        "Birmingham City University's library calls Harvard its main referencing system and Cite Them Right Harvard its newest version, and it also publishes a BCU Harvard guide, so ask your tutor which one your module uses. Newman uses Newman Harvard for most courses, based on the principles in Cite Them Right, with OSCOLA for law programmes and APA 7th edition for MSc Clinical Applications in Psychology students. At Aston and University College Birmingham, follow the style your module handbook names.",
+        "The free Harvard reference generator further down this page follows Cite Them Right, the version BCU calls its newest and the basis of Newman Harvard. For University of Birmingham Harvard or BCU Harvard, check each reference against your library guide, or ask your expert to review the whole list.",
+      ],
+      links: [
+        {
+          label: 'Harvard referencing at the University of Birmingham',
+          href: 'https://intranet.birmingham.ac.uk/student/libraries/referencing/icite/harvard/referencelist.aspx',
+          note: "The library's iCite guide to Harvard reference lists and bibliographies.",
+          tag: 'University of Birmingham',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Cite Them Right Harvard at BCU',
+          href: 'https://www.bcu.ac.uk/library/services-and-support/referencing/cite-them-right',
+          note: "Birmingham City University Library's guide to its newest version of Harvard.",
+          tag: 'Birmingham City University',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Referencing at Newman University',
+          href: 'https://libguides.newman.ac.uk/referencing',
+          note: 'Newman Harvard for most courses, with OSCOLA and APA where required.',
+          tag: 'Newman University',
+          cta: 'Official referencing guide',
+        },
+      ],
+    },
+    {
       heading: 'Help that works around commuting and part-time work',
       paragraphs: [
         "Travelling in for a 9am seminar, working a shift at the weekend and keeping up with weekly reading leaves little room for anything else. When an assignment brief feels confusing, waiting several days for a reply from a tutor can cost you valuable time. Our process is designed to remove that delay and fit into the gaps in your week.",
@@ -128,14 +159,14 @@ export const assignmentHelpBirmingham: LandingContent = {
         'Planning essay structure and building a clear argument',
         'Finding credible academic sources for your topic',
         'Referencing in Harvard, APA, MLA, IEEE or OSCOLA',
-        'Proofreading from £12 per 1,000 words',
+        'A final proofread, from £12 per 1,000 words',
         'Support across health, law, computing, engineering and 115+ subjects',
       ],
     },
     {
       heading: 'Dissertation and MBA support in Birmingham',
       paragraphs: [
-        "Dissertation help Birmingham final-year and postgraduate students use covers each stage of the project, from shaping a research question to analysing data. Our experts work with SPSS, Excel, NVivo, Stata and Python, and we have supported more than 350 research projects. Dissertation support is £30 per 1,000 words.",
+        "Dissertation help Birmingham final-year and postgraduate students use covers each stage of the project, from shaping a research question to analysing data. Our experts work with SPSS, Excel, NVivo, Stata and Python, and we have supported more than 350 research projects. Dissertation guidance is priced at £30 per 1,000 words.",
         "MBA assignment help Birmingham professionals request often involves combining theory with their own workplace experience. Experts can help you apply frameworks to a real organisation, structure a consultancy report and reflect on leadership in a way that meets postgraduate standards.",
       ],
     },
@@ -143,7 +174,7 @@ export const assignmentHelpBirmingham: LandingContent = {
       heading: 'Support for Saudi students studying in Birmingham',
       paragraphs: [
         "Birmingham's universities welcome students from many countries, including Saudi students on undergraduate, Master's and MBA programmes. FIZBS supports students from Saudi Arabia, both at Saudi universities and studying in the UK, so the step from one academic system to another is familiar ground for our experts.",
-        'Common requests include help adapting to UK essay and report structures, writing critically rather than descriptively and using Harvard or APA referencing consistently. Postgraduate students also ask for guidance on research proposals and on applying business frameworks to organisations in Saudi Arabia or the wider Gulf region. Payment can be made by Saudi bank transfer in SAR or UK bank transfer in GBP, split into 50% at the start and 50% on completion.',
+        'Common requests include help adapting to UK essay and report structures, writing critically rather than descriptively and using Harvard or APA referencing consistently. Postgraduate students also ask for guidance on research proposals and on applying business frameworks to organisations in Saudi Arabia or the wider Gulf region. Payment can be made by Saudi bank transfer in SAR or UK bank transfer in GBP, with half at the start and half on completion.',
       ],
     },
   ],
@@ -162,7 +193,7 @@ export const assignmentHelpBirmingham: LandingContent = {
     },
     {
       q: 'What does dissertation support cost?',
-      a: 'Dissertation support costs £30 per 1,000 words. New customers also receive 10% off their first order.',
+      a: 'It is £30 per 1,000 words at every stage, from the proposal to the final chapter. New customers also receive 10% off their first order.',
     },
     {
       q: 'Which subjects can you help with?',
@@ -177,12 +208,16 @@ export const assignmentHelpBirmingham: LandingContent = {
       a: 'Yes. You can ask for guidance on a single part of your work, such as a literature review, methodology or reflective section, rather than the whole assignment. The price is based on the word count involved.',
     },
     {
-      q: 'I am a Saudi student in Birmingham. Can I pay from a Saudi bank account?',
-      a: 'Yes. You can pay by Saudi bank transfer in SAR or by UK bank transfer in GBP. Payment is split into 50% to start and 50% on completion.',
+      q: 'I am a Saudi student in Birmingham. Can I pay in riyals from my Saudi bank?',
+      a: 'Yes. Saudi bank transfer in SAR and UK bank transfer in GBP both work. Half is paid at the start and half on completion.',
     },
     {
       q: "I haven't studied for years. Can you help me get back into academic writing?",
       a: 'Yes. Experts can explain essay structure, academic tone, referencing and how to use the marking criteria. You can also book a WhatsApp call in English with an expert before ordering to discuss where you would like support.',
+    },
+    {
+      q: 'Which Harvard style does Birmingham City University use?',
+      a: "BCU's library calls Harvard its main referencing system and Cite Them Right Harvard its newest version, and it also publishes a BCU Harvard guide. If you are unsure which version your module uses, check with your tutor; our free generator uses the Cite Them Right version.",
     },
   ],
   ctaTitle: 'Start with a quick, clear price',

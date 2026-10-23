@@ -34,7 +34,7 @@ export const assignmentHelpLondon: LandingContent = {
     },
     {
       heading: "London universities we support",
-      paragraphs: ["We support students at every university in London. FIZBS is an independent online service and is not affiliated with any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
+      paragraphs: ["We support students at every university in London. FIZBS is an independent online service with no link to any of them. Each university has its own style of teaching and assessment, and your expert always works from your own module brief and marking criteria."],
       subsections: [
         {
           heading: "UCL (University College London)",
@@ -69,7 +69,7 @@ export const assignmentHelpLondon: LandingContent = {
         {
           heading: "Middlesex University",
           paragraphs: ["Middlesex is based in Hendon, North London, and is known for business, law, psychology, nursing and computing, with a large international student community.", "Our experts can help with:"],
-          bullets: ["Business and law coursework", "Psychology research reports in APA style", "Clear academic English and Harvard referencing"],
+          bullets: ["Business and law coursework", "Psychology research reports in APA style", "Referencing in MDX Harvard, IEEE or OSCOLA, as your module requires"],
         },
         {
           heading: "University of Westminster",
@@ -80,6 +80,44 @@ export const assignmentHelpLondon: LandingContent = {
           heading: "London campuses of other UK universities",
           paragraphs: ["Several universities based elsewhere also teach in the capital, including Ulster University, Coventry University, Northumbria University, the University of Sunderland and Anglia Ruskin University. Many of their students are international postgraduates on business, management, health and computing courses who study while working.", "Our experts can help with:"],
           bullets: ["Business and MBA assignments on real organisations", "Reflective essays and professional portfolios", "Staged deadlines planned around your work shifts"],
+        },
+      ],
+    },
+    {
+      heading: 'Referencing styles at London universities',
+      paragraphs: [
+        "London universities do not share one referencing style, and using the right version is an easy way to protect your marks. UCL has no standard style for the whole university: some departments and programmes have a preferred one, from Harvard and APA to Vancouver, OSCOLA, MHRA, MLA and Chicago, so your programme handbook decides.",
+        "At the University of Westminster, most courses use Harvard in the Cite Them Right version, while law uses OSCOLA and psychology uses APA. Most Middlesex courses use MDX Harvard, with IEEE in engineering and computing, APA in psychology, OSCOLA in law and Chicago in interiors, and the library asks students to check every reference in Cite Them Right Online. Greenwich's library points students to Cite Them Right for help with Harvard and other styles.",
+        "The free Harvard reference generator further down this page follows Cite Them Right, which matches Westminster's main style. For MDX Harvard or a department style at UCL, generate a first draft of each reference and check it against your library guide, or ask your expert to review the whole list.",
+      ],
+      links: [
+        {
+          label: 'Referencing styles at UCL',
+          href: 'https://library-guides.ucl.ac.uk/referencing-plagiarism/referencing-styles',
+          note: 'UCL Library on why there is no single university-wide style, and the main systems in use.',
+          tag: 'UCL',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Referencing at the University of Westminster',
+          href: 'https://libguides.westminster.ac.uk/referencing',
+          note: 'Cite Them Right Harvard for most courses, with OSCOLA for law and APA for psychology.',
+          tag: 'University of Westminster',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Referencing at Middlesex University',
+          href: 'https://libguides.mdx.ac.uk/plagiarismreferencing/referencing',
+          note: 'MDX Harvard for most courses, plus IEEE, APA, OSCOLA and Chicago by subject.',
+          tag: 'Middlesex University',
+          cta: 'Official referencing guide',
+        },
+        {
+          label: 'Cite Them Right Online at Greenwich',
+          href: 'https://libguides.gre.ac.uk/researchers/ctro',
+          note: "Greenwich Library's guide to Cite Them Right for Harvard and other styles.",
+          tag: 'University of Greenwich',
+          cta: 'Official library guidance',
         },
       ],
     },
@@ -179,7 +217,7 @@ export const assignmentHelpLondon: LandingContent = {
     },
     {
       q: 'Can you help with assignments from any London university?',
-      a: 'Yes. Students we support study at many London institutions, from large research universities to specialist and evening study providers. Your expert follows your own brief, marking criteria and referencing style. We are not affiliated with any university.',
+      a: 'Yes. Students we support study at many London institutions, from large research universities to specialist and evening study providers. Your expert follows your own brief, marking criteria and referencing style. FIZBS has no affiliation with any London university.',
     },
     {
       q: 'I work part-time. Can I message you outside normal hours?',
@@ -187,7 +225,7 @@ export const assignmentHelpLondon: LandingContent = {
     },
     {
       q: "Do you offer dissertation help London Master's students can afford?",
-      a: 'Dissertation support costs £30 per 1,000 words. You can check your exact price with the instant calculator on our homepage.',
+      a: "London Master's students pay £30 per 1,000 words for dissertation support. You can check your exact price with the instant calculator on our homepage.",
     },
     {
       q: 'Is the service suitable for international students?',
@@ -208,6 +246,14 @@ export const assignmentHelpLondon: LandingContent = {
     {
       q: "When should I get in touch about my one-year Master's dissertation?",
       a: "As early as you can, ideally while you are drafting your proposal. Deadlines of seven days or more stay at the standard rate, and working in stages gives you time to act on your supervisor's feedback between chapters.",
+    },
+    {
+      q: 'Which referencing style does the University of Westminster use?',
+      a: "Westminster's library says most courses use Harvard in the Cite Them Right version, with OSCOLA for law and APA for psychology, and that there are many exceptions, so check your course handbook. Our free Harvard generator follows Cite Them Right.",
+    },
+    {
+      q: 'Does UCL have one referencing style?',
+      a: "No. UCL's library says there is no standard referencing style across the university. Some departments and programmes prefer a particular style, so check your programme handbook or ask your department.",
     },
   ],
   ctaTitle: 'Get expert help without leaving your desk',

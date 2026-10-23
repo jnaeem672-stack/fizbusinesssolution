@@ -103,7 +103,12 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   style stated) and Bradford (University of Bradford has its own Harvard guides, "official style in use at
   Bradford"; Bradford College library points to Cite Them Right for Harvard and APA). Referencing section, link
   cards, 1 local FAQ each, shared sentences rewritten (source check: 0 shared body sentences).
-- Next to enrich: London, Birmingham, Glasgow, Liverpool, Saudi cities (EN + AR), Dubai.
+- Done 23 Oct evening: London (UCL no standard style; Westminster Cite Them Right Harvard, law OSCOLA, psychology APA;
+  Middlesex MDX Harvard, IEEE, APA, OSCOLA, Chicago; Greenwich library points to Cite Them Right) and Birmingham
+  (UoB iCite: a version of Harvard adopted as standard; BCU: Harvard main, Cite Them Right Harvard newest, BCU
+  Harvard guide too; Newman Harvard based on Cite Them Right, OSCOLA law, APA for MSc Clinical Applications in
+  Psychology; Aston and UCB not verified, so no style stated). 2 FAQs London, 1 Birmingham.
+- Next to enrich: Glasgow, Liverpool, Saudi cities (EN + AR), Dubai.
 - Request Indexing 23 Oct list sent: Manchester, Bristol, Leeds, PhD supervisor, quant vs qual, grading system,
   primary vs secondary, Harvard tool, AR questionnaire, law. Still to request: degree calculator,
   /ar/assignment-help-saudi-arabia, /ar/blog/graduation-project-guide, /ar/dissertation-help-saudi-arabia,
