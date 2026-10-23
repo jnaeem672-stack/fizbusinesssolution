@@ -135,6 +135,12 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   ar how-to-write-an-abstract (11.6). Biggest guide by impressions: primary-vs-secondary-research (115, at 62).
 
 ## Backlinks routine (from 21 Oct 2026)
+- 23 Oct: owner had 4 guest posts placed (britishbusinessblog.co.uk, anadolukobi.web.tr, designingbuildings.co.uk
+  user page, allcleanandclearuk.mn.co). Checked: british and anadolukobi live with dofollow links to the Harvard tool
+  and /assignment-help-uk (anchors "Harvard tool", "UK assignment help"); both are open mixed-topic sites, low value.
+  designingbuildings user page redirects to the wiki home (no link). mn.co not checkable (blocked in Chrome).
+  Logged in the Backlink Kit Link Log. Advice given: no more posts on open guest-post sites; vary anchors (brand,
+  URL); not the cause of the 23 Oct impression rise (that came from Arabic guides).
 - The owner's doc "FIZBS Backlink Kit" (Claude docs) holds the business details, EN/AR descriptions, the 5 link
   pages with anchors, 12 platforms, Saudi listing ads, content ideas, a 3-week plan and the Link Log table.
 - Every Monday: read the Link Log in that doc, open each new row's link, check the link to fizbusinessolutions.com
