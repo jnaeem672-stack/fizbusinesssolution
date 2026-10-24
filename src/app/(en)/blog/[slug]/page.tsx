@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     alternates: {
       canonical: url,
       // Same topic in Arabic: tell Google the two pages are language versions of each other
-      ...(getPost(slug, 'ar') && { languages: { 'en-GB': url, 'ar-SA': `${SITE_URL}/ar/blog/${post.slug}`, 'x-default': url } }),
+      ...(getPost(slug, 'ar') && { languages: { 'en-GB': url, ar: `${SITE_URL}/ar/blog/${post.slug}`, 'x-default': url } }),
     },
     openGraph: {
       title: post.metaTitle,

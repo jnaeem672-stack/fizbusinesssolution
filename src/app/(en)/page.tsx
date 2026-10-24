@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     "Assignment and dissertation guidance for students in the UK, Saudi Arabia and the UAE from Master's and PhD experts. 24/7 WhatsApp, 10% off first order.",
   alternates: {
     canonical: 'https://fizbusinessolutions.com/',
-    languages: { 'en-GB': 'https://fizbusinessolutions.com/', 'ar-SA': 'https://fizbusinessolutions.com/ar', 'x-default': 'https://fizbusinessolutions.com/' },
+    languages: { 'en-GB': 'https://fizbusinessolutions.com/', ar: 'https://fizbusinessolutions.com/ar', 'x-default': 'https://fizbusinessolutions.com/' },
   },
   openGraph: {
     title: TITLE,
