@@ -80,6 +80,14 @@ export const article: ExpertArticle = {
       ],
     },
     {
+      heading: "Worked Example: Bending Stress in a Simply Supported Beam",
+      paragraphs: [
+        "A simply supported steel beam 4 m long carries a central point load of 10 kN. The maximum bending moment is WL/4, so 10 × 4 ÷ 4 = 10 kNm, or 10 million Nmm. The beam has a solid rectangular section 50 mm wide and 100 mm deep, so its second moment of area is bd³/12 = 50 × 100³ ÷ 12, about 4.17 million mm⁴.",
+        "Using the bending equation, the maximum stress is My/I, where y is the distance from the neutral axis to the outer fibre, here 50 mm. That gives 10 million × 50 ÷ 4.17 million, which is about 120 MPa at the top and bottom surfaces at mid-span.",
+        "The next step is the one students often skip: is the result sensible? For a structural steel such as S275, with a yield strength of around 275 MPa, 120 MPa gives a safety factor of about 2.3 against yielding. A full answer would also check the mid-span deflection, include the beam's own weight and question whether the load is truly static. Stating these assumptions and checks is what turns a correct number into a well-marked engineering answer.",
+      ],
+    },
+    {
       heading: "How Working with FIZBS Works",
       paragraphs: [
         "FIZ Business Solutions has supported more than 10,000 students in the UK and Saudi Arabia since 2015. The process for engineering coursework support is simple and transparent.",
@@ -104,6 +112,14 @@ export const article: ExpertArticle = {
     {
       q: "Can I get help with FEA or simulation coursework?",
       a: "Clara can guide you through setting up a finite element model, choosing boundary conditions and mesh, and interpreting results. She can also help you write the methodology and validation sections of your report.",
+    },
+    {
+      q: "How should I present calculations in a mechanical engineering report?",
+      a: "State the given data and your assumptions first, write each equation in symbols, substitute values with units, and give the result to sensible significant figures. Then comment on whether the answer is physically reasonable. Clara can check this flow in your draft and point out where a marker would expect more explanation.",
+    },
+    {
+      q: "Can Clara help with a final year mechanical engineering project?",
+      a: "Yes. She can help you scope the project, plan the literature review, structure the methodology and results chapters, and discuss how to validate experimental or simulation results against theory.",
     },
     {
       q: "How do I hire Clara V. for my engineering assignment?",

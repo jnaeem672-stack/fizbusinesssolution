@@ -80,6 +80,14 @@ export const article: ExpertArticle = {
       ],
     },
     {
+      heading: "Worked example: applying the AMO framework to a case",
+      paragraphs: [
+        "The AMO framework says that employee performance depends on three things: Ability, Motivation and the Opportunity to participate. It works well as a structure for an HR case study, because each element points to a group of HR practices you can evaluate.",
+        "Take a retail chain with high staff turnover and falling customer satisfaction. Under ability, you would look at how staff are recruited, inducted and trained. Under motivation, you would examine pay, recognition and the quality of line management. Under opportunity, you would ask whether staff can make decisions on the shop floor, suggest improvements and agree shift patterns that fit their lives.",
+        "The analysis becomes critical when each link is backed by evidence, such as exit interview themes or engagement survey scores, and when you recognise the main criticism of AMO: it can make people management look like a simple formula and says little about how employees themselves experience HR practices. A strong recommendation then targets the weakest element first, with a cost, a timescale and a clear measure of success, such as turnover among staff in their first six months.",
+      ],
+    },
+    {
       heading: "How working with FIZBS works",
       paragraphs: [
         "Getting HRM assignment help through FIZBS is clear and flexible. Share your brief, case study and marking criteria on WhatsApp, and the team will confirm the support you need.",
@@ -109,6 +117,14 @@ export const article: ExpertArticle = {
     {
       q: "Do you help with CIPD-style HR reports?",
       a: "Nadia can guide you on the structure, evidence and professional tone expected in CIPD-style reports, and review your draft against the assessment criteria you share.",
+    },
+    {
+      q: "What is the difference between HRM and organisational behaviour assignments?",
+      a: "HRM assignments focus on people management practices such as recruitment, reward, performance and employee relations. Organisational behaviour looks at how individuals and groups act at work, covering motivation, personality, teams, leadership and culture. Many modules combine both, and Nadia can help you see which lens your brief is asking for.",
+    },
+    {
+      q: "Which sources should I use in an HRM assignment?",
+      a: "Peer-reviewed journals such as the Human Resource Management Journal and the International Journal of Human Resource Management carry the most weight. CIPD research reports, ACAS guidance and labour market data from the ONS add UK context, and recent company reports help when you apply theory to a real organisation.",
     },
     {
       q: "How much does HR assignment help cost in the UK?",

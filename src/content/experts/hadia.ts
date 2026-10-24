@@ -79,6 +79,14 @@ export const article: ExpertArticle = {
       ],
     },
     {
+      heading: "Worked example: material price and usage variances",
+      paragraphs: [
+        "A company's standard is 2 kg of material per unit at £5.00 per kg. Last month it made 1,000 units, buying and using 2,200 kg at £4.80 per kg. The standard cost of that output is 2,000 kg × £5.00 = £10,000, while the actual cost was 2,200 kg × £4.80 = £10,560, so the total material variance is £560 adverse.",
+        "Splitting it shows what really happened. The price variance is the £0.20 saving per kg × 2,200 kg = £440 favourable. The usage variance is the extra 200 kg × the £5.00 standard price = £1,000 adverse. Together they reconcile to the £560 adverse total.",
+        "The commentary is where the marks are. A cheaper supplier may explain the favourable price variance, and lower quality material may explain the extra usage through waste or rejected units. A strong answer links the two variances, says who is responsible for each (purchasing or production), and recommends what to investigate before deciding whether the cheaper material is worth keeping.",
+      ],
+    },
+    {
       heading: "How working with FIZBS works",
       paragraphs: [
         "Getting management accounting assignment help through FIZBS is simple, and students keep control of their own work.",
@@ -107,6 +115,14 @@ export const article: ExpertArticle = {
     {
       q: "Can someone explain CVP and break-even analysis?",
       a: "Yes. Hadia explains contribution, break-even point, margin of safety and target profit, along with the assumptions and limits of CVP analysis. Multi-product break-even and sensitivity questions are covered too.",
+    },
+    {
+      q: "What is the difference between absorption and marginal costing?",
+      a: "Absorption costing includes fixed production overheads in the cost of each unit, while marginal costing treats them as a cost of the period. When inventory levels change, the two methods report different profits, and assignments often ask you to reconcile the difference and explain which method suits internal decisions better.",
+    },
+    {
+      q: "How do I write the commentary for a variance analysis?",
+      a: "Explain the likely cause of each significant variance, look for links between variances, say who is responsible, and suggest what management should investigate or change. Calculations alone rarely earn the marks for interpretation.",
     },
     {
       q: "How do I hire Hadia for my management accounting assignment?",
