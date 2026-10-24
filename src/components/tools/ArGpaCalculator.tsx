@@ -180,7 +180,7 @@ export default function ArGpaCalculator() {
         <div className="rounded-2xl border-2 border-primary/30 bg-primary/5 p-5">
           <p className="text-sm font-bold text-navy/70">المعدل التراكمي الجديد</p>
           <p className="mt-1 text-4xl font-black text-navy whitespace-nowrap">
-            {Number.isFinite(result.cumulative) ? fmt(result.cumulative) : '-'} <span className="text-lg text-navy/50">من {scale}</span>
+            {Number.isFinite(result.cumulative) ? fmt(result.cumulative) : '-'} <span className="text-lg text-navy/70">من {scale}</span>
           </p>
           <p className="mt-2 text-sm text-navy/70">
             {Number.isFinite(result.cumulative)
@@ -208,7 +208,7 @@ export default function ArGpaCalculator() {
         <WhatsAppLink
           href={whatsappUrl}
           aria-label="تحدث مع خبير عبر واتساب"
-          className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-black text-white hover:brightness-105"
+          className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-[#25D366] px-5 py-3 text-sm font-black text-navy hover:brightness-105"
         >
           <WhatsAppIcon size={20} className="w-5 h-5" /> تحدث مع خبير عبر واتساب
         </WhatsAppLink>

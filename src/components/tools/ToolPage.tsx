@@ -114,7 +114,7 @@ export default function ToolPage({ tool, children, bare = false }: { tool: ToolC
                   </ul>
                 )}
                 {section.table && (
-                  <div className="mt-6 overflow-x-auto rounded-2xl border border-gray-200">
+                  <div className="mt-6 overflow-x-auto rounded-2xl border border-gray-200" tabIndex={0} role="region" aria-label={section.table.caption}>
                     <table className="w-full text-left text-[15px]">
                       <caption className="sr-only">{section.table.caption}</caption>
                       <thead className="bg-navy text-white">

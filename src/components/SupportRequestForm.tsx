@@ -13,6 +13,10 @@ import type { SupportRequestFormData } from '@/types';
 
 const inputClasses =
   'bg-[#FBF6E6] border border-[#E9DCAE] px-3 py-2 md:p-[10px_14px] rounded-[6px] text-base md:text-[14px] min-w-0 max-w-full outline-none focus:border-primary focus:ring-2 focus:ring-primary/15 transition-all w-full text-navy placeholder:text-gray-400';
+// A field with a problem gets a red border and a short message under it, so the visitor sees why the form did not send
+const fieldClasses = (bad: boolean) => (bad ? inputClasses.replace('border-[#E9DCAE]', 'border-red-500') : inputClasses);
+const FieldError = ({ id, text }: { id: string; text?: string }) =>
+  text ? <p id={id} role="alert" className="mt-1 text-[11px] font-semibold text-red-600">{text}</p> : null;
 const labelClasses = 'block text-primary font-semibold text-[10px] md:text-[11px] uppercase mb-1 md:mb-2 tracking-[1px]';
 
 const TEXT = {
@@ -29,6 +33,7 @@ const TEXT = {
     attach: '📎 Attach brief or draft (optional)',
     agree: 'I agree to the terms and privacy policy.',
     tick: 'Please tick the box to continue.',
+    required: 'Please fill in this field.', badEmail: 'Please enter a valid email address.',
     submit: 'Get My Free Quote', submitting: 'Submitting...',
   },
   ar: {
@@ -44,6 +49,7 @@ const TEXT = {
     attach: '📎 أرفق المتطلبات أو المسودة (اختياري)',
     agree: 'أوافق على الشروط وسياسة الخصوصية.',
     tick: 'يرجى تحديد المربع للمتابعة.',
+    required: 'يرجى تعبئة هذا الحقل.', badEmail: 'يرجى كتابة بريد إلكتروني صحيح.',
     submit: 'احصل على السعر مجانًا', submitting: 'جارٍ الإرسال...',
   },
 } as const;
@@ -113,6 +119,17 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
   };
 
   const uid = useId();
+  // Props for a required field: red border, aria-invalid and a message linked with aria-describedby
+  const errorFor = (name: 'fullName' | 'email' | 'phone' | 'supportType' | 'supportTopic') => {
+    const err = errors[name];
+    const text = err ? (name === 'email' && err.type === 'pattern' ? t.badEmail : t.required) : undefined;
+    return { bad: Boolean(err), text, id: `${uid}-${name}-error` };
+  };
+  const nameErr = errorFor('fullName');
+  const emailErr = errorFor('email');
+  const phoneErr = errorFor('phone');
+  const serviceErr = errorFor('supportType');
+  const needErr = errorFor('supportTopic');
 
   return (
     <div className="w-full bg-white rounded-xl p-4 md:p-6 shadow-[0_4px_24px_rgba(0,0,0,0.12)]" dir={isAr ? 'rtl' : undefined}>
@@ -126,11 +143,13 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
         <div className="grid grid-cols-2 gap-x-2 gap-y-3 md:gap-4">
           <div>
             <label htmlFor={`${uid}-name`} className={labelClasses}>{t.name}</label>
-            <input id={`${uid}-name`} {...register('fullName', { required: true })} type="text" placeholder={t.namePh} className={inputClasses} />
+            <input id={`${uid}-name`} {...register('fullName', { required: true })} type="text" placeholder={t.namePh} className={fieldClasses(nameErr.bad)} aria-invalid={nameErr.bad} aria-describedby={nameErr.text ? nameErr.id : undefined} />
+            <FieldError id={nameErr.id} text={nameErr.text} />
           </div>
           <div>
             <label htmlFor={`${uid}-email`} className={labelClasses}>{t.email}</label>
-            <input id={`${uid}-email`} {...register('email', { required: true, pattern: /^\S+@\S+$/i })} type="email" placeholder={t.emailPh} className={inputClasses} />
+            <input id={`${uid}-email`} {...register('email', { required: true, pattern: /^\S+@\S+$/i })} type="email" placeholder={t.emailPh} className={fieldClasses(emailErr.bad)} aria-invalid={emailErr.bad} aria-describedby={emailErr.text ? emailErr.id : undefined} />
+            <FieldError id={emailErr.id} text={emailErr.text} />
           </div>
 
           <div className="col-span-2 md:col-span-1 flex gap-2">
@@ -144,18 +163,20 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
             </div>
             <div className="flex-1 min-w-0">
               <label htmlFor={`${uid}-phone`} className={labelClasses}>{t.whatsapp}</label>
-              <input id={`${uid}-phone`} {...register('phone', { required: true })} type="tel" placeholder={t.phonePh} className={inputClasses} />
+              <input id={`${uid}-phone`} {...register('phone', { required: true })} type="tel" placeholder={t.phonePh} className={fieldClasses(phoneErr.bad)} aria-invalid={phoneErr.bad} aria-describedby={phoneErr.text ? phoneErr.id : undefined} />
+              <FieldError id={phoneErr.id} text={phoneErr.text} />
             </div>
           </div>
 
           <div className="col-span-2 md:col-span-1">
             <label htmlFor={`${uid}-service`} className={labelClasses}>{t.service}</label>
-            <select id={`${uid}-service`} {...register('supportType', { required: true })} className={inputClasses} defaultValue="">
+            <select id={`${uid}-service`} {...register('supportType', { required: true })} className={fieldClasses(serviceErr.bad)} defaultValue="" aria-invalid={serviceErr.bad} aria-describedby={serviceErr.text ? serviceErr.id : undefined}>
               <option value="">{t.selectService}</option>
               {supportTypes.map((type) => (
                 <option key={type} value={type}>{isAr ? AR_SERVICE_LABELS[type] ?? type : type}</option>
               ))}
             </select>
+            <FieldError id={serviceErr.id} text={serviceErr.text} />
           </div>
           <div>
             <label htmlFor={`${uid}-level`} className={labelClasses}>{t.level}</label>
@@ -175,8 +196,11 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
             <textarea
               id={`${uid}-need`} {...register('supportTopic', { required: true })}
               placeholder={t.needPh}
-              className={`${inputClasses} h-16 md:h-20 resize-none`}
+              className={`${fieldClasses(needErr.bad)} h-16 md:h-20 resize-none`}
+              aria-invalid={needErr.bad}
+              aria-describedby={needErr.text ? needErr.id : undefined}
             />
+            <FieldError id={needErr.id} text={needErr.text} />
           </div>
         </div>
 
@@ -205,7 +229,7 @@ const SupportRequestForm = ({ locale = 'en' }: { locale?: 'en' | 'ar' } = {}) =>
           <span>{t.agree}</span>
         </label>
         {errors.academicIntegrityConfirmed && (
-          <p className="text-xs text-primary font-semibold">{t.tick}</p>
+          <p role="alert" className="text-xs text-red-600 font-semibold">{t.tick}</p>
         )}
 
         <SubmitButton
