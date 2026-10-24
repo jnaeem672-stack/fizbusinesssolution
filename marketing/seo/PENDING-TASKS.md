@@ -172,6 +172,14 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   /ar/mba-assignment-help, /ar/blog/theoretical-framework-and-literature-review, so drop them from batch 3.
   www: Googlebot still gets 200 on www URLs (Hostinger Boston edges send Host without www); escalated to Hostinger
   CDN/engineering on 24 Oct. Recheck with the live test on a www URL before any www-related requests.
+  UPDATE 24 Oct afternoon: test with the CDN off (13:08) still gave 200 to Googlebot from LiteSpeed (no x-hcdn header),
+  so the origin, not the CDN, passes www to the app as the main domain. Google has indexed the www copy of
+  /ar/blog/how-to-write-an-abstract and chose it as canonical. Hostinger (Angela) is checking a server-level 301, or
+  passing the original host to the app. CDN back on 13:20. When they say done: live test on that www URL (expect a redirect).
+  ONE-TIME on 25 Oct (owner said yes on 24 Oct, 14:34): in the 11 AM routine, re-run the PageSpeed 5-run test with the
+  same method as 24 Oct (/ar/student-services, /ar/assignment-help-saudi-arabia, /ar, /ar/assignment-help-riyadh,
+  /ar/dissertation-help-saudi-arabia; 5 interleaved runs, mobile and desktop, medians; count runs with FCP 3.4 s or more).
+  Compare with the 24 Oct morning baseline and afternoon results (Stage 4 table in the plan doc) and report.
   GSC Request Indexing gave "Oops! Something went wrong" on 22 Oct night (Google side); sitemap status Success,
   last read 22 Oct, 168 discovered, so unrequested pages still get found through the sitemap.
   No invented results or reviews.
