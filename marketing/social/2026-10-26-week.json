@@ -27,7 +27,12 @@
         ],
         "cta": "fizbusinessolutions.com/blog"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-1-literature-review.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-1-literature-review.jpg",
+      "metricool": {
+        "id": 405047563,
+        "uuid": "-6048631359329058799",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-27",
@@ -47,7 +52,12 @@
         ],
         "cta": "fizbusinessolutions.com/spss-help"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-2-spss-help.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-2-spss-help.jpg",
+      "metricool": {
+        "id": 405047653,
+        "uuid": "-1163726147179166988",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-28",
@@ -80,7 +90,12 @@
         "note": "Discounts do not stack. UK (GBP) or Saudi (SAR) bank transfer.",
         "cta": "Instant price: fizbusinessolutions.com"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-3-volume-discounts.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-3-volume-discounts.jpg",
+      "metricool": {
+        "id": 405047690,
+        "uuid": "-2246604542495996268",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-29",
@@ -102,7 +117,12 @@
         ],
         "cta": "fizbusinessolutions.com/blog"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-4-personal-statement.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-4-personal-statement.jpg",
+      "metricool": {
+        "id": 405047773,
+        "uuid": "-7013203877225083533",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-10-30",
@@ -123,7 +143,12 @@
         ],
         "cta": "fizbusinessolutions.com/ar"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-5-arabic-questionnaire.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-5-arabic-questionnaire.jpg",
+      "metricool": {
+        "id": 405047791,
+        "uuid": "-4421143990975641336",
+        "status": "scheduled"
+      }
     }
   ],
   "gmb": {
@@ -131,7 +156,12 @@
     "time": "16:00 Asia/Karachi",
     "topic": "Free UK PhD admission guide",
     "link": "https://fizbusinessolutions.com/phd-admission-scholarship-help",
-    "text": "Planning a UK PhD? Start with our free step-by-step guide\n\nStrong PhD applications start early, and many funding deadlines fall between November and March for an October start, often earlier than the general application deadline. Our free guide walks you through each stage: shortlisting universities, checking entry requirements and documents, writing a research proposal, emailing potential supervisors, funding options and interviews. It also links to the official PhD pages of 17 well-known UK universities. Requirements and deadlines change every year, so always check the official university page.\n\nIf you would like help with your application, FIZ Business Solutions (FIZBS) offers PhD admission support packages from £120 (Basic), £250 (Standard) and £450 (Premium), with PhD qualified experts. You pay 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR).\n\nRead the free guide: fizbusinessolutions.com/phd-admission-scholarship-help"
+    "text": "Planning a UK PhD? Start with our free step-by-step guide\n\nStrong PhD applications start early, and many funding deadlines fall between November and March for an October start, often earlier than the general application deadline. Our free guide walks you through each stage: shortlisting universities, checking entry requirements and documents, writing a research proposal, emailing potential supervisors, funding options and interviews. It also links to the official PhD pages of 17 well-known UK universities. Requirements and deadlines change every year, so always check the official university page.\n\nIf you would like help with your application, FIZ Business Solutions (FIZBS) offers PhD admission support packages from £120 (Basic), £250 (Standard) and £450 (Premium), with PhD qualified experts. You pay 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR).\n\nRead the free guide: fizbusinessolutions.com/phd-admission-scholarship-help",
+    "metricool": {
+      "id": 405047808,
+      "uuid": "-4569730637885518325",
+      "status": "scheduled"
+    }
   },
   "metricoolBrandId": 7347569
 }
