@@ -6,6 +6,21 @@ const nextConfig = {
   experimental: {
     globalNotFound: true,
   },
+  // Basic security headers (X13): no MIME sniffing, no framing by other sites, a privacy-friendly
+  // referrer and no camera, microphone or location access. Tracking and WhatsApp links are unaffected.
+  async headers() {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=()' },
+        ],
+      },
+    ];
+  },
   // One address for Google: send www to the main domain (path and query, including gclid, are kept).
   async redirects() {
     return [
