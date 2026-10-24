@@ -90,16 +90,19 @@ export default function RootDocument({
   lang,
   footer,
   children,
+  arabicFontVariable,
 }: {
   lang: 'en' | 'ar';
   footer: ReactNode;
   children: ReactNode;
+  /** The Arabic layout passes its preloaded Cairo font here (app/ar/fonts.ts) */
+  arabicFontVariable?: string;
 }) {
   return (
     <html
       lang={lang}
       dir={lang === 'ar' ? 'rtl' : undefined}
-      className={`${jakarta.variable} ${cairoArabic.variable}`}
+      className={`${jakarta.variable} ${arabicFontVariable ?? cairoArabic.variable}`}
       suppressHydrationWarning
     >
       <head>

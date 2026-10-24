@@ -68,7 +68,8 @@ export default function ArHomePage() {
             sizes="100vw"
             alt="طلاب جامعيون يحتفلون بالتخرج"
             aria-hidden="true"
-            fetchPriority="high"
+            // Decorative background behind the text: low priority so CSS, fonts and text paint first
+            fetchPriority="low"
             decoding="async"
             className="w-full h-full object-cover"
           />

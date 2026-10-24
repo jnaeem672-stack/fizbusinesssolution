@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import '../globals.css';
 import RootDocument, { SITE_METADATA } from '@/components/RootDocument';
 import ArFooter from '@/components/ArFooter';
+import { cairoArabicPreloaded } from './fonts';
 
 export const metadata = SITE_METADATA;
 
@@ -11,7 +12,7 @@ export const metadata = SITE_METADATA;
  */
 export default function ArabicRootLayout({ children }: { children: ReactNode }) {
   return (
-    <RootDocument lang="ar" footer={<ArFooter />}>
+    <RootDocument lang="ar" footer={<ArFooter />} arabicFontVariable={cairoArabicPreloaded.variable}>
       {children}
     </RootDocument>
   );
