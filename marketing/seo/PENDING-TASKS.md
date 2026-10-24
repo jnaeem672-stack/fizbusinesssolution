@@ -192,6 +192,17 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   GSC Request Indexing gave "Oops! Something went wrong" on 22 Oct night (Google side); sitemap status Success,
   last read 22 Oct, 168 discovered, so unrequested pages still get found through the sitemap.
   No invented results or reviews.
+  www RECHECK 24 Oct 16:19: browsers already get the 301 (www -> main domain), and Google Public DNS returns the
+  Netlify CNAME (TTL 300). Googlebot's live test still reached the Hostinger CDN (hcdn headers, 200): Google's own
+  DNS cache. Re-run the live test on https://www.fizbusinessolutions.com/ar/blog/how-to-write-an-abstract on 25 Oct;
+  when it shows the redirect, request indexing of the non-www abstract URL (already in the 25 Oct batch below).
+  WEAK PAGES (owner said yes 24 Oct, live 24 Oct): the 8 "Crawled - currently not indexed" pages got richer content
+  (worked examples, subject sections and FAQs): /supply-chain-logistics-assignment-help, /economics-assignment-help,
+  /education-assignment-help, /psychology-assignment-help, /cipd-assignment-help, /experts/nadia-s, /experts/clara-v,
+  /experts/hadia (Taif already redirected). Today's request quota was already used, so: 25 Oct request the 4 Arabic
+  URLs above plus supply chain, economics, education, psychology; 26 Oct request CIPD, nadia-s, clara-v, hadia.
+  "Validate fix" on the issue in the Page indexing report after the deploy. Borderline pages for later (owner: after
+  these 9): assignment-help-uae, project-management, othm-athe, hnc, hnd-hnc, cmi, assignment-help-usa, hrm.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
