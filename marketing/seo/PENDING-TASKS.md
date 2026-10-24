@@ -176,6 +176,15 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   so the origin, not the CDN, passes www to the app as the main domain. Google has indexed the www copy of
   /ar/blog/how-to-write-an-abstract and chose it as canonical. Hostinger (Angela) is checking a server-level 301, or
   passing the original host to the app. CDN back on 13:20. When they say done: live test on that www URL (expect a redirect).
+  FIX 24 Oct 15:43 (owner approved "rasta A"): Hostinger (Linas) said no server-level redirect on this hosting.
+  www now points away from Hostinger to a tiny Netlify redirect site (team FIZBS, Netlify account jnaeem672@gmail.com,
+  project tangerine-puppy-920752, file _redirects: /* https://fizbusinessolutions.com/:splat 301!; source in
+  scratchpad only, 2 files). DNS at Hostinger (hPanel): CNAME www -> tangerine-puppy-920752.netlify.app (was
+  www.fizbusinessolutions.com.cdn.hstgr.net), CNAME go -> same (Netlify needs a non-www primary domain), TXT
+  subdomain-owner-verification = Netlify ownership value. Main domain, MX, SPF, DKIM untouched. Netlify Let's Encrypt
+  certificate for go and www, auto-renews. ROLLBACK: set CNAME www back to www.fizbusinessolutions.com.cdn.hstgr.net.
+  CHECK in each daily routine for 2 weeks: www CNAME still points to Netlify (Hostinger CDN may rewrite it), and the
+  GSC live test on a www URL shows a redirect.
   ONE-TIME on 25 Oct (owner said yes on 24 Oct, 14:34): in the 11 AM routine, re-run the PageSpeed 5-run test with the
   same method as 24 Oct (/ar/student-services, /ar/assignment-help-saudi-arabia, /ar, /ar/assignment-help-riyadh,
   /ar/dissertation-help-saudi-arabia; 5 interleaved runs, mobile and desktop, medians; count runs with FCP 3.4 s or more).
