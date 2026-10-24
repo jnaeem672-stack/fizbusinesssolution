@@ -165,6 +165,13 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   nursing dissertation topics, gibbs-reflective-cycle, dissertation-introduction, research-question,
   human-vs-ai-academic-writing, uk-masters-personal-statement, /ar/blog/how-to-write-an-abstract,
   /ar/blog/theoretical-framework-and-literature-review, /ar/thesis-help, /ar/mba-assignment-help, then Saudi city pages.
+  UPDATE 24 Oct (stage 3, T5, owner rule: request only after a real fix; stage 2 fixed lang/dir on all Arabic pages):
+  /ar/assignment-help-jeddah requested 24 Oct (was "URL is unknown to Google"); quota then exceeded.
+  Request on 25 Oct, these 4 only: /ar/assignment-help-dammam (unknown to Google), /ar/phd-admission-scholarship-help,
+  /ar/thesis-help, /ar/blog/how-to-write-an-abstract (all "discovered, not indexed"). Already indexed on 24 Oct:
+  /ar/mba-assignment-help, /ar/blog/theoretical-framework-and-literature-review, so drop them from batch 3.
+  www: Googlebot still gets 200 on www URLs (Hostinger Boston edges send Host without www); escalated to Hostinger
+  CDN/engineering on 24 Oct. Recheck with the live test on a www URL before any www-related requests.
   GSC Request Indexing gave "Oops! Something went wrong" on 22 Oct night (Google side); sitemap status Success,
   last read 22 Oct, 168 discovered, so unrequested pages still get found through the sitemap.
   No invented results or reviews.
