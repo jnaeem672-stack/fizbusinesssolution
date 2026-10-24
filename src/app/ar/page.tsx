@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   keywords: AR_HOME.keywords,
   alternates: {
     canonical: `${SITE_URL}/ar`,
-    languages: { 'ar-SA': `${SITE_URL}/ar`, 'en-GB': `${SITE_URL}/`, 'x-default': `${SITE_URL}/` },
+    languages: { ar: `${SITE_URL}/ar`, 'en-GB': `${SITE_URL}/`, 'x-default': `${SITE_URL}/` },
   },
   openGraph: {
       images: [{ url: '/opengraph-image', width: 1200, height: 630 }],

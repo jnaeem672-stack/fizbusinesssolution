@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import LandingPage from '@/components/landing/LandingPage';
 import { AR_LANDING_PAGES, SITE_URL, getLandingPage } from '@/content/landing';
+import { arabicHreflang } from '@/constants/hreflang';
 
 export const dynamicParams = false;
 
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     keywords: page.keywords,
     alternates: {
       canonical: url,
-      ...(hasEnglish && { languages: { 'ar-SA': url, 'en-GB': `${SITE_URL}/${page.slug}`, 'x-default': `${SITE_URL}/${page.slug}` } }),
+      ...(hasEnglish && { languages: { [arabicHreflang(page.slug)]: url, 'en-GB': `${SITE_URL}/${page.slug}`, 'x-default': `${SITE_URL}/${page.slug}` } }),
     },
     openGraph: {
       images: [{ url: '/opengraph-image', width: 1200, height: 630 }], title: page.metaTitle, description: page.metaDescription, url, type: 'website', locale: 'ar_SA' },
