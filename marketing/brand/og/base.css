@@ -1,0 +1,13 @@
+@font-face{font-family:Cairo;src:url(cairo-arabic-wght.woff2) format('woff2');font-weight:200 1000}
+@font-face{font-family:Jak;src:url(plus-jakarta-sans-latin.woff2) format('woff2');font-weight:200 800}
+@font-face{font-family:Ruqaa;src:url(node_modules/@fontsource/aref-ruqaa/files/aref-ruqaa-arabic-700-normal.woff2) format('woff2');font-weight:700}
+@font-face{font-family:Kufi;src:url(node_modules/@fontsource/reem-kufi/files/reem-kufi-arabic-700-normal.woff2) format('woff2');font-weight:700}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:1200px;height:630px;overflow:hidden}
+body{font-family:Cairo,Jak,sans-serif;color:#fff;background:#0B1D3A}
+.logo{display:flex;align-items:center;gap:14px;direction:ltr}
+.mark{width:58px;height:58px;border-radius:15px;background:#0B1D3A;display:flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.16);position:relative;box-shadow:0 6px 14px rgba(0,0,0,.35)}
+.mark .dot{position:absolute;right:-5px;bottom:-5px;width:18px;height:18px;border-radius:50%;background:#25D366;border:3px solid #fff}
+.word{font-family:Jak;font-size:38px;font-weight:800;letter-spacing:-.04em;color:#fff}
+.word b{color:#C9A227;font-weight:800}
+@font-face{font-family:Messiri;src:url(node_modules/@fontsource/el-messiri/files/el-messiri-arabic-700-normal.woff2) format('woff2');font-weight:700}

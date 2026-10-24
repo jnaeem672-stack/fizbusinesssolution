@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import LandingPage from '@/components/landing/LandingPage';
 import { AR_LANDING_PAGES, SITE_URL, getLandingPage } from '@/content/landing';
 import { arabicHreflang } from '@/constants/hreflang';
+import { AR_SHARE_IMAGE } from '@/components/RootDocument';
 
 export const dynamicParams = false;
 
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       ...(hasEnglish && { languages: { [arabicHreflang(page.slug)]: url, 'en-GB': `${SITE_URL}/${page.slug}`, 'x-default': `${SITE_URL}/${page.slug}` } }),
     },
     openGraph: {
-      images: [{ url: '/opengraph-image', width: 1200, height: 630 }], title: page.metaTitle, description: page.metaDescription, url, type: 'website', locale: 'ar_SA' },
+      images: [AR_SHARE_IMAGE], title: page.metaTitle, description: page.metaDescription, url, type: 'website', locale: 'ar_SA' },
   };
 }
 

@@ -42,6 +42,15 @@ export const DEFAULT_SHARE_IMAGE = {
   type: 'image/png',
 };
 
+/** Share image for the Arabic pages (public/og/ar-share.png; source in marketing/brand/og/ar-share.html) */
+export const AR_SHARE_IMAGE = {
+  url: '/og/ar-share.png',
+  width: 1200,
+  height: 630,
+  alt: 'FIZBS: واجبك وبحثك ورسالتك مع خبير في تخصصك عبر واتساب',
+  type: 'image/png',
+};
+
 /** Site-wide defaults; each page sets its own title, description and alternates on top */
 export const SITE_METADATA: Metadata = {
   metadataBase: new URL('https://fizbusinessolutions.com'),

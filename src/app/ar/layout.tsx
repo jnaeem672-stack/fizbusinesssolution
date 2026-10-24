@@ -1,10 +1,14 @@
 import type { ReactNode } from 'react';
 import '../globals.css';
-import RootDocument, { SITE_METADATA } from '@/components/RootDocument';
+import RootDocument, { AR_SHARE_IMAGE, SITE_METADATA } from '@/components/RootDocument';
 import ArFooter from '@/components/ArFooter';
 import { cairoArabicPreloaded } from './fonts';
 
-export const metadata = SITE_METADATA;
+// Arabic pages share the Arabic image and locale by default (pages that set their own openGraph name it too)
+export const metadata = {
+  ...SITE_METADATA,
+  openGraph: { ...SITE_METADATA.openGraph, locale: 'ar_SA', images: [AR_SHARE_IMAGE] },
+};
 
 /**
  * Root layout for every Arabic page (/ar, /ar/[slug], /ar/blog...): the server sends

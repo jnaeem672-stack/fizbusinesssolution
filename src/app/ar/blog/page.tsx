@@ -3,13 +3,14 @@ import BlogIndex from '@/components/blog/BlogIndex';
 import { AR_POSTS, postPath } from '@/content/blog';
 import { AR_BLOG_HUB } from '@/content/blog/arHub';
 import { SITE_URL } from '@/content/landing';
+import { AR_SHARE_IMAGE } from '@/components/RootDocument';
 
 export const metadata: Metadata = {
   title: { absolute: 'أدلة الطلاب: خطة البحث والتوثيق والرسائل العلمية | FIZBS' },
   description: 'أدلة مجانية بالعربية لطلاب الجامعات في السعودية: اختيار عنوان الرسالة، وخطة البحث، والإطار النظري، والبحث الكمي والنوعي، والملخص، والتوثيق بنظام APA.',
   alternates: { canonical: `${SITE_URL}/ar/blog`, languages: { ar: `${SITE_URL}/ar/blog`, 'en-GB': `${SITE_URL}/blog`, 'x-default': `${SITE_URL}/blog` } },
   openGraph: {
-      images: [{ url: '/opengraph-image', width: 1200, height: 630 }], title: 'أدلة الطلاب | FIZBS', url: `${SITE_URL}/ar/blog`, type: 'website', locale: 'ar_SA' },
+      images: [AR_SHARE_IMAGE], title: 'أدلة الطلاب | FIZBS', url: `${SITE_URL}/ar/blog`, type: 'website', locale: 'ar_SA' },
 };
 
 const schema = [

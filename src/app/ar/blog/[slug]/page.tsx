@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import BlogPostPage from '@/components/blog/BlogPostPage';
 import { AR_POSTS, getPost } from '@/content/blog';
 import { SITE_URL } from '@/content/landing';
+import { AR_SHARE_IMAGE } from '@/components/RootDocument';
 
 export const dynamicParams = false;
 
@@ -24,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       ...(getPost(slug, 'en') && { languages: { ar: url, 'en-GB': `${SITE_URL}/blog/${post.slug}`, 'x-default': `${SITE_URL}/blog/${post.slug}` } }),
     },
     openGraph: {
-      images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+      images: [AR_SHARE_IMAGE],
       title: post.metaTitle,
       description: post.metaDescription,
       url,

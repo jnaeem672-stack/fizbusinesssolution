@@ -5,6 +5,7 @@ import ArGpaCalculator from '@/components/tools/ArGpaCalculator';
 import FaqSection from '@/components/FaqSection';
 import { SITE_URL } from '@/content/landing';
 import { AR_GPA_FAQS, GPA_BANDS, SAUDI_GRADES } from '@/content/arGpa';
+import { AR_SHARE_IMAGE } from '@/components/RootDocument';
 
 const URL = `${SITE_URL}/ar/gpa-calculator`;
 const TITLE = 'حساب المعدل التراكمي والجامعي من 5 ومن 4 | FIZBS';
@@ -17,7 +18,7 @@ export const metadata: Metadata = {
   keywords: ['حساب المعدل', 'حساب المعدل التراكمي', 'حساب المعدل الجامعي', 'حساب المعدل التراكمي من 5', 'حساب المعدل التراكمي من 4', 'حاسبة المعدل'],
   alternates: { canonical: URL, languages: { 'ar-SA': URL } },
   openGraph: {
-    images: [{ url: '/opengraph-image', width: 1200, height: 630 }],
+    images: [AR_SHARE_IMAGE],
     title: TITLE,
     description: DESCRIPTION,
     url: URL,
