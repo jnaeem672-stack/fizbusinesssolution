@@ -199,10 +199,13 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   WEAK PAGES (owner said yes 24 Oct, live 24 Oct): the 8 "Crawled - currently not indexed" pages got richer content
   (worked examples, subject sections and FAQs): /supply-chain-logistics-assignment-help, /economics-assignment-help,
   /education-assignment-help, /psychology-assignment-help, /cipd-assignment-help, /experts/nadia-s, /experts/clara-v,
-  /experts/hadia (Taif already redirected). Today's request quota was already used, so: 25 Oct request the 4 Arabic
-  URLs above plus supply chain, economics, education, psychology; 26 Oct request CIPD, nadia-s, clara-v, hadia.
-  "Validate fix" on the issue in the Page indexing report after the deploy. Borderline pages for later (owner: after
-  these 9): assignment-help-uae, project-management, othm-athe, hnc, hnd-hnc, cmi, assignment-help-usa, hrm.
+  /experts/hadia (Taif already redirected). Live check 24 Oct 16:35: all 8 show the new sections (200, Ads tag on).
+  "Start new validation" clicked 24 Oct (9 pending). URL inspection 24 Oct: supply chain, economics, psychology and
+  CIPD are ALREADY "URL is on Google" (the report data was from 16 Oct), so no request needed for them. NOT on Google:
+  /education-assignment-help, /experts/nadia-s, /experts/clara-v, /experts/hadia. Request quota was used up on 24 Oct
+  ("Quota Exceeded"), so on 25 Oct request these 4 plus the 4 Arabic URLs above (8 in total).
+  Borderline pages for later (owner: after these 9): assignment-help-uae, project-management, othm-athe, hnc,
+  hnd-hnc, cmi, assignment-help-usa, hrm.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
