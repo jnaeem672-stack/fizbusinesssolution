@@ -45,7 +45,8 @@ export function alternateLanguagePath(pathname: string): { href: string; toArabi
   if (clean === '/ar' || clean.startsWith('/ar/')) {
     const slug = clean === '/ar' ? '' : clean.slice(4);
     if (!slug) return { href: '/', toArabic: false };
-    return { href: EN_ONLY_FALLBACK[slug] ?? `/${slug}`, toArabic: false };
+    // Unknown or deeper Arabic addresses (for example a 404) go to the English homepage, never to a guessed URL
+    return { href: EN_ONLY_FALLBACK[slug] ?? (AR_SLUGS.includes(slug) ? `/${slug}` : '/'), toArabic: false };
   }
   const slug = clean.slice(1);
   if (slug && AR_SLUGS.includes(slug)) return { href: `/ar/${slug}`, toArabic: true };

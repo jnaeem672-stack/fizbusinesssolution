@@ -55,7 +55,9 @@ const MarqueeBanner = () => {
   }, [showQr]);
 
   return (
-    <div className="relative bg-primary h-[40px] flex items-center border-b border-white/10 shrink-0">
+    // dir="ltr" keeps the bar's layout and scrolling the same on Arabic pages (the page itself is right-to-left);
+    // the Arabic text inside still reads right-to-left
+    <div dir="ltr" className="relative bg-primary h-[40px] flex items-center border-b border-white/10 shrink-0">
       <div className="flex-1 min-w-0 overflow-hidden h-full flex items-center">
         <div className="animate-marquee">
           <span dir={isAr ? 'rtl' : undefined} className="text-white text-[13px] font-medium px-4 flex items-center whitespace-pre">

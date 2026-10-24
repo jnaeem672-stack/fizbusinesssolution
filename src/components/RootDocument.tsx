@@ -2,16 +2,12 @@ import Script from "next/script";
 import type { Metadata } from 'next';
 import type { ReactNode } from 'react';
 import localFont from 'next/font/local';
-import './globals.css';
 import Providers from '@/components/Providers';
 import SiteHeader from '@/components/SiteHeader';
-import Footer from '@/components/Footer';
-import HideOnArabic from '@/components/HideOnArabic';
 import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import FloatingDiscount from '@/components/FloatingDiscount';
 import CookieConsent from '@/components/CookieConsent';
 import LeadSourceTracker from '@/components/LeadSourceTracker';
-import LangSync from '@/components/LangSync';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { SOCIAL_URLS } from '@/constants/social';
 
@@ -37,7 +33,17 @@ const cairoArabic = localFont({
   ],
 });
 
-export const metadata: Metadata = {
+/** The default share image (app/opengraph-image.tsx) for pages that have no image of their own */
+export const DEFAULT_SHARE_IMAGE = {
+  url: '/opengraph-image',
+  width: 1200,
+  height: 630,
+  alt: 'FIZBS: Assignment & Dissertation Help UK & Saudi Arabia',
+  type: 'image/png',
+};
+
+/** Site-wide defaults; each page sets its own title, description and alternates on top */
+export const SITE_METADATA: Metadata = {
   metadataBase: new URL('https://fizbusinessolutions.com'),
   title: {
     default: 'Assignment & Dissertation Help UK & Saudi Arabia | FIZ Business Solutions',
@@ -67,19 +73,36 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     siteName: 'FIZ Business Solutions',
+    // The default share image (app/opengraph-image.tsx). Named here because, with separate English and
+    // Arabic root layouts, an image file at the top of app/ is no longer picked up by the pages by itself.
+    images: [DEFAULT_SHARE_IMAGE],
   },
+  twitter: { card: 'summary_large_image' },
 };
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+/**
+ * The whole HTML document, shared by the English root layout (app/(en)/layout.tsx), the Arabic root
+ * layout (app/ar/layout.tsx) and the 404 page for unmatched addresses (app/global-not-found.tsx).
+ * Each language has its own root layout so the server sends the right lang and dir in the first HTML.
+ * The Google Ads tag, the consent defaults and the Ahrefs script below are the same for every page.
+ */
+export default function RootDocument({
+  lang,
+  footer,
+  children,
+}: {
+  lang: 'en' | 'ar';
+  footer: ReactNode;
+  children: ReactNode;
+}) {
   return (
-    <html lang="en" className={`${jakarta.variable} ${cairoArabic.variable}`} suppressHydrationWarning>
+    <html
+      lang={lang}
+      dir={lang === 'ar' ? 'rtl' : undefined}
+      className={`${jakarta.variable} ${cairoArabic.variable}`}
+      suppressHydrationWarning
+    >
       <head>
-        {/* Arabic pages (/ar) declare Arabic as the page language before anything renders */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: "(function(){var p=location.pathname;if(p==='/ar'||p.indexOf('/ar/')===0){document.documentElement.lang='ar';}})();",
-          }}
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -174,15 +197,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <Providers>
           <SiteHeader />
           {children}
-          <HideOnArabic>
-            <Footer />
-          </HideOnArabic>
+          {footer}
           <ScrollToTopButton />
           <FloatingDiscount />
           <FloatingWhatsApp />
           <CookieConsent />
           <LeadSourceTracker />
-          <LangSync />
         </Providers>
       </body>
     </html>

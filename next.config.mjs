@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'standalone',
+  // English and Arabic pages have separate root layouts (correct lang and dir in the first HTML),
+  // so addresses that match no route use app/global-not-found.tsx.
+  experimental: {
+    globalNotFound: true,
+  },
   // One address for Google: send www to the main domain (path and query, including gclid, are kept).
   async redirects() {
     return [

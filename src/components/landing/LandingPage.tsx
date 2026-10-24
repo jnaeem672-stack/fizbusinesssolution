@@ -68,6 +68,12 @@ const LABELS = {
   },
 } as const;
 
+/** Arabic counted noun: 100 ريال, 150 ريالًا (numbers ending in 11 to 99 take the accusative) */
+function riyalWord(n: number): string {
+  const lastTwo = Math.round(n) % 100;
+  return lastTwo >= 11 && lastTwo <= 99 ? 'ريالًا' : 'ريال';
+}
+
 export default function LandingPage({ page }: { page: LandingContent }) {
   const isAr = page.locale === 'ar';
   const t = LABELS[page.locale];
@@ -115,14 +121,35 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   // Arabic pages point back to the Arabic homepage
   const homePath = isAr ? '/ar' : '/';
 
+  // Offer text matches the price shown on the page: Arabic pages describe it in Arabic
+  const offerDescription = isAr
+    ? page.offer?.description && /[؀-ۿ]/.test(page.offer.description)
+      ? page.offer.description
+      : `من ${offerPrice.toLocaleString('en-GB')} ${riyalWord(offerPrice)} لكل 1,000 كلمة`
+    : currency === 'GBP'
+      ? page.offer?.description ?? 'From £20 per 1,000 words'
+      : `From ${currency} ${offerPrice.toLocaleString('en-GB')} per 1,000 words`;
+
+  // One linked graph: the WebPage carries the page language and points to its Service and breadcrumb
   const schema = [
     {
       '@context': 'https://schema.org',
+      '@type': 'WebPage',
+      '@id': `${url}#webpage`,
+      url,
+      name: page.metaTitle,
+      inLanguage: isAr ? 'ar' : 'en-GB',
+      isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, url: `${SITE_URL}/`, name: 'FIZ Business Solutions' },
+      breadcrumb: { '@id': `${url}#breadcrumb` },
+      mainEntity: { '@id': `${url}#service` },
+    },
+    {
+      '@context': 'https://schema.org',
       '@type': 'Service',
+      '@id': `${url}#service`,
       name: page.h1,
       description: page.metaDescription,
       url,
-      inLanguage: isAr ? 'ar' : 'en-GB',
       serviceType: landingLabel(page),
       areaServed: city ? [city, ...baseAreas] : baseAreas,
       provider: {
@@ -136,15 +163,13 @@ export default function LandingPage({ page }: { page: LandingContent }) {
         '@type': 'Offer',
         priceCurrency: currency,
         price: String(offerPrice),
-        description:
-          currency === 'GBP'
-            ? page.offer?.description ?? 'From £20 per 1,000 words'
-            : `From ${currency} ${offerPrice.toLocaleString('en-GB')} per 1,000 words`,
+        description: offerDescription,
       },
     },
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
+      '@id': `${url}#breadcrumb`,
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: t.home, item: `${SITE_URL}${isAr ? '/ar' : ''}` },
         { '@type': 'ListItem', position: 2, name: landingLabel(page), item: url },

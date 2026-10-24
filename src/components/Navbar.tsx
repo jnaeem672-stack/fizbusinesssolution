@@ -179,6 +179,8 @@ const Navbar = () => {
           <Link
             href={lang.href}
             hrefLang={lang.toArabic ? 'ar' : 'en'}
+            // English and Arabic pages have separate root layouts, so this always loads a full page: no prefetch
+            prefetch={false}
             className="px-4 py-2.5 rounded-xl border-2 border-navy/10 text-navy font-black text-sm hover:border-primary hover:text-primary transition-colors"
           >
             {langLabel}
@@ -195,6 +197,8 @@ const Navbar = () => {
           <Link
             href={lang.href}
             hrefLang={lang.toArabic ? 'ar' : 'en'}
+            // English and Arabic pages have separate root layouts, so this always loads a full page: no prefetch
+            prefetch={false}
             className="px-3 py-2 rounded-lg border-2 border-navy/10 text-navy font-black text-xs"
           >
             {langLabel}

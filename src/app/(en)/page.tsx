@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import HomePage from '@/components/pages/HomePage';
+import { DEFAULT_SHARE_IMAGE } from '@/components/RootDocument';
 import HomeSeoHub from '@/components/home/HomeSeoHub';
 import { EN_POSTS, postPath } from '@/content/blog';
 
@@ -18,6 +19,7 @@ export const metadata: Metadata = {
     description:
       'Expert assignment and dissertation help from qualified subject specialists. Instant price, 10% off your first order and 24/7 WhatsApp support.',
     url: 'https://fizbusinessolutions.com',
+    images: [DEFAULT_SHARE_IMAGE],
   },
 };
 
@@ -25,6 +27,7 @@ export const metadata: Metadata = {
 const WEBSITE_SCHEMA = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  '@id': 'https://fizbusinessolutions.com/#website',
   name: 'FIZ Business Solutions',
   alternateName: ['FIZBS', 'FIZ Business Solution', 'fizbusinessolutions'],
   url: 'https://fizbusinessolutions.com/',
