@@ -64,14 +64,20 @@ export const AR_HOME: ArHomeContent = {
       {
         title: 'مساعدة في الواجبات الجامعية',
         desc: 'توجيه متخصص في المقالات والتقارير ودراسات الحالة والأعمال الدراسية في أكثر من 100 تخصص.',
+        href: '/ar/assignment-help-saudi-arabia',
+        linkLabel: 'مساعدة في حل الواجبات',
       },
       {
         title: 'مراجعة المسودة وتقديم الملاحظات',
         desc: 'مراجعة دقيقة لمسودتك من خبير، مع ملاحظات واضحة لتحسينها قبل التسليم.',
+        href: '/ar/student-services',
+        linkLabel: 'مكتب خدمات طلابية أونلاين',
       },
       {
         title: 'مساعدة في الرسائل العلمية',
         desc: 'دعم في اختيار الموضوع ومقترح البحث ومراجعة الأدبيات والمنهجية وجميع فصول الرسالة.',
+        href: '/ar/dissertation-help-saudi-arabia',
+        linkLabel: 'مساعدة في رسالة الماجستير',
       },
       {
         title: 'مراجعة الأدبيات',
@@ -88,6 +94,8 @@ export const AR_HOME: ArHomeContent = {
       {
         title: 'تحليل البيانات',
         desc: 'دعم في التحليل باستخدام SPSS وExcel وNVivo وStata وPython مع شرح واضح للنتائج.',
+        href: '/ar/spss-help',
+        linkLabel: 'تحليل إحصائي SPSS',
       },
       {
         title: 'العروض التقديمية',

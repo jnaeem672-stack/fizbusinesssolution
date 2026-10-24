@@ -156,7 +156,14 @@ export default function ArHomePage() {
                   </div>
                   <h3 className="text-navy font-extrabold text-lg mb-3">{card.title}</h3>
                   <p className="text-gray-500 text-sm mb-6 leading-relaxed flex-grow">{card.desc}</p>
-                  <a href="#quote" className="text-primary font-bold text-sm mt-auto">{c.services.cardCta} ←</a>
+                  {card.href ? (
+                    <div className="mt-auto flex flex-col gap-2">
+                      <a href={card.href} className="text-navy font-bold text-sm underline decoration-primary/40 underline-offset-4 hover:text-primary">{card.linkLabel ?? card.title} ←</a>
+                      <a href="#quote" className="text-primary font-bold text-sm">{c.services.cardCta} ←</a>
+                    </div>
+                  ) : (
+                    <a href="#quote" className="text-primary font-bold text-sm mt-auto">{c.services.cardCta} ←</a>
+                  )}
                 </div>
               );
             })}
