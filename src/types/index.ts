@@ -97,6 +97,8 @@ export interface LogoProps {
   dark?: boolean;
   /** Homepage the logo links to ('/ar' on Arabic pages) */
   href?: string;
+  /** Arabic pages show the line under the wordmark in Arabic */
+  lang?: 'en' | 'ar';
 }
 
 export interface ProvidersProps {

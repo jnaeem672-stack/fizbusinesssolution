@@ -104,7 +104,7 @@ const Navbar = () => {
   return (
     <nav className={`w-full h-[70px] bg-white transition-all duration-300 ${scrolled ? 'shadow-xl' : 'border-b border-gray-100'}`}>
       <div dir={isAr ? 'rtl' : undefined} className="max-w-site mx-auto px-4 h-full flex items-center justify-between">
-        <Logo href={isAr ? '/ar' : '/'} />
+        <Logo href={isAr ? '/ar' : '/'} lang={isAr ? 'ar' : 'en'} />
 
         <div className="hidden lg:flex items-center gap-3 xl:gap-5 2xl:gap-7 h-full">
           {navLinks.map((link) => (
@@ -228,7 +228,7 @@ const Navbar = () => {
               className="fixed top-0 right-0 h-full w-[85%] max-w-[400px] bg-white z-[2001] shadow-2xl p-6 sm:p-8 flex flex-col overflow-y-auto"
             >
               <div className="flex items-center justify-between mb-8">
-                <Logo href={isAr ? '/ar' : '/'} />
+                <Logo href={isAr ? '/ar' : '/'} lang={isAr ? 'ar' : 'en'} />
                 <button onClick={() => setIsOpen(false)} aria-label={ui.close} className="p-2 bg-gray-100 rounded-full hover:bg-primary hover:text-white transition-colors">
                   <X className="w-6 h-6" />
                 </button>

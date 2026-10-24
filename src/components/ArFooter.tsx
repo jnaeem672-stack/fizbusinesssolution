@@ -21,7 +21,7 @@ const COLUMNS = [
 const ArFooter = () => (
   <footer dir="rtl" lang="ar" className="bg-navy py-10 md:py-12 px-4 md:px-8 flex flex-col items-center text-white/50 text-[12px] shrink-0 border-t border-white/5 space-y-6">
     <div className="flex flex-col items-center gap-4">
-      <Logo dark href="/ar" />
+      <Logo dark href="/ar" lang="ar" />
       <p className="text-center max-w-2xl leading-relaxed text-white/60">
         مساعدة في الواجبات الجامعية والرسائل العلمية والبحوث لطلاب السعودية والخليج وبريطانيا منذ عام 2015، مع خبراء متخصصين وأسعار واضحة ودعم عبر واتساب على مدار الساعة.
       </p>

@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { LogoProps } from '@/types';
 
 // dir="ltr" keeps the wordmark reading FIZBS inside right-to-left (Arabic) layouts
-const Logo = ({ className = '', dark = false, href = '/' }: LogoProps) => (
+const Logo = ({ className = '', dark = false, href = '/', lang = 'en' }: LogoProps) => (
   <Link href={href} dir="ltr" className={`flex items-center gap-3 group transition-all ${className}`}>
     <div className="relative">
       <div className="w-12 h-12 bg-navy rounded-xl flex items-center justify-center shadow-lg shadow-black/20 group-hover:bg-primary transition-colors duration-300 relative overflow-hidden">
@@ -18,7 +18,11 @@ const Logo = ({ className = '', dark = false, href = '/' }: LogoProps) => (
         <span className={`${dark ? 'text-white' : 'text-navy'} font-black text-2xl uppercase`}>BS</span>
       </div>
       <div className="flex items-center gap-1.5 -mt-1">
-        <span className={`${dark ? 'text-white/70' : 'text-gray-500'} text-[7px] font-bold uppercase tracking-[0.22em] whitespace-nowrap`}>Assignment &amp; Dissertation Help</span>
+        {lang === 'ar' ? (
+          <span dir="rtl" lang="ar" className={`${dark ? 'text-white/70' : 'text-gray-500'} text-[10px] font-bold leading-none whitespace-nowrap`}>مساعدة في الواجبات والرسائل</span>
+        ) : (
+          <span className={`${dark ? 'text-white/70' : 'text-gray-500'} text-[7px] font-bold uppercase tracking-[0.22em] whitespace-nowrap`}>Assignment &amp; Dissertation Help</span>
+        )}
       </div>
     </div>
   </Link>
