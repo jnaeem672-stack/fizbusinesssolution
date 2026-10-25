@@ -251,6 +251,10 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   (we are online, all Saudi cities, no printing), and add خدمات الطالب الرياض (480 + 480) to the Riyadh page.
   Then the rest of the 26 Oct keyword list (SPSS, dissertation, thesis, guides). Keyword coverage script:
   scratchpad kw/coverage.py. No keyword stuffing: 1 to 3 natural uses each.
+- DONE 26 Oct 04:0x (owner "yes"): 4 Saudi pages live with these keywords: /ar/student-services, /ar/assignment-help-riyadh
+  (H1 now starts with خدمات الطالب في الرياض), /ar/assignment-help-saudi-arabia (section + FAQ on مواقع لحل الواجبات,
+  حل واجبات انجليزي heading; title and H1 unchanged), /ar/dissertation-help-saudi-arabia (رسائل الماستر, بحث تخرج,
+  الرسالة الجامعية). Request indexing for the 4 URLs. Next from the list (owner to approve): SPSS, thesis, guides.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
