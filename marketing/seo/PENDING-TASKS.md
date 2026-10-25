@@ -225,6 +225,13 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   student-services 84, Saudi 85, Riyadh 83, dissertation 86, /ar 67. 7 of 25 mobile runs had FCP 3.4 s or more
   (slow server response; /ar 3 of 5). Live headers show x-hcdn-cache-status DYNAMIC, so the CDN is not caching
   the HTML: next speed item = X11 (HTML caching at the CDN), owner to approve first.
+  CORRECTION 25 Oct 23:00 (X11 check): the CDN DOES cache HTML on the main domain (x-hcdn-cache-status HIT, age up
+  to 26 h; DYNAMIC was only on the www host). hPanel has no edge TTL or HTML cache setting (Hostinger docs: only
+  on/off, purge, image and TLS options). Today's 5 pages were tested AT THE SAME TIME, unlike 24 Oct. Run one at a
+  time, /ar gave FCP 1.7, 1.7, 1.7, 1.7, 2.3 s (scores 84 to 86, TTFB 250 to 340 ms), so the slow runs came from
+  5 parallel requests: the Hostinger Node server answers slowly under parallel load (one Googlebot request also
+  showed x-hcdn-upstream-rt 3.2 s). No X11 code change. Remaining mobile lever: LCP element render delay about
+  1 s (render-blocking CSS/JS), item T7, owner to approve first. Future PSI tests: one page at a time.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
