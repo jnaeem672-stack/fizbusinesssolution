@@ -217,6 +217,14 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   impressions rising fast (about 1.1K on 23 Oct). Biggest cluster: Arabic "meaning of assignment" queries
   (اسايمنت بالانجليزي 186 impr pos 6.4, assignment معنى 87, اسايمنت 81, ...) at positions 4 to 9 with almost no
   clicks: proposal = better title and meta for the page that ranks (owner to approve first).
+  UPDATE 25 Oct 22:45: the page is /ar/blog/what-is-an-assignment, published 20 Oct, so the data covers only its
+  first 3 to 4 days, and "meaning" searches are often answered on Google itself. Title already targets
+  "اسايمنت بالانجليزي". Recommendation: no title change yet; re-check CTR on 8 Nov with 2 weeks of data.
+  PSI 5-run test DONE 25 Oct 22:10 to 22:40 (scratchpad evidence/psi-production-2026-10-25.csv and
+  psi-medians-24-vs-25-oct-2026.csv). CLS 0 on every run (fix holds). Desktop medians 96 to 99. Mobile medians:
+  student-services 84, Saudi 85, Riyadh 83, dissertation 86, /ar 67. 7 of 25 mobile runs had FCP 3.4 s or more
+  (slow server response; /ar 3 of 5). Live headers show x-hcdn-cache-status DYNAMIC, so the CDN is not caching
+  the HTML: next speed item = X11 (HTML caching at the CDN), owner to approve first.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
