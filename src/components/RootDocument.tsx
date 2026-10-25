@@ -4,11 +4,8 @@ import type { ReactNode } from 'react';
 import localFont from 'next/font/local';
 import Providers from '@/components/Providers';
 import SiteHeader from '@/components/SiteHeader';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
-import FloatingDiscount from '@/components/FloatingDiscount';
-import CookieConsent from '@/components/CookieConsent';
+import DeferredWidgets from '@/components/DeferredWidgets';
 import LeadSourceTracker from '@/components/LeadSourceTracker';
-import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { SOCIAL_URLS } from '@/constants/social';
 
 // Self-hosted heading font (was a render-blocking Google Fonts @import)
@@ -210,10 +207,7 @@ export default function RootDocument({
           <SiteHeader />
           {children}
           {footer}
-          <ScrollToTopButton />
-          <FloatingDiscount />
-          <FloatingWhatsApp />
-          <CookieConsent />
+          <DeferredWidgets />
           <LeadSourceTracker />
         </Providers>
       </body>
