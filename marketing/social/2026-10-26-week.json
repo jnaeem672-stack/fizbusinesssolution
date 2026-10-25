@@ -1,0 +1,167 @@
+{
+  "week": "2026-10-26 to 2026-10-30",
+  "time": "22:00 Pakistan (17:00 UK, 20:00 Saudi)",
+  "networks": [
+    "facebook",
+    "gmb"
+  ],
+  "rules": "No fake reviews or claims, no guarantees, no em dashes. Instagram links are not clickable, so mention the website as text.",
+  "posts": [
+    {
+      "date": "2026-10-26",
+      "slug": "post-1-literature-review",
+      "caption": "Is your literature review just a list of summaries? Markers want analysis 📚\n\nTry these 5 steps:\n1. Search subject databases, not only Google Scholar\n2. Build keywords with AND, OR and \"exact phrases\"\n3. Set your inclusion criteria before you screen\n4. Group sources by theme in a synthesis matrix\n5. Compare studies and show the gap your research fills\n\nFree step-by-step guide: fizbusinessolutions.com/blog/how-to-write-a-literature-review\nQuestions? WhatsApp +971 54 380 0388\n\n#LiteratureReview #Dissertation #DissertationTips #AcademicWriting #MastersStudent #UKStudents",
+      "alt": "FIZBS dissertation tip: 5 steps to a stronger literature review, from database searches to finding the research gap.",
+      "link": "https://fizbusinessolutions.com/blog/how-to-write-a-literature-review",
+      "design": {
+        "layout": "list",
+        "numbered": true,
+        "eyebrow": "Dissertation Tip",
+        "title": "A Stronger Literature Review in <em>5 Steps</em>",
+        "items": [
+          "Search subject databases, not only Google Scholar",
+          "Build keywords with AND, OR and phrases",
+          "Set inclusion criteria before you screen",
+          "Group sources by theme in a matrix",
+          "Compare studies and show the gap"
+        ],
+        "cta": "fizbusinessolutions.com/blog"
+      },
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-1-literature-review.jpg",
+      "metricool": {
+        "id": 405047563,
+        "uuid": "-6048631359329058799",
+        "status": "scheduled"
+      }
+    },
+    {
+      "date": "2026-10-27",
+      "slug": "post-2-spss-help",
+      "caption": "Collected your data but stuck on SPSS? 📊\n\nOur Master's and PhD qualified experts work with the data you gathered and explain every step, so you can write up the results in your own words:\n\n✅ Data cleaning and coding\n✅ Choosing the right test: t-test, ANOVA, chi-square, regression\n✅ Checking assumptions before you report\n✅ APA-style tables and clear interpretation\n\nWe also help with Excel and NVivo.\n\nDetails: fizbusinessolutions.com/spss-help\nWhatsApp: +971 54 380 0388\n\n#SPSS #Statistics #DataAnalysis #Dissertation #ResearchMethods #UKStudents #SaudiStudents",
+      "alt": "FIZBS SPSS and statistics help: data cleaning, choosing the right test, checking assumptions and APA tables.",
+      "link": "https://fizbusinessolutions.com/spss-help",
+      "design": {
+        "layout": "list",
+        "eyebrow": "SPSS & Statistics Help",
+        "title": "Stuck on Your <em>SPSS Analysis?</em>",
+        "items": [
+          "Data cleaning and coding",
+          "Choosing the right statistical test",
+          "Checking assumptions before you report",
+          "APA tables and clear interpretation"
+        ],
+        "cta": "fizbusinessolutions.com/spss-help"
+      },
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-2-spss-help.jpg",
+      "metricool": {
+        "id": 405047653,
+        "uuid": "-1163726147179166988",
+        "status": "scheduled"
+      }
+    },
+    {
+      "date": "2026-10-28",
+      "slug": "post-3-volume-discounts",
+      "caption": "Working on a big project? Bigger orders cost less per word 💷\n\n🎁 10% off your first order\n📚 10% off orders of 8,000+ words\n📚 15% off orders of 15,000+ words\n\nDiscounts do not stack: you get the best one that applies.\nPay 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR).\n\nCheck your price in seconds: fizbusinessolutions.com\nOr send your word count and deadline on WhatsApp: +971 54 380 0388\n\n#DissertationHelp #AssignmentHelp #StudentBudget #UKStudents #SaudiStudents #PhDLife",
+      "alt": "FIZBS discounts: 10% off the first order, 10% off 8,000+ words, 15% off 15,000+ words. Discounts do not stack.",
+      "link": "https://fizbusinessolutions.com",
+      "design": {
+        "layout": "rows",
+        "eyebrow": "Discounts",
+        "title": "Big Project? <em>Save More</em>",
+        "rows": [
+          [
+            "First order",
+            "10% OFF"
+          ],
+          [
+            "8,000+ words",
+            "10% OFF"
+          ],
+          [
+            "15,000+ words",
+            "15% OFF"
+          ],
+          [
+            "Payment",
+            "50% / 50%"
+          ]
+        ],
+        "note": "Discounts do not stack. UK (GBP) or Saudi (SAR) bank transfer.",
+        "cta": "Instant price: fizbusinessolutions.com"
+      },
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-3-volume-discounts.jpg",
+      "metricool": {
+        "id": 405047690,
+        "uuid": "-2246604542495996268",
+        "status": "scheduled"
+      }
+    },
+    {
+      "date": "2026-10-29",
+      "slug": "post-4-personal-statement",
+      "caption": "Applying for a Master's in the UK? Your personal statement is where the admissions tutor hears your voice ✍️\n\nA simple structure:\n1. Opening: a specific moment or problem, not a cliché\n2. Academic background: modules, projects, your dissertation\n3. Experience: work or voluntary roles and what you learned\n4. Why this course: 2 or 3 specific features\n5. Career goals and a confident close\n\nAlways follow each university's word or character limit.\n\nFree guide: fizbusinessolutions.com/blog/uk-masters-personal-statement\nWhatsApp: +971 54 380 0388\n\n#PersonalStatement #MastersDegree #StudyInUK #Postgraduate #SaudiStudents #UKUniversities",
+      "alt": "FIZBS tip: a 5-part structure for a UK Master's personal statement.",
+      "link": "https://fizbusinessolutions.com/blog/uk-masters-personal-statement",
+      "design": {
+        "layout": "list",
+        "numbered": true,
+        "eyebrow": "UK Master's Applications",
+        "title": "Personal Statement in <em>5 Parts</em>",
+        "items": [
+          "A specific opening, not a cliché",
+          "Your academic background",
+          "Relevant experience and what you learned",
+          "Why this course and university",
+          "Career goals and a confident close"
+        ],
+        "cta": "fizbusinessolutions.com/blog"
+      },
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-4-personal-statement.jpg",
+      "metricool": {
+        "id": 405047773,
+        "uuid": "-7013203877225083533",
+        "status": "scheduled"
+      }
+    },
+    {
+      "date": "2026-10-30",
+      "slug": "post-5-arabic-questionnaire",
+      "caption": "تصمم استبيانًا (استبانة) لبحثك أو رسالة الماجستير؟ 📋\nكثير من ملاحظات المشرفين سببها استبيان لا يقيس أسئلة البحث فعلًا.\n\n✅ حوّل كل سؤال بحثي إلى محور في الاستبيان\n✅ اكتب من 5 إلى 10 عبارات واضحة لكل محور\n✅ اختر نوع الإجابة المناسب مثل مقياس ليكرت\n✅ اعرضه على محكّمين متخصصين قبل النشر\n✅ جرّبه على عينة صغيرة واحسب الثبات\n\nالدليل المجاني مع نموذج استبيان:\nfizbusinessolutions.com/ar/blog/how-to-make-a-questionnaire\nواتساب: +971 54 380 0388\n\n#عمل_استبيان #استبانة #مقياس_ليكرت #رسالة_ماجستير #طلاب_السعودية #البحث_العلمي",
+      "alt": "FIZBS: 4 steps to design a research questionnaire, in Arabic, for students in Saudi Arabia.",
+      "link": "https://fizbusinessolutions.com/ar/blog/how-to-make-a-questionnaire",
+      "design": {
+        "layout": "list",
+        "ar": true,
+        "eyebrow": "منهجية البحث",
+        "title": "استبيان بحثك في <em>4 خطوات</em>",
+        "items": [
+          "حوّل كل سؤال بحثي إلى محور",
+          "اكتب عبارات واضحة لكل محور",
+          "اعرضه على محكّمين متخصصين",
+          "جرّبه على عينة صغيرة واحسب الثبات"
+        ],
+        "cta": "fizbusinessolutions.com/ar"
+      },
+      "image": "https://fizbusinessolutions.com/social/2026-10-26-week/post-5-arabic-questionnaire.jpg",
+      "metricool": {
+        "id": 405047791,
+        "uuid": "-4421143990975641336",
+        "status": "scheduled"
+      }
+    }
+  ],
+  "gmb": {
+    "date": "2026-10-28",
+    "time": "16:00 Asia/Karachi",
+    "topic": "Free UK PhD admission guide",
+    "link": "https://fizbusinessolutions.com/phd-admission-scholarship-help",
+    "text": "Planning a UK PhD? Start with our free step-by-step guide\n\nStrong PhD applications start early, and many funding deadlines fall between November and March for an October start, often earlier than the general application deadline. Our free guide walks you through each stage: shortlisting universities, checking entry requirements and documents, writing a research proposal, emailing potential supervisors, funding options and interviews. It also links to the official PhD pages of 17 well-known UK universities. Requirements and deadlines change every year, so always check the official university page.\n\nIf you would like help with your application, FIZ Business Solutions (FIZBS) offers PhD admission support packages from £120 (Basic), £250 (Standard) and £450 (Premium), with PhD qualified experts. You pay 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR).\n\nRead the free guide: fizbusinessolutions.com/phd-admission-scholarship-help",
+    "metricool": {
+      "id": 405047808,
+      "uuid": "-4569730637885518325",
+      "status": "scheduled"
+    }
+  },
+  "metricoolBrandId": 7347569
+}
