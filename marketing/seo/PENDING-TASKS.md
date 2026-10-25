@@ -239,6 +239,19 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   86 -> 87; English home 3.8 -> 3.7 s, 79 -> 85 (TBT 380 -> 220 ms). experimental.inlineCss was tried and made it
   slower, so not used. Bigger step left (owner to decide): replace framer-motion with CSS animations.
 
+## Saudi buyer signal (26 Oct 2026, 03:45 PKT)
+- Owner: a client from Saudi Arabia came on 25 Oct. GSC, Country = Saudi Arabia, 28 days (data only to 23 Oct):
+  2 clicks, 293 impressions, avg position 31.2. The only query with a click: "مكتبة خدمات الطالب" (6 impr, pos 8.3),
+  landing /ar/student-services (1 click, 15 impr, pos 11.6). Other Saudi pages: /ar/gpa-calculator 78 impr pos 67,
+  /ar/blog/what-is-an-assignment 55 impr pos 7.2, Harvard tool 25 impr pos 65. Re-check 27 or 28 Oct when 25 Oct
+  data arrives, to see the client's query.
+- So the "مكتب/مكتبة خدمات الطالب" cluster can bring buyers (corrects the 24 Oct view that it is mostly print shops).
+  Proposed (owner to approve): strengthen /ar/student-services with مكتبة لخدمات الطالب (9,900), مكتبة خدمة الطالب
+  (3,600), مركز خدمات الطالب (1,900), a "رقم مكتب خدمات طلابية" section with the WhatsApp number, a "near me" FAQ
+  (we are online, all Saudi cities, no printing), and add خدمات الطالب الرياض (480 + 480) to the Riyadh page.
+  Then the rest of the 26 Oct keyword list (SPSS, dissertation, thesis, guides). Keyword coverage script:
+  scratchpad kw/coverage.py. No keyword stuffing: 1 to 3 natural uses each.
+
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
 - 30% of impressions show www URLs although next.config redirects www to the main domain: owner to check that
