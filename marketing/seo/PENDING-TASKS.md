@@ -255,6 +255,10 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   (H1 now starts with خدمات الطالب في الرياض), /ar/assignment-help-saudi-arabia (section + FAQ on مواقع لحل الواجبات,
   حل واجبات انجليزي heading; title and H1 unchanged), /ar/dissertation-help-saudi-arabia (رسائل الماستر, بحث تخرج,
   الرسالة الجامعية). Request indexing for the 4 URLs. Next from the list (owner to approve): SPSS, thesis, guides.
+  Live check 04:06: all 4 show the new text (200). Indexing REQUESTED 26 Oct 04:10 for all 4 (all were already
+  "URL is on Google"; no quota error).
+- Owner, 26 Oct 04:06: Google Ads are not running now. Do not check or report the Ads tag any more. Leave the tag
+  and conversion code in the site as they are (do not remove them unless the owner asks).
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
