@@ -232,6 +232,12 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   5 parallel requests: the Hostinger Node server answers slowly under parallel load (one Googlebot request also
   showed x-hcdn-upstream-rt 3.2 s). No X11 code change. Remaining mobile lever: LCP element render delay about
   1 s (render-blocking CSS/JS), item T7, owner to approve first. Future PSI tests: one page at a time.
+  T7 DONE 25 Oct (owner said "Haan, live karo", 23:2x): framer-motion animation features, floating WhatsApp,
+  floating discount, scroll-to-top and cookie notice now load after the first paint (src/lib/afterFirstPaint.ts,
+  components/DeferredWidgets.tsx, Providers async features). Local mobile Lighthouse, 3 runs, median before -> after:
+  /ar LCP 3.5 -> 3.4 s, score 83 -> 87; /ar/student-services 3.5 -> 3.2 s, 85 -> 88; psychology 3.7 -> 3.7 s,
+  86 -> 87; English home 3.8 -> 3.7 s, 79 -> 85 (TBT 380 -> 220 ms). experimental.inlineCss was tried and made it
+  slower, so not used. Bigger step left (owner to decide): replace framer-motion with CSS animations.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
