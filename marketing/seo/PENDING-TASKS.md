@@ -206,6 +206,32 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   ("Quota Exceeded"), so on 25 Oct request these 4 plus the 4 Arabic URLs above (8 in total).
   Borderline pages for later (owner: after these 9): assignment-help-uae, project-management, othm-athe, hnc,
   hnd-hnc, cmi, assignment-help-usa, hrm.
+  25 Oct (21:50 PKT, the 11 AM routine reached the chat only when the owner wrote at 21:46): indexing REQUESTED for
+  /education-assignment-help, /experts/nadia-s, /experts/clara-v, /experts/hadia, /ar/assignment-help-dammam,
+  /ar/phd-admission-scholarship-help (was "unknown to Google"), /ar/thesis-help (was "unknown to Google"); 7 done,
+  no quota error. NOT requested: non-www abstract (waits for the www redirect). www live test 25 Oct 16:48 GMT still
+  200 from hcdn bos-edge9, although Google Public DNS (also with a US client subnet) returns the Netlify CNAME, so
+  Googlebot is still on old DNS. Recheck 27 Oct; if still hcdn after a week, ask Hostinger whether their DNS or CDN
+  still answers www for Google. Page indexing report still dated 16 Oct (119 not indexed / 144 indexed). Sitemap
+  read 24 Oct, Success, 169. Performance 17 to 23 Oct: 18 clicks, 3.2K impressions, CTR 0.6%, avg position 26.2,
+  impressions rising fast (about 1.1K on 23 Oct). Biggest cluster: Arabic "meaning of assignment" queries
+  (اسايمنت بالانجليزي 186 impr pos 6.4, assignment معنى 87, اسايمنت 81, ...) at positions 4 to 9 with almost no
+  clicks: proposal = better title and meta for the page that ranks (owner to approve first).
+  UPDATE 25 Oct 22:45: the page is /ar/blog/what-is-an-assignment, published 20 Oct, so the data covers only its
+  first 3 to 4 days, and "meaning" searches are often answered on Google itself. Title already targets
+  "اسايمنت بالانجليزي". Recommendation: no title change yet; re-check CTR on 8 Nov with 2 weeks of data.
+  PSI 5-run test DONE 25 Oct 22:10 to 22:40 (scratchpad evidence/psi-production-2026-10-25.csv and
+  psi-medians-24-vs-25-oct-2026.csv). CLS 0 on every run (fix holds). Desktop medians 96 to 99. Mobile medians:
+  student-services 84, Saudi 85, Riyadh 83, dissertation 86, /ar 67. 7 of 25 mobile runs had FCP 3.4 s or more
+  (slow server response; /ar 3 of 5). Live headers show x-hcdn-cache-status DYNAMIC, so the CDN is not caching
+  the HTML: next speed item = X11 (HTML caching at the CDN), owner to approve first.
+  CORRECTION 25 Oct 23:00 (X11 check): the CDN DOES cache HTML on the main domain (x-hcdn-cache-status HIT, age up
+  to 26 h; DYNAMIC was only on the www host). hPanel has no edge TTL or HTML cache setting (Hostinger docs: only
+  on/off, purge, image and TLS options). Today's 5 pages were tested AT THE SAME TIME, unlike 24 Oct. Run one at a
+  time, /ar gave FCP 1.7, 1.7, 1.7, 1.7, 2.3 s (scores 84 to 86, TTFB 250 to 340 ms), so the slow runs came from
+  5 parallel requests: the Hostinger Node server answers slowly under parallel load (one Googlebot request also
+  showed x-hcdn-upstream-rt 3.2 s). No X11 code change. Remaining mobile lever: LCP element render delay about
+  1 s (render-blocking CSS/JS), item T7, owner to approve first. Future PSI tests: one page at a time.
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
