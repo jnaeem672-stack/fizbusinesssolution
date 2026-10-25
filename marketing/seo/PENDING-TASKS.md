@@ -206,6 +206,17 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   ("Quota Exceeded"), so on 25 Oct request these 4 plus the 4 Arabic URLs above (8 in total).
   Borderline pages for later (owner: after these 9): assignment-help-uae, project-management, othm-athe, hnc,
   hnd-hnc, cmi, assignment-help-usa, hrm.
+  25 Oct (21:50 PKT, the 11 AM routine reached the chat only when the owner wrote at 21:46): indexing REQUESTED for
+  /education-assignment-help, /experts/nadia-s, /experts/clara-v, /experts/hadia, /ar/assignment-help-dammam,
+  /ar/phd-admission-scholarship-help (was "unknown to Google"), /ar/thesis-help (was "unknown to Google"); 7 done,
+  no quota error. NOT requested: non-www abstract (waits for the www redirect). www live test 25 Oct 16:48 GMT still
+  200 from hcdn bos-edge9, although Google Public DNS (also with a US client subnet) returns the Netlify CNAME, so
+  Googlebot is still on old DNS. Recheck 27 Oct; if still hcdn after a week, ask Hostinger whether their DNS or CDN
+  still answers www for Google. Page indexing report still dated 16 Oct (119 not indexed / 144 indexed). Sitemap
+  read 24 Oct, Success, 169. Performance 17 to 23 Oct: 18 clicks, 3.2K impressions, CTR 0.6%, avg position 26.2,
+  impressions rising fast (about 1.1K on 23 Oct). Biggest cluster: Arabic "meaning of assignment" queries
+  (اسايمنت بالانجليزي 186 impr pos 6.4, assignment معنى 87, اسايمنت 81, ...) at positions 4 to 9 with almost no
+  clicks: proposal = better title and meta for the page that ranks (owner to approve first).
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
