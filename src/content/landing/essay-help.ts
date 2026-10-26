@@ -167,7 +167,7 @@ export const essayHelp: LandingContent = {
   ctaTitle: 'Get expert essay help UK students rely on',
   ctaText:
     'Send your essay question, word count and deadline on WhatsApp or check the instant calculator. Your first order is 10% off.',
-  whatsappMessage: 'Hello FIZBS! I need essay help. Essay type: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need essay help.\nEssay type: \nWord count: \nDeadline: ',
   related: [
     'assignment-help-uk',
     'referencing-help',

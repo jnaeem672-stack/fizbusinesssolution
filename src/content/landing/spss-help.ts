@@ -228,7 +228,7 @@ export const spssHelp: LandingContent = {
   ctaTitle: 'Get help with your data analysis today',
   ctaText:
     'Share your research questions and dataset on WhatsApp to get a quote. New customers receive 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I need SPSS help with my data analysis. Tests needed: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need SPSS help with my data analysis.\nTests needed: \nDeadline: ',
   related: [
     'dissertation-help-uk',
     'research-proposal-help',

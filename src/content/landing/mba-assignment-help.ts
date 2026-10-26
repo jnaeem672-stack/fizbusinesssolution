@@ -192,7 +192,7 @@ export const mbaAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your MBA assignment price today',
   ctaText:
     'Send your MBA brief on WhatsApp or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I need MBA assignment help. Module: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need MBA assignment help.\nModule: \nWord count: \nDeadline: ',
   related: [
     'assignment-help-uk',
     'dissertation-help-uk',

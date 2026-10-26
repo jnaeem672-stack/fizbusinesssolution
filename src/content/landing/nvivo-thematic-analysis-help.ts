@@ -156,7 +156,7 @@ export const nvivoThematicAnalysisHelp: LandingContent = {
   ctaTitle: 'Turn your transcripts into clear, defensible themes',
   ctaText:
     'Share your research questions and interview data on WhatsApp for a clear quote. Your expert will guide your NVivo coding and thematic analysis, with 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need NVivo and thematic analysis help. Number of transcripts: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need NVivo and thematic analysis help.\nNumber of transcripts: \nDeadline: ',
   related: [
     'research-methodology-help',
     'dissertation-help-uk',

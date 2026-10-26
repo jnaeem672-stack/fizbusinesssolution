@@ -231,6 +231,6 @@ export const arAssignmentHelpRiyadh: LandingContent = {
   ctaText:
     'أرسل متطلبات واجبك عبر واتساب واطلب السعر بالريال، أو استخدم حاسبة الأسعار الفورية في موقعنا. طلاب الرياض يحصلون على خصم 10% على أول طلب.',
   whatsappMessage:
-    'مرحبًا FIZBS! أنا طالب في الرياض وأحتاج إلى مساعدة في واجب جامعي. التخصص: ، عدد الكلمات: ، الموعد النهائي: ',
+    'مرحبًا FIZBS! أنا طالب في الرياض وأحتاج إلى مساعدة في واجب جامعي.\nالتخصص: \nعدد الكلمات: \nالموعد النهائي: ',
   related: ['assignment-help-saudi-arabia', 'assignment-help-jeddah', 'assignment-help-dammam', 'dissertation-help-saudi-arabia'],
 };

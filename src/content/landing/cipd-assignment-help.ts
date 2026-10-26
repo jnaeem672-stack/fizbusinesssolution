@@ -208,7 +208,7 @@ export const cipdAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your CIPD assignment price today',
   ctaText:
     'Tell us your CIPD level, unit number and submission date on WhatsApp, or check the instant calculator. Your first order is 10% off.',
-  whatsappMessage: 'Hello FIZBS! I need help with a CIPD assignment. Level and unit: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need help with a CIPD assignment.\nLevel and unit: \nWord count: \nDeadline: ',
   related: [
     'business-management-assignment-help',
     'cmi-assignment-help',

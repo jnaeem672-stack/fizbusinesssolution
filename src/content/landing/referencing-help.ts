@@ -144,7 +144,7 @@ export const referencingHelp: LandingContent = {
   ctaTitle: 'Get your references checked before you submit',
   ctaText:
     'Send your draft and referencing style on WhatsApp. Your expert will correct your citations and explain the rules. Enjoy 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need referencing help. Style (e.g. Harvard/APA/OSCOLA): , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need referencing help.\nStyle (e.g. Harvard/APA/OSCOLA): \nWord count: \nDeadline: ',
   related: [
     'proofreading-editing-services',
     'draft-review-feedback',

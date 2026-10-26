@@ -162,7 +162,7 @@ export const presentationHelp: LandingContent = {
   ctaTitle: 'Get a clear quote for your presentation',
   ctaText:
     'Tell us your topic, time limit, slide count and deadline on WhatsApp and receive a clear quote. 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need presentation help. Topic: , Number of slides: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need presentation help.\nTopic: \nNumber of slides: \nDeadline: ',
   related: [
     'thesis-help',
     'dissertation-help-uk',

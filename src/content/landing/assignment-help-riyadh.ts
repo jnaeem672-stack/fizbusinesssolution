@@ -203,6 +203,6 @@ export const assignmentHelpRiyadh: LandingContent = {
   ctaTitle: 'Get your price on WhatsApp today',
   ctaText:
     'Send your brief and ask for the SAR equivalent, or use our instant GBP calculator. Riyadh students get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I am a student in Riyadh and need assignment help. Subject: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I am a student in Riyadh and need assignment help.\nSubject: \nWord count: \nDeadline: ',
   related: ['assignment-help-saudi-arabia', 'mba-assignment-help', 'research-proposal-help', 'assignment-help-jeddah', 'assignment-help-dammam'],
 };

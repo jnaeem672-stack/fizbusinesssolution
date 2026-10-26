@@ -142,6 +142,6 @@ export const hrmAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your HRM assignment price today',
   ctaText: 'Send your module, brief and deadline on WhatsApp, or use the instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I need help with an HRM assignment. Module: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need help with an HRM assignment.\nModule: \nWord count: \nDeadline: ',
   related: ['cipd-assignment-help', 'business-management-assignment-help', 'mba-assignment-help', 'dissertation-help-uk'],
 };

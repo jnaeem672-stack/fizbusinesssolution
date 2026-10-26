@@ -223,6 +223,6 @@ export const assignmentHelpBirmingham: LandingContent = {
   ctaTitle: 'Start with a quick, clear price',
   ctaText:
     'Share your brief on WhatsApp or check the instant calculator on our homepage. Birmingham students save 10% on their first order.',
-  whatsappMessage: 'Hello FIZBS! I study in Birmingham and would like assignment help. Subject: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I study in Birmingham and would like assignment help.\nSubject: \nWord count: \nDeadline: ',
   related: ['assignment-help-uk', 'mba-assignment-help', 'dissertation-help-uk', 'assignment-help-london', 'assignment-help-manchester'],
 };

@@ -162,7 +162,7 @@ export const dataAnalysisHelp: LandingContent = {
   ctaTitle: 'Make sense of your data with expert support',
   ctaText:
     'Send your research questions, data type and deadline on WhatsApp for a clear quote, and get 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need data analysis help. Software: , Data type (survey/interviews): , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need data analysis help.\nSoftware: \nData type (survey/interviews): \nDeadline: ',
   related: [
     'spss-help',
     'nvivo-thematic-analysis-help',

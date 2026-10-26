@@ -214,7 +214,7 @@ export const assignmentHelpUk: LandingContent = {
   ctaTitle: 'Get your assignment help price today',
   ctaText:
     'Share your brief on WhatsApp or use our instant calculator to see your price. Enjoy 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need assignment help. Subject: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need assignment help.\nSubject: \nWord count: \nDeadline: ',
   related: [
     'dissertation-help-uk',
     'mba-assignment-help',

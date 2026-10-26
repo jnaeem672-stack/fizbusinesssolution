@@ -308,7 +308,7 @@ export const dissertationHelpUk: LandingContent = {
   ctaTitle: 'Start your dissertation with expert support',
   ctaText:
     'Tell us your topic and deadline on WhatsApp or check your price instantly. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I need dissertation help. Topic: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need dissertation help.\nTopic: \nWord count: \nDeadline: ',
   related: [
     'research-proposal-help',
     'spss-help',

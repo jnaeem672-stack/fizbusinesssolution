@@ -146,6 +146,6 @@ export const arSpssHelp: LandingContent = {
   ctaText:
     'أرسل ملف البيانات والاستبيان وأسئلة البحث عبر واتساب، واطلب السعر بالريال. العملاء الجدد يحصلون على خصم 10% على أول طلب.',
   whatsappMessage:
-    'مرحبًا FIZBS! أحتاج إلى مساعدة في التحليل الإحصائي باستخدام SPSS. عدد أسئلة البحث: ، حجم العينة: ، الموعد النهائي: ',
+    'مرحبًا FIZBS! أحتاج إلى مساعدة في التحليل الإحصائي باستخدام SPSS.\nعدد أسئلة البحث: \nحجم العينة: \nالموعد النهائي: ',
   related: ['dissertation-help-saudi-arabia', 'research-proposal-help', 'thesis-help', 'assignment-help-saudi-arabia'],
 };

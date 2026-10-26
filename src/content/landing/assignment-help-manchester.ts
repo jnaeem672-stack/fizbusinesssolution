@@ -222,6 +222,6 @@ export const assignmentHelpManchester: LandingContent = {
   ctaTitle: 'Get your Manchester assignment price in minutes',
   ctaText:
     'Message us on WhatsApp any time or use the instant calculator on our homepage. Your first order comes with 10% off.',
-  whatsappMessage: 'Hi FIZBS! I am a student in Manchester and need assignment help. Subject: , Word count: , Deadline: ',
+  whatsappMessage: 'Hi FIZBS! I am a student in Manchester and need assignment help.\nSubject: \nWord count: \nDeadline: ',
   related: ['assignment-help-uk', 'dissertation-help-uk', 'spss-help', 'assignment-help-london', 'assignment-help-birmingham'],
 };

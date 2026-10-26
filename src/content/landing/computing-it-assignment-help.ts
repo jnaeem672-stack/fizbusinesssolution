@@ -166,7 +166,7 @@ export const computingItAssignmentHelp: LandingContent = {
   ctaText:
     'Share your specification, code or report draft on WhatsApp and get a clear quote from a qualified computing expert. Enjoy 10% off your first order.',
   whatsappMessage:
-    'Hello FIZBS! I need computer science / IT assignment help. Topic: , Language/tools: , Deadline: ',
+    'Hello FIZBS! I need computer science / IT assignment help.\nTopic: \nLanguage/tools: \nDeadline: ',
   related: [
     'python-stata-help',
     'coursework-report-help',

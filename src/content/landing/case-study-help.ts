@@ -158,7 +158,7 @@ export const caseStudyHelp: LandingContent = {
   ctaTitle: 'Get expert guidance on your case study',
   ctaText:
     'Send your case, question and deadline on WhatsApp for a clear price, or check the instant calculator. Enjoy 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need case study help. Subject: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS! I need case study help.\nSubject: \nWord count: \nDeadline: ',
   related: [
     'mba-assignment-help',
     'business-management-assignment-help',

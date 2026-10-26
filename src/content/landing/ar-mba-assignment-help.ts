@@ -123,6 +123,6 @@ export const arMbaAssignmentHelp: LandingContent = {
   ctaText:
     'أرسل اسم المقرر ووصف الواجب والموعد النهائي عبر واتساب، واطلب السعر بالريال. العملاء الجدد يحصلون على خصم 10% على أول طلب.',
   whatsappMessage:
-    'مرحبًا FIZBS! أحتاج إلى مساعدة في واجب MBA. المقرر: ، عدد الكلمات: ، الموعد النهائي: ',
+    'مرحبًا FIZBS! أحتاج إلى مساعدة في واجب MBA.\nالمقرر: \nعدد الكلمات: \nالموعد النهائي: ',
   related: ['assignment-help-saudi-arabia', 'dissertation-help-saudi-arabia', 'assignment-help-riyadh', 'spss-help'],
 };

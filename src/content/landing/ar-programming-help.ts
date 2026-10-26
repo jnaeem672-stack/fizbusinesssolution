@@ -120,6 +120,6 @@ export const arProgrammingHelp: LandingContent = {
   ctaTitle: 'أرسل واجبك واعرف السعر',
   ctaText:
     'أرسل نص الواجب وأي كود كتبته والموعد النهائي عبر واتساب، واطلب السعر بالريال. العملاء الجدد يحصلون على خصم 10% على أول طلب.',
-  whatsappMessage: 'مرحبًا FIZBS! أحتاج إلى مساعدة في واجب برمجة. اللغة (Python أو MATLAB): ، المقرر: ، الموعد النهائي: ',
+  whatsappMessage: 'مرحبًا FIZBS! أحتاج إلى مساعدة في واجب برمجة.\nاللغة (Python أو MATLAB): \nالمقرر: \nالموعد النهائي: ',
   related: ['spss-help', 'solidworks-help', 'autocad-help', 'assignment-help-saudi-arabia'],
 };
