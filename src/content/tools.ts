@@ -187,7 +187,7 @@ export const TOOLS: ToolContent[] = [
     services: ['dissertation-help-uk', 'assignment-help-uk', 'draft-review-feedback', 'essay-help', 'assignment-help-glasgow', 'assignment-help-london'],
     guides: ['uk-university-grading-system', 'how-to-write-a-dissertation', 'how-to-structure-a-university-essay'],
     updated: '2026-10-21',
-    whatsappMessage: 'Hello FIZBS! I used your degree calculator and would like help improving my marks.\nSubject: \nDeadline: ',
+    whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   },
   {
     slug: 'harvard-referencing-generator',
@@ -361,7 +361,7 @@ export const TOOLS: ToolContent[] = [
     ],
     promotedIn: REFERENCING_GUIDES,
     updated: '2026-10-23',
-    whatsappMessage: 'Hello FIZBS! I need help checking my Harvard references.\nWord count: \nDeadline: ',
+    whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   },
   {
     slug: 'apa-referencing-generator',
@@ -501,7 +501,7 @@ export const TOOLS: ToolContent[] = [
     showOn: [...SAUDI_PAGES, 'assignment-help-usa', 'assignment-help-uae', 'assignment-help-leeds', 'dissertation-help-uk', 'thesis-help', 'research-methodology-help', 'spss-help', 'data-analysis-help', 'nvivo-thematic-analysis-help'],
     promotedIn: REFERENCING_GUIDES,
     updated: '2026-10-23',
-    whatsappMessage: 'Hello FIZBS! I need help checking my APA references.\nWord count: \nDeadline: ',
+    whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   },
   {
     slug: 'word-counter',
@@ -600,7 +600,7 @@ export const TOOLS: ToolContent[] = [
     ],
     services: ['essay-help', 'proofreading-editing-services', 'coursework-report-help', 'draft-review-feedback'],
     guides: ['how-to-structure-a-university-essay', 'how-to-write-a-business-report', 'how-to-write-an-abstract'],
-    whatsappMessage: 'Hello FIZBS! I need help with my assignment.\nWord count: \nDeadline: ',
+    whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   },
 ];
 

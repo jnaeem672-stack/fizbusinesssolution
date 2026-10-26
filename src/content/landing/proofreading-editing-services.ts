@@ -153,7 +153,7 @@ export const proofreadingEditingServices: LandingContent = {
   ctaTitle: 'Get your proofreading price in minutes',
   ctaText:
     "Send your document on WhatsApp or use our instant calculator. Proofreading starts from £12 per 1,000 words with 10% off your first order.",
-  whatsappMessage: 'Hello FIZBS! I need proofreading and editing.\nLevel: \nWord count: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'draft-review-feedback',
     'referencing-help',

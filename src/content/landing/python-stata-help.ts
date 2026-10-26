@@ -153,7 +153,7 @@ export const pythonStataHelp: LandingContent = {
   ctaTitle: 'Get expert help with Stata, Python or R',
   ctaText:
     'Send your dataset, code and brief on WhatsApp for a clear quote. Your expert will help you run, check and interpret your models, with 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need Stata, Python or R data analysis help.\nTopic: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'data-analysis-help',
     'finance-accounting-assignment-help',

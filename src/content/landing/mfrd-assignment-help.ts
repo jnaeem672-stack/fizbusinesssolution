@@ -189,7 +189,7 @@ export const mfrdAssignmentHelp: LandingContent = {
   ctaTitle: 'Get help with your MFRD assignment',
   ctaText:
     'Send your MFRD brief, word guidance and deadline on WhatsApp, or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I need help with my MFRD (Managing Financial Resources and Decisions) assignment.\nTasks: \nWord count: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'hnd-hnc-assignment-help',
     'finance-accounting-assignment-help',

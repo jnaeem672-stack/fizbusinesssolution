@@ -161,7 +161,7 @@ export const othmAtheAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your OTHM or ATHE assignment price today',
   ctaText:
     'Send your diploma, unit, brief and deadline on WhatsApp, or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I need help with an OTHM/ATHE assignment.\nDiploma and unit: \nWord count: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'mba-assignment-help',
     'business-management-assignment-help',

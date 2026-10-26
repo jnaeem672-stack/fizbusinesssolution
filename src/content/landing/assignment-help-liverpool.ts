@@ -198,6 +198,6 @@ export const assignmentHelpLiverpool: LandingContent = {
   ],
   ctaTitle: 'Get your Liverpool assignment price in minutes',
   ctaText: 'Send your brief on WhatsApp whenever suits you, or see your price in the instant calculator. New students save 10% on a first order.',
-  whatsappMessage: 'Hi FIZBS! I am a student in Liverpool and need assignment help.\nSubject: \nWord count: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['assignment-help-uk', 'assignment-help-manchester', 'healthcare-nursing-assignment-help', 'literature-review-help', 'dissertation-help-uk'],
 };

@@ -243,6 +243,6 @@ export const arDissertationHelpSaudiArabia: LandingContent = {
   ctaText:
     'أخبرنا بموضوعك والمرحلة التي وصلت إليها وموعدك النهائي عبر واتساب، أو احسب السعر فورًا من موقعنا، مع خصم 10% على أول طلب.',
   whatsappMessage:
-    'مرحبًا FIZBS! أحتاج إلى مساعدة في رسالة علمية.\nالمرحلة (بكالوريوس/ماجستير/دكتوراه): \nالموضوع: \nعدد الكلمات: \nالموعد النهائي: ',
+    'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['assignment-help-saudi-arabia', 'assignment-help-riyadh', 'assignment-help-jeddah', 'assignment-help-dammam'],
 };

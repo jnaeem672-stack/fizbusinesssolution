@@ -115,6 +115,6 @@ export const arSolidworksHelp: LandingContent = {
   ctaTitle: 'أرسل تفاصيل مشروعك واعرف السعر',
   ctaText:
     'أرسل الرسم أو التعليمات وإصدار البرنامج والموعد النهائي عبر واتساب، واطلب السعر بالريال. العملاء الجدد يحصلون على خصم 10% على أول طلب.',
-  whatsappMessage: 'مرحبًا FIZBS! أحتاج إلى مساعدة في مشروع SolidWorks.\nنوع المشروع: \nإصدار البرنامج: \nالموعد النهائي: ',
+  whatsappMessage: 'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['autocad-help', '3ds-max-design-help', 'programming-help', 'assignment-help-saudi-arabia'],
 };

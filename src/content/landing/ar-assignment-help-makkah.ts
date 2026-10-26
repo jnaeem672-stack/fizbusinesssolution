@@ -210,6 +210,6 @@ export const arAssignmentHelpMakkah: LandingContent = {
   ctaText:
     'أرسل متطلبات واجبك عبر واتساب بالعربية أو الإنجليزية واطلب السعر بالريال، أو استخدم حاسبة الأسعار الفورية. طلاب مكة يحصلون على خصم 10% على أول طلب.',
   whatsappMessage:
-    'مرحبًا FIZBS! أنا طالب في مكة المكرمة وأحتاج إلى مساعدة في واجب جامعي.\nالتخصص: \nعدد الكلمات: \nالموعد النهائي: ',
+    'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['assignment-help-saudi-arabia', 'assignment-help-jeddah', 'assignment-help-riyadh', '3ds-max-design-help', 'dissertation-help-saudi-arabia'],
 };

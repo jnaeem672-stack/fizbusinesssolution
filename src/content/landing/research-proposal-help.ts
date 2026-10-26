@@ -193,6 +193,6 @@ export const researchProposalHelp: LandingContent = {
   ctaText:
     'Send us your topic, guidelines and deadline on WhatsApp and get a clear price within minutes. Our experts are available 24/7.',
   whatsappMessage:
-    'Hello FIZBS! I need research proposal help.\nTopic: \nLevel (Masters/PhD): \nDeadline: ',
+    'Hello FIZBS, I would like to discuss my assignment.',
   related: ['dissertation-help-uk', 'phd-admission-scholarship-help', 'spss-help', 'mba-assignment-help'],
 };

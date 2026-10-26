@@ -259,6 +259,6 @@ export const assignmentHelpLondon: LandingContent = {
   ctaTitle: 'Get expert help without leaving your desk',
   ctaText:
     'Send your brief on WhatsApp or try the instant price calculator. London students get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I study in London and need assignment help.\nSubject: \nWord count: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['assignment-help-uk', 'dissertation-help-uk', 'mba-assignment-help', 'assignment-help-manchester', 'assignment-help-birmingham'],
 };

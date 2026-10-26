@@ -155,7 +155,7 @@ export const financeAccountingAssignmentHelp: LandingContent = {
   ctaTitle: 'Get clear support with your finance figures',
   ctaText:
     'Send your brief and any case data on WhatsApp for a quick price and help from a finance or accounting specialist. New customers get 10% off.',
-  whatsappMessage: 'Hello FIZBS! I need finance assignment help.\nTopic: \nWord count: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'excel-data-analysis-help',
     'business-management-assignment-help',

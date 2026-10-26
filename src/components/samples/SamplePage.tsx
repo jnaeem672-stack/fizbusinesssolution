@@ -111,9 +111,7 @@ export default function SamplePage({ sample }: { sample: Sample }) {
   const category = getSampleCategory(sample.category);
   const Icon = CATEGORY_ICONS[sample.category];
   const url = `${SITE_URL}${samplePath(sample)}`;
-  const whatsappUrl = buildWhatsAppUrl(
-    `Hello FIZBS! I saw your sample "${sample.title}" and I need help with a similar task.\nSubject: \nDeadline: `,
-  );
+  const whatsappUrl = buildWhatsAppUrl('Hello FIZBS, I would like to discuss my assignment.');
   const services = sample.relatedServices
     .map((slug) => getLandingPage(slug, 'en'))
     .filter((p): p is LandingContent => Boolean(p));

@@ -131,6 +131,6 @@ export const arResearchProposalHelp: LandingContent = {
   ctaText:
     'أرسل فكرتك أو مسودتك وتعليمات القسم عبر واتساب، واطلب السعر بالريال. العملاء الجدد يحصلون على خصم 10% على أول طلب.',
   whatsappMessage:
-    'مرحبًا FIZBS! أحتاج إلى مساعدة في خطة البحث.\nالمرحلة (ماجستير أو دكتوراه): \nالتخصص: \nالموعد النهائي: ',
+    'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['dissertation-help-saudi-arabia', 'phd-admission-scholarship-help', 'spss-help', 'thesis-help'],
 };

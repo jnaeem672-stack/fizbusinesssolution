@@ -132,6 +132,6 @@ export const ar3dsMaxDesignHelp: LandingContent = {
   ctaTitle: 'أرسل وصف مشروعك واعرف السعر',
   ctaText:
     'أرسل وصف المشروع أو الفيديو المرجعي والموعد النهائي عبر واتساب، واطلب السعر بالريال. العملاء الجدد يحصلون على خصم 10% على أول طلب.',
-  whatsappMessage: 'مرحبًا FIZBS! أحتاج إلى مساعدة في مشروع 3ds Max.\nنوع المشروع: \nالجامعة والتخصص: \nالموعد النهائي: ',
+  whatsappMessage: 'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['autocad-help', 'solidworks-help', 'assignment-help-makkah', 'assignment-help-saudi-arabia'],
 };

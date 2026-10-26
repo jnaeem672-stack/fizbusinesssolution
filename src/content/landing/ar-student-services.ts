@@ -240,6 +240,6 @@ export const arStudentServices: LandingContent = {
   ctaTitle: 'ابدأ مع مكتب خدمات الطالب الأونلاين',
   ctaText:
     'أرسل وصف واجبك أو بحثك عبر واتساب بالعربية أو الإنجليزية، أو استخدم حاسبة الأسعار لتعرف السعر بالريال. خصم 10% على أول طلب.',
-  whatsappMessage: 'مرحبًا FIZBS! أحتاج خدمات طلابية.\nنوع الطلب: \nالتخصص: \nعدد الكلمات: \nالموعد النهائي: ',
+  whatsappMessage: 'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['assignment-help-saudi-arabia', 'assignment-help-riyadh', 'dissertation-help-saudi-arabia', 'research-proposal-help', 'spss-help', 'programming-help'],
 };

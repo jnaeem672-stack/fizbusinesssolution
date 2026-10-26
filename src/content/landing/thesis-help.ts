@@ -154,7 +154,7 @@ export const thesisHelp: LandingContent = {
   ctaTitle: 'Move your thesis forward with expert support',
   ctaText:
     'Tell us your stage, word count and deadline on WhatsApp for a clear quote, and get 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need thesis help.\nLevel (Masters/PhD): \nChapter or stage: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'dissertation-help-uk',
     'research-proposal-help',

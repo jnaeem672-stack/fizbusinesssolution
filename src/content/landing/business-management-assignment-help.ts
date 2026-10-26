@@ -165,7 +165,7 @@ export const businessManagementAssignmentHelp: LandingContent = {
   ctaTitle: 'Get expert support with your business module',
   ctaText:
     'Send your brief and marking criteria on WhatsApp to get a clear price and a business specialist matched to your topic. New customers save 10%.',
-  whatsappMessage: 'Hello FIZBS! I need business assignment help.\nModule: \nWord count: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'mba-assignment-help',
     'case-study-help',

@@ -13,12 +13,8 @@ import { getLandingPage, landingLabel, landingPath, SITE_URL } from '@/content/l
 export default function ExpertProfilePage({ expert }: { expert: ExpertProfile }) {
   const a = expert.article;
   const firstName = expert.name.split(' ')[0];
-  const whatsappUrl = buildWhatsAppUrl(
-    `Hello FIZBS! I'd like to work with ${expert.name} (${expert.title}).\nSubject: \nWord count: \nDeadline: `
-  );
-  const callUrl = buildWhatsAppUrl(
-    `Hello FIZBS! I'd like to book a WhatsApp call with ${expert.name} (${expert.title}) to discuss my assessment.\nSubject: \nPreferred call time: `
-  );
+  const whatsappUrl = buildWhatsAppUrl('Hello FIZBS, I would like to discuss my assignment.');
+  const callUrl = buildWhatsAppUrl('Hello FIZBS, I would like to book a WhatsApp call to discuss my assignment.');
   const related = a.related.map((s) => getLandingPage(s, 'en')).filter((p): p is NonNullable<typeof p> => Boolean(p));
   const colleagues = EXPERTS.filter((e) => e.group === expert.group && e.slug !== expert.slug).slice(0, 4);
   const url = `${SITE_URL}/experts/${expert.slug}`;

@@ -166,7 +166,7 @@ export const courseworkReportHelp: LandingContent = {
   ctaTitle: 'Get expert support with your report or coursework',
   ctaText:
     'Share your brief, report type and deadline on WhatsApp for a clear price, or use the instant calculator. 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need coursework/report help.\nReport type: \nWord count: \nDeadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'case-study-help',
     'business-management-assignment-help',
