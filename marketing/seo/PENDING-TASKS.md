@@ -477,7 +477,15 @@ generator as tools people link to.
   education (crawled, not indexed), business, marketing, finance, nursing, computing, engineering subject pages, coursework,
   case study, proofreading, thesis, literature review, methodology, data analysis, Excel, research proposal service pages,
   7 guides (CS, finance, nursing topics, Gibbs, dissertation intro, research question, human vs AI). NVivo unknown.
-  Pattern: every page linked in the footer is indexed; non-footer subject/service pages are stuck.
+  Cause checked 27 Oct: all are 200, self-canonical, no noindex, in the sitemap, and already linked from the homepage,
+  /services and guides (Leeds is even in the footer). So it is Google's crawl priority (new site, few external links,
+  27 to 28% repeated sales text), not missing links.
+- Branch indexing-fix-uk-2026-10-27 (1f142cd, NOT live, waits for owner yes): lighter template (no WhatsApp call and
+  pay-half blocks or their 2 FAQs) on English subject, service and qualification pages; full template kept on
+  assignment-help-uk, dissertation-help-uk, Saudi, UAE, USA, MBA, PhD admission and Arabic pages. Stuck pages go from
+  64 to 70% unique to 80 to 88%, template text 27% to 16%. /assignment-help-uk now links to 14 subject and 16 service
+  pages, /dissertation-help-uk to 10 research services. all.mjs BAD 7 (baseline), 0 broken links.
+- Indexing requests (Search Console) for the 24 pages: not started yet, Chrome disconnected 27 Oct 17:40 PKT.
 - Template text (sentences on 10+ pages): subject/service/qualification pages 27 to 28%, city pages 15%, guides 13%.
   Unique: HND/HNC 50%, HNC 47%, CMI 51%, OTHM 47%, project management 46%, HRM 52%.
 - /assignment-help-uk: only query in 3 months is "mfrd assignment help" (19 impr, pos 76.6); MFRD page itself 1 impression.
@@ -489,6 +497,6 @@ generator as tools people link to.
   Scribbr, Cite This For Me, BibGuru (hard); OSCOLA: small law sites in top 10 (doable).
 - Semrush was logged out in Chrome on 27 Oct; did not log in.
 - Fix plan sent to owner, waiting for yes per item: 1 grading guide Master's FAQs + table, 2 indexing requests (10/day),
-  3 MFRD and HNC vs HND/HNC fix, 4 lighter template on subject/service pages, 5 internal links + footer "Popular subjects",
+  3 MFRD and HNC vs HND/HNC fix, 4 lighter template on subject/service pages, 5 internal links from the UK hub,
   6 education examples, 7 OSCOLA tool + guide, 8 new pages later, 9 owner off-site (reviews, guest posts, GBP only with a
   real address), 10 check after 2 weeks.
