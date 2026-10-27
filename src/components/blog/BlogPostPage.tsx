@@ -11,6 +11,7 @@ import { SITE_URL, getLandingPage, landingLabel, landingPath, type LandingConten
 import { EN_POSTS, AR_POSTS, postPath, readingMinutes, sectionId, type BlogPost } from '@/content/blog';
 import { TOOLS, toolPath } from '@/content/tools';
 import { GUIDE_GEO } from '@/content/blog/geo';
+import { AR_QUICK_ANSWERS } from '@/content/blog/geoAr';
 import { GUIDE_FIGURES, type GuideFigure } from '@/content/blog/figures';
 import { getExpert } from '@/content/experts';
 import { TOOL_ICONS } from '@/components/tools/toolIcons';
@@ -86,6 +87,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
   const apaTool = refTools.find((tool) => tool.slug === 'apa-referencing-generator');
   const [mainRefTool, altRefTool] = post.slug === 'apa-referencing-guide' ? [apaTool, harvardTool] : [harvardTool, apaTool];
   const geo = isAr ? undefined : GUIDE_GEO[post.slug];
+  const quickAnswer = isAr ? AR_QUICK_ANSWERS[post.slug] : geo?.quickAnswer;
   const figures = isAr ? [] : GUIDE_FIGURES[post.slug] ?? [];
   const figuresFor = (heading: string, position?: GuideFigure['position']) =>
     figures.filter((f) => f.section === heading && f.position === position).map((f) => <Figure key={f.src} figure={f} />);
@@ -103,7 +105,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
       inLanguage: isAr ? 'ar' : 'en-GB',
       datePublished: post.published,
       dateModified: modified,
-      ...(geo ? { abstract: geo.quickAnswer } : {}),
+      ...(quickAnswer ? { abstract: quickAnswer } : {}),
       ...(figures.length ? { image: figures.map((f) => ({ '@type': 'ImageObject', url: `${SITE_URL}${f.src}`, caption: f.caption, width: f.width, height: f.height })) } : {}),
       articleSection: post.category,
       keywords: post.keywords.join(', '),
@@ -157,10 +159,10 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
       <section className="py-12 md:py-16 bg-white" dir={isAr ? 'rtl' : undefined}>
         <div className="max-w-[1200px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
           <article className="lg:col-span-8 text-gray-700 text-[17px] leading-relaxed">
-            {geo && (
-              <div id="quick-answer" className="mb-8 rounded-2xl border-l-4 border-[#C9A227] bg-[#FBF6E6] p-6">
-                <p className="text-sm font-black uppercase tracking-widest text-primary mb-2">Quick answer</p>
-                <p className="text-navy text-[17px] leading-relaxed">{geo.quickAnswer}</p>
+            {quickAnswer && (
+              <div id="quick-answer" className={`mb-8 rounded-2xl border-[#C9A227] bg-[#FBF6E6] p-6 ${isAr ? 'border-r-4' : 'border-l-4'}`}>
+                <p className={`text-sm font-black text-primary mb-2 ${isAr ? '' : 'uppercase tracking-widest'}`}>{isAr ? 'الإجابة باختصار' : 'Quick answer'}</p>
+                <p className="text-navy text-[17px] leading-relaxed">{quickAnswer}</p>
               </div>
             )}
             <div className="space-y-5 mb-10">
