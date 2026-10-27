@@ -511,3 +511,16 @@ generator as tools people link to.
   Batch 2 (scheduled 28 Oct 13:00 PKT in this session): /case-study-help, /coursework-report-help, /data-analysis-help,
   /research-methodology-help, /excel-data-analysis-help and 7 guides (dissertation introduction, research question,
   human vs AI, nursing topics, CS topics, finance topics, Gibbs). Most show "URL is unknown to Google".
+- 27 Oct late (owner yes each time, all verified live in Chrome):
+  - 22:45 PKT grading guide: Master's grades table, 6 FAQs (70% distinction, merit %, merit vs 2:1, which is higher,
+    40% pass, CGPA), sources (UCL Academic Manual s7, Leicester SR6 award, Birmingham Reg 7), title "UK University
+    Grading System: First, 2:1, Merit, Distinction"; links to it from 6 guides.
+  - 23:25 PKT education topics guide: 3 worked dissertation examples, where to read real ones (Leeds Library, OU ORO
+    E822), 2 FAQs, title "40 Education Dissertation Topics and Examples (2026)".
+  - 00:05 PKT (28 Oct) NEW /tools/oscola-referencing-generator, OSCOLA 5th edition (Oxford, 25 Mar 2026: no ibid,
+    KBD from 9 Sep 2022, ECLI for EU cases, ECHR by app no, DOI or persistent links). 13 source types, footnote +
+    later footnote (n 1) + tables/bibliography, autocite, Word export. Formatter src/utils/oscola.ts matches 32
+    official examples. Live DOI lookup tested OK. Law page OSCOLA section now mentions the 5th edition.
+  - Next (approved plan): OSCOLA referencing guide /blog/oscola-referencing-guide (own words; Oxford guide is
+    CC BY-NC-SA, do not copy text). Indexing batch 2 scheduled 28 Oct 13:00 PKT (tool first).
+  - Upwork: owner asked; explained Upwork bans work students submit for credit; proofreading, research, tutoring OK.
