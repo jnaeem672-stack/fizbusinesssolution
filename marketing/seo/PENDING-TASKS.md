@@ -465,3 +465,8 @@ generator as tools people link to.
 - Search Console, Saudi Arabia, 19 to 25 Oct: 3 clicks, 484 impressions, pos 23.7. Clicked query visible: مكتبة خدمات الطالب
   (to /ar/student-services). The 24/25 Oct click (the 25 Oct client) is an anonymised query; 24/25 Oct impressions led by
   اسايمنت بالانجليزي, مكتبة خدمات الطالب, خدمات طلابيه قريبه من موقعي. The Dammam page has no Saudi impressions yet.
+- Search Console last 24 h (checked 27 Oct 16:10 PKT): 8 clicks, 1.46K impressions, avg position 12.6 (23 Oct: 759 / 4 / 18.8;
+  24 Oct: 723 / 3 / 20.2). Clicks: uk-university-grading-system 3 (383 impr; queries master's degree with merit, merit masters,
+  how much is a distinction), ar what-is-an-assignment 2 (592), questionnaire 1, SWOT 1, business report 1. Countries: Egypt 486,
+  UK 329, Saudi 95 (pos 9.3; اسايمنت بالانجليزي, حساب المعدل, خدمات طالب قريبه من موقعي 9, مكتبة خدمات طالب 11), US 53, Jordan 48.
+  Idea for owner: Master's merit/distinction section on the UK grading guide (rising queries).
