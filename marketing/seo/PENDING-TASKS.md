@@ -255,6 +255,10 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   (H1 now starts with خدمات الطالب في الرياض), /ar/assignment-help-saudi-arabia (section + FAQ on مواقع لحل الواجبات,
   حل واجبات انجليزي heading; title and H1 unchanged), /ar/dissertation-help-saudi-arabia (رسائل الماستر, بحث تخرج,
   الرسالة الجامعية). Request indexing for the 4 URLs. Next from the list (owner to approve): SPSS, thesis, guides.
+  Live check 04:06: all 4 show the new text (200). Indexing REQUESTED 26 Oct 04:10 for all 4 (all were already
+  "URL is on Google"; no quota error).
+- Owner, 26 Oct 04:06: Google Ads are not running now. Do not check or report the Ads tag any more. Leave the tag
+  and conversion code in the site as they are (do not remove them unless the owner asks).
 
 ## Search Console, last 3 months (export of 21 Oct 2026 in marketing/seo/search-console/)
 - Data starts 8 Oct. Impressions per day 3 to 179 (rising); 10 clicks in total; 1,103 impressions; average position 52.
@@ -450,3 +454,49 @@ Second bulk check, 20 Oct 22:40 (sa_bulk_list1-99.csv and uk_bulk_list2-95.csv):
 Competitor backlinks are almost all spam (score 2 to 5, auto-generated sites). Do not buy or copy them.
 Real links only: LinkedIn, Haraj, Business Profile, education blogs, and the GPA calculator and Harvard
 generator as tools people link to.
+
+## WhatsApp opening message (27 Oct 2026, owner "yes", live 27 Oct ~16:00 PKT, merge 26db720)
+- A Dammam lead (26 Oct night, Saudi number) sent the Dammam page's prefill with every field empty, then went quiet
+  after 4 messages and 2 late calls (lesson: one message, then wait; no calls at night unless the client asks).
+- Owner asked for one simple line everywhere: English "Hello FIZBS, I would like to discuss my assignment." and Arabic
+  "مرحبًا FIZBS، أرغب في مناقشة واجبي." on all landing, tool, blog, sample, expert, team, header and footer links.
+  Call buttons: "...book a WhatsApp call to discuss my assignment". The price calculator keeps its filled-in estimate.
+- Trade-off accepted: WhatsApp messages no longer show which page a lead came from (form emails still do).
+- Search Console, Saudi Arabia, 19 to 25 Oct: 3 clicks, 484 impressions, pos 23.7. Clicked query visible: مكتبة خدمات الطالب
+  (to /ar/student-services). The 24/25 Oct click (the 25 Oct client) is an anonymised query; 24/25 Oct impressions led by
+  اسايمنت بالانجليزي, مكتبة خدمات الطالب, خدمات طلابيه قريبه من موقعي. The Dammam page has no Saudi impressions yet.
+- Search Console last 24 h (checked 27 Oct 16:10 PKT): 8 clicks, 1.46K impressions, avg position 12.6 (23 Oct: 759 / 4 / 18.8;
+  24 Oct: 723 / 3 / 20.2). Clicks: uk-university-grading-system 3 (383 impr; queries master's degree with merit, merit masters,
+  how much is a distinction), ar what-is-an-assignment 2 (592), questionnaire 1, SWOT 1, business report 1. Countries: Egypt 486,
+  UK 329, Saudi 95 (pos 9.3; اسايمنت بالانجليزي, حساب المعدل, خدمات طالب قريبه من موقعي 9, مكتبة خدمات طالب 11), US 53, Jordan 48.
+  Idea for owner: Master's merit/distinction section on the UK grading guide (rising queries).
+
+## UK pages review (27 Oct 2026, doc "FIZBS UK Pages Review, 27 October 2026" in the owner's Claude docs)
+- UK, Search Console 3 months: 944 impressions, 4 clicks, CTR 0.4%, avg position 45.9 (rising fast in the last 10 days).
+- Index (report updated 23 Oct): 175 indexed, 97 not. 24 UK pages not indexed: Leeds ("URL is unknown to Google" on 27 Oct),
+  education (crawled, not indexed), business, marketing, finance, nursing, computing, engineering subject pages, coursework,
+  case study, proofreading, thesis, literature review, methodology, data analysis, Excel, research proposal service pages,
+  7 guides (CS, finance, nursing topics, Gibbs, dissertation intro, research question, human vs AI). NVivo unknown.
+  Cause checked 27 Oct: all are 200, self-canonical, no noindex, in the sitemap, and already linked from the homepage,
+  /services and guides (Leeds is even in the footer). So it is Google's crawl priority (new site, few external links,
+  27 to 28% repeated sales text), not missing links.
+- Branch indexing-fix-uk-2026-10-27 (1f142cd, NOT live, waits for owner yes): lighter template (no WhatsApp call and
+  pay-half blocks or their 2 FAQs) on English subject, service and qualification pages; full template kept on
+  assignment-help-uk, dissertation-help-uk, Saudi, UAE, USA, MBA, PhD admission and Arabic pages. Stuck pages go from
+  64 to 70% unique to 80 to 88%, template text 27% to 16%. /assignment-help-uk now links to 14 subject and 16 service
+  pages, /dissertation-help-uk to 10 research services. all.mjs BAD 7 (baseline), 0 broken links.
+- Indexing requests (Search Console) for the 24 pages: not started yet, Chrome disconnected 27 Oct 17:40 PKT.
+- Template text (sentences on 10+ pages): subject/service/qualification pages 27 to 28%, city pages 15%, guides 13%.
+  Unique: HND/HNC 50%, HNC 47%, CMI 51%, OTHM 47%, project management 46%, HRM 52%.
+- /assignment-help-uk: only query in 3 months is "mfrd assignment help" (19 impr, pos 76.6); MFRD page itself 1 impression.
+  "assignment help uk": 0 impressions. City pages rank 66 to 86 (London 0 non-www impressions, indexed).
+- Grading guide: all countries 409 impr pos 13.3 + www 104, 1 click; PAA: Is merit good for a Masters? Is 40% a pass at
+  Masters? Is 70% a merit? What CGPA is distinction? Top 10 for "master's degree with merit" has no service sites.
+- www URLs: "Alternate page with proper canonical tag" (25); Google-selected canonical is non-www. No action needed.
+- SERPs 27 Oct (gl=uk): Birmingham 9 assignment sites + local pack; MFRD 9 UK sites with dedicated pages; Harvard: MyBib,
+  Scribbr, Cite This For Me, BibGuru (hard); OSCOLA: small law sites in top 10 (doable).
+- Semrush was logged out in Chrome on 27 Oct; did not log in.
+- Fix plan sent to owner, waiting for yes per item: 1 grading guide Master's FAQs + table, 2 indexing requests (10/day),
+  3 MFRD and HNC vs HND/HNC fix, 4 lighter template on subject/service pages, 5 internal links from the UK hub,
+  6 education examples, 7 OSCOLA tool + guide, 8 new pages later, 9 owner off-site (reviews, guest posts, GBP only with a
+  real address), 10 check after 2 weeks.
