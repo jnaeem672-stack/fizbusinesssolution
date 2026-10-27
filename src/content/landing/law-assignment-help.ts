@@ -137,7 +137,7 @@ export const lawAssignmentHelp: LandingContent = {
     {
       heading: 'OSCOLA referencing help',
       paragraphs: [
-        "Most UK law schools require OSCOLA, the Oxford University Standard for the Citation of Legal Authorities. It uses footnotes rather than in-text citations, and small errors such as missing neutral citations, wrong brackets around years or inconsistent pinpoints can cost marks for presentation.",
+        "Most UK law schools require OSCOLA, the Oxford University Standard for Citation of Legal Authorities. It uses footnotes rather than in-text citations, and small errors such as missing neutral citations, wrong brackets around years or inconsistent pinpoints can cost marks for presentation. The 5th edition, published in March 2026, removed ibid and changed how EU, ECHR and some UK court decisions are cited. Our free OSCOLA referencing generator follows the new edition.",
         "Our OSCOLA referencing help covers cases, statutes, statutory instruments, EU materials, journal articles, books and websites. Your expert can check your footnotes and bibliography, correct formatting and make sure every authority you cite is cited consistently. If your module uses a different style, we also work with Harvard, APA, MLA, IEEE and Chicago.",
       ],
     },
