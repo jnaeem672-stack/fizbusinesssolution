@@ -470,3 +470,25 @@ generator as tools people link to.
   how much is a distinction), ar what-is-an-assignment 2 (592), questionnaire 1, SWOT 1, business report 1. Countries: Egypt 486,
   UK 329, Saudi 95 (pos 9.3; اسايمنت بالانجليزي, حساب المعدل, خدمات طالب قريبه من موقعي 9, مكتبة خدمات طالب 11), US 53, Jordan 48.
   Idea for owner: Master's merit/distinction section on the UK grading guide (rising queries).
+
+## UK pages review (27 Oct 2026, doc "FIZBS UK Pages Review, 27 October 2026" in the owner's Claude docs)
+- UK, Search Console 3 months: 944 impressions, 4 clicks, CTR 0.4%, avg position 45.9 (rising fast in the last 10 days).
+- Index (report updated 23 Oct): 175 indexed, 97 not. 24 UK pages not indexed: Leeds ("URL is unknown to Google" on 27 Oct),
+  education (crawled, not indexed), business, marketing, finance, nursing, computing, engineering subject pages, coursework,
+  case study, proofreading, thesis, literature review, methodology, data analysis, Excel, research proposal service pages,
+  7 guides (CS, finance, nursing topics, Gibbs, dissertation intro, research question, human vs AI). NVivo unknown.
+  Pattern: every page linked in the footer is indexed; non-footer subject/service pages are stuck.
+- Template text (sentences on 10+ pages): subject/service/qualification pages 27 to 28%, city pages 15%, guides 13%.
+  Unique: HND/HNC 50%, HNC 47%, CMI 51%, OTHM 47%, project management 46%, HRM 52%.
+- /assignment-help-uk: only query in 3 months is "mfrd assignment help" (19 impr, pos 76.6); MFRD page itself 1 impression.
+  "assignment help uk": 0 impressions. City pages rank 66 to 86 (London 0 non-www impressions, indexed).
+- Grading guide: all countries 409 impr pos 13.3 + www 104, 1 click; PAA: Is merit good for a Masters? Is 40% a pass at
+  Masters? Is 70% a merit? What CGPA is distinction? Top 10 for "master's degree with merit" has no service sites.
+- www URLs: "Alternate page with proper canonical tag" (25); Google-selected canonical is non-www. No action needed.
+- SERPs 27 Oct (gl=uk): Birmingham 9 assignment sites + local pack; MFRD 9 UK sites with dedicated pages; Harvard: MyBib,
+  Scribbr, Cite This For Me, BibGuru (hard); OSCOLA: small law sites in top 10 (doable).
+- Semrush was logged out in Chrome on 27 Oct; did not log in.
+- Fix plan sent to owner, waiting for yes per item: 1 grading guide Master's FAQs + table, 2 indexing requests (10/day),
+  3 MFRD and HNC vs HND/HNC fix, 4 lighter template on subject/service pages, 5 internal links + footer "Popular subjects",
+  6 education examples, 7 OSCOLA tool + guide, 8 new pages later, 9 owner off-site (reviews, guest posts, GBP only with a
+  real address), 10 check after 2 weeks.
