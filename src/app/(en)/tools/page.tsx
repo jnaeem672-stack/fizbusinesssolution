@@ -10,7 +10,7 @@ import { TOOLS, TOOLS_PATH, toolPath } from '@/content/tools';
 
 const TITLE = 'Free Tools for University Students | FIZBS';
 const DESCRIPTION =
-  'Free tools for UK university students: a degree classification calculator, Harvard and APA referencing generators and a word counter with pages converter.';
+  'Free tools for UK university students: a degree classification calculator, Harvard, APA and OSCOLA referencing generators and a word counter.';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
@@ -29,21 +29,22 @@ const NEEDS: { need: string; tool: string; slug: string }[] = [
   { need: 'I want to know my degree class, or the marks I need for a First, 2:1 or Distinction', tool: 'Degree Classification Calculator', slug: 'degree-classification-calculator' },
   { need: 'I need to reference a book, journal article, website, newspaper, thesis or video in Harvard, or create a reference from a DOI or ISBN', tool: 'Harvard Referencing Generator', slug: 'harvard-referencing-generator' },
   { need: 'My course uses APA 7, for example in psychology, nursing, education or business', tool: 'APA Referencing Generator', slug: 'apa-referencing-generator' },
+  { need: 'I study law and need OSCOLA footnotes for cases, Acts, books and articles', tool: 'OSCOLA Referencing Generator', slug: 'oscola-referencing-generator' },
   { need: 'I need my word count without the reference list, or to know how many pages it fills', tool: 'Word Counter and Pages Converter', slug: 'word-counter' },
 ];
 
 const HUB_FAQS = [
   {
     q: 'Are the tools really free?',
-    a: 'Yes. All four tools are free to use, with no sign-up and no limit on how often you use them.',
+    a: 'Yes. All five tools are free to use, with no sign-up and no limit on how often you use them.',
   },
   {
     q: 'Is anything I type saved or sent to FIZBS?',
-    a: 'The degree calculator and word counter run entirely in your browser, so your marks and text are not sent to us. The Harvard and APA generators keep your reference list in your own browser only, so you can come back to it on the same device. If you use autocite, the DOI, ISBN, title or link you enter is sent to public lookup services such as Crossref, or to our server to read a web page, only to fill in the details.',
+    a: 'The degree calculator and word counter run entirely in your browser, so your marks and text are not sent to us. The Harvard, APA and OSCOLA generators keep your reference list in your own browser only, so you can come back to it on the same device. If you use autocite, the DOI, ISBN, title or link you enter is sent to public lookup services such as Crossref, or to our server to read a web page, only to fill in the details.',
   },
   {
     q: 'Which referencing styles do the generators use?',
-    a: 'The Harvard generator follows the Cite Them Right version of Harvard, which many UK universities use, and the APA generator follows APA 7th edition. Always check your module handbook, because some universities use their own variation.',
+    a: 'The Harvard generator follows the Cite Them Right version of Harvard, which many UK universities use, the APA generator follows APA 7th edition, and the OSCOLA generator follows the 5th edition of OSCOLA (2026) used by UK law schools. Always check your module handbook, because some universities use their own variation.',
   },
   {
     q: "Will the degree calculator match my university's result?",

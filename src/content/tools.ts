@@ -2,7 +2,7 @@
  * Free student tools at /tools/{slug}. Each tool page combines an interactive tool (client component)
  * with guide content, FAQs (FAQPage schema) and links to related services and guides.
  */
-export type ToolId = 'degree-classification-calculator' | 'harvard-referencing-generator' | 'apa-referencing-generator' | 'word-counter';
+export type ToolId = 'degree-classification-calculator' | 'harvard-referencing-generator' | 'apa-referencing-generator' | 'oscola-referencing-generator' | 'word-counter';
 
 export interface ToolSection {
   heading: string;
@@ -501,6 +501,146 @@ export const TOOLS: ToolContent[] = [
     showOn: [...SAUDI_PAGES, 'assignment-help-usa', 'assignment-help-uae', 'assignment-help-leeds', 'dissertation-help-uk', 'thesis-help', 'research-methodology-help', 'spss-help', 'data-analysis-help', 'nvivo-thematic-analysis-help'],
     promotedIn: REFERENCING_GUIDES,
     updated: '2026-10-23',
+    whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  },
+  {
+    slug: 'oscola-referencing-generator',
+    name: 'OSCOLA Referencing Generator',
+    metaTitle: 'Free OSCOLA Referencing Generator (5th Edition, 2026)',
+    metaDescription:
+      'Free OSCOLA referencing generator for the 5th edition: footnotes, later footnotes without ibid, tables of cases and legislation, and a bibliography.',
+    h1: 'Free OSCOLA Referencing Generator (5th Edition)',
+    subtitle:
+      'Create OSCOLA footnotes for cases, Acts, statutory instruments, EU law, ECHR judgments, books, journal articles, websites and more, following the 5th edition published by the Oxford Law Faculty in March 2026. Each source gives you the first footnote, the short form for later footnotes and the entry for your Table of Cases, Table of Legislation or Bibliography, and your list is sorted for you.',
+    cardText: 'OSCOLA 5th edition footnotes for cases, legislation, books and articles, with tables of cases and legislation and a bibliography.',
+    sections: [
+      {
+        heading: 'How to use the OSCOLA referencing generator',
+        steps: [
+          'Choose what you are citing: a UK case, an Act, a statutory instrument, EU legislation, an EU or ECHR case, or a book, chapter, journal article, website, newspaper article, thesis or report.',
+          'Fill in the details. For books, articles and websites you can paste an ISBN, DOI or link and the details fill in for you. Select Show an example to see what each box should contain.',
+          'Copy the footnote into your work. The preview also shows the short form for later footnotes, such as Corr (n 1), because the 5th edition of OSCOLA no longer uses ibid.',
+          'Select Add to my list. Cases go into the Table of Cases, legislation into the Table of Legislation and secondary sources into the Bibliography, each sorted as OSCOLA requires.',
+          'Copy the whole list or download it as a Word file. Your list is saved in this browser only.',
+        ],
+      },
+      {
+        heading: 'What changed in the 5th edition of OSCOLA',
+        paragraphs: [
+          'The Oxford Law Faculty published the 5th edition of OSCOLA in March 2026, replacing the 4th edition from 2012. If your module handbook or older online tools still show the 4th edition, these are the changes most likely to affect your footnotes:',
+        ],
+        bullets: [
+          'No ibid: later footnotes use a short form with a cross-reference, for example Stevens (n 1) 110, and Latin terms such as supra and op cit are no longer used.',
+          "Court identifiers: KBD for King's Bench Division judgments from 9 September 2022, QBD before that date.",
+          'Neutral citations: do not use neutral citations created later for cases decided before 2001.',
+          'EU court cases: cited with the European Case Law Identifier (ECLI), for example EU:C:2005:446, instead of a report reference.',
+          'ECHR cases: cited by application number, for example App No 8139/09, with the date of the judgment.',
+          'Websites and blogs: use a persistent link (such as Perma.cc) or a DOI where available. Otherwise give the URL and the date you accessed it.',
+          'Theses: the title is now in italics. Command papers from 2019 onwards use the CP prefix.',
+          'New guidance on social media, podcasts, generative AI and international law sources.',
+        ],
+      },
+      {
+        heading: 'OSCOLA footnote formats used by this tool',
+        paragraphs: ['These examples come from the formats in the 5th edition. Case names, book titles and thesis titles are in italics in your footnotes.'],
+        table: {
+          caption: 'OSCOLA 5th edition footnote examples',
+          head: ['Source', 'Footnote example'],
+          rows: [
+            ['UK case', 'Corr v IBC Vehicles Ltd [2008] UKHL 13, [2008] 1 AC 884.'],
+            ['Case before 2001', 'Donoghue v Stevenson [1932] AC 562 (HL).'],
+            ['Act', 'Human Rights Act 1998, s 2.'],
+            ['Statutory instrument', 'Eggs and Chicks (England) Regulations 2009, SI 2009/2163, reg 7(2).'],
+            ['EU court case', 'Case C-403/03 Schempp v Finanzamt EU:C:2005:446 [19].'],
+            ['Book', 'HLA Hart, The Concept of Law (2nd edn, Clarendon Press 1994) 135.'],
+            ['Journal article', "JAG Griffith, 'The Common Law and the Political Constitution' (2001) 117 LQR 42, 64."],
+            ['Report', 'Law Commission, The Illegality Defence (Law Com No 320, 2010) para 3.12.'],
+          ],
+        },
+      },
+      {
+        heading: 'Footnotes, later footnotes and the bibliography',
+        paragraphs: [
+          'OSCOLA is a footnote style. Put a footnote marker at the end of the sentence, after the punctuation, and give the full citation in the first footnote for each source. Every footnote ends with a full stop.',
+          'When you cite the same source again, use a short form and the number of the footnote with the full citation, for example Corr (n 3) [12] for a case or Hart (n 5) 140 for a book. Legislation is usually cited in full again, or by a short form you defined in the first footnote, such as HRA 1998.',
+          'At the end of your work, a Table of Cases and a Table of Legislation list the primary sources, and the Bibliography lists books, articles and other secondary sources. In the bibliography the surname comes first, followed by initials without full stops, for example Hart HLA, and entries do not end with a full stop.',
+        ],
+      },
+      {
+        heading: 'Tables of cases and legislation',
+        bullets: [
+          'Case names are not in italics in the Table of Cases.',
+          "Cases are listed by the first significant word, so Re Farquar's Estate is listed as Farquar's Estate, Re.",
+          'UK, EU and ECHR cases are listed in separate sections when you cite more than a few.',
+          'Statutes come first in the Table of Legislation, then statutory instruments, then EU legislation.',
+          'Your law school may ask you to add the page numbers where each source appears. Add these in Word once your work is finished.',
+        ],
+      },
+      {
+        heading: 'Common OSCOLA mistakes',
+        bullets: [
+          'Using ibid, which the 5th edition no longer allows',
+          'Missing pinpoints for quotations: a paragraph in square brackets, for example [24], or a page number',
+          'Putting a comma before the year of an Act (Human Rights Act, 1998 is wrong)',
+          'Using p or pp before page numbers, which OSCOLA does not use',
+          'Listing cases or legislation in the bibliography instead of the tables',
+          'Using full stops in abbreviations and initials, such as H.L.A. Hart or L.Q.R.',
+        ],
+      },
+      {
+        heading: 'Check your law school handbook',
+        paragraphs: [
+          'Most UK law schools use OSCOLA, but some ask students to keep using the 4th edition for a while, and some add their own rules, for example on page numbers in tables. Follow your handbook where it differs from this tool. Irish law schools may use OSCOLA Ireland, which is a separate adaptation.',
+          'If you would like an expert to check every footnote in a law essay, problem question or dissertation, our referencing help and law assignment help cover OSCOLA in full.',
+        ],
+      },
+    ],
+    faqs: [
+      {
+        q: 'What is OSCOLA referencing?',
+        a: 'OSCOLA is the Oxford University Standard for Citation of Legal Authorities. It is a footnote referencing style used by most UK law schools and many law journals. Each source is cited in a footnote, and the work ends with tables of cases and legislation and a bibliography.',
+      },
+      {
+        q: 'Which edition of OSCOLA does this generator use?',
+        a: 'It follows the 5th edition, published by the Oxford Law Faculty in March 2026. If your law school still asks for the 4th edition, check the main differences listed on this page, especially ibid, which the 4th edition allowed.',
+      },
+      {
+        q: 'Does OSCOLA still use ibid?',
+        a: 'No. The 5th edition removed ibid and other Latin terms such as supra and op cit. For a later footnote, use a short form with the number of the earlier footnote, for example Stevens (n 1) 110.',
+      },
+      {
+        q: 'How do I cite a case in OSCOLA?',
+        a: 'Give the case name in italics, the neutral citation if there is one, then the best law report, for example Corr v IBC Vehicles Ltd [2008] UKHL 13, [2008] 1 AC 884. For cases before 2001, add the court in brackets after the report, for example Donoghue v Stevenson [1932] AC 562 (HL).',
+      },
+      {
+        q: 'How do I cite an Act of Parliament in OSCOLA?',
+        a: 'Give the short title and the year with no comma between them, then a comma and the section, for example Human Rights Act 1998, s 2. Use ss for more than one section. Titles of Acts are not in italics.',
+      },
+      {
+        q: 'Does OSCOLA need a bibliography?',
+        a: 'Usually yes, for longer work such as dissertations, and many modules ask for one in essays too. The bibliography lists secondary sources only. Cases and legislation go in separate tables. Check your module handbook.',
+      },
+      {
+        q: 'Do OSCOLA footnotes end with a full stop?',
+        a: 'Yes. Every footnote ends with a full stop. Entries in the bibliography and the tables do not.',
+      },
+      {
+        q: 'How do I reference a website in OSCOLA?',
+        a: "Give the author, the title in single quotation marks, the website name and date in brackets, and a persistent link or DOI if there is one. Otherwise give the URL in angle brackets and the date you accessed it, for example <https://www.gov.uk/...> accessed 28 October 2026.",
+      },
+      {
+        q: 'Can it fill in the details automatically?',
+        a: 'Yes for books, chapters, journal articles, websites, newspaper articles and reports: paste an ISBN, DOI or link, or type a title. Cases and legislation are typed in, because their citations need to match the law report or the official title exactly.',
+      },
+      {
+        q: 'Is the OSCOLA generator free?',
+        a: 'Yes. It is free and needs no sign-up. Your list is saved in your own browser only. When you search for a source, the ISBN, DOI, title or link you enter is sent to the lookup services or to our server to read the page, so that the details can be filled in.',
+      },
+    ],
+    services: ['law-assignment-help', 'referencing-help'],
+    guides: ['how-to-structure-a-university-essay', 'how-to-paraphrase-and-avoid-plagiarism', 'how-to-write-a-dissertation'],
+    showOn: ['assignment-help-uk', 'dissertation-help-uk', 'essay-help', 'proofreading-editing-services', 'literature-review-help'],
+    updated: '2026-10-28',
     whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   },
   {
