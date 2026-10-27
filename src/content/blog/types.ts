@@ -42,6 +42,8 @@ export interface BlogPost {
   faqs: { q: string; a: string }[];
   /** 2-4 landing page slugs to link to as related services (must exist for the same locale or English) */
   relatedServices: string[];
+  /** Optional WhatsApp box shown right after the intro, so readers on phones see it before the long guide */
+  earlyCta?: { title: string; text: string; button: string };
   /** Optional external sources the guide is based on, listed at the end of the article */
   sources?: { label: string; href: string }[];
 }

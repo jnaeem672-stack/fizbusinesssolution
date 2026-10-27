@@ -169,6 +169,22 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
               ))}
             </div>
 
+            {post.earlyCta && (
+              <div className="mb-10 flex flex-col gap-4 rounded-2xl bg-navy p-6 text-white sm:flex-row sm:items-center sm:justify-between">
+                <div>
+                  <p className="text-lg font-extrabold">{post.earlyCta.title}</p>
+                  <p className="mt-1 text-sm leading-relaxed text-white/80">{post.earlyCta.text}</p>
+                </div>
+                <WhatsAppLink
+                  href={whatsappUrl}
+                  aria-label={post.earlyCta.button}
+                  className="inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-5 py-3 font-bold text-navy"
+                >
+                  <WhatsAppIcon size={20} className="w-5 h-5" /> {post.earlyCta.button}
+                </WhatsAppLink>
+              </div>
+            )}
+
             <nav aria-label={t.toc} className="mb-12 rounded-2xl border border-gray-100 bg-gray-50 p-6">
               <p className="text-sm font-black uppercase tracking-widest text-primary mb-4">{t.toc}</p>
               <ol className="space-y-2.5 text-[15px]">
