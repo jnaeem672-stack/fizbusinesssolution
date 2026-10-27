@@ -148,7 +148,8 @@ export const howToStructureAUniversityEssayPost: BlogPost = {
           ]
         }
       ],
-      tip: "Use cautious, academic verbs: suggests, indicates, appears to, may. Avoid 'proves' unless you are describing a mathematical proof."
+      tip: "Use cautious, academic verbs: suggests, indicates, appears to, may. Avoid 'proves' unless you are describing a mathematical proof.",
+      links: [{ label: "UK university grading system", href: "/blog/uk-university-grading-system" }],
     },
     {
       heading: "How to write an essay conclusion",

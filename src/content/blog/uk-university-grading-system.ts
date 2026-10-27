@@ -3,9 +3,9 @@ import type { BlogPost } from './types';
 export const ukUniversityGradingSystemPost: BlogPost = {
   slug: `uk-university-grading-system`,
   locale: `en`,
-  title: `UK University Grading System Explained: First, 2:1, 2:2 and Master's Grades`,
-  metaTitle: `UK University Grading System: First, 2:1, 2:2 and Merit`,
-  metaDescription: `A First is 70%+, a 2:1 is 60 to 69% (so 66% is a 2:1) and a 2:2 is 50 to 59%. Master's distinction, merit and pass explained, and how to move up a band.`,
+  title: `UK University Grading System Explained: First, 2:1, 2:2, Merit and Distinction`,
+  metaTitle: `UK University Grading System: First, 2:1, Merit, Distinction`,
+  metaDescription: `A First or a Master's distinction is 70%+, a 2:1 or merit is 60 to 69% and a 2:2 or Master's pass is 50 to 59%. Full UK grade bands, FAQs and tips.`,
   keywords: [
     `UK university grading system`,
     `UK degree classification`,
@@ -15,6 +15,10 @@ export const ukUniversityGradingSystemPost: BlogPost = {
     `Master's distinction merit pass`,
     `UK Master's degree grading system`,
     `Master's distinction percentage`,
+    `is 70 a distinction`,
+    `merit vs distinction`,
+    `is a merit a 2:1`,
+    `what percentage is a merit`,
     `UK grades for international students`,
   ],
   category: `Study Skills`,
@@ -74,8 +78,18 @@ export const ukUniversityGradingSystemPost: BlogPost = {
     {
       heading: `UK Master's degree grading system: distinction, merit and pass`,
       paragraphs: [
-        `Taught Master's degrees (such as an MSc, MA or MBA) are not classified as Firsts or 2:1s. Instead, most UK universities award a distinction, merit or pass. The bands commonly used are:`,
+        `Taught Master's degrees (such as an MSc, MA or MBA) are not classified as Firsts or 2:1s. Instead, most UK universities award a distinction, merit or pass. Distinction is the highest grade. The table shows the bands most universities use, and the list below explains them in more detail.`,
       ],
+      table: {
+        caption: `Master's grades at a glance`,
+        head: [`Master's grade`, `Typical overall mark`, `What else is often needed`],
+        rows: [
+          [`Distinction`, `70% and above`, `A dissertation mark of at least 70% at many universities`],
+          [`Merit`, `60 to 69%`, `A dissertation mark of at least 60% at many universities`],
+          [`Pass`, `50 to 59%`, `Modules usually passed at 50%. A few credits at 40 to 49% may be compensated`],
+          [`Fail`, `Below 50%`, `Resits, or a Postgraduate Diploma or Certificate for the credits passed`],
+        ],
+      },
       bullets: [
         `Distinction: commonly 70% and above overall, often with a dissertation mark of 70% or more required as well.`,
         `Merit: commonly 60 to 69% overall, sometimes with a minimum dissertation mark.`,
@@ -263,6 +277,30 @@ export const ukUniversityGradingSystemPost: BlogPost = {
       a: `A distinction is the highest grade for a taught Master's degree in the UK. It is commonly awarded for an overall average of 70% or above, often with a dissertation mark of at least 70% as well, and signals consistently excellent work.`,
     },
     {
+      q: `Is 70% a distinction?`,
+      a: `Yes. At most UK universities an overall Master's average of 70% or above is a distinction. Some round up from 69.5% (UCL does this), and many, such as the University of Leicester, also require a dissertation mark of at least 70%. A single module mark of 70% is a distinction-level mark, but your final award depends on your overall average and your university's rules.`,
+    },
+    {
+      q: `What percentage is a merit?`,
+      a: `A merit is commonly awarded for an overall Master's average of 60 to 69%. Some universities also ask for a dissertation mark of at least 60%, so check the award rules in your programme handbook.`,
+    },
+    {
+      q: `Is a merit the same as a 2:1?`,
+      a: `Not exactly. A merit and a 2:1 use the same 60 to 69% band, but a 2:1 is an undergraduate honours classification and a merit is a grade for a taught Master's degree. When a job or course asks for a 2:1, it usually means your bachelor's degree, so a Master's merit does not replace it, although both are seen as very good results.`,
+    },
+    {
+      q: `Merit or distinction: which is higher?`,
+      a: `Distinction is higher. For a taught Master's degree in the UK, distinction (commonly 70% and above) is the highest grade, followed by merit (60 to 69%) and pass (50 to 59%).`,
+    },
+    {
+      q: `Is 40% a pass at Masters level?`,
+      a: `Usually not. The pass mark at Master's level is commonly 50%. For example, the University of Birmingham sets its Master's pass mark at 50%. Some universities allow a limited number of credits with marks of 40 to 49% to be compensated if your overall average is at least 50%, but a module mark below 40% is normally a fail.`,
+    },
+    {
+      q: `What CGPA is a distinction in a Master's degree?`,
+      a: `UK universities do not use a CGPA for Master's grades. A distinction is based on percentage marks, commonly 70% and above. If you need to show your result on a CGPA or GPA scale, or want to know which CGPA from your home country a UK university accepts for admission, use the official conversion of the university or organisation that will read your result, because there is no single national conversion.`,
+    },
+    {
       q: `Is a merit good for a Master's degree?`,
       a: `Yes. A merit, commonly 60 to 69% overall, shows very good work. It meets the usual entry requirement for many UK PhD programmes and is well regarded by employers.`,
     },
@@ -280,4 +318,9 @@ export const ukUniversityGradingSystemPost: BlogPost = {
     },
   ],
   relatedServices: [`assignment-help-uk`, `essay-help`, `dissertation-help-uk`, `proofreading-editing-services`],
+  sources: [
+    { label: `UCL Academic Manual: classification of taught programmes`, href: `https://www.ucl.ac.uk/academic-manual/chapters/chapter-4-assessment-framework-taught-programmes/section-7-classification` },
+    { label: `University of Leicester: Senate Regulation 6, award of taught postgraduate degrees`, href: `https://le.ac.uk/policies/regulations/senate-regulations/senate-regulation-6/award` },
+    { label: `University of Birmingham: Regulation 7 key points (taught postgraduate pass mark)`, href: `https://www.birmingham.ac.uk/documents/university/quality/external-examiners/regulation-7-key-points.pdf` },
+  ],
 };

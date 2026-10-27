@@ -75,6 +75,7 @@ export const ukMastersPersonalStatementPost: BlogPost = {
         'Make sure your English test results meet the course requirement and are submitted as instructed.',
         'Connect your career goals to your home country where relevant, for example sector developments in Saudi Arabia, without making claims you cannot support.',
       ],
+      links: [{ label: "UK university grading system", href: "/blog/uk-university-grading-system" }],
     },
     {
       heading: 'Illustrative example paragraphs',

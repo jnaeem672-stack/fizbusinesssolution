@@ -186,6 +186,33 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                 <h2 id={ids[si]} className="scroll-mt-[130px] text-2xl md:text-3xl font-extrabold text-navy tracking-tight mb-4">{s.heading}</h2>
                 {figuresFor(s.heading, 'top')}
                 <div className="space-y-4">{s.paragraphs?.map((p, i) => <p key={i}>{inline(p)}</p>)}</div>
+                {s.table && (
+                  <div className="mt-6 overflow-x-auto rounded-2xl border border-gray-200" tabIndex={0} role="region" aria-label={s.table.caption}>
+                    <table className="w-full text-left text-[15px]">
+                      <caption className="sr-only">{s.table.caption}</caption>
+                      <thead className="bg-navy text-white">
+                        <tr>
+                          {s.table.head.map((h) => (
+                            <th key={h} scope="col" className="px-4 py-3 font-bold">{h}</th>
+                          ))}
+                        </tr>
+                      </thead>
+                      <tbody>
+                        {s.table.rows.map((row) => (
+                          <tr key={row[0]} className="border-t border-gray-100 even:bg-gray-50">
+                            {row.map((cell, i) =>
+                              i === 0 ? (
+                                <th key={i} scope="row" className="px-4 py-2.5 font-bold text-navy whitespace-nowrap">{cell}</th>
+                              ) : (
+                                <td key={i} className="px-4 py-2.5">{cell}</td>
+                              ),
+                            )}
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                )}
                 {figuresFor(s.heading, 'afterText')}
                 {s.steps && (
                   <ol className="mt-5 space-y-3">
