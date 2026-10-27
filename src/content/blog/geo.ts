@@ -169,9 +169,9 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
   },
   'education-dissertation-topics': {
     quickAnswer:
-      'A good education dissertation topic focuses on one practice, one group of learners or teachers and one outcome, such as retrieval practice in secondary science. This guide lists 40 education topics for 2026 across teaching, assessment, SEND, AI, higher education, early years and Saudi education.',
+      'A good education dissertation topic focuses on one practice, one group of learners or teachers and one outcome, such as retrieval practice in secondary science. This guide lists 40 education topics for 2026 across teaching, assessment, SEND, AI, higher education, early years and Saudi education, plus three worked dissertation examples with research questions, methods and chapter plans.',
     specialist: 'ayesha-h',
-    updated: '2026-10-12',
+    updated: '2026-10-27',
   },
   'computer-science-dissertation-topics': {
     quickAnswer:
