@@ -82,6 +82,21 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   show "index,follow"). Article links are rel="ugc nofollow": the value is readers and brand, not link equity.
   Check again on 30 Oct; if article 1 is still pending after a week, ask Nathre support.
 
+## AI platforms and Bing (28 Oct 2026, owner yes for "A2")
+- Semrush AI responses (owner screenshot 28 Oct): 7 total; AI Overviews 5 (3 pages), AI Mode 1, Gemini 1;
+  ChatGPT, Perplexity, Copilot 0. ChatGPT search and Copilot lean on the Bing index.
+- Bing Webmaster Tools was already set up (sitemap submitted 10 Oct, 169 URLs discovered, last read 25 Oct) but
+  Site Explorer showed only 4 indexed. URL Inspection: Harvard tool indexed; /assignment-help-uk,
+  /ar/assignment-help-saudi-arabia, /ar/gpa-calculator, /blog/uk-university-grading-system "Discovered but not
+  crawled". Only the homepage had ever been submitted by hand; IndexNow had never been used.
+- Done 28 Oct 02:16 PKT: IndexNow POST of all 170 sitemap URLs to bing.com/indexnow (HTTP 202, key file
+  /a94d7df1bc05d1cf910169daf3e7c6d6.txt is live). BWT URL Submission of 100 URLs (Arabic pages and guides, tools,
+  main service pages, English guides, core services): "100 URLs submitted successfully". All 170 URLs checked live
+  first (200, list identical to the live sitemap). Remaining 65 (city, subject, expert, sample pages) go in on
+  28 Oct 13:10 PKT (quota 100 a day, resets 05:00 PKT); lists in scratchpad bing/day1.txt and day2.txt.
+- When pages change, send their URLs to IndexNow again (same key). Re-check BWT indexed count and AI Performance
+  in a week. Plan B (Arabic quick answers, tool page quick answers, sameAs profiles) waits for the owner's yes.
+
 ## Reference tool workspace (23 Oct 2026, owner asked for a MyBib-like tool)
 - Harvard and APA tool pages now use src/components/tools/refs/ (ReferenceWorkspace, SourceEditor, store, exporters,
   ui). Projects in localStorage (key fizbs-ref-projects-v1, old lists migrated), Cite a: Website / Book / Journal /
