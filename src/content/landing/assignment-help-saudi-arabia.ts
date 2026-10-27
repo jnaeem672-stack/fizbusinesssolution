@@ -189,7 +189,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
   ctaText:
     'Share your brief on WhatsApp or use our instant calculator to see your price. Enjoy 10% off your first order, with SAR prices available on request.',
   whatsappMessage:
-    'Hello FIZBS! I am a student in Saudi Arabia and need assignment help. Subject: , Word count: , Deadline: ',
+    'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'assignment-help-riyadh',
     'assignment-help-jeddah',

@@ -138,6 +138,6 @@ export const assignmentHelpUsa: LandingContent = {
   ctaTitle: 'Get your price on WhatsApp today',
   ctaText:
     'Send your assignment prompt and ask for the US dollar equivalent, or use our instant GBP calculator. Students in the US get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I am a student in the USA and need assignment help. Subject: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['thesis-help', 'mba-assignment-help', 'healthcare-nursing-assignment-help', 'data-analysis-help', 'referencing-help'],
 };

@@ -195,6 +195,6 @@ export const assignmentHelpDammam: LandingContent = {
   ctaTitle: 'Get expert support across the Eastern Province',
   ctaText:
     'Message us on WhatsApp for your quote and SAR equivalent, or use the instant calculator. Enjoy 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I am a student in Dammam and need assignment help. Subject: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['assignment-help-saudi-arabia', 'spss-help', 'mba-assignment-help', 'assignment-help-riyadh', 'assignment-help-jeddah'],
 };

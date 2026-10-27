@@ -169,7 +169,7 @@ export const marketingAssignmentHelp: LandingContent = {
   ctaTitle: 'Turn your marketing brief into a clear plan',
   ctaText:
     'Send your brief and chosen brand on WhatsApp to get a price and support from a marketing specialist. Save 10% on your first order.',
-  whatsappMessage: 'Hello FIZBS! I need marketing assignment help. Topic: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'business-management-assignment-help',
     'mba-assignment-help',

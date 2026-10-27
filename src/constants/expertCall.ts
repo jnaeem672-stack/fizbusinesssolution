@@ -17,7 +17,7 @@ export const EXPERT_CALL = {
     cta: 'Book a WhatsApp Call',
     sideCta: 'Book a Call With an Expert',
     note: 'Send us a message and we will arrange a call time with the right expert.',
-    message: "Hello FIZBS! I'd like to book a WhatsApp call with an expert to discuss my assessment.\nSubject: \nPreferred call time: ",
+    message: 'Hello FIZBS, I would like to book a WhatsApp call to discuss my assignment.',
     faq: {
       q: 'Can I speak to an expert before I order?',
       a: 'Yes. You can book a WhatsApp call with a subject expert to discuss your brief, marking criteria and deadline before you place an order. Calls are in English. Message us on WhatsApp with your subject and a time that suits you (UK or Saudi time) and we will arrange it.',
@@ -37,7 +37,7 @@ export const EXPERT_CALL = {
     cta: 'احجز مكالمة واتساب',
     sideCta: 'احجز مكالمة مع خبير',
     note: 'أرسل لنا رسالة وسنرتب موعد المكالمة مع الخبير المناسب.',
-    message: 'مرحبًا FIZBS! أرغب في حجز مكالمة واتساب مع خبير لمناقشة واجبي (باللغة الإنجليزية).\nالتخصص: \nالوقت المناسب: ',
+    message: 'مرحبًا FIZBS، أرغب في حجز مكالمة واتساب لمناقشة واجبي.',
     faq: {
       q: 'هل يمكنني التحدث مع خبير قبل الطلب؟',
       a: 'نعم. يمكنك حجز مكالمة واتساب مع خبير في تخصصك لمناقشة التعليمات ومعايير التقييم والموعد النهائي قبل الطلب. المكالمات حاليًا باللغة الإنجليزية. أرسل لنا تخصصك والوقت المناسب لك وسنرتب المكالمة.',

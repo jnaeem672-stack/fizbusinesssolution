@@ -138,6 +138,6 @@ export const assignmentHelpBradford: LandingContent = {
   ],
   ctaTitle: "Get your Bradford assignment price in minutes",
   ctaText: 'WhatsApp us at any hour in English or Urdu, or check the instant calculator for your price. First orders are 10% off.',
-  whatsappMessage: "Hi FIZBS! I am a student in Bradford and need assignment help. Subject: , Word count: , Deadline: ",
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ["assignment-help-uk", "healthcare-nursing-assignment-help", "business-management-assignment-help", "assignment-help-leeds", "assignment-help-manchester"],
 };

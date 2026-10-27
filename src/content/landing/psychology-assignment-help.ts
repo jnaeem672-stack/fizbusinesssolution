@@ -197,6 +197,6 @@ export const psychologyAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your psychology assignment price today',
   ctaText: 'Send your module, brief and deadline on WhatsApp, along with any SPSS file, or check the instant calculator for your price. Your first psychology order is 10% off.',
-  whatsappMessage: 'Hello FIZBS! I need help with a psychology assignment. Module: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['spss-help', 'research-methodology-help', 'nvivo-thematic-analysis-help', 'referencing-help', 'dissertation-help-uk'],
 };

@@ -77,7 +77,7 @@ function MemberCard({ m }: { m: TeamMember }) {
 export default function OurTeamPage() {
   const founders = TEAM.filter((m) => m.group === 'founders');
   const others = TEAM.filter((m) => m.group !== 'founders');
-  const whatsappUrl = buildWhatsAppUrl('Hello FIZBS! I would like to discuss my assignment with your team. Subject: , Word count: , Deadline: ');
+  const whatsappUrl = buildWhatsAppUrl('Hello FIZBS, I would like to discuss my assignment.');
 
   const schema = {
     '@context': 'https://schema.org',

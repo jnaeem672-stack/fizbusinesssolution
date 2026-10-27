@@ -11,7 +11,7 @@ import { isArabicPath } from '@/constants/arLinks';
 const COPY = {
   en: {
     text: '🎁 First Order? Get Up To 10% OFF | 📞 Talk to an Expert on a WhatsApp Call | Assignment Help | Dissertation Help | Research Proposal Help | Proofreading & Editing | Harvard, APA & OSCOLA Referencing | 24/7 WhatsApp Support | ',
-    orderUrl: buildWhatsAppUrl("Hello FIZBS! I'd like to place an order.\nSubject: \nWord count: \nDeadline: "),
+    orderUrl: buildWhatsAppUrl('Hello FIZBS, I would like to discuss my assignment.'),
     order: 'WhatsApp Order',
     orderAria: 'WhatsApp Order',
     qr: 'Scan QR',
@@ -22,7 +22,7 @@ const COPY = {
   },
   ar: {
     text: '🎁 خصم يصل إلى 10% على أول طلب | 📞 تحدّث مع خبير في مكالمة واتساب | المساعدة في الواجبات الجامعية | الرسائل العلمية وخطة البحث | التحليل الإحصائي SPSS | مشاريع 3ds Max وAutoCAD والبرمجة | الواجبات من 100 ريال لكل 1,000 كلمة | دعم واتساب 24/7 | ',
-    orderUrl: buildWhatsAppUrl('مرحبًا FIZBS! أرغب في تقديم طلب.\nالتخصص: \nعدد الكلمات: \nالموعد النهائي: '),
+    orderUrl: buildWhatsAppUrl('مرحبًا FIZBS، أرغب في مناقشة واجبي.'),
     order: 'اطلب عبر واتساب',
     orderAria: 'اطلب عبر واتساب',
     qr: 'امسح الرمز',

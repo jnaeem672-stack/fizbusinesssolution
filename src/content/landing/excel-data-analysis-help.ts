@@ -154,7 +154,7 @@ export const excelDataAnalysisHelp: LandingContent = {
   ctaTitle: 'Get clear Excel help for your assignment',
   ctaText:
     'Send your brief and spreadsheet on WhatsApp for a clear quote. Your expert will help you clean, analyse and explain your data, with 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need Excel data analysis help. Task: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'data-analysis-help',
     'spss-help',

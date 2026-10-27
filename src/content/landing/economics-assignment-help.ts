@@ -180,6 +180,6 @@ export const economicsAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your economics assignment price today',
   ctaText: 'Send your module, brief, deadline and any dataset on WhatsApp, or use the instant calculator to see your price. New customers save 10% on a first economics order.',
-  whatsappMessage: 'Hello FIZBS! I need help with an economics assignment. Module: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['finance-accounting-assignment-help', 'python-stata-help', 'data-analysis-help', 'dissertation-help-uk'],
 };

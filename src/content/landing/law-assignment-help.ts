@@ -232,7 +232,7 @@ export const lawAssignmentHelp: LandingContent = {
   ctaText:
     'Send your problem question or essay title on WhatsApp and get a clear price from a law-qualified expert. Enjoy 10% off your first order.',
   whatsappMessage:
-    'Hello FIZBS! I need law assignment help. Topic/module: , Word count: , Deadline: ',
+    'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'essay-help',
     'referencing-help',

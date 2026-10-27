@@ -35,7 +35,7 @@ const LABELS = {
     tipLabel: 'Tip',
     seeAlso: 'Read next',
     sources: 'Sources',
-    msg: (title: string) => `Hello FIZBS! I read your guide "${title}" and I need help.\nSubject: \nWord count: \nDeadline: `,
+    msg: 'Hello FIZBS, I would like to discuss my assignment.',
   },
   ar: {
     home: 'الرئيسية',
@@ -56,7 +56,7 @@ const LABELS = {
     tipLabel: 'نصيحة',
     seeAlso: 'اقرأ أيضًا',
     sources: 'المصادر',
-    msg: (title: string) => `مرحبًا FIZBS! قرأت دليل "${title}" وأحتاج مساعدة.\nالتخصص: \nعدد الكلمات: \nالموعد النهائي: `,
+    msg: 'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   },
 } as const;
 
@@ -71,7 +71,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
   const blogIndex = isAr ? '/ar/blog' : '/blog';
   const homePath = isAr ? '/ar' : '/';
   const minutes = readingMinutes(post);
-  const whatsappUrl = buildWhatsAppUrl(t.msg(post.title));
+  const whatsappUrl = buildWhatsAppUrl(t.msg);
   const services = post.relatedServices
     .map((slug) => getLandingPage(slug, post.locale) ?? getLandingPage(slug, 'en'))
     .filter((p): p is LandingContent => Boolean(p));

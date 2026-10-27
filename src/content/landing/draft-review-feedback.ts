@@ -152,7 +152,7 @@ export const draftReviewFeedback: LandingContent = {
   ctaTitle: 'Know what to improve before you submit',
   ctaText:
     'Send your draft, brief and rubric on WhatsApp for a clear quote. Your subject expert will show you exactly where to focus. 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I would like a draft review with feedback. Type of work: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'proofreading-editing-services',
     'referencing-help',

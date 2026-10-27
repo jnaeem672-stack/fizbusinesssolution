@@ -152,7 +152,7 @@ export const healthcareNursingAssignmentHelp: LandingContent = {
   ctaTitle: 'Get support with your nursing or healthcare assignment',
   ctaText:
     'Share your brief and learning outcomes on WhatsApp to get a clear price and help from a health and nursing specialist. Save 10% on your first order.',
-  whatsappMessage: 'Hello FIZBS! I need nursing assignment help. Topic: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'essay-help',
     'literature-review-help',

@@ -131,6 +131,6 @@ export const assignmentHelpLuton: LandingContent = {
   ],
   ctaTitle: "Get your Luton assignment price in minutes",
   ctaText: 'Message us on WhatsApp day or night, or try the instant calculator for a price. New students save 10% on the first order.',
-  whatsappMessage: "Hi FIZBS! I am a student in Luton and need assignment help. Subject: , Word count: , Deadline: ",
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ["assignment-help-uk", "mba-assignment-help", "business-management-assignment-help", "assignment-help-london", "assignment-help-birmingham"],
 };

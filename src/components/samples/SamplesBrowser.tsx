@@ -89,7 +89,7 @@ export default function SamplesBrowser({ samples, categories }: { samples: Sampl
             {activeCategory?.description} Tell us your subject and task on WhatsApp, and an expert will explain how we can help.
           </p>
           <WhatsAppLink
-            href={buildWhatsAppUrl(`Hello FIZBS! I am looking at your ${activeCategory?.label ?? ''} samples and I need help.\nSubject: \nDeadline: `)}
+            href={buildWhatsAppUrl('Hello FIZBS, I would like to discuss my assignment.')}
             aria-label={`Ask about ${activeCategory?.label} on WhatsApp`}
             className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-[#0F7A3D] text-white font-bold rounded-xl hover:brightness-105 transition-all"
           >

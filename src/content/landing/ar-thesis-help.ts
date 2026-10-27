@@ -126,6 +126,6 @@ export const arThesisHelp: LandingContent = {
   ctaText:
     'أرسل عنوان رسالتك والمرحلة التي وصلت إليها والموعد النهائي عبر واتساب، واطلب السعر بالريال. العملاء الجدد يحصلون على خصم 10% على أول طلب.',
   whatsappMessage:
-    'مرحبًا FIZBS! أحتاج إلى مساعدة في رسالة الدكتوراه أو الماجستير. التخصص: ، الفصل أو المرحلة: ، الموعد النهائي: ',
+    'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['dissertation-help-saudi-arabia', 'research-proposal-help', 'spss-help', 'phd-admission-scholarship-help'],
 };
