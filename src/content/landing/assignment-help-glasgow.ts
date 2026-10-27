@@ -190,6 +190,6 @@ export const assignmentHelpGlasgow: LandingContent = {
   ],
   ctaTitle: 'Get your Glasgow assignment price in minutes',
   ctaText: 'Message us on WhatsApp at any time, or check the instant calculator for a price. A first order is 10% cheaper.',
-  whatsappMessage: 'Hi FIZBS! I am a student in Glasgow and need assignment help. Subject: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['assignment-help-uk', 'dissertation-help-uk', 'assignment-help-london', 'research-methodology-help', 'spss-help'],
 };

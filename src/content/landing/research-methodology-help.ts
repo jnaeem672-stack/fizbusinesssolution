@@ -166,7 +166,7 @@ export const researchMethodologyHelp: LandingContent = {
   ctaTitle: 'Build a methodology you can defend',
   ctaText:
     'Send your research questions and deadline on WhatsApp for a clear quote, and get 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need research methodology help. Topic: , Level: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'dissertation-help-uk',
     'research-proposal-help',

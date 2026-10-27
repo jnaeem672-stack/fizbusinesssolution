@@ -165,7 +165,7 @@ export const hncAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your HNC assignment price today',
   ctaText:
     'Send your unit, brief and deadline on WhatsApp, or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I need help with an HNC assignment. Subject and unit: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'hnd-hnc-assignment-help',
     'engineering-assignment-help',

@@ -9,7 +9,7 @@ import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
 import { AR_CITY_LINKS, AR_SERVICE_LINKS, AR_TECH_LINKS } from '@/constants/arLinks';
 import { PAYMENT } from '@/constants/payment';
 
-const AR_WHATSAPP_URL = buildWhatsAppUrl('مرحبًا FIZBS! لدي سؤال عن خدماتكم.');
+const AR_WHATSAPP_URL = buildWhatsAppUrl('مرحبًا FIZBS، أرغب في مناقشة واجبي.');
 
 const COLUMNS = [
   { title: 'خدماتنا بالعربية', links: AR_SERVICE_LINKS },

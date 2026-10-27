@@ -66,9 +66,7 @@ export default function ArGpaCalculator() {
   }, [rows, scale, prevGpa, prevHours, target]);
 
   const minPoint = scale === 5 ? 1 : 0;
-  const whatsappUrl = buildWhatsAppUrl(
-    `مرحبًا FIZBS! استخدمت حاسبة المعدل في موقعكم${Number.isFinite(result.term) ? ` (معدلي الفصلي ${fmt(result.term)} من ${scale})` : ''} وأحتاج مساعدة في مقرر: `
-  );
+  const whatsappUrl = buildWhatsAppUrl('مرحبًا FIZBS، أرغب في مناقشة واجبي.');
 
   return (
     <div className="rounded-3xl border border-gray-100 bg-white p-4 sm:p-6 md:p-8 shadow-xl shadow-gray-200/60" dir="rtl" lang="ar">

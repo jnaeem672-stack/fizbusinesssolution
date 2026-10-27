@@ -126,6 +126,6 @@ export const projectManagementAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your project management assignment price today',
   ctaText: 'Send your module, brief and deadline on WhatsApp, or use the instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS! I need help with a project management assignment. Module: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['business-management-assignment-help', 'mba-assignment-help', 'engineering-assignment-help', 'supply-chain-logistics-assignment-help'],
 };

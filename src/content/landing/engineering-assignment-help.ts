@@ -159,7 +159,7 @@ export const engineeringAssignmentHelp: LandingContent = {
   ctaText:
     'Send your brief, data or calculations on WhatsApp and get a clear price from an engineering-qualified expert. Enjoy 10% off your first order.',
   whatsappMessage:
-    'Hello FIZBS! I need engineering assignment help. Discipline: , Task type: , Deadline: ',
+    'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'coursework-report-help',
     'computing-it-assignment-help',

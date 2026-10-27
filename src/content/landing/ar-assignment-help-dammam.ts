@@ -212,6 +212,6 @@ export const arAssignmentHelpDammam: LandingContent = {
   ctaText:
     'راسلنا عبر واتساب لمعرفة السعر بالريال، أو استخدم حاسبة الأسعار الفورية في موقعنا. خصم 10% على أول طلب.',
   whatsappMessage:
-    'مرحبًا FIZBS! أنا طالب في الدمام وأحتاج إلى مساعدة في واجب جامعي. التخصص: ، عدد الكلمات: ، الموعد النهائي: ',
+    'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['assignment-help-saudi-arabia', 'assignment-help-riyadh', 'assignment-help-jeddah', 'dissertation-help-saudi-arabia'],
 };

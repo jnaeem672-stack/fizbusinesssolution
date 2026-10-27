@@ -263,7 +263,7 @@ export const arAssignmentHelpSaudiArabia: LandingContent = {
   ctaText:
     'أرسل متطلبات واجبك عبر واتساب أو استخدم حاسبة الأسعار الفورية لمعرفة السعر. استمتع بخصم 10% على أول طلب، مع إمكانية معرفة السعر بالريال السعودي عند الطلب.',
   whatsappMessage:
-    'مرحبًا FIZBS! أنا طالب في السعودية وأحتاج إلى مساعدة في واجب جامعي. التخصص: ، عدد الكلمات: ، الموعد النهائي: ',
+    'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: [
     'assignment-help-saudi-arabia',
     'assignment-help-riyadh',

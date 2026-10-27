@@ -277,7 +277,7 @@ export const arPhdAdmissionScholarshipHelp: LandingContent = {
   ],
   ctaTitle: 'ابدأ طلب الدكتوراه مع توجيه متخصص',
   ctaText: 'راسلنا عبر واتساب بتخصصك وفكرتك البحثية والجامعات المستهدفة، وسنرسل لك خطة واضحة وعرض سعر مناسب.',
-  whatsappMessage: 'مرحبًا FIZBS! أحتاج مساعدة في القبول في الدكتوراه.\nالتخصص: \nفكرة البحث: \nالجامعات المستهدفة: \nالموعد النهائي: ',
+  whatsappMessage: 'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   offer: { price: '120', description: 'باقات دعم القبول في الدكتوراه من 600 ريال' },
   related: ['dissertation-help-saudi-arabia', 'assignment-help-saudi-arabia', 'research-proposal-help'],
 };

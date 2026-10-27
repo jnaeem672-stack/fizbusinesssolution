@@ -186,6 +186,6 @@ export const educationAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your education assignment price today',
   ctaText: 'Send your programme, module, brief and deadline on WhatsApp, or use the instant calculator to see your price. Your first education order is 10% off.',
-  whatsappMessage: 'Hello FIZBS! I need help with an education assignment. Module: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['essay-help', 'nvivo-thematic-analysis-help', 'research-proposal-help', 'dissertation-help-uk'],
 };

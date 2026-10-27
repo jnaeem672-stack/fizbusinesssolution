@@ -160,7 +160,7 @@ export const literatureReviewHelp: LandingContent = {
   ctaTitle: 'Turn your reading into a strong literature review',
   ctaText:
     'Send your topic, word count and deadline on WhatsApp for a clear price, and enjoy 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS! I need literature review help. Topic: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: [
     'dissertation-help-uk',
     'thesis-help',

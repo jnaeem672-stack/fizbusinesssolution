@@ -174,6 +174,6 @@ export const supplyChainLogisticsAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your supply chain assignment price today',
   ctaText: 'Send your module, brief and deadline on WhatsApp with any data files, or use the instant calculator to see your price. A first supply chain order is 10% off.',
-  whatsappMessage: 'Hello FIZBS! I need help with a supply chain or logistics assignment. Module: , Word count: , Deadline: ',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
   related: ['business-management-assignment-help', 'project-management-assignment-help', 'excel-data-analysis-help', 'mba-assignment-help'],
 };

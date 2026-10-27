@@ -227,6 +227,6 @@ export const arAssignmentHelpJeddah: LandingContent = {
   ctaText:
     'راسلنا عبر واتساب بالعربية أو الإنجليزية لمعرفة السعر بالريال، أو جرّب حاسبة الأسعار الفورية. خصم 10% على أول طلب لطلاب جدة.',
   whatsappMessage:
-    'مرحبًا FIZBS! أنا طالب في جدة وأحتاج إلى مساعدة في واجب جامعي. التخصص: ، عدد الكلمات: ، الموعد النهائي: ',
+    'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['assignment-help-saudi-arabia', 'assignment-help-riyadh', 'assignment-help-dammam', 'dissertation-help-saudi-arabia'],
 };

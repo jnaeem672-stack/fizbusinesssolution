@@ -142,6 +142,6 @@ export const arAutocadHelp: LandingContent = {
   ctaTitle: 'أرسل تعليمات لوحتك واعرف السعر',
   ctaText:
     'أرسل تعليمات اللوحة أو الرسم المرجعي والموعد النهائي عبر واتساب، واطلب السعر بالريال. العملاء الجدد يحصلون على خصم 10% على أول طلب.',
-  whatsappMessage: 'مرحبًا FIZBS! أحتاج إلى مساعدة في لوحة AutoCAD. نوع الرسم: ، عدد اللوحات: ، الموعد النهائي: ',
+  whatsappMessage: 'مرحبًا FIZBS، أرغب في مناقشة واجبي.',
   related: ['3ds-max-design-help', 'solidworks-help', 'programming-help', 'assignment-help-saudi-arabia'],
 };
