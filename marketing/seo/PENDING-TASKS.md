@@ -74,6 +74,13 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
 - Quora (24 Oct): profile filled (credential, bio, employment, education, Lahore, 12 topics) and 2 answers live:
   How do I do Harvard referencing? (link to Harvard tool) and Harvard vs APA (links to both tools). Owner agreed:
   1 answer a day, a link in only every second or third answer. Medium account: owner creates, then Claude writes.
+- Nathre (nathre.com, profile /writers/sajjad-akbarali). Article 2 submitted 28 Oct (owner yes): "طريقة حساب المعدل
+  التراكمي من 5 ومن 4 بالأمثلة" at nathre.com/تعليم/طريقة-حساب-المعدل-التراكمي-من-5-ومن-4-بالأمثلة-دليل-طلاب, category
+  التعليم, cover image, link to /ar/gpa-calculator, reference block (Al-Jouf University study regulations). Article 1
+  ("3 أخطاء تضيّع درجات الاسايمنت") is at nathre.com/تعليم/3-أخطاء-تضيّع-درجات-الاسايمنت-ما-تعلمته-من-العمل-مع-طلاب.
+  Both pages are still "noindex,follow" and missing from the profile, so they are in Nathre review (approved articles
+  show "index,follow"). Article links are rel="ugc nofollow": the value is readers and brand, not link equity.
+  Check again on 30 Oct; if article 1 is still pending after a week, ask Nathre support.
 
 ## Reference tool workspace (23 Oct 2026, owner asked for a MyBib-like tool)
 - Harvard and APA tool pages now use src/components/tools/refs/ (ReferenceWorkspace, SourceEditor, store, exporters,
