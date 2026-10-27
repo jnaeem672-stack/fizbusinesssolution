@@ -454,3 +454,14 @@ Second bulk check, 20 Oct 22:40 (sa_bulk_list1-99.csv and uk_bulk_list2-95.csv):
 Competitor backlinks are almost all spam (score 2 to 5, auto-generated sites). Do not buy or copy them.
 Real links only: LinkedIn, Haraj, Business Profile, education blogs, and the GPA calculator and Harvard
 generator as tools people link to.
+
+## WhatsApp opening message (27 Oct 2026, owner "yes", live 27 Oct ~16:00 PKT, merge 26db720)
+- A Dammam lead (26 Oct night, Saudi number) sent the Dammam page's prefill with every field empty, then went quiet
+  after 4 messages and 2 late calls (lesson: one message, then wait; no calls at night unless the client asks).
+- Owner asked for one simple line everywhere: English "Hello FIZBS, I would like to discuss my assignment." and Arabic
+  "مرحبًا FIZBS، أرغب في مناقشة واجبي." on all landing, tool, blog, sample, expert, team, header and footer links.
+  Call buttons: "...book a WhatsApp call to discuss my assignment". The price calculator keeps its filled-in estimate.
+- Trade-off accepted: WhatsApp messages no longer show which page a lead came from (form emails still do).
+- Search Console, Saudi Arabia, 19 to 25 Oct: 3 clicks, 484 impressions, pos 23.7. Clicked query visible: مكتبة خدمات الطالب
+  (to /ar/student-services). The 24/25 Oct click (the 25 Oct client) is an anonymised query; 24/25 Oct impressions led by
+  اسايمنت بالانجليزي, مكتبة خدمات الطالب, خدمات طلابيه قريبه من موقعي. The Dammam page has no Saudi impressions yet.
