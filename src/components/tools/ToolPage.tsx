@@ -29,6 +29,7 @@ export default function ToolPage({ tool, children, bare = false }: { tool: ToolC
       '@type': 'WebApplication',
       name: tool.name,
       description: tool.metaDescription,
+      ...(tool.quickAnswer ? { abstract: tool.quickAnswer } : {}),
       url,
       applicationCategory: 'EducationalApplication',
       operatingSystem: 'Any',
@@ -85,6 +86,12 @@ export default function ToolPage({ tool, children, bare = false }: { tool: ToolC
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-[1100px] mx-auto px-4 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14">
           <article className="lg:col-span-8 text-gray-700 text-[17px] leading-relaxed">
+            {tool.quickAnswer && (
+              <div id="quick-answer" className="mb-10 rounded-2xl border-l-4 border-[#C9A227] bg-[#FBF6E6] p-6">
+                <p className="text-sm font-black uppercase tracking-widest text-primary mb-2">Quick answer</p>
+                <p className="text-navy text-[17px] leading-relaxed">{tool.quickAnswer}</p>
+              </div>
+            )}
             {tool.sections.map((section) => (
               <div key={section.heading} className="mb-10">
                 <h2 id={sectionId(section.heading)} className="scroll-mt-[130px] text-2xl md:text-3xl font-extrabold text-navy tracking-tight mb-4">

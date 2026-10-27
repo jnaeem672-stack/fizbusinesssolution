@@ -7,6 +7,7 @@ import PaymentSection from '@/components/PaymentSection';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
+import { PERSON_PROFILES } from '@/constants/social';
 import { EXPERTS, type ExpertProfile } from '@/content/experts';
 import { getLandingPage, landingLabel, landingPath, SITE_URL } from '@/content/landing';
 
@@ -32,6 +33,7 @@ export default function ExpertProfilePage({ expert }: { expert: ExpertProfile })
         ...(expert.university && { alumniOf: expert.university.split(',')[0] }),
         knowsLanguage: expert.languages?.split(',').map((l) => l.trim()),
         worksFor: { '@type': 'Organization', name: 'FIZ Business Solutions', url: SITE_URL },
+        ...(PERSON_PROFILES[expert.slug] && { sameAs: PERSON_PROFILES[expert.slug] }),
       },
     },
     {

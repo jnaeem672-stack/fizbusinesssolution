@@ -6,7 +6,7 @@ import Providers from '@/components/Providers';
 import SiteHeader from '@/components/SiteHeader';
 import DeferredWidgets from '@/components/DeferredWidgets';
 import LeadSourceTracker from '@/components/LeadSourceTracker';
-import { SOCIAL_URLS } from '@/constants/social';
+import { PERSON_PROFILES, SOCIAL_URLS } from '@/constants/social';
 
 // Self-hosted heading font (was a render-blocking Google Fonts @import)
 const jakarta = localFont({
@@ -127,7 +127,7 @@ export default function RootDocument({
               foundingDate: '2015',
               sameAs: SOCIAL_URLS,
               founder: [
-                { '@type': 'Person', name: 'Sajjad Akbar Ali', jobTitle: 'Co-Founder', url: 'https://fizbusinessolutions.com/experts/sajjad-akbar-ali' },
+                { '@type': 'Person', name: 'Sajjad Akbar Ali', jobTitle: 'Co-Founder', url: 'https://fizbusinessolutions.com/experts/sajjad-akbar-ali', sameAs: PERSON_PROFILES['sajjad-akbar-ali'] },
                 { '@type': 'Person', name: 'Fawad Hussain Khan', jobTitle: 'Co-Founder', url: 'https://fizbusinessolutions.com/experts/fawad-hussain-khan' },
               ],
               email: 'info@fizbusinessolutions.com',

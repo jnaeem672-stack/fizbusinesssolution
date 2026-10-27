@@ -22,6 +22,8 @@ export interface ToolContent {
   metaDescription: string;
   h1: string;
   subtitle: string;
+  /** Answer-first summary shown above the guide content and used as the schema abstract (for search and AI answers) */
+  quickAnswer?: string;
   /** One-line card description on the tools hub */
   cardText: string;
   sections: ToolSection[];
@@ -67,6 +69,8 @@ export const TOOLS: ToolContent[] = [
     h1: 'University Grade Calculator: UK Degree Classification',
     subtitle:
       "Work out your university grade and degree classification from your module marks, see how close you are to the next band, and find the average you need in your remaining modules. Works for undergraduate honours degrees and Master's degrees.",
+    quickAnswer:
+      "Most UK universities award a First for an overall average of 70% or above, a 2:1 for 60 to 69%, a 2:2 for 50 to 59% and a Third for 40 to 49%. Your average is weighted by module credits, and usually only the second and final years count, with the final year weighted more heavily. Taught Master's degrees are awarded as a Distinction (usually 70 or above), Merit (60 to 69) or Pass (50 to 59).",
     cardText: 'See your First, 2:1, 2:2 or Master\'s grade, and the marks you need in your remaining modules.',
     sections: [
       {
@@ -198,6 +202,8 @@ export const TOOLS: ToolContent[] = [
     h1: 'Free Harvard Referencing Generator',
     subtitle:
       'A free Harvard reference generator, citation maker and bibliography tool in the Cite Them Right style. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and lecture slides, keep a project for each assignment, and download your list as a Word file or copy it straight into your document, italics included.',
+    quickAnswer:
+      "A Harvard reference in the Cite Them Right style gives the author's surname and initial, the year in round brackets, the title in italics, then the edition and publisher, for example: Surname, Initial. (Year) Title of book. Edition. Publisher. In your text you cite the author and year, such as (Smith, 2021). Paste a DOI, ISBN or link into the generator above and it builds both for you.",
     cardText: 'Autocite by DOI, ISBN or link. Harvard references for 10 source types, saved in projects, with Word, RIS and BibTeX downloads.',
     sections: [
       {
@@ -372,6 +378,8 @@ export const TOOLS: ToolContent[] = [
     h1: 'Free APA Referencing Generator (7th Edition)',
     subtitle:
       'Create APA 7 references and in-text citations in seconds. Paste a DOI, ISBN or web link, or search by title, and the details fill in for you. Reference 10 types of source, from books and journal articles to newspapers, theses and videos, keep a project for each assignment, and download your list as a Word file or copy it straight into your document, italics included.',
+    quickAnswer:
+      "An APA 7 reference gives the author's surname and initials, the year in round brackets, the title in sentence case, then the source, for example: Author, A. A. (Year). Title of book (2nd ed.). Publisher. In your text you write the author and year, such as (Smith, 2021), and use et al. for three or more authors. Paste a DOI, ISBN or link into the generator above and it builds both for you.",
     cardText: 'Autocite by DOI, ISBN or link. APA 7 references for 10 source types, saved in projects, with Word, RIS and BibTeX downloads.',
     sections: [
       {
@@ -512,6 +520,8 @@ export const TOOLS: ToolContent[] = [
     h1: 'Free OSCOLA Referencing Generator (5th Edition)',
     subtitle:
       'Create OSCOLA footnotes for cases, Acts, statutory instruments, EU law, ECHR judgments, books, journal articles, websites and more, following the 5th edition published by the Oxford Law Faculty in March 2026. Each source gives you the first footnote, the short form for later footnotes and the entry for your Table of Cases, Table of Legislation or Bibliography, and your list is sorted for you.',
+    quickAnswer:
+      "OSCOLA is the footnote referencing system used by UK law schools, and its 5th edition, published by the Oxford Law Faculty in March 2026, replaced the 2012 edition. Cite each source in full in its first footnote, for example Corr v IBC Vehicles Ltd [2008] UKHL 13, [2008] 1 AC 884, then use a short form with a cross-reference such as Corr (n 1), because the 5th edition no longer uses ibid. Cases, legislation and secondary sources go in a Table of Cases, a Table of Legislation and a Bibliography.",
     cardText: 'OSCOLA 5th edition footnotes for cases, legislation, books and articles, with tables of cases and legislation and a bibliography.',
     sections: [
       {
@@ -652,6 +662,8 @@ export const TOOLS: ToolContent[] = [
     h1: 'Word Counter and Words to Pages Converter',
     subtitle:
       'Paste your essay or assignment to count words, characters, sentences and paragraphs. Leave out your reference list in one click, and see how many pages your word count fills at different line spacings.',
+    quickAnswer:
+      "On an A4 page with standard margins and a 12 point font, 1,000 words fill about 2 pages single spaced, 3 pages at 1.5 line spacing and 4 pages double spaced. The main text, headings and in-text citations usually count towards your word limit, while the reference list, appendices and title page usually do not. Paste your text above to count it and leave out your references in one click.",
     cardText: 'Count words and characters, exclude your reference list, and convert words to pages.',
     sections: [
       {
