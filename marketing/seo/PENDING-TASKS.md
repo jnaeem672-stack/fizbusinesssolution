@@ -102,6 +102,10 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   Quora (Sajjad-Akbar-53) and Nathre profiles as Person sameAs (root Organization founder and /experts page).
   Checked live (23 pages). IndexNow sent for the 21 changed URLs (HTTP 200, key now validated).
   Still missing: FIZBS LinkedIn company page link for Organization sameAs (owner to send).
+  28 Oct 02:41: owner will create the LinkedIn company page later, after LinkedIn identity verification (passport
+  not with him now). Ready for him: logo and cover in scratchpad lipage/ (also sent in chat) and all field texts
+  (name, URL fizbusinessolutions or fizbs, E-Learning Providers, tagline, EN and AR About, specialties) in chat.
+  When he sends the page link: add it to SOCIAL_LINKS (footer + Organization sameAs) on a branch, show, then deploy.
 
 ## Reference tool workspace (23 Oct 2026, owner asked for a MyBib-like tool)
 - Harvard and APA tool pages now use src/components/tools/refs/ (ReferenceWorkspace, SourceEditor, store, exporters,
