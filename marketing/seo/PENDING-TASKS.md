@@ -500,3 +500,14 @@ generator as tools people link to.
   3 MFRD and HNC vs HND/HNC fix, 4 lighter template on subject/service pages, 5 internal links from the UK hub,
   6 education examples, 7 OSCOLA tool + guide, 8 new pages later, 9 owner off-site (reviews, guest posts, GBP only with a
   real address), 10 check after 2 weeks.
+- 27 Oct 21:20 PKT: owner said yes; indexing-fix merged to main (b14fa53) and verified LIVE 21:45 PKT: marketing and HNC
+  pages without the call and pay-half blocks (calculator and WhatsApp present); /assignment-help-uk shows "Subjects we
+  support in the UK" and "Writing and research help"; /dissertation-help-uk shows "Help with each part of your dissertation".
+- Indexing batch 1 (27 Oct 21:45 to 22:10 PKT, Chrome): REQUESTED 11: /assignment-help-leeds, /marketing-assignment-help,
+  /finance-accounting-assignment-help, /healthcare-nursing-assignment-help, /business-management-assignment-help,
+  /computing-it-assignment-help, /engineering-assignment-help, /proofreading-editing-services, /literature-review-help,
+  /thesis-help, /research-proposal-help. Quota exceeded at /case-study-help.
+  Already indexed now (report was stale): /education-assignment-help, /nvivo-thematic-analysis-help.
+  Batch 2 (scheduled 28 Oct 13:00 PKT in this session): /case-study-help, /coursework-report-help, /data-analysis-help,
+  /research-methodology-help, /excel-data-analysis-help and 7 guides (dissertation introduction, research question,
+  human vs AI, nursing topics, CS topics, finance topics, Gibbs). Most show "URL is unknown to Google".
