@@ -92,7 +92,8 @@ export const humanVsAiAcademicWritingPost: BlogPost = {
         "At UK universities, the difference between a 2:2 and a First usually comes down to critical analysis. Marking criteria often ask for phrases like 'critical evaluation', 'synthesis of sources' and 'well-supported argument'. Saudi universities, particularly at postgraduate level and on English-taught programmes, increasingly use similar criteria.",
         "AI tools are good at description: what a theory says, what the main models are, what the advantages and disadvantages might be. They are much weaker at the kind of analysis that earns higher marks: explaining why one author's evidence is stronger than another's, spotting a limitation in a study's sample, or applying a framework to a real case and showing where it breaks down. When a marker reads a script that is fluent but never commits to a view, it tends to sit in the middle bands, however polished it sounds."
       ],
-      tip: "A quick self-check: highlight every sentence in your draft where you make a judgement (for example 'this suggests', 'however, this is limited because', 'the stronger evidence is'). If there are very few highlights, the work is probably descriptive, whoever wrote it."
+      tip: "A quick self-check: highlight every sentence in your draft where you make a judgement (for example 'this suggests', 'however, this is limited because', 'the stronger evidence is'). If there are very few highlights, the work is probably descriptive, whoever wrote it.",
+      links: [{ label: "UK university grading system", href: "/blog/uk-university-grading-system" }],
     },
     {
       heading: "Referencing: the biggest risk of using AI for assignments",

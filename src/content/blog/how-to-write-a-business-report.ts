@@ -160,6 +160,7 @@ export const howToWriteABusinessReportPost: BlogPost = {
         "Marking criteria vary, but most UK business schools reward the same core qualities: a clear structure that follows report conventions, accurate and relevant use of theory, analysis that goes beyond description, use of credible evidence, recommendations that follow logically from the analysis, and correct referencing and presentation.",
         "Before submitting, check your report against the marking rubric line by line. If the rubric gives a high weighting to critical analysis, make sure every main section explains why factors matter and how they affect the organisation, not just what they are.",
       ],
+      links: [{ label: "UK university grading system", href: "/blog/uk-university-grading-system" }],
     },
     {
       heading: 'Common business report mistakes',

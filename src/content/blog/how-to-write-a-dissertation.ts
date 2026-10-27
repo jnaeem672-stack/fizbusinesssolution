@@ -189,7 +189,8 @@ export const howToWriteADissertationPost: BlogPost = {
         "Ignoring the marking criteria in the module handbook.",
         "Going significantly over or under the word limit.",
         "Leaving no time for editing and proofreading before the deadline."
-      ]
+      ],
+      links: [{ label: "Master's merit and distinction explained", href: "/blog/uk-university-grading-system" }]
     },
     {
       heading: "Need help with your dissertation?",

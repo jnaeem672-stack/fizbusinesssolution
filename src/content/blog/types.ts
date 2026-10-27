@@ -6,6 +6,8 @@ export interface BlogSection {
   bullets?: string[];
   /** Ordered (numbered) list, e.g. steps */
   steps?: string[];
+  /** Optional table shown after the paragraphs (for example grade bands) */
+  table?: { caption: string; head: string[]; rows: string[][] };
   /** Optional H3 sub-sections inside this section */
   subsections?: { heading: string; paragraphs?: string[]; bullets?: string[] }[];
   /** Optional highlighted tip / example box */
