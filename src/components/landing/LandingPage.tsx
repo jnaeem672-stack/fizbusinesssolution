@@ -69,6 +69,17 @@ const LABELS = {
 } as const;
 
 /** Arabic counted noun: 100 ريال, 150 ريالًا (numbers ending in 11 to 99 take the accusative) */
+/** English pages that keep the full template (call booking and payment blocks with their FAQs) */
+const FULL_TEMPLATE_SLUGS = [
+  'assignment-help-uk',
+  'dissertation-help-uk',
+  'assignment-help-saudi-arabia',
+  'assignment-help-uae',
+  'assignment-help-usa',
+  'mba-assignment-help',
+  'phd-admission-scholarship-help',
+];
+
 function riyalWord(n: number): string {
   const lastTwo = Math.round(n) % 100;
   return lastTwo >= 11 && lastTwo <= 99 ? 'ريالًا' : 'ريال';
@@ -89,6 +100,10 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   // City pages carry a lighter template: the call booking, payment block and their FAQs live on the main service pages,
   // so each city page is mostly its own local content rather than text repeated on every city page.
   const isCityPage = Boolean(cityLink);
+  // English subject, service and qualification pages use the same lighter template (27 Oct 2026): the call booking and
+  // payment blocks repeated the same text on dozens of pages, and Google left many of those pages unindexed.
+  // The full template stays on the main hub pages and on Arabic pages. The sidebar call button stays everywhere.
+  const isLightTemplate = isCityPage || (!isAr && !FULL_TEMPLATE_SLUGS.includes(page.slug));
   const city = cityLink
     ? {
         '@type': 'City',
@@ -488,13 +503,13 @@ export default function LandingPage({ page }: { page: LandingContent }) {
         </div>
       </section>
 
-      {!isCityPage && <ExpertCallSection locale={page.locale} className="bg-gray-50" />}
+      {!isLightTemplate && <ExpertCallSection locale={page.locale} className="bg-gray-50" />}
 
       <QuoteCalculator locale={page.locale} currency={currency} />
 
-      {!isCityPage && <PaymentSection locale={page.locale} className="bg-soft-rose" />}
+      {!isLightTemplate && <PaymentSection locale={page.locale} className="bg-soft-rose" />}
 
-      <FaqSection faqs={isCityPage ? page.faqs : [...page.faqs, EXPERT_CALL[page.locale].faq, PAYMENT[page.locale].faq]} title={t.faqTitle} rtl={isAr} className="bg-white" />
+      <FaqSection faqs={isLightTemplate ? page.faqs : [...page.faqs, EXPERT_CALL[page.locale].faq, PAYMENT[page.locale].faq]} title={t.faqTitle} rtl={isAr} className="bg-white" />
 
       {/* Final CTA */}
       <section className="relative py-16 md:py-20 overflow-hidden bg-navy" dir={isAr ? 'rtl' : undefined}>

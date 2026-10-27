@@ -227,6 +227,29 @@ export const SUBJECT_LINKS: { label: string; href: string }[] = [
   { label: 'Engineering', href: '/engineering-assignment-help' },
 ];
 
+/** Writing and research services, linked from the UK hub pages so each service sits under its hub */
+export const UK_WRITING_SERVICE_LINKS: { label: string; href: string }[] = [
+  { label: 'Essay Help', href: '/essay-help' },
+  { label: 'Coursework & Report Help', href: '/coursework-report-help' },
+  { label: 'Case Study Help', href: '/case-study-help' },
+  { label: 'Presentation Help', href: '/presentation-help' },
+  { label: 'Referencing Help', href: '/referencing-help' },
+  { label: 'Proofreading & Editing', href: '/proofreading-editing-services' },
+  { label: 'Draft Review & Feedback', href: '/draft-review-feedback' },
+];
+export const UK_RESEARCH_SERVICE_LINKS: { label: string; href: string }[] = [
+  { label: 'Research Proposal Help', href: '/research-proposal-help' },
+  { label: 'Literature Review Help', href: '/literature-review-help' },
+  { label: 'Research Methodology Help', href: '/research-methodology-help' },
+  { label: 'Data Analysis Help', href: '/data-analysis-help' },
+  { label: 'SPSS Help', href: '/spss-help' },
+  { label: 'NVivo & Thematic Analysis', href: '/nvivo-thematic-analysis-help' },
+  { label: 'Excel Data Analysis', href: '/excel-data-analysis-help' },
+  { label: 'Python & Stata Help', href: '/python-stata-help' },
+  { label: 'Thesis Help', href: '/thesis-help' },
+  { label: 'Proofreading & Editing', href: '/proofreading-editing-services' },
+];
+
 const SAUDI_CITY_HREFS = SAUDI_CITY_SLUGS.map((slug) => `/${slug}`);
 /** UAE pages (hub first) */
 export const UAE_LINKS: { label: string; href: string }[] = [
@@ -268,6 +291,13 @@ export function linkGroupsForPage(slug: string, locale: 'en' | 'ar' = 'en'): { t
   const isSaudiCity = SAUDI_CITY_LINKS.some((l) => l.href === self);
   if (isUkCity || slug === 'assignment-help-uk' || slug === 'dissertation-help-uk') {
     groups.push({ title: 'We support students across the UK', links: UK_CITY_LINKS.filter((l) => l.href !== self) });
+  }
+  if (slug === 'assignment-help-uk') {
+    groups.push({ title: 'Subjects we support in the UK', links: SUBJECT_LINKS });
+    groups.push({ title: 'Writing and research help', links: [...UK_WRITING_SERVICE_LINKS, ...UK_RESEARCH_SERVICE_LINKS.filter((l) => !UK_WRITING_SERVICE_LINKS.some((w) => w.href === l.href))] });
+  }
+  if (slug === 'dissertation-help-uk') {
+    groups.push({ title: 'Help with each part of your dissertation', links: UK_RESEARCH_SERVICE_LINKS });
   }
   if (isSaudiCity || slug === 'assignment-help-saudi-arabia') {
     groups.push({ title: 'We support students across Saudi Arabia', links: SAUDI_CITY_LINKS.filter((l) => l.href !== self) });
