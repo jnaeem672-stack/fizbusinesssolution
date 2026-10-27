@@ -96,6 +96,12 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
   28 Oct 13:10 PKT (quota 100 a day, resets 05:00 PKT); lists in scratchpad bing/day1.txt and day2.txt.
 - When pages change, send their URLs to IndexNow again (same key). Re-check BWT indexed count and AI Performance
   in a week. Plan B (Arabic quick answers, tool page quick answers, sameAs profiles) waits for the owner's yes.
+- Plan B LIVE 28 Oct 02:35 PKT (owner yes): src/content/blog/geoAr.ts gives 14 Arabic guides a "الإجابة باختصار" box
+  and BlogPosting abstract (what-is-an-assignment left alone, its intro already answers); tools.ts quickAnswer on the
+  5 tool pages (box + WebApplication abstract); PERSON_PROFILES in src/constants/social.ts adds Sajjad's LinkedIn,
+  Quora (Sajjad-Akbar-53) and Nathre profiles as Person sameAs (root Organization founder and /experts page).
+  Checked live (23 pages). IndexNow sent for the 21 changed URLs (HTTP 200, key now validated).
+  Still missing: FIZBS LinkedIn company page link for Organization sameAs (owner to send).
 
 ## Reference tool workspace (23 Oct 2026, owner asked for a MyBib-like tool)
 - Harvard and APA tool pages now use src/components/tools/refs/ (ReferenceWorkspace, SourceEditor, store, exporters,
