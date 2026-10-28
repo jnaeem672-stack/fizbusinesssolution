@@ -21,7 +21,7 @@ export const assignmentHelpRiyadh: LandingContent = {
   highlights: ['Delivered fully online', 'English-medium specialists', 'Pay in SAR or GBP', '24/7 WhatsApp'],
   intro: [
     "Many degree programmes in the Saudi capital are now taught and assessed in English, from undergraduate business courses to postgraduate research. For students who think and speak mainly in Arabic, writing a long academic report in English can be the hardest part of the course. FIZ Business Solutions (FIZBS) offers assignment help Riyadh students can access entirely online, with guidance from Master's and PhD-qualified experts who understand international academic standards.",
-    "We have supported university students since 2015, more than 10,000 in total, including learners across Saudi Arabia. Whether you need help understanding a brief, organising an argument or presenting your ideas in clear academic English, an expert in your subject can work with you on your request.",
+    "We have supported university students since 2015, more than 10,000 in total, including learners across Saudi Arabia. Whether you need help understanding a brief, organising an argument or presenting your ideas in clear academic English, an expert in your subject can work with you on your request. Riyadh is one of many cities covered by our [assignment help across Saudi Arabia](/assignment-help-saudi-arabia).",
     "This page explains who we support in the capital, the kinds of coursework Riyadh students bring to us, the mistakes we see most often in English-medium assignments, and exactly how the process works from your first WhatsApp message to payment in Saudi riyals.",
   ],
   sections: [

@@ -3,9 +3,10 @@ import type { LandingContent } from './types';
 export const assignmentHelpSaudiArabia: LandingContent = {
   slug: 'assignment-help-saudi-arabia',
   locale: 'en',
-  metaTitle: 'Assignment Help Saudi Arabia | Expert Support from £20',
+  updated: '2026-10-29',
+  metaTitle: 'Assignment Help Saudi Arabia | English Experts from £20',
   metaDescription:
-    "Assignment help Saudi Arabia students trust since 2015. Master's and PhD-qualified experts, 24/7 WhatsApp support and 10% off your first order.",
+    "Assignment help in Saudi Arabia, in English, from £20 per 1,000 words. Master's and PhD experts, pay in SAR and get 10% off your first order.",
   keywords: [
     'assignment help Saudi Arabia',
     'assignment help KSA',
@@ -183,6 +184,22 @@ export const assignmentHelpSaudiArabia: LandingContent = {
     {
       q: 'Is your assignment help service confidential?',
       a: 'Yes, our service is 100% confidential. Your personal details, university and files are never shared with anyone.',
+    },
+    {
+      q: 'Which Saudi universities do you support students from?',
+      a: 'We support students from English-medium institutions across the Kingdom, including King Saud University, King Abdulaziz University, King Fahd University of Petroleum and Minerals, Prince Sultan University, Alfaisal University and Effat University. Wherever you study, your expert follows your module brief, marking rubric and referencing style.',
+    },
+    {
+      q: 'Do you provide support in Arabic as well as English?',
+      a: 'Yes. Our main academic support is in English, since many Saudi programmes are taught in English, but you can message us in Arabic on WhatsApp and send screenshots of your brief. We also publish free student guides in Arabic to explain research and referencing step by step.',
+    },
+    {
+      q: 'Can you help me improve the academic English in my assignment?',
+      a: 'Yes. Alongside subject help, our experts can strengthen the academic English in your draft, so your argument reads clearly and formally. This includes grammar, sentence structure, academic tone and consistent terminology, while keeping your own ideas and voice. Language improvement starts from £12 per 1,000 words.',
+    },
+    {
+      q: 'How do deadlines work across Saudi and UK time zones?',
+      a: 'Saudi Arabia is two to three hours ahead of the UK, depending on the time of year. Our team works across both time zones and WhatsApp support runs 24/7, so the gap never slows your request. Share your deadline in your local time and we will plan the work around it.',
     },
   ],
   ctaTitle: 'Get your assignment help price today',

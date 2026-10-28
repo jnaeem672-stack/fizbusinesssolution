@@ -21,7 +21,7 @@ export const assignmentHelpMakkah: LandingContent = {
   highlights: ['Fully online', "Master's and PhD experts", 'Pay in SAR or GBP', '24/7 WhatsApp'],
   intro: [
     "Makkah is home to one of the Kingdom's oldest universities and to thousands of students who balance study with family, work and the demands of the busiest religious seasons in the world. FIZ Business Solutions (FIZBS) offers assignment help Makkah students can access entirely online, with guidance from Master's and PhD-qualified experts in more than 115 subjects.",
-    'Since 2015 we have supported more than 10,000 university students in the UK, Saudi Arabia and the Gulf. Whether your course is taught in Arabic or English, an expert in your subject can help you understand the brief, plan your answer, use reliable sources and present your work clearly.',
+    'Since 2015 we have supported more than 10,000 university students in the UK, Saudi Arabia and the Gulf. Whether your course is taught in Arabic or English, an expert in your subject can help you understand the brief, plan your answer, use reliable sources and present your work clearly. Makkah is covered by [our Saudi Arabia assignment support](/assignment-help-saudi-arabia).',
     'This page covers the students we support in Makkah, how to plan coursework around Ramadan and the Hajj season, topics that draw on the city\'s economy, and how ordering and payment in Saudi riyals work.',
   ],
   sections: [
