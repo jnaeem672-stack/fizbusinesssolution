@@ -4,6 +4,7 @@ import FaqSection from '@/components/FaqSection';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { EXPERT_CALL } from '@/constants/expertCall';
 import { PAYMENT } from '@/constants/payment';
+import { UK_ADDRESS_LINE, UK_PHONE_DISPLAY, UK_TEL_URL } from '@/constants/contact';
 
 const STEPS = [
   {
@@ -53,7 +54,7 @@ const FAQS = [
   },
   {
     q: 'Where is FIZBS based?',
-    a: 'FIZ Business Solutions is an online service. We support university students in the UK, Saudi Arabia and the wider Gulf through WhatsApp, email and our website.',
+    a: 'FIZ Business Solutions supports students online through WhatsApp, email and our website. Our UK contact address is 77 St Leonards Rd, Windsor, Berkshire SL4 3BZ, and you can reach our UK line on 01753 620899. We work with university students across the UK, Saudi Arabia and the wider Gulf.',
   },
   {
     q: 'When can I contact you?',
@@ -99,6 +100,15 @@ export default function ContactInfo() {
               </li>
             ))}
           </ul>
+
+          <div className="mt-10 rounded-2xl border border-gray-100 bg-gray-50 p-6">
+            <h2 className="text-lg font-extrabold text-navy mb-2">UK contact details</h2>
+            <p className="text-[15px] text-gray-600">
+              FIZ Business Solutions<br />
+              {UK_ADDRESS_LINE}<br />
+              Phone: <a href={UK_TEL_URL} className="font-bold text-navy hover:text-primary">{UK_PHONE_DISPLAY}</a>
+            </p>
+          </div>
 
           <h2 className="mt-14 text-2xl md:text-3xl font-extrabold text-navy tracking-tight mb-4">Students we support</h2>
           <p className="mb-4">
