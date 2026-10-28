@@ -20,7 +20,7 @@ export const hrmAssignmentHelp: LandingContent = {
     'Support with strategic HRM, employment relations, talent management, reward and international HRM. Your expert helps you apply HR models to real organisations and back every recommendation with evidence.',
   highlights: ['From £20 per 1,000 words', 'HR and people specialists', 'UK and Saudi students', '24/7 WhatsApp support'],
   intro: [
-    "HRM assignment help from FIZ Business Solutions (FIZBS) connects you with Master's and PhD-qualified specialists in human resource management, organisational behaviour and employment relations. Business and HR are at the centre of what we do, and we have supported more than 10,000 university students since 2015.",
+    "HRM assignment help from FIZ Business Solutions (FIZBS) connects you with Master's and PhD-qualified specialists in human resource management, organisational behaviour and employment relations. Business and HR are at the centre of what we do, and we have supported more than 10,000 university students since 2015. HRM is a popular module on the MBA, so many students also use our [help with MBA assignments](/mba-assignment-help).",
     'HRM assignments rarely reward a tidy description of a model. Markers want to see how HR practices fit an organisation\'s strategy, context and people, and whether the evidence shows they actually work. Our experts help you move from describing HR to analysing and evaluating it.',
     'Support starts from £20 per 1,000 words, and you can check your price in seconds with the instant calculator on our homepage.',
   ],

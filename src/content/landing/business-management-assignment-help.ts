@@ -29,7 +29,7 @@ export const businessManagementAssignmentHelp: LandingContent = {
     {
       heading: 'Modules covered by our management assignment help',
       paragraphs: [
-        "Our management assignment help spans the full range of undergraduate, postgraduate and MBA business modules. Each expert is matched to your topic, so a supply chain question goes to someone who knows logistics and a leadership essay goes to someone who knows the leadership literature.",
+        "Our management assignment help spans the full range of undergraduate, postgraduate and MBA business modules. Each expert is matched to your topic, so a supply chain question goes to someone who knows logistics and a leadership essay goes to someone who knows the leadership literature. Students on a Master's in Business Administration can also use our dedicated [MBA assignment help](/mba-assignment-help).",
         "Example topics we regularly support include evaluating the growth strategy of a UK supermarket, assessing the impact of hybrid working on employee wellbeing, analysing supply chain disruption in the automotive sector, comparing market entry modes for a brand expanding into the Gulf, and planning change in a public sector organisation.",
       ],
       bullets: [

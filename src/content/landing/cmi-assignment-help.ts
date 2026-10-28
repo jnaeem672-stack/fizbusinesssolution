@@ -21,7 +21,7 @@ export const cmiAssignmentHelp: LandingContent = {
     'Expert guidance for CMI Level 3, 5 and 7 qualifications, from team leading and operational management to strategic leadership, with support for workplace-based tasks and reflective writing.',
   highlights: ['From £20 per 1,000 words', 'Management specialists', 'Level 3, 5 and 7', '24/7 WhatsApp support'],
   intro: [
-    'CMI assignment help from FIZ Business Solutions (FIZBS) supports learners studying Chartered Management Institute qualifications, whether on their own, through an employer, or as part of a management apprenticeship or university programme. Leadership and management are central to our business focus, and we have supported students since 2015.',
+    'CMI assignment help from FIZ Business Solutions (FIZBS) supports learners studying Chartered Management Institute qualifications, whether on their own, through an employer, or as part of a management apprenticeship or university programme. Leadership and management are central to our business focus, and we have supported students since 2015. Many managers studying with us also take our [MBA assignment help for managers](/mba-assignment-help).',
     'CMI assessments test whether you can apply management theory to real situations at work. Briefs are linked to learning outcomes and assessment criteria, and assessors look for clear evidence that each criterion has been covered, supported by theory and examples from your organisation. Our experts help you plan answers that meet every requirement without padding.',
     'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on our homepage.',
   ],

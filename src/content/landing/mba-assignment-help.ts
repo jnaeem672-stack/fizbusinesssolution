@@ -3,9 +3,10 @@ import type { LandingContent } from './types';
 export const mbaAssignmentHelp: LandingContent = {
   slug: 'mba-assignment-help',
   locale: 'en',
-  metaTitle: 'MBA Assignment Help | UK and Saudi Experts from £20',
+  updated: '2026-10-29',
+  metaTitle: 'MBA Assignment & Dissertation Help | Experts from £20',
   metaDescription:
-    'MBA assignment help from £20 per 1,000 words for strategy, finance, HRM and case studies. Business experts, 24/7 WhatsApp. Get 10% off your first order.',
+    'MBA assignment and dissertation help from £20 per 1,000 words: strategy, finance, HRM and case studies. Business experts, 24/7 WhatsApp and 10% off.',
   keywords: [
     'MBA assignment help',
     'MBA assignment help UK',
@@ -187,6 +188,22 @@ export const mbaAssignmentHelp: LandingContent = {
     {
       q: 'How is MBA marking different from undergraduate marking?',
       a: 'MBA marking rewards critical evaluation, application to a real organisation and well-justified recommendations rather than description. At many UK universities the Master\'s pass mark is also higher, at 50%.',
+    },
+    {
+      q: 'Can you help with executive and online MBA assignments?',
+      a: 'Yes. We support full-time, part-time, executive and online MBA students. Many are experienced managers returning to study, so your expert focuses on academic expectations such as structure, critical analysis and referencing, while you bring the industry knowledge. The whole service runs on WhatsApp, so it fits around a working schedule.',
+    },
+    {
+      q: 'Do you help with MBA finance and accounting assignments?',
+      a: 'Yes. Our experts support corporate finance, managerial accounting and financial analysis tasks. This includes interpreting annual reports with profitability, liquidity and gearing ratios, and appraising investments with NPV, IRR and payback. The focus is on explaining what the numbers mean for the business, which is where most marks are earned.',
+    },
+    {
+      q: 'Can you support my MBA capstone or consultancy project?',
+      a: 'Yes. We support capstone pieces, consultancy projects and business plans in stages, from scoping the problem to the literature review, method, findings and a final proofread. If your project uses survey data, we can also help you analyse and interpret it in SPSS or Excel before you submit to your supervisor.',
+    },
+    {
+      q: 'Can you help me turn my work experience into academic evidence?',
+      a: 'Yes. A point based only on your own experience needs backing with literature or data to earn MBA marks. Your expert shows you how to connect what you have seen at work to relevant theory, models and credible sources, so your argument is both practical and academically grounded.',
     },
   ],
   ctaTitle: 'Get your MBA assignment price today',
