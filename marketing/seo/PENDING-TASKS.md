@@ -559,3 +559,11 @@ generator as tools people link to.
   /blog/computer-science-dissertation-topics, /blog/finance-accounting-dissertation-topics, /blog/gibbs-reflective-cycle-guide.
 - Still to do when Chrome is back: re-inspect the 11 from batch 1 (27 Oct) to see which are now indexed; check Saudi
   Search Console movement. OSCOLA referencing guide (/blog/oscola-referencing-guide) is queued, waiting for owner's yes.
+
+## Bing A2 part 2 (28 Oct 13:13 PKT) — Chrome was OFF too
+- The Bing batch-2 trigger fired at 13:13 PKT; Chrome still not connected, so the remaining 65 URL submissions
+  (scratchpad bing/day2.txt) and the Bing Site Explorer / URL Inspection re-check could not run.
+- Not urgent: IndexNow already sent all 170 URLs (HTTP 202) on 28 Oct, so Bing already knows every page; the manual
+  URL Submission of the last 65 is only an extra nudge. Will do it, plus the Bing index-count re-check and the
+  Google Request Indexing above, together when Chrome is back. Did NOT send a second chat message (owner asleep;
+  the earlier "Chrome off" message already covers it).
