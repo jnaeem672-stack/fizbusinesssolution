@@ -7,6 +7,7 @@ import SiteHeader from '@/components/SiteHeader';
 import DeferredWidgets from '@/components/DeferredWidgets';
 import LeadSourceTracker from '@/components/LeadSourceTracker';
 import { PERSON_PROFILES, SOCIAL_URLS } from '@/constants/social';
+import { UK_ADDRESS, UK_PHONE_E164 } from '@/constants/contact';
 
 // Self-hosted heading font (was a render-blocking Google Fonts @import)
 const jakarta = localFont({
@@ -148,12 +149,29 @@ export default function RootDocument({
                 'CIPD, CMI, HND and OTHM qualifications',
               ],
               areaServed: ['United Kingdom', 'Saudi Arabia', 'United Arab Emirates', 'United States'],
-              contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '+971543800388',
-                contactType: 'customer support',
-                availableLanguage: ['English', 'Arabic'],
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: UK_ADDRESS.street,
+                addressLocality: UK_ADDRESS.locality,
+                addressRegion: UK_ADDRESS.region,
+                postalCode: UK_ADDRESS.postalCode,
+                addressCountry: UK_ADDRESS.countryCode,
               },
+              contactPoint: [
+                {
+                  '@type': 'ContactPoint',
+                  telephone: UK_PHONE_E164,
+                  contactType: 'customer support',
+                  areaServed: 'GB',
+                  availableLanguage: ['English'],
+                },
+                {
+                  '@type': 'ContactPoint',
+                  telephone: '+971543800388',
+                  contactType: 'customer support',
+                  availableLanguage: ['English', 'Arabic'],
+                },
+              ],
             }),
           }}
         />

@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import { Instagram, Facebook, Mail, Landmark, ShieldCheck } from 'lucide-react';
+import { Instagram, Facebook, Mail, Landmark, ShieldCheck, PhoneCall } from 'lucide-react';
 import { SOCIAL_LINKS } from '@/constants/social';
 import Logo from './Logo';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
-import { CONTACT_EMAIL, MAILTO_URL } from '@/constants/contact';
+import { CONTACT_EMAIL, MAILTO_URL, UK_ADDRESS_LINE, UK_PHONE_DISPLAY, UK_TEL_URL } from '@/constants/contact';
 import { SERVICE_LINKS, UK_CITY_LINKS, SAUDI_CITY_LINKS, UAE_LINKS, QUALIFICATION_LINKS } from '@/content/landing';
 import { PAYMENT } from '@/constants/payment';
 
@@ -85,7 +85,16 @@ const Footer = () => (
         <Mail className="w-4 h-4 text-primary shrink-0" />
         {CONTACT_EMAIL}
       </a>
+      <a href={UK_TEL_URL} className="flex items-center gap-2 text-white/70 font-bold hover:text-primary transition-colors text-center">
+        <PhoneCall className="w-4 h-4 text-primary shrink-0" />
+        {UK_PHONE_DISPLAY}
+      </a>
     </div>
+
+    <address className="not-italic text-center text-white/55 text-[11px] leading-relaxed max-w-md">
+      <span className="text-white/70 font-bold">FIZ Business Solutions</span><br />
+      {UK_ADDRESS_LINE}
+    </address>
 
     <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 pt-4 border-t border-white/5 w-full max-w-3xl text-[10px] uppercase tracking-widest font-bold [&>a]:inline-flex [&>a]:items-center [&>a]:min-h-6">
       <Link href="/" className="hover:text-white transition-colors">Home</Link>

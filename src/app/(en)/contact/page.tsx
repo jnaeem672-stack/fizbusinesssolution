@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ContactPage from '@/components/pages/ContactPage';
+import { UK_ADDRESS, UK_PHONE_E164 } from '@/constants/contact';
 
 export const metadata: Metadata = {
   title: { absolute: 'Contact FIZBS | Assignment & Dissertation Help' },
@@ -18,10 +19,18 @@ const SCHEMA = {
     alternateName: 'FIZBS',
     url: 'https://fizbusinessolutions.com/',
     email: 'info@fizbusinessolutions.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: UK_ADDRESS.street,
+      addressLocality: UK_ADDRESS.locality,
+      addressRegion: UK_ADDRESS.region,
+      postalCode: UK_ADDRESS.postalCode,
+      addressCountry: UK_ADDRESS.countryCode,
+    },
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'customer support',
-      telephone: '+971543800388',
+      telephone: UK_PHONE_E164,
       email: 'info@fizbusinessolutions.com',
       areaServed: ['GB', 'SA', 'AE', 'US'],
       availableLanguage: ['English'],
