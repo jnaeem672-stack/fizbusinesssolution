@@ -19,7 +19,7 @@ export const financeAccountingAssignmentHelp: LandingContent = {
     "Expert support with financial statements, ratio analysis, investment appraisal, cost of capital and management accounting. Understand the numbers, and explain what they mean.",
   highlights: ['From £20 per 1,000 words', 'Step-by-step workings', 'Excel model support', '24/7 WhatsApp support'],
   intro: [
-    "Finance assignment help from FIZBS is designed for students who need to get the calculations right and then explain them convincingly. Finance and accounting are among our main areas of focus, and we have supported university students in the UK and Saudi Arabia since 2015.",
+    "Finance assignment help from FIZBS is designed for students who need to get the calculations right and then explain them convincingly. Finance and accounting are among our main areas of focus, and we have supported university students in the UK and Saudi Arabia since 2015. Finance is also a core part of our [MBA assignment support](/mba-assignment-help).",
     "Finance tasks are unforgiving. One wrong discount rate or a misread balance sheet figure can flow through an entire answer. Even when the numbers are correct, many students lose marks because their commentary repeats figures instead of interpreting them.",
     "Your subject expert works on your request with you, explaining each method step by step, checking your workings and helping you turn results into analysis that answers the question your tutor actually set.",
     "Support starts from £20 per 1,000 words, and new customers receive 10% off their first order.",
