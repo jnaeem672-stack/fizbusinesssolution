@@ -648,7 +648,7 @@ export const TOOLS: ToolContent[] = [
       },
     ],
     services: ['law-assignment-help', 'referencing-help'],
-    guides: ['how-to-structure-a-university-essay', 'how-to-paraphrase-and-avoid-plagiarism', 'how-to-write-a-dissertation'],
+    guides: ['oscola-referencing-guide', 'how-to-structure-a-university-essay', 'how-to-paraphrase-and-avoid-plagiarism', 'how-to-write-a-dissertation'],
     showOn: ['assignment-help-uk', 'dissertation-help-uk', 'essay-help', 'proofreading-editing-services', 'literature-review-help'],
     updated: '2026-10-28',
     whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',

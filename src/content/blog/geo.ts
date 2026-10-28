@@ -203,4 +203,10 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     specialist: 'sophia-l',
     updated: '2026-10-21',
   },
+  'oscola-referencing-guide': {
+    quickAnswer:
+      'OSCOLA is the footnote referencing style used by most UK law schools. You mark each source with a superscript number and give the citation in a footnote, then list cases, legislation and secondary sources in a Table of Cases, a Table of Legislation and a Bibliography. The 5th edition, published in March 2026, removed ibid: for a source already cited you now use a short form such as Corr (n 1) 110. A case from 2001 onwards gives the neutral citation and a law report, for example Corr v IBC Vehicles Ltd [2008] UKHL 13, [2008] 1 AC 884.',
+    specialist: 'sajjad-akbar-ali',
+    updated: '2026-10-28',
+  },
 };
