@@ -24,6 +24,7 @@ import { howToWriteAnAbstractPost } from './how-to-write-an-abstract';
 import { howToWriteABusinessReportPost } from './how-to-write-a-business-report';
 import { howToWriteACaseStudyAnalysisPost } from './how-to-write-a-case-study-analysis';
 import { apaReferencingGuidePost } from './apa-referencing-guide';
+import { oscolaReferencingGuidePost } from './oscola-referencing-guide';
 import { ukMastersPersonalStatementPost } from './uk-masters-personal-statement';
 import { arTheoreticalFrameworkAndLiteratureReviewPost } from './ar-theoretical-framework-and-literature-review';
 import { arHowToWriteAnAbstractPost } from './ar-how-to-write-an-abstract';
@@ -83,6 +84,7 @@ export const EN_POSTS: BlogPost[] = [
   nursingHealthcareDissertationTopicsPost,
   educationDissertationTopicsPost,
   computerScienceDissertationTopicsPost,
+  oscolaReferencingGuidePost,
 ];
 
 /** Arabic posts. Served at /ar/blog/{slug} */
