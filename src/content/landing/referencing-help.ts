@@ -20,7 +20,7 @@ export const referencingHelp: LandingContent = {
     "Get your citations and reference list right. A subject expert checks your in-text citations, formats your sources in the style your module requires and explains the rules so you can apply them yourself.",
   highlights: ['Harvard, APA, OSCOLA', 'In-text and lists', 'Expert explanations', '24/7 WhatsApp'],
   intro: [
-    "Referencing help is one of the most practical forms of academic support, because citation errors cost marks that are easy to protect. At FIZ Business Solutions (FIZBS), we have supported more than 10,000 university students since 2015, and referencing questions come up in almost every subject.",
+    "Referencing help is one of the most practical forms of academic support, because citation errors cost marks that are easy to protect. At FIZ Business Solutions (FIZBS), we have supported more than 10,000 university students since 2015, and referencing questions come up in almost every subject we cover through our [assignment help for UK students](/assignment-help-uk).",
     "UK marking rubrics normally include a criterion for referencing and use of sources. Markers look for accurate in-text citations, a complete and consistent reference list and evidence that you have engaged with credible academic literature. Inconsistent formatting can also raise questions about academic integrity, even when your intentions were honest.",
     "Our Master's and PhD-qualified experts work with Harvard, APA, MLA, IEEE, OSCOLA and Chicago. They can check an existing reference list, correct citations throughout a draft and explain the rules of your chosen style in plain English.",
   ],

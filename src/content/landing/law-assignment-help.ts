@@ -28,7 +28,7 @@ export const lawAssignmentHelp: LandingContent = {
   intro: [
     "Law is a subject where knowing the cases is only half the battle. Our law assignment help is designed for students who understand the material in lectures but struggle to turn it into a structured answer that applies the law to the facts, weighs competing authorities and reaches a clear conclusion.",
     "FIZ Business Solutions (FIZBS) has supported university students since 2015. Your request is handled by a subject expert with a Master's or PhD in law or a closely related field, who reads your question, module handbook and marking criteria before working with you.",
-    "We support LLB, LLM and PhD students at UK universities and law and business students across Saudi Arabia and the Gulf. Whether you need help untangling a contract problem question, sharpening a jurisprudence essay or getting your footnotes into proper OSCOLA format, you get practical, subject-specific support.",
+    "We support LLB, LLM and PhD students at UK universities and law and business students across Saudi Arabia and the Gulf. Whether you need help untangling a contract problem question, sharpening a jurisprudence essay or getting your footnotes into proper OSCOLA format, you get practical, subject-specific support as part of our wider [UK assignment help service](/assignment-help-uk).",
     "Pricing starts from £20 per 1,000 words for deadlines of seven days or more, and new customers receive 10% off their first order. You can check your exact price with the calculator on our homepage.",
   ],
   sections: [

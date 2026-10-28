@@ -27,11 +27,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const landing: MetadataRoute.Sitemap = [
     ...EN_LANDING_PAGES.map((page) => ({
       url: `${SITE_URL}/${page.slug}`,
+      ...(page.updated ? { lastModified: new Date(page.updated) } : {}),
       changeFrequency: 'weekly' as const,
       priority: page.slug.startsWith('assignment-help-') && !['assignment-help-uk', 'assignment-help-saudi-arabia', 'assignment-help-uae', 'assignment-help-usa'].includes(page.slug) ? 0.8 : 0.9,
     })),
     ...AR_LANDING_PAGES.map((page) => ({
       url: `${SITE_URL}/ar/${page.slug}`,
+      ...(page.updated ? { lastModified: new Date(page.updated) } : {}),
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     })),
