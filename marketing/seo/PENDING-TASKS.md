@@ -546,3 +546,16 @@ generator as tools people link to.
   - Next (approved plan): OSCOLA referencing guide /blog/oscola-referencing-guide (own words; Oxford guide is
     CC BY-NC-SA, do not copy text). Indexing batch 2 scheduled 28 Oct 13:00 PKT (tool first).
   - Upwork: owner asked; explained Upwork bans work students submit for credit; proofreading, research, tutoring OK.
+
+## Indexing batch 2 (28 Oct 13:00 PKT) — Chrome was OFF
+- The batch-2 trigger fired at 13:00 PKT but Claude in Chrome was not connected (owner's computer asleep/off),
+  so no Request Indexing could be done from here. Gave the owner the list to do himself (sent in chat).
+- Priority (request even if already indexed — new/updated 27-28 Oct): /ar/blog/what-is-an-assignment,
+  /ar/student-services, /tools/oscola-referencing-generator, /blog/uk-university-grading-system,
+  /blog/education-dissertation-topics, /law-assignment-help.
+- Then, only if "URL is not on Google" and quota remains (GSC ~10/day): /case-study-help, /coursework-report-help,
+  /data-analysis-help, /research-methodology-help, /excel-data-analysis-help, /blog/how-to-write-a-dissertation-introduction,
+  /blog/how-to-write-a-research-question, /blog/human-vs-ai-academic-writing, /blog/nursing-healthcare-dissertation-topics,
+  /blog/computer-science-dissertation-topics, /blog/finance-accounting-dissertation-topics, /blog/gibbs-reflective-cycle-guide.
+- Still to do when Chrome is back: re-inspect the 11 from batch 1 (27 Oct) to see which are now indexed; check Saudi
+  Search Console movement. OSCOLA referencing guide (/blog/oscola-referencing-guide) is queued, waiting for owner's yes.
