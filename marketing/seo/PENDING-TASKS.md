@@ -546,3 +546,19 @@ generator as tools people link to.
   - Next (approved plan): OSCOLA referencing guide /blog/oscola-referencing-guide (own words; Oxford guide is
     CC BY-NC-SA, do not copy text). Indexing batch 2 scheduled 28 Oct 13:00 PKT (tool first).
   - Upwork: owner asked; explained Upwork bans work students submit for credit; proofreading, research, tutoring OK.
+
+## 28 Oct 14:40 PKT — OSCOLA guide LIVE + indexing status
+- OSCOLA referencing guide LIVE at /blog/oscola-referencing-guide (owner yes). 2,100 words, 5th edition, 11 sections,
+  example-footnote tables, quick-answer box + abstract, linked from the OSCOLA generator (tool.guides) and law/
+  referencing pages. Sitemap now 171 URLs. IndexNow sent for guide + /blog + /tools/oscola-referencing-generator (200).
+  Next in agreed order after this: Arabic presentation page (برزنتيشن ~3,600, عرض بوربوينت ~1,600).
+- Google indexing is working well (checked 28 Oct ~14:20, read-only inspections): indexed = /ar/blog/what-is-an-assignment
+  (and gaining impressions), /tools/oscola-referencing-generator (new, same day), /ar/student-services, and batch-1
+  pages that were stuck are now indexed (literature-review, marketing, thesis, Leeds). The indexing fix + Request
+  Indexing worked. Google Request Indexing quota was already used up today (owner did the 6 from the list himself).
+- Bing: Webmaster was not signed in at 14:30, so the remaining 65 URL submissions did not run. Not urgent (IndexNow
+  covered all 170). Do it next time the owner is signed in to Bing, plus the Bing index-count re-check (was 4).
+- Guest-post pitches (23 Oct, in the Titan Sent folder): 20 sent. Replies: Pakistan Education Review genuine + free,
+  owner submitted the article (check the "[your mobile number]" placeholder was filled); HEPI declined; Learn English
+  Weekly paid $149 with rel="sponsored" (no SEO value, skip); EduLearnX paid $70 dofollow (against Google rules,
+  skip); one pitch bounced. Not logged in the Backlink Kit Link Log yet.
