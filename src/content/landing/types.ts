@@ -32,6 +32,8 @@ export interface LandingContent {
   /** URL slug without leading slash, e.g. 'assignment-help-uk' */
   slug: string;
   locale: 'en' | 'ar';
+  /** Optional ISO date of the last content change (used for dateModified and the sitemap) */
+  updated?: string;
   /** Browser/Google title, max ~60 characters, without the brand suffix */
   metaTitle: string;
   /** Google description, 140-155 characters */

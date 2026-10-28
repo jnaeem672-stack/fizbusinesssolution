@@ -20,7 +20,7 @@ export const businessManagementAssignmentHelp: LandingContent = {
     "Expert support with strategy, HRM, leadership, operations and international business assignments. Work with a Master's or PhD-qualified business specialist who knows the models your module expects.",
   highlights: ['From £20 per 1,000 words', 'Business specialists', 'Theory applied to cases', '24/7 WhatsApp support'],
   intro: [
-    "Business assignment help from FIZ Business Solutions (FIZBS) is built for students who understand the lectures but struggle to turn models and theories into a sharp, well-argued piece of work. Business and management is our core focus, and we have supported university students since 2015.",
+    "Business assignment help from FIZ Business Solutions (FIZBS) is built for students who understand the lectures but struggle to turn models and theories into a sharp, well-argued piece of work. Business and management is our core focus within our wider [university assignment help in the UK](/assignment-help-uk), and we have supported university students since 2015.",
     "Most business modules ask you to do more than describe a framework. Markers want to see you apply it to a real organisation, weigh up its limitations and reach a justified recommendation. That step from description to analysis is where many students lose marks.",
     "Your subject expert works on your request with you, explaining how to approach the question, which models fit the case and how to evidence each point with credible academic and industry sources.",
     "Support starts from £20 per 1,000 words, and new customers receive 10% off their first order.",

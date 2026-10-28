@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import type { ReactNode } from 'react';
 import { CheckCircle2, Award, GraduationCap, BookOpenCheck, Layers, ChevronRight, Calculator, PhoneCall, ExternalLink } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import QuoteCalculator from '@/QuoteCalculator';
@@ -85,6 +86,35 @@ function riyalWord(n: number): string {
   return lastTwo >= 11 && lastTwo <= 99 ? 'ريالًا' : 'ريال';
 }
 
+/**
+ * Render a paragraph string, turning inline [label](/href) markers into internal links.
+ * Plain paragraphs (no marker) pass straight through, so existing content is unchanged.
+ * Only same-site paths starting with "/" are linked.
+ */
+function renderRichText(text: string): ReactNode {
+  if (!text.includes('](/')) return text;
+  const parts: ReactNode[] = [];
+  const re = /\[([^\]]+)\]\((\/[^)\s]+)\)/g;
+  let last = 0;
+  let key = 0;
+  let m: RegExpExecArray | null;
+  while ((m = re.exec(text)) !== null) {
+    if (m.index > last) parts.push(text.slice(last, m.index));
+    parts.push(
+      <Link
+        key={key++}
+        href={m[2]}
+        className="font-semibold text-primary underline underline-offset-2 decoration-primary/40 hover:decoration-primary"
+      >
+        {m[1]}
+      </Link>,
+    );
+    last = m.index + m[0].length;
+  }
+  if (last < text.length) parts.push(text.slice(last));
+  return parts;
+}
+
 export default function LandingPage({ page }: { page: LandingContent }) {
   const isAr = page.locale === 'ar';
   const t = LABELS[page.locale];
@@ -154,6 +184,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       url,
       name: page.metaTitle,
       inLanguage: isAr ? 'ar' : 'en-GB',
+      ...(page.updated ? { dateModified: page.updated } : {}),
       isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, url: `${SITE_URL}/`, name: 'FIZ Business Solutions' },
       breadcrumb: { '@id': `${url}#breadcrumb` },
       mainEntity: { '@id': `${url}#service` },
@@ -274,7 +305,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
           <article className="lg:col-span-8 text-gray-700 text-[17px] leading-relaxed">
             <div className="space-y-5 mb-10">
               {page.intro.map((p, i) => (
-                <p key={i} className="first:text-lg first:text-navy first:font-medium">{p}</p>
+                <p key={i} className="first:text-lg first:text-navy first:font-medium">{renderRichText(p)}</p>
               ))}
             </div>
 
@@ -296,7 +327,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
               <div key={section.heading} className="mb-10">
                 <h2 id={sectionIds[si]} className="scroll-mt-[130px] text-2xl md:text-3xl font-extrabold text-navy tracking-tight mb-4">{section.heading}</h2>
                 <div className="space-y-4">
-                  {section.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}
+                  {section.paragraphs?.map((p, i) => <p key={i}>{renderRichText(p)}</p>)}
                 </div>
                 {section.steps && (
                   <ol className="mt-5 space-y-3">
@@ -348,7 +379,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                       <div key={sub.heading} className="rounded-2xl border border-gray-100 bg-gray-50 p-5">
                         <h3 className="text-lg font-extrabold text-navy mb-2">{sub.heading}</h3>
                         <div className="space-y-3">
-                          {sub.paragraphs?.map((p, i) => <p key={i}>{p}</p>)}
+                          {sub.paragraphs?.map((p, i) => <p key={i}>{renderRichText(p)}</p>)}
                         </div>
                         {sub.bullets && (
                           <ul className="mt-3 space-y-2">

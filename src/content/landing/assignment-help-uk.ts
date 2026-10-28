@@ -3,17 +3,18 @@ import type { LandingContent } from './types';
 export const assignmentHelpUk: LandingContent = {
   slug: 'assignment-help-uk',
   locale: 'en',
-  metaTitle: 'Assignment Help UK | Expert Support from £20',
+  updated: '2026-10-29',
+  metaTitle: 'University Assignment Help UK | Expert Support from £20',
   metaDescription:
-    'Assignment help UK from £20 per 1,000 words. Master\'s and PhD-qualified experts, 24/7 WhatsApp support and 10% off your first order. Get your price now.',
+    'University assignment help for UK students from £20 per 1,000 words. Master\'s and PhD experts, 24/7 WhatsApp support and 10% off your first order.',
   keywords: [
+    'university assignment help UK',
     'assignment help UK',
     'assignment help',
     'essay help UK',
     'coursework help',
     'UK assignment help service',
     'business assignment help',
-    'report writing help UK',
     'urgent assignment help',
   ],
   badge: 'UK Student Support',
@@ -209,6 +210,22 @@ export const assignmentHelpUk: LandingContent = {
     {
       q: 'Which referencing styles do you support?',
       a: 'Our experts work with Harvard, APA, MLA, IEEE and OSCOLA, so your work can follow the style your UK university requires.',
+    },
+    {
+      q: 'Do you help with both undergraduate and postgraduate assignments?',
+      a: "Yes. We support undergraduate, Master's, MBA and PhD students across more than 115 subjects. Your request is matched to an expert at the right academic level, who adapts the depth of analysis, research and referencing to the standard your module and marking criteria expect.",
+    },
+    {
+      q: "Will my assignment be matched to my university's marking criteria?",
+      a: 'Yes. When you share your brief, send the marking rubric and module handbook too. Your expert reads the criteria first, then focuses the support on the areas that carry the most marks, such as critical analysis, use of academic sources and correct referencing in your required style.',
+    },
+    {
+      q: 'Can I get help with only part of my assignment?',
+      a: 'Yes. You do not have to request a full assignment. Many students come to us for a single part, such as structuring an argument, improving a draft, checking referencing or proofreading. Share what you have and tell us which stage you need support with, and we will quote for that part.',
+    },
+    {
+      q: 'Do you support international students studying at UK universities?',
+      a: 'Yes. Many of our students are international, including Saudi students studying in the UK. Alongside subject help, your expert can explain UK academic conventions that differ from other systems, such as critical writing rather than description, Harvard referencing and staying within the word count, so your work fits what UK markers expect.',
     },
   ],
   ctaTitle: 'Get your assignment help price today',
