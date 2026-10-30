@@ -68,6 +68,10 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       { id: 39, name: 'MFRD Assignment Help', desc: 'Managing Financial Resources and Decisions: sources of finance, budgets, NPV, payback and ratio analysis explained.', areas: 'HND Finance' },
       { id: 30, name: 'CMI Assignment Help', desc: 'CMI Level 3, 5 and 7 management and leadership units, including apprenticeship programmes.', areas: 'CMI' },
       { id: 31, name: 'OTHM & ATHE Assignment Help', desc: 'OTHM and ATHE diplomas from Level 3 to Level 7, including strategic management and leadership.', areas: 'Diplomas' },
+      { id: 40, name: 'ILM Assignment Help', desc: 'ILM Level 2 to 7 leadership and management units, with work-based assignments and reflective reviews mapped to each criterion.', areas: 'ILM' },
+      { id: 41, name: 'Qualifi Assignment Help', desc: 'Qualifi Level 4 to 7 diplomas in strategic management, HRM, accounting, health and social care and project management.', areas: 'Qualifi' },
+      { id: 42, name: 'CIPS Assignment Help', desc: 'CIPS Level 4, 5 and 6 procurement and supply units, with support for constructed-response and assignment-route work.', areas: 'CIPS' },
+      { id: 43, name: 'Health & Social Care Diploma Help', desc: 'RQF Level 2 to 5 care diplomas: written assignments, reflective accounts and leadership units for care workers and managers.', areas: 'Care Diplomas' },
     ],
   },
 ];
