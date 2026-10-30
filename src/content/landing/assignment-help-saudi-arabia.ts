@@ -3,10 +3,10 @@ import type { LandingContent } from './types';
 export const assignmentHelpSaudiArabia: LandingContent = {
   slug: 'assignment-help-saudi-arabia',
   locale: 'en',
-  updated: '2026-10-29',
-  metaTitle: 'Assignment Help Saudi Arabia | English Experts from £20',
+  updated: '2026-10-30',
+  metaTitle: 'Assignment Help Saudi Arabia | Online Support from £20',
   metaDescription:
-    "Assignment help in Saudi Arabia, in English, from £20 per 1,000 words. Master's and PhD experts, pay in SAR and get 10% off your first order.",
+    "Online assignment help in Saudi Arabia: understand your brief, plan research and review your draft. From £20 per 1,000 words, with payment in SAR available.",
   keywords: [
     'assignment help Saudi Arabia',
     'assignment help KSA',
@@ -18,11 +18,11 @@ export const assignmentHelpSaudiArabia: LandingContent = {
   badge: 'Saudi Student Support',
   h1: 'Assignment Help Saudi Arabia for University Students',
   heroSubtitle:
-    "Expert guidance in English for students at Saudi universities and Saudi students studying in the UK. Share your brief, see your price and get support from a specialist in your subject.",
+    "Online academic guidance for students at Saudi universities and Saudis studying in the UK. Share your brief, marking criteria and deadline to agree the support you need in Arabic or English and receive a clear quote.",
   highlights: ['From £20 per 1,000 words', "Master's and PhD experts", '24/7 WhatsApp support', '100% confidential'],
   intro: [
-    "Looking for assignment help Saudi Arabia students can rely on? FIZ Business Solutions (FIZBS) has supported university students since 2015, and more than 10,000 students have come to us for expert guidance on their academic work.",
-    "Many students in the Kingdom study in English, at institutions such as King Saud University, King Abdulaziz University, King Fahd University of Petroleum & Minerals, Prince Sultan University, Alfaisal University and Effat University. Writing at a high academic standard in a second language can be demanding, especially when deadlines overlap.",
+    "Assignment help in Saudi Arabia can start with understanding a brief, planning research or reviewing a draft you have written. FIZ Business Solutions (FIZBS) has supported university students since 2015, and more than 10,000 students have come to us for expert guidance on their academic work.",
+    "Many students in the Kingdom study in English, at institutions such as King Saud University, King Abdulaziz University, King Fahd University of Petroleum & Minerals, Prince Sultan University, Alfaisal University and Effat University. Writing at a high academic standard in a second language can be demanding, especially when deadlines overlap. University names are for reference: FIZBS is independent and is not affiliated with these institutions.",
     "We also support Saudi students studying at UK universities, who need to meet British marking criteria while managing life far from home. Wherever you study, a qualified subject expert can help you understand your task and move forward with confidence.",
     "Below you can see what our support includes, the subjects we cover, how ordering and payment in Saudi riyals work, and what Saudi students in the UK should know about British assessment. If you study in Riyadh, Jeddah or the Eastern Province, our city pages also explain the support most relevant to you.",
   ],
@@ -31,7 +31,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
       heading: "What's included in our assignment help in KSA",
       paragraphs: [
         "Every request is matched with an expert who holds a Master's or PhD in a relevant field. They read your brief and marking rubric carefully, so the support you receive fits what your course actually expects.",
-        'Our assignment help KSA students use most often covers:',
+        'Agree the scope of support before starting, whether you need a brief explained, comments on your draft or guidance on research and analysis. You remain the author and must follow your university’s academic integrity rules. Our support covers:',
       ],
       bullets: [
         'Guidance on essays, reports, case studies and reflective pieces',
@@ -45,8 +45,8 @@ export const assignmentHelpSaudiArabia: LandingContent = {
     {
       heading: 'Subjects we support, with a strong business focus',
       paragraphs: [
-        "We cover more than 115 subjects. Business and management are our strongest areas, which suits the many students in Saudi Arabia studying business, finance and management as the economy grows and diversifies.",
-        "MBA assignment help Saudi Arabia professionals request is a large part of our work. Working managers often need help applying strategy, leadership and finance theory to real organisations while balancing a full-time job.",
+        "We cover more than 115 subjects. Business and management are our strongest areas, with guidance that links theory and evidence to your own assessment requirements.",
+        "MBA support is a large part of our work. Working managers often need help applying strategy, leadership and finance theory to real organisations while balancing a full-time job. See [MBA assignment guidance](/mba-assignment-help) for the relevant service.",
       ],
       bullets: [
         'Business, management and strategy',
@@ -64,8 +64,15 @@ export const assignmentHelpSaudiArabia: LandingContent = {
       ],
       bullets: [
         'Share your brief: send your task, word count, referencing style and deadline on WhatsApp or through our website.',
-        'Get your price: use the instant calculator on our homepage or receive a quote from our team, including your first order discount.',
+        'Get your price: use the instant calculator on this page or receive a quote from our team, including your first order discount.',
         'Get expert help: your subject expert works on your request, and you can message us 24/7 with questions along the way.',
+      ],
+    },
+    {
+      heading: 'What to send for an accurate support quote',
+      paragraphs: [
+        'Send your assignment brief and marking rubric, subject and study level, required language, word count and referencing style. Include your draft and tutor feedback where available, plus any relevant data or technical files. Specify your deadline with the time and time zone, and tell us which part you need help understanding or reviewing.',
+        'Share the task files rather than your university account credentials. Technical or software projects need a file review before their separate price can be confirmed.',
       ],
     },
     {
@@ -107,7 +114,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
       heading: 'Support across the Kingdom, not only the largest cities',
       paragraphs: [
         "Because FIZBS is fully online, students get the same service wherever they live. The process is identical whether you study in Riyadh, Jeddah or the Eastern Province, or in cities such as Makkah, Madinah, Abha, Taif, Tabuk or the Qassim region, and it works just as well for Saudis enrolled on online programmes with universities abroad.",
-        "All you need is WhatsApp and a copy of your brief. We also have dedicated pages for students in Riyadh, Jeddah, Dammam, Makkah, Madinah, Abha, Taif, Qassim and Tabuk, linked further down this page.",
+        "Our dedicated city pages cover [Riyadh](/assignment-help-riyadh), [Jeddah](/assignment-help-jeddah), [Dammam](/assignment-help-dammam) and [Makkah](/assignment-help-makkah). Students elsewhere in the Kingdom can use the same online process and share their own course requirements.",
       ],
     },
     {
@@ -127,7 +134,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
       heading: "Support for Bachelor's, Master's, MBA and PhD students",
       paragraphs: [
         "Undergraduates often come to us for university assignment help in English, especially in foundation and early years when academic writing conventions are new.",
-        "Postgraduate students usually need deeper support. Our dissertation help Saudi Arabia students use includes guidance on research questions, literature reviews, methodology and data analysis. With 350+ research projects completed, our experts understand how to support long research work from start to finish.",
+        "Postgraduate students usually need deeper support. Our dissertation help Saudi Arabia students use includes guidance on research questions, literature reviews, methodology and data analysis. With 350+ research projects completed, our experts understand how to support long research work from start to finish. See [research proposal support](/research-proposal-help), [dissertation guidance](/dissertation-help-uk) or [SPSS analysis support](/spss-help) for the relevant stage.",
       ],
     },
     {
@@ -179,7 +186,11 @@ export const assignmentHelpSaudiArabia: LandingContent = {
     },
     {
       q: 'Do you help students outside Riyadh, Jeddah and Dammam?',
-      a: 'Yes. Our service is fully online, so students anywhere in Saudi Arabia get the same expert support through WhatsApp. We have dedicated pages for Makkah, Madinah, Abha, Taif, Qassim and Tabuk, and students in smaller towns are just as welcome.',
+      a: 'Yes. Our service is fully online, so students anywhere in Saudi Arabia get the same expert support through WhatsApp. Our city pages cover Riyadh, Jeddah, Dammam and Makkah; students in other cities and smaller towns are equally welcome.',
+    },
+    {
+      q: 'What files do I need for an assignment support quote?',
+      a: 'Send your brief, marking rubric, subject, study level, required language, word count and referencing style. Add your draft, tutor feedback and relevant data or technical files where available. Include the deadline with its time zone and specify the support you need; never send university account passwords.',
     },
     {
       q: 'Is your assignment help service confidential?',
@@ -191,7 +202,7 @@ export const assignmentHelpSaudiArabia: LandingContent = {
     },
     {
       q: 'Do you provide support in Arabic as well as English?',
-      a: 'Yes. Our main academic support is in English, since many Saudi programmes are taught in English, but you can message us in Arabic on WhatsApp and send screenshots of your brief. We also publish free student guides in Arabic to explain research and referencing step by step.',
+      a: 'Yes. We support assignments in Arabic or English, working from your course brief and required language. You can message us in either language on WhatsApp; expert calls are currently in English. Tell us the language and subject when requesting a quote.',
     },
     {
       q: 'Can you help me improve the academic English in my assignment?',
