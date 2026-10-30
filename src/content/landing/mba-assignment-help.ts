@@ -3,7 +3,7 @@ import type { LandingContent } from './types';
 export const mbaAssignmentHelp: LandingContent = {
   slug: 'mba-assignment-help',
   locale: 'en',
-  updated: '2026-10-29',
+  updated: '2026-10-30',
   metaTitle: 'MBA Assignment & Dissertation Help | Experts from £20',
   metaDescription:
     'MBA assignment and dissertation help from £20 per 1,000 words: strategy, finance, HRM and case studies. Business experts, 24/7 WhatsApp and 10% off.',
@@ -24,7 +24,7 @@ export const mbaAssignmentHelp: LandingContent = {
   intro: [
     "MBA assignment help from FIZ Business Solutions (FIZBS) is designed for busy professionals who are balancing a demanding degree with work, family and travel. Business and management sit at the heart of what we do, and we have supported university students since 2015.",
     "An MBA brief rarely asks you to simply describe a theory. It expects you to apply frameworks to a real organisation, weigh evidence and make recommendations a senior manager could act on. Our experts help you understand what the marker is looking for and how to build a clear, well-argued response.",
-    'Support starts from £20 per 1,000 words, and you can check your exact price in seconds using the instant calculator on our homepage.',
+    'Support starts from £20 per 1,000 words, and you can check your exact price in seconds using the instant calculator on this page.',
   ],
   sections: [
     {
@@ -94,8 +94,8 @@ export const mbaAssignmentHelp: LandingContent = {
     {
       heading: 'Case studies, frameworks and reflective reports',
       paragraphs: [
-        "Much of an MBA is assessed through case studies. Our MBA case study help focuses on applying the right tools properly rather than listing them, so your analysis links each framework to the evidence and to your final recommendations. Your expert also helps you find credible sources, such as annual reports and industry data, to support each point.",
-        'Strategic management assignment help often involves combining several models to build a full picture of an organisation and its environment. A PESTLE analysis might feed into a SWOT, which then shapes the growth options you evaluate with the Ansoff Matrix. Showing how these connect is often what separates a descriptive answer from a critical one.',
+        "Much of an MBA is assessed through case studies. Our [MBA case study help](/case-study-help) focuses on applying the right tools properly rather than listing them, so your analysis links each framework to the evidence and to your final recommendations. Your expert also helps you find credible sources, such as annual reports and industry data, to support each point.",
+        'Strategic management assignment help often involves combining several models to build a full picture of an organisation and its environment. A [PESTLE analysis might feed into a SWOT](/blog/swot-and-pestle-analysis-guide), which then shapes the growth options you evaluate with the Ansoff Matrix. Showing how these connect is often what separates a descriptive answer from a critical one.',
       ],
       bullets: [
         'SWOT and PESTLE analysis of internal and external factors',
@@ -110,8 +110,8 @@ export const mbaAssignmentHelp: LandingContent = {
       heading: 'Consultancy projects and dissertations',
       paragraphs: [
         'Many programmes finish with a consultancy project, a business plan or a dissertation. These larger pieces test whether you can identify a genuine organisational problem, gather evidence and present recommendations that are both practical and grounded in theory.',
-        'Your expert can guide you on scoping the project, building a literature review, choosing a suitable research method and structuring your findings. If your project involves survey data, we can also help you analyse and interpret the responses you have collected using SPSS or Excel.',
-        'Because a strong final project usually takes several months, we are happy to support you in stages: from the proposal through to individual chapters and a final proofread before submission to your supervisor.',
+        'Your expert can guide you on scoping the project, building a [literature review](/literature-review-help), choosing a suitable [research method](/research-methodology-help) and structuring your findings. If your project involves survey data, we can also help you analyse and interpret the responses you have collected using [SPSS](/spss-help) or Excel.',
+        'Because a strong final project usually takes several months, we are happy to support you in stages: from the [proposal](/research-proposal-help) through to individual chapters and a final [proofread](/proofreading-editing-services) before submission to your supervisor.',
       ],
     },
     {
@@ -129,7 +129,7 @@ export const mbaAssignmentHelp: LandingContent = {
       heading: 'Clear pricing for MBA students',
       paragraphs: [
         'Assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%.',
-        "For MBA dissertation help, the rate is £30 per 1,000 words. Proofreading starts from £12 per 1,000 words.",
+        "For [MBA dissertation help](/dissertation-help-uk), the rate is £30 per 1,000 words. [Proofreading](/proofreading-editing-services) starts from £12 per 1,000 words.",
         "First-time customers receive 10% off. Orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack, so you always receive the single largest saving.",
       ],
     },
@@ -137,7 +137,7 @@ export const mbaAssignmentHelp: LandingContent = {
       heading: 'Who our MBA support is for',
       paragraphs: [
         'We work with full-time, part-time, executive and online MBA students. Many are experienced managers returning to study after years away, who know their industry well but want help meeting academic expectations around structure, critical analysis and referencing.',
-        'We offer MBA assignment help UK students use alongside their studies, and MBA assignment help Saudi Arabia and wider Gulf students rely on for English-language programmes. Our broader business assignment help also covers related Master\'s degrees in management, marketing and finance.',
+        'We offer [MBA assignment help UK](/assignment-help-uk) students use alongside their studies, and MBA assignment help [Saudi Arabia](/assignment-help-saudi-arabia) and wider Gulf students rely on for English-language programmes. Our broader [business assignment help](/business-management-assignment-help) also covers related Master\'s degrees in management, marketing and finance.',
       ],
     },
     {
@@ -160,10 +160,12 @@ export const mbaAssignmentHelp: LandingContent = {
     {
       q: 'Can I get help with an MBA case study analysis?',
       a: "Yes. Our experts help you apply frameworks such as SWOT, PESTLE, Porter's Five Forces, Ansoff and BCG to your case organisation and link the analysis to clear recommendations.",
+      link: { label: 'Case study help', href: '/case-study-help' },
     },
     {
       q: 'How much is MBA dissertation help?',
-      a: 'Dissertation support is £30 per 1,000 words. You can check your price instantly with the calculator on our homepage.',
+      a: 'Dissertation support is £30 per 1,000 words. You can check your price instantly with the calculator on this page.',
+      link: { label: 'MBA dissertation help', href: '/dissertation-help-uk' },
     },
     {
       q: 'Do you help with strategic management assignments?',
@@ -209,7 +211,7 @@ export const mbaAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your MBA assignment price today',
   ctaText:
     'Send your MBA brief on WhatsApp or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my MBA assignment.',
   related: [
     'assignment-help-uk',
     'dissertation-help-uk',

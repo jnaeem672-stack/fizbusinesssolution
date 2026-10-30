@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const essayHelp: LandingContent = {
   slug: 'essay-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Essay Help UK | Expert Essay Support from £20',
   metaDescription:
     'Essay help UK from £20 per 1,000 words. Master\'s and PhD experts guide your structure, argument and referencing. 10% off your first order. Get a price now.',
@@ -23,7 +24,7 @@ export const essayHelp: LandingContent = {
     "Most students who look for essay help UK universities would recognise are not short of ideas. They are short of a clear line of argument, a structure that holds it together and the confidence that their analysis is critical enough for the grade they want.",
     "FIZ Business Solutions (FIZBS) has supported university students since 2015. In that time more than 10,000 students have come to us for guidance on essays, reports and research projects across 115+ subjects.",
     "Your subject expert reads your question, module guide and marking rubric, then works on your request with you. That might mean helping you build a thesis statement, reorganising paragraphs so the argument flows, strengthening weak evidence or tidying up Harvard or APA references.",
-    "Pricing starts from £20 per 1,000 words, and the instant calculator on our homepage shows your price before you commit.",
+    "Pricing starts from £20 per 1,000 words, and the instant calculator on this page shows your price before you commit.",
   ],
   sections: [
     {
@@ -44,7 +45,7 @@ export const essayHelp: LandingContent = {
     {
       heading: 'Essay structure help: introduction, body and conclusion',
       paragraphs: [
-        "Good structure is what lets a marker follow your thinking without effort. Our essay structure help focuses on the three parts every university essay needs to get right.",
+        "Good structure is what lets a marker follow your thinking without effort. Our [essay structure help](/blog/how-to-structure-a-university-essay) focuses on the three parts every university essay needs to get right.",
         "The introduction should give brief context, define key terms, state your thesis in one or two sentences and signpost how the essay will unfold. Many students leave the thesis vague, which makes everything after it feel like description.",
         "Body paragraphs work best when each one makes a single point that advances the thesis. The conclusion then draws those points together, answers the question directly and avoids introducing new evidence.",
       ],
@@ -74,7 +75,7 @@ export const essayHelp: LandingContent = {
       heading: 'Evidence, sources and referencing',
       paragraphs: [
         "Markers expect peer-reviewed journal articles, academic books and reputable reports, not a list of websites. Strong essays also integrate sources into the argument rather than dropping in quotations without comment.",
-        "Our university essay help covers finding credible sources, paraphrasing accurately and citing correctly in Harvard, APA, MLA, IEEE, OSCOLA or Chicago. Inconsistent in-text citations and incomplete reference lists are easy marks to lose and easy marks to recover.",
+        "Our university essay help covers finding credible sources, [paraphrasing accurately](/blog/how-to-paraphrase-and-avoid-plagiarism) and [citing correctly](/referencing-help) in Harvard, APA, MLA, IEEE, OSCOLA or Chicago. Inconsistent in-text citations and incomplete reference lists are easy marks to lose and easy marks to recover.",
         "A useful rule of thumb is to check every source against three questions: is it academic, is it recent enough for the topic, and does it directly support the point being made? Sources that fail all three usually weaken an essay rather than strengthen it.",
       ],
     },
@@ -125,7 +126,7 @@ export const essayHelp: LandingContent = {
       heading: 'How our essay writing help works',
       paragraphs: [
         "Send your essay question, word count, module guide, marking criteria and deadline on WhatsApp or through the website. If you already have a draft, include it so your expert can see where you are.",
-        "You receive a clear price, then a Master's or PhD-qualified expert in your subject works on your request with you. Essay writing help can include planning, structural feedback, argument development, source guidance, editing and referencing checks.",
+        "You receive a clear price, then a Master's or PhD-qualified expert in your subject works on your request with you. Essay writing help can include planning, [structural feedback](/draft-review-feedback), argument development, source guidance, [editing](/proofreading-editing-services) and referencing checks.",
         "Our essay help UK pricing starts from £20 per 1,000 words for deadlines of 7+ days. Deadlines of 3 to 6 days add 25% and deadlines within 48 hours add 50%. New customers receive 10% off their first order, and everything you share stays 100% confidential.",
       ],
     },
@@ -150,6 +151,7 @@ export const essayHelp: LandingContent = {
     {
       q: 'Can you help with a reflective essay using Gibbs?',
       a: "Yes. We support reflective essays using Gibbs' Reflective Cycle, Kolb, Driscoll and other models, helping you link experience to theory while keeping the tone academic.",
+      link: { label: "Gibbs' reflective cycle guide", href: '/blog/gibbs-reflective-cycle-guide' },
     },
     {
       q: 'Is it OK to go over the word count on a UK essay?',
@@ -158,6 +160,7 @@ export const essayHelp: LandingContent = {
     {
       q: 'Which referencing styles do you support for essays?',
       a: 'We support Harvard, APA, MLA, IEEE, OSCOLA and Chicago, covering both in-text citations and the reference list or bibliography.',
+      link: { label: 'Referencing help', href: '/referencing-help' },
     },
     {
       q: 'How quickly can I get essay help?',
@@ -167,7 +170,7 @@ export const essayHelp: LandingContent = {
   ctaTitle: 'Get expert essay help UK students rely on',
   ctaText:
     'Send your essay question, word count and deadline on WhatsApp or check the instant calculator. Your first order is 10% off.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my essay.',
   related: [
     'assignment-help-uk',
     'referencing-help',

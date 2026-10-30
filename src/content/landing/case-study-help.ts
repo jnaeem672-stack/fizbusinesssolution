@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const caseStudyHelp: LandingContent = {
   slug: 'case-study-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Case Study Help | Analysis Support from £20',
   metaDescription:
     'Case study help from £20 per 1,000 words. Experts guide SWOT, PESTLE, Porter and VRIO analysis for business, MBA, nursing and law cases. Get a price now.',
@@ -27,7 +28,7 @@ export const caseStudyHelp: LandingContent = {
     {
       heading: 'How to analyse a case study step by step',
       paragraphs: [
-        "Strong case analysis follows a clear process. Skipping straight to frameworks is the most common reason answers end up descriptive, because the analysis is not anchored to a defined problem.",
+        "Strong [case analysis](/blog/how-to-write-a-case-study-analysis) follows a clear process. Skipping straight to frameworks is the most common reason answers end up descriptive, because the analysis is not anchored to a defined problem.",
       ],
       bullets: [
         'Read the case twice: once for the story, once to note facts, figures, stakeholders and tensions.',
@@ -41,7 +42,7 @@ export const caseStudyHelp: LandingContent = {
     {
       heading: 'Frameworks for business case study help',
       paragraphs: [
-        "Business and management case studies usually expect you to use recognised strategic tools. Our business case study help shows you which framework suits which question and how to move from a completed model to genuine insight.",
+        "[Business and management](/business-management-assignment-help) case studies usually expect you to use recognised strategic tools. Our business case study help shows you which [framework suits which question](/blog/swot-and-pestle-analysis-guide) and how to move from a completed model to genuine insight.",
       ],
       bullets: [
         'SWOT: internal strengths and weaknesses against external opportunities and threats, best extended into a TOWS matrix to generate strategies.',
@@ -66,14 +67,14 @@ export const caseStudyHelp: LandingContent = {
       heading: 'MBA case study help',
       paragraphs: [
         "MBA cases, including Harvard-style cases, are longer and more ambiguous than undergraduate ones. They often include financial exhibits, conflicting stakeholder views and incomplete information, and you are expected to make a decision anyway.",
-        "Our MBA case study help covers interpreting exhibits and ratios, building a decision framework, weighing strategic alternatives and linking recommendations to the case protagonist's actual decision. Many MBA students also draw on their own work experience, and your expert can help you connect it to theory without losing academic rigour.",
+        "Our [MBA case study help](/mba-assignment-help) covers interpreting exhibits and ratios, building a decision framework, weighing strategic alternatives and linking recommendations to the case protagonist's actual decision. Many MBA students also draw on their own work experience, and your expert can help you connect it to theory without losing academic rigour.",
       ],
     },
     {
       heading: 'Nursing and healthcare case studies',
       paragraphs: [
         "Healthcare case studies typically follow a patient or service user through assessment, care planning, intervention and evaluation. Markers look for evidence-based practice, clinical reasoning and awareness of professional standards such as the NMC Code.",
-        "Nursing case study help can include structuring your answer with the nursing process (assessment, diagnosis, planning, implementation, evaluation), using models such as Roper-Logan-Tierney or ABCDE assessment, critically appraising research with tools like CASP and discussing ethics, consent and confidentiality. Patient details should always be anonymised in your work.",
+        "[Nursing case study help](/healthcare-nursing-assignment-help) can include structuring your answer with the nursing process (assessment, diagnosis, planning, implementation, evaluation), using models such as Roper-Logan-Tierney or ABCDE assessment, critically appraising research with tools like CASP and discussing ethics, consent and confidentiality. Patient details should always be anonymised in your work.",
         "Example topics include managing a patient with type 2 diabetes in the community, a deteriorating patient on an acute ward, safeguarding concerns in mental health care and improving discharge planning in a hospital trust. Healthcare management cases may also use tools such as SBAR communication or root cause analysis.",
       ],
     },
@@ -81,7 +82,7 @@ export const caseStudyHelp: LandingContent = {
       heading: 'Law case studies and problem questions',
       paragraphs: [
         "In law, case study assignments usually take the form of problem questions. The expected method is IRAC: identify the Issue, state the relevant Rule from statute and case law, Apply it to the facts and reach a Conclusion.",
-        "Your expert can help you spot every legal issue in the scenario, distinguish or apply precedent accurately and cite authorities correctly using OSCOLA. Weak answers often state the law well but apply it to the facts too briefly.",
+        "Our [law assignment help](/law-assignment-help) can help you spot every legal issue in the scenario, distinguish or apply precedent accurately and cite authorities correctly using OSCOLA. Weak answers often state the law well but apply it to the facts too briefly.",
         "Typical problem questions cover contract formation and breach, negligence and duty of care, employment disputes and directors' duties in company law. Where the law is uncertain, markers reward a reasoned argument about how a court is likely to decide.",
       ],
     },
@@ -137,10 +138,12 @@ export const caseStudyHelp: LandingContent = {
     {
       q: 'Can you help with an MBA Harvard case study?',
       a: 'Yes. Our MBA case study help covers analysing exhibits and financial data, evaluating strategic options and building a clear recommendation for the decision in the case.',
+      link: { label: 'MBA assignment help', href: '/mba-assignment-help' },
     },
     {
       q: 'How do I write a nursing case study?',
       a: 'Introduce the anonymised patient, then follow the nursing process: assessment, diagnosis, planning, implementation and evaluation. Support each decision with evidence and refer to professional standards. Nursing case study help from our experts can guide you through each stage.',
+      link: { label: 'Nursing assignment help', href: '/healthcare-nursing-assignment-help' },
     },
     {
       q: 'What is the IRAC method for law case studies?',
@@ -158,7 +161,7 @@ export const caseStudyHelp: LandingContent = {
   ctaTitle: 'Get expert guidance on your case study',
   ctaText:
     'Send your case, question and deadline on WhatsApp for a clear price, or check the instant calculator. Enjoy 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my case study.',
   related: [
     'mba-assignment-help',
     'business-management-assignment-help',

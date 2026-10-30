@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const researchMethodologyHelp: LandingContent = {
   slug: 'research-methodology-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Research Methodology Help | Dissertation Experts',
   metaDescription:
     'Research methodology help for dissertations and theses at £30 per 1,000 words. Qualitative, quantitative and mixed methods experts. Message us on WhatsApp.',
@@ -21,7 +22,7 @@ export const researchMethodologyHelp: LandingContent = {
   intro: [
     'The methodology chapter is where markers check whether your research can be trusted. Research methodology help from an experienced researcher can turn a chapter that simply lists methods into one that justifies every decision and links it back to your research questions.',
     "FIZ Business Solutions (FIZBS) has supported students since 2015 and completed more than 350 research projects. Our experts hold Master's and PhD degrees and have designed and carried out surveys, interviews, case studies and secondary data studies of their own.",
-    'Your subject expert works on your request with you, whether you are still choosing between qualitative and quantitative approaches, need to explain your sampling strategy, or have supervisor feedback asking for "more justification" and are not sure where to start.',
+    'Your subject expert works on your request with you, whether you are still choosing between [qualitative and quantitative approaches](/blog/quantitative-vs-qualitative-research), need to explain your sampling strategy, or have supervisor feedback asking for "more justification" and are not sure where to start.',
     'Support is available for undergraduate and Master\'s dissertations, MBA projects and PhD theses, for students in the UK, Saudi Arabia and across the Gulf.',
   ],
   sections: [
@@ -29,7 +30,7 @@ export const researchMethodologyHelp: LandingContent = {
       heading: 'What a strong methodology chapter includes',
       paragraphs: [
         'UK marking schemes typically reward a methodology chapter that is coherent, justified and transparent. Coherent means each choice fits the next; justified means you explain why, citing methodological literature; transparent means another researcher could follow what you did.',
-        'Research methodology help is most effective when it starts from your research questions, because every element listed below should trace back to them.',
+        'Research methodology help is most effective when it starts from your research questions, because every element listed below should trace back to them. Our [dissertation methodology guide](/blog/dissertation-methodology-guide) walks through each one.',
       ],
       bullets: [
         'Research philosophy and approach to theory development',
@@ -67,7 +68,7 @@ export const researchMethodologyHelp: LandingContent = {
     {
       heading: 'Qualitative, quantitative and mixed methods help',
       paragraphs: [
-        'Quantitative research help usually involves questionnaire design, measurement scales such as Likert items, sample size calculations and planning statistical tests. Qualitative research help focuses on interview guides, purposive sampling, data saturation and planning a thematic or content analysis.',
+        'Quantitative research help usually involves questionnaire design, measurement scales such as Likert items, sample size calculations and planning [statistical tests](/blog/which-statistical-test-spss). Qualitative research help focuses on interview guides, purposive sampling, data saturation and planning a thematic or content analysis.',
         'Mixed methods help is about integration. You need to explain the design, for example explanatory sequential (survey first, interviews second) or convergent parallel (both at once), and show how the two strands combine to answer your questions rather than sitting side by side.',
         'Example topics show how this plays out. A study of the link between training investment and employee retention in Saudi banks suits a deductive survey. A study of how small UK retailers experienced the cost of living crisis suits interpretive interviews. A study of digital banking adoption might use a survey to measure adoption and interviews to explain the barriers behind the numbers.',
       ],
@@ -106,12 +107,12 @@ export const researchMethodologyHelp: LandingContent = {
       heading: 'How our dissertation methodology help works',
       bullets: [
         'Share your details: topic, research questions, level, word count and any feedback from your supervisor',
-        'Send what you have: your proposal, literature review, draft methodology, questionnaire or interview guide',
+        'Send what you have: your proposal, [literature review](/literature-review-help), draft methodology, questionnaire or interview guide',
         'Get your price: methodology chapters are charged at £30 per 1,000 words, with longer PhD work quoted on WhatsApp',
         'Work with your expert: your subject expert works on your request with you and explains the reasoning behind every methodological choice',
       ],
       paragraphs: [
-        'Standard pricing applies to deadlines of seven days or more, with +25% for 3 to 6 days and +50% within 48 hours. New customers receive 10% off their first order, and larger orders receive 10% off 8,000+ words or 15% off 15,000+ words. Discounts do not stack.',
+        'Standard pricing applies to deadlines of seven days or more, with +25% for 3 to 6 days and +50% within 48 hours. New customers receive 10% off their first order, and larger orders receive 10% off 8,000+ words or 15% off 15,000+ words. Discounts do not stack. The calculator on this page shows an estimate, and the team confirms the final price after reviewing your brief.',
       ],
     },
     {
@@ -137,10 +138,12 @@ export const researchMethodologyHelp: LandingContent = {
     {
       q: 'What is the research onion in a dissertation?',
       a: "The research onion, developed by Saunders and colleagues, is a model for structuring methodological decisions. It moves from research philosophy and approach through strategy, choices and time horizon to data collection and analysis.",
+      link: { label: 'Dissertation methodology guide', href: '/blog/dissertation-methodology-guide' },
     },
     {
       q: 'Should I use qualitative or quantitative research for my dissertation?',
       a: 'It depends on your research question. Questions about how many, how much or whether variables are related suit quantitative methods. Questions about experiences, meanings or why something happens suit qualitative methods.',
+      link: { label: 'Quantitative vs qualitative research', href: '/blog/quantitative-vs-qualitative-research' },
     },
     {
       q: 'How do I justify my sample size?',
@@ -166,7 +169,7 @@ export const researchMethodologyHelp: LandingContent = {
   ctaTitle: 'Build a methodology you can defend',
   ctaText:
     'Send your research questions and deadline on WhatsApp for a clear quote, and get 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my dissertation methodology.',
   related: [
     'dissertation-help-uk',
     'research-proposal-help',

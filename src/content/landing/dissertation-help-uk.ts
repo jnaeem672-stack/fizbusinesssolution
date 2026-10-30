@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const dissertationHelpUk: LandingContent = {
   slug: 'dissertation-help-uk',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Dissertation Help UK | £30 per 1,000 Words | FIZBS',
   metaDescription:
     'Dissertation help UK at £30 per 1,000 words. PhD-qualified experts and 24/7 WhatsApp support. Get your price today.',
@@ -42,12 +43,12 @@ export const dissertationHelpUk: LandingContent = {
       ],
       steps: [
         'Choosing your topic: your expert helps you turn broad interests into two or three researchable ideas, checks that each one is narrow enough for your word count, that sources and data are available, and that it fits your course, then helps you choose the strongest one.',
-        'Writing your proposal: we help you write a clear title, aim, objectives and research questions, a short literature background, a realistic method and a timeline, so your supervisor can approve the topic quickly.',
+        'Writing your [proposal](/research-proposal-help): we help you write a clear title, aim, objectives and research questions, a short literature background, a realistic method and a timeline, so your supervisor can approve the topic quickly.',
         'Research approval: if your study involves people, we help you prepare the approval form, participant information sheet, consent form and data management plan your university requires before you collect any data.',
         'Supervisor meetings: before each meeting we help you prepare a short progress summary, an agenda and the questions you need answered, and afterwards we help you turn the discussion into a clear action list.',
-        'Literature review: we guide you to credible sources, help you organise them into themes and show you how to write critically, ending with the research gap your study fills.',
-        'Methodology: your expert helps you choose and justify your research design, sample, data collection and analysis, using recognised research methods literature.',
-        'Data collection and analysis: we help you design questionnaires or interview guides, then analyse your data in SPSS, Excel, NVivo, Stata or Python and explain what the results mean.',
+        'Literature review: our [literature review help](/literature-review-help) guides you to credible sources, helps you organise them into themes and shows you how to write critically, ending with the research gap your study fills.',
+        'Methodology: our [research methodology help](/research-methodology-help) helps you choose and justify your research design, sample, data collection and analysis, using recognised research methods literature.',
+        'Data collection and analysis: we help you design questionnaires or interview guides, then analyse your [data](/data-analysis-help) in [SPSS](/spss-help), Excel, NVivo, Stata or Python and explain what the results mean.',
         'Findings, discussion and conclusion: we help you present results clearly, interpret them against the literature, and answer every research question in your conclusion with practical recommendations.',
         'Supervisor feedback rounds: each time your supervisor returns comments, your expert explains what they mean, helps you plan the changes and reviews your revised draft, for as many rounds as your dissertation goes through.',
         'Final checks and submission: we help you write the abstract, check that every chapter links together, review your referencing and formatting, proofread the final version and prepare for a viva or presentation if your course has one.',
@@ -163,7 +164,7 @@ export const dissertationHelpUk: LandingContent = {
       bullets: [
         'Also supported: abstract, acknowledgements, contents pages and appendices',
         'Referencing checks in Harvard, APA, MLA, IEEE or OSCOLA',
-        'Proofreading of finished chapters from £12 per 1,000 words',
+        '[Proofreading](/proofreading-editing-services) of finished chapters from £12 per 1,000 words',
       ],
     },
     {
@@ -214,7 +215,7 @@ export const dissertationHelpUk: LandingContent = {
       bullets: [
         'Share your brief: tell us your topic, or the topics you are considering, the chapters you need help with, word count, referencing style, handbook, deadline and any supervisor feedback so far.',
         'Talk to an expert if you wish: book a WhatsApp call with an expert in English to discuss your project before ordering.',
-        'Get your price: check the instant calculator on our homepage or ask us on WhatsApp for a quote. Pay 50% to start by UK bank transfer (GBP) or Saudi bank transfer (SAR).',
+        'Get your price: check the instant calculator on this page for an estimate, and the team confirms the final price after reviewing your brief. Pay 50% to start by UK bank transfer (GBP) or Saudi bank transfer (SAR).',
         "Get expert help: a Master's or PhD-qualified researcher in your field works with you, and our team is available 24/7. The remaining 50% is paid on completion.",
         'Keep going after each meeting: send us new supervisor comments at any stage and your expert helps you plan the next round of changes.',
       ],
@@ -230,14 +231,14 @@ export const dissertationHelpUk: LandingContent = {
       heading: 'Dissertation help for every degree level',
       paragraphs: [
         "Expectations rise with each level of study. An undergraduate project usually tests your ability to plan and carry out a focused piece of research, while a Master's dissertation needs stronger critical engagement with the literature.",
-        "We also offer MBA dissertation help, where the emphasis is often on applying theory to a real organisation, and PhD support for doctoral candidates working on extended theses and original contributions.",
+        "We also offer [MBA dissertation help](/mba-assignment-help), where the emphasis is often on applying theory to a real organisation, and PhD support for doctoral candidates working on extended theses and original contributions.",
       ],
     },
     {
       heading: 'Dissertation help, thesis help and assignment help in one place',
       paragraphs: [
-        "Students reach us in many ways. Some search for dissertation help, dissertation support or simply help with my dissertation; others need thesis help for a Master's or PhD, or assignment help for essays, reports and coursework that run alongside the dissertation. Whichever you need, the same team of Master's and PhD-qualified experts supports you, and you can keep one expert for your whole project.",
-        "Many students use both. For example, you might get assignment help for a strategy report in the autumn term and dissertation help over the summer. Our assignment help UK pages explain pricing and support for coursework, and our guides on writing a research proposal, literature review, methodology, discussion and conclusion explain each chapter in more depth.",
+        "Students reach us in many ways. Some search for dissertation help, dissertation support or simply help with my dissertation; others need [thesis help](/thesis-help) for a Master's or PhD, or assignment help for [essays](/essay-help), reports and coursework that run alongside the dissertation. Whichever you need, the same team of Master's and PhD-qualified experts supports you, and you can keep one expert for your whole project.",
+        "Many students use both. For example, you might get assignment help for a strategy report in the autumn term and dissertation help over the summer. Our [assignment help UK](/assignment-help-uk) pages explain pricing and support for coursework, and our guides on [writing a research proposal](/blog/how-to-write-a-research-proposal), [literature review](/blog/how-to-write-a-literature-review), [methodology](/blog/dissertation-methodology-guide), [discussion](/blog/how-to-write-a-dissertation-discussion) and [conclusion](/blog/how-to-write-a-dissertation-conclusion) explain each chapter in more depth.",
       ],
     },
     {
@@ -291,14 +292,20 @@ export const dissertationHelpUk: LandingContent = {
     {
       q: 'Can someone help me analyse my dissertation data?',
       a: 'Yes. We support quantitative and qualitative analysis using SPSS, Excel, NVivo, Stata and Python, and can help you interpret and present your results.',
+      link: { label: 'Data analysis help', href: '/data-analysis-help' },
     },
     {
       q: 'Do you provide thesis help for PhD students?',
       a: "Yes. We support Bachelor's, Master's, MBA and PhD students. Doctoral candidates are matched with PhD-qualified experts in a relevant field.",
+      link: { label: 'Thesis help', href: '/thesis-help' },
     },
     {
       q: 'How do I pay for dissertation help?',
       a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR. New customers get 10% off their first order.',
+    },
+    {
+      q: 'What should I send to get a dissertation quote?',
+      a: 'Send your topic or shortlist of topics, the chapters you need help with, your word count, referencing style, course handbook or marking criteria, your deadline and any supervisor feedback so far. If data analysis is involved, include your dataset. We never need your university login.',
     },
     {
       q: 'Is dissertation help confidential?',
@@ -308,7 +315,7 @@ export const dissertationHelpUk: LandingContent = {
   ctaTitle: 'Start your dissertation with expert support',
   ctaText:
     'Tell us your topic and deadline on WhatsApp or check your price instantly. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my dissertation.',
   related: [
     'research-proposal-help',
     'spss-help',
