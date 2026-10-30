@@ -26,6 +26,7 @@ export interface LandingSection {
 export interface LandingFaq {
   q: string;
   a: string;
+  link?: { label: string; href: string };
 }
 
 export interface LandingContent {

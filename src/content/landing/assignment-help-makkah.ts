@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const assignmentHelpMakkah: LandingContent = {
   slug: 'assignment-help-makkah',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Assignment Help Makkah | Online Support, Pay in SAR',
   metaDescription:
     "Assignment help Makkah students use for Arabic and English-medium courses. Master's and PhD experts, 24/7 WhatsApp, pay in SAR by Saudi bank transfer.",
@@ -17,12 +18,12 @@ export const assignmentHelpMakkah: LandingContent = {
   badge: 'Makkah Students',
   h1: 'Assignment Help Makkah for University and Postgraduate Students',
   heroSubtitle:
-    'Online expert guidance for students in Makkah, whether your course is taught in Arabic or English. Message us on WhatsApp at any hour, even in the busiest seasons, and get a clear price for your task.',
+    'Understand your brief, plan your research and improve your draft with online academic guidance in Arabic or English. Send your marking criteria and deadline for a clear quote and support suited to your course.',
   highlights: ['Fully online', "Master's and PhD experts", 'Pay in SAR or GBP', '24/7 WhatsApp'],
   intro: [
-    "Makkah is home to one of the Kingdom's oldest universities and to thousands of students who balance study with family, work and the demands of the busiest religious seasons in the world. FIZ Business Solutions (FIZBS) offers assignment help Makkah students can access entirely online, with guidance from Master's and PhD-qualified experts in more than 115 subjects.",
+    "Assignment help for students in Makkah starts with your task: understanding the question, identifying the assessment criteria and deciding what to research or revise. FIZ Business Solutions (FIZBS) provides online guidance from Master's and PhD-qualified experts in more than 115 subjects, for undergraduates and postgraduates balancing study with work and everyday commitments.",
     'Since 2015 we have supported more than 10,000 university students in the UK, Saudi Arabia and the Gulf. Whether your course is taught in Arabic or English, an expert in your subject can help you understand the brief, plan your answer, use reliable sources and present your work clearly. Makkah is covered by [our Saudi Arabia assignment support](/assignment-help-saudi-arabia).',
-    'This page covers the students we support in Makkah, how to plan coursework around Ramadan and the Hajj season, topics that draw on the city\'s economy, and how ordering and payment in Saudi riyals work.',
+    'Choose support for understanding a brief, reviewing your own draft, research planning, referencing or data analysis. We work from your course requirements; you remain the author and are responsible for following your university’s academic integrity rules.',
   ],
   sections: [
     {
@@ -44,16 +45,16 @@ export const assignmentHelpMakkah: LandingContent = {
       ],
     },
     {
-      heading: 'Planning coursework around Ramadan and the Hajj season',
+      heading: 'Planning assignments during busy periods',
       paragraphs: [
-        'Life in Makkah follows a calendar that few other cities share. During Ramadan and the Hajj season, many students work extra shifts in hotels, hospitals, transport or visitor services, roads become busier and family commitments grow. Deadlines rarely move to match, so the students who cope best are the ones who plan ahead.',
+        'When several assignments overlap with work, placements or family commitments, prioritise them by deadline and research requirements. If Ramadan or the Hajj season affects your schedule, account for it within the same plan and leave time to review your own work before submission.',
       ],
       bullets: [
-        'Check your module calendar at the start of each semester and mark any deadlines that fall in Ramadan or Dhul Hijjah.',
-        'Start research-heavy tasks, such as literature reviews, before the busy season begins.',
+        'List your deadlines and marking criteria, then identify tasks that require reading or data collection before writing.',
+        'Start research-heavy tasks, such as literature reviews, before shorter writing tasks.',
         'Send your brief at least seven days before the deadline so you pay the standard rate, with no urgency charge.',
         'Agree a staged plan with your expert, for example an outline first and then each section, so short gaps in your schedule still move the work forward.',
-        'Use WhatsApp to ask quick questions between shifts. Our support runs 24/7.',
+        'Leave time to check sources, citations and formatting. Use WhatsApp for questions; support runs 24/7.',
       ],
     },
     {
@@ -95,7 +96,7 @@ export const assignmentHelpMakkah: LandingContent = {
         'When students share drafts or returned work with us, the same issues come up again and again. None of them mean the student lacks knowledge, and all of them can be fixed with planning.',
       ],
       bullets: [
-        'Describing Hajj or Umrah services in general terms instead of analysing one specific problem, such as queueing or service recovery.',
+        'Describing the topic without answering the assessment question, evaluating evidence or applying the required theory.',
         'Relying on news articles where official statistics or peer-reviewed studies are available.',
         'Ignoring the marking rubric, so a well-written answer still misses criteria such as evaluation or recommendations.',
         'Translating sentence by sentence from Arabic into English, which makes arguments harder to follow.',
@@ -106,7 +107,7 @@ export const assignmentHelpMakkah: LandingContent = {
       heading: 'Research projects, dissertations and theses',
       paragraphs: [
         "Graduation projects and postgraduate theses are where many Makkah students first need structured guidance. Our experts have supported more than 350 research projects. They can help you narrow a topic, write a research proposal, review previous studies, choose a methodology and interpret your results.",
-        'Dissertation support costs £30 per 1,000 words. Data analysis support is available with SPSS, Excel, NVivo, Stata and Python.',
+        'Dissertation support costs £30 per 1,000 words. Data analysis support is available with SPSS, Excel, NVivo, Stata and Python. See [research proposal guidance](/research-proposal-help) or [SPSS support](/spss-help) for the relevant process.',
       ],
     },
     {
@@ -139,8 +140,8 @@ export const assignmentHelpMakkah: LandingContent = {
       a: 'Yes. Our WhatsApp support runs 24/7 all year. Because these are busy periods, we recommend sending your brief early so you avoid urgency charges.',
     },
     {
-      q: 'Can you help with assignments about Hajj, Umrah or visitor services?',
-      a: 'Yes. Experts can help you analyse topics such as service quality, crowd management, hospitality operations and health services at mass gatherings, using academic and official sources.',
+      q: 'What files do I need to get an assignment support quote?',
+      a: 'Send your assignment brief, marking rubric, subject and study level, required language, word count and deadline in Saudi time. Include your draft, tutor feedback and any data or technical files where relevant. Tell us whether you need an explanation, draft review, research guidance or data analysis support.',
     },
     {
       q: 'My course is taught in Arabic. Can you help?',
