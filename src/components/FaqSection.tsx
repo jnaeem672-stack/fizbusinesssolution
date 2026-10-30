@@ -1,8 +1,10 @@
+import Link from 'next/link';
 import { ChevronDown } from 'lucide-react';
 
 export interface FaqItem {
   q: string;
   a: string;
+  link?: { label: string; href: string };
 }
 
 interface FaqSectionProps {
@@ -61,7 +63,7 @@ export default function FaqSection({
                 <h3 className="text-navy font-bold text-base md:text-lg leading-snug">{faq.q}</h3>
                 <ChevronDown className="w-5 h-5 text-primary shrink-0 transition-transform group-open:rotate-180" />
               </summary>
-              <p className="px-5 md:px-6 pb-5 md:pb-6 -mt-1 text-gray-600 leading-relaxed text-[15px]">{faq.a}</p>
+              <p className="px-5 md:px-6 pb-5 md:pb-6 -mt-1 text-gray-600 leading-relaxed text-[15px]">{faq.a}{faq.link && <> <Link href={faq.link.href} className="font-semibold text-primary underline underline-offset-2">{faq.link.label}</Link></>}</p>
             </details>
           ))}
         </div>
