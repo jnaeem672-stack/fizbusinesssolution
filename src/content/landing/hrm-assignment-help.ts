@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const hrmAssignmentHelp: LandingContent = {
   slug: 'hrm-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'HRM Assignment Help | Expert Support from £20',
   metaDescription:
     'HRM assignment help from £20 per 1,000 words for strategic HRM, employment relations, reward and talent management. HR experts, 24/7 WhatsApp, 10% off.',
@@ -22,7 +23,7 @@ export const hrmAssignmentHelp: LandingContent = {
   intro: [
     "HRM assignment help from FIZ Business Solutions (FIZBS) connects you with Master's and PhD-qualified specialists in human resource management, organisational behaviour and employment relations. Business and HR are at the centre of what we do, and we have supported more than 10,000 university students since 2015. HRM is a popular module on the MBA, so many students also use our [help with MBA assignments](/mba-assignment-help).",
     'HRM assignments rarely reward a tidy description of a model. Markers want to see how HR practices fit an organisation\'s strategy, context and people, and whether the evidence shows they actually work. Our experts help you move from describing HR to analysing and evaluating it.',
-    'Support starts from £20 per 1,000 words, and you can check your price in seconds with the instant calculator on our homepage.',
+    'Support starts from £20 per 1,000 words, and you can check your price in seconds with the instant calculator on this page.',
   ],
   sections: [
     {
@@ -80,7 +81,7 @@ export const hrmAssignmentHelp: LandingContent = {
       heading: "HRM at MBA and Master's level",
       paragraphs: [
         "At Master's and MBA level, HRM assignments move from operational HR to strategy. You are expected to show how people practices support the organisation's goals, weigh the evidence that HR improves performance, and consider the interests of employees as well as managers.",
-        'Evidence-based HR is a growing expectation: drawing on research, organisational data, professional expertise and stakeholder views before recommending a change. Our experts help you build that kind of balanced, justified argument.',
+        'Evidence-based HR is a growing expectation: drawing on research, organisational data, professional expertise and stakeholder views before recommending a change. Our experts help you build that kind of balanced, justified argument, including full [HRM dissertations](/dissertation-help-uk) and [HR dissertation topics](/blog/hrm-dissertation-topics).',
       ],
     },
     {
@@ -103,7 +104,7 @@ export const hrmAssignmentHelp: LandingContent = {
       heading: 'What markers look for in HRM work',
       paragraphs: [
         'High-scoring HRM work links people practices to business outcomes, weighs evidence from research and practice, and shows awareness of the tensions between employer and employee interests. At Master\'s and MBA level, markers also expect a strategic view and justified recommendations a senior manager could act on.',
-        'If you are studying a CIPD qualification rather than a degree, our CIPD support is mapped to the assessment criteria used by CIPD centres.',
+        'If you are studying a CIPD qualification rather than a degree, our [CIPD support](/cipd-assignment-help) is mapped to the assessment criteria used by CIPD centres.',
       ],
     },
     {
@@ -130,10 +131,12 @@ export const hrmAssignmentHelp: LandingContent = {
     {
       q: 'Is HRM assignment help different from CIPD help?',
       a: 'Degree HRM modules are marked against university criteria, while CIPD assessments are mapped to CIPD assessment criteria. We support both, with a dedicated CIPD page.',
+      link: { label: 'CIPD assignment help', href: '/cipd-assignment-help' },
     },
     {
       q: 'Do you help with HRM dissertations?',
       a: 'Yes. We support topic choice, proposals, literature reviews, methodology and analysis, at £30 per 1,000 words.',
+      link: { label: 'Dissertation help UK', href: '/dissertation-help-uk' },
     },
     {
       q: 'Is my request kept confidential?',
@@ -142,6 +145,6 @@ export const hrmAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your HRM assignment price today',
   ctaText: 'Send your module, brief and deadline on WhatsApp, or use the instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my HRM assignment.',
   related: ['cipd-assignment-help', 'business-management-assignment-help', 'mba-assignment-help', 'dissertation-help-uk'],
 };

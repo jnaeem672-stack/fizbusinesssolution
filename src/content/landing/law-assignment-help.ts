@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const lawAssignmentHelp: LandingContent = {
   slug: 'law-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Law Assignment Help | Essays and Dissertations from £20',
   metaDescription:
     'Law assignment help from £20 per 1,000 words: problem questions, law essays, law dissertations and OSCOLA, including tort, contract and criminal law.',
@@ -29,7 +30,7 @@ export const lawAssignmentHelp: LandingContent = {
     "Law is a subject where knowing the cases is only half the battle. Our law assignment help is designed for students who understand the material in lectures but struggle to turn it into a structured answer that applies the law to the facts, weighs competing authorities and reaches a clear conclusion.",
     "FIZ Business Solutions (FIZBS) has supported university students since 2015. Your request is handled by a subject expert with a Master's or PhD in law or a closely related field, who reads your question, module handbook and marking criteria before working with you.",
     "We support LLB, LLM and PhD students at UK universities and law and business students across Saudi Arabia and the Gulf. Whether you need help untangling a contract problem question, sharpening a jurisprudence essay or getting your footnotes into proper OSCOLA format, you get practical, subject-specific support as part of our wider [UK assignment help service](/assignment-help-uk).",
-    "Pricing starts from £20 per 1,000 words for deadlines of seven days or more, and new customers receive 10% off their first order. You can check your exact price with the calculator on our homepage.",
+    "Pricing starts from £20 per 1,000 words for deadlines of seven days or more, and new customers receive 10% off their first order. You can check your exact price with the calculator on this page.",
   ],
   sections: [
     {
@@ -50,7 +51,7 @@ export const lawAssignmentHelp: LandingContent = {
       heading: 'Law essay help UK students rely on',
       paragraphs: [
         "A legal essay is an argument, not a description. Essay titles often quote a judge or academic and ask you to \"critically discuss\" or \"evaluate\" a statement, so the first job is to take a position and defend it throughout.",
-        "Our law essay help UK service focuses on what separates a 2:1 from a first: a clear thesis in the introduction, paragraphs that each advance the argument, engagement with academic commentary, and a conclusion that answers the question actually set. Your expert can help you plan an argument, test it against counterarguments and tighten the analysis.",
+        "Our law [essay help](/essay-help) UK service focuses on what separates a 2:1 from a first: a clear thesis in the introduction, paragraphs that each advance the argument, engagement with academic commentary, and a conclusion that answers the question actually set. Your expert can help you plan an argument, test it against counterarguments and tighten the analysis.",
         "Typical titles we see include whether the doctrine of consideration still serves a useful purpose, whether the law on loss of control is fit for purpose, and how far the rule of law constrains executive power. Each needs a different balance of doctrine, theory and policy, and your expert helps you find it.",
         "Common weaknesses we help students fix include over-reliance on textbooks, long passages of case facts with little analysis, and conclusions that introduce new points instead of drawing the argument together.",
       ],
@@ -138,7 +139,7 @@ export const lawAssignmentHelp: LandingContent = {
       heading: 'OSCOLA referencing help',
       paragraphs: [
         "Most UK law schools require OSCOLA, the Oxford University Standard for Citation of Legal Authorities. It uses footnotes rather than in-text citations, and small errors such as missing neutral citations, wrong brackets around years or inconsistent pinpoints can cost marks for presentation. The 5th edition, published in March 2026, removed ibid and changed how EU, ECHR and some UK court decisions are cited. Our free OSCOLA referencing generator follows the new edition.",
-        "Our OSCOLA referencing help covers cases, statutes, statutory instruments, EU materials, journal articles, books and websites. Your expert can check your footnotes and bibliography, correct formatting and make sure every authority you cite is cited consistently. If your module uses a different style, we also work with Harvard, APA, MLA, IEEE and Chicago.",
+        "Our [OSCOLA referencing help](/blog/oscola-referencing-guide) covers cases, statutes, statutory instruments, EU materials, journal articles, books and websites. Your expert can check your footnotes and bibliography, correct formatting and make sure every authority you cite is cited consistently. If your module uses a different style, we also work with [Harvard, APA, MLA, IEEE and Chicago](/referencing-help).",
       ],
     },
     {
@@ -160,7 +161,7 @@ export const lawAssignmentHelp: LandingContent = {
       heading: 'Law dissertation help for LLB and LLM students',
       paragraphs: [
         'A law dissertation is judged on the quality of its question and argument. The most common problem we see is a topic that is too broad, such as "the law of negligence", instead of a focused question that the dissertation can actually answer.',
-        'Our law dissertation help supports you from the proposal to the final chapter. Your expert gives feedback on your drafts and explains the reasons behind each suggestion, so the research and the argument stay yours.',
+        'Our law [dissertation help](/dissertation-help-uk) supports you from the proposal to the final chapter. Your expert gives feedback on your drafts and explains the reasons behind each suggestion, so the research and the argument stay yours.',
       ],
       bullets: [
         'Narrowing your topic into a clear, answerable research question',
@@ -206,10 +207,12 @@ export const lawAssignmentHelp: LandingContent = {
     {
       q: 'Do you offer law essay help for UK universities?',
       a: 'Yes. We support law students at universities across the UK with essay planning, argument structure, critical analysis and the use of academic sources, following your module brief and marking criteria.',
+      link: { label: 'Essay help', href: '/essay-help' },
     },
     {
       q: 'Can you check my OSCOLA footnotes and bibliography?',
       a: 'Yes. Our experts can review your footnotes and bibliography, correct citations for cases, statutes and journal articles, and make sure your formatting is consistent throughout.',
+      link: { label: 'OSCOLA referencing guide', href: '/blog/oscola-referencing-guide' },
     },
     {
       q: 'Do you help with LLM assignments and dissertations?',
@@ -232,7 +235,7 @@ export const lawAssignmentHelp: LandingContent = {
   ctaText:
     'Send your problem question or essay title on WhatsApp and get a clear price from a law-qualified expert. Enjoy 10% off your first order.',
   whatsappMessage:
-    'Hello FIZBS, I would like to discuss my assignment.',
+    'Hello FIZBS, I would like to discuss my law assignment.',
   related: [
     'essay-help',
     'referencing-help',

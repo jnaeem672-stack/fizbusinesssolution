@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const marketingAssignmentHelp: LandingContent = {
   slug: 'marketing-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Marketing Assignment Help | Expert Support from £20',
   metaDescription:
     'Marketing assignment help from £20 per 1,000 words: marketing plans, digital marketing and consumer behaviour. 10% off your first order. WhatsApp us today.',
@@ -22,13 +23,13 @@ export const marketingAssignmentHelp: LandingContent = {
     "Marketing assignment help from FIZBS gives you direct access to Master's and PhD-qualified marketing specialists who understand both the academic theory and how brands actually compete. Since 2015 we have supported more than 10,000 university students across the UK and Saudi Arabia.",
     "Marketing looks easy from the outside, which is exactly why students are often surprised by their marks. Tutors expect far more than creative ideas. They want segmentation backed by data, objectives that are measurable and a clear link between customer insight and every tactical decision.",
     "Your subject expert works on your request with you, helping you choose a suitable brand, structure your analysis and apply models such as STP, the 7Ps and SOSTAC with real critical depth.",
-    "Pricing is clear from the start: support begins at £20 per 1,000 words, you can check your price instantly with our homepage calculator, and new customers receive 10% off their first order.",
+    "Pricing is clear from the start: support begins at £20 per 1,000 words, you can check your price instantly with the calculator on this page, and new customers receive 10% off their first order.",
   ],
   sections: [
     {
       heading: 'What our marketing assignment help covers',
       paragraphs: [
-        "We support marketing modules at every level, from first-year principles of marketing through to Master's dissertations and MBA marketing strategy. Common areas include:",
+        "We support marketing modules at every level, from first-year principles of marketing through to [Master's dissertations](/dissertation-help-uk) and MBA marketing strategy. Common areas include:",
         "Customer journey work is a growing part of many modules. Your expert can help you map touchpoints from awareness to advocacy, identify pain points and link each stage to a channel and a measurable outcome, which turns a descriptive diagram into a genuine piece of analysis.",
       ],
       bullets: [
@@ -61,7 +62,7 @@ export const marketingAssignmentHelp: LandingContent = {
       heading: 'Digital marketing assignment help',
       paragraphs: [
         "Digital modules move quickly, and markers expect current examples and an understanding of how channels work together. Our digital marketing assignment help covers search engine optimisation, paid search, email marketing, influencer partnerships, content strategy and social media campaigns on platforms such as Instagram, TikTok, LinkedIn and Snapchat.",
-        "Your expert can explain frameworks such as the RACE planning model, the PESO media model and the marketing funnel, and show you how to evaluate campaign performance with metrics like reach, click-through rate, conversion rate, cost per acquisition and customer lifetime value. If your task includes analytics data you have gathered, we help you interpret it accurately and present it clearly.",
+        "Your expert can explain frameworks such as the RACE planning model, the PESO media model and the marketing funnel, and show you how to evaluate campaign performance with metrics like reach, click-through rate, conversion rate, cost per acquisition and customer lifetime value. If your task includes [analytics data](/data-analysis-help) you have gathered, we help you interpret it accurately and present it clearly.",
       ],
     },
     {
@@ -89,7 +90,7 @@ export const marketingAssignmentHelp: LandingContent = {
     {
       heading: 'Example marketing assignment topics',
       paragraphs: [
-        'We help with briefs set across UK and Gulf universities. Recent examples of the kinds of topics students bring to us include:',
+        'We help with briefs set across UK and Gulf universities (and for final projects, our [marketing dissertation topics](/blog/marketing-dissertation-topics) give more ideas). Recent examples of the kinds of topics students bring to us include:',
         "If you are free to choose your own brand, pick one with enough published information, such as annual reports, press coverage and market research summaries. Your expert can help you judge whether a brand gives you enough material before you commit.",
       ],
       bullets: [
@@ -156,10 +157,12 @@ export const marketingAssignmentHelp: LandingContent = {
     {
       q: 'How do I write a marketing audit?',
       a: 'A marketing audit reviews the external environment, often with PESTLE and Five Forces, alongside internal resources, current marketing activity and performance. It usually ends with a SWOT that leads into objectives and strategy. The key is to prioritise findings, so the audit explains which issues matter most for the brand and why.',
+      link: { label: 'SWOT & PESTLE analysis guide', href: '/blog/swot-and-pestle-analysis-guide' },
     },
     {
       q: 'Can you help with a marketing strategy assignment for an MBA?',
       a: "Yes. We support Bachelor's, Master's, MBA and PhD students, and MBA marketing strategy work is adapted to the higher level of critical and strategic thinking expected, often drawing on your own workplace experience.",
+      link: { label: 'MBA assignment help', href: '/mba-assignment-help' },
     },
     {
       q: 'How quickly can I get help with a marketing assignment?',
@@ -169,7 +172,7 @@ export const marketingAssignmentHelp: LandingContent = {
   ctaTitle: 'Turn your marketing brief into a clear plan',
   ctaText:
     'Send your brief and chosen brand on WhatsApp to get a price and support from a marketing specialist. Save 10% on your first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my marketing assignment.',
   related: [
     'business-management-assignment-help',
     'mba-assignment-help',

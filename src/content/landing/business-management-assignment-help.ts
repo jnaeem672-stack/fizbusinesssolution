@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const businessManagementAssignmentHelp: LandingContent = {
   slug: 'business-management-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Business Assignment Help | Management Experts from £20',
   metaDescription:
     "Business assignment help from £20 per 1,000 words for strategy, HRM, leadership and operations modules. 10% off your first order. Message us on WhatsApp.",
@@ -62,8 +63,8 @@ export const businessManagementAssignmentHelp: LandingContent = {
     {
       heading: 'Typical business assessment types',
       paragraphs: [
-        "Every format has its own expectations, and getting the format wrong can cost marks even when the content is sound. We support all the common assessment types set by UK and Saudi business schools.",
-        "A report, for instance, needs an executive summary that a manager could act on, numbered headings and recommendations tied to evidence. A critical essay needs a clear line of argument running from introduction to conclusion. Your expert explains these conventions so your work reads the way your marker expects.",
+        "Every format has its own expectations, and getting the format wrong can cost marks even when the content is sound. We support all the common assessment types set by UK and Saudi business schools, including [case study analysis](/case-study-help).",
+        "A [report](/blog/how-to-write-a-business-report), for instance, needs an executive summary that a manager could act on, numbered headings and recommendations tied to evidence. A critical essay needs a clear line of argument running from introduction to conclusion. Your expert explains these conventions so your work reads the way your marker expects.",
       ],
       bullets: [
         'Case study analysis of a named company, often with a set of recommendations',
@@ -78,7 +79,7 @@ export const businessManagementAssignmentHelp: LandingContent = {
     {
       heading: 'Strategic management assignment help',
       paragraphs: [
-        "Strategy modules usually ask you to analyse an organisation's external environment, assess its internal capabilities and recommend a direction. Our strategic management assignment help shows you how to link these stages, so your PESTLE findings feed into your SWOT and your SWOT drives your strategic options.",
+        "Strategy modules usually ask you to analyse an organisation's external environment, assess its internal capabilities and recommend a direction. Our strategic management assignment help shows you how to link these stages, so your [PESTLE findings feed into your SWOT](/blog/swot-and-pestle-analysis-guide) and your SWOT drives your strategic options.",
         "A common weakness is listing factors without explaining their impact. Your expert helps you prioritise the issues that matter most for the case company, support them with recent data from annual reports or industry sources, and judge options using criteria such as suitability, acceptability and feasibility.",
       ],
     },
@@ -117,14 +118,14 @@ export const businessManagementAssignmentHelp: LandingContent = {
       paragraphs: [
         "UK marking criteria for business management assignments usually reward four things: critical analysis, application of theory, use of evidence and clear structure. A first-class answer evaluates rather than describes, draws on a range of credible sources and reaches conclusions the reader can follow.",
         "If you are looking for business management assignment help UK universities would recognise as academically sound, your expert reviews your brief and marking rubric first, then helps you plan a structure that addresses each criterion directly.",
-        "At Master's and MBA level, expectations rise further. You are expected to synthesise competing research, question the assumptions behind popular models and show awareness of ethical and sustainability issues in management decisions.",
+        "At Master's and MBA level, expectations rise further. You are expected to synthesise competing research, question the assumptions behind popular models and show awareness of ethical and sustainability issues in management decisions. For final projects, see our [dissertation help](/dissertation-help-uk) and [business dissertation topics](/blog/business-dissertation-topics).",
       ],
     },
     {
       heading: 'How our business assignment help works and what it costs',
       paragraphs: [
         "Getting business assignment help from FIZBS is straightforward. Send your brief, word count, deadline and any lecture slides or reading lists on WhatsApp. We confirm your price, match you with a business specialist and keep you updated throughout. Support is 100% confidential, and your files are never shared.",
-        "Pricing starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. New customers get 10% off, orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off, though discounts do not stack.",
+        "Pricing starts from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. New customers get 10% off, orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off, though discounts do not stack. The calculator on this page shows an estimate, and the team confirms the final price after reviewing your brief.",
       ],
     },
   ],
@@ -136,10 +137,12 @@ export const businessManagementAssignmentHelp: LandingContent = {
     {
       q: 'Can I get help applying Porter\'s Five Forces to a case study?',
       a: "Yes. Your expert explains how to assess each force for the specific industry, support it with evidence and draw a conclusion about industry attractiveness, rather than simply listing the forces. They also show you how to acknowledge the model's limits, such as its static view of competition.",
+      link: { label: 'Case study help', href: '/case-study-help' },
     },
     {
       q: 'Do you offer management assignment help for MBA students?',
       a: "Yes. We support Bachelor's, Master's, MBA and PhD students. MBA work often needs stronger links to professional practice, and your expert adapts the support to that standard.",
+      link: { label: 'MBA assignment help', href: '/mba-assignment-help' },
     },
     {
       q: 'Which business models should I use in a strategy assignment?',
@@ -165,7 +168,7 @@ export const businessManagementAssignmentHelp: LandingContent = {
   ctaTitle: 'Get expert support with your business module',
   ctaText:
     'Send your brief and marking criteria on WhatsApp to get a clear price and a business specialist matched to your topic. New customers save 10%.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my business assignment.',
   related: [
     'mba-assignment-help',
     'case-study-help',

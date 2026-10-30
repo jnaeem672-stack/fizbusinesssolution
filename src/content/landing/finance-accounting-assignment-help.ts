@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const financeAccountingAssignmentHelp: LandingContent = {
   slug: 'finance-accounting-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Finance Assignment Help | Accounting Experts from £20',
   metaDescription:
     'Finance assignment help from £20 per 1,000 words: ratio analysis, NPV, WACC, IFRS and Excel models. 10% off your first order. Send your brief on WhatsApp.',
@@ -84,7 +85,7 @@ export const financeAccountingAssignmentHelp: LandingContent = {
     {
       heading: 'Excel models and spreadsheet work',
       paragraphs: [
-        "Many finance assignments require a spreadsheet alongside the written report. Your expert can help you structure an Excel model with clear inputs, calculations and outputs, use functions such as NPV, XNPV, IRR and PMT correctly, and build sensitivity or scenario analysis that tests your key assumptions. Good models keep hard-coded numbers out of formulas, so a change to one input updates every result.",
+        "Many finance assignments require a spreadsheet alongside the written report. Our [Excel data analysis help](/excel-data-analysis-help) can help you structure an Excel model with clear inputs, calculations and outputs, use functions such as NPV, XNPV, IRR and PMT correctly, and build sensitivity or scenario analysis that tests your key assumptions. Good models keep hard-coded numbers out of formulas, so a change to one input updates every result.",
         "A clean, well-labelled model makes your workings easy for a marker to follow. Where a task is mainly spreadsheet or data work rather than written work, the price depends on scope and we give you a clear quote on WhatsApp.",
       ],
     },
@@ -107,14 +108,14 @@ export const financeAccountingAssignmentHelp: LandingContent = {
       heading: 'What markers look for in finance work',
       paragraphs: [
         "UK marking criteria in finance usually split marks between technical accuracy and quality of discussion. Correct calculations earn some credit, but higher bands require critical evaluation, awareness of assumptions and limitations, and recommendations justified by the figures.",
-        "Clear presentation also counts, and it is an area where finance assignment help often makes a quick difference. Tables should be labelled, formulas explained and sources such as annual reports or databases referenced properly in Harvard or APA. Example topics we regularly support include analysing the performance of a FTSE 100 retailer, appraising a capital project for a manufacturing firm and comparing Islamic and conventional bank performance in the Gulf.",
+        "Clear presentation also counts, and it is an area where finance assignment help often makes a quick difference. Tables should be labelled, formulas explained and sources such as annual reports or databases [referenced properly in Harvard or APA](/referencing-help). Example topics we regularly support include analysing the performance of a FTSE 100 retailer, appraising a capital project for a manufacturing firm and comparing Islamic and conventional bank performance in the Gulf. For project ideas, see our [finance and accounting dissertation topics](/blog/finance-accounting-dissertation-topics).",
       ],
     },
     {
       heading: 'How our finance assignment help works and pricing',
       paragraphs: [
         "Share your brief, any data or case figures, your word count and deadline on WhatsApp. We confirm your price and match you with a finance or accounting specialist. Support is available 24/7 and is 100% confidential.",
-        "Finance assignment help is priced from £20 per 1,000 words on a standard deadline of seven days or more. If you need it sooner, expect a 25% surcharge for 3 to 6 days or 50% for 48 hours or less. You can save 10% as a new customer, 10% on 8,000+ words or 15% on 15,000+ words, and we apply whichever single discount suits your order.",
+        "Finance assignment help is priced from £20 per 1,000 words on a standard deadline of seven days or more. If you need it sooner, expect a 25% surcharge for 3 to 6 days or 50% for 48 hours or less. You can save 10% as a new customer, 10% on 8,000+ words or 15% on 15,000+ words, and we apply whichever single discount suits your order. The calculator on this page shows an estimate, and the team confirms the final price after reviewing your brief.",
       ],
     },
   ],
@@ -146,6 +147,7 @@ export const financeAccountingAssignmentHelp: LandingContent = {
     {
       q: 'Can you help me build an Excel model for my finance coursework?',
       a: 'Yes. Your expert can help you structure an Excel model with clear inputs, formulas and sensitivity analysis. For spreadsheet-only tasks, the price depends on scope and we confirm it on WhatsApp.',
+      link: { label: 'Excel data analysis help', href: '/excel-data-analysis-help' },
     },
     {
       q: 'Is my finance coursework request confidential?',
@@ -155,7 +157,7 @@ export const financeAccountingAssignmentHelp: LandingContent = {
   ctaTitle: 'Get clear support with your finance figures',
   ctaText:
     'Send your brief and any case data on WhatsApp for a quick price and help from a finance or accounting specialist. New customers get 10% off.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my finance assignment.',
   related: [
     'excel-data-analysis-help',
     'business-management-assignment-help',

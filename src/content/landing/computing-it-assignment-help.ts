@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const computingItAssignmentHelp: LandingContent = {
   slug: 'computing-it-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Computer Science Assignment Help | IT Experts from £20',
   metaDescription:
     'Computer science assignment help from £20 per 1,000 words: code, reports, SQL, UML and cyber security. 10% off your first order. Message us on WhatsApp.',
@@ -23,7 +24,7 @@ export const computingItAssignmentHelp: LandingContent = {
     "Computing degrees mix two very different skills: building working systems and writing about them in an academic way. Our computer science assignment help supports students who can follow the lectures but get stuck when a program throws errors they cannot trace, or when a report needs to justify design decisions with evidence and references.",
     "FIZ Business Solutions (FIZBS) has worked with university students since 2015. Your request goes to a subject expert with a Master's or PhD in computing or a related field, who reads your brief and marking scheme before working through the task with you.",
     "Our approach is built around understanding. We help you understand and improve your own code and reports: explaining why a function fails, how an algorithm scales, or what a marker expects from a testing section. You stay in control of your project and come away with skills you can use in the next module.",
-    "Report-based computing work starts from £20 per 1,000 words, and new customers get 10% off their first order. For code-focused support, the price depends on scope and we give you a clear quote on WhatsApp.",
+    "Report-based computing work starts from £20 per 1,000 words, and new customers get 10% off their first order; the calculator on this page shows an estimate. For code-focused support, the price depends on scope and we give you a clear quote on WhatsApp.",
   ],
   sections: [
     {
@@ -45,7 +46,7 @@ export const computingItAssignmentHelp: LandingContent = {
       paragraphs: [
         "Many computing assignments are assessed mainly on the written report. Markers look for a clear requirements analysis, a justified choice of development methodology, evidence of design, a testing strategy and an honest evaluation of what worked and what did not.",
         "Your expert can help you structure the report, compare Agile, Scrum and Waterfall in the context of your own project, write meaningful user stories and acceptance criteria, and present test results in tables that actually support your conclusions. A common mistake is describing features without explaining why they were built that way, which keeps marks in the lower bands.",
-        "Final year projects bring all of this together. Typical examples include a booking system for a local business, a mobile app with an accessibility focus or a machine learning tool for detecting spam. Your expert can help you scope a realistic project, plan your report chapters and write a critical evaluation that links back to your original objectives.",
+        "[Final year projects](/dissertation-help-uk) bring all of this together. Typical examples include a booking system for a local business, a mobile app with an accessibility focus or a machine learning tool for detecting spam. Your expert can help you scope a realistic project, plan your report chapters and write a critical evaluation that links back to your original objectives. For ideas, see our [computer science dissertation topics](/blog/computer-science-dissertation-topics).",
       ],
     },
     {
@@ -86,8 +87,8 @@ export const computingItAssignmentHelp: LandingContent = {
     {
       heading: 'Data science assignment help and machine learning reports',
       paragraphs: [
-        "Data science modules test both technical work and interpretation. Our data science assignment help supports you with data cleaning, exploratory analysis, feature engineering, model selection and evaluation using metrics such as accuracy, precision, recall, F1 score and RMSE.",
-        "Your expert can explain how Python libraries such as pandas, statsmodels and matplotlib fit into your workflow, and why overfitting, data leakage and class imbalance matter. We work only with the data you have collected or been given: we help you analyse and interpret it, never invent results.",
+        "Data science modules test both technical work and interpretation. Our data science assignment help supports you with [data cleaning and exploratory analysis](/data-analysis-help), feature engineering, model selection and evaluation using metrics such as accuracy, precision, recall, F1 score and RMSE.",
+        "Your expert can explain how [Python libraries such as pandas, statsmodels and matplotlib](/python-stata-help) fit into your workflow, and why overfitting, data leakage and class imbalance matter. We work only with the data you have collected or been given: we help you analyse and interpret it, never invent results.",
         "Strong machine learning reports explain the business or research question, justify each modelling choice and discuss limitations and bias. Weak ones paste output without commentary, which is one of the most common reasons for lost marks.",
       ],
     },
@@ -140,6 +141,7 @@ export const computingItAssignmentHelp: LandingContent = {
     {
       q: 'Do you offer IT assignment help for reports and documentation?',
       a: 'Yes. We support technical reports, feasibility studies, IT strategy, user documentation and reflective writing, following your brief and referencing style.',
+      link: { label: 'Coursework & report help', href: '/coursework-report-help' },
     },
     {
       q: 'Can you help with SQL queries and database design?',
@@ -152,6 +154,7 @@ export const computingItAssignmentHelp: LandingContent = {
     {
       q: 'Can I get data science assignment help with Python?',
       a: 'Yes. Experts can guide you through data cleaning, analysis and model evaluation in Python using pandas, statsmodels and matplotlib, applied to the data you have collected or been given.',
+      link: { label: 'Python, R & Stata help', href: '/python-stata-help' },
     },
     {
       q: 'Can you help me draw UML diagrams for my project?',
@@ -166,7 +169,7 @@ export const computingItAssignmentHelp: LandingContent = {
   ctaText:
     'Share your specification, code or report draft on WhatsApp and get a clear quote from a qualified computing expert. Enjoy 10% off your first order.',
   whatsappMessage:
-    'Hello FIZBS, I would like to discuss my assignment.',
+    'Hello FIZBS, I would like to discuss my computing assignment.',
   related: [
     'python-stata-help',
     'coursework-report-help',
