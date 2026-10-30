@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const hncAssignmentHelp: LandingContent = {
   slug: 'hnc-assignment-help',
   locale: 'en',
+  updated: '2026-10-31',
   metaTitle: 'HNC Assignment Help | Engineering, Construction, Business',
   metaDescription:
     'HNC assignment help for Level 4 students in engineering, construction, business and computing. Expert guidance on each criterion, from £20 per 1,000 words.',
@@ -25,13 +26,13 @@ export const hncAssignmentHelp: LandingContent = {
   intro: [
     'HNC assignment help from FIZ Business Solutions (FIZBS) supports students on Higher National Certificates, the Level 4 qualifications offered by Pearson BTEC in England, Wales and Northern Ireland and by SQA in Scotland. Most HNC students study part time alongside a job, often sponsored by an employer or as part of an apprenticeship, so assignments have to fit around shifts, site work and family life.',
     'HNC units are practical and closely tied to the workplace. An engineering unit may ask you to solve problems and write up a lab experiment; a construction unit may ask for a technical report on a building method; a business unit may ask you to analyse a real organisation. Our subject experts help you understand what each task and criterion asks for, check your method and present your work clearly.',
-    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on our homepage.',
+    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on this page. The team confirms the final price after reviewing your brief.',
   ],
   sections: [
     {
       heading: 'What an HNC involves',
       paragraphs: [
-        "A Pearson BTEC HNC is a Level 4 qualification, usually made up of 120 credits, which is the same level as the first year of a bachelor's degree. It is often studied over one year full time or two years part time. Many students later add a further year at Level 5 to complete an HND, or use the HNC to progress onto a degree, and in England some HNCs are also approved as Higher Technical Qualifications (HTQs).",
+        "A Pearson BTEC HNC is a Level 4 qualification, usually made up of 120 credits, which is the same level as the first year of a bachelor's degree. It is often studied over one year full time or two years part time. Many students later add a further year at Level 5 to complete an [HND](/hnd-hnc-assignment-help), or use the HNC to progress onto a degree, and in England some HNCs are also approved as Higher Technical Qualifications (HTQs).",
         'In Scotland, HNCs are awarded by SQA at SCQF level 7. Many SQA HNCs include a graded unit, a larger project or exam that brings together the learning from the course and is graded A, B or C.',
         'Unit titles and numbers vary between awarding bodies, specifications and colleges, so always follow your own assignment brief.',
       ],
@@ -69,8 +70,8 @@ export const hncAssignmentHelp: LandingContent = {
         'Business is the most requested HNC subject at FIZBS, and our experts also support computing and healthcare students:',
       ],
       bullets: [
-        'Business: the business environment, marketing, human resource management, leadership and management, accounting principles and Managing a Successful Business Project. Finance briefs based on the older MFRD unit are covered on our MFRD page',
-        'Computing and digital technologies: programming, networking, database design and development, security and planning a computing project',
+        'Business: the business environment, marketing, human resource management, leadership and management, accounting principles and Managing a Successful Business Project. Finance briefs based on the older MFRD unit are covered on our [MFRD page](/mfrd-assignment-help)',
+        '[Computing and digital technologies](/computing-it-assignment-help): programming, networking, database design and development, security and planning a computing project',
         'Healthcare practice and health and social care: person-centred care, health education, law and policy, and reflective practice',
       ],
     },
@@ -136,6 +137,7 @@ export const hncAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with HNC Engineering assignments?',
       a: 'Yes. Our engineering experts support units such as Engineering Design, Engineering Maths, Engineering Science and Managing a Professional Engineering Project, as well as electrical, electronic and mechanical specialist units.',
+      link: { label: 'Engineering assignment help', href: '/engineering-assignment-help' },
     },
     {
       q: 'Can you help with HNC Construction units?',
@@ -165,7 +167,7 @@ export const hncAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your HNC assignment price today',
   ctaText:
     'Send your unit, brief and deadline on WhatsApp, or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my HNC assignment.',
   related: [
     'hnd-hnc-assignment-help',
     'engineering-assignment-help',
