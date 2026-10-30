@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const economicsAssignmentHelp: LandingContent = {
   slug: 'economics-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Economics Assignment Help | Micro, Macro and Econometrics',
   metaDescription:
     'Economics assignment help from £20 per 1,000 words for microeconomics, macroeconomics, econometrics and essays with diagrams. Expert help, 10% off.',
@@ -23,13 +24,13 @@ export const economicsAssignmentHelp: LandingContent = {
     "Economics assignment help from FIZ Business Solutions (FIZBS) gives you access to Master's and PhD-qualified economists who understand both the theory and the data. We started in 2015 and have since worked with more than 10,000 university students across the UK, Saudi Arabia and the Gulf.",
     'Economics assessments test whether you can move between models and the real world: draw the right diagram, explain what it predicts, and check that prediction against data. Our experts help you connect each step so your argument is clear and well supported.',
     'The subject is also more mathematical than many students expect. Even first-year modules use algebra and some calculus to find an equilibrium, maximise profit or work out a multiplier, and most degrees include at least one econometrics module by the final year.',
-    'Economics support is priced from £20 per 1,000 words, and the instant calculator on our homepage shows what your essay, problem set or project will cost before you message us.',
+    'Economics support is priced from £20 per 1,000 words, and the instant calculator on this page shows what your essay, problem set or project will cost before you message us.',
   ],
   sections: [
     {
       heading: 'Economics modules we support',
       paragraphs: [
-        'Most UK economics degrees share a common core: microeconomics, macroeconomics and quantitative methods in the first two years, followed by a choice of applied options in the final year. Students on business, finance and MBA programmes meet the same ideas in modules on managerial economics and the global economy.',
+        'Most UK economics degrees share a common core: microeconomics, macroeconomics and quantitative methods in the first two years, followed by a choice of applied options in the final year. Students on business, [finance](/finance-accounting-assignment-help) and MBA programmes meet the same ideas in modules on managerial economics and the global economy.',
       ],
       bullets: [
         'Microeconomics: consumer and producer theory, market structures, game theory and market failure',
@@ -73,7 +74,7 @@ export const economicsAssignmentHelp: LandingContent = {
     {
       heading: 'Econometrics and data analysis help',
       paragraphs: [
-        'Econometrics assignments often ask you to estimate a model, test assumptions and explain what the coefficients mean. Many students can run the regression but lose marks on interpretation.',
+        'Econometrics assignments often ask you to estimate a model, test assumptions and explain what the coefficients mean, often in [Stata, R or Python](/python-stata-help). Many students can run the regression but lose marks on [interpreting the results](/data-analysis-help).',
         'Take a wage regression with the log of hourly pay as the dependent variable. A coefficient of 0.08 on years of education means each extra year is linked with roughly 8% higher pay, holding the other variables constant. A strong answer then asks what is missing: if ability raises both education and pay but is not in the model, the coefficient is probably biased upwards. Spotting omitted variable bias, reverse causality or measurement error is what separates analysis from description.',
       ],
       bullets: [
@@ -140,7 +141,7 @@ export const economicsAssignmentHelp: LandingContent = {
       heading: 'Getting a price for economics help',
       paragraphs: [
         'Send us the module, your brief, the word count and your deadline, along with any dataset you have been given. You receive a clear price with 10% off your first order, and an economist takes on your request.',
-        'The starting rate is £20 per 1,000 words for deadlines a week or more away. Allow 3 to 6 days and the price is 25% higher; under 48 hours it is 50% higher. Economics dissertations cost £30 per 1,000 words, with half paid at the start and half on completion.',
+        'The starting rate is £20 per 1,000 words for deadlines a week or more away. Allow 3 to 6 days and the price is 25% higher; under 48 hours it is 50% higher. [Economics dissertations](/dissertation-help-uk) cost £30 per 1,000 words, with half paid at the start and half on completion.',
       ],
     },
   ],
@@ -152,6 +153,7 @@ export const economicsAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with econometrics in Stata or EViews?',
       a: 'Yes. Our experts support regression, diagnostic tests, time series and panel data analysis in Stata, EViews, R and Excel, with clear interpretation of the results.',
+      link: { label: 'Python, R & Stata help', href: '/python-stata-help' },
     },
     {
       q: 'How do I interpret regression results in an economics assignment?',
@@ -172,6 +174,7 @@ export const economicsAssignmentHelp: LandingContent = {
     {
       q: 'Do you help with economics dissertations?',
       a: 'Yes. We support topic choice, literature reviews, data collection and econometric analysis, at £30 per 1,000 words.',
+      link: { label: 'Dissertation help UK', href: '/dissertation-help-uk' },
     },
     {
       q: 'Can I share my dataset and Stata files privately?',
@@ -180,6 +183,6 @@ export const economicsAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your economics assignment price today',
   ctaText: 'Send your module, brief, deadline and any dataset on WhatsApp, or use the instant calculator to see your price. New customers save 10% on a first economics order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my economics assignment.',
   related: ['finance-accounting-assignment-help', 'python-stata-help', 'data-analysis-help', 'dissertation-help-uk'],
 };

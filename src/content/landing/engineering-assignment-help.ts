@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const engineeringAssignmentHelp: LandingContent = {
   slug: 'engineering-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Engineering Assignment Help | Expert Support from £20',
   metaDescription:
     'Engineering assignment help from £20 per 1,000 words: technical reports, lab reports, calculations and design projects. 10% off your first order. Ask now.',
@@ -23,14 +24,14 @@ export const engineeringAssignmentHelp: LandingContent = {
     "Engineering coursework rewards precision. A single unit error can undo a page of correct working, and a strong design can lose marks if the report does not explain the reasoning behind it. Our engineering assignment help supports students who need a clear second view on their calculations, methods and technical writing.",
     "FIZ Business Solutions (FIZBS) has supported university students since 2015. Your request is matched with a subject expert holding a Master's or PhD in engineering or a closely related discipline, who reads your brief, data and marking rubric before working through the task with you.",
     "We support undergraduate and postgraduate engineers at UK universities and across Saudi Arabia and the Gulf, from first year statics problems to MSc design projects and PhD research. The focus is on helping you understand the method, check your own working and present results in the format engineers and markers expect.",
-    "Report-based support starts from £20 per 1,000 words, with 10% off your first order. Use the calculator on our homepage to see your price instantly.",
+    "Report-based support starts from £20 per 1,000 words, with 10% off your first order. Use the calculator on this page to see your price instantly.",
   ],
   sections: [
     {
       heading: 'Technical reports that read like engineering',
       paragraphs: [
         "An engineering technical report has a recognisable structure: summary or abstract, introduction and objectives, theory or background, methodology, results, discussion, conclusions and recommendations. Each part has a job, and markers notice when the discussion simply repeats the results instead of interpreting them.",
-        "Your expert can help you plan each section, write a concise abstract that states the key finding, present figures and tables with proper captions and units, and connect your conclusions back to the original objectives. We also help with referencing in IEEE or Harvard, depending on your department's guidance.",
+        "Your expert can help you plan each section, write a concise abstract that states the key finding, present figures and tables with proper captions and units, and connect your conclusions back to the original objectives. We also help with [referencing in IEEE or Harvard](/referencing-help), depending on your department's guidance.",
         "A frequent weakness is writing for the lecturer rather than for a client or senior engineer. Professional reports state the problem, the evidence and the recommendation plainly, keep background theory proportionate and move detailed derivations into appendices. Learning this style early pays off in final year and in industry.",
       ],
     },
@@ -60,7 +61,7 @@ export const engineeringAssignmentHelp: LandingContent = {
       paragraphs: [
         "Each branch of engineering has its own conventions, standards and typical tasks. Our experts support the main disciplines taught at UK and Saudi universities.",
         "Typical tasks we support include designing a reinforced concrete beam to Eurocode 2, analysing the efficiency of a Rankine cycle, modelling a PID controller for a DC motor, comparing solar and wind options for an off-grid site, and assessing desalination plant performance in a hot climate.",
-        "At MSc and PhD level, the emphasis shifts to research. Your expert can help you refine a research question, review the literature, justify an experimental or simulation methodology and structure a dissertation or thesis chapter. For long theses, we give a tailored quote on WhatsApp.",
+        "At MSc and PhD level, the emphasis shifts to research. Your expert can help you refine a research question, review the literature, justify an experimental or simulation methodology and structure a [dissertation or thesis chapter](/dissertation-help-uk). For long theses, we give a tailored quote on WhatsApp.",
       ],
       bullets: [
         'Civil engineering assignment help: structural design, concrete and steel, soil mechanics, hydraulics, highway and transport engineering, and construction management',
@@ -81,7 +82,7 @@ export const engineeringAssignmentHelp: LandingContent = {
       heading: 'Design projects and software tools',
       paragraphs: [
         "Design projects ask you to move from a brief to a justified solution. Strong reports show the design process clearly: requirements, concept generation, selection using a weighted decision matrix, detailed design, analysis and evaluation against the original specification.",
-        "Your expert can support you with the tools commonly used in engineering courses and explain how to present their outputs in a report.",
+        "Your expert can support you with the tools commonly used in engineering courses — including [Excel data analysis](/excel-data-analysis-help) and MATLAB — and explain how to present their outputs in a report.",
       ],
       bullets: [
         'MATLAB: scripting, plotting, solving equations and Simulink models',
@@ -149,17 +150,19 @@ export const engineeringAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with MATLAB or Excel for engineering coursework?',
       a: 'Yes. Experts can explain MATLAB scripts and plots, Excel calculation sheets and how to present software outputs clearly in your report. The price depends on scope, and we give you a clear quote on WhatsApp.',
+      link: { label: 'Excel data analysis help', href: '/excel-data-analysis-help' },
     },
     {
       q: 'Which referencing style do engineering reports use?',
       a: 'Many engineering departments use IEEE, while others prefer Harvard. Our experts work with both, as well as APA and Chicago, so your report follows the style your course requires.',
+      link: { label: 'Referencing help', href: '/referencing-help' },
     },
   ],
   ctaTitle: 'Get expert help with your engineering assignment',
   ctaText:
     'Send your brief, data or calculations on WhatsApp and get a clear price from an engineering-qualified expert. Enjoy 10% off your first order.',
   whatsappMessage:
-    'Hello FIZBS, I would like to discuss my assignment.',
+    'Hello FIZBS, I would like to discuss my engineering assignment.',
   related: [
     'coursework-report-help',
     'computing-it-assignment-help',

@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const healthcareNursingAssignmentHelp: LandingContent = {
   slug: 'healthcare-nursing-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Nursing Assignment Help | Healthcare Experts from £20',
   metaDescription:
     'Nursing assignment help from £20 per 1,000 words: care plans, reflective writing, CASP appraisal and evidence-based practice. 10% off first order. Ask now.',
@@ -60,7 +61,7 @@ export const healthcareNursingAssignmentHelp: LandingContent = {
     {
       heading: 'Reflective practice help: Gibbs, Johns and Driscoll',
       paragraphs: [
-        "Reflection is central to nursing education and to revalidation as a registered nurse. Our reflective practice help shows you how to use a model properly, so your account moves from describing an event to analysing it and identifying what you will do differently.",
+        "Reflection is central to nursing education and to revalidation as a registered nurse. Our reflective practice help shows you how to use a [reflective model](/blog/gibbs-reflective-cycle-guide) properly, so your account moves from describing an event to analysing it and identifying what you will do differently.",
         "Your reflection must be based on your own experience. Your expert guides you on structure, depth and linking reflection to literature, but the experience and insights are yours. Markers can usually tell when a reflection lacks genuine personal insight, so authenticity matters as much as structure.",
       ],
       bullets: [
@@ -76,7 +77,7 @@ export const healthcareNursingAssignmentHelp: LandingContent = {
       paragraphs: [
         "Evidence-based practice modules ask you to search, appraise and apply research. Your expert can help you frame a question with PICO, build a search strategy for databases such as CINAHL, MEDLINE and PubMed, and understand the hierarchy of evidence from systematic reviews to expert opinion.",
         "For critical appraisal, we support the CASP checklists for randomised controlled trials, qualitative studies, cohort studies and systematic reviews. Strong appraisals comment on sampling, bias, validity, reliability, ethics and how far findings apply to your practice setting, rather than summarising the paper.",
-        "These skills also underpin larger pieces such as dissertation literature reviews. Your expert can explain how to synthesise findings across studies into themes, identify gaps in the evidence and make realistic recommendations for practice.",
+        "These skills also underpin larger pieces such as dissertation [literature reviews](/literature-review-help). Your expert can explain how to synthesise findings across studies into themes, identify gaps in the evidence and make realistic recommendations for practice.",
       ],
     },
     {
@@ -103,7 +104,7 @@ export const healthcareNursingAssignmentHelp: LandingContent = {
       heading: 'Common mistakes and what markers look for',
       paragraphs: [
         "Common reasons for lost marks include descriptive writing, reflections with no action plan, outdated sources, weak links to the NMC Code and appraisals that summarise rather than critique. Using evidence older than five to ten years without justification is another frequent issue, as is relying on textbooks where primary research or current guidelines are expected.",
-        "UK marking criteria reward critical analysis, application of evidence to practice, professional awareness, clear structure and accurate referencing, usually in Harvard or APA. Example topics we support include falls prevention in older adults, communication in end of life care, infection prevention and control, managing deteriorating patients and the role of the nurse in mental health crisis care.",
+        "UK marking criteria reward critical analysis, application of evidence to practice, professional awareness, clear structure and accurate referencing, usually in Harvard or APA. Example topics we support include falls prevention in older adults, communication in end of life care, infection prevention and control, managing deteriorating patients and the role of the nurse in mental health crisis care. For dissertation ideas, see our [nursing and healthcare dissertation topics](/blog/nursing-healthcare-dissertation-topics).",
         "Through our nursing assignment help, your expert reviews your plan against your learning outcomes and the marking rubric, so each section clearly earns its place.",
       ],
     },
@@ -111,7 +112,7 @@ export const healthcareNursingAssignmentHelp: LandingContent = {
       heading: 'How our nursing assignment help works and pricing',
       paragraphs: [
         "Send your brief, learning outcomes, word count and deadline on WhatsApp, along with any anonymised notes you want to include. We match you with a health or nursing specialist and keep you updated 24/7. Your details and files are 100% confidential and never shared.",
-        "We know student nurses often work around placement rotas, so planning ahead pays. Nursing assignment help costs from £20 per 1,000 words when you have seven days or longer; 3 to 6 days adds 25% and 48 hours or less adds 50%. New customers save 10%, and larger pieces of 8,000+ or 15,000+ words save 10% or 15%, though only one discount applies.",
+        "We know student nurses often work around placement rotas, so planning ahead pays. Nursing assignment help costs from £20 per 1,000 words when you have seven days or longer; 3 to 6 days adds 25% and 48 hours or less adds 50%. New customers save 10%, and larger pieces of 8,000+ or 15,000+ words save 10% or 15%, though only one discount applies. The calculator on this page shows an estimate, and the team confirms the final price after reviewing your brief.",
       ],
     },
   ],
@@ -123,6 +124,7 @@ export const healthcareNursingAssignmentHelp: LandingContent = {
     {
       q: "How do I write a reflective essay using Gibbs' reflective cycle?",
       a: "Work through the six stages: description, feelings, evaluation, analysis, conclusion and action plan. Keep the description short and spend most of your words on analysis, linking your experience to theory and research. Finish with a specific, realistic action plan for your future practice.",
+      link: { label: "Gibbs' reflective cycle guide", href: '/blog/gibbs-reflective-cycle-guide' },
     },
     {
       q: 'What is the difference between Gibbs and Johns reflective models?',
@@ -135,6 +137,7 @@ export const healthcareNursingAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with a CASP critical appraisal?',
       a: 'Yes. Your expert explains how to use the correct CASP checklist for the study design and how to discuss validity, bias, ethics and relevance to practice in a critical way. They also explain how to judge whether the findings could change care in your setting.',
+      link: { label: 'Literature review help', href: '/literature-review-help' },
     },
     {
       q: 'Do you offer health and social care assignment help?',
@@ -152,7 +155,7 @@ export const healthcareNursingAssignmentHelp: LandingContent = {
   ctaTitle: 'Get support with your nursing or healthcare assignment',
   ctaText:
     'Share your brief and learning outcomes on WhatsApp to get a clear price and help from a health and nursing specialist. Save 10% on your first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my nursing assignment.',
   related: [
     'essay-help',
     'literature-review-help',

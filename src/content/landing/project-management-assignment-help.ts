@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const projectManagementAssignmentHelp: LandingContent = {
   slug: 'project-management-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Project Management Assignment Help | PRINCE2 and Agile',
   metaDescription:
     'Project management assignment help from £20 per 1,000 words: project plans, PRINCE2, Agile, risk, Gantt charts and MS Project. Expert help, 10% off.',
@@ -22,7 +23,7 @@ export const projectManagementAssignmentHelp: LandingContent = {
   intro: [
     "Project management assignment help from FIZ Business Solutions (FIZBS) connects you with Master's and PhD-qualified specialists in project and operations management. Since 2015 we have supported more than 10,000 university students in the UK, Saudi Arabia and the Gulf.",
     "Project management assignments are practical. Markers want to see that you can plan a project, manage its risks and stakeholders, and explain why you chose one method over another. Our experts help you produce plans that are realistic, well structured and clearly linked to project management theory.",
-    'Support starts from £20 per 1,000 words, and you can check your price in seconds with the instant calculator on our homepage.',
+    'Support starts from £20 per 1,000 words, and you can check your price in seconds with the instant calculator on this page.',
   ],
   sections: [
     {
@@ -55,7 +56,7 @@ export const projectManagementAssignmentHelp: LandingContent = {
     {
       heading: 'Case studies of project success and failure',
       paragraphs: [
-        'Many modules ask you to analyse a real project that overran or failed. The marks come from using project management theory to explain why: unclear scope, weak governance, poor stakeholder engagement or unrealistic estimates, and from recommending what should have been done differently.',
+        'Many modules ask you to analyse a real project ([case study](/case-study-help)) that overran or failed. The marks come from using project management theory to explain why: unclear scope, weak governance, poor stakeholder engagement or unrealistic estimates, and from recommending what should have been done differently.',
       ],
     },
     {
@@ -93,7 +94,7 @@ export const projectManagementAssignmentHelp: LandingContent = {
       heading: 'How it works and pricing',
       paragraphs: [
         'Send your module, brief, word count and deadline on WhatsApp or through our website. You will receive a clear price, with 10% off your first order, and a project management specialist will work on your request.',
-        'Assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. Dissertations are £30 per 1,000 words. You pay 50% to start and 50% on completion.',
+        'Assignments start from £20 per 1,000 words for deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. [Dissertations](/dissertation-help-uk) are £30 per 1,000 words. You pay 50% to start and 50% on completion.',
         'We support university coursework in project management. We do not sit professional certification exams such as PRINCE2 or PMP.',
       ],
     },
@@ -114,10 +115,12 @@ export const projectManagementAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with a project management case study?',
       a: 'Yes. We help you analyse why a real project succeeded or failed using project management theory, and make practical recommendations.',
+      link: { label: 'Case study help', href: '/case-study-help' },
     },
     {
       q: 'Do you help with project management dissertations?',
       a: 'Yes. We support topic choice, literature reviews, research design and analysis, at £30 per 1,000 words.',
+      link: { label: 'Dissertation help UK', href: '/dissertation-help-uk' },
     },
     {
       q: 'Is my request confidential?',
@@ -126,6 +129,6 @@ export const projectManagementAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your project management assignment price today',
   ctaText: 'Send your module, brief and deadline on WhatsApp, or use the instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my project management assignment.',
   related: ['business-management-assignment-help', 'mba-assignment-help', 'engineering-assignment-help', 'supply-chain-logistics-assignment-help'],
 };

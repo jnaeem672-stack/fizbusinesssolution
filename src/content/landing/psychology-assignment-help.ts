@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const psychologyAssignmentHelp: LandingContent = {
   slug: 'psychology-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Psychology Assignment Help | Lab Reports, Essays and SPSS',
   metaDescription:
     'Psychology assignment help from £20 per 1,000 words: APA lab reports, critical essays, research methods and SPSS statistics. Expert help, 10% off.',
@@ -23,7 +24,7 @@ export const psychologyAssignmentHelp: LandingContent = {
     "Psychology assignment help from FIZ Business Solutions (FIZBS) connects you with Master's and PhD-qualified specialists in psychology and research methods. We have been helping psychology and social science students in the UK, Saudi Arabia and the Gulf since 2015, and more than 10,000 students have worked with us in that time.",
     'Psychology is a science, and it is marked like one. Lab reports follow a strict structure, statistics must be reported in APA format, and essays are expected to evaluate the evidence behind each theory rather than simply describe it. Our experts help you meet those expectations.',
     'It is also a subject where the small details carry real weight. A missing effect size, a hypothesis that does not follow from the literature or a discussion that repeats the results can pull a good piece of work down a grade band, even when your understanding of the topic is sound.',
-    'A psychology lab report or essay starts from £20 per 1,000 words, and the instant calculator on our homepage shows the price for your word count and deadline straight away.',
+    'A psychology lab report or essay starts from £20 per 1,000 words, and the instant calculator on this page shows the price for your word count and deadline straight away.',
   ],
   sections: [
     {
@@ -74,7 +75,7 @@ export const psychologyAssignmentHelp: LandingContent = {
     {
       heading: 'Statistics and SPSS help',
       paragraphs: [
-        'Many psychology students understand the theory but struggle to choose the right test or report it correctly. Our experts help you run and explain analyses in SPSS, and report them in APA style.',
+        'Many psychology students understand the theory but struggle to [choose the right test](/blog/which-statistical-test-spss) or report it correctly. Our experts help you run and explain analyses in [SPSS](/spss-help), and report them in APA style.',
         'Choosing the test is usually the first sticking point. The decision rests on your design (independent groups, repeated measures or a mix), the number of conditions, and whether the outcome is a continuous score or a category. Two separate groups measured once point to an independent t-test; the same people measured three times point to a repeated-measures ANOVA; a relationship between two continuous variables points to correlation or regression. When the assumptions are badly broken, non-parametric tests such as Mann-Whitney U, Wilcoxon and Kruskal-Wallis take over.',
       ],
       bullets: [
@@ -103,7 +104,7 @@ export const psychologyAssignmentHelp: LandingContent = {
     {
       heading: 'Qualitative psychology: thematic analysis step by step',
       paragraphs: [
-        "Thematic analysis is the most common qualitative method in undergraduate psychology projects, and Braun and Clarke's reflexive approach is the version most departments expect you to follow. Your expert can work through each phase with you, whether you code by hand or in NVivo.",
+        "[Thematic analysis](/blog/thematic-analysis-guide) is the most common qualitative method in undergraduate psychology projects, and Braun and Clarke's reflexive approach is the version most departments expect you to follow. Your expert can work through each phase with you, whether you code by hand or in [NVivo](/nvivo-thematic-analysis-help).",
         "Markers look for themes that tell a story about the data, not topic labels such as 'Theme 1: Stress'. Each theme should make a claim, be supported by quotes from several participants, and be connected to existing research in your discussion. A short reflexive note on how your own position may have shaped the analysis is also expected.",
       ],
       bullets: [
@@ -118,7 +119,7 @@ export const psychologyAssignmentHelp: LandingContent = {
     {
       heading: 'Psychology research projects and dissertations',
       paragraphs: [
-        'The final-year project is often the largest piece of work in a psychology degree. You design a study, gain approval from your department, recruit participants, collect and analyse data, and present it as a full report.',
+        'The final-year [project](/dissertation-help-uk) is often the largest piece of work in a psychology degree. You design a study, gain approval from your department, recruit participants, collect and analyse data, and present it as a full report.',
         'Approval comes first. Your proposal will ask how you will gain informed consent, protect anonymity, debrief participants and store data securely. Your expert can help you write those sections clearly, so your application is not sent back and your data collection starts on time.',
       ],
       bullets: [
@@ -173,10 +174,12 @@ export const psychologyAssignmentHelp: LandingContent = {
     {
       q: 'Do you help with SPSS for psychology?',
       a: 'Yes. Our experts help you choose the right test, run it in SPSS, check assumptions and report the results in APA format.',
+      link: { label: 'SPSS help', href: '/spss-help' },
     },
     {
       q: 'How do I choose the right statistical test for my psychology study?',
       a: 'Start with your design and your data: how many groups or conditions you have, whether the same people take part in each, and whether your outcome is a score or a category. Your expert can talk these choices through with you and explain why one test fits your study better than another.',
+      link: { label: 'Which statistical test to use', href: '/blog/which-statistical-test-spss' },
     },
     {
       q: 'Can you help with thematic analysis for a qualitative psychology project?',
@@ -197,6 +200,6 @@ export const psychologyAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your psychology assignment price today',
   ctaText: 'Send your module, brief and deadline on WhatsApp, along with any SPSS file, or check the instant calculator for your price. Your first psychology order is 10% off.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my psychology assignment.',
   related: ['spss-help', 'research-methodology-help', 'nvivo-thematic-analysis-help', 'referencing-help', 'dissertation-help-uk'],
 };

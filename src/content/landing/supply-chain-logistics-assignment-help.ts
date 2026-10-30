@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const supplyChainLogisticsAssignmentHelp: LandingContent = {
   slug: 'supply-chain-logistics-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Supply Chain and Logistics Assignment Help | From £20',
   metaDescription:
     'Supply chain and logistics assignment help from £20 per 1,000 words: procurement, inventory, lean, operations and supply chain risk. Expert help, 10% off.',
@@ -23,7 +24,7 @@ export const supplyChainLogisticsAssignmentHelp: LandingContent = {
     "Supply chain and logistics assignment help from FIZ Business Solutions (FIZBS) connects you with Master's and PhD-qualified specialists in operations, logistics and supply chain management. Since 2015, more than 10,000 university students in the UK, Saudi Arabia and the Gulf have come to us for support with business and management modules like these.",
     "Supply chain assignments combine strategy with numbers. You may need to evaluate a company's sourcing strategy in one section and calculate an economic order quantity in the next. Our experts help you handle both, and link your calculations to clear, practical recommendations.",
     'The subject has also moved up the agenda. Port closures, shipping disruption in the Red Sea and sudden swings in demand have shown how fragile global supply chains can be, and tutors now expect students to discuss resilience, visibility and risk alongside cost and speed.',
-    'Help with a supply chain or logistics assignment starts from £20 per 1,000 words, and the instant calculator on our homepage gives you a price for your exact word count and deadline.',
+    'Help with a supply chain or logistics assignment starts from £20 per 1,000 words, and the instant calculator on this page gives you a price for your exact word count and deadline.',
   ],
   sections: [
     {
@@ -46,7 +47,7 @@ export const supplyChainLogisticsAssignmentHelp: LandingContent = {
       heading: 'Calculations with clear explanations',
       paragraphs: [
         'Many supply chain assessments include quantitative tasks. Markers want correct workings and, just as important, an explanation of what the numbers mean for the business.',
-        'Excel is the usual tool. Markers like to see your formulas, not only the results, so a clear table of inputs, a short note on each formula and a sensitivity check (what happens if holding costs double, or lead time grows by a week?) shows real understanding rather than button-pressing.',
+        '[Excel](/excel-data-analysis-help) is the usual tool. Markers like to see your formulas, not only the results, so a clear table of inputs, a short note on each formula and a sensitivity check (what happens if holding costs double, or lead time grows by a week?) shows real understanding rather than button-pressing.',
       ],
       bullets: [
         'Economic order quantity and reorder points',
@@ -73,7 +74,7 @@ export const supplyChainLogisticsAssignmentHelp: LandingContent = {
     {
       heading: 'Case studies of real supply chains',
       paragraphs: [
-        "Case studies often ask you to analyse a company's supply chain: how it sources, produces and delivers, where the risks are, and how it could improve. Our experts help you use frameworks such as the SCOR model, Porter's value chain and Kraljic's purchasing portfolio matrix to structure your analysis. SCOR, for example, splits a supply chain into plan, source, make, deliver and return processes, which makes it easier to compare performance stage by stage.",
+        "[Case studies](/case-study-help) often ask you to analyse a company's supply chain: how it sources, produces and delivers, where the risks are, and how it could improve. Our experts help you use frameworks such as the SCOR model, Porter's value chain and Kraljic's purchasing portfolio matrix to structure your analysis. SCOR, for example, splits a supply chain into plan, source, make, deliver and return processes, which makes it easier to compare performance stage by stage.",
         "Kraljic's matrix sorts purchases by profit impact and supply risk. Strategic items (high impact, high risk) call for close partnerships; leverage items are where buying power can cut cost; bottleneck items are where securing supply matters more than price; and non-critical items are best handled with simple, efficient processes. A good answer places real purchases from the case into the matrix and explains what each position means for the buyer.",
         "For Saudi and Gulf students, logistics is a growing field. Saudi Arabia's National Transport and Logistics Strategy, part of Vision 2030, aims to turn the Kingdom into a global logistics hub linking three continents, which makes ports, e-commerce delivery and regional distribution popular topics.",
       ],
@@ -134,7 +135,7 @@ export const supplyChainLogisticsAssignmentHelp: LandingContent = {
       heading: 'Getting a price for supply chain support',
       paragraphs: [
         'Share the module name, your brief, the word count and your deadline on WhatsApp or through our website, and attach any spreadsheets or data your task uses. We confirm the price, take 10% off a first order, and assign a supply chain specialist to your request.',
-        'With seven days or more to go, help costs from £20 per 1,000 words. A 3 to 6 day deadline adds 25%, and a deadline inside 48 hours adds 50%. Logistics and supply chain dissertations are £30 per 1,000 words, paid 50% at the start and 50% on completion.',
+        'With seven days or more to go, help costs from £20 per 1,000 words. A 3 to 6 day deadline adds 25%, and a deadline inside 48 hours adds 50%. [Logistics and supply chain dissertations](/dissertation-help-uk) are £30 per 1,000 words, paid 50% at the start and 50% on completion.',
       ],
     },
   ],
@@ -154,6 +155,7 @@ export const supplyChainLogisticsAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with a supply chain case study?',
       a: "Yes. We help you analyse a real company's supply chain using frameworks such as SCOR, the value chain and the Kraljic matrix, and make practical recommendations.",
+      link: { label: 'Case study help', href: '/case-study-help' },
     },
     {
       q: 'What is the bullwhip effect and how do I explain it in an assignment?',
@@ -166,6 +168,7 @@ export const supplyChainLogisticsAssignmentHelp: LandingContent = {
     {
       q: 'Do you help with logistics dissertations?',
       a: 'Yes. We support topic choice, literature reviews, research design and analysis, at £30 per 1,000 words.',
+      link: { label: 'Dissertation help UK', href: '/dissertation-help-uk' },
     },
     {
       q: 'Do you support supply chain assignments with a Saudi or Gulf focus?',
@@ -174,6 +177,6 @@ export const supplyChainLogisticsAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your supply chain assignment price today',
   ctaText: 'Send your module, brief and deadline on WhatsApp with any data files, or use the instant calculator to see your price. A first supply chain order is 10% off.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my supply chain assignment.',
   related: ['business-management-assignment-help', 'project-management-assignment-help', 'excel-data-analysis-help', 'mba-assignment-help'],
 };

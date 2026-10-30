@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const educationAssignmentHelp: LandingContent = {
   slug: 'education-assignment-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Education Assignment Help | PGCE, Early Years and TESOL',
   metaDescription:
     'Education assignment help from £20 per 1,000 words for PGCE, early years, SEND, TESOL and Master\'s in Education. Reflective writing and research support.',
@@ -23,7 +24,7 @@ export const educationAssignmentHelp: LandingContent = {
     "Education assignment help from FIZ Business Solutions (FIZBS) connects you with Master's and PhD-qualified specialists in education, many with teaching experience. Trainee teachers, early years practitioners and education students in the UK, Saudi Arabia and the Gulf have worked with us since 2015, part of more than 10,000 students we have supported.",
     'Education assignments ask you to do two things at once: show that you understand educational theory and research, and show how it shapes what happens in a real classroom or setting. Our experts help you connect the two, so your reflections are grounded in evidence and your theory is grounded in practice.',
     'Many education students are also working in a school, nursery or language centre while they study. That is a real strength: your own setting gives you examples to analyse, as long as you anonymise them and connect them to research.',
-    'An education essay, reflection or research report starts from £20 per 1,000 words, and the instant calculator on our homepage shows your price for any word count and deadline.',
+    'An education essay, reflection or research report starts from £20 per 1,000 words, and the instant calculator on this page shows your price for any word count and deadline.',
   ],
   sections: [
     {
@@ -73,7 +74,7 @@ export const educationAssignmentHelp: LandingContent = {
     {
       heading: "Worked example: a short reflection using Gibbs' cycle",
       paragraphs: [
-        'Here is how one lesson can become a structured reflection. A trainee teaches a Year 8 group-work task on fractions, and several groups drift off task halfway through.',
+        'Here is how one lesson can become a structured reflection using [Gibbs\' cycle](/blog/gibbs-reflective-cycle-guide). A trainee teaches a Year 8 group-work task on fractions, and several groups drift off task halfway through.',
       ],
       steps: [
         'Description: say what happened in two or three sentences, with the pupils and the school anonymised.',
@@ -101,7 +102,7 @@ export const educationAssignmentHelp: LandingContent = {
     {
       heading: "Master's in Education and research projects",
       paragraphs: [
-        "MA Education and MEd students often complete small-scale research in their own school or setting. Our experts help you choose a focused question, design interviews or questionnaires, plan for research approval and consent, and analyse your findings with thematic analysis or SPSS.",
+        "MA Education and MEd students often complete small-scale research in their own school or setting (see our [dissertation help](/dissertation-help-uk) and [education dissertation topics](/blog/education-dissertation-topics)). Our experts help you choose a focused question, design interviews or questionnaires, plan for research approval and consent, and analyse your findings with thematic analysis or SPSS.",
         'For students in Saudi Arabia and the Gulf, popular areas include English language teaching, early childhood education and technology in the classroom, linked to the education goals of Vision 2030.',
       ],
     },
@@ -166,6 +167,7 @@ export const educationAssignmentHelp: LandingContent = {
     {
       q: 'Which reflective model should I use for a PGCE assignment?',
       a: "Gibbs, Kolb, Schön and Brookfield are all widely accepted. Gibbs suits a single incident, Brookfield's four lenses suit a wider look at your practice, and Schön helps when you want to discuss decisions made during a lesson. Check your module handbook first, as some programmes name a preferred model.",
+      link: { label: "Gibbs' reflective cycle guide", href: '/blog/gibbs-reflective-cycle-guide' },
     },
     {
       q: 'Can you help with early years and EYFS assignments?',
@@ -178,6 +180,7 @@ export const educationAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with an MA Education dissertation?',
       a: 'Yes. We support topic choice, literature reviews, research design and analysis, at £30 per 1,000 words.',
+      link: { label: 'Dissertation help UK', href: '/dissertation-help-uk' },
     },
     {
       q: 'Will my school and pupils stay anonymous?',
@@ -186,6 +189,6 @@ export const educationAssignmentHelp: LandingContent = {
   ],
   ctaTitle: 'Get your education assignment price today',
   ctaText: 'Send your programme, module, brief and deadline on WhatsApp, or use the instant calculator to see your price. Your first education order is 10% off.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my education assignment.',
   related: ['essay-help', 'nvivo-thematic-analysis-help', 'research-proposal-help', 'dissertation-help-uk'],
 };
