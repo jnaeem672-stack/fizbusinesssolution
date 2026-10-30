@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const assignmentHelpDammam: LandingContent = {
   slug: 'assignment-help-dammam',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Assignment Help Dammam | Engineering, Business and More',
   metaDescription:
     "Assignment help Dammam, Dhahran and Al Khobar students can access online. Engineering, business and data experts 24/7. Pay in SAR by Saudi bank transfer.",
@@ -70,7 +71,7 @@ export const assignmentHelpDammam: LandingContent = {
     {
       heading: 'A clear structure for engineering and technical reports',
       paragraphs: [
-        "Technical reports are marked as much on organisation as on results. Many good calculations lose impact because the reader cannot find them or does not understand why they matter. Unless your department gives a different template, a structure like this usually works well:",
+        "Start with your module brief and marking rubric when organising a technical report. Make calculations, assumptions and results easy to follow, and explain what each result means. Adapt the following outline to the template your department provides:",
       ],
       bullets: [
         'Title page and abstract: a short summary of the aim, method, key results and conclusion',
@@ -79,14 +80,14 @@ export const assignmentHelpDammam: LandingContent = {
         'Method: equipment, assumptions, software and procedure, written so someone else could repeat it',
         'Results: clearly labelled figures and tables, each referred to in the text',
         'Discussion: what the results mean, sources of error, limitations and comparison with theory',
-        'Conclusion and recommendations, followed by IEEE references and appendices for raw data',
+        'Conclusion and recommendations, followed by references in the required style and appendices for raw data',
       ],
     },
     {
       heading: 'Acting on feedback for technical work',
       paragraphs: [
         "Tutors marking engineering, science and computing work tend to leave similar comments. If your returned report says your discussion is too short, your figures are unclear or your conclusions are not supported by the results, an expert can go through those comments with you and show how to address them in your next submission.",
-        "Typical improvements include explaining why a result differs from theory rather than only stating that it does, labelling every axis and unit, linking each conclusion back to a specific figure or table, and citing standards and datasheets properly in IEEE style.",
+        "For [data analysis support](/spss-help), share your dataset, variable definitions and required software alongside the brief. Typical improvements include explaining why a result differs from theory rather than only stating that it does, labelling every axis and unit, linking each conclusion back to a specific figure or table, and citing standards and datasheets in the referencing style your module requires.",
       ],
     },
     {
@@ -107,7 +108,7 @@ export const assignmentHelpDammam: LandingContent = {
       heading: 'MBA assignment help Dammam professionals use',
       paragraphs: [
         "Many students in the region study part-time while working in energy, petrochemicals, logistics or banking. Fitting an MBA around a demanding job and rotating schedules is not easy, which is why our 24/7 WhatsApp support suits working professionals here.",
-        "Business, management, finance and accounting are our strongest subjects. Experts can help you apply strategy frameworks to a large organisation, analyse financial statements, write a change management report or reflect on leadership in your own workplace.",
+        "For [MBA assignment support](/mba-assignment-help), send the case study, rubric and any permitted workplace material. Experts can help you apply strategy frameworks to a large organisation, analyse financial statements, write a change management report or reflect on leadership in your own workplace.",
       ],
     },
     {
@@ -133,7 +134,14 @@ export const assignmentHelpDammam: LandingContent = {
     {
       heading: 'Dissertation help Dammam researchers can rely on',
       paragraphs: [
-        "Final-year projects, Master's dissertations and PhD theses require careful planning. With more than 350 research projects supported, our experts can guide you on your research question, literature review, methodology and analysis. Dissertation support costs £30 per 1,000 words.",
+        "Final-year projects, Master's dissertations and PhD theses require careful planning. With more than 350 research projects supported, our experts can guide you on your research question, literature review, methodology and analysis. Dissertation support costs £30 per 1,000 words. Start with [research proposal guidance](/research-proposal-help) when defining your question, or see our [dissertation support](/dissertation-help-uk) for help with later chapters.",
+      ],
+    },
+    {
+      heading: 'Preparing your technical report or project for a quote',
+      paragraphs: [
+        'Send the assignment brief, marking rubric, deadline with time zone, word count and the support you need. For engineering work, include the required report template, calculations, units and permitted software version. For data analysis, explain your variables and include an anonymised dataset or sample.',
+        'Include your draft and tutor feedback if you want a review. For a placement or workplace project, check permission before sharing material and remove confidential business information and personal identifiers. Keep an original copy of your files and explain which parts you want help understanding or improving.',
       ],
     },
     {
@@ -150,11 +158,16 @@ export const assignmentHelpDammam: LandingContent = {
     {
       heading: 'Prices in GBP, payment in SAR',
       paragraphs: [
-        "Our prices are in pounds sterling. Assignments start from £20 per 1,000 words for seven days or more, with +25% for 3 to 6 days and +50% within 48 hours. New customers get 10% off their first order. Ask us on WhatsApp for the SAR equivalent and pay by Saudi bank transfer, or check your GBP price instantly with the calculator on our homepage. Your details remain 100% confidential.",
+        "Our prices are in pounds sterling. Assignments start from £20 per 1,000 words for seven days or more, with +25% for 3 to 6 days and +50% within 48 hours. New customers get 10% off their first order. Ask us on WhatsApp for the SAR equivalent and pay by Saudi bank transfer, or check your GBP price instantly with the calculator on this page. Your details remain 100% confidential.",
       ],
     },
   ],
   faqs: [
+    {
+      q: 'What files should I send for a Dammam support quote?',
+      a: 'Send your brief, marking rubric, word count, deadline with time zone and any draft or tutor feedback. For technical work, include the report template, calculations and required software. For analysis, include variable definitions and an anonymised dataset or sample. Remove confidential workplace information and personal identifiers before sharing.',
+    },
+
     {
       q: 'Do you have an office in Dammam or Al Khobar?',
       a: 'No. FIZBS is an online service, so there is no office to visit. Students across the Eastern Province reach us through WhatsApp or our website.',
