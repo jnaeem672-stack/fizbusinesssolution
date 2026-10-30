@@ -10,6 +10,27 @@ Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each da
    the owner says yes (owner rule: discuss each SEO item before doing it).
 4. Give the owner a short Semrush keyword list when the next items need data (free plan: 10 requests a day).
 
+## Arabic blog citations project (owner, 30 Oct 2026)
+Owner wants real, verified citations added to 5 Arabic blog pages (humanized, APA in-text + References/المصادر box,
+2020+ only, peer-reviewed or credible sites, NO Wikipedia/blogs, NEVER fabricate). Do NOT build English versions of
+the Arabic-only pages. One page at a time; show owner, deploy on his yes, then re-index. `updated` field set so the
+sitemap lastmod/dateModified refresh.
+- Page 1 /ar/blog/human-vs-ai-academic-writing: DONE + deployed + GSC re-indexed + Bing submitted (sample, earlier).
+- Page 2 /ar/blog/how-to-write-a-research-proposal: DONE 30 Oct (branch content/ar-research-proposal-citations, merged
+  to main). 16 in-text citations, 8 sources (Saunders 2023, Creswell 2023, Bell 2022, Braun & Clarke 2022, Adu 2022,
+  Newman 2021, Verbeke 2023, Paul & Criado 2020). Live-verified. Bing submitted 30 Oct 15:47.
+- Page 3 /ar/blog/quantitative-vs-qualitative-research: DONE 30 Oct (branch content/ar-quant-qual-citations, merged).
+  ~20 in-text citations (max density), 9 sources (4 textbooks above + Hennink & Kaiser 2022, Dalkin 2021, Olmos-Vega
+  2023, Adu 2022, Newman 2021). Added Kaggle/Statista, NVivo/MAXQDA, Python. Live-verified. Bing submitted 30 Oct 15:47.
+- TODO (GSC daily Request Indexing quota was EXCEEDED on 30 Oct): Request Indexing in Search Console for Page 2 and
+  Page 3 once quota resets:
+  https://fizbusinessolutions.com/ar/blog/how-to-write-a-research-proposal
+  https://fizbusinessolutions.com/ar/blog/quantitative-vs-qualitative-research
+- Remaining (next in order, same rules): Page 4 /ar/blog/apa-referencing-guide (what APA7 is, which universities,
+  formatting: no table of contents, hanging/first-line indent, with examples). Page 5
+  /ar/blog/theoretical-framework-and-literature-review (VERY dense citations, every other line; research gap,
+  literature matrix, theories, conceptual framework: IV/DV/moderating/mediating variables).
+
 ## Scheduled queue (owner, 20 Oct night)
 - 21 Oct: Quick wins DONE (commit f7c52a1): Harvard tool title "Free Harvard Reference Generator | Harvard Referencing Tool",
   degree tool "University Grade Calculator UK", Saudi assignment page "مساعدة في حل الواجبات" + English assignments
