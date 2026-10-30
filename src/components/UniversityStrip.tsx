@@ -1,3 +1,9 @@
+'use client';
+
+import { useState } from 'react';
+import Image from 'next/image';
+import styles from './UniversityStrip.module.css';
+import { universityLogos } from '@/data/universityLogos';
 import TrustBadges from '@/components/TrustBadges';
 
 type Uni = { name: string; short: string };
@@ -52,27 +58,35 @@ const SAUDI: Uni[] = [
   { name: 'King Saud bin Abdulaziz University for Health Sciences', short: 'KSAU' },
 ];
 
-function Row({ items, flag, reverse }: { items: Uni[]; flag: string; reverse?: boolean }) {
-  const doubled = [...items, ...items];
+function Row({ items, label, reverse, rtl = false }: { items: Uni[]; label: string; reverse?: boolean; rtl?: boolean }) {
+  const [paused, setPaused] = useState(false);
   return (
-    <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_6%,black_94%,transparent)]">
-      <div
-        className="animate-marquee gap-4 w-max py-1"
-        style={{ animationDuration: '70s', animationDirection: reverse ? 'reverse' : 'normal' }}
-      >
-        {doubled.map((uni, i) => (
-          <div
-            key={`${uni.short}-${i}`}
-            className="flex items-center gap-3 pl-2 pr-5 py-2 rounded-xl border border-gray-200 bg-white shadow-sm shrink-0"
-          >
-            <span className="relative flex items-center justify-center w-11 h-11 rounded-full bg-navy text-white text-[10px] font-black tracking-tight ring-2 ring-primary/30">
-              {uni.short}
-              <span className="absolute -bottom-1 -right-1 text-sm leading-none">{flag}</span>
-            </span>
-            <span className="text-sm font-bold text-navy whitespace-nowrap">{uni.name}</span>
-          </div>
+    <div>
+      <button type="button" className={styles.pause} aria-pressed={paused}
+        aria-label={`${rtl ? "إيقاف التمرير مؤقتًا" : "Pause scrolling"}: ${label}`}
+        onClick={() => setPaused(!paused)}>
+        {paused ? (rtl ? "استئناف التمرير" : "Resume scrolling") : (rtl ? "إيقاف التمرير" : "Pause scrolling")}
+      </button>
+    <div className={styles.viewport} tabIndex={0} role="region" aria-label={label} dir="ltr">
+      <div className={`${styles.track} ${reverse ? styles.reverse : ''}`} style={{ animationPlayState: paused ? 'paused' : undefined }}>
+        {[false, true].map((duplicate) => (
+          <ul className={styles.group} key={String(duplicate)} aria-hidden={duplicate || undefined}>
+            {items.map((uni) => {
+              const logo = universityLogos[uni.short];
+              return (
+                <li key={uni.short} className={styles.card}>
+                  <span className={`${styles.logo} ${logo.dark ? styles.dark : ''}`}>
+                    <Image src={logo.src} alt="" width={logo.width} height={logo.height}
+                      className={styles.artwork} unoptimized loading="lazy" />
+                  </span>
+                  <span className="text-sm font-bold text-navy whitespace-nowrap">{uni.name}</span>
+                </li>
+              );
+            })}
+          </ul>
         ))}
       </div>
+    </div>
     </div>
   );
 }
@@ -92,8 +106,8 @@ export default function UniversityStrip({
           <p className="text-sm text-gray-500 mt-1" dir={rtl ? 'rtl' : undefined}>{subtitle}</p>
         </div>
         <div className="space-y-4">
-          <Row items={UK} flag="🇬🇧" />
-          <Row items={SAUDI} flag="🇸🇦" reverse />
+          <Row items={UK} rtl={rtl} label={rtl ? "جامعات المملكة المتحدة" : "UK universities"} />
+          <Row items={SAUDI} rtl={rtl} label={rtl ? "جامعات المملكة العربية السعودية" : "Saudi Arabian universities"} reverse />
         </div>
         <p className="text-center text-[10px] text-gray-500 mt-5">
           {note}
