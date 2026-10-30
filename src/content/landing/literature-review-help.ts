@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const literatureReviewHelp: LandingContent = {
   slug: 'literature-review-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Literature Review Help | Systematic and Critical',
   metaDescription:
     'Literature review help from Master\'s and PhD experts, from £30 per 1,000 words for dissertations. 10% off your first order. Get a quote on WhatsApp today.',
@@ -22,13 +23,13 @@ export const literatureReviewHelp: LandingContent = {
     'A literature review is where many students lose marks without realising why. Our literature review help is designed for that moment when you have read dozens of papers, filled a folder with PDFs and still cannot see how to turn them into an argument.',
     "FIZ Business Solutions (FIZBS) has supported students since 2015 and has completed more than 350 research projects. Our Master's and PhD-qualified experts know what UK and Saudi markers expect from a review chapter: critical evaluation, clear synthesis and a gap that leads naturally into your research questions.",
     'Your subject expert works on your request with you, whether you need help planning a search strategy, organising sources into themes, strengthening critical analysis or reviewing a full draft against your marking criteria.',
-    'We support review chapters within dissertations and theses, standalone review assignments, scoping reviews and systematic reviews, across business, management, health, nursing, education, law, computing and more than 115 subjects in total.',
+    'We support review chapters within [dissertations](/dissertation-help-uk) and [theses](/thesis-help), standalone review assignments, scoping reviews and systematic reviews, across business, management, health, nursing, education, law, computing and more than 115 subjects in total.',
   ],
   sections: [
     {
       heading: 'What a literature review is really for',
       paragraphs: [
-        'A literature review is not a list of what other people have said. Its job is to show the current state of knowledge on your topic, where scholars agree and disagree, which methods have been used, and what remains unknown or under-researched.',
+        'A [literature review](/blog/how-to-write-a-literature-review) is not a list of what other people have said. Its job is to show the current state of knowledge on your topic, where scholars agree and disagree, which methods have been used, and what remains unknown or under-researched.',
         'In a dissertation literature review, that analysis must also justify your own study. Every theme you discuss should help explain why your research questions matter and why your chosen approach makes sense.',
         'Typical UK marking criteria for this chapter reward breadth and relevance of sources, depth of critical analysis, logical structure, a clear link to the research aims and accurate referencing. Literature review help that targets these criteria directly is far more useful than general writing advice.',
       ],
@@ -94,7 +95,7 @@ export const literatureReviewHelp: LandingContent = {
       paragraphs: [
         'The review should end by making your research gap obvious. Gaps can be contextual (little research in Saudi Arabia or in SMEs), methodological (mostly cross-sectional surveys), theoretical (a model rarely tested together) or practical (findings that have not been applied).',
         'Many dissertations then present a conceptual framework, a diagram showing the variables or concepts your study will examine and how they relate. We help you build a framework that is grounded in the literature you reviewed and linked to your hypotheses or research questions.',
-        'For example, a dissertation on remote work might find plenty of studies on productivity in large UK firms but very few on wellbeing among employees of Saudi SMEs. Stating that gap precisely, with evidence, gives your methodology chapter a clear starting point.',
+        'For example, a dissertation on remote work might find plenty of studies on productivity in large UK firms but very few on wellbeing among employees of Saudi SMEs. Stating that gap precisely, with evidence, gives your [methodology chapter](/research-methodology-help) a clear starting point.',
       ],
     },
     {
@@ -119,7 +120,7 @@ export const literatureReviewHelp: LandingContent = {
         'Ending without a conclusion that states the gap your study addresses',
       ],
       paragraphs: [
-        'An expert review of your draft picks up these issues early, before they cost marks. Our literature review help explains each change, so the next chapter you write benefits too.',
+        'An expert review of your draft picks up these issues early, before they cost marks. Our literature review help explains each change, including consistent [referencing](/referencing-help), so the next chapter you write benefits too.',
       ],
     },
   ],
@@ -127,6 +128,7 @@ export const literatureReviewHelp: LandingContent = {
     {
       q: 'Can someone help me with my literature review?',
       a: "Yes. FIZBS offers literature review help from Master's and PhD-qualified experts. Your expert can guide your search, structure, synthesis and critical evaluation, and review your draft against your marking criteria.",
+      link: { label: 'How to write a literature review', href: '/blog/how-to-write-a-literature-review' },
     },
     {
       q: 'How long should a dissertation literature review be?',
@@ -146,7 +148,7 @@ export const literatureReviewHelp: LandingContent = {
     },
     {
       q: 'How much does literature review help cost?',
-      a: 'Literature review chapters for dissertations and theses are £30 per 1,000 words, and standalone review assignments start from £20 per 1,000 words. You can see your price instantly with our homepage calculator.',
+      a: 'Literature review chapters for dissertations and theses are £30 per 1,000 words, and standalone review assignments start from £20 per 1,000 words. You can see an estimate instantly with the calculator on this page, and the team confirms the final price after reviewing your brief.',
     },
     {
       q: 'Can you help with a PRISMA flow diagram?',
@@ -160,7 +162,7 @@ export const literatureReviewHelp: LandingContent = {
   ctaTitle: 'Turn your reading into a strong literature review',
   ctaText:
     'Send your topic, word count and deadline on WhatsApp for a clear price, and enjoy 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my literature review.',
   related: [
     'dissertation-help-uk',
     'thesis-help',

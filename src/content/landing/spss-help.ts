@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const spssHelp: LandingContent = {
   slug: 'spss-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'SPSS Assignment Help and Statistics Dissertation Help',
   metaDescription:
     'SPSS assignment help and statistics dissertation help: choosing tests, checking assumptions, APA tables and clear interpretation of your own data.',
@@ -60,7 +61,7 @@ export const spssHelp: LandingContent = {
     {
       heading: 'Choosing the right statistical test',
       paragraphs: [
-        'The right test depends on your research question (comparing groups or looking at relationships?), your variable types (categorical, ordinal or continuous) and how many groups or measurements are involved. Here are the tests students use most often.',
+        'The right test depends on your research question (comparing groups or looking at relationships?), your variable types (categorical, ordinal or continuous) and how many groups or measurements are involved. Our guide to [which statistical test to use](/blog/which-statistical-test-spss) walks through the decision, and here are the tests students use most often.',
       ],
       bullets: [
         'Independent samples t-test: compares the mean of a continuous variable between two separate groups, such as job satisfaction scores for male and female employees.',
@@ -118,15 +119,15 @@ export const spssHelp: LandingContent = {
     {
       heading: 'Beyond SPSS: Excel, NVivo, Stata and Python',
       paragraphs: [
-        'Not every project uses SPSS. Our Excel data analysis help is popular for business and finance modules that need pivot tables, summary statistics and clear charts.',
-        'If you are working on a mixed methods project, we can support both sides: statistical analysis of your survey data and thematic analysis of your interviews, presented in a way that brings the two strands together in your discussion.',
-        'For qualitative research, our NVivo help supports thematic analysis of interview or focus group transcripts, from coding through to developing and presenting themes. We also support analysis in Stata and Python where your course requires them.',
+        'Not every project uses SPSS. Our [Excel data analysis help](/excel-data-analysis-help) is popular for business and finance modules that need pivot tables, summary statistics and clear charts.',
+        'If you are working on a mixed methods project, our broader [data analysis help](/data-analysis-help) supports both sides: statistical analysis of your survey data and thematic analysis of your interviews, presented in a way that brings the two strands together in your discussion.',
+        'For qualitative research, our [NVivo help](/nvivo-thematic-analysis-help) supports thematic analysis of interview or focus group transcripts, from coding through to developing and presenting themes. We also support analysis in [Stata and Python](/python-stata-help) where your course requires them.',
       ],
     },
     {
       heading: 'Statistics dissertation help',
       paragraphs: [
-        'Statistics dissertation help often makes the biggest difference in the methodology and findings chapters. A sound analysis plan keeps your results aligned with your research aims and makes your discussion much easier to write.',
+        'Statistics support often makes the biggest difference in the methodology and findings chapters of your [dissertation](/dissertation-help-uk). A sound analysis plan keeps your results aligned with your research aims and makes your discussion much easier to write.',
         'Your expert can explain why a particular test suits your data, what assumptions need checking and how to report results in a clear, academic way. The aim is for you to feel confident discussing your analysis with your supervisor.',
         "If your results are not what you expected, that is not a failure. Non-significant findings are still findings, and your expert can help you interpret them honestly and discuss possible reasons in light of the literature.",
       ],
@@ -172,7 +173,7 @@ export const spssHelp: LandingContent = {
       heading: 'Pricing for SPSS and data analysis support',
       paragraphs: [
         'SPSS assignment help follows our standard assignment pricing from £20 per 1,000 words. Analysis within a dissertation is charged at £30 per 1,000 words.',
-        "Deadlines of 3 to 6 days add 25% and deadlines within 48 hours add 50%. New customers get 10% off, orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack. You can check prices instantly with the calculator on our homepage.",
+        "Deadlines of 3 to 6 days add 25% and deadlines within 48 hours add 50%. New customers get 10% off, orders of 8,000+ words get 10% off and orders of 15,000+ words get 15% off. Discounts don't stack. You can see an estimate instantly with the calculator on this page, and the team confirms the final price after reviewing your brief.",
       ],
     },
     {
@@ -195,6 +196,7 @@ export const spssHelp: LandingContent = {
     {
       q: 'Which statistical test should I use in SPSS?',
       a: 'It depends on your research question, your variables and how your data is measured. Your expert reviews these and explains which test fits, such as a t-test, ANOVA, chi-square or regression.',
+      link: { label: 'Which statistical test to use', href: '/blog/which-statistical-test-spss' },
     },
     {
       q: 'How much does SPSS data analysis help cost?',
@@ -207,6 +209,7 @@ export const spssHelp: LandingContent = {
     {
       q: 'Do you offer NVivo help for qualitative research?',
       a: 'Yes. We support NVivo for thematic analysis, including coding your transcripts, grouping codes into themes and presenting them clearly.',
+      link: { label: 'NVivo & thematic analysis help', href: '/nvivo-thematic-analysis-help' },
     },
     {
       q: 'Can you help with Excel data analysis for an assignment?',
@@ -228,7 +231,7 @@ export const spssHelp: LandingContent = {
   ctaTitle: 'Get help with your data analysis today',
   ctaText:
     'Share your research questions and dataset on WhatsApp to get a quote. New customers receive 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my SPSS analysis.',
   related: [
     'dissertation-help-uk',
     'research-proposal-help',

@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const proofreadingEditingServices: LandingContent = {
   slug: 'proofreading-editing-services',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Proofreading Services UK | Academic Editing from £12',
   metaDescription:
     "Proofreading services UK students rely on, from £12 per 1,000 words. Tracked changes in Word, UK English and 10% off your first order. Get a price today.",
@@ -23,7 +24,7 @@ export const proofreadingEditingServices: LandingContent = {
     "Our proofreading services UK students use are designed for one simple goal: making sure markers notice your ideas, not your typing errors. Since 2015, FIZ Business Solutions (FIZBS) has supported more than 10,000 university students, and polishing finished drafts is one of the most common requests we receive.",
     "Small slips add up. A missing apostrophe, a reference list that switches between formats or a sentence that runs for six lines can pull a strong piece of work down a grade band, because UK marking criteria usually reward clear communication and accurate presentation alongside argument.",
     "Your document is checked by a Master's or PhD-qualified expert who understands academic writing in your field. Every edit is made with tracked changes in Microsoft Word, so you can see exactly what was changed, accept or reject each suggestion and learn from the patterns.",
-    "Prices start from £12 per 1,000 words for Bachelor's work, £15 for Master's and £18 for PhD, and you can check your exact price on the instant calculator on our homepage.",
+    "Prices start from £12 per 1,000 words for Bachelor's work, £15 for Master's and £18 for PhD, and you can check your exact price on the instant calculator on this page.",
   ],
   sections: [
     {
@@ -58,21 +59,21 @@ export const proofreadingEditingServices: LandingContent = {
         "Every edit is made in Microsoft Word with Track Changes switched on. Deletions, insertions and formatting changes are visible in the margin, so nothing is altered silently.",
         "Where a sentence is ambiguous, your expert adds a comment instead of guessing what you meant. Comments might ask you to confirm a figure, suggest a clearer phrasing or flag a citation that does not appear in your reference list.",
         "You review each change and choose to accept or reject it. Many students also keep the tracked version as a personal guide, because it shows the errors they make most often and helps them write more accurately next time.",
-        "Proofreading and editing improve how your work is expressed, not what it argues. Your expert will not add new content, rewrite your analysis or change your findings, which keeps the work authentically yours. If your draft needs bigger changes to structure or argument, a draft review with detailed feedback may be the better first step.",
+        "Proofreading and editing improve how your work is expressed, not what it argues. Your expert will not add new content, rewrite your analysis or change your findings, which keeps the work authentically yours. If your draft needs bigger changes to structure or argument, a [draft review with detailed feedback](/draft-review-feedback) may be the better first step.",
       ],
     },
     {
       heading: 'Dissertation proofreading and thesis proofreading',
       paragraphs: [
         "Long documents bring their own problems. In a 12,000-word dissertation, chapters are often written months apart, so terms drift, tenses change between the literature review and the findings, and figures are numbered inconsistently.",
-        "Our dissertation proofreading service reads the document as a whole. Your expert checks that the abstract, chapter headings, table of contents, list of figures and appendices all match, and that key terms and abbreviations are defined once and then used the same way.",
-        "Thesis proofreading at PhD level follows the same approach with extra attention to precise terminology, hedging language and the conventions of your discipline. For very long theses, message us on WhatsApp for a tailored quote.",
+        "Our [dissertation](/dissertation-help-uk) proofreading service reads the document as a whole. Your expert checks that the abstract, chapter headings, table of contents, list of figures and appendices all match, and that key terms and abbreviations are defined once and then used the same way.",
+        "[Thesis](/thesis-help) proofreading at PhD level follows the same approach with extra attention to precise terminology, hedging language and the conventions of your discipline. For very long theses, message us on WhatsApp for a tailored quote.",
       ],
     },
     {
       heading: 'Essay proofreading for coursework and assessments',
       paragraphs: [
-        "Shorter pieces still benefit from a second pair of eyes. Essay proofreading is useful for coursework essays, reflective writing, reports, case studies and research proposals, especially when you have read your own draft so many times that errors become invisible.",
+        "Shorter pieces still benefit from a second pair of eyes. [Essay](/essay-help) proofreading is useful for coursework essays, reflective writing, reports, case studies and research proposals, especially when you have read your own draft so many times that errors become invisible.",
         "For essays, your expert pays particular attention to word count discipline, introduction and conclusion clarity and whether each paragraph opens with a clear topic sentence. Language that reads as informal or vague is flagged so the final piece sounds confident and academic.",
       ],
     },
@@ -124,6 +125,7 @@ export const proofreadingEditingServices: LandingContent = {
     {
       q: 'What is the difference between proofreading and editing?',
       a: 'Proofreading corrects surface errors such as spelling, grammar and punctuation. Editing also improves clarity, flow, consistency and academic tone, while keeping your ideas unchanged.',
+      link: { label: 'Draft review & feedback', href: '/draft-review-feedback' },
     },
     {
       q: 'Is it allowed to get my dissertation proofread?',
@@ -136,6 +138,7 @@ export const proofreadingEditingServices: LandingContent = {
     {
       q: 'Will you check my references during academic proofreading?',
       a: 'Yes. Your expert checks that in-text citations match the reference list and that one style, such as Harvard, APA or OSCOLA, is followed consistently.',
+      link: { label: 'Referencing help', href: '/referencing-help' },
     },
     {
       q: 'How long does thesis proofreading take?',
@@ -153,7 +156,7 @@ export const proofreadingEditingServices: LandingContent = {
   ctaTitle: 'Get your proofreading price in minutes',
   ctaText:
     "Send your document on WhatsApp or use our instant calculator. Proofreading starts from £12 per 1,000 words with 10% off your first order.",
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss proofreading my document.',
   related: [
     'draft-review-feedback',
     'referencing-help',

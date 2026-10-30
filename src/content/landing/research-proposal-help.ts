@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const researchProposalHelp: LandingContent = {
   slug: 'research-proposal-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Research Proposal Help UK | Master\'s, MBA & PhD Support',
   metaDescription:
     "Research proposal help from Master's and PhD-qualified experts. Structure, research question, aims and methodology support. Get a quick quote on WhatsApp.",
@@ -44,7 +45,7 @@ export const researchProposalHelp: LandingContent = {
     {
       heading: 'Research proposal structure: section by section',
       paragraphs: [
-        'Universities set their own templates, so always follow your guidelines first. Most UK research proposals, however, contain the sections below, and each one has a specific job to do.',
+        'Universities set their own templates, so always follow your guidelines first. Most UK research proposals, however, contain the sections below, and each one has a specific job to do. Our guides on [writing a research proposal](/blog/how-to-write-a-research-proposal) and [writing a research question](/blog/how-to-write-a-research-question) explain each element in more depth.',
       ],
       bullets: [
         'Working title: a short, specific title naming the topic, context and, where useful, the method. For example, "Remote leadership and employee retention in UK retail banks: a mixed-methods study".',
@@ -63,15 +64,15 @@ export const researchProposalHelp: LandingContent = {
       paragraphs: [
         'Topic and title: your expert checks whether your idea is researchable with the time, access and word count you have, then helps you narrow it to one clear focus.',
         'Aims and questions: we help you align your aim, objectives and research questions so that each one can be answered by your planned method. This alignment is one of the first things supervisors look for.',
-        'Literature and gap: we point you to credible, recent sources and show you how to turn a list of studies into a short critical review that leads naturally to your research gap.',
-        'Methodology and timeline: we help you justify your design, sampling and analysis, and build a timeline that fits your submission date. Where your proposal has already received feedback, we work through each comment with you.',
+        'Literature and gap: we point you to credible, recent sources and show you how to turn a list of studies into a short critical [literature review](/blog/how-to-write-a-literature-review) that leads naturally to your research gap. For a full review we also offer dedicated [literature review help](/literature-review-help).',
+        'Methodology and timeline: we help you justify your design, sampling and analysis — choosing between [qualitative, quantitative or mixed methods](/blog/quantitative-vs-qualitative-research) — and build a timeline that fits your submission date. Where your proposal has already received feedback, we work through each comment with you.',
       ],
     },
     {
       heading: "Master's vs PhD research proposals",
       paragraphs: [
-        'A Master\'s or MBA dissertation proposal is usually a short planning document, often 1,000 to 3,000 words, written to agree a project with your supervisor. The main test is whether the study is focused, feasible in a few months and well matched to your course. Originality is welcome but not essential: applying an existing framework to a new organisation or sector is often enough.',
-        'A PhD research proposal is a much bigger commitment. It is often used to decide admission, supervision and sometimes funding, so it must show a genuine contribution to knowledge, a deep command of the literature and a methodology that can be carried out over three to four years. Panels also look for evidence that you understand your field\'s debates and that your project fits the department\'s research strengths.',
+        'A Master\'s or MBA dissertation proposal is usually a short planning document, often 1,000 to 3,000 words, written to agree a project with your supervisor, before you begin the full [dissertation](/dissertation-help-uk). The main test is whether the study is focused, feasible in a few months and well matched to your course. Originality is welcome but not essential: applying an existing framework to a new organisation or sector is often enough.',
+        'A PhD research proposal is a much bigger commitment. It is often used to decide [admission, supervision and sometimes funding](/phd-admission-scholarship-help), so it must show a genuine contribution to knowledge, a deep command of the literature and a methodology that can be carried out over three to four years. Panels also look for evidence that you understand your field\'s debates and that your project fits the department\'s research strengths.',
       ],
       bullets: [
         'Length: Master\'s often 1,000 to 3,000 words; PhD commonly 1,500 to 3,000 words or more, depending on the university',
@@ -102,7 +103,7 @@ export const researchProposalHelp: LandingContent = {
       heading: 'Dissertation proposal help and PhD proposals',
       paragraphs: [
         'For taught Master\'s and MBA students, our dissertation proposal help focuses on scope. Many proposals are sent back because the question is too wide for the word count and timeframe, so we help you tighten it early.',
-        'PhD research proposal help needs a different level of depth. Our PhD-qualified experts help you sharpen your argument, show originality and present it in a way that fits what admissions panels and potential supervisors expect.',
+        'PhD research proposal help needs a different level of depth. Our PhD-qualified experts help you sharpen your argument, show originality and present it in a way that fits what admissions panels and potential supervisors expect, and carry it forward into the [thesis](/thesis-help) itself.',
       ],
     },
     {
@@ -134,7 +135,7 @@ export const researchProposalHelp: LandingContent = {
       heading: 'Transparent pricing',
       paragraphs: [
         'Our prices are clear from the start. Assignment-level work starts from £20 per 1,000 words, and dissertation work is £30 per 1,000 words.',
-        'Urgent support is available: delivery within 3 to 6 days adds 25%, and within 48 hours adds 50%. New students get 10% off their first order. Payment is 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR). Use the instant price calculator on our homepage or send us your brief on WhatsApp for an exact quote.',
+        'Urgent support is available: delivery within 3 to 6 days adds 25%, and within 48 hours adds 50%. New students get 10% off their first order. Payment is 50% to start and 50% on completion, by UK bank transfer (GBP) or Saudi bank transfer (SAR). Use the instant price calculator on this page for an estimate, and the team confirms the final price after reviewing your brief.',
       ],
     },
     {
@@ -175,14 +176,20 @@ export const researchProposalHelp: LandingContent = {
     {
       q: 'Do you offer PhD research proposal help?',
       a: 'Yes. Our PhD-qualified experts help doctoral applicants refine their research question, show originality, position the study within the literature and build a realistic methodology.',
+      link: { label: 'PhD admission & scholarship help', href: '/phd-admission-scholarship-help' },
     },
     {
       q: 'Can you help with research methodology?',
       a: 'Yes. Research methodology help is one of our most requested services. We help you choose between qualitative, quantitative and mixed methods, plan your sampling and data collection, and explain your choices clearly.',
+      link: { label: 'Research methodology help', href: '/research-methodology-help' },
     },
     {
       q: 'How much does research proposal help cost?',
       a: 'Assignment-level work starts from £20 per 1,000 words and dissertation work is £30 per 1,000 words. Urgent deadlines cost more, and your first order gets 10% off. Message us on WhatsApp for an exact quote.',
+    },
+    {
+      q: 'What should I send to get a quote for my proposal?',
+      a: 'Send your topic or research idea, your course or department proposal template, any draft or notes you have, the required word count, your referencing style (Harvard, APA, MLA, IEEE or OSCOLA), your deadline and your level of study (Master\'s or PhD). We never need your university login.',
     },
     {
       q: 'Is research proposal help confidential?',
@@ -193,6 +200,6 @@ export const researchProposalHelp: LandingContent = {
   ctaText:
     'Send us your topic, guidelines and deadline on WhatsApp and get a clear price within minutes. Our experts are available 24/7.',
   whatsappMessage:
-    'Hello FIZBS, I would like to discuss my assignment.',
+    'Hello FIZBS, I would like to discuss my research proposal.',
   related: ['dissertation-help-uk', 'phd-admission-scholarship-help', 'spss-help', 'mba-assignment-help'],
 };

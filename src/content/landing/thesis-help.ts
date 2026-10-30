@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const thesisHelp: LandingContent = {
   slug: 'thesis-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: "Thesis Help | PhD and Master's Thesis Experts",
   metaDescription:
     "Thesis help from PhD-qualified experts at £30 per 1,000 words, with tailored quotes for long PhD theses. 10% off your first order. Message us on WhatsApp.",
@@ -58,7 +59,7 @@ export const thesisHelp: LandingContent = {
     {
       heading: 'Research questions and originality',
       paragraphs: [
-        'Weak research questions cause more thesis trouble than anything else. A question that is too broad produces a shallow thesis; one that is too narrow leaves you with little to say. Your expert can help you test each question for scope, feasibility and fit with your data and timeline.',
+        'Weak [research questions](/blog/how-to-write-a-research-question) cause more thesis trouble than anything else. A question that is too broad produces a shallow thesis; one that is too narrow leaves you with little to say. Your expert can help you test each question for scope, feasibility and fit with your data and timeline.',
         "Originality does not have to mean a ground-breaking discovery. A contribution to knowledge can come from applying an established theory in a new context, such as a Saudi or Gulf setting, from a new combination of methods, or from evidence that challenges an accepted assumption. We help you articulate that contribution clearly, because examiners look for it in the abstract, introduction and conclusion.",
         'Example thesis topics we regularly support include employee engagement in hybrid workplaces, Vision 2030 and SME growth in Saudi Arabia, nurse retention in NHS trusts, ESG disclosure and firm performance, and consumer trust in social commerce. Each one needs a sharper question than its title suggests, and refining that question is often the most valuable thesis help we give.',
       ],
@@ -67,7 +68,7 @@ export const thesisHelp: LandingContent = {
       heading: 'How our thesis help works',
       bullets: [
         'Share your stage: tell us your level, subject, word count, university guidelines and what feels stuck',
-        'Send relevant files: your proposal, current chapters, supervisor comments and any data you have collected',
+        'Send relevant files: your proposal, current chapters, supervisor comments and any [data](/data-analysis-help) you have collected',
         'Get your price: a per-word figure for shorter projects or a tailored quote for long PhD work',
         'Work with your expert: your subject expert works on your request with you and explains each recommendation',
         'Keep momentum: ask follow-up questions on WhatsApp at any hour as your thesis develops',
@@ -105,14 +106,14 @@ export const thesisHelp: LandingContent = {
     {
       heading: "Master's thesis help and thesis proposal help",
       paragraphs: [
-        "Master's thesis help usually focuses on a tighter timeline, often a single summer, where planning matters as much as writing. We help you set realistic milestones, keep the scope manageable and make sure your methodology can be completed with the time and access you have.",
-        'Earlier in the journey, thesis proposal help covers the research problem, preliminary literature, aims, questions, proposed methods and a timeline. A strong proposal makes ethical approval and the first supervision meetings much smoother. For proposals at the application stage, our research proposal service may also be useful.',
+        "Master's thesis help usually focuses on a tighter timeline, often a single summer, where planning matters as much as writing. We help you set realistic milestones, keep the scope manageable and make sure your [methodology](/research-methodology-help) can be completed with the time and access you have.",
+        'Earlier in the journey, thesis proposal help covers the research problem, preliminary literature, aims, questions, proposed methods and a timeline. A strong proposal makes ethical approval and the first supervision meetings much smoother. For proposals at the application stage, our [research proposal service](/research-proposal-help) may also be useful.',
       ],
     },
     {
       heading: 'Thesis help pricing and deadlines',
       paragraphs: [
-        "Thesis support is charged at £30 per 1,000 words, the same rate as our dissertation help. Our calculator shows your price instantly, and for long PhD theses we provide a tailored quote on WhatsApp based on the chapters and type of support you need.",
+        "Thesis support is charged at £30 per 1,000 words, the same rate as our [dissertation help](/dissertation-help-uk). The calculator on this page shows your price instantly, and for long PhD theses we provide a tailored quote on WhatsApp based on the chapters and type of support you need.",
         "Standard pricing applies to deadlines of seven days or more. Deadlines of 3 to 6 days add 25%, and deadlines within 48 hours add 50%. New customers receive 10% off their first order, and larger orders qualify for 10% off 8,000+ words or 15% off 15,000+ words. Discounts don't stack, so you always receive the best single one.",
       ],
     },
@@ -129,10 +130,12 @@ export const thesisHelp: LandingContent = {
     {
       q: 'Can you help with just one chapter of my thesis?',
       a: 'Yes. Many researchers ask for support with a single chapter, often the literature review, methodology or discussion. You only pay for the section you need help with.',
+      link: { label: 'Literature review help', href: '/literature-review-help' },
     },
     {
       q: 'What is the difference between a thesis and a dissertation?',
       a: "In the UK, a dissertation usually refers to an undergraduate or taught Master's project, while a thesis is used for research degrees such as an MPhil or PhD. The terms are used the other way round in some countries, so always check your own regulations.",
+      link: { label: 'Dissertation help UK', href: '/dissertation-help-uk' },
     },
     {
       q: 'How do I show originality in my PhD thesis?',
@@ -147,6 +150,10 @@ export const thesisHelp: LandingContent = {
       a: 'Yes. Your expert reviews your chapter alongside the comments, explains what the feedback is asking for and suggests specific changes you can discuss with your supervisor.',
     },
     {
+      q: 'What should I send to get a thesis quote?',
+      a: 'Send your level and subject, the chapters or tasks you need help with, your approximate word count, your university thesis guidelines, any supervisor feedback, your dataset if analysis is involved, and your deadline. For long PhD theses we give a tailored quote. We never need your university login.',
+    },
+    {
       q: "Do you offer Master's thesis help for students in Saudi Arabia?",
       a: "Yes. We support Master's and PhD researchers in Saudi Arabia, the Gulf and the UK, across business, management, health, law, computing, engineering and more than 115 subjects.",
     },
@@ -154,7 +161,7 @@ export const thesisHelp: LandingContent = {
   ctaTitle: 'Move your thesis forward with expert support',
   ctaText:
     'Tell us your stage, word count and deadline on WhatsApp for a clear quote, and get 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my thesis.',
   related: [
     'dissertation-help-uk',
     'research-proposal-help',

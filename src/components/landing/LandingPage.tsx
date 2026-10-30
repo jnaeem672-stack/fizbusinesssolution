@@ -334,7 +334,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                     {section.steps.map((step, i) => (
                       <li key={i} className="flex items-start gap-3">
                         <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-primary text-xs font-black">{i + 1}</span>
-                        <span>{step}</span>
+                        <span>{renderRichText(step)}</span>
                       </li>
                     ))}
                   </ol>
@@ -368,7 +368,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                     {section.bullets.map((b) => (
                       <li key={b} className="flex items-start gap-2.5">
                         <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                        <span>{b}</span>
+                        <span>{renderRichText(b)}</span>
                       </li>
                     ))}
                   </ul>
@@ -386,7 +386,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
                             {sub.bullets.map((b) => (
                               <li key={b} className="flex items-start gap-2.5">
                                 <CheckCircle2 className="w-5 h-5 text-primary shrink-0 mt-0.5" />
-                                <span>{b}</span>
+                                <span>{renderRichText(b)}</span>
                               </li>
                             ))}
                           </ul>

@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const phdAdmissionScholarshipHelp: LandingContent = {
   slug: 'phd-admission-scholarship-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'PhD Admission UK: Step-by-Step Guide & Top Universities',
   metaDescription:
     'How to get PhD admission in the UK, step by step, with official admission links for Oxford, Cambridge, UCL, LSE, Kent, Canterbury Christ Church and more.',
@@ -225,7 +226,7 @@ export const phdAdmissionScholarshipHelp: LandingContent = {
     {
       heading: 'Step 5: Email potential supervisors (with a sample email)',
       paragraphs: [
-        'A short, specific and professional email gets far more replies than a long or generic one. Mention one of their recent papers, explain your research idea in two or three sentences, and attach a short summary of your proposal (one or two pages) and your CV. Avoid sending the same email to dozens of academics at once.',
+        'A [short, specific and professional email](/blog/how-to-email-a-phd-supervisor) gets far more replies than a long or generic one. Mention one of their recent papers, explain your research idea in two or three sentences, and attach a short summary of your proposal (one or two pages) and your CV. Avoid sending the same email to dozens of academics at once.',
         'Here is a simple structure you can adapt: "Dear Dr [Name], I am a [degree] graduate from [university] applying for PhD study starting in [month, year]. I read your recent article on [topic], and my proposed research on [your topic] builds on [their idea]. I have attached a two-page summary and my CV. Would you be open to discussing possible supervision? Kind regards, [Your name]."',
         'If you do not receive a reply within about two weeks, send one polite follow-up. Academics are busy, and a lack of reply is not always a no. If an academic says they cannot supervise you, ask whether they can suggest a colleague.',
       ],
@@ -233,7 +234,7 @@ export const phdAdmissionScholarshipHelp: LandingContent = {
     {
       heading: 'Step 6: Write a strong PhD research proposal',
       paragraphs: [
-        'The research proposal is usually the deciding document in a self-proposed PhD application. Length requirements vary, but many UK universities ask for around 1,500 to 3,000 words. Some, such as the University of Edinburgh, publish their own guidance on writing a proposal, so always check the department\'s instructions first. A strong proposal normally follows this structure:',
+        'The [research proposal](/research-proposal-help) is usually the deciding document in a self-proposed PhD application. Length requirements vary, but many UK universities ask for around 1,500 to 3,000 words. Some, such as the University of Edinburgh, publish their own guidance on writing a proposal, so always check the department\'s instructions first. A strong proposal normally follows this structure:',
       ],
       bullets: [
         'Working title that names your topic and context',
@@ -250,14 +251,14 @@ export const phdAdmissionScholarshipHelp: LandingContent = {
     {
       heading: 'How we help with your research proposal',
       paragraphs: [
-        'This is where most of our PhD support is focused. Your expert works with you on the research gap, aims and questions, checks that your methodology really answers those questions, and makes sure the timeline is realistic. We give detailed feedback across several rounds, so each version is clearer and more convincing than the last.',
-        'Many applicants have strong ideas but struggle to express them in the academic structure that reviewers expect. Our experts hold Master\'s and PhD qualifications across business, management, finance, health, education, social sciences, computing and more, so you are matched with someone who understands your field.',
+        'This is where most of our PhD support is focused (our guide on [writing a research proposal](/blog/how-to-write-a-research-proposal) covers the structure). Your expert works with you on the research gap, aims and questions, checks that your methodology really answers those questions, and makes sure the timeline is realistic. We give detailed feedback across several rounds, so each version is clearer and more convincing than the last.',
+        'Many applicants have strong ideas but struggle to express them in the academic structure that reviewers expect. Our experts hold Master\'s and PhD qualifications across business, management, finance, health, education, social sciences, computing and more, so you are matched with someone who understands your field and can keep supporting you into the [thesis](/thesis-help) itself.',
       ],
     },
     {
       heading: 'Step 7: Personal statement, CV, transcripts and references',
       paragraphs: [
-        'Your personal statement should explain why you want to do this research, why now, and why you are well prepared for it. It should connect directly to your proposal rather than repeat your CV. Keep it focused, usually one to two pages unless the university gives a word limit.',
+        'Your [personal statement](/blog/uk-masters-personal-statement) should explain why you want to do this research, why now, and why you are well prepared for it. It should connect directly to your proposal rather than repeat your CV. Keep it focused, usually one to two pages unless the university gives a word limit.',
         'Your academic CV should list your degrees and grades, research experience, dissertation topic and mark, publications or conference papers, teaching and relevant professional experience. Most programmes ask for two academic references, so contact your referees at least a month in advance and share your proposal with them so they can write specifically about your research ability.',
       ],
       bullets: [
@@ -367,6 +368,7 @@ export const phdAdmissionScholarshipHelp: LandingContent = {
     {
       q: 'How can I get PhD admission in the UK?',
       a: 'Start about 12 months before your intended start date, choose a focused topic with a clear research gap, shortlist universities, find a supervisor whose work matches yours, write a strong research proposal, apply through each university\'s online portal, plan your funding and prepare well for the interview.',
+      link: { label: 'Research proposal help', href: '/research-proposal-help' },
     },
     {
       q: 'What are the PhD admission requirements in the UK?',
@@ -401,7 +403,7 @@ export const phdAdmissionScholarshipHelp: LandingContent = {
   ctaText:
     'Message us on WhatsApp or book a call with your subject, research idea and target universities, and we will share a clear plan and personal quote.',
   whatsappMessage:
-    'Hello FIZBS, I would like to discuss my assignment.',
+    'Hello FIZBS, I would like to discuss my PhD application.',
   offer: { price: '120', description: 'PhD admission support packages from £120' },
   related: [
     'research-proposal-help',

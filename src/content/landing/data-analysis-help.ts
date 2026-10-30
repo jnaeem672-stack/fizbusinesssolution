@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const dataAnalysisHelp: LandingContent = {
   slug: 'data-analysis-help',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Data Analysis Help | SPSS, NVivo, R and Python',
   metaDescription:
     'Data analysis help for dissertations using SPSS, NVivo, Excel, Stata, Python and R. Clear quotes based on your scope. Message us on WhatsApp today.',
@@ -50,15 +51,15 @@ export const dataAnalysisHelp: LandingContent = {
         'Predicting an outcome from several variables: multiple linear or logistic regression',
       ],
       paragraphs: [
-        'Choosing the wrong test is one of the most common reasons a findings chapter loses marks. The right choice depends on your research question, the type of variables you have (categorical, ordinal or continuous), how many groups you are comparing and whether your data meets the assumptions of parametric tests.',
-        'Ideally, the analysis plan is set before data collection, in your methodology chapter. If your questionnaire has already been distributed, data analysis help can still identify which tests your data supports and how to justify that choice honestly.',
+        '[Choosing the wrong test](/blog/which-statistical-test-spss) is one of the most common reasons a findings chapter loses marks. The right choice depends on your research question, the type of variables you have (categorical, ordinal or continuous), how many groups you are comparing and whether your data meets the assumptions of parametric tests.',
+        'Ideally, the analysis plan is set before data collection, in your [methodology chapter](/research-methodology-help). If your questionnaire has already been distributed, data analysis help can still identify which tests your data supports and how to justify that choice honestly.',
       ],
     },
     {
       heading: 'Descriptive and inferential statistics explained',
       paragraphs: [
         'Descriptive statistics summarise your sample: who responded, average scores and how spread out the answers are. They usually open a quantitative findings chapter and set the context for everything that follows. A clear demographic profile of respondents also helps the marker judge how far your results can be generalised.',
-        'Inferential statistics test whether patterns in your sample are likely to hold in the wider population. Here you report test statistics, degrees of freedom, p-values and, increasingly, effect sizes and confidence intervals. Our statistical analysis help focuses on interpreting these numbers in plain language as well as reporting them correctly.',
+        'Inferential statistics test whether patterns in your sample are likely to hold in the wider population. Here you report test statistics, degrees of freedom, p-values and, increasingly, effect sizes and confidence intervals. Our [statistical analysis help](/spss-help) focuses on interpreting these numbers in plain language as well as reporting them correctly.',
       ],
     },
     {
@@ -71,8 +72,8 @@ export const dataAnalysisHelp: LandingContent = {
     {
       heading: 'Qualitative data analysis help',
       paragraphs: [
-        "Interview and focus group data needs a systematic approach too. Braun and Clarke's six-phase thematic analysis is the most widely used method in UK dissertations: familiarisation, coding, generating themes, reviewing themes, defining and naming them, and writing up.",
-        'Our qualitative data analysis help covers building a codebook, moving from codes to meaningful themes, choosing illustrative quotes from your transcripts and showing the marker how you reached your interpretations. We also support content analysis and framework analysis where your methodology calls for them.',
+        "Interview and focus group data needs a systematic approach too. [Braun and Clarke's six-phase thematic analysis](/blog/thematic-analysis-guide) is the most widely used method in UK dissertations: familiarisation, coding, generating themes, reviewing themes, defining and naming them, and writing up.",
+        'Our [qualitative data analysis help](/nvivo-thematic-analysis-help) covers building a codebook, moving from codes to meaningful themes, choosing illustrative quotes from your transcripts and showing the marker how you reached your interpretations. We also support content analysis and framework analysis where your methodology calls for them.',
         'Strong qualitative findings do more than list what participants said. Each theme should make an analytic claim, supported by two or three well-chosen quotes and a short commentary linking it back to your research question and the literature you reviewed earlier.',
       ],
     },
@@ -87,7 +88,7 @@ export const dataAnalysisHelp: LandingContent = {
         'R for statistics and publication-quality graphics',
       ],
       paragraphs: [
-        'If your module requires a particular package, tell us at the start. Your expert can also show you where each result sits in the output, so you can rerun or adjust the analysis yourself if your supervisor asks for changes.',
+        'If your module requires a particular package, tell us at the start — we also offer dedicated [Excel data analysis help](/excel-data-analysis-help) and [Python, R and Stata support](/python-stata-help). Your expert can also show you where each result sits in the output, so you can rerun or adjust the analysis yourself if your supervisor asks for changes.',
       ],
     },
     {
@@ -141,10 +142,12 @@ export const dataAnalysisHelp: LandingContent = {
     {
       q: 'Do you offer statistical analysis help with SPSS?',
       a: 'Yes. SPSS is one of the tools we use most, for descriptive statistics, reliability testing, t-tests, ANOVA, chi-square, correlation and regression. We also explain how to read and report the output.',
+      link: { label: 'SPSS help', href: '/spss-help' },
     },
     {
       q: 'Can you help with thematic analysis of interview data?',
       a: "Yes. Our qualitative data analysis help follows established approaches such as Braun and Clarke's thematic analysis, with support for coding in NVivo or manually.",
+      link: { label: 'NVivo & thematic analysis help', href: '/nvivo-thematic-analysis-help' },
     },
     {
       q: 'Is there data analysis help UK students can access at short notice?',
@@ -162,7 +165,7 @@ export const dataAnalysisHelp: LandingContent = {
   ctaTitle: 'Make sense of your data with expert support',
   ctaText:
     'Send your research questions, data type and deadline on WhatsApp for a clear quote, and get 10% off your first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my data analysis.',
   related: [
     'spss-help',
     'nvivo-thematic-analysis-help',
