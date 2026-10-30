@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const othmAtheAssignmentHelp: LandingContent = {
   slug: 'othm-athe-assignment-help',
   locale: 'en',
+  updated: '2026-10-31',
   metaTitle: 'OTHM and ATHE Assignment Help | Level 3 to 7 Diplomas',
   metaDescription:
     'OTHM and ATHE assignment help for Level 3 to 7 business, management and health diplomas. Expert guidance on every criterion from £20 per 1,000 words.',
@@ -23,7 +24,7 @@ export const othmAtheAssignmentHelp: LandingContent = {
   intro: [
     'OTHM and ATHE assignment help from FIZ Business Solutions (FIZBS) supports students taking diplomas from these UK awarding bodies, both in the UK and overseas, including in Saudi Arabia and the wider Gulf. Business and management diplomas make up most of our requests, and we have supported students since 2015.',
     "OTHM and ATHE diplomas are popular because they are flexible: many students study online while working, and many use a Level 5 or Level 7 diploma as a route into the final stage of a degree or a top-up Master's with a partner university. Most units are assessed through written assignments rather than exams, so strong assignments are the key to completing the qualification.",
-    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on our homepage.',
+    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on this page. The team confirms the final price after reviewing your brief.',
   ],
   sections: [
     {
@@ -60,20 +61,20 @@ export const othmAtheAssignmentHelp: LandingContent = {
       paragraphs: [
         'The Level 7 strategic management diplomas are the most requested OTHM and ATHE qualifications at FIZBS. Units typically cover topics such as strategic leadership, strategic management, finance for strategic managers, strategic human resource management, research methods and personal development as a leader.',
         "At this level, assessors expect Master's-level thinking: comparing theories, judging what works for a specific organisation and justifying recommendations. Our experts help you move beyond description by showing how to evaluate models such as Porter's generic strategies, the Ansoff Matrix, the balanced scorecard and transformational leadership in a real context.",
-        'The research methods unit can be a challenge if you have not studied research before. Our research specialists can guide you on choosing a focused question, comparing qualitative and quantitative approaches, and planning data collection and analysis.',
+        'The research methods unit can be a challenge if you have not studied research before. Our research specialists can guide you on choosing a focused question, comparing [qualitative and quantitative approaches](/blog/quantitative-vs-qualitative-research), and planning data collection and analysis.',
       ],
     },
     {
       heading: 'Diplomas as a route to a degree',
       paragraphs: [
-        "Many students take an OTHM or ATHE diploma to progress to a university top-up: a Level 5 diploma can lead into the final year of a bachelor's degree, and a Level 7 diploma can lead into a top-up Master's or MBA with some universities. Entry rules vary by university, so always check them with your provider.",
+        "Many students take an OTHM or ATHE diploma to progress to a university top-up: a Level 5 diploma can lead into the final year of a bachelor's degree, and a Level 7 diploma can lead into a top-up Master's or [MBA](/mba-assignment-help) with some universities. Entry rules vary by university, so always check them with your provider.",
         'Once you move on, we can support you at the next stage too, from your top-up assignments to your final project or dissertation.',
       ],
     },
     {
       heading: 'Support for students in Saudi Arabia and the Gulf',
       paragraphs: [
-        'Many OTHM and ATHE learners study online from Saudi Arabia, the UAE and the wider Gulf, often while working full time. We support students across the region in English, with 24/7 WhatsApp support and payment by Saudi bank transfer in SAR as well as UK bank transfer in GBP.',
+        'Many OTHM and ATHE learners study online from [Saudi Arabia](/assignment-help-saudi-arabia), the UAE and the wider Gulf, often while working full time. We support students across the region in English, with 24/7 WhatsApp support and payment by Saudi bank transfer in SAR as well as UK bank transfer in GBP.',
         'If English is not your first language, our proofreading and draft review services can help make your writing clear and academic while keeping your ideas and your own voice.',
       ],
     },
@@ -136,6 +137,7 @@ export const othmAtheAssignmentHelp: LandingContent = {
     {
       q: 'Do you help with the OTHM Level 7 Diploma in Strategic Management and Leadership?',
       a: 'Yes. It is one of our most requested qualifications. Our experts support units on strategic leadership, strategic management, finance, human resource management and research methods.',
+      link: { label: 'Research methodology help', href: '/research-methodology-help' },
     },
     {
       q: 'Do you support ATHE diplomas too?',
@@ -148,6 +150,7 @@ export const othmAtheAssignmentHelp: LandingContent = {
     {
       q: 'What happens if one assessment criterion is not met?',
       a: 'The unit is usually returned for resubmission. Share the feedback with us and an expert will explain what is missing and how to address it.',
+      link: { label: 'Draft review and feedback', href: '/draft-review-feedback' },
     },
     {
       q: 'Do you support OTHM students in Saudi Arabia?',
@@ -161,7 +164,7 @@ export const othmAtheAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your OTHM or ATHE assignment price today',
   ctaText:
     'Send your diploma, unit, brief and deadline on WhatsApp, or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my OTHM or ATHE assignment.',
   related: [
     'mba-assignment-help',
     'business-management-assignment-help',

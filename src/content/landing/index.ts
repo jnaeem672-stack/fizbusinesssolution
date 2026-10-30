@@ -46,6 +46,10 @@ import { hncAssignmentHelp } from './hnc-assignment-help';
 import { mfrdAssignmentHelp } from './mfrd-assignment-help';
 import { cmiAssignmentHelp } from './cmi-assignment-help';
 import { othmAtheAssignmentHelp } from './othm-athe-assignment-help';
+import { ilmAssignmentHelp } from './ilm-assignment-help';
+import { qualifiAssignmentHelp } from './qualifi-assignment-help';
+import { cipsAssignmentHelp } from './cips-assignment-help';
+import { healthSocialCareDiplomaHelp } from './health-social-care-diploma-help';
 import { assignmentHelpLeeds } from './assignment-help-leeds';
 import { assignmentHelpGlasgow } from './assignment-help-glasgow';
 import { assignmentHelpLiverpool } from './assignment-help-liverpool';
@@ -136,6 +140,10 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   mfrdAssignmentHelp,
   cmiAssignmentHelp,
   othmAtheAssignmentHelp,
+  ilmAssignmentHelp,
+  qualifiAssignmentHelp,
+  cipsAssignmentHelp,
+  healthSocialCareDiplomaHelp,
 ];
 
 /** Arabic landing pages, served at /ar/{slug} */
@@ -192,6 +200,10 @@ export const QUALIFICATION_LINKS: { label: string; href: string }[] = [
   { label: 'MFRD Assignment Help', href: '/mfrd-assignment-help' },
   { label: 'CMI Assignment Help', href: '/cmi-assignment-help' },
   { label: 'OTHM & ATHE Assignment Help', href: '/othm-athe-assignment-help' },
+  { label: 'ILM Assignment Help', href: '/ilm-assignment-help' },
+  { label: 'Qualifi Assignment Help', href: '/qualifi-assignment-help' },
+  { label: 'CIPS Assignment Help', href: '/cips-assignment-help' },
+  { label: 'Health & Social Care Diploma Help', href: '/health-social-care-diploma-help' },
 ];
 
 export const CITY_LINKS: { label: string; href: string }[] = [

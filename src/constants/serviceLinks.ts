@@ -39,4 +39,8 @@ export const SERVICE_PAGE_LINKS: Record<string, string> = {
   'MFRD Assignment Help': '/mfrd-assignment-help',
   'CMI Assignment Help': '/cmi-assignment-help',
   'OTHM & ATHE Assignment Help': '/othm-athe-assignment-help',
+  'ILM Assignment Help': '/ilm-assignment-help',
+  'Qualifi Assignment Help': '/qualifi-assignment-help',
+  'CIPS Assignment Help': '/cips-assignment-help',
+  'Health & Social Care Diploma Help': '/health-social-care-diploma-help',
 };

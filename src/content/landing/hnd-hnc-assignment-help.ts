@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const hndHncAssignmentHelp: LandingContent = {
   slug: 'hnd-hnc-assignment-help',
   locale: 'en',
+  updated: '2026-10-31',
   metaTitle: 'HND and HNC Assignment Help | BTEC Higher Nationals',
   metaDescription:
     'HND and HNC assignment help for Pearson BTEC Higher Nationals in business, health, computing and more. Clear guidance on Pass, Merit and Distinction.',
@@ -28,7 +29,7 @@ export const hndHncAssignmentHelp: LandingContent = {
   intro: [
     'HND and HNC assignment help from FIZ Business Solutions (FIZBS) supports students on Pearson BTEC Higher National Certificates (HNC, Level 4) and Higher National Diplomas (HND, Level 5) at colleges and universities across the UK. Many of our requests come from business and management students, and our subject experts also cover health and social care, computing, engineering and hospitality. These Higher National units sit within our broader [help with university assignments](/assignment-help-uk).',
     'Higher National assignments follow a very specific format. Each unit has learning outcomes with Pass, Merit and Distinction criteria, and your grade depends on which criteria your work clearly meets. Capable students sometimes miss a higher grade simply because one criterion was answered too briefly. Our experts help you see exactly what each criterion asks for and how to show it in your work.',
-    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on our homepage.',
+    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on this page. The team confirms the final price after reviewing your brief.',
   ],
   sections: [
     {
@@ -58,9 +59,9 @@ export const hndHncAssignmentHelp: LandingContent = {
         'Students often look for help by the name of the unit. These are the business units we are asked about most. Unit titles and numbers vary between Pearson specifications and centres, so always follow your own assignment brief.',
       ],
       bullets: [
-        'Managing Financial Resources and Decisions (MFRD): sources of finance, budgeting, investment appraisal such as payback, ARR and NPV, and interpreting financial statements',
+        '[Managing Financial Resources and Decisions (MFRD)](/mfrd-assignment-help): sources of finance, budgeting, investment appraisal such as payback, ARR and NPV, and interpreting financial statements',
         'Management Accounting: costing methods, budgets and variance analysis, and using accounting information for decisions',
-        'Business and the Business Environment: types of organisation, stakeholders, and PESTLE and SWOT analysis',
+        'Business and the Business Environment: types of organisation, stakeholders, and [PESTLE and SWOT analysis](/blog/swot-and-pestle-analysis-guide)',
         'Marketing Processes and Planning: the marketing mix, segmentation and a marketing plan for a real organisation',
         'Human Resource Management: recruitment, training, employee relations and HR practice in a chosen organisation',
         'Management and Operations: leadership and management approaches and how operations are managed',
@@ -99,14 +100,14 @@ export const hndHncAssignmentHelp: LandingContent = {
         'Research and sources: suggestions of textbooks, journal articles and credible organisational data suited to Level 4 and 5 work',
         "Applying theory: guidance on models such as PESTLE, SWOT, Maslow's hierarchy of needs, Belbin's team roles or Tuckman's stages of group development, and how to apply them to a real organisation",
         'Moving up a grade: feedback on how to turn description into analysis, and analysis into evaluation',
-        'Presentations and reports: help structuring slides, speaker notes and business reports',
+        'Presentations and reports: help structuring slides, speaker notes and [business reports](/blog/how-to-write-a-business-report)',
         'Final checks: proofreading from £12 per 1,000 words and Harvard referencing support',
       ],
     },
     {
       heading: 'Support for students at London and UK colleges',
       paragraphs: [
-        'Many HND students study at colleges in London, Birmingham, Manchester and other UK cities, often alongside part-time work and family responsibilities. Assignment deadlines tend to cluster at the end of each term, and our 24/7 WhatsApp support means you can get answers late in the evening or at the weekend.',
+        'Many HND students study at colleges in [London](/assignment-help-london), Birmingham, Manchester and other UK cities, often alongside part-time work and family responsibilities. Assignment deadlines tend to cluster at the end of each term, and our 24/7 WhatsApp support means you can get answers late in the evening or at the weekend.',
         'If English is not your first language, our proofreading and draft review services can help make your writing clear and academic while keeping your ideas and your own voice.',
       ],
     },
@@ -151,6 +152,7 @@ export const hndHncAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with the MFRD unit?',
       a: 'Yes. Our finance experts guide you through Managing Financial Resources and Decisions tasks such as sources of finance, budgets, investment appraisal and financial statement analysis, and explain what each Pass, Merit and Distinction criterion asks for.',
+      link: { label: 'MFRD assignment help', href: '/mfrd-assignment-help' },
     },
     {
       q: 'How much does HND assignment help cost?',
@@ -171,6 +173,7 @@ export const hndHncAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with a resubmission?',
       a: 'Yes. Share your assessor feedback and the work you submitted, and an expert will explain which criteria were not met and how to address them before you resubmit.',
+      link: { label: 'Draft review and feedback', href: '/draft-review-feedback' },
     },
     {
       q: 'Do you help with the business project and the research project?',
@@ -188,7 +191,7 @@ export const hndHncAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your HND or HNC assignment price today',
   ctaText:
     'Send your unit, brief and deadline on WhatsApp, or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my HND assignment.',
   related: [
     'hnc-assignment-help',
     'mfrd-assignment-help',

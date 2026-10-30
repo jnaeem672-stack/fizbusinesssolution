@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const cmiAssignmentHelp: LandingContent = {
   slug: 'cmi-assignment-help',
   locale: 'en',
+  updated: '2026-10-31',
   metaTitle: 'CMI Assignment Help | Level 3, 5 and 7 Management',
   metaDescription:
     'CMI assignment help for Level 3, 5 and 7 management and leadership units, including apprenticeships. Expert guidance from £20 per 1,000 words, 10% off.',
@@ -23,7 +24,7 @@ export const cmiAssignmentHelp: LandingContent = {
   intro: [
     'CMI assignment help from FIZ Business Solutions (FIZBS) supports learners studying Chartered Management Institute qualifications, whether on their own, through an employer, or as part of a management apprenticeship or university programme. Leadership and management are central to our business focus, and we have supported students since 2015. Many managers studying with us also take our [MBA assignment help for managers](/mba-assignment-help).',
     'CMI assessments test whether you can apply management theory to real situations at work. Briefs are linked to learning outcomes and assessment criteria, and assessors look for clear evidence that each criterion has been covered, supported by theory and examples from your organisation. Our experts help you plan answers that meet every requirement without padding.',
-    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on our homepage.',
+    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on this page. The team confirms the final price after reviewing your brief.',
   ],
   sections: [
     {
@@ -58,7 +59,7 @@ export const cmiAssignmentHelp: LandingContent = {
     {
       heading: 'How CMI assignments are assessed',
       paragraphs: [
-        "Most CMI units are assessed through a written assignment that answers a set of tasks linked to the unit's assessment criteria. Depending on your centre, the format might be a report, a case study, a presentation with notes, a reflective account or a professional discussion. Work-based tasks usually ask you to use your own organisation, or one you know well, as the setting.",
+        "Most CMI units are assessed through a written assignment that answers a set of tasks linked to the unit's assessment criteria. Depending on your centre, the format might be a report, a [case study](/case-study-help), a presentation with notes, a reflective account or a professional discussion. Work-based tasks usually ask you to use your own organisation, or one you know well, as the setting.",
         'Assessors check each criterion in turn. If one is not met, the work is usually referred back for you to add the missing evidence. Clear signposting, such as headings that follow the task numbers, helps assessors find what they are looking for. They typically look for:',
       ],
       bullets: [
@@ -85,7 +86,7 @@ export const cmiAssignmentHelp: LandingContent = {
         'Understanding the brief: a task-by-task plan mapped to the assessment criteria',
         'Choosing the right theory: guidance on models such as situational and transformational leadership, Tuckman, Belbin, SMART objectives and the McKinsey 7S framework',
         'Applying it to your workplace: help using real examples while keeping sensitive details anonymous',
-        "Reflective accounts: structure using Gibbs' Reflective Cycle, Kolb's learning cycle or Schön's reflection in and on action",
+        "Reflective accounts: structure using [Gibbs' Reflective Cycle](/blog/gibbs-reflective-cycle-guide), Kolb's learning cycle or Schön's reflection in and on action",
         'After a referral: clear advice on what the assessor needs to see',
         'Final checks: proofreading from £12 per 1,000 words and referencing support',
       ],
@@ -154,10 +155,12 @@ export const cmiAssignmentHelp: LandingContent = {
     {
       q: 'What if my CMI assignment was referred?',
       a: 'Send us the assessor feedback and your submitted work. An expert will explain which criteria were not met and what evidence to add before you resubmit.',
+      link: { label: 'Draft review and feedback', href: '/draft-review-feedback' },
     },
     {
       q: 'Do you also help with ILM qualifications?',
       a: 'Yes. We support ILM leadership and management qualifications, as well as management diplomas from awarding bodies such as OTHM and ATHE.',
+      link: { label: 'OTHM and ATHE assignment help', href: '/othm-athe-assignment-help' },
     },
     {
       q: 'Is my CMI request kept confidential?',
@@ -167,7 +170,7 @@ export const cmiAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your CMI assignment price today',
   ctaText:
     'Send your level, unit, brief and deadline on WhatsApp, or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my CMI assignment.',
   related: [
     'business-management-assignment-help',
     'mba-assignment-help',

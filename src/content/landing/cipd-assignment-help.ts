@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const cipdAssignmentHelp: LandingContent = {
   slug: 'cipd-assignment-help',
   locale: 'en',
+  updated: '2026-10-31',
   metaTitle: 'CIPD Assignment Help | Level 3, 5 and 7 Support',
   metaDescription:
     'CIPD assignment help for Level 3, 5 and 7 units from £20 per 1,000 words. HR experts help you meet every assessment criterion. 10% off your first order.',
@@ -22,9 +23,9 @@ export const cipdAssignmentHelp: LandingContent = {
     'Expert guidance from HR and people management specialists to help you understand each unit, meet every assessment criterion and build answers grounded in evidence and your own workplace.',
   highlights: ['From £20 per 1,000 words', 'HR and L&D specialists', 'Level 3, 5 and 7 units', '24/7 WhatsApp support'],
   intro: [
-    'CIPD assignment help from FIZ Business Solutions (FIZBS) supports learners working towards Chartered Institute of Personnel and Development qualifications, from the Level 3 Foundation Certificate in People Practice to the Level 5 Associate Diploma and the Level 7 Advanced Diploma. Human resource management sits within our core business focus, and we have supported students since 2015.',
+    'CIPD assignment help from FIZ Business Solutions (FIZBS) supports learners working towards Chartered Institute of Personnel and Development qualifications, from the Level 3 Foundation Certificate in People Practice to the Level 5 Associate Diploma and the Level 7 Advanced Diploma. [Human resource management](/hrm-assignment-help) sits within our core business focus, and we have supported students since 2015.',
     'CIPD assessments are different from typical university essays. Each task is mapped to numbered assessment criteria, and assessors check that every criterion has been met with enough depth, evidence and application to an organisation. Missing one criterion can mean a referral, even when the rest of the work is strong. Our experts help you read the brief the way an assessor does and plan an answer that covers everything.',
-    'Prices start at £20 per 1,000 words, and the instant calculator on our homepage shows the figure for your CIPD unit in a few seconds.',
+    'Prices start at £20 per 1,000 words, and the instant calculator on this page shows the figure for your CIPD unit in a few seconds. The team confirms the final price after reviewing your brief.',
   ],
   sections: [
     {
@@ -105,7 +106,7 @@ export const cipdAssignmentHelp: LandingContent = {
         "Theory and models: guidance on relevant frameworks, such as the CIPD Profession Map, the psychological contract, Ulrich's HR model, the AMO model of performance and Herzberg's two-factor theory",
         'Using your organisation: help applying ideas to your own workplace, with sensitive details kept anonymous',
         'Evidence-based practice: support with finding research, interpreting HR data and presenting findings clearly',
-        "Reflective writing and development plans: structure using recognised models such as Kolb's learning cycle or Gibbs' Reflective Cycle",
+        "Reflective writing and development plans: structure using recognised models such as Kolb's learning cycle or [Gibbs' Reflective Cycle](/blog/gibbs-reflective-cycle-guide)",
         'Before submission: proofreading of your CIPD work from £12 per 1,000 words, plus a check of your Harvard citations',
       ],
     },
@@ -120,7 +121,7 @@ export const cipdAssignmentHelp: LandingContent = {
       heading: 'CIPD research projects at Level 7',
       paragraphs: [
         'The 7CO04 unit asks you to investigate a real people management issue, review the literature, choose a research approach, collect and analyse data, and make recommendations. Many learners find the methodology and analysis sections the hardest, especially if they have not done formal research before.',
-        'Our research specialists can guide you on choosing a focused topic, writing a critical literature review, deciding between interviews, surveys or secondary data, and analysing your findings with tools such as Excel, SPSS or NVivo. Your price depends on word count and deadline, and you can check it on the instant calculator.',
+        'Our research specialists can guide you on choosing a focused topic, writing a critical [literature review](/literature-review-help), deciding between interviews, surveys or secondary data, and analysing your findings with tools such as Excel, [SPSS](/spss-help) or NVivo. Your price depends on word count and deadline, and you can check it on the instant calculator on this page.',
       ],
     },
     {
@@ -191,6 +192,7 @@ export const cipdAssignmentHelp: LandingContent = {
     {
       q: 'Do you help with the 7CO04 business research project?',
       a: 'Yes. We can guide you through choosing a topic, the literature review, research methods, data analysis with Excel, SPSS or NVivo, and writing clear recommendations.',
+      link: { label: 'Research methodology help', href: '/research-methodology-help' },
     },
     {
       q: 'Is CIPD help available in Saudi Arabia and the Gulf?',
@@ -208,7 +210,7 @@ export const cipdAssignmentHelp: LandingContent = {
   ctaTitle: 'Get your CIPD assignment price today',
   ctaText:
     'Tell us your CIPD level, unit number and submission date on WhatsApp, or check the instant calculator. Your first order is 10% off.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my CIPD assignment.',
   related: [
     'business-management-assignment-help',
     'cmi-assignment-help',

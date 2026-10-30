@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const mfrdAssignmentHelp: LandingContent = {
   slug: 'mfrd-assignment-help',
   locale: 'en',
+  updated: '2026-10-31',
   metaTitle: 'MFRD Assignment Help | Managing Financial Resources',
   metaDescription:
     'MFRD assignment help for HND Business students: sources of finance, budgets, pricing, NPV, payback and ratio analysis explained by finance experts.',
@@ -22,9 +23,9 @@ export const mfrdAssignmentHelp: LandingContent = {
     'Clear, step-by-step guidance from finance experts on every MFRD task: sources of finance, the cost of finance, budgets and pricing, investment appraisal and the interpretation of financial statements.',
   highlights: ['From £20 per 1,000 words', 'Calculations explained', 'Pass, Merit and Distinction', '24/7 WhatsApp support'],
   intro: [
-    'MFRD is the short name students use for Managing Financial Resources and Decisions, the finance unit of the Pearson BTEC HND in Business. In the earlier (QCF) HND Business specification it was Unit 2, and many colleges in the UK and overseas still set MFRD-style briefs, while newer Pearson specifications cover similar topics in units such as Management Accounting and Accounting Principles.',
+    'MFRD is the short name students use for Managing Financial Resources and Decisions, the finance unit of the Pearson [BTEC HND in Business](/hnd-hnc-assignment-help). In the earlier (QCF) HND Business specification it was Unit 2, and many colleges in the UK and overseas still set MFRD-style briefs, while newer Pearson specifications cover similar topics in units such as Management Accounting and Accounting Principles.',
     'MFRD assignment help from FIZ Business Solutions (FIZBS) is for students who understand the business side of their course but find the finance unit hard to pin down. The unit mixes written discussion with calculations, and marks are often lost in the space between the two: a correct NPV with no recommendation, or a page of ratios with no interpretation. Our finance experts help you understand what each task asks for, check your workings and explain the numbers in plain English.',
-    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on our homepage.',
+    'Support starts from £20 per 1,000 words, and you can see your exact price in seconds with the instant calculator on this page. The team confirms the final price after reviewing your brief.',
   ],
   sections: [
     {
@@ -130,11 +131,11 @@ export const mfrdAssignmentHelp: LandingContent = {
       ],
       bullets: [
         'Brief breakdown: a task-by-task plan that maps every criterion to a section of your report',
-        'Workings explained: NPV, payback, ARR, break-even, budgets and ratios set out step by step, in Excel where that helps, so you can follow and check each figure',
+        'Workings explained: NPV, payback, ARR, break-even, budgets and ratios set out step by step, in [Excel](/excel-data-analysis-help) where that helps, so you can follow and check each figure',
         'Interpretation: feedback on how to turn numbers into analysis, evaluation and recommendations',
         'Draft review: comments on your draft before submission, with clear notes on what is missing',
         'Resubmissions: an explanation of your assessor feedback and the criteria still to be met',
-        'Final checks: proofreading from £12 per 1,000 words and Harvard referencing support',
+        'Final checks: [proofreading](/proofreading-editing-services) from £12 per 1,000 words and Harvard referencing support',
       ],
     },
     {
@@ -168,6 +169,7 @@ export const mfrdAssignmentHelp: LandingContent = {
     {
       q: 'Can you help with ratio analysis for LO4?',
       a: 'Yes. We help you choose suitable ratios, check your calculations and, most importantly, explain what the changes mean for profitability, liquidity, efficiency and gearing.',
+      link: { label: 'Finance and accounting assignment help', href: '/finance-accounting-assignment-help' },
     },
     {
       q: 'How much does MFRD assignment help cost?',
@@ -189,7 +191,7 @@ export const mfrdAssignmentHelp: LandingContent = {
   ctaTitle: 'Get help with your MFRD assignment',
   ctaText:
     'Send your MFRD brief, word guidance and deadline on WhatsApp, or use our instant calculator to see your price. New customers get 10% off their first order.',
-  whatsappMessage: 'Hello FIZBS, I would like to discuss my assignment.',
+  whatsappMessage: 'Hello FIZBS, I would like to discuss my MFRD assignment.',
   related: [
     'hnd-hnc-assignment-help',
     'finance-accounting-assignment-help',
