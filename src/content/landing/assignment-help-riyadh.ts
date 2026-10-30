@@ -3,6 +3,7 @@ import type { LandingContent } from './types';
 export const assignmentHelpRiyadh: LandingContent = {
   slug: 'assignment-help-riyadh',
   locale: 'en',
+  updated: '2026-10-30',
   metaTitle: 'Assignment Help Riyadh | English-Medium Course Support',
   metaDescription:
     "Assignment help Riyadh students use for English-medium courses and UK degrees. Master's and PhD experts, 24/7 WhatsApp, pay in SAR by Saudi bank transfer.",
@@ -20,9 +21,9 @@ export const assignmentHelpRiyadh: LandingContent = {
     "Online expert guidance for students in Riyadh studying business, health, computing, engineering and more in English. Message us on WhatsApp at any hour and get a clear price for your task.",
   highlights: ['Delivered fully online', 'English-medium specialists', 'Pay in SAR or GBP', '24/7 WhatsApp'],
   intro: [
-    "Many degree programmes in the Saudi capital are now taught and assessed in English, from undergraduate business courses to postgraduate research. For students who think and speak mainly in Arabic, writing a long academic report in English can be the hardest part of the course. FIZ Business Solutions (FIZBS) offers assignment help Riyadh students can access entirely online, with guidance from Master's and PhD-qualified experts who understand international academic standards.",
+    "Assignment help in Riyadh can mean understanding a difficult brief, planning a research task or reviewing your own draft in academic English. FIZ Business Solutions (FIZBS) provides online guidance from Master's and PhD-qualified experts, for students balancing English-medium coursework with lectures, group projects and work commitments.",
     "We have supported university students since 2015, more than 10,000 in total, including learners across Saudi Arabia. Whether you need help understanding a brief, organising an argument or presenting your ideas in clear academic English, an expert in your subject can work with you on your request. Riyadh is one of many cities covered by our [assignment help across Saudi Arabia](/assignment-help-saudi-arabia).",
-    "This page explains who we support in the capital, the kinds of coursework Riyadh students bring to us, the mistakes we see most often in English-medium assignments, and exactly how the process works from your first WhatsApp message to payment in Saudi riyals.",
+    "Start with the part of your task you need help understanding or reviewing. Agree the support scope against your module brief and follow your university’s rules on external guidance; you remain the author of the submitted work. This page explains the support available, quote requirements and payment in Saudi riyals.",
   ],
   sections: [
     {
@@ -30,7 +31,7 @@ export const assignmentHelpRiyadh: LandingContent = {
       paragraphs: [
         "Riyadh has some of the largest universities in the Kingdom. Students who contact us study at institutions such as King Saud University, Prince Sultan University, Alfaisal University, Princess Nourah bint Abdulrahman University and Imam Mohammad Ibn Saud Islamic University, as well as on distance learning programmes run by universities abroad.",
         "FIZBS is an independent online service. We are not affiliated with any university, and we have no office in Riyadh: everything happens through WhatsApp and our website, which means you can get support from home, from campus or from work.",
-        "Long working days and busy roads make travelling for help impractical for many people in the capital. Our online assignment help removes that problem: you can send a photo of your brief, ask a quick question between lectures or arrange support late at night. That flexibility is a big part of why the assignment help Riyadh students receive from FIZBS fits so easily around university, family and work.",
+        "Online support lets you share a brief from home or campus, ask questions between lectures and discuss a realistic review schedule around your work commitments. Your own brief, rubric and draft determine the guidance, rather than a standard answer based on the university or city name.",
       ],
     },
     {
@@ -72,7 +73,7 @@ export const assignmentHelpRiyadh: LandingContent = {
     {
       heading: 'Writing confidently in academic English',
       paragraphs: [
-        "In English-medium programmes, marks often depend as much on how clearly you express an idea as on the idea itself. Our experts help you bridge that gap, so your understanding of the subject comes through in your writing.",
+        "In English-medium programmes, use your marking rubric to identify what the task requires: analysis, evidence, structure or referencing. Our experts can review how clearly your draft communicates your understanding, while keeping your ideas and checking its fit with those requirements.",
       ],
       bullets: [
         'Turning notes and ideas into a clear essay or report structure',
@@ -99,7 +100,7 @@ export const assignmentHelpRiyadh: LandingContent = {
     {
       heading: 'Riyadh students studying UK degrees online',
       paragraphs: [
-        "A growing number of people in the capital are enrolled on online or blended degrees with UK universities while continuing to live and work in Riyadh. These programmes follow British marking conventions, which place heavy weight on critical evaluation, independent reading and accurate referencing, usually in Harvard or APA.",
+        "If you live and work in Riyadh while studying an online or blended UK degree, start with the assessment instructions issued by your own university. Check how the rubric treats critical evaluation, independent reading, word count and referencing, and use the specified style rather than assuming Harvard or APA is always required.",
         "Our experts have supported students at UK universities since 2015, so they know how British module briefs are written and what markers look for in each grade band. They can help you read a UK-style brief, plan a critically balanced answer and use UK and international sources alongside examples from Saudi organisations. If you are unsure what your module leader expects, you can book a WhatsApp call with an expert (calls are in English) before you place an order.",
       ],
     },
@@ -120,8 +121,9 @@ export const assignmentHelpRiyadh: LandingContent = {
     {
       heading: 'MBA and postgraduate support for working professionals',
       paragraphs: [
-        "Riyadh is the Kingdom's main business and government centre, and many students here study for an MBA or a Master's degree while working full-time. MBA assignment help Riyadh professionals request often covers strategic management, organisational change, finance and leadership, applied to companies they know well.",
+        "Riyadh is the Kingdom's main business and government centre, and many students here study for an MBA or a Master's degree while working full-time. Their assignments can involve strategic management, organisational change, finance and leadership, applied to real organisations.",
         "Our experts are strongest in business, management, marketing, finance and accounting, so they can help you link theory to real examples from the Saudi market and present your analysis in a format that meets postgraduate expectations.",
+        'Illustrative case-study workflow: for a task evaluating a Saudi company’s strategy, define the question and reporting period, gather suitable company reports and academic evidence, apply the required framework and evaluate its limitations before proposing recommendations. An [MBA support expert](/mba-assignment-help) can review your outline against the rubric. This is an example of the process, not a client case or a promised result.',
       ],
     },
     {
@@ -141,7 +143,7 @@ export const assignmentHelpRiyadh: LandingContent = {
       heading: 'Dissertation help Riyadh researchers can rely on',
       paragraphs: [
         "A Master's dissertation or PhD thesis written in English is a significant undertaking. Our experts have supported more than 350 research projects and can guide you through each stage, from your research proposal and literature review to methodology, findings and discussion.",
-        "If your study uses surveys or interviews, we provide data analysis support with SPSS, Excel, NVivo, Stata and Python. Dissertation support costs £30 per 1,000 words.",
+        "If your study uses surveys or interviews, we provide data analysis support with SPSS, Excel, NVivo, Stata and Python. Dissertation support costs £30 per 1,000 words. See [research proposal guidance](/research-proposal-help) or [SPSS support](/spss-help) for the stage you need, and [dissertation support](/dissertation-help-uk) for longer research projects.",
       ],
     },
     {
@@ -159,10 +161,17 @@ export const assignmentHelpRiyadh: LandingContent = {
       ],
     },
     {
+      heading: 'Files to prepare for your Riyadh support quote',
+      paragraphs: [
+        'Send your assignment brief and rubric, subject and study level, required language, word count and referencing style. Include your draft or tutor feedback where available, and give the deadline with its time and time zone, especially for a UK programme studied from Riyadh.',
+        'For group work, identify the part you need reviewed and how responsibilities are divided. For analysis or technical tasks, include the relevant data or project files and instructions so the support scope and separate technical-project price can be confirmed after review.',
+      ],
+    },
+    {
       heading: 'Clear pricing, with payment in Saudi riyals',
       paragraphs: [
         "Our prices are set in pounds sterling (GBP). Assignments and essays start from £20 per 1,000 words for deadlines of seven days or more, with +25% for 3 to 6 days and +50% for urgent work within 48 hours. New customers receive 10% off their first order.",
-        "If you would prefer to see the cost in Saudi riyals, just ask on WhatsApp and we will share the SAR equivalent for your order. You can pay by Saudi bank transfer in SAR, so there is no need to make an international payment. You can also check your GBP price instantly using the calculator on our homepage.",
+        "If you would prefer to see the cost in Saudi riyals, just ask on WhatsApp and we will share the SAR equivalent for your order. You can pay by Saudi bank transfer in SAR, so there is no need to make an international payment. You can also check your GBP price instantly using the calculator on this page.",
       ],
     },
   ],
@@ -194,6 +203,10 @@ export const assignmentHelpRiyadh: LandingContent = {
     {
       q: 'What time can I contact you from Saudi Arabia?',
       a: 'Any time. Our WhatsApp support runs 24/7, so the time difference between Saudi Arabia and the UK does not affect when you can reach us. You can also book a WhatsApp call with an expert, held in English.',
+    },
+    {
+      q: 'What files should I send for assignment support in Riyadh?',
+      a: 'Send the brief and rubric, subject, study level, required language, word count, referencing style and deadline with its time zone. Add your draft, tutor feedback and relevant data or technical files where available. State whether you need an explanation, planning or review; for group work, identify your section and any shared sections.',
     },
     {
       q: 'Is my information kept confidential?',
