@@ -1,0 +1,23 @@
+.viewport {
+  overflow-x: auto;
+  scrollbar-width: thin;
+  border-radius: 0.75rem;
+}
+.viewport:focus-visible { outline: 2px solid #b3924a; outline-offset: 4px; }
+.track { display: flex; width: max-content; animation: university-scroll 100s linear infinite; }
+.reverse { animation-direction: reverse; }
+.group { display: flex; flex: none; gap: 1rem; margin: 0; padding: 0.25rem 1rem 0.25rem 0; list-style: none; }
+.card { display: flex; align-items: center; gap: 0.75rem; flex-shrink: 0; padding: 0.5rem 1.25rem 0.5rem 0.5rem; background: white; border: 1px solid #e5e7eb; border-radius: 0.75rem; box-shadow: 0 1px 2px #0000000d; }
+.logo { display: flex; align-items: center; justify-content: center; width: 128px; height: 64px; flex-shrink: 0; padding: 8px; border-radius: 4px; background: white; }
+.dark { background: #10223d; }
+.artwork { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; object-fit: contain; }
+.viewport:hover .track, .viewport:focus-within .track { animation-play-state: paused; }
+@keyframes university-scroll { to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .track { animation: none; }
+  .group[aria-hidden="true"] { display: none; }
+}
+
+.pause { display: block; margin: 0 0 0.35rem auto; padding: 0.25rem 0.5rem; font-size: 0.75rem; color: #334155; cursor: pointer; border-radius: 4px; }
+.pause:focus-visible { outline: 2px solid #b3924a; }
+@media (prefers-reduced-motion: reduce) { .pause { display: none; } }
