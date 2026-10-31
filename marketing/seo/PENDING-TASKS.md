@@ -13,6 +13,8 @@ Two named tasks to pick up later. Data comes from the Semrush trial exports of 2
   the 4 new pages, /ar/blog/how-to-write-a-research-proposal, /ar/blog/quantitative-vs-qualitative-research, and
   /cipd, /cmi, /hnc, /hnd-hnc, /othm-athe -assignment-help.
   - QUOTA EXCEEDED on the 12th. TODO: Request Indexing /mfrd-assignment-help on 1 Nov (already indexed, re-crawls anyway).
+- Bing IndexNow (1 Nov ~02:5x PKT, via www.bing.com same-origin POST, key a94d7df1bc05d1cf910169daf3e7c6d6): the same
+  12 URLs submitted, HTTP 200 OK. (Sandbox curl to api.bing.com is proxy-blocked; do IndexNow via the owner's Chrome.)
 - Tier 2 qualification gaps still open if owner wants them later: CIM, Level 5 DET / teaching diplomas, NEBOSH.
 
 ## Daily SEO routine (owner asked 20 Oct 2026: use the Semrush data for SEO with full effort, every day)
