@@ -28,7 +28,12 @@
         ],
         "cta": "fizbusinessolutions.com/blog"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-1-gibbs-reflective-cycle.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-1-gibbs-reflective-cycle.jpg",
+      "metricool": {
+        "id": 412217120,
+        "uuid": "-8277678155344165011",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-03",
@@ -48,7 +53,12 @@
         ],
         "cta": "fizbusinessolutions.com"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-2-cipd-help.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-2-cipd-help.jpg",
+      "metricool": {
+        "id": 412217426,
+        "uuid": "1371705265990618898",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-04",
@@ -81,7 +91,12 @@
         "note": "Assignments from £20 per 1,000 words for 7+ days. UK (GBP) or Saudi (SAR) bank transfer.",
         "cta": "Instant price: fizbusinessolutions.com"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-3-deadline-pricing.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-3-deadline-pricing.jpg",
+      "metricool": {
+        "id": 412217441,
+        "uuid": "4581886519447865654",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-05",
@@ -102,7 +117,12 @@
         ],
         "cta": "fizbusinessolutions.com/blog"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-4-research-question.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-4-research-question.jpg",
+      "metricool": {
+        "id": 412217454,
+        "uuid": "7144007561201535095",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-06",
@@ -124,7 +144,12 @@
         ],
         "cta": "fizbusinessolutions.com/ar"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-5-arabic-thesis-title.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-02-week/post-5-arabic-thesis-title.jpg",
+      "metricool": {
+        "id": 412217470,
+        "uuid": "-5431464817270568481",
+        "status": "scheduled"
+      }
     }
   ],
   "gmb": {
@@ -132,7 +157,12 @@
     "time": "16:00 Asia/Karachi",
     "topic": "Free student tools (referencing generators, word counter, degree calculator)",
     "link": "https://fizbusinessolutions.com/tools",
-    "text": "Free tools for university students\n\nFIZ Business Solutions (FIZBS) has free online tools to help with everyday parts of your assignments and dissertation:\n\n- Harvard Referencing Generator: autocite by DOI, ISBN or link, for 10 source types, with Word, RIS and BibTeX downloads.\n- APA Referencing Generator: APA 7 references with the same autocite and download options.\n- OSCOLA Referencing Generator: footnotes for cases, legislation, books and articles, plus tables of cases and a bibliography, for law students.\n- Word Counter and Pages Converter: count words and characters and leave out your reference list.\n- Degree Classification Calculator: see your First, 2:1, 2:2 or Master's grade and the marks you need in your remaining modules.\n\nAlways check your course handbook for the exact referencing style your university expects.\n\nIf you need more help, our Master's and PhD qualified experts support assignments, dissertations and proofreading for UK and Saudi students, with 10% off your first order.\n\nTry the free tools: fizbusinessolutions.com/tools"
+    "text": "Free tools for university students\n\nFIZ Business Solutions (FIZBS) has free online tools to help with everyday parts of your assignments and dissertation:\n\n- Harvard Referencing Generator: autocite by DOI, ISBN or link, for 10 source types, with Word, RIS and BibTeX downloads.\n- APA Referencing Generator: APA 7 references with the same autocite and download options.\n- OSCOLA Referencing Generator: footnotes for cases, legislation, books and articles, plus tables of cases and a bibliography, for law students.\n- Word Counter and Pages Converter: count words and characters and leave out your reference list.\n- Degree Classification Calculator: see your First, 2:1, 2:2 or Master's grade and the marks you need in your remaining modules.\n\nAlways check your course handbook for the exact referencing style your university expects.\n\nIf you need more help, our Master's and PhD qualified experts support assignments, dissertations and proofreading for UK and Saudi students, with 10% off your first order.\n\nTry the free tools: fizbusinessolutions.com/tools",
+    "metricool": {
+      "id": 412217478,
+      "uuid": "116837514534207839",
+      "status": "scheduled"
+    }
   },
   "metricoolBrandId": 7347569
 }
