@@ -2,6 +2,19 @@
 
 Two named tasks to pick up later. Data comes from the Semrush trial exports of 20 Oct 2026.
 
+## 31 Oct 2026: qualification pages + Request Indexing
+- Deployed 10 qualification pages (commit 9763562, branch content/en-qualification-pages merged to main):
+  - NEW (4): /ilm-assignment-help, /qualifi-assignment-help, /cips-assignment-help, /health-social-care-diploma-help.
+    Each distinct, pattern-compliant (verified internal links, FAQ link fields, calculator "on this page", service-specific
+    WhatsApp, updated 2026-10-31). Added to Services page (servicesCatalog "Professional Qualifications") + QUALIFICATION_LINKS.
+  - ENRICHED (6): /cipd, /cmi, /hnc, /hnd-hnc, /othm-athe, /mfrd -assignment-help (updated date, verified links, FAQ links).
+  - Live-verified via Chrome (all 200; footer qualification group now shows all 10).
+- GSC Request Indexing (sc-domain:fizbusinessolutions.com, owner's Chrome, 31 Oct ~22:4x PKT): 11 URLs requested OK:
+  the 4 new pages, /ar/blog/how-to-write-a-research-proposal, /ar/blog/quantitative-vs-qualitative-research, and
+  /cipd, /cmi, /hnc, /hnd-hnc, /othm-athe -assignment-help.
+  - QUOTA EXCEEDED on the 12th. TODO: Request Indexing /mfrd-assignment-help on 1 Nov (already indexed, re-crawls anyway).
+- Tier 2 qualification gaps still open if owner wants them later: CIM, Level 5 DET / teaching diplomas, NEBOSH.
+
 ## Daily SEO routine (owner asked 20 Oct 2026: use the Semrush data for SEO with full effort, every day)
 Every day at 11 AM Pakistan time a reminder arrives in the working chat. Each day:
 1. Save any new Semrush exports the owner sent into marketing/seo/semrush/ and add the key numbers below.
@@ -22,8 +35,7 @@ sitemap lastmod/dateModified refresh.
 - Page 3 /ar/blog/quantitative-vs-qualitative-research: DONE 30 Oct (branch content/ar-quant-qual-citations, merged).
   ~20 in-text citations (max density), 9 sources (4 textbooks above + Hennink & Kaiser 2022, Dalkin 2021, Olmos-Vega
   2023, Adu 2022, Newman 2021). Added Kaggle/Statista, NVivo/MAXQDA, Python. Live-verified. Bing submitted 30 Oct 15:47.
-- TODO (GSC daily Request Indexing quota was EXCEEDED on 30 Oct): Request Indexing in Search Console for Page 2 and
-  Page 3 once quota resets:
+- DONE 31 Oct: Request Indexing submitted in Search Console for Page 2 and Page 3 (both were re-queued):
   https://fizbusinessolutions.com/ar/blog/how-to-write-a-research-proposal
   https://fizbusinessolutions.com/ar/blog/quantitative-vs-qualitative-research
 - Remaining (next in order, same rules): Page 4 /ar/blog/apa-referencing-guide (what APA7 is, which universities,
