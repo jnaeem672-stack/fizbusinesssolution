@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { preload } from 'react-dom';
 import { m as motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowDown, BookOpenCheck, ShieldCheck, Globe2, GraduationCap, Award, CheckCircle2 } from 'lucide-react';
@@ -48,6 +49,14 @@ export default function HomeHero() {
     return () => clearInterval(timer);
   }, []);
 
+  // Preload the hero image (the LCP element) so the browser discovers and fetches it immediately
+  preload(`${HERO_IMAGE}&w=1600`, {
+    as: 'image',
+    fetchPriority: 'high',
+    imageSrcSet: heroSrcSet,
+    imageSizes: '100vw',
+  });
+
   return (
     <section id="home-hero" className="relative lg:min-h-[92vh] flex items-center overflow-hidden bg-navy pb-16 lg:pb-0">
       <div className="absolute inset-0 z-0">
@@ -57,7 +66,8 @@ export default function HomeHero() {
           sizes="100vw"
           alt="University students walking together and laughing"
           aria-hidden="true"
-          fetchPriority="low"
+          fetchPriority="high"
+          loading="eager"
           decoding="async"
           className="w-full h-full object-cover object-center scale-105"
         />
