@@ -3,11 +3,10 @@
   gap: 1.5rem;
   overflow-x: auto;
   overflow-y: hidden;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
   padding: 0.5rem 0.25rem 1.5rem;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox */
+  scroll-behavior: auto; /* rAF drives the loop; manual scrolls pass behavior explicitly */
 }
 .scroller::-webkit-scrollbar {
   display: none; /* Chrome / Safari */
@@ -19,14 +18,5 @@
 }
 
 .card {
-  scroll-snap-align: start;
   flex: 0 0 auto;
-}
-
-/* Honour reduced-motion: no smooth programmatic scrolling. Auto-advance is
-   also disabled from JS; this covers the native/button scrolls too. */
-@media (prefers-reduced-motion: reduce) {
-  .scroller {
-    scroll-behavior: auto;
-  }
 }
