@@ -22,6 +22,7 @@ import {
 import SupportRequestForm from '@/components/SupportRequestForm';
 import QuoteCalculator from '@/QuoteCalculator';
 import UniversityStrip from '@/components/UniversityStrip';
+import CustomerReviews from '@/components/CustomerReviews';
 import FaqSection from '@/components/FaqSection';
 import ExpertCallSection from '@/components/ExpertCallSection';
 import PaymentSection from '@/components/PaymentSection';
@@ -216,6 +217,8 @@ export default function ArHomePage() {
           </div>
         </div>
       </section>
+
+      <CustomerReviews locale="ar" />
 
       {/* Promise */}
       <section className="py-20 md:py-24 bg-gray-50">

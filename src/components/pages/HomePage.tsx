@@ -8,6 +8,7 @@ import UniversityStrip from '@/components/UniversityStrip';
 import SubjectsSection from '@/components/SubjectsSection';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import HowItWorks from '@/components/HowItWorks';
+import CustomerReviews from '@/components/CustomerReviews';
 import Testimonials from '@/components/Testimonials';
 import ResultsStrip from '@/components/results/ResultsStrip';
 import CTASection from '@/components/home/CTASection';
@@ -56,6 +57,7 @@ export default function HomePage({ guides, seo }: { guides: GuideCard[]; seo?: R
         <TeamTeaser />
         <ExpertCallSection className="bg-white" />
         <HowItWorks />
+        <CustomerReviews />
         <Testimonials />
         <ResultsStrip />
         <LatestGuides posts={guides} />
