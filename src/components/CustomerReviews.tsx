@@ -44,12 +44,16 @@ const COPY = {
   },
 } as const;
 
+// Card surface styling — kept in one place so the look can be retuned easily.
+const CARD_SURFACE =
+  'bg-gradient-to-br from-navy to-navy-light border border-white/10 shadow-lg shadow-navy/20';
+
 function initials(name: string): string {
   const parts = name.trim().split(/\s+/).slice(0, 2);
   return parts.map((p) => p.charAt(0).toUpperCase()).join('');
 }
 
-const AUTO_INTERVAL_MS = 5000;
+const AUTO_SPEED_PX_PER_SEC = 42; // slow, smooth marquee
 
 export default function CustomerReviews({ locale = 'en' }: { locale?: ReviewLocale } = {}) {
   const rtl = locale === 'ar';
@@ -57,8 +61,6 @@ export default function CustomerReviews({ locale = 'en' }: { locale?: ReviewLoca
   const reviews = getPublishableReviews(locale);
 
   const scrollerRef = useRef<HTMLDivElement>(null);
-  const itemRefs = useRef<(HTMLElement | null)[]>([]);
-  const [index, setIndex] = useState(0);
   const [playing, setPlaying] = useState(true);
   const [paused, setPaused] = useState(false); // hover / focus
   const [inView, setInView] = useState(false);
@@ -66,6 +68,9 @@ export default function CustomerReviews({ locale = 'en' }: { locale?: ReviewLoca
 
   const count = reviews.length;
   const hasCarousel = count > 1;
+  // Seamless loop needs a duplicate set; skip duplicates under reduced motion.
+  const looping = hasCarousel && !reducedMotion;
+  const displayReviews = looping ? [...reviews, ...reviews] : reviews;
 
   // Respect the user's reduced-motion preference.
   useEffect(() => {
@@ -76,85 +81,103 @@ export default function CustomerReviews({ locale = 'en' }: { locale?: ReviewLoca
     return () => mq.removeEventListener('change', update);
   }, []);
 
-  // Only auto-advance while the section is actually on screen.
+  // Only auto-scroll while the section is actually on screen.
   useEffect(() => {
     const el = scrollerRef.current;
     if (!el) return;
     const io = new IntersectionObserver(
       ([entry]) => setInView(entry.isIntersecting),
-      { threshold: 0.2 },
+      { threshold: 0.15 },
     );
     io.observe(el);
     return () => io.disconnect();
   }, []);
 
-  const scrollToIndex = useCallback(
-    (i: number) => {
-      const el = itemRefs.current[i];
-      if (!el) return;
-      // inline:'start' respects the section's dir; block:'nearest' prevents any
-      // vertical page jump when the cards are already visible.
-      el.scrollIntoView({
-        behavior: reducedMotion ? 'auto' : 'smooth',
-        inline: 'start',
-        block: 'nearest',
-      });
-    },
-    [reducedMotion],
-  );
-
-  // Scroll when the active index changes (skip the very first render).
-  const firstRender = useRef(true);
-  useEffect(() => {
-    if (firstRender.current) {
-      firstRender.current = false;
-      return;
-    }
-    scrollToIndex(index);
-  }, [index, scrollToIndex]);
-
-  // Auto-advance loop.
-  useEffect(() => {
-    if (!hasCarousel) return;
-    const active = playing && inView && !paused && !reducedMotion;
-    if (!active) return;
-    const id = window.setInterval(() => {
-      setIndex((i) => (i + 1) % count);
-    }, AUTO_INTERVAL_MS);
-    return () => window.clearInterval(id);
-  }, [playing, inView, paused, reducedMotion, hasCarousel, count]);
-
-  // Keep the index in sync after a manual swipe / native scroll.
-  const syncRaf = useRef<number | null>(null);
-  const handleScroll = useCallback(() => {
-    if (syncRaf.current) cancelAnimationFrame(syncRaf.current);
-    syncRaf.current = requestAnimationFrame(() => {
-      const scroller = scrollerRef.current;
-      if (!scroller) return;
-      const mid = scroller.getBoundingClientRect().left + scroller.clientWidth / 2;
-      let nearest = 0;
-      let best = Infinity;
-      itemRefs.current.forEach((el, i) => {
-        if (!el) return;
-        const r = el.getBoundingClientRect();
-        const d = Math.abs(r.left + r.width / 2 - mid);
-        if (d < best) {
-          best = d;
-          nearest = i;
-        }
-      });
-      setIndex((prev) => (prev === nearest ? prev : nearest));
-    });
+  // One card + gap, for manual step distance.
+  const cardStep = useCallback(() => {
+    const s = scrollerRef.current;
+    const first = s?.firstElementChild as HTMLElement | null;
+    if (!s || !first) return 360;
+    const cs = getComputedStyle(s);
+    const gap = parseFloat(cs.columnGap || cs.gap || '24') || 24;
+    return first.offsetWidth + gap;
   }, []);
 
-  const go = useCallback(
-    (delta: number) => {
-      setIndex((i) => (i + delta + count) % count);
+  // Continuous, seamless auto-scroll. When the viewport passes the first set,
+  // jump back by exactly one set — invisible because the two sets are identical.
+  useEffect(() => {
+    const s = scrollerRef.current;
+    if (!s) return;
+    const active = playing && inView && !paused && looping;
+    if (!active) return;
+    let last = performance.now();
+    let raf = 0;
+    const tick = (now: number) => {
+      const dt = Math.min(now - last, 50);
+      last = now;
+      const d = (AUTO_SPEED_PX_PER_SEC * dt) / 1000;
+      const half = s.scrollWidth / 2;
+      if (half > 0) {
+        if (rtl) {
+          s.scrollLeft -= d;
+          if (s.scrollLeft <= -half) s.scrollLeft += half;
+        } else {
+          s.scrollLeft += d;
+          if (s.scrollLeft >= half) s.scrollLeft -= half;
+        }
+      }
+      raf = requestAnimationFrame(tick);
+    };
+    raf = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(raf);
+  }, [playing, inView, paused, looping, rtl]);
+
+  // Keep the scroll position inside the first set after manual scrolling, so the
+  // loop never runs out of buffer. Fires once the scroll settles (invisible wrap).
+  const idleTimer = useRef<number | null>(null);
+  const handleScroll = useCallback(() => {
+    if (!looping) return;
+    if (idleTimer.current) window.clearTimeout(idleTimer.current);
+    idleTimer.current = window.setTimeout(() => {
+      const s = scrollerRef.current;
+      if (!s) return;
+      const half = s.scrollWidth / 2;
+      if (half <= 0) return;
+      let x = s.scrollLeft;
+      if (rtl) {
+        while (x <= -half) x += half;
+        while (x > 0) x -= half;
+      } else {
+        while (x >= half) x -= half;
+        while (x < 0) x += half;
+      }
+      if (x !== s.scrollLeft) s.scrollLeft = x;
+    }, 160);
+  }, [looping, rtl]);
+
+  const manualScroll = useCallback(
+    (dir: 1 | -1) => {
+      const s = scrollerRef.current;
+      if (!s) return;
+      const step = cardStep();
+      const behavior: ScrollBehavior = reducedMotion ? 'auto' : 'smooth';
+      if (looping) {
+        const half = s.scrollWidth / 2;
+        if (rtl) {
+          if (dir < 0 && s.scrollLeft > -step) s.scrollLeft -= half; // pre-wrap for prev
+          s.scrollBy({ left: dir > 0 ? -step : step, behavior });
+        } else {
+          if (dir < 0 && s.scrollLeft < step) s.scrollLeft += half; // pre-wrap for prev
+          s.scrollBy({ left: dir * step, behavior });
+        }
+      } else {
+        s.scrollBy({ left: rtl ? -dir * step : dir * step, behavior });
+      }
     },
-    [count],
+    [cardStep, looping, reducedMotion, rtl],
   );
 
-  // Pause auto-advance on keyboard focus anywhere inside the carousel.
+  // Pause auto-scroll on keyboard focus anywhere inside the carousel.
   const onFocusCapture = useCallback(() => setPaused(true), []);
   const onBlurCapture = useCallback((e: React.FocusEvent<HTMLDivElement>) => {
     if (!e.currentTarget.contains(e.relatedTarget as Node | null)) setPaused(false);
@@ -164,7 +187,7 @@ export default function CustomerReviews({ locale = 'en' }: { locale?: ReviewLoca
 
   const PrevIcon = rtl ? ChevronRight : ChevronLeft;
   const NextIcon = rtl ? ChevronLeft : ChevronRight;
-  const autoRunning = playing && !reducedMotion;
+  const autoActive = playing && looping;
 
   return (
     <section
@@ -197,15 +220,15 @@ export default function CustomerReviews({ locale = 'en' }: { locale?: ReviewLoca
             <button
               type="button"
               onClick={() => setPlaying((p) => !p)}
-              aria-pressed={!autoRunning}
-              aria-label={autoRunning ? t.pause : t.play}
+              aria-pressed={!autoActive}
+              aria-label={autoActive ? t.pause : t.play}
               className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white border border-gray-200 text-navy shadow-sm hover:border-primary/40 hover:text-primary transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
             >
-              {autoRunning ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
+              {autoActive ? <Pause className="w-5 h-5" /> : <Play className="w-5 h-5" />}
             </button>
             <button
               type="button"
-              onClick={() => go(-1)}
+              onClick={() => manualScroll(-1)}
               aria-label={t.prev}
               className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white border border-gray-200 text-navy shadow-sm hover:border-primary/40 hover:text-primary transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
             >
@@ -213,7 +236,7 @@ export default function CustomerReviews({ locale = 'en' }: { locale?: ReviewLoca
             </button>
             <button
               type="button"
-              onClick={() => go(1)}
+              onClick={() => manualScroll(1)}
               aria-label={t.next}
               className="inline-flex items-center justify-center w-11 h-11 rounded-full bg-white border border-gray-200 text-navy shadow-sm hover:border-primary/40 hover:text-primary transition-colors focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2"
             >
@@ -235,15 +258,13 @@ export default function CustomerReviews({ locale = 'en' }: { locale?: ReviewLoca
           onFocusCapture={onFocusCapture}
           onBlurCapture={onBlurCapture}
         >
-          {reviews.map((review, i) => (
+          {displayReviews.map((review, i) => (
             <ReviewCard
-              key={review.id}
+              key={`${review.id}-${i < count ? '0' : '1'}`}
               review={review}
               locale={locale}
               translatedLabel={t.translated}
-              ref={(node) => {
-                itemRefs.current[i] = node;
-              }}
+              duplicate={i >= count}
             />
           ))}
         </div>
@@ -252,17 +273,17 @@ export default function CustomerReviews({ locale = 'en' }: { locale?: ReviewLoca
   );
 }
 
-const ReviewCard = ({
-  ref,
+function ReviewCard({
   review,
   locale,
   translatedLabel,
+  duplicate = false,
 }: {
-  ref: (node: HTMLElement | null) => void;
   review: Review;
   locale: ReviewLocale;
   translatedLabel: string;
-}) => {
+  duplicate?: boolean;
+}) {
   const text = reviewText(review, locale);
   if (!text) return null;
   const translated = isTranslated(review, locale);
@@ -270,22 +291,22 @@ const ReviewCard = ({
 
   return (
     <article
-      ref={ref}
-      className={`${styles.card} w-[86vw] sm:w-[348px] lg:w-[366px] flex flex-col bg-white rounded-3xl border border-gray-100 shadow-sm p-7 md:p-8`}
+      aria-hidden={duplicate || undefined}
+      className={`${styles.card} ${CARD_SURFACE} w-[86vw] sm:w-[348px] lg:w-[366px] flex flex-col rounded-3xl p-7 md:p-8`}
     >
-      <Quote className="w-8 h-8 text-primary/30 mb-4 shrink-0" aria-hidden="true" />
+      <Quote className="w-8 h-8 text-primary/60 mb-4 shrink-0" aria-hidden="true" />
 
-      <p className="text-gray-700 leading-relaxed text-[15px] mb-6 flex-grow whitespace-pre-line">
+      <p className="text-gray-100 leading-relaxed text-[15px] mb-6 flex-grow whitespace-pre-line">
         {text}
       </p>
 
       {translated && (
-        <span className="inline-flex items-center self-start gap-1 px-2 py-0.5 mb-4 rounded-full bg-gray-100 text-gray-500 text-[10px] font-semibold uppercase tracking-wide">
+        <span className="inline-flex items-center self-start gap-1 px-2 py-0.5 mb-4 rounded-full bg-white/10 text-gray-300 text-[10px] font-semibold uppercase tracking-wide">
           {translatedLabel}
         </span>
       )}
 
-      <div className="mt-auto pt-4 border-t border-gray-100 flex items-center gap-3">
+      <div className="mt-auto pt-4 border-t border-white/10 flex items-center gap-3">
         <span className="flex items-center justify-center w-11 h-11 rounded-full icon-gradient shrink-0 text-sm font-black">
           {review.anonymous ? (
             <UserRound className="w-5 h-5" aria-hidden="true" />
@@ -294,7 +315,7 @@ const ReviewCard = ({
           )}
         </span>
         <div className="min-w-0">
-          <p className="text-navy font-bold text-sm truncate" dir="auto">
+          <p className="text-white font-bold text-sm truncate" dir="auto">
             {name}
           </p>
           {review.sourceUrl ? (
@@ -302,7 +323,8 @@ const ReviewCard = ({
               href={review.sourceUrl}
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="inline-flex items-center gap-1 text-[11px] text-gray-500 hover:text-primary transition-colors"
+              tabIndex={duplicate ? -1 : undefined}
+              className="inline-flex items-center gap-1 text-[11px] text-gray-300 hover:text-primary transition-colors"
             >
               {review.sourceLabel[locale]}
               <ExternalLink className="w-3 h-3 shrink-0" aria-hidden="true" />
@@ -314,4 +336,4 @@ const ReviewCard = ({
       </div>
     </article>
   );
-};
+}
