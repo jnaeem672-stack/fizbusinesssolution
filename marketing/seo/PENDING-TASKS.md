@@ -59,6 +59,23 @@ reframe, so its library framing is legacy, not a new error. Backlink-quality rev
 title. Anchor profile is natural (branded/naked-URL) so no penalty risk, no disavow needed -- just prioritise quality
 (relevant editorial links like USC Scalar) over these networks going forward.
 
+.EDU GUEST-POST PLAN (decided 2 Nov 23:xx): owner has a contact (same person who placed the live USC Scalar post) with
+access to ~15 US university .edu open-publishing platforms (msu, temple, scalar.usc, bowdoin, betheluniversity, arizona,
+columbia, skku, harvard, khai, tamu, umich, uw, ucr, oregonstate). STRATEGY agreed: concentrate all .edu links on the
+HOMEPAGE (fizbusinessolutions.com/), NOT 15 different pages/keywords; vary the ANCHOR text (mostly branded "FIZBS" +
+naked URL, partial-match like "academic assignment help" occasionally, exact "assignment help" only 2-3x total) to stay
+natural (avoid Penguin over-optimisation); each article a UNIQUE genuinely-useful study-skills topic (15 distinct topics
+proposed in chat, e.g. dissertation timeline, marking rubrics, Harvard vs APA, research proposal, PEEL method, SPSS for
+beginners, viva prep, questionnaire design) with ONE natural contextual link to the homepage; NO "library" framing; no
+banned phrases (plagiarism-free / 100% original / zero AI / grade guarantee / coaching). Owner to proceed; when each post
+is live, verify do-follow/anchor/quality via Chrome.
+
+BACKLINK MONITORING REMINDER (owner asked 2 Nov 23:53 to revisit at end of day + later): GSC Links report shows External
+links = 0 on 2 Nov -- NORMAL, the links are brand-new and GSC's Links report lags 2-4 weeks (Google must crawl+process the
+linking page first). ACTION in ~2-4 weeks (and in daily routines): check GSC > Links > External, and Semrush Backlinks,
+for Scalar, guestpostingforseo and the .edu posts appearing. Login-gated *.mn.co links will NEVER show (uncrawlable).
+GSC shows only a sample. Internal links = 5,123 (homepage #1 linked) -- reinforces the homepage-as-target choice.
+
 ## 31 Oct 2026: qualification pages + Request Indexing
 - Deployed 10 qualification pages (commit 9763562, branch content/en-qualification-pages merged to main):
   - NEW (4): /ilm-assignment-help, /qualifi-assignment-help, /cips-assignment-help, /health-social-care-diploma-help.
