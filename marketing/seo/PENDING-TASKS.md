@@ -27,6 +27,28 @@ QUEUED FOR TOMORROW (owner said "kal pe daal du" on 2 Nov 05:53; discuss each be
 OPTIONAL (owner's call): change nav/link label "مكتب خدمات طلابية أونلاين" (online office) -> "خدمات طلابية أونلاين" across
    src/constants/arLinks.ts, src/content/arHome (linkLabel) and blog cross-links, for full no-physical-place consistency.
 
+## 2 Nov 2026: TECHNICAL SEO audit + plan (owner shared an "8 technical SEO secrets" video; approved the plan 07:06, BUILD TOMORROW; discuss before building)
+Audit done 2 Nov against the 8 points (local prod build crawl). ALREADY GOOD, do NOT redo:
+- JS rendering: PASS. Site is Next.js SSR/SSG -- raw HTML (no-JS) has all content, H1s, nav and internal links on every
+  page type (home 4,649 words/190 links; blogs 2.6-4.4k words; landing 3-3.6k). No client-only-render risk.
+- Orphan pages: 0. Internal link equity: healthy (top inbound = commercial pages; 0 tag/pagination/author/archive/search
+  low-value pages). Render-blocking: lean (1 blocking script + 2-4 route CSS per page; LCP is hero-image-bound only).
+- Schema present: FAQPage (all), BlogPosting (blogs), Service (landing), WebApplication (tools), BreadcrumbList, Organization,
+  WebSite, CollectionPage (samples). Mobile: viewport ok, no overflow, sticky elements <30% screen, no interstitials.
+PLAN (actionable, build tomorrow on owner's yes, one item at a time, then deploy + re-index):
+1. HowTo schema (JSON-LD) on how-to blog posts that have real step lists (e.g. how-to-write-a-dissertation,
+   how-to-structure-a-university-essay, how-to-email-a-phd-supervisor, ar how-to-make-a-questionnaire,
+   ar how-to-write-a-research-proposal, etc.). Build steps from each post's existing `steps`/section content -- do NOT invent.
+   Find where BlogPosting JSON-LD is generated (schema component / blog [slug] page) and add HowTo for eligible posts.
+   Owner's pick to start first (2 Nov).
+2. Person schema + BreadcrumbList on /our-team (only Organization now). Use real founders/team from src/content/experts
+   (name, jobTitle, honorific/degree). E-E-A-T signal. No fabricated people.
+3. Per-page-TYPE PageSpeed (video point: don't only test homepage): run PSI mobile on 1 blog + 1 landing + 1 tool page via
+   the owner's Chrome when connected; home already = Perf 92. Also skim GSC Core Web Vitals report for field data.
+4. Log file analysis: NEEDS owner to export Hostinger access logs (sandbox cannot reach them). Then analyse Googlebot crawl
+   behavior, crawl-budget waste, redirect chains, crawl errors not shown in GSC.
+Do NOT add Review/AggregateRating schema (fake/aggregate-review policy). Speakable schema optional/low priority.
+
 ## 31 Oct 2026: qualification pages + Request Indexing
 - Deployed 10 qualification pages (commit 9763562, branch content/en-qualification-pages merged to main):
   - NEW (4): /ilm-assignment-help, /qualifi-assignment-help, /cips-assignment-help, /health-social-care-diploma-help.
