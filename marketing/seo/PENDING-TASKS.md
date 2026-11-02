@@ -49,6 +49,16 @@ PLAN (actionable, build tomorrow on owner's yes, one item at a time, then deploy
    behavior, crawl-budget waste, redirect chains, crawl errors not shown in GSC.
 Do NOT add Review/AggregateRating schema (fake/aggregate-review policy). Speakable schema optional/low priority.
 
+STANDING RULE (owner, 2 Nov 17:49) for backlinks / link-building: NEVER use "مكتبة خدمات الطالب" (student-services
+LIBRARY) framing or anchor again. Future guest posts, directories and anchors must align with the new positioning:
+"خدمات طلابية" / "assignment help" / "مساعدة في الواجبات والتقييمات". The 2 Nov backlink batch (28 links: taabli,
+*.mn.co, life-wiki, ayurvedaliving, ~19 directory/bookmark sites) was built on the OLD library article BEFORE today's
+reframe, so its library framing is legacy, not a new error. Backlink-quality review of that batch: mostly low value --
+.mn.co links are nofollow or login-gated (zero value), ayurveda is off-topic, directories are low-quality networks
+(do-follow to homepage but heavily discounted); a few real do-follow links (taabli, life-wiki) carry the legacy library
+title. Anchor profile is natural (branded/naked-URL) so no penalty risk, no disavow needed -- just prioritise quality
+(relevant editorial links like USC Scalar) over these networks going forward.
+
 ## 31 Oct 2026: qualification pages + Request Indexing
 - Deployed 10 qualification pages (commit 9763562, branch content/en-qualification-pages merged to main):
   - NEW (4): /ilm-assignment-help, /qualifi-assignment-help, /cips-assignment-help, /health-social-care-diploma-help.
