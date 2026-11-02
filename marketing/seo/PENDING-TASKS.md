@@ -2,6 +2,31 @@
 
 Two named tasks to pick up later. Data comes from the Semrush trial exports of 20 Oct 2026.
 
+## 2 Nov 2026: homepage reviews section + /ar/student-services reframe + QA
+DONE today (all deployed to main, GSC Request-Indexed + Bing IndexNow HTTP 200 on 2 Nov):
+- Homepage customer-reviews section on BOTH / and /ar (PR #7; navy cards + seamless infinite loop PR #8).
+  "What Our Customers Say" / "آراء عملائنا" after How-it-works, before final CTA. 7 real reviews published (5 WhatsApp
+  anonymous by work-topic + 2 Google verbatim with contributor-profile links). No stars (no explicit ratings), no
+  Review/AggregateRating schema. Owner-relayed summaries kept unpublished (publishable:false). Data: src/data/reviews.ts.
+- /ar/student-services reframed OFF "library" (مكتبة) -> assignments/assessments + services (PR #9). New title/meta/H1/
+  hero/intro/keywords; removed 2 library sections + 3 library FAQs; added assignments-&-assessments lead section + FAQs.
+  /ar/assignment-help-riyadh also cleaned of "مكتبة" (removed keyword + reworded 2 disclaimers + 1 FAQ). Genuine library
+  refs elsewhere (Saudi Digital Library, university library, 3ds Max furniture) left as-is.
+- QA 2 Nov: EN homepage PageSpeed MOBILE = Perf 92, SEO 100, A11y 100, Best Practices 100, TBT 0ms, CLS 0.002, LCP 2.9s,
+  FCP 1.9s, SI 3.9s (LCP/SI still hero-image-bound on slow 4G = pre-existing mobile-hero item). No console/hydration
+  errors on /, /ar, /ar/student-services. student-services: exactly 1 H1, canonical OK, schema Service+Breadcrumb+FAQPage,
+  0x "مكتبة", no broken links (102 checked). hreflang empty on student-services (pre-existing, not from today's change).
+
+QUEUED FOR TOMORROW (owner said "kal pe daal du" on 2 Nov 05:53; discuss each before building, per routine):
+1. Content push /ar/blog/what-is-an-assignment (5,717 impressions, position 6.6 -- biggest traffic page): enrich to push
+   toward top 3. Target queries: اسايمنت بالانجليزي (705 impr pos 4.6), اسايمنت, معنى اسايمنت, كيف اكتب اسايمنت بالانجليزي.
+2. Content push /blog/uk-university-grading-system (2,422 impr, position 11.3 -- top of page 2 -> onto page 1).
+   Target: "what is merit grade in uk", UK degree classifications (first/2:1/2:2/pass, merit, distinction).
+3. Arabic citations project Page 4 /ar/blog/apa-referencing-guide (next in that project's order; real verified APA
+   citations 2020+, humanized, no Wikipedia, never fabricate), then Page 5 theoretical-framework-and-literature-review.
+OPTIONAL (owner's call): change nav/link label "مكتب خدمات طلابية أونلاين" (online office) -> "خدمات طلابية أونلاين" across
+   src/constants/arLinks.ts, src/content/arHome (linkLabel) and blog cross-links, for full no-physical-place consistency.
+
 ## 31 Oct 2026: qualification pages + Request Indexing
 - Deployed 10 qualification pages (commit 9763562, branch content/en-qualification-pages merged to main):
   - NEW (4): /ilm-assignment-help, /qualifi-assignment-help, /cips-assignment-help, /health-social-care-diploma-help.
