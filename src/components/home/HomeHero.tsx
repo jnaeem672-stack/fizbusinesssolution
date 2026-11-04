@@ -106,8 +106,8 @@ export default function HomeHero() {
             <h1
               className="text-4xl sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-extrabold text-white mb-6 tracking-tight leading-[1.08]"
             >
-              Assignment &amp; Dissertation Help{' '}
-              <span className="gradient-text">UK, Saudi Arabia &amp; UAE</span>
+              <span className="gradient-text">Expert</span>{' '}
+              Assignment &amp; Dissertation Help
             </h1>
 
             <div className="h-12 sm:h-14 mb-6 flex items-center">
@@ -128,7 +128,7 @@ export default function HomeHero() {
             <p
               className="text-gray-300 text-lg md:text-xl max-w-2xl mb-7 leading-relaxed"
             >
-              Expert one-to-one academic guidance from qualified subject specialists for Undergraduate, Master&apos;s, MBA and PhD students. Clear feedback, proper referencing and support you can count on.
+              Qualified subject experts supporting university students across the UK, the Gulf and worldwide since 2015, with expert guidance, accurate referencing and 24/7 WhatsApp support.
             </p>
 
             <ul
