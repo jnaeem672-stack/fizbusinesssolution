@@ -203,7 +203,6 @@ export default function LandingPage({ page }: { page: LandingContent }) {
         '@id': `${SITE_URL}/#organization`,
         name: 'FIZ Business Solutions',
         url: SITE_URL,
-        telephone: '+971543800388',
       },
       offers: {
         '@type': 'Offer',
