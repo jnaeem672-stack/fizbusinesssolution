@@ -43,4 +43,9 @@ export const SERVICE_PAGE_LINKS: Record<string, string> = {
   'Qualifi Assignment Help': '/qualifi-assignment-help',
   'CIPS Assignment Help': '/cips-assignment-help',
   'Health & Social Care Diploma Help': '/health-social-care-diploma-help',
+  'Access to HE Assignment Help': '/access-to-he-assignment-help',
+  'CIM Level 7 Assignment Help': '/cim-level-7-assignment-help',
+  'BTEC Nationals Assignment Help': '/btec-nationals-assignment-help',
+  'CACHE & NCFE Assignment Help': '/cache-assignment-help',
+  'NEBOSH Support': '/nebosh-assignment-help',
 };
