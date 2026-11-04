@@ -2,6 +2,35 @@
 
 Two named tasks to pick up later. Data comes from the Semrush trial exports of 20 Oct 2026.
 
+## 5 Nov 2026: homepage hero re-worded (DEPLOYED) + PENDING INDEXING QUEUE for the routine
+- Homepage hero re-worded + deployed to main (PR #12, live-verified). H1 'Assignment & Dissertation Help UK,
+  Saudi Arabia & UAE' -> 'Expert Assignment & Dissertation Help' (Expert gold). New subtitle: "Qualified subject
+  experts supporting university students across the UK, the Gulf and worldwide since 2015, with expert guidance,
+  accurate referencing and 24/7 WhatsApp support." Title: 'Expert Assignment & Dissertation Help | UK & Gulf | FIZBS'.
+  Meta description updated. Markets kept via subtitle + stats (UK & Gulf) + Organization schema; geo pages unchanged.
+  Files: src/components/home/HomeHero.tsx, src/app/(en)/page.tsx.
+
+PENDING INDEXING QUEUE (owner asked 5 Nov "routine mein daal du"): GSC Request-Indexing quota was already exhausted
+on 5 Nov ~02:00 PKT (rolling ~24h window, had been used ~20:30 PKT 4 Nov). DO THIS IN THE NEXT ROUTINE RUN once quota
+has reset: inspect each URL below and Request Indexing ONLY for those still showing "URL is not on Google" (some may
+have self-indexed since the 23 Oct snapshot, like finance-accounting did). Daily quota ~10-12 URLs, so prioritise top-down.
+  1. https://fizbusinessolutions.com/  (homepage -- just re-worded 5 Nov; re-crawl to pick up the new H1/title. It is
+     already indexed, so use "Page changed? REQUEST INDEXING". Will also self-crawl naturally; low urgency.)
+  2. https://fizbusinessolutions.com/research-methodology-help  (confirmed "Discovered - not indexed" 4 Nov, quota-blocked)
+  3. https://fizbusinessolutions.com/proofreading-editing-services  (not yet inspected)
+  4. https://fizbusinessolutions.com/ar/thesis-help
+  5. https://fizbusinessolutions.com/ar/phd-admission-scholarship-help
+  6. https://fizbusinessolutions.com/ar/programming-help
+  7. https://fizbusinessolutions.com/ar/assignment-help-dammam
+  8. https://fizbusinessolutions.com/blog/human-vs-ai-academic-writing
+  9. https://fizbusinessolutions.com/blog/how-to-write-a-research-question
+  10. https://fizbusinessolutions.com/blog/how-to-write-a-dissertation-introduction
+  Lower priority if quota allows / next day: /blog/computer-science-dissertation-topics, /blog/finance-accounting-dissertation-topics,
+  /blog/gibbs-reflective-cycle-guide, /blog/nursing-healthcare-dissertation-topics, /ar/blog/how-to-write-a-research-introduction,
+  /ar/blog/how-to-write-an-abstract, /ar/blog/thesis-cover-page-and-dedication, /contact.
+  Already requested 4 Nov (in Google's queue, do NOT re-request): assignment-help-dammam, data-analysis-help,
+  assignment-help-uae, assignment-help-usa, coursework-report-help, excel-data-analysis-help.
+
 ## 4 Nov 2026: full GSC deep audit + Request Indexing (6 money pages)
 Owner asked for a detailed "check everything" GSC audit (read-only), then "request index". Done via owner's Chrome.
 GSC AUDIT (data 23 Oct - 3 Nov, domain property sc-domain:fizbusinessolutions.com):
