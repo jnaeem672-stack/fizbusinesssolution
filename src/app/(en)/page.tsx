@@ -4,12 +4,12 @@ import { DEFAULT_SHARE_IMAGE } from '@/components/RootDocument';
 import HomeSeoHub from '@/components/home/HomeSeoHub';
 import { EN_POSTS, postPath } from '@/content/blog';
 
-const TITLE = 'Assignment & Dissertation Help UK, Saudi & UAE | FIZBS';
+const TITLE = 'Expert Assignment & Dissertation Help | UK & Gulf | FIZBS';
 
 export const metadata: Metadata = {
   title: { absolute: TITLE },
   description:
-    "Assignment and dissertation guidance for students in the UK, Saudi Arabia and the UAE from Master's and PhD experts. 24/7 WhatsApp, 10% off first order.",
+    'Expert assignment and dissertation help for students in the UK, the Gulf and worldwide. Qualified subject experts, 24/7 WhatsApp and 10% off your first order.',
   alternates: {
     canonical: 'https://fizbusinessolutions.com/',
     languages: { 'en-GB': 'https://fizbusinessolutions.com/', ar: 'https://fizbusinessolutions.com/ar', 'x-default': 'https://fizbusinessolutions.com/' },
