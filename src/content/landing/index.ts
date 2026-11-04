@@ -50,6 +50,11 @@ import { ilmAssignmentHelp } from './ilm-assignment-help';
 import { qualifiAssignmentHelp } from './qualifi-assignment-help';
 import { cipsAssignmentHelp } from './cips-assignment-help';
 import { healthSocialCareDiplomaHelp } from './health-social-care-diploma-help';
+import { accessToHeAssignmentHelp } from './access-to-he-assignment-help';
+import { cimLevel7AssignmentHelp } from './cim-level-7-assignment-help';
+import { btecNationalsAssignmentHelp } from './btec-nationals-assignment-help';
+import { cacheAssignmentHelp } from './cache-assignment-help';
+import { neboshAssignmentHelp } from './nebosh-assignment-help';
 import { assignmentHelpLeeds } from './assignment-help-leeds';
 import { assignmentHelpGlasgow } from './assignment-help-glasgow';
 import { assignmentHelpLiverpool } from './assignment-help-liverpool';
@@ -144,6 +149,11 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   qualifiAssignmentHelp,
   cipsAssignmentHelp,
   healthSocialCareDiplomaHelp,
+  accessToHeAssignmentHelp,
+  cimLevel7AssignmentHelp,
+  btecNationalsAssignmentHelp,
+  cacheAssignmentHelp,
+  neboshAssignmentHelp,
 ];
 
 /** Arabic landing pages, served at /ar/{slug} */
@@ -204,6 +214,11 @@ export const QUALIFICATION_LINKS: { label: string; href: string }[] = [
   { label: 'Qualifi Assignment Help', href: '/qualifi-assignment-help' },
   { label: 'CIPS Assignment Help', href: '/cips-assignment-help' },
   { label: 'Health & Social Care Diploma Help', href: '/health-social-care-diploma-help' },
+  { label: 'Access to HE Assignment Help', href: '/access-to-he-assignment-help' },
+  { label: 'CIM Level 7 Assignment Help', href: '/cim-level-7-assignment-help' },
+  { label: 'BTEC Nationals Assignment Help', href: '/btec-nationals-assignment-help' },
+  { label: 'CACHE & NCFE Assignment Help', href: '/cache-assignment-help' },
+  { label: 'NEBOSH Support', href: '/nebosh-assignment-help' },
 ];
 
 export const CITY_LINKS: { label: string; href: string }[] = [

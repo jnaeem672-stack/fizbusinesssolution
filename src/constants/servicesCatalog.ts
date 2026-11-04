@@ -72,6 +72,11 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       { id: 41, name: 'Qualifi Assignment Help', desc: 'Qualifi Level 4 to 7 diplomas in strategic management, HRM, accounting, health and social care and project management.', areas: 'Qualifi' },
       { id: 42, name: 'CIPS Assignment Help', desc: 'CIPS Level 4, 5 and 6 procurement and supply units, with support for constructed-response and assignment-route work.', areas: 'CIPS' },
       { id: 43, name: 'Health & Social Care Diploma Help', desc: 'RQF Level 2 to 5 care diplomas: written assignments, reflective accounts and leadership units for care workers and managers.', areas: 'Care Diplomas' },
+      { id: 44, name: 'Access to HE Assignment Help', desc: 'Access to Higher Education Diploma coursework and essays across Nursing, Health and Social Care, Business, Law, Science and more.', areas: 'Access to HE' },
+      { id: 45, name: 'CIM Level 7 Assignment Help', desc: 'CIM Level 7 Postgraduate Diploma in Professional Marketing, with support for the assignment-based modules applied to a real organisation.', areas: 'CIM L7' },
+      { id: 46, name: 'BTEC Nationals Assignment Help', desc: 'Pearson BTEC National (Level 3) internally assessed assignments and coursework, mapped to Pass, Merit and Distinction criteria.', areas: 'BTEC L3' },
+      { id: 47, name: 'CACHE & NCFE Assignment Help', desc: 'CACHE and NCFE early years, childcare and education qualifications: written assignments, coursework and portfolio evidence.', areas: 'CACHE' },
+      { id: 48, name: 'NEBOSH Support', desc: 'NEBOSH health and safety learning and revision support, including understanding the syllabus and the practical risk assessment.', areas: 'NEBOSH' },
     ],
   },
 ];
