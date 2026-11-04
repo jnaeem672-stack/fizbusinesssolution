@@ -2,6 +2,35 @@
 
 Two named tasks to pick up later. Data comes from the Semrush trial exports of 20 Oct 2026.
 
+## 4 Nov 2026: full GSC deep audit + Request Indexing (6 money pages)
+Owner asked for a detailed "check everything" GSC audit (read-only), then "request index". Done via owner's Chrome.
+GSC AUDIT (data 23 Oct - 3 Nov, domain property sc-domain:fizbusinessolutions.com):
+- Indexing: 175 indexed / 97 not-indexed. Not-indexed reasons: Discovered-not-indexed 52 (the actionable bucket),
+  Alternate-canonical 25 (www dupes, fine), Page-with-redirect 15 (intentional 301s, fine), Crawled-not-indexed 5.
+- The 52 "Discovered" (snapshot 23 Oct) breakdown: ~18 /experts/ profiles (low value, consider noindex), ~15 EN
+  service pages, 4 city pages (dammam/uae/usa/leeds), 7 blog, 7 /ar/, 1 /contact. NOTE: snapshot is stale -- on live
+  inspection 4 Nov, 11 of these service/city pages are ALREADY indexed (finance-accounting, thesis-help,
+  research-proposal, marketing, healthcare-nursing, business-management, leeds, case-study, computing-it, engineering,
+  literature-review). So real not-indexed set is much smaller than 52.
+- Sitemaps: sitemap.xml Success, last read 3 Nov, 175 discovered (local build has 180 -- 5-URL gap to reconcile).
+- HTTPS: perfect (0 non-HTTPS, 95 HTTPS). Manual actions: clean. Security: clean. Breadcrumbs schema: 87 valid, 0 invalid.
+- Core Web Vitals: no CrUX field data (traffic too low) -- not an error. Crawl stats: 12.1K req/90d, avg 330ms, 97% OK(200),
+  5XX <1%; By purpose Refresh 96% / Discovery 4% (low discovery = low-authority crawl-budget signal); Googlebot Desktop 79%.
+- Performance (3mo): 98 clicks, 16.6K impr, CTR 0.6%, avg pos 18. Top queries ALL Arabic (#1 اسايمنت بالانجليزي 12 clicks).
+  Countries by clicks: Egypt 26 (5,342 impr), Saudi 11 (1,293), Pakistan 8, UK 7 (3,311 impr -- buried, CTR ~0.2%).
+- External links = 0: this is the KNOWN GSC 2-4 week lag (see 2 Nov note lines 73-77), NOT a crisis. Internal links 5,123, healthy.
+REQUEST INDEXING 4 Nov (owner's Chrome, only pages confirmed not-indexed on live inspection): 6 submitted OK before quota hit:
+  /assignment-help-dammam, /data-analysis-help, /assignment-help-uae, /assignment-help-usa, /coursework-report-help,
+  /excel-data-analysis-help. QUOTA EXCEEDED on 7th (/research-methodology-help, confirmed Discovered) -- do it + any others tomorrow.
+WIRING FINDING (needs code check, NOT just manual requests): 5 pages inspect as "URL unknown to Google / No referring
+  sitemaps detected / No referring page": dammam, uae, usa, coursework-report-help, excel-data-analysis-help. They appear
+  disconnected from the sitemap Google reads and/or internal links point only to the www variant. Ties to the 180-vs-175
+  sitemap gap + legacy www/non-www. By contrast data-analysis-help & research-methodology-help show sitemap + referring
+  page (proper "Discovered", just awaiting crawl). ACTION: investigate why those 5 are not in Google's sitemap / orphaned
+  on the non-www canonical, so they get discovered naturally. (NOT yet started -- awaiting owner's go-ahead.)
+NOTE: the 5 new qualification pages (access-to-he, cim-level-7, btec-nationals, cache, nebosh) were deployed + Request-Indexed
+  earlier; today's quota was shared with those.
+
 ## 2 Nov 2026: homepage reviews section + /ar/student-services reframe + QA
 DONE today (all deployed to main, GSC Request-Indexed + Bing IndexNow HTTP 200 on 2 Nov):
 - Homepage customer-reviews section on BOTH / and /ar (PR #7; navy cards + seamless infinite loop PR #8).
