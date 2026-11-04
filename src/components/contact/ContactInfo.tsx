@@ -54,7 +54,7 @@ const FAQS = [
   },
   {
     q: 'Where is FIZBS based?',
-    a: 'FIZ Business Solutions supports students online through WhatsApp, email and our website. Our UK contact address is 77 St Leonards Rd, Windsor, Berkshire SL4 3BZ, and you can reach our UK line on 01753 620899. We work with university students across the UK, Saudi Arabia and the wider Gulf.',
+    a: 'FIZ Business Solutions supports students online through WhatsApp, email and our website. Our UK contact address is 77 St Leonards Rd, Windsor, Berkshire SL4 3BZ, and you can reach our UK line on +44 7877 194183. We work with university students across the UK, Saudi Arabia and the wider Gulf.',
   },
   {
     q: 'When can I contact you?',

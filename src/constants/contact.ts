@@ -12,8 +12,8 @@ export const UK_ADDRESS = {
 /** One-line display form, e.g. for the footer */
 export const UK_ADDRESS_LINE = '77 St Leonards Rd, Windsor, Berkshire SL4 3BZ, United Kingdom';
 /** UK phone, display and E.164 forms */
-export const UK_PHONE_DISPLAY = '01753 620899';
-export const UK_PHONE_E164 = '+441753620899';
+export const UK_PHONE_DISPLAY = '+44 7877 194183';
+export const UK_PHONE_E164 = '+447877194183';
 export const UK_TEL_URL = `tel:${UK_PHONE_E164}`;
 
 const defaultSubject = 'Learning support inquiry from FIZ Business Solutions website';
