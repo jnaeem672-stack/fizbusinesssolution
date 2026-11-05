@@ -75,6 +75,8 @@ import { assignmentHelpQatar } from './assignment-help-qatar';
 import { assignmentHelpKuwait } from './assignment-help-kuwait';
 import { arAssignmentHelpQatar } from './ar-assignment-help-qatar';
 import { arAssignmentHelpKuwait } from './ar-assignment-help-kuwait';
+import { assignmentHelpEgypt } from './assignment-help-egypt';
+import { arAssignmentHelpEgypt } from './ar-assignment-help-egypt';
 import { arAssignmentHelpMakkah } from './ar-assignment-help-makkah';
 import { arResearchProposalHelp } from './ar-research-proposal-help';
 import { arSpssHelp } from './ar-spss-help';
@@ -118,6 +120,7 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   assignmentHelpUsa,
   assignmentHelpQatar,
   assignmentHelpKuwait,
+  assignmentHelpEgypt,
   essayHelp,
   courseworkReportHelp,
   caseStudyHelp,
@@ -172,6 +175,7 @@ export const AR_LANDING_PAGES: LandingContent[] = [
   arAssignmentHelpMakkah,
   arAssignmentHelpQatar,
   arAssignmentHelpKuwait,
+  arAssignmentHelpEgypt,
   arMbaAssignmentHelp,
   arResearchProposalHelp,
   arThesisHelp,
@@ -207,6 +211,7 @@ export const SERVICE_LINKS: { label: string; href: string }[] = [
   { label: 'Assignment Help USA', href: '/assignment-help-usa' },
   { label: 'Assignment Help Qatar', href: '/assignment-help-qatar' },
   { label: 'Assignment Help Kuwait', href: '/assignment-help-kuwait' },
+  { label: 'Assignment Help Egypt', href: '/assignment-help-egypt' },
   { label: 'Research Proposal Help', href: '/research-proposal-help' },
   { label: 'SPSS Help', href: '/spss-help' },
   { label: 'PhD Admission & Scholarship Help', href: '/phd-admission-scholarship-help' },
@@ -352,6 +357,9 @@ export function linkGroupsForPage(slug: string, locale: 'en' | 'ar' = 'en'): { t
   }
   if (slug === 'assignment-help-qatar' || slug === 'assignment-help-kuwait') {
     groups.push({ title: 'We support students across the Gulf', links: GULF_LINKS.filter((l) => l.href !== self) });
+  }
+  if (slug === 'assignment-help-egypt') {
+    groups.push({ title: 'We also support students across the region', links: GULF_LINKS });
   }
   if (slug === 'assignment-help-usa') {
     groups.push({
