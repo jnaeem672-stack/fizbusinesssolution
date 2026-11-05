@@ -71,6 +71,7 @@ const GROUPS: { title: string; links: { label: string; href: string }[]; rtl?: b
     links: [{ label: 'Assignment Help Saudi Arabia', href: '/assignment-help-saudi-arabia' }, ...SAUDI_CITY_LINKS],
   },
   { title: 'UAE and USA', links: [...UAE_LINKS, { label: 'Assignment Help USA', href: '/assignment-help-usa' }] },
+  { title: 'Qatar and Kuwait', links: [{ label: 'Assignment Help Qatar', href: '/assignment-help-qatar' }, { label: 'Assignment Help Kuwait', href: '/assignment-help-kuwait' }] },
   { title: 'Free student tools', links: TOOLS.map((t) => ({ label: t.name, href: toolPath(t) })) },
   { title: 'Student guides', links: GUIDE_LINKS },
   { title: 'بالعربية', links: [...AR_SERVICE_LINKS, ...AR_TECH_LINKS], rtl: true },

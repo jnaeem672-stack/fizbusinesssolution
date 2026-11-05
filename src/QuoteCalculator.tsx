@@ -9,7 +9,7 @@ import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { PAYMENT } from '@/constants/payment';
-import { BASE_PRICES, formatPrice, inCurrency, type Currency } from '@/constants/pricing';
+import { AR_CURRENCY_WORD, BASE_PRICES, formatPrice, inCurrency, type Currency } from '@/constants/pricing';
 
 type Locale = 'en' | 'ar';
 type Level = 'ug' | 'pg' | 'phd';
@@ -111,7 +111,7 @@ const UI = {
 function priceParts(value: number, currency: Currency, locale: Locale) {
   const num = value.toLocaleString('en-GB', { maximumFractionDigits: 0 });
   if (currency === 'GBP') return { pre: '£', num, post: '' };
-  if (locale === 'ar') return { pre: '', num, post: currency === 'SAR' ? 'ريال' : 'درهم' };
+  if (locale === 'ar') return { pre: '', num, post: AR_CURRENCY_WORD[currency] ?? 'ريال' };
   return { pre: currency, num, post: '' };
 }
 
