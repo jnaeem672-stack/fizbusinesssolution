@@ -36,6 +36,7 @@ export const AR_SERVICE_LINKS: NavItem[] = [
   { label: 'المساعدة في الواجبات الجامعية', href: '/ar/assignment-help-saudi-arabia' },
   { label: 'حل الواجبات الجامعية في قطر', href: '/ar/assignment-help-qatar' },
   { label: 'حل الواجبات الجامعية في الكويت', href: '/ar/assignment-help-kuwait' },
+  { label: 'حل الواجبات الجامعية في مصر', href: '/ar/assignment-help-egypt' },
   { label: 'المساعدة في الرسائل العلمية', href: '/ar/dissertation-help-saudi-arabia' },
   { label: 'المساعدة في خطة البحث', href: '/ar/research-proposal-help' },
   { label: 'المساعدة في رسالة الدكتوراه', href: '/ar/thesis-help' },

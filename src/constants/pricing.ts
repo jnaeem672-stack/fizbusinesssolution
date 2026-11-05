@@ -18,11 +18,14 @@ export const BASE_PRICES = {
 export const UAE_SLUGS = ['assignment-help-uae', 'assignment-help-dubai'];
 export const QAR_SLUGS = ['assignment-help-qatar'];
 export const KWD_SLUGS = ['assignment-help-kuwait'];
+/** Pages that show GBP even on their Arabic version (international-programme framing, e.g. Egypt). */
+export const GBP_SLUGS = ['assignment-help-egypt'];
 
 export function currencyFor(slug: string | undefined, locale: 'en' | 'ar'): Currency {
   if (slug && QAR_SLUGS.includes(slug)) return 'QAR';
   if (slug && KWD_SLUGS.includes(slug)) return 'KWD';
   if (slug && UAE_SLUGS.includes(slug)) return 'AED';
+  if (slug && GBP_SLUGS.includes(slug)) return 'GBP';
   if (locale === 'ar') return 'SAR';
   return 'GBP';
 }
