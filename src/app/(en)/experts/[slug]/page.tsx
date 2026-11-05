@@ -20,6 +20,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
     description: expert.article.metaDescription,
     keywords: expert.article.keywords,
     alternates: { canonical: url },
+    // Thin team-bio pages: keep them for visitors but keep Googlebot's crawl budget on
+    // the money and content pages. "follow" so link equity still flows through them.
+    robots: { index: false, follow: true },
     openGraph: {
       images: [{ url: '/opengraph-image', width: 1200, height: 630 }], title: expert.article.metaTitle, description: expert.article.metaDescription, url, type: 'profile' },
   };

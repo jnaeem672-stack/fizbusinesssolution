@@ -1,6 +1,5 @@
 import type { MetadataRoute } from 'next';
 import { AR_LANDING_PAGES, EN_LANDING_PAGES, SITE_URL } from '@/content/landing';
-import { EXPERTS } from '@/content/experts';
 import { EN_POSTS, AR_POSTS, postPath } from '@/content/blog';
 import { SAMPLES, samplePath } from '@/content/samples';
 import { TOOLS, TOOLS_PATH, toolPath } from '@/content/tools';
@@ -38,11 +37,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     })),
   ];
-  const experts: MetadataRoute.Sitemap = EXPERTS.map((e) => ({
-    url: `${SITE_URL}/experts/${e.slug}`,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }));
+  // Expert/team bio pages are noindex (kept for visitors, not for Google's index),
+  // so they are intentionally left out of the sitemap to avoid a mixed signal.
   const blog: MetadataRoute.Sitemap = [
     { url: `${SITE_URL}/blog`, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${SITE_URL}/ar/blog`, changeFrequency: 'weekly', priority: 0.7 },
@@ -73,5 +69,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     })),
   ];
-  return [...core, ...landing, ...experts, ...blog, ...samples, ...tools];
+  return [...core, ...landing, ...blog, ...samples, ...tools];
 }
