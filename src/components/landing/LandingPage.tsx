@@ -28,7 +28,7 @@ import {
   linkGroupsForPage,
   type LandingContent,
 } from '@/content/landing';
-import { currencyFor, formatPrice, inCurrency } from '@/constants/pricing';
+import { AR_CURRENCY_WORD, currencyFor, formatPrice, inCurrency } from '@/constants/pricing';
 
 const LABELS = {
   en: {
@@ -120,10 +120,24 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const t = LABELS[page.locale];
   // Arabic pages show riyals, UAE pages dirhams, all other pages pounds
   const currency = currencyFor(page.slug, page.locale);
+  // The side panel shows the price in the page's currency. GBP (English default) and SAR (Arabic default)
+  // already match t.sideItems; the other Gulf currencies (AED, QAR, KWD) are computed from the GBP base.
   const sideItems: readonly string[] =
-    currency === 'AED'
-      ? [`Assignments from ${formatPrice(inCurrency(20, 'AED'), 'AED')} per 1,000 words`, `Dissertations from ${formatPrice(inCurrency(30, 'AED'), 'AED')} per 1,000 words`, '10% off your first order', '24/7 WhatsApp support']
-      : t.sideItems;
+    currency === (isAr ? 'SAR' : 'GBP')
+      ? t.sideItems
+      : isAr
+        ? [
+            `الواجبات من ${formatPrice(inCurrency(20, currency), currency, 'ar')} لكل 1,000 كلمة`,
+            `الرسائل العلمية من ${formatPrice(inCurrency(30, currency), currency, 'ar')} لكل 1,000 كلمة`,
+            'خصم 10% على أول طلب',
+            'دعم عبر واتساب على مدار الساعة',
+          ]
+        : [
+            `Assignments from ${formatPrice(inCurrency(20, currency), currency)} per 1,000 words`,
+            `Dissertations from ${formatPrice(inCurrency(30, currency), currency)} per 1,000 words`,
+            '10% off your first order',
+            '24/7 WhatsApp support',
+          ];
   const offerPrice = inCurrency(Number(page.offer?.price ?? '20'), currency);
   // City pages tell search engines which city they serve
   const cityLink = [...CITY_LINKS, ...UAE_LINKS].find((l) => l.href === `/${page.slug}` && l.href !== '/assignment-help-uae');
@@ -170,7 +184,7 @@ export default function LandingPage({ page }: { page: LandingContent }) {
   const offerDescription = isAr
     ? page.offer?.description && /[؀-ۿ]/.test(page.offer.description)
       ? page.offer.description
-      : `من ${offerPrice.toLocaleString('en-GB')} ${riyalWord(offerPrice)} لكل 1,000 كلمة`
+      : `من ${offerPrice.toLocaleString('en-GB')} ${currency === 'SAR' ? riyalWord(offerPrice) : (AR_CURRENCY_WORD[currency] ?? 'ريال')} لكل 1,000 كلمة`
     : currency === 'GBP'
       ? page.offer?.description ?? 'From £20 per 1,000 words'
       : `From ${currency} ${offerPrice.toLocaleString('en-GB')} per 1,000 words`;

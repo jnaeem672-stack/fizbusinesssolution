@@ -34,6 +34,8 @@ export const AR_CITY_LINKS: NavItem[] = SAUDI_CITY_SLUGS.map((slug) => ({
 export const AR_SERVICE_LINKS: NavItem[] = [
   { label: 'مكتب خدمات طلابية أونلاين', href: '/ar/student-services' },
   { label: 'المساعدة في الواجبات الجامعية', href: '/ar/assignment-help-saudi-arabia' },
+  { label: 'حل الواجبات الجامعية في قطر', href: '/ar/assignment-help-qatar' },
+  { label: 'حل الواجبات الجامعية في الكويت', href: '/ar/assignment-help-kuwait' },
   { label: 'المساعدة في الرسائل العلمية', href: '/ar/dissertation-help-saudi-arabia' },
   { label: 'المساعدة في خطة البحث', href: '/ar/research-proposal-help' },
   { label: 'المساعدة في رسالة الدكتوراه', href: '/ar/thesis-help' },
