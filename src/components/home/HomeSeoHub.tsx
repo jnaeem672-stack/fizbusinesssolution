@@ -10,6 +10,7 @@ import {
   UK_CITY_LINKS,
 } from '@/content/landing';
 import { TOOLS, toolPath } from '@/content/tools';
+import { EN_POSTS, postPath, type BlogPost } from '@/content/blog';
 
 /**
  * Server-rendered homepage content: a plain-language overview of the service and a link hub to every
@@ -38,6 +39,28 @@ const SERVICE_LINKS_ALL: { label: string; href: string }[] = [
   ['phd-admission-scholarship-help', 'PhD Admission and Scholarship Help'],
 ].map(([slug, label]) => ({ label, href: `/${slug}` }));
 
+// Guide links come straight from the blog registry so hrefs are always valid. Listing them in the
+// homepage hub gives every guide a link from the most-crawled page, which speeds up Google's
+// discovery of newer guides (e.g. the subject dissertation-topic lists) that only the blog hub linked before.
+const GUIDE_SLUGS = [
+  'how-to-write-a-dissertation',
+  'how-to-write-a-literature-review',
+  'how-to-write-a-research-proposal',
+  'harvard-referencing-guide',
+  'which-statistical-test-spss',
+  'gibbs-reflective-cycle-guide',
+  'business-dissertation-topics',
+  'marketing-dissertation-topics',
+  'finance-accounting-dissertation-topics',
+  'hrm-dissertation-topics',
+  'nursing-healthcare-dissertation-topics',
+  'education-dissertation-topics',
+  'computer-science-dissertation-topics',
+];
+const GUIDE_LINKS: { label: string; href: string }[] = GUIDE_SLUGS.map((slug) => EN_POSTS.find((p) => p.slug === slug))
+  .filter((p): p is BlogPost => Boolean(p))
+  .map((p) => ({ label: p.title, href: postPath(p) }));
+
 const GROUPS: { title: string; links: { label: string; href: string }[]; rtl?: boolean }[] = [
   { title: 'Services', links: SERVICE_LINKS_ALL },
   { title: 'Subjects', links: SUBJECT_LINKS.map((l) => ({ label: `${l.label} Assignment Help`, href: l.href })) },
@@ -49,6 +72,7 @@ const GROUPS: { title: string; links: { label: string; href: string }[]; rtl?: b
   },
   { title: 'UAE and USA', links: [...UAE_LINKS, { label: 'Assignment Help USA', href: '/assignment-help-usa' }] },
   { title: 'Free student tools', links: TOOLS.map((t) => ({ label: t.name, href: toolPath(t) })) },
+  { title: 'Student guides', links: GUIDE_LINKS },
   { title: 'بالعربية', links: [...AR_SERVICE_LINKS, ...AR_TECH_LINKS], rtl: true },
 ];
 

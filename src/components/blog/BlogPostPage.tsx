@@ -78,7 +78,9 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
     .filter((p): p is LandingContent => Boolean(p));
   // Same-category guides first (e.g. other dissertation topic lists), then the most important others
   const others = (isAr ? AR_POSTS : EN_POSTS).filter((p) => p.slug !== post.slug);
-  const morePosts = [...others.filter((p) => p.category === post.category), ...others.filter((p) => p.category !== post.category)].slice(0, 3);
+  // Same-category guides first, then the rest. Six links (two rows of three) give every
+  // guide more internal links so Google discovers newer pages through the article graph.
+  const morePosts = [...others.filter((p) => p.category === post.category), ...others.filter((p) => p.category !== post.category)].slice(0, 6);
   const ids = post.sections.map((s, i) => sectionId(s.heading, i, post.locale));
   const tools = isAr ? [] : TOOLS.filter((tool) => tool.guides.includes(post.slug));
   // In-article box pointing to the referencing generators (APA first on the APA guide)
