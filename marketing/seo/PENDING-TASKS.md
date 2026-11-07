@@ -2,6 +2,11 @@
 
 Two named tasks to pick up later. Data comes from the Semrush trial exports of 20 Oct 2026.
 
+## 8 Nov 2026: /ar/blog/what-is-an-assignment content push (built) + Egypt indexing done
+- Egypt indexing: Request-Indexed /assignment-help-egypt + /ar/assignment-help-egypt in GSC on 8 Nov ~01:50 PKT (both "URL unknown to Google" -> priority crawl queue; EN needed a retry after a transient "Oops, something went wrong" error). /contact checked = already indexed, no request needed. Qatar/Kuwait EN+AR were already indexed earlier (6 Nov). So all 6 new country pages are now handled on Google; owner submitted all 6 to Bing himself on 6 Nov.
+- SEO item (owner picked option A on 8 Nov): enriched the biggest-traffic page /ar/blog/what-is-an-assignment (was ~5,717 impr, pos ~6.6; top query اسايمنت بالانجليزي) to push toward top 3. Added (a) a worked-example section: a real English PEEL paragraph answering "Discuss one benefit of teamwork", with the source marked illustrative [Author]([year]) so students replace it; (b) an Egypt paragraph naming AUC/GUC/BUE and the English-medium government faculties (Egypt = 72% of organic traffic); (c) 3 long-tail FAQs (ترجمة assignment / معنى assignment في الجامعات المصرية / كم درجة الاسايمنت). Updated `updated` -> 2026-11-08 (sitemap lastmod + dateModified refresh). Title/meta left unchanged (per 25 Oct note: recheck CTR on 8 Nov, no title change yet). QA: tsc clean, next build clean, exactly 1 H1, FAQPage schema now 13 questions, no em/en dashes, no banned phrases. File: src/content/blog/ar-what-is-an-assignment.ts.
+- TODO after deploy: Request-Index the updated URL in GSC ("Page changed"), and re-check its CTR/position in ~1-2 weeks against the 2-week baseline.
+
 ## 5 Nov 2026: homepage hero re-worded (DEPLOYED) + PENDING INDEXING QUEUE for the routine
 - Homepage hero re-worded + deployed to main (PR #12, live-verified). H1 'Assignment & Dissertation Help UK,
   Saudi Arabia & UAE' -> 'Expert Assignment & Dissertation Help' (Expert gold). New subtitle: "Qualified subject
