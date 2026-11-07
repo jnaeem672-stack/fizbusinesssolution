@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { CheckCircle2, ChevronRight, Clock, CalendarDays, Lightbulb, PhoneCall, Calculator, BookOpen } from 'lucide-react';
+import { CheckCircle2, ChevronRight, Clock, CalendarDays, Lightbulb, PhoneCall, Calculator, BookOpen, FileText } from 'lucide-react';
 import FaqSection from '@/components/FaqSection';
 import SupportRequestForm from '@/components/SupportRequestForm';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
@@ -28,6 +28,8 @@ const LABELS = {
     sideText: 'Qualified Master\'s and PhD experts help with assignments, dissertations and research. Assignments from £20 per 1,000 words, 10% off your first order.',
     whatsapp: 'Chat on WhatsApp',
     price: 'See Instant Price',
+    assignmentCta: 'Assignment Help',
+    assignmentHref: '/assignment-help-uk',
     related: 'Related Services',
     faq: 'Frequently Asked Questions',
     formTitle: 'Get expert help with your work',
@@ -49,6 +51,8 @@ const LABELS = {
     sideText: 'خبراء يحملون الماجستير والدكتوراه يساعدونك في الواجبات والرسائل العلمية والبحث. الواجبات من 100 ريال لكل 1,000 كلمة، وخصم 10% على أول طلب.',
     whatsapp: 'تواصل عبر واتساب',
     price: 'اعرف السعر الآن',
+    assignmentCta: 'المساعدة في حل الواجبات',
+    assignmentHref: '/ar/assignment-help-saudi-arabia',
     related: 'خدمات ذات صلة',
     faq: 'الأسئلة الشائعة',
     formTitle: 'احصل على مساعدة متخصصة',
@@ -331,6 +335,12 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
               <div className="bg-navy rounded-3xl p-7 text-white shadow-2xl">
                 <p className="text-xl font-extrabold mb-3">{t.sideTitle}</p>
                 <p className="text-sm text-white/75 leading-relaxed mb-6">{t.sideText}</p>
+                <Link
+                  href={t.assignmentHref}
+                  className="flex items-center justify-center gap-2 w-full py-3.5 bg-primary text-navy font-bold rounded-xl hover:brightness-105 transition-all mb-3"
+                >
+                  <FileText className="w-5 h-5" /> {t.assignmentCta}
+                </Link>
                 <WhatsAppLink
                   href={whatsappUrl}
                   aria-label={t.whatsapp}
@@ -338,7 +348,7 @@ export default function BlogPostPage({ post }: { post: BlogPost }) {
                 >
                   <WhatsAppIcon size={22} className="w-5 h-5" /> {t.whatsapp}
                 </WhatsAppLink>
-                <a href={isAr ? '/ar#quote' : '/#quote'} className="flex items-center justify-center gap-2 w-full py-3.5 bg-primary font-bold rounded-xl hover:brightness-105 transition-all mb-3">
+                <a href={isAr ? '/ar#quote' : '/#quote'} className="flex items-center justify-center gap-2 w-full py-3.5 border border-white/30 text-white font-bold rounded-xl hover:bg-white/10 transition-all mb-3">
                   <Calculator className="w-5 h-5" /> {t.price}
                 </a>
                 <WhatsAppLink
