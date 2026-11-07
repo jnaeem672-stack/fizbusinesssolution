@@ -71,7 +71,7 @@ const GROUPS: { title: string; links: { label: string; href: string }[]; rtl?: b
     links: [{ label: 'Assignment Help Saudi Arabia', href: '/assignment-help-saudi-arabia' }, ...SAUDI_CITY_LINKS],
   },
   { title: 'UAE and USA', links: [...UAE_LINKS, { label: 'Assignment Help USA', href: '/assignment-help-usa' }] },
-  { title: 'Qatar, Kuwait and Egypt', links: [{ label: 'Assignment Help Qatar', href: '/assignment-help-qatar' }, { label: 'Assignment Help Kuwait', href: '/assignment-help-kuwait' }, { label: 'Assignment Help Egypt', href: '/assignment-help-egypt' }] },
+  { title: 'Gulf and North Africa', links: [{ label: 'Assignment Help Qatar', href: '/assignment-help-qatar' }, { label: 'Assignment Help Kuwait', href: '/assignment-help-kuwait' }, { label: 'Assignment Help Oman', href: '/assignment-help-oman' }, { label: 'Assignment Help Bahrain', href: '/assignment-help-bahrain' }, { label: 'Assignment Help Egypt', href: '/assignment-help-egypt' }, { label: 'Assignment Help Tunisia', href: '/assignment-help-tunisia' }] },
   { title: 'Free student tools', links: TOOLS.map((t) => ({ label: t.name, href: toolPath(t) })) },
   { title: 'Student guides', links: GUIDE_LINKS },
   { title: 'بالعربية', links: [...AR_SERVICE_LINKS, ...AR_TECH_LINKS], rtl: true },
