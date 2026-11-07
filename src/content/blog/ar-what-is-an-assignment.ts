@@ -215,7 +215,7 @@ export const arWhatIsAnAssignmentPost: BlogPost = {
         'في الأنظمة الأمريكية والكندية تُستخدم الحروف (A وB وC) أو النسب المئوية حسب الجامعة',
         'التعليقات المكتوبة على الواجب (Feedback) هي أسرع طريق لرفع درجتك في الواجب التالي',
       ],
-      links: [{ label: 'نظام الدرجات في الجامعات البريطانية (بالإنجليزية)', href: '/blog/uk-university-grading-system' }],
+      links: [{ label: 'نظام الدرجات في الجامعات البريطانية (بالإنجليزية)', href: '/blog/uk-university-grading-system' }, { label: 'المساعدة في حل الواجبات للطلاب في مصر', href: '/ar/assignment-help-egypt' }],
     },
     {
       heading: 'أخطاء شائعة في كتابة الاسايمنت',

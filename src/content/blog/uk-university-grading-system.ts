@@ -24,6 +24,7 @@ export const ukUniversityGradingSystemPost: BlogPost = {
   category: `Study Skills`,
   excerpt: `A clear guide to the UK university grading system: what a First, 2:1, 2:2 and Third mean, how Master's distinction, merit and pass work, and how to move up a grade band.`,
   published: `2026-10-10`,
+  updated: `2026-11-08`,
   intro: [
     `If you have just received your first marks at a British university, you may be surprised to see 62% described as a good result. The UK university grading system works very differently from systems where 90% or above is normal for strong students. In the UK, marks above 70% are typically reserved for excellent work, and very few students ever receive 85% or more.`,
     `This guide explains the UK university grading system step by step: undergraduate degree classifications (First, 2:1, 2:2 and Third), Master's grades (distinction, merit and pass), what markers look for in each band, how the system compares for international students, and practical ways to move from a 2:2 to a 2:1. Bear in mind that every university sets its own regulations, so the bands below are the ones commonly used, not a fixed national rule. Always check your programme handbook for the exact figures that apply to you.`,
@@ -242,7 +243,7 @@ export const ukUniversityGradingSystemPost: BlogPost = {
     {
       heading: `Need help with your UK university grades?`,
       paragraphs: [
-        `If you are aiming to move up a grade band, FIZBS (FIZ Business Solutions) has supported students since 2015, with experts holding Master's and PhD qualifications across business, management, MBA, finance and many other subjects. Our team can give expert guidance on structure, critical analysis, referencing and proofreading, and help you understand your feedback and marking criteria.`,
+        `If you are aiming to move up a grade band, FIZBS (FIZ Business Solutions) has supported students since 2015, with experts holding Master's and PhD qualifications across business, management, MBA, finance and many other subjects. Our team can give expert guidance on structure, critical analysis, referencing and proofreading for your [UK assignments](/assignment-help-uk) and [dissertation](/dissertation-help-uk), and help you understand your feedback and marking criteria.`,
         `You can message us on WhatsApp at any time, 24/7, and book a WhatsApp call with an expert before ordering. Guidance and feedback on assignments start from £20 per 1,000 words, proofreading from £12 per 1,000 words, and you get 10% off your first order. Everything is 100% confidential.`,
       ],
     },

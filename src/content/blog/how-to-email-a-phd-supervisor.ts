@@ -128,7 +128,7 @@ export const howToEmailAPhdSupervisorPost: BlogPost = {
       ],
       paragraphs: [
         `Use clear file names such as 'Surname_CV.pdf' and 'Surname_Research_Outline.pdf', save documents as PDFs and keep the total attachment size small. Avoid sending a full 5,000 word proposal in the first email unless the academic asks for one.`,
-        `A focused, well-structured research outline is often the most persuasive part of your enquiry. If you want feedback on yours before you send it, FIZBS experts with PhD qualifications offer research proposal guidance and PhD admission support.`,
+        `A focused, well-structured research outline is often the most persuasive part of your enquiry. If you want feedback on yours before you send it, FIZBS experts with PhD qualifications offer [research proposal guidance](/research-proposal-help) and [PhD admission support](/phd-admission-scholarship-help).`,
       ],
       links: [{ label: "UK Master's personal statement", href: "/blog/uk-masters-personal-statement" }, { label: "Master's merit and distinction explained", href: "/blog/uk-university-grading-system" }],
     },
