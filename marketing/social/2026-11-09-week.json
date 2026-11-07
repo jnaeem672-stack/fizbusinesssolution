@@ -27,7 +27,12 @@
         ],
         "cta": "fizbusinessolutions.com/blog"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-1-swot-pestle.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-1-swot-pestle.jpg",
+      "metricool": {
+        "id": 420000781,
+        "uuid": "7878662065445162495",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-10",
@@ -47,7 +52,12 @@
         ],
         "cta": "fizbusinessolutions.com"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-2-mba-help.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-2-mba-help.jpg",
+      "metricool": {
+        "id": 420001090,
+        "uuid": "1230894807001416696",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-11",
@@ -80,7 +90,12 @@
         "note": "UK bank transfer (GBP) or Saudi bank transfer (SAR). SAR price confirmed on WhatsApp before you pay.",
         "cta": "Instant price: fizbusinessolutions.com"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-3-pay-in-two-halves.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-3-pay-in-two-halves.jpg",
+      "metricool": {
+        "id": 420001104,
+        "uuid": "1965319501020941314",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-12",
@@ -102,7 +117,12 @@
         "cta": "fizbusinessolutions.com/blog",
         "numbered": true
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-4-methodology.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-4-methodology.jpg",
+      "metricool": {
+        "id": 420001126,
+        "uuid": "-8174723026548535798",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-13",
@@ -124,7 +144,12 @@
         ],
         "cta": "fizbusinessolutions.com/ar"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-5-arabic-research-introduction.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-09-week/post-5-arabic-research-introduction.jpg",
+      "metricool": {
+        "id": 420001147,
+        "uuid": "-7145375582556041462",
+        "status": "scheduled"
+      }
     }
   ],
   "gmb": {
@@ -132,7 +157,12 @@
     "time": "16:00 Asia/Karachi",
     "topic": "Assignment help for students in Saudi Arabia (SAR payment)",
     "link": "https://fizbusinessolutions.com/assignment-help-saudi-arabia",
-    "text": "Assignment help for university students in Saudi Arabia\n\nFIZ Business Solutions (FIZBS) has supported university students since 2015. Our Master's and PhD qualified experts help students in Riyadh, Jeddah, Dammam, Makkah and across the Kingdom to understand the brief, plan research and review drafts, in English or Arabic.\n\nClear pricing (for deadlines of 7+ days):\n- Assignments and essays: from £20 per 1,000 words\n- Dissertations: £30 per 1,000 words\n- Proofreading and language improvement: from £12 per 1,000 words\n\nYou do not need a UK bank account. Pay by Saudi bank transfer in SAR or UK bank transfer in GBP, 50% to start and 50% on completion. Ask us for your SAR price before you pay. New students get 10% off the first order.\n\nSee the details and check your price: fizbusinessolutions.com/assignment-help-saudi-arabia"
+    "text": "Assignment help for university students in Saudi Arabia\n\nFIZ Business Solutions (FIZBS) has supported university students since 2015. Our Master's and PhD qualified experts help students in Riyadh, Jeddah, Dammam, Makkah and across the Kingdom to understand the brief, plan research and review drafts, in English or Arabic.\n\nClear pricing (for deadlines of 7+ days):\n- Assignments and essays: from £20 per 1,000 words\n- Dissertations: £30 per 1,000 words\n- Proofreading and language improvement: from £12 per 1,000 words\n\nYou do not need a UK bank account. Pay by Saudi bank transfer in SAR or UK bank transfer in GBP, 50% to start and 50% on completion. Ask us for your SAR price before you pay. New students get 10% off the first order.\n\nSee the details and check your price: fizbusinessolutions.com/assignment-help-saudi-arabia",
+    "metricool": {
+      "id": 420001161,
+      "uuid": "4155658032225537756",
+      "status": "scheduled"
+    }
   },
   "metricoolBrandId": 7347569
 }
