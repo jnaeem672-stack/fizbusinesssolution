@@ -198,7 +198,6 @@ export default function LandingPage({ page }: { page: LandingContent }) {
       url,
       name: page.metaTitle,
       inLanguage: isAr ? 'ar' : 'en-GB',
-      ...(page.updated ? { dateModified: page.updated } : {}),
       isPartOf: { '@type': 'WebSite', '@id': `${SITE_URL}/#website`, url: `${SITE_URL}/`, name: 'FIZ Business Solutions' },
       breadcrumb: { '@id': `${url}#breadcrumb` },
       mainEntity: { '@id': `${url}#service` },
