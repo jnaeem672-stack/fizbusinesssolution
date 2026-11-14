@@ -27,7 +27,12 @@
         ],
         "cta": "fizbusinessolutions.com/blog"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-1-essay-structure.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-1-essay-structure.jpg",
+      "metricool": {
+        "id": 428064795,
+        "uuid": "-7714306812118218362",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-17",
@@ -47,7 +52,12 @@
         ],
         "cta": "fizbusinessolutions.com"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-2-nursing-help.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-2-nursing-help.jpg",
+      "metricool": {
+        "id": 428065132,
+        "uuid": "397735341947636853",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-18",
@@ -80,7 +90,12 @@
         "note": "Per 1,000 words for deadlines of 7+ days. Pay 50% to start and 50% on completion.",
         "cta": "Instant price: fizbusinessolutions.com"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-3-price-list.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-3-price-list.jpg",
+      "metricool": {
+        "id": 428065150,
+        "uuid": "-7119004646212221543",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-19",
@@ -102,7 +117,12 @@
         ],
         "cta": "fizbusinessolutions.com/blog"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-4-discussion-chapter.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-4-discussion-chapter.jpg",
+      "metricool": {
+        "id": 428065175,
+        "uuid": "-2167396818407175815",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-20",
@@ -136,7 +156,12 @@
         "note": "الكمي أولًا ثم النوعي في كل سطر. اختر المنهج حسب سؤال بحثك.",
         "cta": "fizbusinessolutions.com/ar"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-5-arabic-quant-qual.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-16-week/post-5-arabic-quant-qual.jpg",
+      "metricool": {
+        "id": 428065197,
+        "uuid": "-2226105797133448473",
+        "status": "scheduled"
+      }
     }
   ],
   "gmb": {
@@ -144,7 +169,12 @@
     "time": "16:00 Asia/Karachi",
     "topic": "Academic proofreading and editing service page",
     "link": "https://fizbusinessolutions.com/proofreading-editing-services",
-    "text": "Academic proofreading for essays, dissertations and theses\n\nSmall slips add up. Spelling errors, mixed referencing styles and overlong sentences can distract markers from your ideas. FIZ Business Solutions (FIZBS) has supported university students in the UK and Saudi Arabia since 2015, and polishing finished drafts is one of our most common requests.\n\nYour document is checked by a Master's or PhD qualified expert who understands academic writing in your field. Every edit is made with tracked changes in Microsoft Word, so you can see each change and accept or reject it. Where a sentence is unclear, your expert adds a comment instead of guessing.\n\nWhat we check: grammar, spelling, punctuation, UK or US English, academic tone, formatting, and whether your in-text citations match your reference list.\n\nPrices per 1,000 words (7+ day deadlines): £12 undergraduate, £15 postgraduate, £18 PhD. New students get 10% off the first order, and you pay 50% to start and 50% on completion.\n\nSee the details and check your price: fizbusinessolutions.com/proofreading-editing-services"
+    "text": "Academic proofreading for essays, dissertations and theses\n\nSmall slips add up. Spelling errors, mixed referencing styles and overlong sentences can distract markers from your ideas. FIZ Business Solutions (FIZBS) has supported university students in the UK and Saudi Arabia since 2015, and polishing finished drafts is one of our most common requests.\n\nYour document is checked by a Master's or PhD qualified expert who understands academic writing in your field. Every edit is made with tracked changes in Microsoft Word, so you can see each change and accept or reject it. Where a sentence is unclear, your expert adds a comment instead of guessing.\n\nWhat we check: grammar, spelling, punctuation, UK or US English, academic tone, formatting, and whether your in-text citations match your reference list.\n\nPrices per 1,000 words (7+ day deadlines): £12 undergraduate, £15 postgraduate, £18 PhD. New students get 10% off the first order, and you pay 50% to start and 50% on completion.\n\nSee the details and check your price: fizbusinessolutions.com/proofreading-editing-services",
+    "metricool": {
+      "id": 428065223,
+      "uuid": "7151952670118005857",
+      "status": "scheduled"
+    }
   },
   "metricoolBrandId": 7347569
 }
