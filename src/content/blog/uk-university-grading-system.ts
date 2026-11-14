@@ -3,9 +3,9 @@ import type { BlogPost } from './types';
 export const ukUniversityGradingSystemPost: BlogPost = {
   slug: `uk-university-grading-system`,
   locale: `en`,
-  title: `UK University Grading System Explained: First, 2:1, 2:2, Merit and Distinction`,
-  metaTitle: `UK University Grading System: First, 2:1, Merit, Distinction`,
-  metaDescription: `A First or a Master's distinction is 70%+, a 2:1 or merit is 60 to 69% and a 2:2 or Master's pass is 50 to 59%. Full UK grade bands, FAQs and tips.`,
+  title: `UK University Grading System: Merit, Distinction, First, 2:1 and 2:2 Explained`,
+  metaTitle: `UK Grading System: Merit, Distinction, First & 2:1`,
+  metaDescription: `A UK Master's merit is 60 to 69%, a distinction is 70%+ and a pass is 50 to 59%. A First is 70%+ and a 2:1 is 60 to 69%. Full UK grade bands and FAQs.`,
   keywords: [
     `UK university grading system`,
     `UK degree classification`,
@@ -19,12 +19,17 @@ export const ukUniversityGradingSystemPost: BlogPost = {
     `merit vs distinction`,
     `is a merit a 2:1`,
     `what percentage is a merit`,
+    `what is a merit grade UK`,
+    `distinction grade UK`,
+    `UK Master's grading scale`,
     `UK grades for international students`,
   ],
   category: `Study Skills`,
   excerpt: `A clear guide to the UK university grading system: what a First, 2:1, 2:2 and Third mean, how Master's distinction, merit and pass work, and how to move up a grade band.`,
   published: `2026-10-10`,
+  updated: `2026-11-14`,
   intro: [
+    `In the UK, a Master's merit is an overall mark of 60 to 69%, a distinction is 70% or above, and a pass is 50 to 59%. For undergraduate degrees, the same marks map to an Upper Second Class (a 2:1) at 60 to 69% and a First at 70% or above. In short, a merit and a 2:1 share the same band, while a distinction and a First both begin at 70%. The rest of this guide explains every grade band in full, with tables, worked examples and FAQs.`,
     `If you have just received your first marks at a British university, you may be surprised to see 62% described as a good result. The UK university grading system works very differently from systems where 90% or above is normal for strong students. In the UK, marks above 70% are typically reserved for excellent work, and very few students ever receive 85% or more.`,
     `This guide explains the UK university grading system step by step: undergraduate degree classifications (First, 2:1, 2:2 and Third), Master's grades (distinction, merit and pass), what markers look for in each band, how the system compares for international students, and practical ways to move from a 2:2 to a 2:1. Bear in mind that every university sets its own regulations, so the bands below are the ones commonly used, not a fixed national rule. Always check your programme handbook for the exact figures that apply to you.`,
   ],
@@ -210,6 +215,7 @@ export const ukUniversityGradingSystemPost: BlogPost = {
         `Some universities discount your lowest module marks or use the better of two calculation methods.`,
         `The dissertation or final project often carries a large number of credits, so it can move your average significantly.`,      ],
       tip: `Find the 'degree classification' or 'award' section of your academic regulations and work out what your current marks mean. Knowing exactly how many credits remain, and their weighting, makes it much easier to set a realistic target.`,
+      links: [{ label: `Degree classification calculator`, href: `/tools/degree-classification-calculator` }],
     },
     {
       heading: `How to move from a 2:2 to a 2:1`,
