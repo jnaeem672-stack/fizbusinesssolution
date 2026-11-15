@@ -15,6 +15,7 @@ import { howToWriteAResearchQuestionPost } from './how-to-write-a-research-quest
 import { thematicAnalysisGuidePost } from './thematic-analysis-guide';
 import { swotAndPestleAnalysisGuidePost } from './swot-and-pestle-analysis-guide';
 import { businessDissertationTopicsPost } from './business-dissertation-topics';
+import { projectManagementDissertationTopicsPost } from './project-management-dissertation-topics';
 import { howToParaphraseAndAvoidPlagiarismPost } from './how-to-paraphrase-and-avoid-plagiarism';
 import { arHumanVsAiAcademicWritingPost } from './ar-human-vs-ai-academic-writing';
 import { arQuantitativeVsQualitativeResearchPost } from './ar-quantitative-vs-qualitative-research';
@@ -38,6 +39,7 @@ import { arHowToWriteAResearchConclusionPost } from './ar-how-to-write-a-researc
 import { arScientificResearchStepsPost } from './ar-scientific-research-steps';
 import { arQuestionnaireGuidePost } from './ar-how-to-make-a-questionnaire';
 import { arBusinessDissertationTopicsPost } from './ar-business-dissertation-topics';
+import { arProjectManagementDissertationTopicsPost } from './ar-project-management-dissertation-topics';
 import { arHrmDissertationTopicsPost } from './ar-hrm-dissertation-topics';
 import { arMarketingDissertationTopicsPost } from './ar-marketing-dissertation-topics';
 import { arFinanceAccountingDissertationTopicsPost } from './ar-finance-accounting-dissertation-topics';
@@ -59,6 +61,7 @@ export const EN_POSTS: BlogPost[] = [
   humanVsAiAcademicWritingPost,
   howToWriteADissertationPost,
   businessDissertationTopicsPost,
+  projectManagementDissertationTopicsPost,
   howToWriteALiteratureReviewPost,
   howToWriteAResearchProposalPost,
   dissertationMethodologyGuidePost,
@@ -94,6 +97,7 @@ export const EN_POSTS: BlogPost[] = [
 /** Arabic posts. Served at /ar/blog/{slug} */
 export const AR_POSTS: BlogPost[] = [
   arBusinessDissertationTopicsPost,
+  arProjectManagementDissertationTopicsPost,
   arHrmDissertationTopicsPost,
   arMarketingDissertationTopicsPost,
   arFinanceAccountingDissertationTopicsPost,

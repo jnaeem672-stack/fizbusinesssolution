@@ -29,6 +29,12 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     specialist: 'ahmed-k',
     updated: '2026-10-12',
   },
+  'project-management-dissertation-topics': {
+    quickAnswer:
+      'A good project management dissertation topic names a specific project challenge, a sector such as construction or IT, and a group you can reach for data, for example how agile teams manage scope change in UK software firms. This guide lists 40 researchable topics for 2026 across planning, risk, agile and hybrid methods, stakeholders, leadership, sustainability, AI and Saudi Vision 2030 megaprojects.',
+    specialist: 'ahmed-k',
+    updated: '2026-11-16',
+  },
   'how-to-write-a-literature-review': {
     quickAnswer:
       'To write a literature review, search academic databases with a clear keyword strategy, screen sources for relevance and quality, and organise them by theme in a synthesis matrix. Then write critically: compare and evaluate studies rather than summarising them one by one, and finish by stating the research gap your study addresses.',
