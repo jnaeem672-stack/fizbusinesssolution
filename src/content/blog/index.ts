@@ -38,6 +38,9 @@ import { arHowToWriteAResearchConclusionPost } from './ar-how-to-write-a-researc
 import { arScientificResearchStepsPost } from './ar-scientific-research-steps';
 import { arQuestionnaireGuidePost } from './ar-how-to-make-a-questionnaire';
 import { arBusinessDissertationTopicsPost } from './ar-business-dissertation-topics';
+import { arHrmDissertationTopicsPost } from './ar-hrm-dissertation-topics';
+import { arMarketingDissertationTopicsPost } from './ar-marketing-dissertation-topics';
+import { arFinanceAccountingDissertationTopicsPost } from './ar-finance-accounting-dissertation-topics';
 import { hrmDissertationTopicsPost } from './hrm-dissertation-topics';
 import { marketingDissertationTopicsPost } from './marketing-dissertation-topics';
 import { financeAccountingDissertationTopicsPost } from './finance-accounting-dissertation-topics';
@@ -91,6 +94,9 @@ export const EN_POSTS: BlogPost[] = [
 /** Arabic posts. Served at /ar/blog/{slug} */
 export const AR_POSTS: BlogPost[] = [
   arBusinessDissertationTopicsPost,
+  arHrmDissertationTopicsPost,
+  arMarketingDissertationTopicsPost,
+  arFinanceAccountingDissertationTopicsPost,
   arHumanVsAiAcademicWritingPost,
   arHowToWriteAResearchProposalPost,
   arQuantitativeVsQualitativeResearchPost,
