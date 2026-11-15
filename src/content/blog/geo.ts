@@ -17,6 +17,12 @@ export const GUIDE_GEO: Record<string, GuideGeo> = {
     specialist: 'sajjad-akbar-ali',
     updated: '2026-10-12',
   },
+  'cipd-cips-cmi-guide': {
+    quickAnswer:
+      'CIPD, CIPS and CMI are UK professional bodies: CIPD awards HR and learning qualifications, CIPS covers procurement and supply, and CMI covers management and leadership. Their qualifications run from about Level 3 to Level 7, and most are assessed by work-based written assignments mapped to assessment criteria, so you pass by meeting every criterion and linking theory to your own organisation.',
+    specialist: 'ahmed-k',
+    updated: '2026-11-16',
+  },
   'how-to-write-a-dissertation': {
     quickAnswer:
       'To write a dissertation, choose a focused topic you can research, write a proposal, plan a realistic timeline, then draft the chapters: introduction (about 10%), literature review (20 to 30%), methodology (10 to 15%), findings (15 to 20%), discussion (20 to 25%) and conclusion (5 to 10%). Meet your supervisor regularly and leave time to edit and proofread.',
