@@ -37,6 +37,7 @@ import { arWhatIsAnAssignmentPost } from './ar-what-is-an-assignment';
 import { arHowToWriteAResearchConclusionPost } from './ar-how-to-write-a-research-conclusion';
 import { arScientificResearchStepsPost } from './ar-scientific-research-steps';
 import { arQuestionnaireGuidePost } from './ar-how-to-make-a-questionnaire';
+import { arBusinessDissertationTopicsPost } from './ar-business-dissertation-topics';
 import { hrmDissertationTopicsPost } from './hrm-dissertation-topics';
 import { marketingDissertationTopicsPost } from './marketing-dissertation-topics';
 import { financeAccountingDissertationTopicsPost } from './finance-accounting-dissertation-topics';
@@ -89,6 +90,7 @@ export const EN_POSTS: BlogPost[] = [
 
 /** Arabic posts. Served at /ar/blog/{slug} */
 export const AR_POSTS: BlogPost[] = [
+  arBusinessDissertationTopicsPost,
   arHumanVsAiAcademicWritingPost,
   arHowToWriteAResearchProposalPost,
   arQuantitativeVsQualitativeResearchPost,
