@@ -43,7 +43,9 @@ import { arProjectManagementDissertationTopicsPost } from './ar-project-manageme
 import { arHrmDissertationTopicsPost } from './ar-hrm-dissertation-topics';
 import { arMarketingDissertationTopicsPost } from './ar-marketing-dissertation-topics';
 import { arFinanceAccountingDissertationTopicsPost } from './ar-finance-accounting-dissertation-topics';
+import { arCipdCipsCmiGuidePost } from './ar-cipd-cips-cmi-guide';
 import { hrmDissertationTopicsPost } from './hrm-dissertation-topics';
+import { cipdCipsCmiGuidePost } from './cipd-cips-cmi-guide';
 import { marketingDissertationTopicsPost } from './marketing-dissertation-topics';
 import { financeAccountingDissertationTopicsPost } from './finance-accounting-dissertation-topics';
 import { nursingHealthcareDissertationTopicsPost } from './nursing-healthcare-dissertation-topics';
@@ -86,6 +88,7 @@ export const EN_POSTS: BlogPost[] = [
   howToWriteACaseStudyAnalysisPost,
   ukMastersPersonalStatementPost,
   hrmDissertationTopicsPost,
+  cipdCipsCmiGuidePost,
   marketingDissertationTopicsPost,
   financeAccountingDissertationTopicsPost,
   nursingHealthcareDissertationTopicsPost,
@@ -101,6 +104,7 @@ export const AR_POSTS: BlogPost[] = [
   arHrmDissertationTopicsPost,
   arMarketingDissertationTopicsPost,
   arFinanceAccountingDissertationTopicsPost,
+  arCipdCipsCmiGuidePost,
   arHumanVsAiAcademicWritingPost,
   arHowToWriteAResearchProposalPost,
   arQuantitativeVsQualitativeResearchPost,
