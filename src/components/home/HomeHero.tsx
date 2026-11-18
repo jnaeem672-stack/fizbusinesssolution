@@ -6,6 +6,7 @@ import { m as motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 import { ArrowDown, BookOpenCheck, ShieldCheck, Globe2, GraduationCap, Award, CheckCircle2 } from 'lucide-react';
 import SupportRequestForm from '@/components/SupportRequestForm';
+import TrustpilotRating from '@/components/TrustpilotRating';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL } from '@/constants/whatsapp';
@@ -83,7 +84,7 @@ export default function HomeHero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 xl:gap-16 items-start lg:items-center">
           <div className="lg:col-span-7">
             <div
-              className="flex flex-wrap items-center gap-3 mb-7"
+              className="flex flex-wrap items-center gap-3 mb-5"
             >
               <a
                 href="#quote"
@@ -101,6 +102,10 @@ export default function HomeHero() {
               >
                 📞 Talk to an Expert on a WhatsApp Call
               </a>
+            </div>
+
+            <div className="inline-flex items-center gap-2 mb-7 rounded-full bg-white/[0.07] border border-white/10 pl-3 pr-4 py-1.5">
+              <TrustpilotRating variant="compact" theme="dark" />
             </div>
 
             <h1

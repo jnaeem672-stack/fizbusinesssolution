@@ -5,7 +5,6 @@ import HomeHero from '@/components/home/HomeHero';
 import ServicesGrid from '@/components/ServicesGrid';
 import QuoteCalculator from '@/QuoteCalculator';
 import UniversityStrip from '@/components/UniversityStrip';
-import TrustpilotRating from '@/components/TrustpilotRating';
 import SubjectsSection from '@/components/SubjectsSection';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import HowItWorks from '@/components/HowItWorks';
@@ -51,9 +50,6 @@ export default function HomePage({ guides, seo }: { guides: GuideCard[]; seo?: R
       <main className="bg-gray-50 overflow-x-hidden">
         <HomeHero />
         <UniversityStrip />
-        <section className="bg-white flex justify-center px-4 py-6">
-          <TrustpilotRating variant="card" theme="light" />
-        </section>
         <QuoteCalculator />
         <SubjectsSection />
         <ServicesGrid />
