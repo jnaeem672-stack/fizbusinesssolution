@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Instagram, Facebook, Mail, Landmark, ShieldCheck } from 'lucide-react';
 import { SOCIAL_LINKS } from '@/constants/social';
 import Logo from './Logo';
-import TrustpilotWidget, { TRUSTPILOT_TEMPLATES } from '@/components/TrustpilotWidget';
+import TrustpilotRating from '@/components/TrustpilotRating';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { buildWhatsAppUrl, WHATSAPP_NUMBER } from '@/constants/whatsapp';
@@ -31,8 +31,8 @@ const ArFooter = () => (
       </p>
     </div>
 
-    <div dir="ltr" className="w-full max-w-[280px]">
-      <TrustpilotWidget templateId={TRUSTPILOT_TEMPLATES.microCombo} height="24px" theme="dark" />
+    <div dir="ltr" className="flex justify-center">
+      <TrustpilotRating variant="compact" theme="dark" />
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 w-full max-w-5xl pt-2 text-[13px]">
