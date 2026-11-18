@@ -221,6 +221,11 @@ export default function RootDocument({
     gtag('config', 'AW-18496017210');
   `}
 </Script>
+{/* Trustpilot TrustBox widget loader: hydrates the .trustpilot-widget badges (footer and homepage) */}
+<Script
+  src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js"
+  strategy="afterInteractive"
+/>
         <Providers>
           <SiteHeader />
           {children}
