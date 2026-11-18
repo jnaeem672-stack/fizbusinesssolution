@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Instagram, Facebook, Mail, Landmark, ShieldCheck, PhoneCall } from 'lucide-react';
 import { SOCIAL_LINKS } from '@/constants/social';
 import Logo from './Logo';
+import TrustpilotWidget, { TRUSTPILOT_TEMPLATES } from '@/components/TrustpilotWidget';
 import WhatsAppLink from '@/components/ui/WhatsAppLink';
 import WhatsAppIcon from '@/components/ui/WhatsAppIcon';
 import { WHATSAPP_URL, WHATSAPP_NUMBER } from '@/constants/whatsapp';
@@ -19,6 +20,10 @@ const Footer = () => (
       <p className="text-center max-w-md leading-relaxed">
         © {new Date().getFullYear()} FIZ Business Solutions. All rights reserved.
       </p>
+    </div>
+
+    <div className="w-full max-w-[280px]">
+      <TrustpilotWidget templateId={TRUSTPILOT_TEMPLATES.microCombo} height="24px" theme="dark" />
     </div>
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 w-full max-w-5xl pt-2 text-[12px]">

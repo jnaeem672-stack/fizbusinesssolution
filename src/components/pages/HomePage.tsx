@@ -5,6 +5,7 @@ import HomeHero from '@/components/home/HomeHero';
 import ServicesGrid from '@/components/ServicesGrid';
 import QuoteCalculator from '@/QuoteCalculator';
 import UniversityStrip from '@/components/UniversityStrip';
+import TrustpilotWidget, { TRUSTPILOT_TEMPLATES } from '@/components/TrustpilotWidget';
 import SubjectsSection from '@/components/SubjectsSection';
 import WhyChooseUs from '@/components/WhyChooseUs';
 import HowItWorks from '@/components/HowItWorks';
@@ -50,6 +51,11 @@ export default function HomePage({ guides, seo }: { guides: GuideCard[]; seo?: R
       <main className="bg-gray-50 overflow-x-hidden">
         <HomeHero />
         <UniversityStrip />
+        <section className="bg-white flex justify-center px-4 py-6">
+          <div className="w-full max-w-xs">
+            <TrustpilotWidget templateId={TRUSTPILOT_TEMPLATES.mini} height="130px" theme="light" />
+          </div>
+        </section>
         <QuoteCalculator />
         <SubjectsSection />
         <ServicesGrid />
