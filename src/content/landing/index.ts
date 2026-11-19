@@ -36,6 +36,7 @@ import { healthcareNursingAssignmentHelp } from './healthcare-nursing-assignment
 import { lawAssignmentHelp } from './law-assignment-help';
 import { computingItAssignmentHelp } from './computing-it-assignment-help';
 import { engineeringAssignmentHelp } from './engineering-assignment-help';
+import { architectureAssignmentHelp } from './architecture-assignment-help';
 import { arAssignmentHelpRiyadh } from './ar-assignment-help-riyadh';
 import { arAssignmentHelpJeddah } from './ar-assignment-help-jeddah';
 import { arAssignmentHelpDammam } from './ar-assignment-help-dammam';
@@ -151,6 +152,7 @@ export const EN_LANDING_PAGES: LandingContent[] = [
   lawAssignmentHelp,
   computingItAssignmentHelp,
   engineeringAssignmentHelp,
+  architectureAssignmentHelp,
   hrmAssignmentHelp,
   economicsAssignmentHelp,
   psychologyAssignmentHelp,
@@ -282,6 +284,7 @@ export const SUBJECT_LINKS: { label: string; href: string }[] = [
   { label: 'Law', href: '/law-assignment-help' },
   { label: 'Computing & IT', href: '/computing-it-assignment-help' },
   { label: 'Engineering', href: '/engineering-assignment-help' },
+  { label: 'Architecture', href: '/architecture-assignment-help' },
 ];
 
 /** Writing and research services, linked from the UK hub pages so each service sits under its hub */
