@@ -192,14 +192,6 @@ export const assignmentHelpUk: LandingContent = {
       a: "Your request is handled by a subject expert with a Master's or PhD in a relevant field. They follow your brief, marking criteria and required referencing style.",
     },
     {
-      q: 'How do I pay for assignment help?',
-      a: 'You pay 50% to start and 50% on completion, by UK bank transfer in GBP or Saudi bank transfer in SAR.',
-    },
-    {
-      q: 'Can I speak to an expert before ordering?',
-      a: 'Yes. You can book a WhatsApp call with an expert, in English, to talk through your brief and marking criteria before you decide.',
-    },
-    {
       q: 'Is assignment help confidential?',
       a: 'Yes, our service is 100% confidential. Your personal details and files are never shared with anyone.',
     },

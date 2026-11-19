@@ -29,7 +29,7 @@ const features: { title: string; desc: string; icon: LucideIcon }[] = [
 ];
 
 // Students studying together (cottonbro studio, Pexels License: free for commercial use)
-const BG_IMAGE = 'https://images.pexels.com/photos/4778621/pexels-photo-4778621.jpeg?auto=compress&cs=tinysrgb';
+const BG_IMAGE = 'https://images.pexels.com/photos/4778621/pexels-photo-4778621.jpeg?auto=compress&cs=tinysrgb&w=1600';
 const bgSrcSet = [800, 1200, 1600, 2000].map((w) => `${BG_IMAGE}&w=${w} ${w}w`).join(', ');
 
 const WhyChooseUs = () => (

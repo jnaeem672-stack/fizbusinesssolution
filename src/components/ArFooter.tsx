@@ -38,7 +38,7 @@ const ArFooter = () => (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 w-full max-w-5xl pt-2 text-[13px]">
       {COLUMNS.map((col) => (
         <div key={col.title}>
-          <h2 className="text-white font-black text-[12px] mb-3">{col.title}</h2>
+          <p className="text-white font-black text-[12px] mb-3">{col.title}</p>
           <ul className="space-y-2">
             {col.links.map((link) => (
               <li key={link.href}>
@@ -49,7 +49,7 @@ const ArFooter = () => (
         </div>
       ))}
       <div>
-        <h2 className="text-white font-black text-[12px] mb-3">روابط مهمة</h2>
+        <p className="text-white font-black text-[12px] mb-3">روابط مهمة</p>
         <ul className="space-y-2">
           <li><Link href="/ar" className="text-white/60 hover:text-white transition-colors">الصفحة الرئيسية</Link></li>
           <li><Link href="/ar/blog" className="text-white/60 hover:text-white transition-colors">أدلة مجانية للطلاب</Link></li>

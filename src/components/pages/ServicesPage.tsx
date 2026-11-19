@@ -25,7 +25,7 @@ import { SERVICE_PAGE_LINKS } from '@/constants/serviceLinks';
 import Link from 'next/link';
 
 const featuredServices: { name: string; icon: LucideIcon; badge: string; desc: string; points: string[] }[] = [
-  { name: 'Assignment Help', icon: GraduationCap, badge: 'Most Popular', desc: 'Expert assignment help for essays, reports, case studies and coursework in 100+ subjects at UK and Saudi universities.', points: ['From £20 per 1,000 words', 'Qualified subject experts', 'Harvard, APA & OSCOLA referencing'] },
+  { name: 'Assignment Help', icon: GraduationCap, badge: 'Most Popular', desc: 'Expert assignment help for essays, reports, case studies and coursework in 115+ subjects at UK and Saudi universities.', points: ['From £20 per 1,000 words', 'Qualified subject experts', 'Harvard, APA & OSCOLA referencing'] },
   { name: 'Dissertation Help', icon: BookOpenCheck, badge: 'Research', desc: "Dissertation and thesis help for Bachelor's, Master's, MBA and PhD students, from proposal to final chapter.", points: ['Proposal & literature review', 'Methodology & data analysis', 'Price shown before you start'] },
   { name: 'Research Proposal Help', icon: MessageSquareText, badge: 'Proposals', desc: 'Research proposals for dissertations and PhD applications with clear aims, questions and methodology.', points: ['Topic selection', 'Research questions', 'PhD & scholarship applications'] },
   { name: 'Proofreading & Editing', icon: SpellCheck2, badge: 'Language', desc: 'Professional proofreading and editing to UK academic standards for grammar, flow, clarity and tone.', points: ['Grammar & clarity', 'Academic tone', 'Fast turnaround'] },
@@ -114,7 +114,7 @@ export default function ServicesPage() {
           <SectionHeader
             badge="All Services"
             title="All Assignment & Dissertation Help Services"
-            subtitle={`${ALL_SERVICES.length} services covering assignments, essays, dissertations, research proposals, data analysis and 100+ subjects.`}
+            subtitle={`${ALL_SERVICES.length} services covering assignments, essays, dissertations, research proposals, data analysis and 115+ subjects.`}
             className="mb-10"
           />
 

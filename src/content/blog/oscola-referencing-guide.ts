@@ -187,6 +187,6 @@ export const oscolaReferencingGuidePost: BlogPost = {
   ],
   relatedServices: ["law-assignment-help", "referencing-help", "proofreading-editing-services", "dissertation-help-uk"],
   sources: [
-    { label: "OSCOLA, 5th edition (Oxford Law Faculty, March 2026)", href: "https://www.law.ox.ac.uk/research-subject-groups/publications/oscola" }
+    { label: "OSCOLA, 5th edition (Oxford Law Faculty, March 2026)", href: "https://www.law.ox.ac.uk/oscola" }
   ]
 };

@@ -13,7 +13,7 @@ import { WHATSAPP_URL } from '@/constants/whatsapp';
 import { SUPPORT_FORM_HASH } from '@/constants/supportNavigation';
 
 // Students walking together (Eliott Reyna, Unsplash License: free for commercial use)
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?auto=format&fit=crop&q=60';
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?auto=format&fit=crop&q=55&w=1600';
 const heroSrcSet = [640, 1024, 1600, 2000].map((w) => `${HERO_IMAGE}&w=${w} ${w}w`).join(', ');
 
 const typingTexts = [
