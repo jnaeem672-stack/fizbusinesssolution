@@ -91,6 +91,7 @@ import { arMbaAssignmentHelp } from './ar-mba-assignment-help';
 import { arThesisHelp } from './ar-thesis-help';
 import { ar3dsMaxDesignHelp } from './ar-3ds-max-design-help';
 import { arAutocadHelp } from './ar-autocad-help';
+import { arArchitectureAssignmentHelp } from './ar-architecture-assignment-help';
 import { arSolidworksHelp } from './ar-solidworks-help';
 import { arProgrammingHelp } from './ar-programming-help';
 import { arStudentServices } from './ar-student-services';
@@ -197,6 +198,7 @@ export const AR_LANDING_PAGES: LandingContent[] = [
   arPhdAdmissionScholarshipHelp,
   ar3dsMaxDesignHelp,
   arAutocadHelp,
+  arArchitectureAssignmentHelp,
   arSolidworksHelp,
   arProgrammingHelp,
   arStudentServices,

@@ -51,6 +51,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       { id: 25, name: 'Law Assignment Help', desc: 'Case analysis, legal essays, problem questions and accurate OSCOLA referencing.', areas: 'Law' },
       { id: 26, name: 'Computing & IT Assignment Help', desc: 'Computer science, IT, data science and cyber security assignments and reports.', areas: 'Computing' },
       { id: 27, name: 'Engineering Assignment Help', desc: 'Civil, mechanical, electrical and petroleum engineering assignments and technical reports.', areas: 'Engineering' },
+      { id: 49, name: 'Architecture Assignment Help', desc: 'Design studio, site analysis, lab reports, CAD and BIM (AutoCAD, Revit), theory essays and dissertations.', areas: 'Architecture' },
       { id: 32, name: 'HRM Assignment Help', desc: 'Strategic HRM, employment relations, reward, talent management and international HRM.', areas: 'HRM' },
       { id: 33, name: 'Economics Assignment Help', desc: 'Microeconomics, macroeconomics, econometrics and applied economics essays with diagrams.', areas: 'Economics' },
       { id: 34, name: 'Psychology Assignment Help', desc: 'APA lab reports, critical essays, research methods and SPSS statistics.', areas: 'Psychology' },
