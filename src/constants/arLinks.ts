@@ -50,6 +50,7 @@ export const AR_SERVICE_LINKS: NavItem[] = [
 
 /** Arabic pages for design, engineering software and programming projects */
 export const AR_TECH_LINKS: NavItem[] = [
+  { label: 'واجبات العمارة والهندسة المعمارية', href: '/ar/architecture-assignment-help' },
   { label: 'مشاريع 3ds Max والتصميم الداخلي', href: '/ar/3ds-max-design-help' },
   { label: 'مشاريع AutoCAD والرسم الهندسي', href: '/ar/autocad-help' },
   { label: 'مشاريع SolidWorks والتصميم الميكانيكي', href: '/ar/solidworks-help' },

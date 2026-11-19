@@ -1,5 +1,6 @@
 /** Lightweight list of slugs that exist in both languages (used by the language switcher). */
 export const AR_SLUGS = [
+  'architecture-assignment-help',
   'assignment-help-saudi-arabia',
   'dissertation-help-saudi-arabia',
   'assignment-help-riyadh',
