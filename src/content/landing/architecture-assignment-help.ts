@@ -11,6 +11,10 @@ export const architectureAssignmentHelp: LandingContent = {
     'architecture assignment help',
     'architecture dissertation help',
     'architectural design assignment help',
+    'autocad assignment help',
+    'revit assignment help',
+    'sketchup assignment help',
+    '3ds max assignment help',
     'interior architecture assignment help',
     'landscape architecture assignment help',
     'urban design assignment help',
@@ -36,17 +40,18 @@ export const architectureAssignmentHelp: LandingContent = {
       ],
     },
     {
-      heading: 'Architectural drawings and software',
+      heading: 'Architecture software assignment help: AutoCAD, Revit and more',
       paragraphs: [
-        "Architecture courses expect fluency with drawing and modelling software, and the output is judged on clarity as much as on technical skill. We help you understand how to produce readable plans, sections, elevations and details, how to set line weights and scales correctly, and how to lay out a presentation board or portfolio that guides the viewer through the project.",
-        "Your expert can explain the common tools and how to present their output in a report or portfolio, so the software supports your idea rather than hiding it.",
+        "Architecture courses expect fluency with drawing, modelling and visualisation software, and the output is judged on clarity as much as on technical skill. Our architecture software assignment help explains how to produce readable plans, sections, elevations and details, how to set line weights and scales correctly, and how to lay out a presentation board or portfolio that guides the viewer through the project.",
+        "Your expert can explain the main tools below and how to present their output in a report or portfolio, so the software supports your idea rather than hiding it. Whichever package your studio uses, the focus stays on your own design.",
       ],
       bullets: [
-        'AutoCAD: technical drawings, layers, line weights and plotting to scale',
-        'Revit and ArchiCAD: BIM models, schedules and coordinated drawing sets',
-        'SketchUp, Rhino and Grasshopper: massing studies and parametric form',
-        '3ds Max, Lumion and Enscape: visualisation and rendering choices',
-        'Photoshop and InDesign: diagrams, presentation boards and portfolio layout',
+        'AutoCAD assignment help: technical drawings, layers, line weights and plotting to scale',
+        'Revit and ArchiCAD assignment help: BIM models, families, schedules and coordinated drawing sets',
+        'SketchUp, Rhino and Grasshopper assignment help: massing studies and parametric form',
+        '3ds Max, Lumion, Enscape, V-Ray and Twinmotion: visualisation and rendering for your boards',
+        'Vectorworks and AutoCAD Civil 3D assignment help: drawing sets for architecture and site work',
+        'Photoshop, Illustrator and InDesign: diagrams, presentation boards and portfolio layout',
       ],
     },
     {
@@ -141,8 +146,8 @@ export const architectureAssignmentHelp: LandingContent = {
       a: 'Yes. Your expert can help you plan and write the site analysis, concept statement, design rationale, precedent study and reflective commentary that sit around your drawings, so your scheme reads as a clear story from brief to final board.',
     },
     {
-      q: 'Can you help with AutoCAD, Revit or SketchUp?',
-      a: 'Yes. Your expert can explain how to produce readable drawings and models in tools such as AutoCAD, Revit, ArchiCAD, SketchUp and Rhino, and how to present their output in a report or portfolio. The price depends on scope, and we give you a clear quote on WhatsApp.',
+      q: 'Can you help with AutoCAD, Revit, SketchUp or 3ds Max?',
+      a: 'Yes. Your expert can explain how to produce readable drawings, models and visuals in tools such as AutoCAD, Revit, ArchiCAD, SketchUp, Rhino, Grasshopper, 3ds Max, Lumion, Enscape and Vectorworks, and how to present their output in a report or portfolio. The price depends on scope, and we give you a clear quote on WhatsApp.',
     },
     {
       q: 'Do you help with architecture theory and history essays?',
