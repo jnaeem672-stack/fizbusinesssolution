@@ -27,6 +27,7 @@ export const SERVICE_PAGE_LINKS: Record<string, string> = {
   'Law Assignment Help': '/law-assignment-help',
   'Computing & IT Assignment Help': '/computing-it-assignment-help',
   'Engineering Assignment Help': '/engineering-assignment-help',
+  'Architecture Assignment Help': '/architecture-assignment-help',
   'HRM Assignment Help': '/hrm-assignment-help',
   'Economics Assignment Help': '/economics-assignment-help',
   'Psychology Assignment Help': '/psychology-assignment-help',
