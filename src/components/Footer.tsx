@@ -28,7 +28,7 @@ const Footer = () => (
 
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 w-full max-w-5xl pt-2 text-[12px]">
       <div>
-        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Popular Services</h2>
+        <p className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Popular Services</p>
         <ul className="space-y-2">
           {SERVICE_LINKS.map((link) => (
             <li key={link.href}>
@@ -38,7 +38,7 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Qualification Help</h2>
+        <p className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Qualification Help</p>
         <ul className="space-y-2">
           {QUALIFICATION_LINKS.map((link) => (
             <li key={link.href}>
@@ -48,7 +48,7 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">UK Cities</h2>
+        <p className="text-white font-black text-[11px] uppercase tracking-widest mb-3">UK Cities</p>
         <ul className="space-y-2">
           {UK_CITY_LINKS.map((link) => (
             <li key={link.href}>
@@ -58,7 +58,7 @@ const Footer = () => (
         </ul>
       </div>
       <div>
-        <h2 className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Saudi Arabia and UAE</h2>
+        <p className="text-white font-black text-[11px] uppercase tracking-widest mb-3">Saudi Arabia and UAE</p>
         <ul className="space-y-2">
           {[...SAUDI_CITY_LINKS, ...UAE_LINKS.slice(1)].map((link) => (
             <li key={link.href}>

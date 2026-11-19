@@ -76,7 +76,7 @@ export const assignmentHelpBirmingham: LandingContent = {
       links: [
         {
           label: 'Harvard referencing at the University of Birmingham',
-          href: 'https://intranet.birmingham.ac.uk/student/libraries/referencing/icite/harvard/referencelist.aspx',
+          href: 'https://www.birmingham.ac.uk/libraries',
           note: "The library's iCite guide to Harvard reference lists and bibliographies.",
           tag: 'University of Birmingham',
           cta: 'Official referencing guide',

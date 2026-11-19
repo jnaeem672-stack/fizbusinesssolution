@@ -32,7 +32,7 @@ import { buildWhatsAppUrl } from '@/constants/whatsapp';
 import { AR_HOME } from '@/content/arHome';
 import { AR_LANDING_PAGES, landingLabel, landingPath } from '@/content/landing';
 
-const HERO_IMAGE = 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=60';
+const HERO_IMAGE = 'https://images.unsplash.com/photo-1549057446-9f5c6ac91a04?auto=format&fit=crop&q=55&w=1600';
 const heroSrcSet = [640, 1024, 1600, 2000].map((w) => `${HERO_IMAGE}&w=${w} ${w}w`).join(', ');
 
 const STAT_ICONS = [Award, GraduationCap, BookOpenCheck, Globe2];

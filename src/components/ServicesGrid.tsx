@@ -15,7 +15,7 @@ import SectionHeader from './ui/SectionHeader';
 import ServiceCard from './services/ServiceCard';
 
 const services: { name: string; icon: LucideIcon; desc: string }[] = [
-  { name: 'Assignment Help', icon: GraduationCap, desc: 'Expert help with essays, reports, case studies and coursework across 100+ subjects.' },
+  { name: 'Assignment Help', icon: GraduationCap, desc: 'Expert help with essays, reports, case studies and coursework across 115+ subjects.' },
   { name: 'Draft Review & Feedback', icon: MessageSquareText, desc: 'Detailed expert review of your draft with clear improvements before submission.' },
   { name: 'Dissertation Help', icon: BookOpenCheck, desc: 'Help with topics, proposals, literature reviews, methodology and every chapter.' },
   { name: 'Literature Review Help', icon: Search, desc: 'Find, evaluate and organise credible academic sources for a strong literature review.' },
