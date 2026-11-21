@@ -27,7 +27,12 @@
         ],
         "cta": "fizbusinessolutions.com/blog"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-1-case-study-analysis.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-1-case-study-analysis.jpg",
+      "metricool": {
+        "id": 436741023,
+        "uuid": "2949153634778039560",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-24",
@@ -48,7 +53,12 @@
         ],
         "cta": "fizbusinessolutions.com"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-2-finance-accounting-help.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-2-finance-accounting-help.jpg",
+      "metricool": {
+        "id": 436741271,
+        "uuid": "-2270247512630211024",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-25",
@@ -70,7 +80,12 @@
         ],
         "cta": "fizbusinessolutions.com/contact"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-3-what-to-send-for-a-price.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-3-what-to-send-for-a-price.jpg",
+      "metricool": {
+        "id": 436741283,
+        "uuid": "2544663434722952628",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-26",
@@ -92,7 +107,12 @@
         ],
         "cta": "fizbusinessolutions.com/blog"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-4-research-proposal.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-4-research-proposal.jpg",
+      "metricool": {
+        "id": 436741299,
+        "uuid": "8246333379279011861",
+        "status": "scheduled"
+      }
     },
     {
       "date": "2026-11-27",
@@ -115,7 +135,12 @@
         ],
         "cta": "fizbusinessolutions.com/ar"
       },
-      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-5-arabic-theoretical-framework.jpg"
+      "image": "https://fizbusinessolutions.com/social/2026-11-23-week/post-5-arabic-theoretical-framework.jpg",
+      "metricool": {
+        "id": 436741317,
+        "uuid": "-1238084529022219577",
+        "status": "scheduled"
+      }
     }
   ],
   "gmb": {
@@ -123,7 +148,12 @@
     "time": "16:00 Asia/Karachi",
     "topic": "Data analysis help service page (SPSS, NVivo, R, Python)",
     "link": "https://fizbusinessolutions.com/data-analysis-help",
-    "text": "Data analysis help for your dissertation\n\nCollected your survey responses or interview transcripts and not sure what to do next? FIZ Business Solutions (FIZBS) has supported university students in the UK and Saudi Arabia since 2015, and our Master's and PhD qualified experts work with SPSS, Excel, NVivo, Stata, Python and R.\n\nYour expert explains each step so you understand and can discuss every result: cleaning and coding your dataset, choosing the right test, reading the output and writing up your findings.\n\nWhat we cover: descriptive statistics, reliability testing, t-tests, ANOVA, chi-square, correlation and regression, thematic analysis of interviews and focus groups, and APA-style tables and charts.\n\nWe only work with data you have collected or legitimately obtained. We never create, alter or invent data or results.\n\nData analysis is priced by scope, so you get a clear quote before any work starts. New students get 10% off the first order, and you pay 50% to start and 50% on completion.\n\nSee the details and send your request: fizbusinessolutions.com/data-analysis-help"
+    "text": "Data analysis help for your dissertation\n\nCollected your survey responses or interview transcripts and not sure what to do next? FIZ Business Solutions (FIZBS) has supported university students in the UK and Saudi Arabia since 2015, and our Master's and PhD qualified experts work with SPSS, Excel, NVivo, Stata, Python and R.\n\nYour expert explains each step so you understand and can discuss every result: cleaning and coding your dataset, choosing the right test, reading the output and writing up your findings.\n\nWhat we cover: descriptive statistics, reliability testing, t-tests, ANOVA, chi-square, correlation and regression, thematic analysis of interviews and focus groups, and APA-style tables and charts.\n\nWe only work with data you have collected or legitimately obtained. We never create, alter or invent data or results.\n\nData analysis is priced by scope, so you get a clear quote before any work starts. New students get 10% off the first order, and you pay 50% to start and 50% on completion.\n\nSee the details and send your request: fizbusinessolutions.com/data-analysis-help",
+    "metricool": {
+      "id": 436741326,
+      "uuid": "3565859079303351498",
+      "status": "scheduled"
+    }
   },
   "metricoolBrandId": 7347569
 }
